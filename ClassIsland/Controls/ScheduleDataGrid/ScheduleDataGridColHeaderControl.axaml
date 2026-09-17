@@ -20,31 +20,31 @@
                                Text="{Binding Date, RelativeSource={RelativeSource TemplatedParent}, StringFormat='ddd'}"/>
                     <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Text="{Binding Date, RelativeSource={RelativeSource TemplatedParent}, StringFormat='MM/dd'}"
                                HorizontalAlignment="Right"/>
-                    <TextBlock Grid.Column="0" Grid.Row="1" 
+                    <TextBlock Grid.Column="0" Grid.Row="1"
                                Grid.ColumnSpan="2"
                                FontSize="14" Foreground="{DynamicResource TextFillColorPrimaryBrush}"
                                Text="{Binding ClassPlan.Name, RelativeSource={RelativeSource TemplatedParent}, FallbackValue='', Mode=OneWay}"/>
-                    <StackPanel Grid.Column="0" Grid.Row="2" 
+                    <StackPanel Grid.Column="0" Grid.Row="2"
                                 HorizontalAlignment="Left" Orientation="Horizontal">
                         <TextBlock Margin="0 0 0 0" VerticalAlignment="Center">
                             <TextBlock.Resources>
                                 <system:Int32 x:Key="Zero">0</system:Int32>
                             </TextBlock.Resources>
-                                                            
+
                             <TextBlock.IsVisible>
                                 <MultiBinding Converter="{x:Static BoolConverters.And}">
                                     <Binding Path="ClassPlan.TimeRule.WeekCountDiv"
                                              Converter="{x:Static ObjectConverters.NotEqual}"
-                                             ConverterParameter="{StaticResource Zero}" 
+                                             ConverterParameter="{StaticResource Zero}"
                                              RelativeSource="{RelativeSource TemplatedParent}"/>
                                     <Binding Path="ClassPlan.IsEnabled" RelativeSource="{RelativeSource TemplatedParent}"/>
                                     <Binding Path="!ClassPlan.IsOverlay" RelativeSource="{RelativeSource TemplatedParent}"/>
                                 </MultiBinding>
                             </TextBlock.IsVisible>
-                                                            
-                            <Run Text="{Binding ClassPlan.TimeRule.WeekCountDiv, RelativeSource={RelativeSource TemplatedParent}}" /><Run Text="/" /><Run Text="{Binding ClassPlan.TimeRule.WeekCountDivTotal, RelativeSource={RelativeSource TemplatedParent}}" /><Run Text="周" />
+
+                            <Run Text="{Binding ClassPlan.TimeRule.WeekCountDiv, RelativeSource={RelativeSource TemplatedParent}}" /><Run Text="/" /><Run Text="{Binding ClassPlan.TimeRule.WeekCountDivTotal, RelativeSource={RelativeSource TemplatedParent}}" /><Run Text="{ci:Tr Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.Week}" />
                         </TextBlock>
-                        <TextBlock Text="临时层" IsVisible="{Binding ClassPlan.IsOverlay, RelativeSource={RelativeSource TemplatedParent}}"
+                        <TextBlock Text="{ci:Tr Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.TemporaryLayer}" IsVisible="{Binding ClassPlan.IsOverlay, RelativeSource={RelativeSource TemplatedParent}}"
                                    FontWeight="Bold" FontStyle="Italic" VerticalAlignment="Center"
                                    ClipToBounds="False"/>
                     </StackPanel>
@@ -54,7 +54,7 @@
                                     IsVisible="{Binding !$parent[controls:ScheduleDataGrid].IsReadonly}"
                                     Content="{ci:FluentIcon &#xEF27;}"
                                     x:Name="PART_ButtonOpenClassPlanSettings"
-                                    ToolTip.Tip="课表信息…"
+                                    ToolTip.Tip="{ci:Tr Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.ToolTip.TimetableInformation}"
                                     Padding="8 4" />
                         </ci:TutorialBarrier>
                     </StackPanel>
@@ -80,8 +80,8 @@
                                     <Flyout>
                                         <StackPanel Spacing="4"
                                                     DataContext="{Binding ViewModel, RelativeSource={RelativeSource TemplatedParent}}">
-                                            <TextBlock Text="新建课表" FontWeight="Bold" />
-                                            <ci:Field Label="时间表">
+                                            <TextBlock Text="{ci:Tr Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.NewTimetable}" FontWeight="Bold" />
+                                            <ci:Field Label="{ci:Tr Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Label.Timetable}">
                                                 <ComboBox
                                                     SelectedValueBinding="{Binding Key}">
                                                     <ComboBox.SelectedValue>
@@ -101,12 +101,12 @@
                                                     </ComboBox.ItemTemplate>
                                                 </ComboBox>
                                             </ci:Field>
-                                            <ci:Field Label="名称">
+                                            <ci:Field Label="{ci:Tr Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Label.Name}">
                                                 <TextBox Text="{Binding ClassPlanName, Mode=TwoWay}"
                                                          Watermark="{Binding SuggestedClassPlanName, Mode=OneWay}" />
                                             </ci:Field>
                                             <DockPanel Dock="Left">
-                                                <CheckBox Content="复制自" DockPanel.Dock="Left"
+                                                <CheckBox Content="{ci:Tr Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Content.CopiedFrom}" DockPanel.Dock="Left"
                                                           IsChecked="{Binding CopyFromClassPlan}" />
                                                 <ComboBox HorizontalAlignment="Stretch"
                                                           SelectedValue="{Binding CopyClassPlanSource}"
@@ -130,14 +130,14 @@
                                             <Button Classes="accent" Margin="0 2 0 0"
                                                     Command="{Binding CompleteCreateClassPlanCommand, RelativeSource={RelativeSource TemplatedParent}}"
                                                     CommandParameter="{Binding $self}">
-                                                <ci:IconText Glyph="&#xE424;" Text="创建" />
+                                                <ci:IconText Glyph="&#xE424;" Text="{ci:Tr Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.Create}" />
                                             </Button>
                                         </StackPanel>
                                     </Flyout>
                                 </Button.Flyout>
-                                <ci:IconText Glyph="&#xE00D;" Text="新课表" />
+                                <ci:IconText Glyph="&#xE00D;" Text="{ci:Tr Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.NewTimetable2}" />
                             </Button></ci:TutorialBarrier>
-                        
+
                     </Grid>
                 </ControlTemplate>
             </Setter>

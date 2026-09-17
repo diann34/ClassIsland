@@ -1,6 +1,8 @@
 ﻿using ClassIsland.Core.Abstractions.Services;
+using System.Collections.Generic;
 using ClassIsland.Core.Abstractions.Services.Management;
 using ClassIsland.Core.Abstractions.Services.Metadata;
+using ClassIsland.Core.Models.Localization;
 using ClassIsland.Core.Services;
 using ClassIsland.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -14,6 +16,13 @@ public class GeneralSettingsViewModel(
     ISplashService splashService,
     IAnnouncementService announcementService) : ObservableRecipient
 {
+    public IReadOnlyList<SupportedLanguage> ApplicationLanguages { get; } =
+    [
+        new(LocalizationService.AutomaticLanguage,
+            LocalizationService.Translate("SettingPages.GeneralSettingsPage.Content.FollowTheSystem")),
+        .. LocalizationService.SupportedLanguages
+    ];
+
     public SettingsService SettingsService { get; } = settingsService;
     public IManagementService ManagementService { get; } = managementService;
     public IExactTimeService ExactTimeService { get; } = exactTimeService;

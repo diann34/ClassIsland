@@ -12,15 +12,15 @@
                 Classes="settings-container animated-intro"
                 DataContext="{Binding RelativeSource={RelativeSource AncestorType=welcomePages:AppearancePage}}"
                 MaxWidth="600">
-        <TextBlock Text="外观" HorizontalAlignment="Center"
+        <TextBlock Text="{ci:Tr WelcomePages.AppearancePage.Text.Appearance}" HorizontalAlignment="Center"
                    Margin="0 0 0 4"
                    Theme="{StaticResource SubtitleTextBlockStyle}"/>
-        <TextBlock Text="调整 ClassIsland 主界面的外观。" HorizontalAlignment="Center"
+        <TextBlock Text="{ci:Tr WelcomePages.AppearancePage.Text.AdjustTheAppearanceOfTheClassIslandMainInterface}" HorizontalAlignment="Center"
                    Margin="0 0 0 8"/>
-        
+
         <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xF4D1;}"
-                                    Header="界面缩放"
-                                    Description="主界面的缩放大小。">
+                                    Header="{ci:Tr WelcomePages.AppearancePage.Header.InterfaceScaling}"
+                                    Description="{ci:Tr WelcomePages.AppearancePage.Description.ZoomingInAndOutOfTheMainInterface}">
             <controls:FASettingsExpander.Footer>
                 <Slider Width="180" Minimum="0.75" Maximum="2.5"
                         VerticalAlignment="Center"
@@ -34,8 +34,8 @@
         </controls:FASettingsExpander>
         <!-- 背景不透明度 -->
         <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xF37D;}"
-                                    Header="背景不透明度"
-                                    Description="主界面背景的不透明度。">
+                                    Header="{ci:Tr WelcomePages.AppearancePage.Header.BackgroundOpacity}"
+                                    Description="{ci:Tr WelcomePages.AppearancePage.Description.OpacityOfTheMainInterfaceBackground}">
             <controls:FASettingsExpander.Footer>
                 <Slider Width="180" Minimum="0" Maximum="1"
                         Classes="auto-tooltip"
@@ -45,11 +45,11 @@
                         IsSnapToTickEnabled="True"/>
             </controls:FASettingsExpander.Footer>
         </controls:FASettingsExpander>
-            
+
         <!-- 圆角半径 -->
         <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xF031;}"
-                                    Header="圆角半径"
-                                    Description="主界面圆角半径，调至最大数值时左右边缘为半圆。">
+                                    Header="{ci:Tr WelcomePages.AppearancePage.Header.CornerRadius}"
+                                    Description="{ci:Tr WelcomePages.AppearancePage.Description.MainInterfaceFilletRadiusWhenSetToThe}">
             <controls:FASettingsExpander.Footer>
                 <Slider Grid.Row="0" Width="180" Minimum="0" Maximum="20"
                         Value="{Binding ViewModel.SettingsService.Settings.RadiusX}"
@@ -60,20 +60,20 @@
                         VerticalAlignment="Center"/>
             </controls:FASettingsExpander.Footer>
         </controls:FASettingsExpander>
-        
+
         <StackPanel Orientation="Horizontal" Spacing="4" HorizontalAlignment="Center">
             <Button Command="{x:Static views:WelcomeWindow.WelcomeNavigateBackCommand}"
-                    ToolTip.Tip="上一步"
+                    ToolTip.Tip="{ci:Tr WelcomePages.AppearancePage.ToolTip.PreviousStep}"
                     Content="{ci:FluentIcon &#xE108;, FontSize=18}"
                     Width="48" Height="48"
                     CornerRadius="24"
                     Margin="0 8 0 0"/>
             <Button Command="{x:Static views:WelcomeWindow.WelcomeNavigateForwardCommand}"
-                    ToolTip.Tip="下一步"
+                    ToolTip.Tip="{ci:Tr WelcomePages.AppearancePage.ToolTip.NextStep}"
                     Content="{ci:FluentIcon &#xE130;, FontSize=18}"
                     Width="48" Height="48"
                     CornerRadius="24"
-                    Classes="accent" 
+                    Classes="accent"
                     Margin="0 8 0 0"/>
         </StackPanel>
     </StackPanel>

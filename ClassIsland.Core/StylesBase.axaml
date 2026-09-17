@@ -60,7 +60,7 @@
     <StyleInclude Source="/Controls/VerticalDrawer.axaml"/>
     <StyleInclude Source="/Controls/Lazy.axaml"/>
     <StyleInclude Source="/Controls/IconSources/AdvacnedImageIcon.axaml"/>
-    
+
     <themes:NativeMenuIconsStyle/>
 
     <!-- Add Styles Here -->
@@ -77,7 +77,7 @@
         <Setter Property="MaxWidth" Value="{StaticResource SettingsContainerWidth}" />
         <Setter Property="Spacing" Value="4"/>
     </Style>
-    
+
     <Style Selector="StackPanel.component-settings-container">
         <Setter Property="Margin" Value="4 0 4 12"/>
         <Setter Property="MaxWidth" Value="{StaticResource SettingsContainerWidth}" />
@@ -101,8 +101,8 @@
     </Style>
 
     <Style Selector="ToggleSwitch">
-        <Setter Property="OnContent" Value="开"/>
-        <Setter Property="OffContent" Value="关"/>
+        <Setter Property="OnContent" Value="{ci:Tr Core.StylesBase.OnContent.On}"/>
+        <Setter Property="OffContent" Value="{ci:Tr Core.StylesBase.OffContent.Off}"/>
     </Style>
 
     <Style Selector="controls|FASettingsExpanderItem">
@@ -129,7 +129,7 @@
     <Style Selector="TabStrip.navigation TabStripItem /template/ ContentPresenter#PART_ContentPresenter">
         <Setter Property="TextElement.FontSize" Value="20"/>
     </Style>
-    
+
     <Style Selector="TabControl[TabStripPlacement=Bottom] TabItem:selected /template/ Rectangle#PART_SelectedPipe">
         <Setter Property="Height" Value="2"/>
     </Style>
@@ -223,7 +223,7 @@
             <Style Selector="^ Border#LoadingBorder">
                 <Setter Property="IsVisible" Value="True"/>
                 <Setter Property="Background" Value="{DynamicResource SystemFillColorCriticalBackgroundBrush}"/>
-                <Setter Property="ToolTip.Tip" Value="喔唷，图裂啦"/>
+                <Setter Property="ToolTip.Tip" Value="{ci:Tr Core.StylesBase.ToolTip.ImageLoadFailed}"/>
             </Style>
             <Style Selector="^ ci|FluentIcon#FluentIconError">
                 <Setter Property="IsVisible" Value="True"/>
@@ -269,27 +269,27 @@
         </Style>
         <Setter Property="Spacing" Value="1"/>
     </Style>
-    
+
     <Style Selector="ci|RulesetControl.in-drawer">
         <Setter Property="Width" Value="600"/>
         <Setter Property="ShowTitle" Value="True"/>
     </Style>
-    
+
     <Style Selector="controls|FAMenuFlyoutSubItem">
         <Setter Property="ci:FaMenuFlyoutSubItemTouchFixAssist.IsRepairApplied" Value="True"/>
     </Style>
-    
+
     <Style Selector=":is(windowing|FAAppWindow):not(:windows) :is(Control).custom-titlebar-only">
         <Setter Property="IsVisible" Value="False"/>
     </Style>
     <Style Selector=":mobile :is(Control).custom-titlebar-only">
         <Setter Property="IsVisible" Value="False"/>
     </Style>
-    
+
     <Style Selector=":is(Button).light">
         <Setter Property="Background" Value="Transparent"/>
     </Style>
-    
+
     <Style Selector="ci|AnimatedIconButton.display-role">
         <Style Selector="^ /template/ Button#PART_Button">
             <Setter Property="Padding" Value="0"/>
@@ -297,36 +297,36 @@
         </Style>
         <Setter Property="Theme" Value="{StaticResource TransparentButton}"/>
     </Style>
-    
+
     <Style Selector="Border.popup-bg">
         <Setter Property="BorderBrush" Value="{DynamicResource SurfaceStrokeColorFlyoutBrush}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Padding" Value="12"/>
         <Setter Property="CornerRadius" Value="6"/>
-        
+
         <Style Selector="^:not(.no-bg)">
             <Setter Property="Background" Value="{DynamicResource SolidBackgroundFillColorTertiaryBrush}"/>
         </Style>
     </Style>
-    
+
     <Style Selector="controls|FATeachingTip /template/ ContentPresenter#IconPresenter">
         <Setter Property="MaxWidth" Value="60"/>
         <Setter Property="MaxHeight" Value="60"/>
     </Style>
-    
+
     <Style Selector=":is(Button).foreground-accent /template/ ContentPresenter#PART_ContentPresenter">
         <Setter Property="Background" Value="{DynamicResource CustomizedAccentBarBackground1Brush}" />
         <Setter Property="FontWeight" Value="Medium" />
     </Style>
-    
+
     <Style Selector=":is(controls1|ScrollPresenter)">
         <Setter Property="ci:ScrollPresenterAnimationAssist.IsTeleportationScrollEnabled" Value="True"/>
     </Style>
-    
+
     <Style Selector=":is(ListBoxItem)">
         <Setter Property="ci:ControlCompositionFadeInAssist.IsFadeInEnabled" Value="True"/>
     </Style>
-    
+
     <!--Accent Button-->
     <Style Selector="SplitButton.accent">
         <Style Selector="^  /template/ Grid > Border">
@@ -358,11 +358,11 @@
             </Style>
         </Style>
     </Style>
-    
+
     <Style Selector=":is(ContentPage)">
         <Setter Property="Background" Value="{x:Null}"/>
     </Style>
-    
+
     <Style Selector=":is(TabControl)">
         <Setter Property="PageTransition">
             <ci:CompositionPageTransition Duration="0:0:0.25"

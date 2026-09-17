@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using System.Resources;
 using Avalonia.Metadata;
 
 [assembly: InternalsVisibleTo("ClassIsland")]
@@ -7,6 +8,7 @@ using Avalonia.Metadata;
 [assembly: InternalsVisibleTo("ClassIsland.iOS")]
 [assembly: InternalsVisibleTo("ClassIsland.Hmos")]
 [assembly: InternalsVisibleTo("ClassIsland.Platforms.Windows")]
+[assembly: NeutralResourcesLanguage("zh-Hans")]
 
 [assembly: XmlnsPrefix("http://classisland.tech/schemas/xaml/core", "ci")]
 [assembly: XmlnsDefinition("http://classisland.tech/schemas/xaml/core", "ClassIsland.Core")]

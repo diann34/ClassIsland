@@ -12,16 +12,16 @@
                 Orientation="Horizontal">
         <ComboBox VerticalAlignment="Center" x:Name="StateComboBox" SelectionChanged="StateComboBox_SelectionChanged">
             <ComboBoxItem>
-                上课
+                {ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Content.InClass}
             </ComboBoxItem>
             <ComboBoxItem>
-                课间休息
+                {ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Content.BreakTime}
             </ComboBoxItem>
             <ComboBoxItem>
-                放学
+                {ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Content.SchoolDismissal}
             </ComboBoxItem>
         </ComboBox>
-        <ci:Field Prefix="之前" Suffix="秒">
+        <ci:Field Prefix="{ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Prefix.Before}" Suffix="{ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Suffix.Seconds}">
             <NumericUpDown Value="{Binding $parent[local:PreTimePointTriggerSettingsControl].Settings.TimeSeconds, Converter={x:Static ci:NotNaNConverter.Instance}}" />
         </ci:Field>
     </StackPanel>

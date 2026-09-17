@@ -40,7 +40,7 @@
                         </Style>
                         <Setter Property="TextElement.Foreground" Value="{DynamicResource TitleBarForeground}"/>
                     </Style>
-                    
+
                     <Style Selector="^ /template/ ContentPresenter#PART_Header">
                         <Setter Property="TextElement.FontSize" Value="13"/>
                         <Setter Property="Margin" Value="12 0 0 0"/>
@@ -51,19 +51,19 @@
                             </DataTemplate>
                         </Setter>
                     </Style>
-                    
+
                     <Style Selector="^ /template/ Button#PART_BackButton">
                         <Setter Property="Margin" Value="0 0 -4 0"/>
                         <Setter Property="CornerRadius" Value="0"/>
                         <Setter Property="Width" Value="48"/>
-                        <Setter Property="ToolTip.Tip" Value="返回"/>
+                        <Setter Property="ToolTip.Tip" Value="{ci:Tr Controls.UI.WindowViewHost.ToolTip.Back}"/>
                         <Style Selector="^ controls|FAIconSourceElement">
                             <Setter Property="IconSource" Value="{ci:FluentIconSource {ci:FI ArrowLeftRegular}, FontSize=16}"/>
                             <Setter Property="Height" Value="20"/>
                         </Style>
                     </Style>
                 </Style>
-                
+
                 <Style Selector="^[ExtendClientAreaToDecorationsHint=True]">
                     <Style Selector="^ NavigationPage#NavigationPage /template/ Border#PART_NavigationBar">
                         <Setter Property="Margin">
@@ -96,11 +96,11 @@
                         </Setter>
                     </Style>
                 </Style>
-                
+
                 <Style Selector="^[IsActive=False] NavigationPage#NavigationPage">
                     <Style Selector="^ /template/ ContentPresenter#PART_Header, ^ /template/ Button#PART_BackButton controls|FAIconSourceElement">
                         <Setter Property="TextElement.Foreground" Value="{DynamicResource TitleBarForegroundInactive}"/>
-                    </Style>   
+                    </Style>
                 </Style>
             </Style>
         </Style>

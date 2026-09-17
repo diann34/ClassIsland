@@ -553,9 +553,6 @@ public partial class App : AppBase, IAppHost
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
         
         
-        Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CN");
-        Thread.CurrentThread.CurrentCulture = new CultureInfo("zh-CN");
-
         // 检测 Mutex
         if (!IsMutexCreateNew && !Design.IsDesignMode)
         {
@@ -1267,5 +1264,4 @@ public partial class App : AppBase, IAppHost
         Stop();
     }
 }
-
 

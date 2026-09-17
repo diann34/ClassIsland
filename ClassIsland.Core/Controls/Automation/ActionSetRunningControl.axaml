@@ -10,14 +10,14 @@
         <StackPanel.Styles>
             <Style Selector="StackPanel > ci|AnimatedIconButton">
                 <Setter Property="Theme" Value="{StaticResource TransparentButton}" />
-                
+
             </Style>
         </StackPanel.Styles>
 
         <ci:AnimatedIconButton Glyph="&#xEDBF;"
-                               Text="触发"
+                               Text="{ci:Tr Core.Controls.Automation.ActionSetRunningControl.Text.Trigger}"
                                Command="{Binding $parent[local:ActionSetRunningControl].InvokeActionCommand}"
-                               ToolTip.Tip="触发行动。">
+                               ToolTip.Tip="{ci:Tr Core.Controls.Automation.ActionSetRunningControl.ToolTip.TriggerAction}">
             <Classes.foreground-accent>
                 <Binding Path="$parent[local:ActionSetRunningControl].ActionSet.Status"
                          Converter="{x:Static ObjectConverters.Equal}"
@@ -42,9 +42,9 @@
         </ci:AnimatedIconButton>
 
         <ci:AnimatedIconButton Glyph="&#xEE67;"
-                               Text="中断"
+                               Text="{ci:Tr Core.Controls.Automation.ActionSetRunningControl.Text.Interrupt}"
                                Command="{Binding $parent[local:ActionSetRunningControl].InterruptActionCommand}"
-                               ToolTip.Tip="中断行动运行。">
+                               ToolTip.Tip="{ci:Tr Core.Controls.Automation.ActionSetRunningControl.ToolTip.InterruptActionExecution}">
             <Classes.foreground-accent>
                 <Binding Path="$self.IsKeepingExpanded" />
             </Classes.foreground-accent>
@@ -58,9 +58,9 @@
         </ci:AnimatedIconButton>
 
         <ci:AnimatedIconButton Glyph="&#xE101;"
-                               Text="恢复"
+                               Text="{ci:Tr Core.Controls.Automation.ActionSetRunningControl.Text.Restore}"
                                Command="{Binding $parent[local:ActionSetRunningControl].RevertActionCommand}"
-                               ToolTip.Tip="触发恢复行动。"
+                               ToolTip.Tip="{ci:Tr Core.Controls.Automation.ActionSetRunningControl.ToolTip.TriggerRecoveryAction}"
                                IsVisible="{Binding $parent[local:ActionSetRunningControl].IsRevertButtonVisible}">
             <Classes.foreground-accent>
                 <Binding Path="$parent[local:ActionSetRunningControl].ActionSet.Status"

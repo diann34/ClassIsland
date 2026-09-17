@@ -11,7 +11,7 @@
          Name="ClassIsland">
     <NativeMenu.Menu>
         <NativeMenu>
-            <NativeMenuItem Header="关于 ClassIsland…" Click="NativeMenuItemOpenAbout_OnClick"/>
+            <NativeMenuItem Header="{ci:Tr App.Header.AboutClassIsland}" Click="NativeMenuItemOpenAbout_OnClick"/>
         </NativeMenu>
     </NativeMenu.Menu>
     <ci:AppBase.Styles>
@@ -47,13 +47,13 @@
                 <ResourceInclude Source="/Controls/WeatherIcons/Index.axaml"/>
                 <ResourceInclude Source="/Controls/ScheduleCalendarControl.axaml"/>
             </ResourceDictionary.MergedDictionaries>
-            
+
             <FontFamily x:Key="BackendFontFamily">Microsoft YaHei UI</FontFamily>
             <ci:SolidColorBrushOpacityConverter x:Key="SolidColorBrushOpacityConverter" />
             <ci:BooleanOrExpressionMultiConverter x:Key="BooleanOrExpressionMultiConverter" />
             <ci:PreventNullConverter x:Key="PreventNullConverter" />
             <converters:StringToFontFamilyConverter x:Key="StringToFontFamilyConverter" />
-            
+
             <StaticResource x:Key="ContentControlThemeFontFamily" ResourceKey="AppFont"/>
         </ResourceDictionary>
     </Application.Resources>

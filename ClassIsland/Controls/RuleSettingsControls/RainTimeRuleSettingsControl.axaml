@@ -21,17 +21,17 @@
                   Classes="compact toggle"
                   Margin="0 0 1 0">
             <TabStripItem IsSelected="{Binding !Settings.IsRemainingTime}">
-                <ci:AnimatedIconButton Glyph="&#xE157;" Text="开始" 
+                <ci:AnimatedIconButton Glyph="&#xE157;" Text="{ci:Tr Controls.RuleSettingsControls.RainTimeRuleSettingsControl.Text.Start}"
                                              Classes="display-role"
                                              IsKeepingExpanded="{Binding $parent[TabStripItem].IsSelected}" />
             </TabStripItem>
             <TabStripItem IsSelected="{Binding Settings.IsRemainingTime}">
-                <ci:AnimatedIconButton Glyph="&#xE159;" Text="结束" 
+                <ci:AnimatedIconButton Glyph="&#xE159;" Text="{ci:Tr Controls.RuleSettingsControls.RainTimeRuleSettingsControl.Text.End}"
                                              Classes="display-role"
                                              IsKeepingExpanded="{Binding $parent[TabStripItem].IsSelected}"/>
             </TabStripItem>
         </TabStrip>
-        <ci:Field  Suffix="分钟">
+        <ci:Field  Suffix="{ci:Tr Controls.RuleSettingsControls.RainTimeRuleSettingsControl.Suffix.Minutes}">
             <controls:FANumberBox Value="{Binding Settings.RainTimeMinutes, Converter={x:Static ci:NotNaNConverter.Instance}}"
                                 SpinButtonPlacementMode="Compact"
                                 Margin="0 0 -4 0"

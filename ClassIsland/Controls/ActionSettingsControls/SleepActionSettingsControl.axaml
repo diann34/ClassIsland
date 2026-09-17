@@ -8,7 +8,7 @@
                               xmlns:local="clr-namespace:ClassIsland.Controls.ActionSettingsControls"
                               xmlns:actionSettings="clr-namespace:ClassIsland.Models.Actions">
     <Panel>
-        <ci:Field Suffix="秒" HorizontalAlignment="Left">
+        <ci:Field Suffix="{ci:Tr Controls.ActionSettingsControls.SleepActionSettingsControl.Suffix.Seconds}" HorizontalAlignment="Left">
             <NumericUpDown MinWidth="147"
                            Minimum="0"
                            Value="{Binding Settings.Value, Converter={x:Static ci:NotNaNConverter.Instance}}" />

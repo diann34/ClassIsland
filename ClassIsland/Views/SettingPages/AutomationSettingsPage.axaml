@@ -22,8 +22,8 @@
             <controls:ListDetailView.LeftContent>
                 <Grid RowDefinitions="Auto,Auto,*,Auto" Classes="animated-intro">
                     <!--  左上：自动化开关  -->
-                    <fa:FASettingsExpander Description="自动化是一种可使 ClassIsland 自动作出行动的功能。"
-                                         Header="启用自动化"
+                    <fa:FASettingsExpander Description="{ci:Tr SettingPages.AutomationSettingsPage.Description.AutomationIsAFeatureThatEnablesClassIslandTo}"
+                                         Header="{ci:Tr SettingPages.AutomationSettingsPage.Header.EnableAutomation}"
                                          IconSource="{ci:FluentIconSource &#xEEF1;}">
                         <fa:FASettingsExpander.Resources>
                             <x:Double x:Key="SettingsExpanderItemAdaptiveWidthTrigger">495</x:Double>
@@ -38,11 +38,11 @@
                                         Spacing="6">
                                 <ci:AnimatedIconButton x:Name="HelperButton"
                                                        Glyph="&#xE23C;"
-                                                       Text="帮助…"
+                                                       Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.Help}"
                                                        Command="{x:Static ci:UriNavigationCommands.UriNavigationCommand}"
                                                        CommandParameter="https://docs.classisland.tech/app/automation.html"
                                                        Theme="{StaticResource TransparentButton}"
-                                                       ToolTip.Tip="打开自动化帮助文档…" />
+                                                       ToolTip.Tip="{ci:Tr SettingPages.AutomationSettingsPage.ToolTip.OpenTheAutomationHelpDocumentation}" />
                                 <ToggleSwitch IsChecked="{Binding ViewModel.SettingsService.Settings.IsAutomationEnabled}" />
                             </StackPanel>
                         </fa:FASettingsExpander.Footer>
@@ -55,8 +55,8 @@
                                 Theme="{StaticResource TransparentButton}"
                                 Classes.invert-foreground-accent="{Binding ViewModel.AutomationService.Workflows.Count}">
                             <ci:IconText Glyph="&#xE00D;"
-                                         Text="添加自动化"
-                                         ToolTip.Tip="添加一个自动化。"
+                                         Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.AddAutomation}"
+                                         ToolTip.Tip="{ci:Tr SettingPages.AutomationSettingsPage.ToolTip.AddAnAutomation}"
                                          Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}" />
                         </Button>
                         <!--  左上：自动化配置方案  -->
@@ -70,17 +70,17 @@
                                       ItemsSource="{Binding ViewModel.AutomationService.Configs}"
                                       SelectedItem="{Binding ViewModel.SettingsService.Settings.CurrentAutomationConfig, Converter={StaticResource PreventNullConverter}}"
                                       ToolTip.ShowDelay="50"
-                                      ToolTip.Tip="自动化配置方案" />
+                                      ToolTip.Tip="{ci:Tr SettingPages.AutomationSettingsPage.ToolTip.AutomatedConfigurationScheme}" />
                             <ci:AnimatedIconButton Glyph="&#xE689;"
-                                                   Text="新建…"
+                                                   Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.New}"
                                                    Command="{Binding $parent[local:AutomationSettingsPage].CreateConfigCommand}"
                                                    Theme="{StaticResource TransparentButton}"
-                                                   ToolTip.Tip="新建自动化配置方案…" />
+                                                   ToolTip.Tip="{ci:Tr SettingPages.AutomationSettingsPage.ToolTip.NewAutomationConfigurationPlan}" />
                             <ci:AnimatedIconButton Glyph="&#xE88D;"
-                                                   Text="打开…"
+                                                   Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.Open}"
                                                    Command="{Binding $parent[local:AutomationSettingsPage].OpenConfigFolderCommand}"
                                                    Theme="{StaticResource TransparentButton}"
-                                                   ToolTip.Tip="打开自动化配置文件夹…" />
+                                                   ToolTip.Tip="{ci:Tr SettingPages.AutomationSettingsPage.ToolTip.OpenTheAutomationConfigurationFolder}" />
                         </StackPanel>
                     </Grid>
                     <!--  左：自动化导航栏  -->
@@ -128,7 +128,7 @@
                                         <!--                  IsIndeterminate="{Binding ActionSet.IsWorking}" -->
                                         <!--                  IsVisible="{Binding ActionSet.IsWorking}" -->
                                         <!--                  Background="Transparent" -->
-                                        <!--                  ToolTip.Tip="该自动化正在运行。"/> -->
+                                        <!--                  ToolTip.Tip="{ci:Tr SettingPages.AutomationSettingsPage.ToolTip.TheAutomationIsRunning}"/> -->
                                         <controls:WorkflowProgressIndicatorControl Grid.Column="2"
                                             VerticalAlignment="Center" Margin="0 0 4 0"
                                             Tag="{Binding ActionSet.IsWorking}"
@@ -170,8 +170,8 @@
                              Text="{Binding ActionSet.Name, UpdateSourceTrigger=PropertyChanged}"
                              FontSize="15"
                              FontWeight="Medium"
-                             Watermark="自动化名称"
-                             ToolTip.Tip="自动化名称。" />
+                             Watermark="{ci:Tr SettingPages.AutomationSettingsPage.Watermark.NameOfTheAutomation}"
+                             ToolTip.Tip="{ci:Tr SettingPages.AutomationSettingsPage.ToolTip.NameOfAutomation}" />
                     <StackPanel Margin="4 0 0 0"
                                 Orientation="Horizontal"
                                 Tag="{Binding ActionSet.IsRevertEnabled}">
@@ -190,8 +190,8 @@
                             </Style>
                         </StackPanel.Styles>
 
-                        <CheckBox Content="启用恢复"
-                                  ToolTip.Tip="该自动化是否启用恢复。"
+                        <CheckBox Content="{ci:Tr SettingPages.AutomationSettingsPage.Content.EnableRecovery}"
+                                  ToolTip.Tip="{ci:Tr SettingPages.AutomationSettingsPage.ToolTip.WhetherTheAutomationIsEnabledForRecovery}"
                                   IsChecked="{Binding ActionSet.IsRevertEnabled}" />
 
                         <automation:ActionSetRunningControl ActionSet="{Binding ActionSet}"/>
@@ -202,16 +202,16 @@
                                    Foreground="{DynamicResource TextFillColorDisabledBrush}" />
 
                         <ci:AnimatedIconButton Glyph="&#xE58B;"
-                                               Text="复制"
+                                               Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.Copy}"
                                                Command="{Binding $parent[local:AutomationSettingsPage].DuplicateWorkflowCommand}"
                                                CommandParameter="{Binding}"
-                                               ToolTip.Tip="创建该自动化的副本。" />
+                                               ToolTip.Tip="{ci:Tr SettingPages.AutomationSettingsPage.ToolTip.CreateACopyOfThisAutomation}" />
                         <ci:AnimatedIconButton Glyph="&#xE61D;"
-                                               Text="删除"
+                                               Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.Delete}"
                                                Command="{Binding $parent[local:AutomationSettingsPage].DeleteWorkflowCommand}"
                                                CommandParameter="{Binding}"
                                                Foreground="IndianRed"
-                                               ToolTip.Tip="删除该自动化。" />
+                                               ToolTip.Tip="{ci:Tr SettingPages.AutomationSettingsPage.ToolTip.DeleteTheAutomation}" />
                     </StackPanel>
                 </WrapPanel>
             </controls:ListDetailView.TitleElement>
@@ -242,7 +242,7 @@
                                             <Expander Classes="compact stretch-header">
                                                 <Expander.Header>
                                                     <ci:IconText Glyph="&#xE84F;"
-                                                                 Text="当事件触发时" />
+                                                                 Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.WhenAnEventIsTriggered}" />
                                                 </Expander.Header>
                                                 <automation:TriggerSettingsControl Triggers="{Binding Triggers}" />
                                             </Expander>
@@ -251,7 +251,7 @@
                                                 <Expander.Header>
                                                     <Grid ColumnDefinitions="Auto, *, Auto">
                                                         <ci:IconText Glyph="&#xF17E;"
-                                                                     Text="并且满足规则集时" />
+                                                                     Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.AndWhenTheRuleSetIsSatisfied}" />
                                                         <ToggleSwitch Grid.Column="2"
                                                                       Margin="0 -6 2 0"
                                                                       VerticalAlignment="Center"
@@ -262,7 +262,7 @@
                                                 <Grid>
                                                     <TextBlock Margin="9 0 0 0"
                                                                VerticalAlignment="Center"
-                                                               Text="工作流运行时不会考虑规则集。"
+                                                               Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.TheWorkflowDoesNotConsiderTheRuleSet}"
                                                                IsVisible="{Binding !IsConditionEnabled}" />
                                                     <ci:RulesetControl IsVisible="{Binding IsConditionEnabled}"
                                                                        Ruleset="{Binding Ruleset}"
@@ -273,7 +273,7 @@
                                             <Expander Classes="compact stretch-header">
                                                 <Expander.Header>
                                                     <ci:IconText Glyph="&#xE01F;"
-                                                                 Text="触发行动" />
+                                                                 Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.TriggerAction}" />
                                                 </Expander.Header>
                                                 <automation:ActionControl ActionSet="{Binding ActionSet}" />
                                             </Expander>
@@ -282,14 +282,14 @@
                                                           Margin="2"
                                                           IsExpanded="True">
                                                     <Expander.Header>
-                                                            <ci:IconText Text="当规则不再满足时，恢复行动。"
+                                                            <ci:IconText Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.ResumeActionWhenTheRulesAreNoLonger}"
                                                                          Kind="AirplaneLanding" />
                                                     </Expander.Header>
                                                     <TextBlock Text="Coming S∞n" />
                                                 </Expander>-->
                                             <ci:IconText Margin="10 2 2 10"
                                                          Glyph="&#xE01D;"
-                                                         Text="当规则集不再满足时，将自动恢复行动。"
+                                                         Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.WhenTheRuleSetIsNoLongerMet}"
                                                          IsVisible="{Binding ActionSet.IsRevertEnabled}" />
                                         </StackPanel>
                                     </ScrollViewer>
@@ -303,7 +303,7 @@
                                                    StickerSource="avares://ClassIsland/Assets/HoYoStickers/光辉矢愿_瞄准.png"
                                                    StickerToolTip="光辉矢愿_瞄准"
                                                    FallbackIcon="{ci:FluentIconSource &#xEEF1;, FontSize=75}"/>
-                                <TextBlock Text="在左侧选择或添加一个自动化，然后在此处进行设置。"
+                                <TextBlock Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.SelectOrAddAnAutomationOnTheLeft}"
                                            Margin="0 8 0 0"
                                            HorizontalAlignment="Center"/>
                                 <Button Margin="0 16 0 0"
@@ -313,7 +313,7 @@
                                         Theme="{StaticResource TransparentButton}"
                                         ToolTip.Tip="https://docs.classisland.tech/app/automation">
                                     <ci:IconText Glyph="&#xEC2D;"
-                                                 Text="阅读自动化帮助"
+                                                 Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.ReadingAutomationHelp}"
                                                  Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}" />
                                 </Button>
                             </StackPanel>
@@ -362,20 +362,18 @@
                                    FontSize="75" />
                 </Grid>
                 <TextBlock Margin="0 8 0 0"
-                           Text="自动化"
+                           Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.Automation}"
                            Theme="{StaticResource SubtitleTextBlockStyle}" />
                 <TextBlock Margin="0 10 0 0"
                            xml:space="preserve" LineSpacing="4">
-　欢迎使用自动化！
-　自动化可以使 ClassIsland 根据条件自动作出行动，
-　比如修改应用设置、打开应用，等等。</TextBlock>
+　{ci:Tr SettingPages.AutomationSettingsPage.Content.WelcomeToAutomationAutomationEnablesClassIslandToAct}</TextBlock>
                 <Button Margin="0 15"
                         Command="{x:Static ci:UriNavigationCommands.UriNavigationCommand}"
                         CommandParameter="https://docs.classisland.tech/app/automation.html"
                         Theme="{StaticResource TransparentButton}"
                         ToolTip.Tip="https://docs.classisland.tech/app/automation">
                     <ci:IconText Glyph="&#xEC2D;"
-                                 Text="阅读自动化帮助"
+                                 Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.ReadingAutomationHelp}"
                                  Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}" />
                 </Button>
                 <Border Padding="10 10 10 14"
@@ -383,18 +381,16 @@
                         CornerRadius="4">
                     <StackPanel Spacing="-7">
                         <ci:IconText Glyph="&#xF430;"
-                                     Text="警告" />
+                                     Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.Warning}" />
                         <TextBlock xml:space="preserve" LineSpacing="3">
-自动化允许自动修改 ClassIsland 的各项设置，并调用
-　外部程序，可能有一定安全风险。
-　不当的自动化编写可能对正常教学造成影响，请勿滥用。</TextBlock>
+{ci:Tr SettingPages.AutomationSettingsPage.Content.AutomationAllowsAutomaticModificationAndInvocationOfVari}</TextBlock>
                     </StackPanel>
                 </Border>
                 <Button Margin="0 20 0 0"
                         Classes="accent"
                         Command="{Binding $parent[local:AutomationSettingsPage].AgreeAutomationNoticeCommand}">
                     <ci:IconText Glyph="&#xE424;"
-                                 Text="同意并开始使用自动化" />
+                                 Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.AgreeAndStartUsingAutomation}" />
                 </Button>
             </StackPanel>
         </ScrollViewer>

@@ -6,7 +6,7 @@
         xmlns:ci="http://classisland.tech/schemas/xaml/core"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ClassIsland.Views.TutorialControllerWindow"
-        Title="教程控制窗口"
+        Title="{ci:Tr TutorialControllerWindow.Title.TutorialControlWindow}"
         ShowInTaskbar="False"
         SystemDecorations="BorderOnly"
         TransparencyLevelHint="AcrylicBlur, Transparent"
@@ -22,22 +22,22 @@
                     Classes="items-valign-center"
                     Margin="12 4"
                     Spacing="4">
-            <ci:IconText Glyph="&#xE959;" Text="教学进行中…" Opacity="0.75"/>
+            <ci:IconText Glyph="&#xE959;" Text="{ci:Tr TutorialControllerWindow.Text.TutorialInProgress}" Opacity="0.75"/>
             <Button Content="{ci:FluentIcon &#xE444;}"
                     Theme="{StaticResource TransparentButton}"
                     x:Name="ButtonSkip"
-                    ToolTip.Tip="跳过">
+                    ToolTip.Tip="{ci:Tr TutorialControllerWindow.ToolTip.Skip}">
                 <Button.Flyout>
                     <Flyout>
                         <StackPanel Spacing="8" MaxWidth="328">
                             <TextBlock FontWeight="Bold">
-                                <Run Text="跳过教程" />
+                                <Run Text="{ci:Tr TutorialControllerWindow.Text.SkipTutorial}" />
                             </TextBlock>
-                            <TextBlock Text="是否确定跳过本段落教程？您稍后可以在【主菜单】->【教学…】中重看本段教程。" 
+                            <TextBlock Text="{ci:Tr TutorialControllerWindow.Text.AreYouSureYouWantToSkipThis}"
                                        TextWrapping="Wrap"/>
-                            <Button Content="跳过" Classes="accent"
+                            <Button Content="{ci:Tr TutorialControllerWindow.Content.Skip}" Classes="accent"
                                     Click="ButtonSkip_OnClick" />
-                        </StackPanel> 
+                        </StackPanel>
                     </Flyout>
                 </Button.Flyout>
             </Button>

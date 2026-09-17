@@ -1,5 +1,6 @@
 <Styles xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ci="http://classisland.tech/schemas/xaml/core"
         xmlns:controls="using:ClassIsland.Core.Controls">
     <Design.PreviewWith>
         <controls:VerticalDrawer />
@@ -17,13 +18,13 @@
                                       ContentTemplate="{TemplateBinding ContentTemplate}"
                                       HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                    <Border x:Name="PART_DismissLayer" 
+                    <Border x:Name="PART_DismissLayer"
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Stretch"/>
                     <Canvas x:Name="PART_Canvas"
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Stretch">
-                        <Panel x:Name="WorkingPanel" 
+                        <Panel x:Name="WorkingPanel"
                                Height="{TemplateBinding ContainerHeight}"
                                Width="{Binding #PART_Canvas.Bounds.Width}">
                             <Panel.Transitions>
@@ -63,7 +64,7 @@
                                                     Spacing="4">
                                             <Button Theme="{StaticResource TransparentButton}"
                                                     Content="{controls:FluentIcon &#xEC5C;}"
-                                                    ToolTip.Tip="收起"
+                                                    ToolTip.Tip="{ci:Tr Core.Controls.VerticalDrawer.ToolTip.Collapse}"
                                                     Command="{Binding Collapse, RelativeSource={RelativeSource TemplatedParent}}">
                                                 <Button.IsVisible>
                                                     <MultiBinding Converter="{x:Static BoolConverters.And}">
@@ -79,7 +80,7 @@
                                             </Button>
                                             <Button Theme="{StaticResource TransparentButton}"
                                                     Content="{controls:FluentIcon &#xEC5E;}"
-                                                    ToolTip.Tip="展开"
+                                                    ToolTip.Tip="{ci:Tr Core.Controls.VerticalDrawer.ToolTip.Expand}"
                                                     Command="{Binding Open, RelativeSource={RelativeSource TemplatedParent}}">
                                                 <Button.IsVisible>
                                                     <MultiBinding Converter="{x:Static BoolConverters.And}">
@@ -95,7 +96,7 @@
                                             </Button>
                                             <Button Theme="{StaticResource TransparentButton}"
                                                     Content="{controls:FluentIcon &#xE671;}"
-                                                    ToolTip.Tip="关闭"
+                                                    ToolTip.Tip="{ci:Tr Core.Controls.VerticalDrawer.ToolTip.Close}"
                                                     Command="{Binding Close, RelativeSource={RelativeSource TemplatedParent}}" />
                                         </StackPanel>
                                         <!-- Content -->
@@ -114,7 +115,7 @@
                 </Panel>
             </ControlTemplate>
         </Setter>
-        
+
         <Style Selector="^ /template/ Panel#WorkingPanel">
             <Setter Property="Canvas.Bottom" Value="{Binding ContainerHeight, RelativeSource={RelativeSource TemplatedParent}, Converter={x:Static controls:VerticalDrawer.ContainerHeightToClosedCanvasBottomPosConverter}}"/>
         </Style>
@@ -132,7 +133,7 @@
                 </Transitions>
             </Setter>
         </Style>
-        
+
         <Style Selector="^:closed">
             <Style Selector="^ /template/ Panel#WorkingPanel">
                 <Setter Property="Canvas.Bottom" Value="{Binding ContainerHeight, RelativeSource={RelativeSource TemplatedParent}, Converter={x:Static controls:VerticalDrawer.ContainerHeightToClosedCanvasBottomPosConverter}}"/>
@@ -151,7 +152,7 @@
                 <Setter Property="IsHitTestVisible" Value="True"/>
                 <Setter Property="Opacity" Value="1"/>
             </Style>
-            
+
         </Style>
     </Style>
 </Styles>

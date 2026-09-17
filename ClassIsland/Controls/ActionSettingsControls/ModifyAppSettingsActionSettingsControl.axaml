@@ -20,12 +20,12 @@
             <Grid Classes="animated-intro"
                   RowDefinitions="Auto Auto *">
                 <TextBlock Margin="0 0 0 8"
-                           Text="选择应用设置"
+                           Text="{ci:Tr Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.Text.SelectApplicationSettings}"
                            Theme="{StaticResource SubtitleTextBlockStyle}" />
                 <TextBox x:Name="SearchSettingsTextBox"
                          Grid.Row="1"
                          TextChanged="SearchSettingsTextBox_OnTextChanged"
-                         Watermark="搜索应用设置…" />
+                         Watermark="{ci:Tr Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.Watermark.SearchApplicationSettings}" />
                 <ListBox Grid.Row="2"
                          Margin="0 8 0 0"
                          AutoScrollToSelectedItem="True"
@@ -73,7 +73,7 @@
                             HorizontalAlignment="Center"
                             VerticalAlignment="Center"
                             IsVisible="{Binding !!!ViewModel.SettingsSearchResults.Count}">
-                    <ci:Empty Text="找不到应用设置。" />
+                    <ci:Empty Text="{ci:Tr Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.Text.ApplicationSettingsNotFound}" />
                 </StackPanel>
             </Grid>
         </Panel>
@@ -128,13 +128,13 @@
                     Click="SelectorButton_OnClick">
                 <ci:IconText MinHeight="23"
                              Glyph="{Binding #This.ViewModel.CurrentSettingsInfo.Glyph, FallbackValue=&#xE7C9;}"
-                             Text="{Binding #This.ViewModel.CurrentSettingsInfo.Name, FallbackValue=选择…}" />
+                             Text="{Binding #This.ViewModel.CurrentSettingsInfo.Name, FallbackValue={ci:Tr Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.Fallback.Select}}" />
             </Button>
 
             <TextBlock Grid.Column="1"
                        Margin="5 0"
                        VerticalAlignment="Center"
-                       Text="修改为"
+                       Text="{ci:Tr Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.Text.ChangeTo}"
                        IsVisible="{Binding #This.ViewModel.ControlTemplateName, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
 
             <ContentPresenter x:Name="InputerContentPresenter1"
@@ -149,10 +149,10 @@
                                    VerticalAlignment="Stretch"
                                    VerticalContentAlignment="Stretch"
                                    Glyph="&#xE47C;"
-                                   Text="当前值"
+                                   Text="{ci:Tr Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.Text.CurrentValue}"
                                    Click="FillCurrentValueButton_OnClick"
                                    Theme="{StaticResource TransparentButton}"
-                                   ToolTip.Tip="填入当前值" />
+                                   ToolTip.Tip="{ci:Tr Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.ToolTip.EnterCurrentValue}" />
         </Grid>
         <ContentPresenter x:Name="InputerContentPresenter2"
                           IsVisible="{Binding #This.ViewModel.IsInContentPresenter2}" />

@@ -1,9 +1,10 @@
 <Styles xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ci="http://classisland.tech/schemas/xaml/core"
         xmlns:controls="using:ClassIsland.Core.Controls">
     <Design.PreviewWith>
         <controls:HighlightBox>
-            <TextBlock Text="为了没有眼泪的明天" />
+            <TextBlock Text="{ci:Tr Core.Controls.HighlightBox.Text.ForATomorrowWithoutTears}" />
         </controls:HighlightBox>
     </Design.PreviewWith>
 
@@ -16,7 +17,7 @@
                             Background="{DynamicResource AccentFillColorDefaultBrush}" Opacity="0.4"
                             Height="12" VerticalAlignment="Center"
                             Margin="-2 8 -2 0" CornerRadius="2"/>
-                    
+
                     <ContentPresenter x:Name="ContentPresenter"
                                       Content="{TemplateBinding Content, Mode=OneWay}"
                                       ContentTemplate="{TemplateBinding ContentTemplate, Mode=OneWay}">

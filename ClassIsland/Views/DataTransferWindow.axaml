@@ -6,12 +6,12 @@
         xmlns:ci="http://classisland.tech/schemas/xaml/core"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ClassIsland.Views.DataTransferWindow"
-        Header="数据迁移"
+        Header="{ci:Tr DataTransferWindow.Header.DataMigration}"
         Icon="/Assets/AppLogo.png"
         HostWidth="800" HostHeight="600"
         HostStartupLocation="CenterScreen"
         CanResize="False"
         Loaded="Control_OnLoaded"
         ShowAsDialog="True">
-    
+
 </ci:ViewBase>

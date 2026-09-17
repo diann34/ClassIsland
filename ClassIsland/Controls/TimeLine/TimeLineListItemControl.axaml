@@ -1,14 +1,14 @@
-﻿<UserControl x:Class="ClassIsland.Controls.TimeLine.TimeLineListItemControl"
+<UserControl x:Class="ClassIsland.Controls.TimeLine.TimeLineListItemControl"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ClassIsland.Controls"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:controls="clr-namespace:ClassIsland.Core.Controls;assembly=ClassIsland.Core"
              xmlns:ci="http://classisland.tech/schemas/xaml/core"
              xmlns:timeLine="clr-namespace:ClassIsland.Controls.TimeLine"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800"
              SizeChanged="TimeLineListItemControl_OnSizeChanged">
     <Grid DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=timeLine:TimeLineListItemControl}}"
@@ -31,7 +31,7 @@
         <!-- Time -->
         <TextBlock Grid.Column="1" Grid.Row="0"
                    VerticalAlignment="Center"
-                   ToolTip.Tip="时间段">
+                   ToolTip.Tip="{ci:Tr Controls.TimeLine.TimeLineListItemControl.ToolTip.TimePeriod}">
             <Run Text="{Binding TimePoint.StartTime}" />
             <Run Text="-" />
             <Run Text="{Binding TimePoint.EndTime}" />
@@ -41,7 +41,7 @@
         <controls:IconText Grid.Column="1" Grid.Row="1"
                            Glyph="&#xE4D2;"
                            Text="{Binding TimePoint.Last}"
-                           Margin="0 0 0 0" ToolTip.Tip="持续时间" />
+                           Margin="0 0 0 0" ToolTip.Tip="{ci:Tr Controls.TimeLine.TimeLineListItemControl.ToolTip.Duration}" />
 
     </Grid>
 </UserControl>

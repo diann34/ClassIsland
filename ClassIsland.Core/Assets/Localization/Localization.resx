@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Core.Abstractions.Controls.ProfileTransferProviders.GenericImportProviderBase.Content.ImportIntoANewArchive" xml:space="preserve">
+    <value>导入到新的档案</value>
+  </data>
+  <data name="Core.Abstractions.Controls.ProfileTransferProviders.GenericImportProviderBase.Content.MergeIntoCurrentArchive" xml:space="preserve">
+    <value>合并到当前档案</value>
+  </data>
+  <data name="Core.Abstractions.Controls.ProfileTransferProviders.GenericImportProviderBase.Header.ImportTarget" xml:space="preserve">
+    <value>导入目标</value>
+  </data>
+  <data name="Core.Abstractions.Controls.ProfileTransferProviders.GenericImportProviderBase.Watermark.NewArchiveName" xml:space="preserve">
+    <value>新档案名称</value>
+  </data>
+  <data name="Core.Controls.AnnouncementControl.Content.Details" xml:space="preserve">
+    <value>详细信息</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Header.Inherit" xml:space="preserve">
+    <value>继承</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Header.Overwritten" xml:space="preserve">
+    <value>被覆盖</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Text.TheSettingsHereMayOverwriteTheSettingsOf" xml:space="preserve">
+    <value>此处的设置可能会覆盖以下节点的设置。</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Text.TheSettingsOfTheFollowingNodesMayOverwrite" xml:space="preserve">
+    <value>以下节点的设置可能会覆盖此处的设置。</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.ToolTip.AdditionalSettingsHelp" xml:space="preserve">
+    <value>附加设置帮助…</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.ToolTip.Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.ToolTip.ViewTheInheritanceOfThisSetting" xml:space="preserve">
+    <value>查看此设置的继承情况…</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.ToolTip.WhetherToEnableSpecificSettingsHere" xml:space="preserve">
+    <value>是否在此处启用特定的设置</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionControl.Text.AddAction" xml:space="preserve">
+    <value>添加行动</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.Text.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.Text.Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.ToolTip.AnErrorOccurredTheLastTimeThisAction" xml:space="preserve">
+    <value>上次运行此行动时发生错误。</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.ToolTip.DeleteThisAction" xml:space="preserve">
+    <value>删除该行动。</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionSetRunningControl.Text.Interrupt" xml:space="preserve">
+    <value>中断</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionSetRunningControl.Text.Restore" xml:space="preserve">
+    <value>恢复</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionSetRunningControl.Text.Trigger" xml:space="preserve">
+    <value>触发</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionSetRunningControl.ToolTip.InterruptActionExecution" xml:space="preserve">
+    <value>中断行动运行。</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionSetRunningControl.ToolTip.TriggerAction" xml:space="preserve">
+    <value>触发行动。</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionSetRunningControl.ToolTip.TriggerRecoveryAction" xml:space="preserve">
+    <value>触发恢复行动。</value>
+  </data>
+  <data name="Core.Controls.Automation.TriggerSettingsControl.Text.AddTrigger" xml:space="preserve">
+    <value>添加触发器</value>
+  </data>
+  <data name="Core.Controls.Automation.TriggerSettingsControl.ToolTip.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.Acrylic" xml:space="preserve">
+    <value>亚克力</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.BodyFontSize" xml:space="preserve">
+    <value>正文字体大小</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.Disable" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.EmphasizeFontSize" xml:space="preserve">
+    <value>强调字体大小</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.Enable" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.GlassLike" xml:space="preserve">
+    <value>类液态玻璃</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.Inherit" xml:space="preserve">
+    <value>继承</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.LargeFontSize" xml:space="preserve">
+    <value>大号字体大小</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.MaterialType" xml:space="preserve">
+    <value>材质类型</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.Mica" xml:space="preserve">
+    <value>云母</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.SecondaryFontSize" xml:space="preserve">
+    <value>次级字体大小</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.AdditionalInformationAtTimePointsEtc" xml:space="preserve">
+    <value>时间点附加信息等</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.AdjustFontColorWillOverrideTheValuesSet" xml:space="preserve">
+    <value>调整字体颜色，将覆盖【外观】设置和主界面行中设置的值。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.AdjustTheSizeOfVariousFontsOnComponents" xml:space="preserve">
+    <value>调整组件上各类字体的大小，将覆盖【外观】设置和主界面行中设置的字体大小。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.AfterEnablingTheComponentWillUseAFixed" xml:space="preserve">
+    <value>启用后，组件将使用固定宽度，不会自动适应内容宽度。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.AutomaticallyHideThisComponentWhenTheSpecifiedConditions" xml:space="preserve">
+    <value>在指定规则满足时，自动隐藏此组件。注意此处的隐藏不会释放组件资源。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.ContentSuchAsCourseForecastEtc" xml:space="preserve">
+    <value>课程预报等内容</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.ContentSuchAsTimetableClockReminderTitlesWeather" xml:space="preserve">
+    <value>课程表、时钟、提醒标题、天气预报等内容</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.CornerRadiusOfTheCurrentComponentBackgroundWhen" xml:space="preserve">
+    <value>当前组件背景圆角半径，调至最大数值时左右边缘为半圆。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.CurrentComponentBackgroundColorTheDefaultValueOf" xml:space="preserve">
+    <value>当前组件背景颜色，禁用时将使用上级默认值。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.CustomMainInterfaceBackgroundEffectsAvailableOnlyOn" xml:space="preserve">
+    <value>自定义主界面的背景效果，仅在较新版本的 Windows 上可用，可能会产生额外性能开销。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.DefaultFontSizeOnTheMainInterface" xml:space="preserve">
+    <value>主界面默认字体大小</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.LimitsTheMaximumAndMinimumWidthOfThe" xml:space="preserve">
+    <value>限制控件的最大和最小宽度。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.OverallOpacityOfTheComponent" xml:space="preserve">
+    <value>组件整体的不透明度。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.SetsTheDistanceBetweenThisComponentAndOther" xml:space="preserve">
+    <value>设置此组件与其他组件的距离。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.SpecifiesHowTheComponentIsAlignedWithinThe" xml:space="preserve">
+    <value>指定组件在显示容器中对齐的方式。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.TheOpacityOfTheCurrentComponentSBackground" xml:space="preserve">
+    <value>当前组件的背景的不透明度，禁用将使用上级默认值。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.Alignment" xml:space="preserve">
+    <value>对齐方式</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.CustomBackgroundColor" xml:space="preserve">
+    <value>自定义背景颜色</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.CustomBackgroundCornerRadius" xml:space="preserve">
+    <value>自定义背景圆角半径</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.CustomBackgroundEffect" xml:space="preserve">
+    <value>自定义背景效果</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.CustomBackgroundOpacity" xml:space="preserve">
+    <value>自定义背景不透明度</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.CustomMargin" xml:space="preserve">
+    <value>自定义边距</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.FixedWidth" xml:space="preserve">
+    <value>固定宽度</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.FontColor" xml:space="preserve">
+    <value>字体颜色</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.FontSize" xml:space="preserve">
+    <value>字体大小</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.HideByRules" xml:space="preserve">
+    <value>按规则隐藏</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.Opacity" xml:space="preserve">
+    <value>不透明度</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.WidthRestriction" xml:space="preserve">
+    <value>宽度限制</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Text.Appearance" xml:space="preserve">
+    <value>外观</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Text.EditRuleSet" xml:space="preserve">
+    <value>编辑规则集…</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Text.Font" xml:space="preserve">
+    <value>字体</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Text.Layout" xml:space="preserve">
+    <value>布局</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Text.MaximumWidth" xml:space="preserve">
+    <value>最大宽度</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Text.MinimumWidth" xml:space="preserve">
+    <value>最小宽度</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.ToolTip.Center" xml:space="preserve">
+    <value>居中</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.ToolTip.LeftAlign" xml:space="preserve">
+    <value>左对齐</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.ToolTip.RightAlign" xml:space="preserve">
+    <value>右对齐</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.ToolTip.Stretch" xml:space="preserve">
+    <value>拉伸</value>
+  </data>
+  <data name="Core.Controls.CredentialEditControl.Text.Add" xml:space="preserve">
+    <value>添加…</value>
+  </data>
+  <data name="Core.Controls.CredentialEditControl.Text.Clear" xml:space="preserve">
+    <value>清除…</value>
+  </data>
+  <data name="Core.Controls.CredentialEditControl.Text.Edit" xml:space="preserve">
+    <value>编辑…</value>
+  </data>
+  <data name="Core.Controls.DevelopmentBuildAdorner.Text.DevelopmentScreenDoesNotRepresentFinalQuality" xml:space="preserve">
+    <value>开发中画面，不代表最终品质。</value>
+  </data>
+  <data name="Core.Controls.DocumentReaderWindow.Content.Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Core.Controls.HighlightBox.Text.ForATomorrowWithoutTears" xml:space="preserve">
+    <value>为了没有眼泪的明天</value>
+  </data>
+  <data name="Core.Controls.RootAttachedSettingsDependencyControl.Text.AdditionalSettingsDependency" xml:space="preserve">
+    <value>附加设置依赖</value>
+  </data>
+  <data name="Core.Controls.RootAttachedSettingsDependencyControl.Text.Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="Core.Controls.RootAttachedSettingsDependencyControl.Text.TheFollowingAdditionalSettingsNodesMayOverrideThe" xml:space="preserve">
+    <value>以下附加设置节点可能会覆盖此处的设置。</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Content.None" xml:space="preserve">
+    <value>非</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.AddGroup" xml:space="preserve">
+    <value>添加组</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.Rule" xml:space="preserve">
+    <value>规则</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.RuleSet" xml:space="preserve">
+    <value>规则集</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.WhenAllRuleGroupsAreMet" xml:space="preserve">
+    <value>规则组全部满足时</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.WhenAllRulesAreMet" xml:space="preserve">
+    <value>规则全部满足时</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.WhenAnyRuleGroupIsMet" xml:space="preserve">
+    <value>规则组任一满足时</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.WhenAnyRuleIsMet" xml:space="preserve">
+    <value>规则任一满足时</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.EnableRuleSet" xml:space="preserve">
+    <value>启用规则集</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.Invert" xml:space="preserve">
+    <value>反转</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetStringMatchingSettingsControl.Content.RegularExpression" xml:space="preserve">
+    <value>正则</value>
+  </data>
+  <data name="Core.Controls.Thing.Description.TestTestTestTestTestTestTestTest" xml:space="preserve">
+    <value>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</value>
+  </data>
+  <data name="Core.Controls.Thing.Header.TestTestTestTest" xml:space="preserve">
+    <value>测试测试测试测试</value>
+  </data>
+  <data name="Core.Controls.VerticalDrawer.ToolTip.Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Core.Controls.VerticalDrawer.ToolTip.Collapse" xml:space="preserve">
+    <value>收起</value>
+  </data>
+  <data name="Core.Controls.VerticalDrawer.ToolTip.Expand" xml:space="preserve">
+    <value>展开</value>
+  </data>
+  <data name="Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople" xml:space="preserve">
+    <value>某一日，祂从天坠落。人们抬头仰望，于是看见了星空。星月送来神的女儿，她愿成为人的伴侣。长风化作她的轺车，四海落成她的园圃。鸟雀衔来善的种子，百花编织爱的颂歌。她便是这样降生于世，行于大地，与人类一同长大，与世界一起发芽。而今，终焉之时将至。而今，归去之时已至。就此告别吧，美丽的世界。此后，将有群星闪耀，因为我如今来过。此后，将有百花绽放，因为我从未离去。请将我的箭、我的花、与我的爱，织成新生的种子，带向那枯萎的大地。然后，便让它开出永恒而无瑕的…人性之华吧。我名为爱莉希雅……最初的律者，人之律者。</value>
+  </data>
+  <data name="Core.ThemeBase.OffContent.Off" xml:space="preserve">
+    <value>关</value>
+  </data>
+  <data name="Core.ThemeBase.OnContent.On" xml:space="preserve">
+    <value>开</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Conflict" xml:space="preserve">
+    <value>纷争</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Death" xml:space="preserve">
+    <value>死亡</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Doorway" xml:space="preserve">
+    <value>门径</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Earth" xml:space="preserve">
+    <value>大地</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Law" xml:space="preserve">
+    <value>律法</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.NegativeWorld" xml:space="preserve">
+    <value>负世</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Ocean" xml:space="preserve">
+    <value>海洋</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Reason" xml:space="preserve">
+    <value>理性</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Romance" xml:space="preserve">
+    <value>浪漫</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Sky" xml:space="preserve">
+    <value>天空</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Time" xml:space="preserve">
+    <value>岁月</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Trick" xml:space="preserve">
+    <value>诡计</value>
+  </data>
+  <data name="Core.Themes.MyNavigationPageStyles.ToolTip.Return" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Core.Themes.TextBaselineFixes.Content.IAmTheSunThatWillEventuallyRise" xml:space="preserve">
+    <value>我是，终将升起的烈阳！</value>
+  </data>
+  <data name="Core.Themes.TextBaselineFixes.Content.Test1" xml:space="preserve">
+    <value>测试1</value>
+  </data>
+  <data name="Core.Themes.TextBaselineFixes.Content.Test2" xml:space="preserve">
+    <value>测试2</value>
+  </data>
+  <data name="Core.Themes.TextBaselineFixes.Content.Test3" xml:space="preserve">
+    <value>测试3</value>
+  </data>
+  <data name="Core.Themes.TextBaselineFixes.Content.TestText" xml:space="preserve">
+    <value>测试文本</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.NotSatisfied" xml:space="preserve">
+    <value>不满足</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.Satisfied" xml:space="preserve">
+    <value>已满足</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.Unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="Core.StylesBase.OffContent.Off" xml:space="preserve">
+    <value>关</value>
+  </data>
+  <data name="Core.StylesBase.OnContent.On" xml:space="preserve">
+    <value>开</value>
+  </data>
+  <data name="Core.StylesBase.ToolTip.ImageLoadFailed" xml:space="preserve">
+    <value>喔唷，图片加载失败啦</value>
+  </data>
+</root>

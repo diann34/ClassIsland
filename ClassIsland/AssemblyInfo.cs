@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using System.Resources;
 using System.Runtime.Versioning;
 using System.Windows;
 
@@ -12,3 +13,4 @@ using System.Windows;
 [assembly: InternalsVisibleTo("ClassIsland.Android")]
 [assembly: InternalsVisibleTo("ClassIsland.iOS")]
 [assembly: InternalsVisibleTo("ClassIsland.Hmos")]
+[assembly: NeutralResourcesLanguage("zh-Hans")]

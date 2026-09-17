@@ -14,24 +14,24 @@
     </UserControl.Styles>
     <ScrollViewer DataContext="{Binding RelativeSource={RelativeSource AncestorType=views:DataTransferPage}}"
                   Classes.export="{Binding ViewModel.IsExport}">
-        <Grid MaxWidth="600" 
+        <Grid MaxWidth="600"
                     VerticalAlignment="Stretch"
                     HorizontalAlignment="Center">
-            
+
             <Carousel Width="600" SelectedIndex="{Binding ViewModel.PageIndex}"
                       VerticalAlignment="Stretch"
                       ClipToBounds="False">
                 <Carousel.Items>
                     <Border VerticalAlignment="Center">
-                        <StackPanel>   
-                            <TextBlock Text="数据迁移" HorizontalAlignment="Center"
+                        <StackPanel>
+                            <TextBlock Text="{ci:Tr DataTransferPage.Text.DataMigration}" HorizontalAlignment="Center"
                                        Margin="0 0 0 4"
                                        Theme="{StaticResource SubtitleTextBlockStyle}" />
-                            <TextBlock Text="向 ClassIsland 导入或从 ClassIsland 导出数据。"
+                            <TextBlock Text="{ci:Tr DataTransferPage.Text.ImportDataToOrExportDataFromClassIsland}"
                                        HorizontalAlignment="Center"
                                        Margin="0 0 0 8" />
                             <TabControl Classes="compact">
-                                <TabItem Header="导入">
+                                <TabItem Header="{ci:Tr DataTransferPage.Header.Import}">
                                     <StackPanel Classes="animated-intro" Spacing="2">
                                         <controls:FASettingsExpander Header="ClassIsland 2.x"
                                                                    IsClickEnabled="True"
@@ -55,9 +55,9 @@
                                                                    IconSource="{ci:FluentIconSource &#xe06f;}" />
                                     </StackPanel>
                                 </TabItem>
-                                <TabItem Header="导出">
+                                <TabItem Header="{ci:Tr DataTransferPage.Header.Export}">
                                     <StackPanel Classes="animated-intro" Spacing="2">
-                                        <controls:FAInfoBar Message="此处的数据导出功能主要用于在不同 ClassIsland 实例间转移数据。若需导出诊断信息，请前往【应用设置】->【更多选项…】->【导出诊断数据】；若需备份应用数据，请使用【应用设置】->【通用】->【存储】中的备份功能。"
+                                        <controls:FAInfoBar Message="{ci:Tr DataTransferPage.Message.TheDataExportFunctionHereIsMainlyUsed}"
                                                           IsOpen="True" IsClosable="False"/>
                                         <controls:FASettingsExpander Header="ClassIsland 2.x"
                                                                    IsClickEnabled="True"
@@ -79,14 +79,14 @@
                                        Theme="{StaticResource SubtitleTextBlockStyle}">
                                 <TextBlock.Styles>
                                     <Style Selector="TextBlock">
-                                        <Setter Property="Text" Value="选择要导入的数据"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.SelectDataToImport}"/>
                                     </Style>
                                     <Style Selector=".export TextBlock">
-                                        <Setter Property="Text" Value="选择要导出的数据"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.SelectDataToExport}"/>
                                     </Style>
                                 </TextBlock.Styles>
                             </TextBlock>
-                            <TextBlock Text="{Binding ViewModel.ImportDescription}" 
+                            <TextBlock Text="{Binding ViewModel.ImportDescription}"
                                        HorizontalAlignment="Center"
                                        TextAlignment="Center"
                                        TextWrapping="Wrap"
@@ -96,44 +96,44 @@
                                        Margin="0 0 0 8">
                                 <TextBlock.Styles>
                                     <Style Selector="TextBlock">
-                                        <Setter Property="Text" Value="选择要导入的信息"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.SelectInformationToImport}"/>
                                     </Style>
                                     <Style Selector=".export TextBlock">
-                                        <Setter Property="Text" Value="选择要导出的信息"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.SelectInformationToExport}"/>
                                     </Style>
                                 </TextBlock.Styles>
                             </TextBlock>
                             <CheckBox IsChecked="{Binding ViewModel.IsProfileSelected}">
                                 <ci:Thing IconSource="{ci:FluentIconSource &#xe699;}"
                                           VerticalAlignment="Center"
-                                          Header="课表配置"
-                                          Description="包括课表内容、时间安排、科目定义等信息。"/>
+                                          Header="{ci:Tr DataTransferPage.Header.TimetableConfiguration}"
+                                          Description="{ci:Tr DataTransferPage.Description.IncludesTimetableContentScheduleSubjectDefinitionsAndOth}"/>
                             </CheckBox>
                             <CheckBox IsChecked="{Binding ViewModel.IsSettingsSelected}">
                                 <ci:Thing IconSource="{ci:FluentIconSource &#xef27;}"
-                                          Header="应用设置"
+                                          Header="{ci:Tr DataTransferPage.Header.ApplicationSettings}"
                                           VerticalAlignment="Center"
-                                          Description="包括应用的各个首选项，如隐藏设置、颜色设置、提醒/铃声设置、天气信息等。"/>
+                                          Description="{ci:Tr DataTransferPage.Description.IncludesVariousApplicationPreferencesSuchAsHiddenSetting}"/>
                             </CheckBox>
                             <CheckBox IsChecked="{Binding ViewModel.IsOtherConfigSelected}">
                                 <ci:Thing IconSource="{ci:FluentIconSource &#xe06f;}"
-                                          Header="其它配置"
+                                          Header="{ci:Tr DataTransferPage.Header.OtherConfiguration}"
                                           VerticalAlignment="Center"
-                                          Description="组件、自动化等配置文件。"/>
+                                          Description="{ci:Tr DataTransferPage.Description.ComponentsAutomationAndOtherConfigurationFiles}"/>
                             </CheckBox>
                             <StackPanel Orientation="Horizontal" Spacing="4" HorizontalAlignment="Center">
                                 <Button Click="ButtonTurnBack_OnClick"
-                                        ToolTip.Tip="上一步"
+                                        ToolTip.Tip="{ci:Tr DataTransferPage.ToolTip.PreviousStep}"
                                         Content="{ci:FluentIcon &#xE108;, FontSize=18}"
                                         Width="48" Height="48"
                                         CornerRadius="24"
                                         Margin="0 8 0 0"/>
                                 <Button Click="ButtonNext_OnClick"
-                                        ToolTip.Tip="下一步"
+                                        ToolTip.Tip="{ci:Tr DataTransferPage.ToolTip.NextStep}"
                                         Content="{ci:FluentIcon &#xE130;, FontSize=18}"
                                         Width="48" Height="48"
                                         CornerRadius="24"
-                                        Classes="accent" 
+                                        Classes="accent"
                                         Margin="0 8 0 0"/>
                             </StackPanel>
                         </StackPanel>
@@ -145,10 +145,10 @@
                                        Theme="{StaticResource SubtitleTextBlockStyle}">
                                 <TextBlock.Styles>
                                     <Style Selector="TextBlock">
-                                        <Setter Property="Text" Value="导入来源"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.ImportSource}"/>
                                     </Style>
                                     <Style Selector=".export TextBlock">
-                                        <Setter Property="Text" Value="导出目标"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.ExportDestination}"/>
                                     </Style>
                                 </TextBlock.Styles>
                             </TextBlock>
@@ -157,29 +157,29 @@
                                        Margin="0 0 0 8">
                                 <TextBlock.Styles>
                                     <Style Selector="TextBlock">
-                                        <Setter Property="Text" Value="选择要导入的数据来源。"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.SelectTheDataSourceToImport}"/>
                                     </Style>
                                     <Style Selector=".export TextBlock">
-                                        <Setter Property="Text" Value="选择要导出到的目标。"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.SelectTheDestinationToExportTo}"/>
                                     </Style>
                                 </TextBlock.Styles>
                             </TextBlock>
 
-                            <controls:FASettingsExpander Header="浏览…"
+                            <controls:FASettingsExpander Header="{ci:Tr DataTransferPage.Header.Browse}"
                                                        IconSource="{ci:FluentIconSource &#xe88d;}"
                                                        IsClickEnabled="True"
                                                        Click="SettingsExpanderBrowse_OnClick">
                                 <controls:FASettingsExpander.Styles>
                                     <Style Selector="controls|FASettingsExpander">
-                                        <Setter Property="Description" Value="手动浏览导入位置"/>
+                                        <Setter Property="Description" Value="{ci:Tr DataTransferPage.Description.BrowseForImportLocationManually}"/>
                                     </Style>
                                     <Style Selector=".export controls|FASettingsExpander">
-                                        <Setter Property="Description" Value="手动浏览导出位置"/>
+                                        <Setter Property="Description" Value="{ci:Tr DataTransferPage.Description.BrowseForExportLocationManually}"/>
                                     </Style>
                                 </controls:FASettingsExpander.Styles>
                             </controls:FASettingsExpander>
                             <Button Click="ButtonTurnBack_OnClick"
-                                    ToolTip.Tip="上一步"
+                                    ToolTip.Tip="{ci:Tr DataTransferPage.ToolTip.PreviousStep}"
                                     Content="{ci:FluentIcon &#xE108;, FontSize=18}"
                                     Width="48" Height="48"
                                     CornerRadius="24"
@@ -194,10 +194,10 @@
                                        Theme="{StaticResource SubtitleTextBlockStyle}">
                                 <TextBlock.Styles>
                                     <Style Selector="TextBlock">
-                                        <Setter Property="Text" Value="正在导入"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.Importing}"/>
                                     </Style>
                                     <Style Selector=".export TextBlock">
-                                        <Setter Property="Text" Value="正在导出"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.Exporting}"/>
                                     </Style>
                                 </TextBlock.Styles>
                             </TextBlock>
@@ -208,10 +208,10 @@
                                 Margin="0 0 0 4">
                                 <TextBlock.Styles>
                                     <Style Selector="TextBlock">
-                                        <Setter Property="Text" Value="请坐和放宽，导入很快就能完成。"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.ImportWillFinishSoon}"/>
                                     </Style>
                                     <Style Selector=".export TextBlock">
-                                        <Setter Property="Text" Value="请坐和放宽，导出很快就能完成。"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.ExportWillFinishSoon}"/>
                                     </Style>
                                 </TextBlock.Styles>
                             </TextBlock>
@@ -227,10 +227,10 @@
                                        Theme="{StaticResource SubtitleTextBlockStyle}">
                                 <TextBlock.Styles>
                                     <Style Selector="TextBlock">
-                                        <Setter Property="Text" Value="导入完成"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.ImportCompleted}"/>
                                     </Style>
                                     <Style Selector=".export TextBlock">
-                                        <Setter Property="Text" Value="导出完成"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.ExportCompleted}"/>
                                     </Style>
                                 </TextBlock.Styles>
                             </TextBlock>
@@ -240,19 +240,19 @@
                                        Margin="0 0 0 4">
                                 <TextBlock.Styles>
                                     <Style Selector="TextBlock">
-                                        <Setter Property="Text" Value="已成功完成导入。"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.ImportCompletedSuccessfully}"/>
                                     </Style>
                                     <Style Selector=".export TextBlock">
-                                        <Setter Property="Text" Value="已成功完成导出。"/>
+                                        <Setter Property="Text" Value="{ci:Tr DataTransferPage.Text.ExportCompletedSuccessfully}"/>
                                     </Style>
                                 </TextBlock.Styles>
                             </TextBlock>
-                            <Button ToolTip.Tip="完成"
+                            <Button ToolTip.Tip="{ci:Tr DataTransferPage.ToolTip.Done}"
                                     VerticalAlignment="Center"
                                     Content="{ci:FluentIcon &#xE423;, FontSize=18}"
                                     Width="48" Height="48"
                                     CornerRadius="24"
-                                    Classes="accent" 
+                                    Classes="accent"
                                     HorizontalAlignment="Center"
                                     Click="ButtonFinish_OnClick"
                                     Margin="0 8 0 0"/>

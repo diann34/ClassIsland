@@ -1,4 +1,4 @@
-﻿<ci:ViewBase x:Class="ClassIsland.Views.TimeAdjustmentWindow"
+<ci:ViewBase x:Class="ClassIsland.Views.TimeAdjustmentWindow"
         xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,7 +8,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:system="clr-namespace:System;assembly=System.Runtime"
         mc:Ignorable="d"
-        Header="对齐铃声" HostHeight="330" HostWidth="600"
+        Header="{ci:Tr TimeAdjustmentWindow.Header.AlignTheRingtone}" HostHeight="330" HostWidth="600"
         HostStartupLocation="CenterOwner"
         Closed="TimeAdjustmentWindow_OnClosed"
         DataContext="{Binding RelativeSource={RelativeSource Self}}"
@@ -16,24 +16,24 @@
     <Grid RowDefinitions="0.6*,Auto,5*" ColumnDefinitions="*,Auto,*">
         <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
-                <TextBlock Text="目标时间" FontSize="14"
+                <TextBlock Text="{ci:Tr TimeAdjustmentWindow.Text.TargetTime}" FontSize="14"
                            VerticalAlignment="Bottom"
                            HorizontalAlignment="Left"
                            Margin="0 0 4 0" />
                 <Button Content="{ci:FluentIcon &#xe02f;}"
-                        ToolTip.Tip="对齐到下个铃声"
+                        ToolTip.Tip="{ci:Tr TimeAdjustmentWindow.ToolTip.AlignToNextAlarm}"
                         Margin="4 0"
                         Padding="4"
                         Click="ButtonAdjustToNextEvent_OnClick"
                         Theme="{StaticResource TransparentButton}"/>
                 <Button Content="{ci:FluentIcon &#xe846;}"
-                        ToolTip.Tip="对齐到下个整分钟"
+                        ToolTip.Tip="{ci:Tr TimeAdjustmentWindow.ToolTip.AlignToNextFullMinute}"
                         Margin="4 0"
                         Padding="4"
                         Click="ButtonAdjustToNextMinute_OnClick"
                         Theme="{StaticResource TransparentButton}"/>
             </StackPanel>
-            <TimePicker Grid.Row="1" 
+            <TimePicker Grid.Row="1"
                         SelectedTime="{Binding ViewModel.TargetTimeSpan}"
                          FontSize="36"
                         Margin="0 2 0 0"
@@ -52,11 +52,11 @@
         <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left"
                     VerticalAlignment="Bottom">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
-                <TextBlock Text="当前时间" FontSize="14"
+                <TextBlock Text="{ci:Tr TimeAdjustmentWindow.Text.CurrentTime}" FontSize="14"
                            VerticalAlignment="Bottom"
                            HorizontalAlignment="Left"/>
             </StackPanel>
-            <TextBlock Text="{Binding ViewModel.CurrentTime, StringFormat=HH:mm:ss}" 
+            <TextBlock Text="{Binding ViewModel.CurrentTime, StringFormat=HH:mm:ss}"
                        d:Text="XX:XX:XX" FontSize="42"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Left"
@@ -74,7 +74,7 @@
         <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" VerticalAlignment="Top"
                     HorizontalAlignment="Center"
                     Margin="0 18 0 0">
-            <ci:Field Label="时间偏移" Suffix="秒"
+            <ci:Field Label="{ci:Tr TimeAdjustmentWindow.Label.TimeOffset}" Suffix="{ci:Tr TimeAdjustmentWindow.Suffix.Seconds}"
                       HorizontalAlignment="Center">
                 <NumericUpDown MinWidth="100" HorizontalAlignment="Center"
                                FontSize="15"
@@ -85,15 +85,15 @@
                     Classes="accent"
                     HorizontalAlignment="Center"
                     Content="{ci:FluentIcon &#xe4d2;, FontSize=22}"
-                    ToolTip.Tip="校准"
+                    ToolTip.Tip="{ci:Tr TimeAdjustmentWindow.ToolTip.Calibrate}"
                     Click="ButtonApplyAdjustment_OnClick"/>
 
             <TextBlock HorizontalAlignment="Center"
                        FontSize="12.5" Opacity="0.75"
                        Margin="0 16 0 0"
                        TextAlignment="Center">
-                <Run Text="当到达目标时间点或对应铃声响起时，按下上方的按钮以进行校准。"/>
-                <LineBreak/><Run Text="校准后，将调整时间偏移，使当前时间更改为目标时间。"/>
+                <Run Text="{ci:Tr TimeAdjustmentWindow.Text.WhenTheTargetTimeIsReachedOrThe}"/>
+                <LineBreak/><Run Text="{ci:Tr TimeAdjustmentWindow.Text.AfterCalibrationTheTimeOffsetWillBeAdjusted}"/>
             </TextBlock>
         </StackPanel>
     </Grid>

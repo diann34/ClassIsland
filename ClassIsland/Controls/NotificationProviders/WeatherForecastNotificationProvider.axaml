@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="ClassIsland.Controls.NotificationProviders.WeatherForecastNotificationProvider"
+<UserControl x:Class="ClassIsland.Controls.NotificationProviders.WeatherForecastNotificationProvider"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -15,15 +15,15 @@
             <ci:LucideIcon Glyph="&#xe0ff;" VerticalAlignment="Center"
                            FontSize="20" FontWeight="Medium"
                            Height="20" Width="20"/>
-            <TextBlock Text="天气预报" FontSize="{DynamicResource MainWindowEmphasizedFontSize}" Margin="8 0" FontWeight="Bold"/>
-            <controls:WeatherPackIconControl Code="{Binding Info.ForecastDaily.Weather.Value[0].To}" 
+            <TextBlock Text="{ci:Tr Controls.NotificationProviders.WeatherForecastNotificationProvider.Text.WeatherForecast}" FontSize="{DynamicResource MainWindowEmphasizedFontSize}" Margin="8 0" FontWeight="Bold"/>
+            <controls:WeatherPackIconControl Code="{Binding Info.ForecastDaily.Weather.Value[0].To}"
                                              VerticalAlignment="Center"
                                              Height="22" AllowColor="False"/>
         </StackPanel>
         <Grid HorizontalAlignment="Center" IsVisible="{Binding !IsOverlay}">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="12 0">
                 <!-- Today -->
-                <TextBlock Text="今天" Classes="l-secondary" FontWeight="Bold" FontSize="{DynamicResource MainWindowEmphasizedFontSize}" VerticalAlignment="Center" Margin="0 0 4 0"/>
+                <TextBlock Text="{ci:Tr Controls.NotificationProviders.WeatherForecastNotificationProvider.Text.Today}" Classes="l-secondary" FontWeight="Bold" FontSize="{DynamicResource MainWindowEmphasizedFontSize}" VerticalAlignment="Center" Margin="0 0 4 0"/>
                 <controls:WeatherRangePackIconControl Value="{Binding Info.ForecastDaily.Weather.Value[0]}"
                                                       Height="24"
                                                       VerticalAlignment="Center"
@@ -44,7 +44,7 @@
                            Width="1"
                            Height="20" />
                 <!-- Tomorrow -->
-                <TextBlock Text="明天" Classes="l-secondary" FontWeight="Bold" FontSize="{DynamicResource MainWindowEmphasizedFontSize}" VerticalAlignment="Center" Margin="0 0 4 0"/>
+                <TextBlock Text="{ci:Tr Controls.NotificationProviders.WeatherForecastNotificationProvider.Text.Tomorrow}" Classes="l-secondary" FontWeight="Bold" FontSize="{DynamicResource MainWindowEmphasizedFontSize}" VerticalAlignment="Center" Margin="0 0 4 0"/>
                 <controls:WeatherRangePackIconControl Value="{Binding Info.ForecastDaily.Weather.Value[1]}"
                                                       Height="24"
                                                       VerticalAlignment="Center"
@@ -65,7 +65,7 @@
                            Width="1"
                            Height="20" />
                 <!-- Tomorrow -->
-                <TextBlock Text="后天" Classes="l-secondary" FontWeight="Bold" FontSize="{DynamicResource MainWindowEmphasizedFontSize}" VerticalAlignment="Center" Margin="0 0 4 0"/>
+                <TextBlock Text="{ci:Tr Controls.NotificationProviders.WeatherForecastNotificationProvider.Text.TheDayAfterTomorrow}" Classes="l-secondary" FontWeight="Bold" FontSize="{DynamicResource MainWindowEmphasizedFontSize}" VerticalAlignment="Center" Margin="0 0 4 0"/>
                 <controls:WeatherRangePackIconControl Value="{Binding Info.ForecastDaily.Weather.Value[2]}"
                                                       Height="24"
                                                       VerticalAlignment="Center"

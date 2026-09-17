@@ -13,12 +13,12 @@
                 Classes="settings-container animated-intro"
                 DataContext="{Binding RelativeSource={RelativeSource AncestorType=welcomePages:ColorThemePage}}"
                 MaxWidth="600">
-        <TextBlock Text="颜色主题" HorizontalAlignment="Center"
+        <TextBlock Text="{ci:Tr WelcomePages.ColorThemePage.Text.ColorTheme}" HorizontalAlignment="Center"
                    Margin="0 0 0 4"
                    Theme="{StaticResource SubtitleTextBlockStyle}"/>
-        <TextBlock Text="设置 ClassIsland 的主题外观。" HorizontalAlignment="Center"
+        <TextBlock Text="{ci:Tr WelcomePages.ColorThemePage.Text.SetTheThemeAppearanceOfClassIsland}" HorizontalAlignment="Center"
                    Margin="0 0 0 8"/>
-        
+
         <ListBox SelectedIndex="{Binding ViewModel.SettingsService.Settings.Theme}">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -41,7 +41,7 @@
                             <demo:ThemeDemo Width="144" />
                         </ThemeVariantScope>
                     </Panel>
-                    <RadioButton Content="跟随系统" IsChecked="{Binding $parent[ListBoxItem].IsSelected}"/>
+                    <RadioButton Content="{ci:Tr WelcomePages.ColorThemePage.Content.FollowTheSystem}" IsChecked="{Binding $parent[ListBoxItem].IsSelected}"/>
                 </StackPanel>
             </ListBoxItem>
             <ListBoxItem>
@@ -49,7 +49,7 @@
                     <ThemeVariantScope RequestedThemeVariant="Light">
                         <demo:ThemeDemo Width="144" />
                     </ThemeVariantScope>
-                    <RadioButton Content="明亮" IsChecked="{Binding $parent[ListBoxItem].IsSelected}"/>
+                    <RadioButton Content="{ci:Tr WelcomePages.ColorThemePage.Content.Bright}" IsChecked="{Binding $parent[ListBoxItem].IsSelected}"/>
                 </StackPanel>
             </ListBoxItem>
             <ListBoxItem>
@@ -57,24 +57,24 @@
                     <ThemeVariantScope RequestedThemeVariant="Dark">
                         <demo:ThemeDemo Width="144" />
                     </ThemeVariantScope>
-                    <RadioButton Content="黑暗" IsChecked="{Binding $parent[ListBoxItem].IsSelected}"/>
+                    <RadioButton Content="{ci:Tr WelcomePages.ColorThemePage.Content.Darkness}" IsChecked="{Binding $parent[ListBoxItem].IsSelected}"/>
                 </StackPanel>
             </ListBoxItem>
         </ListBox>
-        
+
         <StackPanel Orientation="Horizontal" Spacing="4" HorizontalAlignment="Center">
             <Button Command="{x:Static views:WelcomeWindow.WelcomeNavigateBackCommand}"
-                    ToolTip.Tip="上一步"
+                    ToolTip.Tip="{ci:Tr WelcomePages.ColorThemePage.ToolTip.PreviousStep}"
                     Content="{ci:FluentIcon &#xE108;, FontSize=18}"
                     Width="48" Height="48"
                     CornerRadius="24"
                     Margin="0 8 0 0"/>
             <Button Command="{x:Static views:WelcomeWindow.WelcomeNavigateForwardCommand}"
-                    ToolTip.Tip="下一步"
+                    ToolTip.Tip="{ci:Tr WelcomePages.ColorThemePage.ToolTip.NextStep}"
                     Content="{ci:FluentIcon &#xE130;, FontSize=18}"
                     Width="48" Height="48"
                     CornerRadius="24"
-                    Classes="accent" 
+                    Classes="accent"
                     Margin="0 8 0 0"/>
         </StackPanel>
     </StackPanel>

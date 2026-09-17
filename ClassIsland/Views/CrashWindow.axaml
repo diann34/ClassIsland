@@ -13,12 +13,12 @@
                    mc:Ignorable="d"
                    HostStartupLocation="CenterScreen"
                    Icon="/Assets/AppLogo.ico"
-                   Header="ClassIsland 崩溃报告" HostHeight="450" HostWidth="800">
+                   Header="{ci:Tr CrashWindow.Header.ClassIslandCrashReport}" HostHeight="450" HostWidth="800">
     <Grid Margin="12" RowDefinitions="Auto,Auto,*,Auto,Auto,Auto" ColumnDefinitions="Auto,*">
         <!-- Header -->
         <controls1:StickerControl Grid.Row="0" Grid.Column="0"
                                   Width="48" Height="48"
-                                  Margin="0 -8 0 0" 
+                                  Margin="0 -8 0 0"
                                   VerticalAlignment="Top"
                                   StickerSource="/Assets/HoYoStickers/光辉矢愿_不可以看.png"
                                   StickerToolTip="光辉矢愿_不可以看"
@@ -30,10 +30,10 @@
                    Margin="8 0 16 16">
             <TextBlock.Styles>
                 <Style Selector="TextBlock">
-                    <Setter Property="Text" Value="ClassIsland 发生错误 ヽ(*。>Д&lt;)o゜"/>
-                </Style>  
+                    <Setter Property="Text" Value="{ci:Tr CrashWindow.Text.ClassIslandEncounteredAnErrorWithEmoticon}"/>
+                </Style>
                 <Style Selector=":no-easter-eggs TextBlock">
-                    <Setter Property="Text" Value="ClassIsland 发生错误"/>
+                    <Setter Property="Text" Value="{ci:Tr CrashWindow.Text.ClassIslandEncounteredAnError}"/>
                 </Style>
             </TextBlock.Styles>
         </TextBlock>
@@ -41,10 +41,10 @@
         <!-- Content -->
         <TextBlock Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" TextWrapping="Wrap" FontSize="14"
                    Margin="0 0 0 6">
-            <Run Text="ClassIsland 碰到了严重错误而无法正常运行。您可以保存下方的错误信息并向他人寻求帮助。如果您认为这是由软件本身的错误所致，请点击下方“反馈问题”按钮。"/>
+            <Run Text="{ci:Tr CrashWindow.Text.ClassIslandHasEncounteredASeriousErrorAndCannot}"/>
         </TextBlock>
         <TextBox Grid.Column="0" Grid.ColumnSpan="2"
-                 x:Name="TextBoxCrashInfo" Grid.Row="2" 
+                 x:Name="TextBoxCrashInfo" Grid.Row="2"
                  FontSize="13"
                  BorderThickness="0"
                  Padding="0"
@@ -59,10 +59,10 @@
                            IsOpen="{Binding IsCritical}"
                            Severity="Error" IsClosable="False"
                            Margin="0 6 0 0"
-                           Message="这个异常无法被忽略，您需要重启或退出应用。很抱歉对您的使用造成不便。"/>
-        
+                           Message="{ci:Tr CrashWindow.Message.ThisExceptionCannotBeIgnoredYouNeedTo}"/>
+
         <Separator Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4" Margin="-12 8 -12 0"/>
-        
+
         <!-- Bottom -->
         <Grid Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2"
               ColumnDefinitions="Auto, *, Auto" Margin="-12 0 -12 -12"
@@ -71,27 +71,27 @@
                 <Button Margin="0 0 6 0"
                                 IsVisible="{Binding IsCritical, Mode=OneTime}"
                                 Click="ButtonDebug_OnClick">
-                    <controls1:IconText Glyph="&#xE2C8;" Text="调试" Spacing="3"/>
+                    <controls1:IconText Glyph="&#xE2C8;" Text="{ci:Tr CrashWindow.Text.Debug}" Spacing="3"/>
                 </Button>
                 <Button Margin="0 0 6 0"
                         IsVisible="{Binding AllowIgnore, Mode=OneTime}"
                         Click="ButtonIgnore_OnClick">
-                    <controls1:IconText Glyph="&#xE671;" Text="忽略" Spacing="3"/>
+                    <controls1:IconText Glyph="&#xE671;" Text="{ci:Tr CrashWindow.Text.Ignore}" Spacing="3"/>
                 </Button>
                 <Button Margin="0 0 6 0" Click="ButtonExit_OnClick">
-                    <controls1:IconText Glyph="&#xE0DF;" Text="退出应用" Spacing="3"/>
+                    <controls1:IconText Glyph="&#xE0DF;" Text="{ci:Tr CrashWindow.Text.ExitApplication}" Spacing="3"/>
                 </Button>
                 <Button Click="ButtonRestart_OnClick" Classes="accent">
-                    <controls1:IconText Glyph="&#xE0BD;" Text="重启应用" Spacing="3"/>
+                    <controls1:IconText Glyph="&#xE0BD;" Text="{ci:Tr CrashWindow.Text.RestartApplication}" Spacing="3"/>
                 </Button>
             </StackPanel>
-            
+
             <StackPanel Grid.Column="2" VerticalAlignment="Center" Orientation="Horizontal" Margin="12">
                 <Button Click="ButtonCopy_OnClick" Margin="0 0 6 0">
-                    <controls1:IconText Glyph="&#xE58B;" Text="复制" Spacing="3"/>
+                    <controls1:IconText Glyph="&#xE58B;" Text="{ci:Tr CrashWindow.Text.Copy}" Spacing="3"/>
                 </Button>
                 <Button Click="ButtonFeedback_OnClick">
-                    <controls1:IconText Glyph="&#xED11;" Text="反馈问题" Spacing="3"/>
+                    <controls1:IconText Glyph="&#xED11;" Text="{ci:Tr CrashWindow.Text.ReportIssue}" Spacing="3"/>
                 </Button>
             </StackPanel>
         </Grid>

@@ -65,11 +65,11 @@
                         <!--  右：操作按钮  -->
                         <ci:AnimatedIconButton Grid.Column="3"
                                                Glyph="&#xE809;"
-                                               Text="错误"
+                                               Text="{ci:Tr Core.Controls.Automation.ActionItemControl.Text.Error}"
                                                Foreground="IndianRed"
                                                IsVisible="{Binding $parent[local:ActionItemControl].ActionItem.Exception, Converter={x:Static ObjectConverters.IsNotNull}}"
                                                Theme="{StaticResource TransparentButton}"
-                                               ToolTip.Tip="上次运行此行动时发生错误。">
+                                               ToolTip.Tip="{ci:Tr Core.Controls.Automation.ActionItemControl.ToolTip.AnErrorOccurredTheLastTimeThisAction}">
                             <ci:AnimatedIconButton.Flyout>
                                 <Flyout>
                                     <SelectableTextBlock Text="{Binding $parent[local:ActionItemControl].ActionItem.Exception, Mode=OneWay}"
@@ -89,13 +89,13 @@
                                                Margin="2 0"
                                                VerticalContentAlignment="Center"
                                                Glyph="&#xE671;"
-                                               Text="删除"
+                                               Text="{ci:Tr Core.Controls.Automation.ActionItemControl.Text.Delete}"
                                                Classes="circle"
                                                Command="{Binding $parent[local:ActionItemControl].RemoveActionCommand}"
                                                CommandParameter="{Binding}"
                                                IsVisible="{Binding !$parent[local:ActionItemControl].ActionItem.IsWorking}"
                                                Theme="{StaticResource TransparentButton}"
-                                               ToolTip.Tip="删除该行动。" />
+                                               ToolTip.Tip="{ci:Tr Core.Controls.Automation.ActionItemControl.ToolTip.DeleteThisAction}" />
                     </Grid>
 
                     <ProgressBar Height="1"

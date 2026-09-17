@@ -15,18 +15,18 @@
                       Width="400">
             <StackPanel Classes="animated-intro">
                 <TextBlock Margin="0 0 0 8"
-                           Text="提醒设置"
+                           Text="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Text.ReminderSettings}"
                            Theme="{StaticResource SubtitleTextBlockStyle}" />
 
 
                 <ci:Field Margin="0 0 0 8"
-                          Label="标题内容">
+                          Label="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Label.TitleContent}">
                     <TextBox Text="{Binding Settings.Mask}"
                              TextWrapping="Wrap" />
                 </ci:Field>
                 <ci:Field Margin="0 0 0 20"
-                          Label="标题持续时间"
-                          Suffix="秒">
+                          Label="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Label.TitleDuration}"
+                          Suffix="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Suffix.Seconds}">
                     <NumericUpDown MinWidth="150"
                                    Minimum="0"
                                    Value="{Binding Settings.MaskDurationSeconds, Converter={x:Static ci:NotNaNConverter.Instance}}" />
@@ -34,45 +34,45 @@
 
 
                 <ci:Field Margin="0 0 0 8"
-                          Label="正文内容">
+                          Label="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Label.BodyContent}">
                     <TextBox Text="{Binding Settings.Content}"
                              TextWrapping="Wrap"
-                             Watermark="选填" />
+                             Watermark="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Watermark.Optional}" />
                 </ci:Field>
                 <ci:Field Margin="0 0 0 20"
-                          Label="正文持续时间"
-                          Suffix="秒">
+                          Label="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Label.BodyDuration}"
+                          Suffix="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Suffix.Seconds}">
                     <NumericUpDown MinWidth="150"
                                    Minimum="0"
                                    Value="{Binding Settings.ContentDurationSeconds, Converter={x:Static ci:NotNaNConverter.Instance}}" />
                 </ci:Field>
 
 
-                <CheckBox Content="启用标题语音"
+                <CheckBox Content="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.EnableTitleVoice}"
                           IsChecked="{Binding Settings.IsMaskSpeechEnabled}" />
-                <CheckBox Content="启用正文语音"
+                <CheckBox Content="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.EnableContentVoice}"
                           IsChecked="{Binding Settings.IsContentSpeechEnabled}" />
-                <CheckBox Content="等待提醒结束"
+                <CheckBox Content="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.WaitForReminderToEnd}"
                           IsChecked="{Binding Settings.IsWaitForCompleteEnabled}"
-                          ToolTip.Tip="启用后，行动将等待此提醒直至提醒结束。"/>
+                          ToolTip.Tip="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.ToolTip.WhenEnabledActionsWillWaitForThisReminder}"/>
 
                 <Separator Margin="0 8" />
 
-                <CheckBox Content="启用高级设置"
+                <CheckBox Content="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.EnableAdvancedSettings}"
                           IsChecked="{Binding Settings.IsAdvancedSettingsEnabled}" />
                 <StackPanel IsVisible="{Binding Settings.IsAdvancedSettingsEnabled}">
-                    <CheckBox Content="置顶提醒"
+                    <CheckBox Content="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.PinReminder}"
                               IsChecked="{Binding Settings.IsTopmostEnabled}" />
-                    <CheckBox Content="启用提醒特效"
+                    <CheckBox Content="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.EnableReminderEffects}"
                               IsChecked="{Binding Settings.IsEffectEnabled}" />
                     <CheckBox Margin="0 0 0 4"
-                              Content="启用提醒音效"
+                              Content="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.EnableReminderSounds}"
                               IsChecked="{Binding Settings.IsSoundEffectEnabled}" />
                     <ci:Field IsVisible="{Binding Settings.IsSoundEffectEnabled}"
-                              Label="自定义提醒音效">
+                              Label="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Label.CustomReminderSound}">
                         <Grid ColumnDefinitions="*,Auto">
                             <TextBox Text="{Binding Settings.CustomSoundEffectPath}"
-                                     Watermark="（默认音效）" />
+                                     Watermark="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Watermark.DefaultSound}" />
                             <controls:FileBrowserButton Grid.Column="1"
                                                         VerticalAlignment="Stretch"
                                                         Content="{ci:FluentIcon &#xE88D;}"
@@ -88,7 +88,7 @@
         <Button Click="ButtonShowSettings_OnClick"
                 Theme="{StaticResource TransparentButton}">
             <ci:IconText Glyph="&#xEF27;"
-                         Text="提醒设置…"
+                         Text="{ci:Tr Controls.ActionSettingsControls.NotificationActionSettingsControl.Text.ReminderSettings2}"
                          Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}" />
         </Button>
         <StackPanel Grid.Column="1"

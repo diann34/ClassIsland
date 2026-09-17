@@ -9,7 +9,7 @@
         xmlns:asyncImageLoader="clr-namespace:AsyncImageLoader;assembly=AsyncImageLoader.Avalonia"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ClassIsland.Views.SplashWindow"
-        Title="ClassIsland 正在启动…"
+        Title="{ci:Tr SplashWindow.Title.ClassIslandIsStarting}"
         WindowStartupLocation="CenterScreen"
         Topmost="True"
         SystemDecorations="None"
@@ -39,7 +39,7 @@
                     </TransformGroup>
                 </StackPanel.RenderTransform>
                 <asyncImageLoader:AdvancedImage Stretch="Uniform"
-                       Height="24" 
+                       Height="24"
                        VerticalAlignment="Center"
                        Margin="0 0 8 0"
                        Classes.use-default-logo="{Binding SettingsService.Settings.SplashCustomLogoSource, Converter={x:Static ObjectConverters.Equal}, ConverterParameter=''}">
@@ -52,7 +52,7 @@
                         </Style>
                     </asyncImageLoader:AdvancedImage.Styles>
                 </asyncImageLoader:AdvancedImage>
-                <TextBlock Text="ClassIsland" 
+                <TextBlock Text="ClassIsland"
                            VerticalAlignment="Center"
                            FontSize="20"
                            FontWeight="Medium"
@@ -71,11 +71,11 @@
                     </TransformGroup>
                 </StackPanel.RenderTransform>
                 <controls:FAProgressRing Width="24"
-                             Height="24" 
+                             Height="24"
                              IsIndeterminate="True"
                              VerticalAlignment="Center"
                              Margin="0 0 4 0"/>
-                <TextBlock Text="{Binding SplashService.SplashStatus, Mode=OneWay}" 
+                <TextBlock Text="{Binding SplashService.SplashStatus, Mode=OneWay}"
                            VerticalAlignment="Center"
                            FontSize="16"
                            FontWeight="Regular"/>
@@ -94,7 +94,7 @@
                 <Rectangle Width="400" Height="4" Fill="White" Canvas.Bottom="0"
                            x:Name="ProgressBarFill"/>
             </Canvas>
-            
+
         </Grid>
     </Border>
 </Window>

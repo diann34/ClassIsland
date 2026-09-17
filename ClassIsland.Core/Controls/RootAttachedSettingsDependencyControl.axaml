@@ -1,12 +1,13 @@
 <UserControl x:Class="ClassIsland.Core.Controls.RootAttachedSettingsDependencyControl"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ci="http://classisland.tech/schemas/xaml/core"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ClassIsland.Core.Controls"
              xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
              xmlns:materialDesign="https://github.com/AvaloniaCommunity/Material.Avalonia"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800"
              Width="332">
     <Grid Width="300" Margin="16" DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:RootAttachedSettingsDependencyControl}}">
@@ -15,15 +16,15 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0">
-            <TextBlock Text="附加设置依赖" Theme="{StaticResource SubtitleTextBlockStyle}"
+            <TextBlock Text="{ci:Tr Core.Controls.RootAttachedSettingsDependencyControl.Text.AdditionalSettingsDependency}" Theme="{StaticResource SubtitleTextBlockStyle}"
                            Margin="0 0 0 8" />
-            <TextBlock Text="以下附加设置节点可能会覆盖此处的设置。" />
+            <TextBlock Text="{ci:Tr Core.Controls.RootAttachedSettingsDependencyControl.Text.TheFollowingAdditionalSettingsNodesMayOverrideThe}" />
             <Button Theme="{StaticResource TransparentButton}"
                     Margin="0 4 0 8"
                     HorizontalAlignment="Left"
                     Click="ButtonRefresh_OnClick">
                 <Button.Content>
-                    <local:IconText Glyph="&#xE0B5;" Text="刷新"/>
+                    <local:IconText Glyph="&#xE0B5;" Text="{ci:Tr Core.Controls.RootAttachedSettingsDependencyControl.Text.Refresh}"/>
                 </Button.Content>
             </Button>
         </StackPanel>
@@ -50,7 +51,7 @@
         </ListBox>
 
         <!-- 无结果 -->
-        
+
     </Grid>
 </UserControl>
 

@@ -23,23 +23,23 @@
             </Setter>
         </Style>
     </UserControl.Styles>
-    <Grid RowDefinitions="Auto *" 
+    <Grid RowDefinitions="Auto *"
           DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=tutorialEditor:TutorialActionsEditControl}}">
         <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal"
                     Classes="items-valign-center"
                     Spacing="4">
             <ci:AnimatedIconButton Glyph="&#xE00D;"
-                                   Text="添加"
+                                   Text="{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Text.Added}"
                                    Click="ButtonAdd_OnClick"/>
             <ci:AnimatedIconButton Glyph="&#xE58B;"
-                                   Text="复制"
+                                   Text="{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Text.Copy}"
                                    Click="ButtonDuplicate_OnClick"/>
             <ci:AnimatedIconButton Glyph="&#xE61D;"
-                                   Text="删除"
+                                   Text="{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Text.Delete}"
                                    Foreground="IndianRed"
                                    Click="ButtonDelete_OnClick"/>
         </StackPanel>
-        <ListBox Grid.Row="1" 
+        <ListBox Grid.Row="1"
                  ItemsSource="{Binding TutorialActions}"
                  SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
                  Classes="item-sort">
@@ -51,15 +51,15 @@
                         <ComboBox Grid.Row="0" Grid.Column="1"
                                   SelectionChanged="SelectingItemsControl_OnSelectionChanged"
                                   SelectedIndex="{Binding Kind, Converter={x:Static views:TutorialEditorWindow.TutorialActionKindToIntConverter}}">
-                            <ComboBoxItem>无</ComboBoxItem>
-                            <ComboBoxItem>下一句</ComboBoxItem>
-                            <ComboBoxItem>上一句</ComboBoxItem>
-                            <ComboBoxItem>下一段</ComboBoxItem>
-                            <ComboBoxItem>上一段</ComboBoxItem>
-                            <ComboBoxItem>跳转到段落</ComboBoxItem>
-                            <ComboBoxItem>停止</ComboBoxItem>
-                            <ComboBoxItem>执行行动</ComboBoxItem>
-                            <ComboBoxItem>执行 Uri</ComboBoxItem>
+                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.None}</ComboBoxItem>
+                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.NextSentence}</ComboBoxItem>
+                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.PreviousSentence}</ComboBoxItem>
+                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.NextParagraph}</ComboBoxItem>
+                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.PreviousParagraph}</ComboBoxItem>
+                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.JumpToParagraph}</ComboBoxItem>
+                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.Stop}</ComboBoxItem>
+                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.ExecuteAction}</ComboBoxItem>
+                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.ExecuteUri}</ComboBoxItem>
                         </ComboBox>
                         <TextBox Grid.Row="0" Grid.Column="2" Text="{Binding StringParameter}">
                             <TextBox.IsVisible>

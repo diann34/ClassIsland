@@ -1,7 +1,7 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:ci="http://classisland.tech/schemas/xaml/core">
-    
+
     <ControlTheme TargetType="ListBoxItem" x:Key="ChipListBoxItemTheme">
         <ControlTheme.Resources>
             <ci:SizeDoubleToCornerRadiusConverter x:Key="SizeDoubleToCornerRadiusConverter"/>
@@ -33,8 +33,8 @@
         </Setter>
         <Setter Property="MinWidth" Value="0"/>
         <Setter Property="Margin" Value="2"/>
-        
-        
+
+
         <Style Selector="^[IsSelected=True] /template/ Border#ContainerBorder">
             <Setter Property="Background" Value="{DynamicResource AccentFillColorDefaultBrush}"/>
             <Setter Property="BorderBrush" Value="{DynamicResource AccentFillColorDefaultBrush}"/>
@@ -53,7 +53,7 @@
             <Setter Property="TextElement.Foreground" Value="{DynamicResource ControlStrokeColorDefaultBrush}"/>
         </Style>
     </ControlTheme>
-    
+
     <ControlTheme TargetType="ListBox" x:Key="ChipListBoxTheme">
         <ControlTheme.Resources>
             <ControlTheme BasedOn="{StaticResource ChipListBoxItemTheme}"
@@ -74,22 +74,22 @@
         </Setter>
         <Setter Property="ItemContainerTheme" Value="{StaticResource ChipListBoxItemTheme}"/>
     </ControlTheme>
-    
+
     <Design.PreviewWith>
         <Border Padding="20" Width="400">
             <ListBox Theme="{StaticResource ChipListBoxTheme}">
-                <ListBoxItem>大地</ListBoxItem>
-                <ListBoxItem>海洋</ListBoxItem>
-                <ListBoxItem>天空</ListBoxItem>
-                <ListBoxItem IsSelected="True">负世</ListBoxItem>
-                <ListBoxItem>理性</ListBoxItem>
-                <ListBoxItem>浪漫</ListBoxItem>
-                <ListBoxItem>纷争</ListBoxItem>
-                <ListBoxItem>死亡</ListBoxItem>
-                <ListBoxItem>诡计</ListBoxItem>
-                <ListBoxItem>门径</ListBoxItem>
-                <ListBoxItem>律法</ListBoxItem>
-                <ListBoxItem>岁月</ListBoxItem>
+                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Earth}</ListBoxItem>
+                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Ocean}</ListBoxItem>
+                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Sky}</ListBoxItem>
+                <ListBoxItem IsSelected="True">{ci:Tr Core.Themes.ChipListBox.Content.NegativeWorld}</ListBoxItem>
+                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Reason}</ListBoxItem>
+                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Romance}</ListBoxItem>
+                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Conflict}</ListBoxItem>
+                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Death}</ListBoxItem>
+                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Trick}</ListBoxItem>
+                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Doorway}</ListBoxItem>
+                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Law}</ListBoxItem>
+                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Time}</ListBoxItem>
                 <ListBoxItem>■■</ListBoxItem>
             </ListBox>
         </Border>

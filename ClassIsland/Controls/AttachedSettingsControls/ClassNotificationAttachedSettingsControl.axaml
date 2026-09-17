@@ -17,7 +17,7 @@
     <TabControl Classes="compact" Padding="0"
                 x:Name="MasterTabControl"
                 DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:ClassNotificationAttachedSettingsControl}}">
-        <TabItem Header="准备上课">
+        <TabItem Header="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Header.PrepareForClass}">
             <TabItem.IsVisible>
                 <MultiBinding Converter="{x:Static BoolConverters.Or}">
                     <Binding Path="AttachedTimePointTimeType" Converter="{x:Static ObjectConverters.Equal}">
@@ -35,29 +35,29 @@
             <StackPanel Spacing="4">
                 <!-- 启用准备上课提醒 -->
                 <CheckBox IsChecked="{Binding Settings.IsClassOnPreparingNotificationEnabled}"
-                          Content="启用准备上课提醒。" />
+                          Content="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Content.EnablePrepareForClassReminder}" />
 
                 <!-- 准备上课提醒时间 -->
-                <controls1:Field Suffix="秒" Label="准备上课提醒时间">
+                <controls1:Field Suffix="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Suffix.Seconds}" Label="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Label.PrepareForClassReminderTime}">
                     <controls2:FANumberBox Maximum="3600" Minimum="0"
                                          Value="{Binding Settings.ClassPreparingDeltaTime, Converter={x:Static ci:NotNaNConverter.Instance}}"
                                          SpinButtonPlacementMode="Compact" />
                 </controls1:Field>
-                
+
                 <!-- 准备上课遮罩文字 -->
-                <controls1:Field Label="准备上课遮罩文字">
+                <controls1:Field Label="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Label.PrepareForClassMaskText}">
                     <TextBox Text="{Binding Settings.ClassOnPreparingMaskText}" />
                 </controls1:Field>
 
                 <!-- 准备上课提醒文字 -->
-                <controls1:Field Label="准备上课提醒文字">
+                <controls1:Field Label="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Label.PrepareForClassReminderText}">
                     <TextBox Text="{Binding Settings.ClassOnPreparingText}"
-                             Watermark="（禁用）" />
+                             Watermark="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Watermark.Disabled}" />
                 </controls1:Field>
-                
+
             </StackPanel>
         </TabItem>
-        <TabItem Header="上课">
+        <TabItem Header="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Header.InClass}">
             <TabItem.IsVisible>
                 <MultiBinding Converter="{x:Static BoolConverters.Or}">
                     <Binding Path="AttachedTimePointTimeType" Converter="{x:Static ObjectConverters.Equal}">
@@ -75,16 +75,16 @@
             <StackPanel Spacing="4">
                 <!-- 启用上课提醒 -->
                 <CheckBox IsChecked="{Binding Settings.IsClassOnNotificationEnabled}"
-                          Content="启用上课提醒。" />
+                          Content="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Content.EnableClassStartReminder}" />
 
                 <!-- 上课遮罩文字 -->
-                <controls1:Field Label="上课遮罩文字">
+                <controls1:Field Label="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Label.ClassMaskText}">
                     <TextBox Text="{Binding Settings.ClassOnMaskText}" />
                 </controls1:Field>
 
             </StackPanel>
         </TabItem>
-        <TabItem Header="课间休息">
+        <TabItem Header="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Header.BreakTime}">
             <TabItem.IsVisible>
                 <MultiBinding Converter="{x:Static BoolConverters.And}">
                     <MultiBinding Converter="{x:Static BoolConverters.Or}">
@@ -109,15 +109,15 @@
             <StackPanel Spacing="4">
                 <!-- 启用下课提醒 -->
                 <CheckBox IsChecked="{Binding Settings.IsClassOffNotificationEnabled}"
-                          Content="启用下课提醒。" />
+                          Content="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Content.EnableClassEndReminder}" />
 
                 <!-- 下课提醒文字 -->
-                <controls1:Field Label="下课提醒文字">
+                <controls1:Field Label="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Label.ClassEndReminderText}">
                     <TextBox Text="{Binding Settings.ClassOffOverlayText}"
-                             Watermark="（禁用）" />
+                             Watermark="{ci:Tr Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Watermark.Disabled}" />
                 </controls1:Field>
             </StackPanel>
         </TabItem>
-        
+
     </TabControl>
 </ci:AttachedSettingsControlBase>

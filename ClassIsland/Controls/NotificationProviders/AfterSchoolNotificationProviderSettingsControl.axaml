@@ -16,24 +16,24 @@
         DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:AfterSchoolNotificationProviderSettingsControl}}">
         <StackPanel Classes="settings-container animated-intro" Margin="0">
             <!-- 附加设置覆盖提示 -->
-            <controls:FAInfoBar Message="此处的设置可以在档案设置中被附加设置覆盖。"
+            <controls:FAInfoBar Message="{ci:Tr Controls.NotificationProviders.AfterSchoolNotificationProviderSettingsControl.Message.TheSettingsHereCanBeOverwrittenByThe}"
                               IsOpen="True" IsClosable="False">
                 <controls:FAInfoBar.ActionButton>
                     <Button Click="ButtonShowAttachedSettingsInfo_OnClick"
-                            Content="查看…" />
+                            Content="{ci:Tr Controls.NotificationProviders.AfterSchoolNotificationProviderSettingsControl.Content.View}" />
                 </controls:FAInfoBar.ActionButton>
             </controls:FAInfoBar>
             <!-- 在放学时发出提醒 -->
             <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xed35;}"
-                                       Header="在放学时发出提醒"
-                                       Description="在当日所有时间点结束后显示醒目提醒，提示已经放学。"
+                                       Header="{ci:Tr Controls.NotificationProviders.AfterSchoolNotificationProviderSettingsControl.Header.SendRemindersAfterSchool}"
+                                       Description="{ci:Tr Controls.NotificationProviders.AfterSchoolNotificationProviderSettingsControl.Description.DisplayAProminentReminderAtTheEndOf}"
                                        IsExpanded="{Binding Settings.IsEnabled, Mode=OneWay}">
                 <controls:FASettingsExpander.Footer>
                     <ToggleSwitch IsChecked="{Binding Settings.IsEnabled}"/>
                 </controls:FASettingsExpander.Footer>
                 <!-- 提醒显示内容 -->
                 <controls:FASettingsExpanderItem>
-                    <ci:Field Label="提醒显示内容">
+                    <ci:Field Label="{ci:Tr Controls.NotificationProviders.AfterSchoolNotificationProviderSettingsControl.Label.ReminderDisplayContent}">
                         <TextBox Text="{Binding Settings.NotificationMsg}" />
                     </ci:Field>
                 </controls:FASettingsExpanderItem>

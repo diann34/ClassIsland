@@ -1,6 +1,7 @@
 <UserControl x:Class="ClassIsland.Core.Controls.Automation.TriggerSettingsControl"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ci="http://classisland.tech/schemas/xaml/core"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:dd="urn:gong-wpf-dragdrop"
@@ -26,7 +27,7 @@
                                     <Button Grid.Column="0"
                                             Theme="{StaticResource TransparentButton}"
                                             Classes="circle"
-                                            ToolTip.Tip="删除"
+                                            ToolTip.Tip="{ci:Tr Core.Controls.Automation.TriggerSettingsControl.ToolTip.Delete}"
                                             Command="{Binding RemoveTriggerCommand, RelativeSource={RelativeSource AncestorType=automation:TriggerSettingsControl}}"
                                             CommandParameter="{Binding}"
                                             Margin="0 0 2 0"
@@ -60,7 +61,7 @@
                 Click="ButtonAddTrigger_OnClick"
                 HorizontalAlignment="Left">
             <controls:IconText Glyph="&#xE00D;"
-                               Text="添加触发器"
+                               Text="{ci:Tr Core.Controls.Automation.TriggerSettingsControl.Text.AddTrigger}"
                                Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}"/>
         </Button>
     </StackPanel>

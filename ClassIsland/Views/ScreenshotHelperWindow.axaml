@@ -6,10 +6,10 @@
           xmlns:views="clr-namespace:ClassIsland.Views"
           mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
           x:Class="ClassIsland.Views.ScreenshotHelperWindow"
-          Header="截图"
+          Header="{ci:Tr ScreenshotHelperWindow.Header.Screenshot}"
           d:DataContext="{d:DesignInstance views:ScreenshotHelperWindow}">
     <StackPanel Spacing="4">
-        <ci:Field Label="窗口">
+        <ci:Field Label="{ci:Tr ScreenshotHelperWindow.Label.Window}">
             <ComboBox ItemsSource="{Binding ViewModel.Windows}"
                       SelectedItem="{Binding ViewModel.SelectedWindow}">
                 <ComboBox.ItemTemplate>
@@ -23,15 +23,15 @@
                 </ComboBox.ItemTemplate>
             </ComboBox>
         </ci:Field>
-        <ci:Field Label="保存文件夹">
+        <ci:Field Label="{ci:Tr ScreenshotHelperWindow.Label.SaveFolder}">
             <TextBox Text="{Binding ViewModel.ImageBasePath}"/>
         </ci:Field>
-        <ci:Field Label="缩放">
+        <ci:Field Label="{ci:Tr ScreenshotHelperWindow.Label.Scale}">
             <NumericUpDown Value="{Binding ViewModel.Scale, Converter={x:Static ci:NotNaNConverter.Instance}}"/>
         </ci:Field>
         <Grid>
-            <Button HorizontalAlignment="Left" Click="ButtonRefresh_OnClick">刷新</Button>
-            <Button HorizontalAlignment="Right" Classes="accent" Click="ButtonScreenshot_OnClick">截图</Button>
+            <Button HorizontalAlignment="Left" Click="ButtonRefresh_OnClick">{ci:Tr ScreenshotHelperWindow.Content.Refresh}</Button>
+            <Button HorizontalAlignment="Right" Classes="accent" Click="ButtonScreenshot_OnClick">{ci:Tr ScreenshotHelperWindow.Content.Screenshot}</Button>
         </Grid>
     </StackPanel>
 </ci:ViewBase>

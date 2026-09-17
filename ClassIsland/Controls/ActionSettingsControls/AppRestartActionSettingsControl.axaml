@@ -1,4 +1,4 @@
-﻿<ci:ActionSettingsControlBase x:Class="ClassIsland.Controls.ActionSettingsControls.AppRestartActionSettingsControl"
+<ci:ActionSettingsControlBase x:Class="ClassIsland.Controls.ActionSettingsControls.AppRestartActionSettingsControl"
                               x:TypeArguments="actionSettings:AppRestartActionSettings"
                               d:DataContext="{d:DesignInstance Type=local:AppRestartActionSettingsControl}"
                               xmlns="https://github.com/avaloniaui"
@@ -15,7 +15,7 @@
     <Grid ColumnDefinitions="Auto,Auto,*,Auto"
           DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:AppRestartActionSettingsControl}}">
 
-        <CheckBox IsChecked="{Binding Settings.Value}" Content="静默重启"></CheckBox>
+        <CheckBox IsChecked="{Binding Settings.Value}" Content="{ci:Tr Controls.ActionSettingsControls.AppRestartActionSettingsControl.Content.SilentRestart}"></CheckBox>
 
     </Grid>
 </ci:ActionSettingsControlBase>

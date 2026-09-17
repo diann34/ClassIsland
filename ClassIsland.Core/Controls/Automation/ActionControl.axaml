@@ -53,7 +53,7 @@
         <Button HorizontalAlignment="Left"
                 Theme="{StaticResource TransparentButton}">
             <controls:IconText Glyph="&#xE00D;"
-                               Text="添加行动"
+                               Text="{ci:Tr Core.Controls.Automation.ActionControl.Text.AddAction}"
                                Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}" />
             <Button.Flyout>
                 <fa:FAMenuFlyout ItemsSource="{x:Static services:IActionService.IListActionMenuTree}" />

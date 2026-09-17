@@ -72,7 +72,7 @@
                 <Setter Property="VerticalContentAlignment" Value="Stretch"/>
                 <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                 <Setter Property="ClipToBounds" Value="False"/>
-                <Setter Property="Template" > 
+                <Setter Property="Template" >
                     <ControlTemplate>
                         <controls2:AdornerAttachHostControl x:Name="AdornerAttachHostControl"
                                                             ClipToBounds="False">
@@ -92,7 +92,7 @@
                             </controls2:AdornerAttachHostControl.IsAttached>
                             <controls2:AdornerAttachHostControl.AdornerTemplate>
                                 <ControlTemplate>
-                                    <Panel Margin="-9999 -46 -9999 46" 
+                                    <Panel Margin="-9999 -46 -9999 46"
                                            d:DataContext="{d:DesignInstance components:ComponentSettings}"
                                            x:DataType="components:ComponentSettings">
                                         <Panel.Resources>
@@ -121,21 +121,21 @@
                                                             Command="{Binding Data.ShowComponentSettingsCommand, Source={StaticResource ParentBindingProxy}}"
                                                             CommandParameter="{Binding}"
                                                             x:Name="ButtonComponentSettings"
-                                                            ToolTip.Tip="组件设置" />
+                                                            ToolTip.Tip="{ci:Tr Controls.EditMode.EditableComponentsListBox.ToolTip.ComponentSettings}" />
                                                     <Button Theme="{StaticResource TransparentButton}"
                                                             IsVisible="{Binding AssociatedComponentInfo.IsComponentContainer}"
                                                             Content="{ci:FluentIcon &#xEC30;}"
                                                             Command="{Binding Data.OpenChildComponentsCommand, Source={StaticResource ParentBindingProxy}}"
                                                             CommandParameter="{Binding}"
                                                             x:Name="ButtonChildren"
-                                                            ToolTip.Tip="查看子组件" />
+                                                            ToolTip.Tip="{ci:Tr Controls.EditMode.EditableComponentsListBox.ToolTip.ViewSubcomponents}" />
                                                     <Button Theme="{StaticResource TransparentButton}"
                                                             Content="{ci:FluentIcon &#xE61D;}"
                                                             Foreground="IndianRed"
                                                             Command="{Binding Data.DeleteComponentCommand, Source={StaticResource ParentBindingProxy}}"
                                                             CommandParameter="{Binding}"
                                                             x:Name="ButtonDeleteComponent"
-                                                            ToolTip.Tip="删除" />
+                                                            ToolTip.Tip="{ci:Tr Controls.EditMode.EditableComponentsListBox.ToolTip.Delete}" />
                                                     <Line VerticalAlignment="Center"
                                                           Stroke="{DynamicResource DividerStrokeColorDefaultBrush}"
                                                           StrokeThickness="1"
@@ -143,10 +143,10 @@
                                                     </Line>
                                                     <Button Theme="{StaticResource TransparentButton}"
                                                             Content="{ci:FluentIcon &#xEBAC;}"
-                                                            ToolTip.Tip="更多选项…">
+                                                            ToolTip.Tip="{ci:Tr Controls.EditMode.EditableComponentsListBox.ToolTip.MoreOptions}">
                                                         <Button.Flyout>
                                                             <MenuFlyout>
-                                                                <MenuItem Header="包裹到新容器"
+                                                                <MenuItem Header="{ci:Tr Controls.EditMode.EditableComponentsListBox.Header.WrapItInANewContainer}"
                                                                           Icon="{ci:FluentIcon &#xe27e;}"
                                                                           ItemsSource="{Binding Data.ContainerComponents, Source={StaticResource ParentBindingProxy}}">
                                                                     <MenuItem.ItemContainerTheme>
@@ -174,7 +174,7 @@
                                                                         </ControlTheme>
                                                                     </MenuItem.ItemContainerTheme>
                                                                 </MenuItem>
-                                                                <MenuItem Header="创建副本" Icon="{ci:FluentIcon &#xeeb9;}"
+                                                                <MenuItem Header="{ci:Tr Controls.EditMode.EditableComponentsListBox.Header.CreateACopy}" Icon="{ci:FluentIcon &#xeeb9;}"
                                                                           CommandParameter="{Binding}"
                                                                           Command="{Binding Data.DuplicateComponentCommand, Source={StaticResource ParentBindingProxy}}" />
                                                             </MenuFlyout>
@@ -213,7 +213,7 @@
                                                   Margin="0"
                                                   IsHitTestVisible="False">
                                 </ContentPresenter>
-                                
+
                                 <Panel x:Name="ContainerIndicatorPanel">
                                     <Panel.IsVisible>
                                         <MultiBinding Converter="{x:Static BoolConverters.And}">
@@ -272,13 +272,13 @@
         <Setter Property="(Interaction.Behaviors)">
             <BehaviorCollectionTemplate>
                 <BehaviorCollection>
-                    <ManagedContextDropBehavior OverClass="TargetHighlight" 
+                    <ManagedContextDropBehavior OverClass="TargetHighlight"
                                                 Handler="{StaticResource DropHandler}"
                                                 Context="{Binding ItemsSource, RelativeSource={RelativeSource TemplatedParent}}"/>
                 </BehaviorCollection>
             </BehaviorCollectionTemplate>
         </Setter>
-        
+
         <Style Selector="^ ListBoxItem[(controls1|EditableComponentsListBox.IsEditableComponentsListBoxChild)=True]">
             <Setter Property="(Interaction.Behaviors)">
                 <BehaviorCollectionTemplate>
@@ -303,7 +303,7 @@
                 </BehaviorCollectionTemplate>
             </Setter>
         </Style>
-        
+
         <Style Selector="^:dragging /template/ Border#HighlightBorder">
             <Setter Property="AdornerLayer.Adorner">
                 <Template>

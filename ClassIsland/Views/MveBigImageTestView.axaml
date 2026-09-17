@@ -8,8 +8,8 @@
              x:Class="ClassIsland.Views.MveBigImageTestView">
     <Grid RowDefinitions="Auto Auto *">
         <TextBox Grid.Row="1" x:Name="TextBoxImagePath"
-                 Text="E:\Data\图片\[世界] 107044708.png"/>
-        <asyncImageLoader:AdvancedImage 
+                 Text="{ci:Tr MveBigImageTestView.Text.EDataPicturesWorld107044708Png}"/>
+        <asyncImageLoader:AdvancedImage
             Source="{Binding #TextBoxImagePath.Text}"
             Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
     </Grid>

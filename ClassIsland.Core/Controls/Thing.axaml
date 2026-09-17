@@ -1,11 +1,12 @@
 <Styles xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ci="http://classisland.tech/schemas/xaml/core"
         xmlns:controls="using:ClassIsland.Core.Controls"
         xmlns:controls1="clr-namespace:FluentAvalonia.UI.Controls;assembly=FluentAvalonia">
     <Design.PreviewWith>
         <controls:Thing IconSource="{controls:FluentIconSource &#xE232;}"
-                        Header="测试测试测试测试"
-                        Description="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"/>
+                        Header="{ci:Tr Core.Controls.Thing.Header.TestTestTestTest}"
+                        Description="{ci:Tr Core.Controls.Thing.Description.TestTestTestTestTestTestTestTest}"/>
     </Design.PreviewWith>
 
     <Style Selector="controls|Thing">
@@ -19,7 +20,7 @@
                         <controls1:FAIconSourceElement x:Name="FAIconSourceElement"
                                                      IconSource="{TemplateBinding IconSource}" />
                     </Viewbox>
-                    <TextBlock Grid.Row="0" Grid.Column="1" Text="{TemplateBinding Header}" 
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="{TemplateBinding Header}"
                                TextWrapping="Wrap"/>
                     <TextBlock Grid.Row="1" Grid.Column="1" Text="{TemplateBinding Description}"
                                Margin="0 2 0 0"

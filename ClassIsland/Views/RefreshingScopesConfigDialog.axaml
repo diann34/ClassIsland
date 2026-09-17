@@ -6,7 +6,7 @@
         xmlns:views="clr-namespace:ClassIsland.Views;assembly=ClassIsland"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ClassIsland.Views.RefreshingScopesConfigDialog"
-        Header="编辑翻新范围"
+        Header="{ci:Tr RefreshingScopesConfigDialog.Header.EditRefreshRange}"
         HostWidth="400"
         HostHeight="600"
         HostStartupLocation="CenterOwner"
@@ -17,11 +17,11 @@
         Unloaded="ViewBase_OnUnloaded">
     <Grid RowDefinitions="Auto * Auto" Margin="12">
         <StackPanel Grid.Row="0" Spacing="6">
-            <TextBlock Text="选择翻新时要保留的内容" Theme="{StaticResource SubtitleTextBlockStyle}"/>
-            <TextBlock Text="以下内容在翻新时不会被删除。" Classes="l-instructive"/>
+            <TextBlock Text="{ci:Tr RefreshingScopesConfigDialog.Text.SelectItemsToKeepWhenRefreshing}" Theme="{StaticResource SubtitleTextBlockStyle}"/>
+            <TextBlock Text="{ci:Tr RefreshingScopesConfigDialog.Text.TheFollowingItemsWillNotBeDeletedDuring}" Classes="l-instructive"/>
         </StackPanel>
         <TabControl Margin="-4 4 -4 0" Classes="compact" Grid.Row="1">
-            <TabItem Header="课表">
+            <TabItem Header="{ci:Tr RefreshingScopesConfigDialog.Header.Timetable2}">
                 <ListBox x:Name="ListBoxClassPlans"
                          ItemsSource="{Binding ClassPlans.List}"
                          SelectionMode="Multiple, Toggle"
@@ -34,7 +34,7 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
             </TabItem>
-            <TabItem Header="时间表">
+            <TabItem Header="{ci:Tr RefreshingScopesConfigDialog.Header.Timetable}">
                 <ListBox x:Name="ListBoxTimeLayouts"
                          ItemsSource="{Binding TimeLayouts.List}"
                          SelectionMode="Multiple, Toggle"
@@ -48,11 +48,11 @@
                 </ListBox>
             </TabItem>
         </TabControl>
-        
-        <Grid Grid.Row="2" ColumnDefinitions="* *" 
+
+        <Grid Grid.Row="2" ColumnDefinitions="* *"
               Margin="-12 0 -12 -12"
               Background="{DynamicResource LayerOnMicaBaseAltFillColorDefaultBrush}">
-            <Button Grid.Column="1" Content="确定" HorizontalAlignment="Stretch"
+            <Button Grid.Column="1" Content="{ci:Tr RefreshingScopesConfigDialog.Content.Confirm}" HorizontalAlignment="Stretch"
                     Classes="accent" Click="ButtonDone_OnClick" IsCancel="True"
                     Margin="4 8 12 8"/>
         </Grid>

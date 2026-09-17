@@ -24,7 +24,7 @@
                                               x:Key="ThemeDictionaryAccessConverter"
                                               Dictionary="{Binding ViewModel.XamlThemeService.MergedThemes}"/>
         <Grid x:Key="ErrorInfoDrawer" Margin="16" Width="450" RowDefinitions="Auto,*">
-            <TextBlock Text="错误信息" Grid.Row="0"
+            <TextBlock Text="{ci:Tr SettingPages.ThemesSettingsPage.Text.ErrorMessages}" Grid.Row="0"
                        Theme="{StaticResource SubtitleTextBlockStyle}" />
             <TextBox Grid.Row="1"
                      VerticalContentAlignment="Stretch"
@@ -36,9 +36,9 @@
             x:Key="BindingProxy"/>
         <Grid Width="300" x:Key="ThemeSortingDrawer" RowDefinitions="Auto, *" Margin="16 16 16 0">
             <StackPanel Grid.Row="0">
-                <TextBlock Text="主题加载顺序" Theme="{StaticResource SubtitleTextBlockStyle}"
+                <TextBlock Text="{ci:Tr SettingPages.ThemesSettingsPage.Text.ThemeLoadingOrder}" Theme="{StaticResource SubtitleTextBlockStyle}"
                            Margin="0 0 0 4" />
-                <TextBlock Text="主题将按照以下的顺序加载，后加载的主题可以覆盖前面主题的样式。拖动以对主题进行排序。" TextWrapping="Wrap"
+                <TextBlock Text="{ci:Tr SettingPages.ThemesSettingsPage.Text.ThemesWillBeLoadedInTheFollowingOrder}" TextWrapping="Wrap"
                            Margin="0 0 0 16" />
             </StackPanel>
             <ListBox Grid.Row="1" ItemsSource="{Binding ViewModel.XamlThemeService.EnabledThemes}">
@@ -76,12 +76,12 @@
                                           x:Key="ThemeEnabledConverter"/>
     </ci:SettingsPageBase.Resources>
     <Grid RowDefinitions="Auto,Auto,Auto,*,Auto">
-        <controls:FAInfoBar Grid.Row="0" Message="在启用了支持的主题（如 Fluent）后，您可以在直接【外观】设置中开启【分体主界面】选项使主界面分开。在没有开启此选项时，即使启用了支持的主题，主界面也不会分开。"
-                          IsOpen="{Binding ViewModel.SettingsService.Settings.IsThemeSeparateInfoVisible, Mode=TwoWay}" 
+        <controls:FAInfoBar Grid.Row="0" Message="{ci:Tr SettingPages.ThemesSettingsPage.Message.AfterEnablingSupportedThemesSuchAsFluentYou}"
+                          IsOpen="{Binding ViewModel.SettingsService.Settings.IsThemeSeparateInfoVisible, Mode=TwoWay}"
                           IsVisible="{Binding !ViewModel.SettingsService.Settings.IsThemeWarningVisible}">
             <controls:FAInfoBar.ActionButton>
                 <HyperlinkButton Command="{x:Static ci:UriNavigationCommands.UriNavigationCommand}"
-                                 CommandParameter="classisland://app/settings/appearance">前往【外观】设置</HyperlinkButton>
+                                 CommandParameter="classisland://app/settings/appearance">{ci:Tr SettingPages.ThemesSettingsPage.Content.GoToAppearanceSettings}</HyperlinkButton>
             </controls:FAInfoBar.ActionButton>
         </controls:FAInfoBar>
 
@@ -89,26 +89,26 @@
             <TabStrip Grid.Column="0" Classes="compact"
                       SelectionChanged="ListBoxCategory_OnSelectionChanged"
                       SelectedIndex="{Binding ViewModel.ThemeCategoryIndex}">
-                <TabStripItem>市场</TabStripItem>
-                <TabStripItem>已安装</TabStripItem>
+                <TabStripItem>{ci:Tr SettingPages.ThemesSettingsPage.Content.Market}</TabStripItem>
+                <TabStripItem>{ci:Tr SettingPages.ThemesSettingsPage.Content.Installed}</TabStripItem>
             </TabStrip>
 
             <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
                 <Button Theme="{StaticResource TransparentButton}"
                         Click="ButtonBase_OnClick">
-                    <ci:IconText Glyph="&#xe0b5;" Text="刷新市场" />
+                    <ci:IconText Glyph="&#xe0b5;" Text="{ci:Tr SettingPages.ThemesSettingsPage.Text.RefreshTheMarket}" />
                 </Button>
                 <Button Theme="{StaticResource TransparentButton}"
                         Click="ButtonLoadThemes_OnClick">
-                    <ci:IconText Glyph="&#xe0bd;" Text="重载主题" />
+                    <ci:IconText Glyph="&#xe0bd;" Text="{ci:Tr SettingPages.ThemesSettingsPage.Text.OverloadTheTheme}" />
                 </Button>
                 <Button Theme="{StaticResource TransparentButton}"
                         Click="ButtonOpenThemeFolder_OnClick">
-                    <ci:IconText Glyph="&#xe88d;" Text="打开主题文件夹…" />
+                    <ci:IconText Glyph="&#xe88d;" Text="{ci:Tr SettingPages.ThemesSettingsPage.Text.OpenTheThemeFolder}" />
                 </Button>
                 <Button Theme="{StaticResource TransparentButton}"
                         Click="ButtonOpenThemeLoadOrderDrawer_OnClick">
-                    <ci:IconText Glyph="&#xe13f;" Text="主题加载顺序" />
+                    <ci:IconText Glyph="&#xe13f;" Text="{ci:Tr SettingPages.ThemesSettingsPage.Text.ThemeLoadingOrder}" />
                 </Button>
             </StackPanel>
         </Grid>
@@ -117,9 +117,9 @@
             <ProgressBar IsIndeterminate="True"
                          IsVisible="{Binding ViewModel.PluginMarketService.IsLoadingPluginSource}"/>
         </StackPanel>
-        
 
-        <ListBox Grid.Row="3" 
+
+        <ListBox Grid.Row="3"
                  ItemsSource="{Binding ViewModel.MergedThemesFiltered.Items}"
                  IsVisible="{Binding !ViewModel.SettingsService.Settings.IsThemeWarningVisible}">
             <ListBox.ItemContainerTheme>
@@ -195,7 +195,7 @@
                                     <Button Theme="{StaticResource TransparentButton}"
                                             Content="{ci:FluentIcon &#xe905;}"
                                             Margin="2 -4 0 -4"
-                                            ToolTip.Tip="网站…"
+                                            ToolTip.Tip="{ci:Tr SettingPages.ThemesSettingsPage.ToolTip.Website}"
                                             CommandParameter="{Binding Value.Manifest.Url}"
                                             Command="{x:Static ci:UriNavigationCommands.UriNavigationCommand}" />
                                 </StackPanel>
@@ -210,31 +210,31 @@
                                                 IsVisible="{Binding Value.IsError}"
                                                 Margin="2 0"
                                                 Foreground="Red"
-                                                ToolTip.Tip="加载此主题时发生错误"
+                                                ToolTip.Tip="{ci:Tr SettingPages.ThemesSettingsPage.ToolTip.AnErrorOccursWhenLoadingThisTopic}"
                                                 CommandParameter="{Binding Value}"
                                                 Command="{Binding ShowErrorsCommand, RelativeSource={RelativeSource AncestorType=local:ThemesSettingsPage}}" />
                                     <Button Theme="{StaticResource TransparentButton}"
                                             Content="{ci:FluentIcon &#xebac;}"
                                             Margin="2 0"
                                             IsVisible="{Binding Value.IsLocal}"
-                                            ToolTip.Tip="更多选项…">
+                                            ToolTip.Tip="{ci:Tr SettingPages.ThemesSettingsPage.ToolTip.MoreOptions}">
                                         <Button.Flyout>
                                             <MenuFlyout>
-                                                <MenuItem Icon="{ci:FluentIcon &#xe88d;}" Header="打开主题文件夹…"
+                                                <MenuItem Icon="{ci:FluentIcon &#xe88d;}" Header="{ci:Tr SettingPages.ThemesSettingsPage.Header.OpenTheThemeFolder}"
                                                           IsEnabled="{Binding Value.IsExternal}"
                                                           CommandParameter="{Binding Value}"
                                                           Command="{Binding Data.OpenFolderCommand, Source={StaticResource BindingProxy}}"/>
-                                                <MenuItem Icon="{ci:FluentIcon &#xE06F;}" Header="打包主题…"
+                                                <MenuItem Icon="{ci:FluentIcon &#xE06F;}" Header="{ci:Tr SettingPages.ThemesSettingsPage.Header.PackingTheme}"
                                                           IsEnabled="{Binding Value.IsExternal}"
                                                           CommandParameter="{Binding Value}"
                                                           Command="{Binding Data.PackageThemeCommandCommand, Source={StaticResource BindingProxy}}"/>
                                                 <Separator/>
-                                                <MenuItem Icon="{ci:FluentIcon &#xe61d;}" Header="卸载主题"
+                                                <MenuItem Icon="{ci:FluentIcon &#xe61d;}" Header="{ci:Tr SettingPages.ThemesSettingsPage.Header.UninstallTheTheme}"
                                                           IsEnabled="{Binding Value.IsExternal}"
                                                           IsVisible="{Binding !Value.IsUninstalling}"
                                                           CommandParameter="{Binding Value}"
                                                           Command="{Binding Data.UninstallThemeCommand, Source={StaticResource BindingProxy}}"/>
-                                                <MenuItem Icon="{ci:FluentIcon &#xe195;}" Header="撤销卸载"
+                                                <MenuItem Icon="{ci:FluentIcon &#xe195;}" Header="{ci:Tr SettingPages.ThemesSettingsPage.Header.UndoUninstalling}"
                                                           IsEnabled="{Binding Value.IsExternal}"
                                                           IsVisible="{Binding Value.IsUninstalling}"
                                                           CommandParameter="{Binding Value}"
@@ -244,7 +244,7 @@
                                     </Button>
                                     <Panel>
                                         <Button
-                                            ToolTip.Tip="安装"
+                                            ToolTip.Tip="{ci:Tr SettingPages.ThemesSettingsPage.ToolTip.Installation}"
                                             Classes="accent"
                                             CornerRadius="14"
                                             Width="28" Height="28"
@@ -261,7 +261,7 @@
                                             </Button.IsVisible>
                                         </Button>
                                         <Button
-                                            ToolTip.Tip="更新"
+                                            ToolTip.Tip="{ci:Tr SettingPages.ThemesSettingsPage.ToolTip.Update}"
                                             Classes="accent"
                                             CornerRadius="14"
                                             Width="28" Height="28"
@@ -284,7 +284,7 @@
                                                                 Maximum="100"/>
                                     </Panel>
                                     <Button
-                                        ToolTip.Tip="重启以应用更改"
+                                        ToolTip.Tip="{ci:Tr SettingPages.ThemesSettingsPage.ToolTip.RestartToApplyTheChanges}"
                                         CornerRadius="14"
                                         Width="28" Height="28"
                                         Click="ButtonRestart_OnClick"
@@ -299,7 +299,7 @@
                                                   IsVisible="{Binding Value.IsLocal}"
                                                   Padding="0 0 -8 0"
                                                   Margin="4 0 -8 0" />
-                                    
+
                                 </StackPanel>
                             </Grid>
                         </Grid>
@@ -307,7 +307,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        
+
         <Border Grid.Row="0" Grid.RowSpan="4"
                 IsVisible="{Binding ViewModel.SettingsService.Settings.IsThemeWarningVisible}">
             <ScrollViewer>
@@ -328,7 +328,7 @@
                                        Height="75"
                                        Width="75" />
                     </Grid>
-                    <TextBlock Text="主题"
+                    <TextBlock Text="{ci:Tr SettingPages.ThemesSettingsPage.Text.Theme}"
                                HorizontalAlignment="Center"
                                TextAlignment="Center"
                                Margin="0 8 0 0"
@@ -338,7 +338,7 @@
                                HorizontalAlignment="Center"
                                TextWrapping="Wrap"
                                Width="320">
-                        <Run Text="欢迎使用主题！主题可以修改甚至完全重塑 ClassIsland 主界面的外观。您可以使用主题功能打造出独一无二的 ClassIsland 界面。" />
+                        <Run Text="{ci:Tr SettingPages.ThemesSettingsPage.Text.WelcomeToThemesThemesCanModifyOrEven}" />
 
                     </TextBlock>
                     <Border Width="320"
@@ -353,7 +353,7 @@
                             <TextBlock TextAlignment="Center"
                                        HorizontalAlignment="Center"
                                        TextWrapping="Wrap"
-                                       Text="需要注意，主题以 XAML 样式的形式加载，可能存在与部分 ClassIsland 版本不兼容，甚至使应用完全无法使用的情况。并且主题在加载过程中会转译为可执行代码，可以以 ClassIsland 的身份和权限执行任意代码。请不要安装来路不明的主题，开发者也无法保证市场所提供的主题都是绝对安全的。ClassIsland 开发团队对使用主题造成的一切后果概不负责。" />
+                                       Text="{ci:Tr SettingPages.ThemesSettingsPage.Text.PleaseNoteThatThemesAreLoadedInXaml}" />
                         </StackPanel>
                     </Border>
 
@@ -361,7 +361,7 @@
                             Margin="0 16 0 0"
                             Classes="accent"
                             Click="ButtonAgreeAgreement_OnClick">
-                        <ci:IconText Glyph="&#xE424;" Text="同意并开始使用主题"/>
+                        <ci:IconText Glyph="&#xE424;" Text="{ci:Tr SettingPages.ThemesSettingsPage.Text.AgreeAndStartUsingTheTopic}"/>
                     </Button>
                 </StackPanel>
             </ScrollViewer>

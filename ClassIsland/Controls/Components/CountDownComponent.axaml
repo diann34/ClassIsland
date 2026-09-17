@@ -1,9 +1,10 @@
-﻿<controls:ComponentBase x:TypeArguments="componentSettings:CountDownComponentSettings" 
+<controls:ComponentBase x:TypeArguments="componentSettings:CountDownComponentSettings"
                         x:Class="ClassIsland.Controls.Components.CountDownComponent"
                         xmlns="https://github.com/avaloniaui"
                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                        xmlns:ci="http://classisland.tech/schemas/xaml/core"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                         xmlns:local="clr-namespace:ClassIsland.Controls.Components"
                         xmlns:classIsland="using:ClassIsland"
                         xmlns:converters="using:ClassIsland.Converters"
@@ -13,7 +14,7 @@
                         xmlns:componentSettings="using:ClassIsland.Models.ComponentSettings"
                         xmlns:controls1="using:FluentAvalonia.UI.Controls"
                         xmlns:system="clr-namespace:System;assembly=System.Runtime"
-                        mc:Ignorable="d" 
+                        mc:Ignorable="d"
                         d:DesignHeight="450" d:DesignWidth="800"
                         d:DataContext="{d:DesignInstance classIsland:MainWindow}">
     <controls:ComponentBase.Styles>
@@ -26,11 +27,11 @@
         <Style Selector="local|CountDownComponent:progress-colored Path#ProgressAccent">
             <Setter Property="Stroke" Value="{Binding $parent[local:CountDownComponent].Settings.FontColor, Converter={StaticResource ColorToColorPickerBrushConverter}}"/>
         </Style>
-        
+
         <Style Selector="local|CountDownComponent:progress-colored ProgressBar#ProgressBar">
             <Setter Property="Foreground" Value="{Binding $parent[local:CountDownComponent].Settings.FontColor, Converter={StaticResource ColorToColorPickerBrushConverter}}"/>
         </Style>
-        
+
         <Style Selector="local|CountDownComponent Panel#CircleProgressRoot">
             <Setter Property="IsVisible" Value="False"/>
         </Style>
@@ -66,12 +67,12 @@
         <StackPanel Orientation="Horizontal" Spacing="2" VerticalAlignment="Center">
             <Panel VerticalAlignment="Center" Margin="0 0 4 0"
                    x:Name="CircleProgressRoot">
-                <Ellipse Width="21.4" Height="21.4" Stroke="{DynamicResource ControlStrongStrokeColorDisabledBrush}" 
+                <Ellipse Width="21.4" Height="21.4" Stroke="{DynamicResource ControlStrongStrokeColorDisabledBrush}"
                          StrokeThickness="2.6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <Path Width="22" Height="22" 
+                <Path Width="22" Height="22"
                          x:Name="ProgressAccent"
                          VerticalAlignment="Center" HorizontalAlignment="Center"
-                         StrokeLineCap="Round" 
+                         StrokeLineCap="Round"
                          StrokeThickness="3.1">
                     <Path.Data>
                         <Binding Path="Percent"
@@ -79,7 +80,7 @@
                     </Path.Data>
                 </Path>
             </Panel>
-            <TextBlock Text="距离"
+            <TextBlock Text="{ci:Tr Controls.Components.CountDownComponent.Text.Distance}"
                        x:Name="TextBlockTo"
                        Classes="connector l-instructive"
                        IsVisible="{Binding !Settings.IsCompactModeEnabled}"
@@ -93,23 +94,23 @@
                        Classes="connector l-instructive"
                        x:Name="TextBlockConnector"
                        IsVisible="{Binding !Settings.IsCompactModeEnabled}"/>
-            <TextBlock Text="{Binding DaysLeft, Mode=OneWay}" 
+            <TextBlock Text="{Binding DaysLeft, Mode=OneWay}"
                        Foreground="{Binding Settings.FontColor,Converter={StaticResource ColorToColorPickerBrushConverter}}"
                        FontSize="{Binding Settings.FontSize}"
                        VerticalAlignment="Center"/>
         </StackPanel>
-        
+
         <!-- HACK: 为什么进度条拉伸了就缩不回去了😰 -->
         <Canvas VerticalAlignment="Bottom"
                 HorizontalAlignment="Stretch"
                 x:Name="ProgressContainer"
                 Height="{Binding #ProgressBar.Bounds.Height}">
-            <ProgressBar 
+            <ProgressBar
                 Maximum="100" Minimum="0"
                 Width="{Binding #ProgressContainer.Bounds.Width, Mode=OneWay}"
                 x:Name="ProgressBar" MinWidth="0"
                 Value="{Binding Percent}"/>
         </Canvas>
-        
+
     </Grid>
 </controls:ComponentBase>

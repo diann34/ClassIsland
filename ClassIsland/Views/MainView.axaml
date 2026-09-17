@@ -9,36 +9,36 @@
              NavigationPage.HasBackButton="False"
              Header="ClassIsland">
     <StackPanel Classes="settings-container animated-intro">
-        <controls:FAInfoBar Severity="Warning" Message="早期开发中，大部分功能仍不可用，不代表最终品质。"
+        <controls:FAInfoBar Severity="Warning" Message="{ci:Tr MainView.Message.InEarlyDevelopmentMostFeaturesAreStillUnavailable}"
                             IsOpen="True"/>
-        
+
         <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE699;}"
-                                     Header="编辑档案…"
+                                     Header="{ci:Tr MainView.Header.EditProfile}"
                                      IsClickEnabled="True"
                                      Click="ButtonSettings_OnClick"/>
         <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE6A1;}"
-                                     Header="加载临时课表…"
+                                     Header="{ci:Tr MainView.Header.LoadingTemporarySchedule}"
                                      IsClickEnabled="True"
                                      Click="MenuItemTemporaryClassPlan_OnClick"/>
         <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE15F;}"
-                                     Header="换课…"
+                                     Header="{ci:Tr MainView.Header.ChangeClass}"
                                      IsClickEnabled="True"
                                      Click="MenuItemClassSwap_OnClick"/>
         <Separator/>
         <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE7C9;}"
-                                     Header="编辑主界面…"
+                                     Header="{ci:Tr MainView.Header.EditMainInterface}"
                                      IsClickEnabled="True"/>
         <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xEF27;}"
-                                     Header="应用设置…"
+                                     Header="{ci:Tr MainView.Header.ApplySettings}"
                                      IsClickEnabled="True"
                                      Click="MenuItemSettings_OnClick"/>
         <Separator/>
         <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE0BD;}"
-                                     Header="重启"
+                                     Header="{ci:Tr MainView.Header.Restart}"
                                      IsClickEnabled="True"
                                      Click="MenuItemRestartApp_OnClick"/>
         <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE0DF;}"
-                                     Header="退出"
+                                     Header="{ci:Tr MainView.Header.Exit}"
                                      IsClickEnabled="True"
                                      Click="MenuItemExitApp_OnClick"/>
         <Separator/>

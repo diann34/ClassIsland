@@ -11,11 +11,11 @@
         xmlns:asyncImageLoader="clr-namespace:AsyncImageLoader;assembly=AsyncImageLoader.Avalonia"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ClassIsland.Views.TutorialCenterWindow"
-        Header="教学中心" HostHeight="550" HostWidth="1240"
+        Header="{ci:Tr TutorialCenterWindow.Header.LearningCenter}" HostHeight="550" HostWidth="1240"
         d:DataContext="{d:DesignInstance views:TutorialCenterWindow}"
         Icon="/Assets/AppLogo.ico">
     <ci:ViewBase.Resources>
-        
+
     </ci:ViewBase.Resources>
     <Grid RowDefinitions="Auto, *">
         <Grid Grid.Row="0" ColumnDefinitions="Auto * Auto">
@@ -34,11 +34,11 @@
                         Margin="0 0 6 0">
                 <Button IsVisible="{Binding ViewModel.TutorialService.IsTutorialRunning}"
                         Click="ButtonStopCurrentTutorial_OnClick">
-                    <ci:IconText Glyph="&#xF087;" Text="停止当前教程"/>
+                    <ci:IconText Glyph="&#xF087;" Text="{ci:Tr TutorialCenterWindow.Text.StopCurrentTutorial}"/>
                 </Button>
             </StackPanel>
         </Grid>
-        
+
         <Border Grid.Row="1" Background="{DynamicResource LayerOnMicaBaseAltFillColorDefaultBrush}"
                 VerticalAlignment="Stretch"
                 HorizontalAlignment="Stretch" />
@@ -55,10 +55,10 @@
             </TabControl.Styles>
             <TabControl.ContentTemplate>
                 <DataTemplate x:DataType="{x:Type tutorial:TutorialGroup}">
-                    <SplitView PanePlacement="Right" 
+                    <SplitView PanePlacement="Right"
                                CompactPaneLength="0"
                                DisplayMode="Inline"
-                               OpenPaneLength="328" 
+                               OpenPaneLength="328"
                                IsPaneOpen="{Binding $parent[views:TutorialCenterWindow].ViewModel.SelectedTutorial, Converter={x:Static ObjectConverters.IsNotNull}}"
                                Pane="{Binding $parent[views:TutorialCenterWindow].ViewModel.SelectedTutorial}">
                         <SplitView.PaneTemplate>
@@ -71,16 +71,16 @@
                                                        Classes="l-instructive" />
                                             <TextBlock FontSize="13"
                                                        Classes="l-instructive">
-                                                已完成<Run Text="{Binding $parent[tutorial1:TutorialStateProvider].CompletedParagraphs}"/>/<Run Text="{Binding Paragraphs.Count}"/>个段落。
+                                                {ci:Tr TutorialCenterWindow.Content.Completed}<Run Text="{Binding $parent[tutorial1:TutorialStateProvider].CompletedParagraphs}"/>/<Run Text="{Binding Paragraphs.Count}"/>{ci:Tr TutorialCenterWindow.Content.Segments}
                                             </TextBlock>
                                             <!-- <ProgressBar Value="{Binding $parent[tutorial1:TutorialStateProvider].CompletedParagraphs, Mode=OneWay}" -->
                                             <!--              Maximum="{Binding Paragraphs.Count, Mode=OneWay}"/> -->
                                             <StackPanel Orientation="Horizontal" Spacing="8"
                                                         Classes="items-valign-center">
-                                                <Button Content="播放教程" Classes="accent"
+                                                <Button Content="{ci:Tr TutorialCenterWindow.Content.PlayTutorial}" Classes="accent"
                                                         IsEnabled="{Binding !$parent[views:TutorialCenterWindow].ViewModel.TutorialService.IsTutorialRunning}"
                                                         Click="ButtonPlaySelectedTutorial_OnClick"/>
-                                                <TextBlock Text="或者，选择下方的段落播放：" FontSize="13"
+                                                <TextBlock Text="{ci:Tr TutorialCenterWindow.Text.OrSelectASegmentBelowToPlay}" FontSize="13"
                                                            Classes="l-instructive"/>
                                             </StackPanel>
                                         </StackPanel>
@@ -88,7 +88,7 @@
                                     <ListBox Grid.Row="1" ItemsSource="{Binding Paragraphs}" Margin="0 8 0 0">
                                         <ListBox.ItemTemplate>
                                             <DataTemplate>
-                                                <tutorial1:TutorialStateProvider 
+                                                <tutorial1:TutorialStateProvider
                                                     VerticalAlignment="Stretch"
                                                     Margin="0 -8"
                                                     Tutorial="{Binding $parent[views:TutorialCenterWindow].ViewModel.SelectedTutorial}"
@@ -109,11 +109,11 @@
                                                             <TextBlock Text="{Binding Title}"
                                                                        ClipToBounds="False"
                                                                        Classes="label" />
-                                                            <TextBlock Text="已完成" Foreground="{DynamicResource AccentFillColorDefaultBrush}"
+                                                            <TextBlock Text="{ci:Tr TutorialCenterWindow.Text.Completed}" Foreground="{DynamicResource AccentFillColorDefaultBrush}"
                                                                        IsVisible="{Binding $parent[tutorial1:TutorialStateProvider].IsCompleted}"/>
                                                         </StackPanel>
                                                         <Button Grid.Column="1" Content="{ci:FluentIcon &#xEDB9;}"
-                                                                ToolTip.Tip="播放"
+                                                                ToolTip.Tip="{ci:Tr TutorialCenterWindow.ToolTip.Play}"
                                                                 Command="{Binding $parent[views:TutorialCenterWindow].PlaySelectedParagraphCommand}"
                                                                 CommandParameter="{Binding}"
                                                                 IsEnabled="{Binding !$parent[views:TutorialCenterWindow].ViewModel.TutorialService.IsTutorialRunning}"
@@ -135,7 +135,7 @@
                         <ci:StickyScrollViewer CollapsedHeight="{Binding #InnerTitle.Bounds.Height}">
                             <ci:StickyScrollViewer.HeaderContent>
                                 <Grid>
-                                    <Panel MaxHeight="200" 
+                                    <Panel MaxHeight="200"
                                            Opacity="{Binding $self.(ci:StickyScrollViewer.HeaderFadingOpacity)}"
                                            Background="Transparent">
                                         <Panel.OpacityMask>
@@ -168,7 +168,7 @@
                                                 </DrawingBrush>
                                             </Border.Background>
                                         </Border>
-                                        <Image Grid.Row="0" Source="/Assets/DefaultTutorialGroupBanner.webp" 
+                                        <Image Grid.Row="0" Source="/Assets/DefaultTutorialGroupBanner.webp"
                                                Stretch="Uniform" StretchDirection="Both" HorizontalAlignment="Right"/>
                                     </Panel>
                                     <Border VerticalAlignment="Bottom"

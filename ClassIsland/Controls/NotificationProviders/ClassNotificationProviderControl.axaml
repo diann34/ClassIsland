@@ -21,16 +21,16 @@
             <!-- 倒计时 -->
             <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"
                        Margin="12 0">
-                <Run Text="距上课还剩" Classes="l-instructive"/>
-                <Run Text="{Binding LessonsService.OnClassLeftTime, Converter={StaticResource TimeSpanToTotalSecondsConverter}, Mode=OneWay}" 
+                <Run Text="{ci:Tr Controls.NotificationProviders.ClassNotificationProviderControl.Text.StillLeftBeforeClass}" Classes="l-instructive"/>
+                <Run Text="{Binding LessonsService.OnClassLeftTime, Converter={StaticResource TimeSpanToTotalSecondsConverter}, Mode=OneWay}"
                      FontWeight="Bold"/>
-                <Run Text="秒" Classes="l-instructive"/>
+                <Run Text="{ci:Tr Controls.NotificationProviders.ClassNotificationProviderControl.Text.Seconds}" Classes="l-instructive"/>
             </TextBlock>
 
             <!-- 科目信息 -->
             <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal"
                         Margin="12 0">
-                <TextBlock VerticalAlignment="Center" Text="下节课是：" Classes="l-instructive"/>
+                <TextBlock VerticalAlignment="Center" Text="{ci:Tr Controls.NotificationProviders.ClassNotificationProviderControl.Text.TheNextLessonIs}" Classes="l-instructive"/>
                 <TextBlock Text="{Binding LessonsService.NextClassSubject.Name}" FontWeight="Bold" FontSize="{DynamicResource MainWindowLargeFontSize}" VerticalAlignment="Center"/>
                 <TextBlock Margin="6 0 0 0" FontSize="{DynamicResource MainWindowSecondaryFontSize}" VerticalAlignment="Bottom"
                            Text="{Binding LessonsService.NextClassSubject.TeacherName}"
@@ -47,7 +47,7 @@
 
 
         <!-- 下课遮罩 -->
-        <StackPanel Orientation="Horizontal" x:Key="ClassOffNotification" 
+        <StackPanel Orientation="Horizontal" x:Key="ClassOffNotification"
                     TextElement.Foreground="{DynamicResource TextOnAccentFillColorPrimaryBrush}"
                     VerticalAlignment="Center" HorizontalAlignment="Center">
             <ci:LucideIcon Glyph="&#xe0ff;" VerticalAlignment="Center"
@@ -63,14 +63,14 @@
         <Grid x:Key="ClassOffOverlay" ColumnDefinitions="*,*">
             <!-- 课间时间 -->
             <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="12 0">
-                <Run Text="本节" Classes="l-instructive"/><Run Text="{Binding LessonsService.CurrentTimeLayoutItem.BreakNameText, Mode=OneWay}"/><Run Text="长" Classes="l-instructive"/>
+                <Run Text="{ci:Tr Controls.NotificationProviders.ClassNotificationProviderControl.Text.ThisSection}" Classes="l-instructive"/><Run Text="{Binding LessonsService.CurrentTimeLayoutItem.BreakNameText, Mode=OneWay}"/><Run Text="{ci:Tr Controls.NotificationProviders.ClassNotificationProviderControl.Text.Grow}" Classes="l-instructive"/>
                 <Run Text="{Binding NextTimeLayoutDurationHumanized, Mode=OneWay}" FontWeight="Bold"/>
             </TextBlock>
 
             <!-- 科目信息 -->
             <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal"
                         Margin="12 0">
-                <TextBlock VerticalAlignment="Center" Text="下节课是：" Classes="l-instructive"/>
+                <TextBlock VerticalAlignment="Center" Text="{ci:Tr Controls.NotificationProviders.ClassNotificationProviderControl.Text.TheNextLessonIs}" Classes="l-instructive"/>
                 <TextBlock Text="{Binding LessonsService.NextClassSubject.Name}" FontWeight="Bold" FontSize="{DynamicResource MainWindowLargeFontSize}" VerticalAlignment="Center"/>
                 <TextBlock Margin="6 0 0 0" FontSize="{DynamicResource MainWindowSecondaryFontSize}" VerticalAlignment="Bottom"
                            Text="{Binding LessonsService.NextClassSubject.TeacherName}"

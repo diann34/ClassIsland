@@ -76,7 +76,7 @@
                           IsVisible="{TemplateBinding IsBackButtonEffectivelyVisible}"
                           VerticalAlignment="Stretch"
                           Padding="8,0"
-                          ToolTip.Tip="返回">
+                          ToolTip.Tip="{ci:Tr Core.Themes.MyNavigationPageStyles.ToolTip.Return}">
                     <Panel Background="Transparent">
                       <ci:FluentIcon Glyph="{ci:FI ArrowLeftRegular}"
                                      x:Name="PART_BackButtonDefaultIcon"

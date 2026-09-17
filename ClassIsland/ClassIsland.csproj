@@ -122,7 +122,7 @@
         <None Include="Assets\AppLogo.png" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" PublishFolderType="Resource" />
     </ItemGroup>
     <ItemGroup Condition="'$(ClassIslandBundleAssetsInAssembly)' == 'true'">
-        <AvaloniaResource Include="Assets\**" />
+        <AvaloniaResource Include="Assets\**" Exclude="Assets\Localization\**\*.resx" />
     </ItemGroup>
     <ItemGroup Condition="'$(ClassIslandBundleAssetsInAssembly)' != 'true'">
         <None Update="Assets\**">

@@ -7,13 +7,13 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="ClassIsland.Views.TutorialScriptEditWindow"
              HostWidth="800" HostHeight="520"
-             Header="编辑教程脚本">
+             Header="{ci:Tr TutorialScriptEditWindow.Header.EditTutorialScript}">
     <DockPanel>
         <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"
                     Spacing="6" Classes="items-valign-center"
                     Margin="8">
-            <ci:IconText Glyph="&#xE943;" Text="Lua 教程脚本" />
-            <CheckBox Content="启用脚本"
+            <ci:IconText Glyph="&#xE943;" Text="{ci:Tr TutorialScriptEditWindow.Text.LuaTutorialScript}" />
+            <CheckBox Content="{ci:Tr TutorialScriptEditWindow.Content.EnableScript}"
                       IsChecked="{Binding TutorialSentence.IsScriptEnabled}" />
         </StackPanel>
         <avaloniaEdit:TextEditor x:Name="ScriptEditor"

@@ -1,54 +1,54 @@
-﻿<ci:SettingsPageBase x:Class="ClassIsland.Views.SettingPages.StorageSettingsPage"
+<ci:SettingsPageBase x:Class="ClassIsland.Views.SettingPages.StorageSettingsPage"
       xmlns="https://github.com/avaloniaui"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:ClassIsland.Views.SettingPages"
       xmlns:ci="http://classisland.tech/schemas/xaml/core"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:helpers="clr-namespace:ClassIsland.Shared.Helpers;assembly=ClassIsland.Shared"
       xmlns:controls="clr-namespace:FluentAvalonia.UI.Controls;assembly=FluentAvalonia"
-      mc:Ignorable="d" 
+      mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       d:DataContext="{d:DesignInstance local:StorageSettingsPage}">
 
     <ScrollViewer>
         <StackPanel Classes="settings-container animated-intro">
             <controls:FAInfoBar Severity="Warning"
-                              Message="ClassIsland 部分配置文件已损坏且无法加载，这些配置文件已恢复至默认值。"
+                              Message="{ci:Tr SettingPages.StorageSettingsPage.Message.SomeClassIslandConfigurationFilesAreCorruptedAndUnable}"
                               IsVisible="{Binding !!Count, Source={x:Static helpers:ConfigureFileHelper.Errors}}">
                 <controls:FAInfoBar.ActionButton>
                     <Button Theme="{StaticResource TransparentButton}" HorizontalAlignment="Left"
                             Margin="24 6 0 0" Foreground="{DynamicResource MaterialDesignBody}"
                             Command="{x:Static ci:UriNavigationCommands.UriNavigationCommand}"
                             CommandParameter="classisland://app/config-errors">
-                        <ci:IconText Glyph="&#xEC2E;" Text="详细信息…"/>
+                        <ci:IconText Glyph="&#xEC2E;" Text="{ci:Tr SettingPages.StorageSettingsPage.Text.Details}"/>
                     </Button>
                 </controls:FAInfoBar.ActionButton>
             </controls:FAInfoBar>
 
             <!--<Separator Margin="0 16 0 8" />
-            <ci:IconText Kind="DatabaseOutline" Text="存储空间" Margin="0 0 0 8" />
-            <TextBlock Text="以下是 应用内 产生的各个类型文件的空间占用情况，您可以在此处清理部分临时和缓存文件。" 
+            <ci:IconText Kind="DatabaseOutline" Text="{ci:Tr SettingPages.StorageSettingsPage.Text.StorageSpace}" Margin="0 0 0 8" />
+            <TextBlock Text="{ci:Tr SettingPages.StorageSettingsPage.Text.BelowIsTheSpaceUsageOfVariousTypes}"
                        FontWeight="Light"
                        TextWrapping="Wrap"/>
 
             <Separator Margin="0 16 0 8" />-->
-            <ci:IconText Glyph="&#xE081;" Text="备份" Margin="0 0 0 4" />
+            <ci:IconText Glyph="&#xE081;" Text="{ci:Tr SettingPages.StorageSettingsPage.Text.Backup}" Margin="0 0 0 4" />
             <!-- 启用自动备份 -->
             <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xEFFF;}"
-                                       Header="启用自动备份"
-                                       Description="启用后，ClassIsland 将每隔一段时间自动备份当前的档案和配置文件。"
+                                       Header="{ci:Tr SettingPages.StorageSettingsPage.Header.EnableAutomaticBackups}"
+                                       Description="{ci:Tr SettingPages.StorageSettingsPage.Description.OnceEnabledClassIslandWillAutomaticallyBackUpThe}"
                                        IsExpanded="{Binding ViewModel.SettingsService.Settings.IsAutoBackupEnabled, Mode=OneWay}">
                 <controls:FASettingsExpander.Footer>
                     <ToggleSwitch IsChecked="{Binding ViewModel.SettingsService.Settings.IsAutoBackupEnabled, Mode=TwoWay}"/>
                 </controls:FASettingsExpander.Footer>
-                <controls:FASettingsExpanderItem Content="自动备份间隔"
+                <controls:FASettingsExpanderItem Content="{ci:Tr SettingPages.StorageSettingsPage.Content.AutomaticBackupInterval}"
                                                IconSource="{ci:FluentIconSource &#xE4D2;}"
-                                               Description="自动备份时的间隔天数。">
+                                               Description="{ci:Tr SettingPages.StorageSettingsPage.Description.NumberOfDaysBetweenAutomaticBackups}">
                     <controls:FASettingsExpanderItem.Footer>
-                        <ci:Field Suffix="天">
-                            <controls:FANumberBox 
+                        <ci:Field Suffix="{ci:Tr SettingPages.StorageSettingsPage.Suffix.Days}">
+                            <controls:FANumberBox
                                 Minimum="0"
                                  Width="150"
                                 SpinButtonPlacementMode="Inline"
@@ -56,12 +56,12 @@
                         </ci:Field>
                     </controls:FASettingsExpanderItem.Footer>
                 </controls:FASettingsExpanderItem>
-                <controls:FASettingsExpanderItem Content="自动备份上限"
+                <controls:FASettingsExpanderItem Content="{ci:Tr SettingPages.StorageSettingsPage.Content.AutomaticBackupLimit}"
                                                IconSource="{ci:FluentIconSource &#xE07F;}"
-                                               Description="最多允许存在的自动备份上限。当自动备份数量达到上限时，将覆盖最旧的备份。设置为 0 则为无上限。">
+                                               Description="{ci:Tr SettingPages.StorageSettingsPage.Description.TheMaximumAllowedAutomaticBackupWhenTheNumber}">
                     <controls:FASettingsExpanderItem.Footer>
-                        <ci:Field Suffix="个">
-                            <controls:FANumberBox 
+                        <ci:Field Suffix="{ci:Tr SettingPages.StorageSettingsPage.Suffix.Items}">
+                            <controls:FANumberBox
                                 Minimum="0"
                                 Width="150"
                                 SpinButtonPlacementMode="Inline"
@@ -69,14 +69,14 @@
                         </ci:Field>
                     </controls:FASettingsExpanderItem.Footer>
                 </controls:FASettingsExpanderItem>
-                <controls:FASettingsExpanderItem Content="上次成功自动备份"
+                <controls:FASettingsExpanderItem Content="{ci:Tr SettingPages.StorageSettingsPage.Content.LastTimeTheAutomaticBackupWasSuccessfullyCompleted}"
                                                Footer="{Binding ViewModel.SettingsService.Settings.LastAutoBackupTime}"/>
             </controls:FASettingsExpander>
-            
+
             <!-- 备份 -->
             <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE07D;}"
-                                       Header="手动备份"
-                                       Description="进行手动备份。备份的内容包括 Config/ 文件夹内的配置文件、 Profiles/ 文件夹内的档案文件和 Settings.json 设置文件。手动备份产生的备份文件不会被自动清除。"
+                                       Header="{ci:Tr SettingPages.StorageSettingsPage.Header.ManualBackup}"
+                                       Description="{ci:Tr SettingPages.StorageSettingsPage.Description.PerformManualBackupTheBackupIncludesConfigurationFiles}"
                                        IsExpanded="True">
                 <controls:FASettingsExpander.Footer>
                     <Panel>
@@ -84,28 +84,28 @@
                                                Width="20" Height="20"/>
                         <ci:FluentIcon Glyph="&#xE423;"
                                          VerticalAlignment="Stretch"
-                                         ToolTip.Tip="备份成功。"
+                                         ToolTip.Tip="{ci:Tr SettingPages.StorageSettingsPage.ToolTip.BackupSuccessful}"
                                          IsVisible="{Binding ViewModel.IsBackupFinished}"/>
                     </Panel>
                 </controls:FASettingsExpander.Footer>
-                
-                <controls:FASettingsExpanderItem Content="立即备份"
+
+                <controls:FASettingsExpanderItem Content="{ci:Tr SettingPages.StorageSettingsPage.Content.BackUpImmediately}"
                                                Click="ButtonCreateBackup_OnClick"
                                                IsClickEnabled="True"
                                                IsEnabled="{Binding !ViewModel.IsBackingUp}"/>
-                <controls:FASettingsExpanderItem Content="查看备份文件…"
+                <controls:FASettingsExpanderItem Content="{ci:Tr SettingPages.StorageSettingsPage.Content.ViewBackupFiles}"
                                                Click="ButtonViewBackupFiles_OnClick"
                                                IsClickEnabled="True" ActionIconSource="{ci:FluentIconSource &#xEC2D;}"
                                                IsEnabled="{Binding !ViewModel.IsBackingUp}"/>
-                <controls:FASettingsExpanderItem Content="恢复备份…"
+                <controls:FASettingsExpanderItem Content="{ci:Tr SettingPages.StorageSettingsPage.Content.RestoreBackup}"
                                                Click="ButtonRecoverBackup_OnClick"
-                                               Description="重启到恢复模式并恢复到指定的备份。"
+                                               Description="{ci:Tr SettingPages.StorageSettingsPage.Description.RestartToRecoveryModeAndRestoreToThe}"
                                                IsClickEnabled="True" ActionIconSource="{ci:FluentIconSource &#xEC2D;}"
                                                IsEnabled="{Binding !ViewModel.IsBackingUp}"/>
-                <controls:FASettingsExpanderItem Content="备份文件占用大小"
+                <controls:FASettingsExpanderItem Content="{ci:Tr SettingPages.StorageSettingsPage.Content.BackupFileSizeUsage}"
                                                Footer="{Binding ViewModel.SettingsService.Settings.BackupFilesSize}"/>
             </controls:FASettingsExpander>
-            
+
         </StackPanel>
     </ScrollViewer>
 </ci:SettingsPageBase>

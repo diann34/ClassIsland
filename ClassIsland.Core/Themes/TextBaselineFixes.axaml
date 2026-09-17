@@ -10,13 +10,13 @@
         <Border Padding="20">
             <!-- Add Controls for Previewer Here -->
             <StackPanel Spacing="6">
-                <CheckBox>我是，终将升起的烈阳！</CheckBox>
+                <CheckBox>{ci:Tr Core.Themes.TextBaselineFixes.Content.IAmTheSunThatWillEventuallyRise}</CheckBox>
                 <ComboBox SelectedIndex="0">
-                    <ComboBoxItem>测试1</ComboBoxItem>
-                    <ComboBoxItem>测试2</ComboBoxItem>
-                    <ComboBoxItem>测试3</ComboBoxItem>
+                    <ComboBoxItem>{ci:Tr Core.Themes.TextBaselineFixes.Content.Test1}</ComboBoxItem>
+                    <ComboBoxItem>{ci:Tr Core.Themes.TextBaselineFixes.Content.Test2}</ComboBoxItem>
+                    <ComboBoxItem>{ci:Tr Core.Themes.TextBaselineFixes.Content.Test3}</ComboBoxItem>
                 </ComboBox>
-                <Button>测试文本</Button>
+                <Button>{ci:Tr Core.Themes.TextBaselineFixes.Content.TestText}</Button>
             </StackPanel>
         </Border>
     </Design.PreviewWith>
@@ -37,14 +37,14 @@
                      :is(MenuItem) AccessText">
         <Setter Property="Margin" Value="0 1.5 0 -1.5"/>
     </Style>
-    
+
     <Style Selector="controls|FAIconSourceElement.repair-fontsize :is(controls|FAFontIcon)">
         <Setter Property="ci:IconSourceElementFontIconAssist.IsFontSizeRepaired" Value="True"/>
         <Setter Property="FontSize" Value="{Binding $parent[controls:FAIconSourceElement].(TextElement.FontSize)}"/>
     </Style>
-    
+
     <Style Selector="controls|FAIconSourceElement :is(controls|FAFontIcon)">
         <Setter Property="Margin" Value="0 -1.5 0 -1.5"/>
     </Style>
-    
+
 </Styles>

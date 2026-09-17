@@ -28,8 +28,8 @@
                            Theme="{StaticResource SubtitleTextBlockStyle}" />
             </StackPanel>
 
-            <controls:FASettingsExpander Header="带模态显示"
-                                         Description="打开新视图时使用模态显示。">
+            <controls:FASettingsExpander Header="{ci:Tr MveTestView.Header.ShowWithModalDisplay}"
+                                         Description="{ci:Tr MveTestView.Description.UseModalDisplayWhenOpeningANewView}">
                 <controls:FASettingsExpander.IconSource>
                     <ci:FluentIconSource Glyph="{ci:FI PanelSeparateWindowRegular}" />
                 </controls:FASettingsExpander.IconSource>
@@ -38,8 +38,8 @@
                 </controls:FASettingsExpander.Footer>
             </controls:FASettingsExpander>
 
-            <controls:FASettingsExpander Header="不允许关闭"
-                                         Description="拦截可取消的关闭请求，并显示关闭事件已拦截提示。">
+            <controls:FASettingsExpander Header="{ci:Tr MveTestView.Header.ClosingNotAllowed}"
+                                         Description="{ci:Tr MveTestView.Description.InterceptCancelableCloseRequestsAndShowAMessage}">
                 <controls:FASettingsExpander.IconSource>
                     <ci:FluentIconSource Glyph="{ci:FI LockClosedRegular}" />
                 </controls:FASettingsExpander.IconSource>
@@ -50,12 +50,12 @@
 
             <Separator />
 
-            <TextBlock Text="打开视图"
+            <TextBlock Text="{ci:Tr MveTestView.Text.OpenView}"
                        Margin="0 4 0 0"
                        Theme="{StaticResource SubtitleTextBlockStyle}" />
 
-            <controls:FASettingsExpander Header="在默认视图宿主打开新视图"
-                                         Description="创建 MVE 测试视图，并交由默认视图宿主显示。"
+            <controls:FASettingsExpander Header="{ci:Tr MveTestView.Header.OpenANewViewInTheDefaultView}"
+                                         Description="{ci:Tr MveTestView.Description.CreateAnMveTestViewAndDisplayIt}"
                                          IsClickEnabled="True"
                                          Click="ButtonOpenViewDefault_OnClick">
                 <controls:FASettingsExpander.IconSource>
@@ -66,8 +66,8 @@
                 </controls:FASettingsExpander.ActionIconSource>
             </controls:FASettingsExpander>
 
-            <controls:FASettingsExpander Header="在当前视图宿主打开新视图"
-                                         Description="复用当前视图宿主创建并显示 MVE 测试视图。"
+            <controls:FASettingsExpander Header="{ci:Tr MveTestView.Header.OpenANewViewInTheCurrentView}"
+                                         Description="{ci:Tr MveTestView.Description.ReuseTheCurrentViewHostToCreateAnd}"
                                          IsClickEnabled="True"
                                          Click="ButtonOpenViewExistedViewHost_OnClick">
                 <controls:FASettingsExpander.IconSource>
@@ -78,8 +78,8 @@
                 </controls:FASettingsExpander.ActionIconSource>
             </controls:FASettingsExpander>
 
-            <controls:FASettingsExpander Header="在新视图宿主打开新视图"
-                                         Description="创建新的视图宿主，并在其中显示 MVE 测试视图。"
+            <controls:FASettingsExpander Header="{ci:Tr MveTestView.Header.OpenANewViewInANewView}"
+                                         Description="{ci:Tr MveTestView.Description.CreateANewViewHostAndDisplayThe}"
                                          IsClickEnabled="True"
                                          Click="ButtonOpenViewNewViewHost_OnClick">
                 <controls:FASettingsExpander.IconSource>
@@ -90,8 +90,8 @@
                 </controls:FASettingsExpander.ActionIconSource>
             </controls:FASettingsExpander>
 
-            <controls:FASettingsExpander Header="测试大图像"
-                                         Description="打开大图像测试视图。"
+            <controls:FASettingsExpander Header="{ci:Tr MveTestView.Header.TestLargeImages}"
+                                         Description="{ci:Tr MveTestView.Description.OpenALargeImageTestView}"
                                          IsClickEnabled="True"
                                          Click="ButtonTestBigImage_OnClick">
                 <controls:FASettingsExpander.IconSource>
@@ -104,12 +104,12 @@
 
             <Separator />
 
-            <TextBlock Text="操作上一个视图"
+            <TextBlock Text="{ci:Tr MveTestView.Text.OperateOnThePreviousView}"
                        Margin="0 4 0 0"
                        Theme="{StaticResource SubtitleTextBlockStyle}" />
 
-            <controls:FASettingsExpander Header="复用上个视图(Show)"
-                                         Description="对上一次创建的视图再次调用 Show。"
+            <controls:FASettingsExpander Header="{ci:Tr MveTestView.Header.ReuseTheLastViewShow}"
+                                         Description="{ci:Tr MveTestView.Description.CallShowOnTheLastCreatedViewAgain}"
                                          IsClickEnabled="True"
                                          Click="ButtonReuseLastView_OnClick">
                 <controls:FASettingsExpander.IconSource>
@@ -120,8 +120,8 @@
                 </controls:FASettingsExpander.ActionIconSource>
             </controls:FASettingsExpander>
 
-            <controls:FASettingsExpander Header="复用上个视图(Open)"
-                                         Description="对上一次创建的视图调用 Open。"
+            <controls:FASettingsExpander Header="{ci:Tr MveTestView.Header.ReuseTheLastViewOpen}"
+                                         Description="{ci:Tr MveTestView.Description.CallOpenOnTheLastCreatedView}"
                                          IsClickEnabled="True"
                                          Click="ButtonOpenLastView_OnClick">
                 <controls:FASettingsExpander.IconSource>
@@ -132,8 +132,8 @@
                 </controls:FASettingsExpander.ActionIconSource>
             </controls:FASettingsExpander>
 
-            <controls:FASettingsExpander Header="关闭上个视图"
-                                         Description="隐藏上一次创建的视图。"
+            <controls:FASettingsExpander Header="{ci:Tr MveTestView.Header.CloseThePreviousView}"
+                                         Description="{ci:Tr MveTestView.Description.HideTheLastCreatedView}"
                                          IsClickEnabled="True"
                                          Click="ButtonHideLastView_OnClick">
                 <controls:FASettingsExpander.IconSource>

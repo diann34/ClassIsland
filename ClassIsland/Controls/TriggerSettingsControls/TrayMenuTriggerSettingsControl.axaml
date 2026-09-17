@@ -11,8 +11,8 @@
     <Grid DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=triggerSettingsControls:TrayMenuTriggerSettingsControl}}"
           ColumnDefinitions="*, Auto">
         <TextBox Grid.Column="0" Text="{Binding Settings.Header}"
-                 Watermark="（菜单显示名称）" Margin="0 0 4 0"/>
-        <CheckBox Grid.Column="1" Content="恢复"
+                 Watermark="{ci:Tr Controls.TriggerSettingsControls.TrayMenuTriggerSettingsControl.Watermark.MenuDisplayName}" Margin="0 0 4 0"/>
+        <CheckBox Grid.Column="1" Content="{ci:Tr Controls.TriggerSettingsControls.TrayMenuTriggerSettingsControl.Content.Restore}"
                   IsChecked="{Binding Settings.IsRevert}"/>
     </Grid>
 </ci:TriggerSettingsControlBase>

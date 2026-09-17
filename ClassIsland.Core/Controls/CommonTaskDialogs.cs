@@ -1,5 +1,6 @@
 using Avalonia;
 using Avalonia.Controls;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 
 namespace ClassIsland.Core.Controls;
@@ -19,11 +20,11 @@ public static class CommonTaskDialogs
     {
         var dialog = new FATaskDialog()
         {
-            Content = content,
-            Header = header,
+            Content = LocalizationService.TranslateText(content),
+            Header = LocalizationService.TranslateText(header),
             Buttons =
             {
-                new FATaskDialogButton("确定", true)
+                new FATaskDialogButton(LocalizationService.TranslateText("确定"), true)
                 {
                     IsDefault = true,
                 }

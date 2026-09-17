@@ -18,12 +18,12 @@
                   Classes="compact toggle"
                   Margin="0 0 1 0">
             <TabStripItem IsSelected="{Binding !Settings.IsSunset}">
-                <ci:AnimatedIconButton Glyph="&#xEC45;" Text="日出"
+                <ci:AnimatedIconButton Glyph="&#xEC45;" Text="{ci:Tr Controls.RuleSettingsControls.SunRiseSetRuleSettingsControl.Text.Sunrise}"
                                              Classes="display-role"
                                              IsKeepingExpanded="{Binding $parent[TabStripItem].IsSelected}" />
             </TabStripItem>
             <TabStripItem IsSelected="{Binding Settings.IsSunset}">
-                <ci:AnimatedIconButton Glyph="&#xEC3F;" Text="日落"
+                <ci:AnimatedIconButton Glyph="&#xEC3F;" Text="{ci:Tr Controls.RuleSettingsControls.SunRiseSetRuleSettingsControl.Text.Sunset}"
                                              Classes="display-role"
                                              IsKeepingExpanded="{Binding $parent[TabStripItem].IsSelected}"/>
             </TabStripItem>

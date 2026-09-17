@@ -19,24 +19,24 @@
         <ScrollViewer>
             <StackPanel Classes="animated-intro component-settings-container">
                 <!-- 附加设置覆盖提示 -->
-                <controls:FAInfoBar IsOpen="True" Message="此处的设置可以在档案设置中被附加设置覆盖。">
+                <controls:FAInfoBar IsOpen="True" Message="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Message.TheSettingsHereCanBeOverwrittenByThe}">
                     <controls:FAInfoBar.ActionButton>
                         <Button DockPanel.Dock="Right"
                                 Foreground="{DynamicResource MaterialDesignBody}"
-                                Click="ButtonShowAttachedSettings_OnClick" Content="查看…">
+                                Click="ButtonShowAttachedSettings_OnClick" Content="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.View}">
                         </Button>
                     </controls:FAInfoBar.ActionButton>
                 </controls:FAInfoBar>
-                
+
                 <!-- 显示时间点附加信息 -->
                 <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xF14B;}"
-                                           Header="显示时间点附加信息"
-                                           Description="在当前的时间点上显示当前时间点的附加信息。"
+                                           Header="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Header.ShowAdditionalInformationOfTheTimePoint}"
+                                           Description="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Description.DisplaysAdditionalInformationAtTheCurrentPointIn}"
                                            IsExpanded="{Binding Settings.ShowExtraInfoOnTimePoint, Mode=OneWay}">
                     <controls:FASettingsExpander.Footer>
                         <ToggleSwitch IsChecked="{Binding Settings.ShowExtraInfoOnTimePoint, Mode=TwoWay}"/>
                     </controls:FASettingsExpander.Footer>
-                    <controls:FASettingsExpanderItem Content="要显示的附加信息">
+                    <controls:FASettingsExpanderItem Content="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.AdditionalInformationToDisplay}">
                         <controls:FASettingsExpanderItem.Footer>
                             <ComboBox Grid.Row="0" Grid.Column="1"
                                       VerticalAlignment="Center"
@@ -45,27 +45,27 @@
                                       HorizontalContentAlignment="Left"
                                       HorizontalAlignment="Right">
                                 <ComboBoxItem HorizontalContentAlignment="Left">
-                                    <TextBlock Text="时间点持续时间" />
+                                    <TextBlock Text="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Text.DurationOfTheTimePoint}" />
                                 </ComboBoxItem>
                                 <ComboBoxItem HorizontalContentAlignment="Left">
-                                    <TextBlock Text="已过时间/持续时间" />
+                                    <TextBlock Text="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Text.ElapsedTimeDuration}" />
                                 </ComboBoxItem>
                                 <ComboBoxItem HorizontalContentAlignment="Left">
-                                    <TextBlock Text="剩余时间/持续时间" />
+                                    <TextBlock Text="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Text.RemainingTimeDuration}" />
                                 </ComboBoxItem>
                                 <ComboBoxItem HorizontalContentAlignment="Left">
-                                    <TextBlock Text="已过时间百分比" />
+                                    <TextBlock Text="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Text.ElapsedTimePercentage}" />
                                 </ComboBoxItem>
                                 <ComboBoxItem HorizontalContentAlignment="Left">
-                                    <TextBlock Text="剩余时间" />
+                                    <TextBlock Text="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Text.RemainingTime}" />
                                 </ComboBoxItem>
                                 <ComboBoxItem HorizontalContentAlignment="Left">
-                                    <TextBlock Text="倒计时" />
+                                    <TextBlock Text="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Text.Countdown}" />
                                 </ComboBoxItem>
                             </ComboBox>
                         </controls:FASettingsExpanderItem.Footer>
                     </controls:FASettingsExpanderItem>
-                    <controls:FASettingsExpanderItem Content="显示精确倒计时">
+                    <controls:FASettingsExpanderItem Content="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.DisplaysPreciseCountdowns}">
                         <controls:FASettingsExpanderItem.Footer>
                             <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Margin="0 5 0 -3" HorizontalAlignment="Right">
                                 <!-- <StackPanel.Style> -->
@@ -78,27 +78,27 @@
                                 <!--         <Setter Property="Visibility" Value="Collapsed"/> -->
                                 <!--     </Style> -->
                                 <!-- </StackPanel.Style> -->
-                                
-                                <TextBlock Text="当剩余时间不足" VerticalAlignment="Center"
+
+                                <TextBlock Text="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Text.WhenTheRemainingTimeIsInsufficient}" VerticalAlignment="Center"
                                            Opacity="0.75"/>
                                 <NumericUpDown Value="{Binding Settings.ExtraInfo4ShowSecondsSeconds}"
                                          MinWidth="75" Margin="6 0 6 0" TextAlignment="Center"/>
-                                <TextBlock Text="秒" VerticalAlignment="Center"
+                                <TextBlock Text="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Text.Seconds}" VerticalAlignment="Center"
                                            Opacity="0.75"/>
                             </StackPanel>
                         </controls:FASettingsExpanderItem.Footer>
                     </controls:FASettingsExpanderItem>
                 </controls:FASettingsExpander>
-                
+
                 <!-- 时间点结束倒计时 -->
                 <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xF361;}"
-                                           Header="时间点结束倒计时"
-                                           Description="在当前时间点将要结束时显示倒计时。"
+                                           Header="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Header.CountdownToTheTimePointEnd}"
+                                           Description="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Description.DisplaysTheCountdownAsTheCurrentPointIs}"
                                            IsExpanded="{Binding Settings.IsCountdownEnabled, Mode=OneWay}">
                     <controls:FASettingsExpander.Footer>
                         <ToggleSwitch IsChecked="{Binding Settings.IsCountdownEnabled, Mode=TwoWay}"/>
                     </controls:FASettingsExpander.Footer>
-                    <controls:FASettingsExpanderItem Content="时间点结束倒计时时长">
+                    <controls:FASettingsExpanderItem Content="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.CountdownDurationToTheEndOfATime}">
                         <controls:FASettingsExpanderItem.Footer>
                             <controls:FANumberBox Grid.Row="0" Width="100"
                                      Grid.Column="1"
@@ -106,17 +106,17 @@
                                      Value="{Binding Settings.CountdownSeconds, Mode=TwoWay, Converter={x:Static ci:NotNaNConverter.Instance}}" />
                         </controls:FASettingsExpanderItem.Footer>
                     </controls:FASettingsExpanderItem>
-                    <controls:FASettingsExpanderItem Content="使用模糊倒计时">
+                    <controls:FASettingsExpanderItem Content="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.UseFuzzyCountdown}">
                         <controls:FASettingsExpanderItem.Footer>
                             <ToggleSwitch IsChecked="{Binding Settings.IsNonExactCountdownEnabled, Mode=TwoWay}"/>
                         </controls:FASettingsExpanderItem.Footer>
                     </controls:FASettingsExpanderItem>
                 </controls:FASettingsExpander>
-                
+
                 <!-- 上课时仅显示当前课程 -->
                 <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xEFBF;}"
-                                           Header="上课时仅显示当前课程"
-                                           Description="在处于上课类型的时间点时，只显示当前时间点。">
+                                           Header="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Header.OnlyShowTheCurrentClassDuringClass}"
+                                           Description="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Description.WhenInTheClassTypeOnlyTheCurrent}">
                     <controls:FASettingsExpander.Footer>
                         <ToggleSwitch IsChecked="{Binding Settings.ShowCurrentLessonOnlyOnClass, Mode=TwoWay}"/>
                     </controls:FASettingsExpander.Footer>
@@ -124,16 +124,16 @@
 
                 <!-- 不显示已结束的课程 -->
                 <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xEFBF;}"
-                                           Header="不显示已结束的课程"
-                                           Description="隐藏已结束的课程，只显示当前课程与暂未开始的课程。">
+                                           Header="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Header.CoursesThatHaveEndedAreNotDisplayed}"
+                                           Description="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Description.HideCompletedCoursesOnlyTheCurrentCourseAnd}">
                     <controls:FASettingsExpander.Footer>
                         <ToggleSwitch IsChecked="{Binding Settings.HideFinishedClass, Mode=TwoWay}"/>
                     </controls:FASettingsExpander.Footer>
                 </controls:FASettingsExpander>
-                
+
                 <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xF37D;}"
-                                           Header="淡化上过的课程"
-                                           Description="已经上过的课程将被淡化显示。">
+                                           Header="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Header.DownplayTheCoursesYouVeTaken}"
+                                           Description="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Description.CoursesAlreadyAttendedWillBeFadedAndDisplayed}">
                     <controls:FASettingsExpander.Footer>
                         <ToggleSwitch IsChecked="{Binding Settings.FadeCompletedClasses, Mode=TwoWay}"/>
                     </controls:FASettingsExpander.Footer>
@@ -141,8 +141,8 @@
 
                 <!-- 标记换课课程 -->
                 <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE15F;}"
-                                           Header="标记换课课程"
-                                           Description="将临时层中的换课课程以高亮色标记，仅支持使用“换课”修改的课程。">
+                                           Header="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Header.MarkTheTransferCourse}"
+                                           Description="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Description.HighlightCoursesInTheTemporaryLayerOnlyCourses}">
                     <controls:FASettingsExpander.Footer>
                         <ToggleSwitch IsChecked="{Binding Settings.HighlightChangedClass, Mode=TwoWay}"/>
                     </controls:FASettingsExpander.Footer>
@@ -150,24 +150,24 @@
 
                 <!-- 课程表文本间距 -->
                 <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE0ED;}"
-                                           Header="课程表文本间距"
-                                           Description="使课程表显示更紧凑或宽松。">
+                                           Header="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Header.SpacingBetweenClassScheduleTexts}"
+                                           Description="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Description.MakeTheTimetableAppearMoreCompactOrRelaxed}">
                     <controls:FASettingsExpander.Footer>
                         <Slider Width="150" Minimum="0.2" Maximum="1"
                                 Value="{Binding Settings.ScheduleSpacing}"
                                 TickFrequency="0.05" IsSnapToTickEnabled="True"/>
                     </controls:FASettingsExpander.Footer>
                 </controls:FASettingsExpander>
-                
+
                 <!-- 无课程时显示占位符 -->
                 <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE51C;}"
-                                           Header="无课程时显示占位符"
-                                           Description="当当前没有加载课表或当日所有课程都已结束且不显示第二日课程时，显示指定的占位符。"
+                                           Header="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Header.PlaceholdersAreDisplayedWhenThereAreNoClasses}"
+                                           Description="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Description.DisplayTheSpecifiedPlaceholderWhenTheScheduleIs}"
                                            IsExpanded="{Binding Settings.ShowPlaceholderOnEmptyClassPlan, Mode=OneWay}">
                     <controls:FASettingsExpander.Footer>
                         <ToggleSwitch IsChecked="{Binding Settings.ShowPlaceholderOnEmptyClassPlan, Mode=TwoWay}"/>
                     </controls:FASettingsExpander.Footer>
-                    <controls:FASettingsExpanderItem Content="当日没有课程的占位符内容">
+                    <controls:FASettingsExpanderItem Content="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.PlaceholderContentForDaysWithNoClasses}">
                         <controls:FASettingsExpanderItem.Footer>
                             <TextBox MinWidth="100"
                                      MaxWidth="300"
@@ -175,13 +175,13 @@
                                      VerticalAlignment="Center"
                                      Foreground="{DynamicResource MaterialDesignBody}"
                                      Text="{Binding Settings.PlaceholderTextNoClass, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
-                                <!-- <system:String>今天没有课程。</system:String> -->
-                                <!-- <system:String>无</system:String> -->
+                                <!-- <system:String>{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.ThereAreNoClassesToday}</system:String> -->
+                                <!-- <system:String>{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.None}</system:String> -->
                                 <!-- <system:String>[ ]</system:String> -->
                             </TextBox>
                         </controls:FASettingsExpanderItem.Footer>
                     </controls:FASettingsExpanderItem>
-                    <controls:FASettingsExpanderItem Content="当日课程结束的占位符内容">
+                    <controls:FASettingsExpanderItem Content="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.PlaceholderContentForDaysAfterClassesEnd}">
                         <controls:FASettingsExpanderItem.Footer>
                             <TextBox MinWidth="100"
                                      MaxWidth="300"
@@ -189,25 +189,25 @@
                                      VerticalAlignment="Center"
                                      Foreground="{DynamicResource MaterialDesignBody}"
                                      Text="{Binding Settings.PlaceholderTextAllClassEnded, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
-                                <!-- <system:String>今天没有课程。</system:String> -->
-                                <!-- <system:String>无</system:String> -->
+                                <!-- <system:String>{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.ThereAreNoClassesToday}</system:String> -->
+                                <!-- <system:String>{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.None}</system:String> -->
                                 <!-- <system:String>[ ]</system:String> -->
                             </TextBox>
                         </controls:FASettingsExpanderItem.Footer>
                     </controls:FASettingsExpanderItem>
                 </controls:FASettingsExpander>
-                
+
                 <!-- 放学后显示明天课表 -->
                 <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE34A;}"
-                                           Header="显示明天课表"
-                                           Description="设置什么时候显示明天课表。">
+                                           Header="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Header.DisplaysTomorrowSClassSchedule}"
+                                           Description="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Description.SetWhenTomorrowSScheduleWillBeDisplayed}">
                     <controls:FASettingsExpander.Footer>
                         <Grid>
                             <ComboBox SelectedIndex="{Binding Settings.TomorrowScheduleShowMode}">
-                                <ComboBoxItem>不显示</ComboBoxItem>
-                                <ComboBoxItem>放学后显示</ComboBoxItem>
-                                <ComboBoxItem>总是显示</ComboBoxItem>
-                                <ComboBoxItem>无展示课程时显示</ComboBoxItem>
+                                <ComboBoxItem>{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.NotDisplayed}</ComboBoxItem>
+                                <ComboBoxItem>{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.DisplayedAfterSchool}</ComboBoxItem>
+                                <ComboBoxItem>{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.AlwaysShows}</ComboBoxItem>
+                                <ComboBoxItem>{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.DisplayedWhenNoCourseIsShown}</ComboBoxItem>
                             </ComboBox>
                         </Grid>
                     </controls:FASettingsExpander.Footer>

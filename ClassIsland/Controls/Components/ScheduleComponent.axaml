@@ -55,7 +55,7 @@
                 <Setter Property="Text" Value="{Binding Settings.PlaceholderTextNoClass, RelativeSource={RelativeSource AncestorType=local:ScheduleComponent}}"/>
             </Style>
         </Style>
-        
+
         <Style Selector="local|ScheduleComponent:show-tomorrow-schedule:not(.TomorrowScheduleEmpty)">
             <Style Selector="^:show-tomorrow-schedule-on-empty, ^:show-tomorrow-schedule-after-school.AfterSchool, ^:show-tomorrow-schedule-always">
                 <Style Selector="^ Border#Tomorrow">
@@ -76,7 +76,7 @@
         </Style>
     </ci:ComponentBase.Styles>
     <Grid ColumnDefinitions="Auto,*" DataContext="{Binding RelativeSource={RelativeSource AncestorType=local:ScheduleComponent}}">
-        <Border 
+        <Border
             Grid.Column="0"
             Margin="0 0 2 0"
             VerticalAlignment="Center"
@@ -84,10 +84,10 @@
             Padding="8 2"
             CornerRadius="16"
             x:Name="Tomorrow">
-            <TextBlock Text="明天" Foreground="{DynamicResource TextOnAccentFillColorPrimaryBrush}"
+            <TextBlock Text="{ci:Tr Controls.Components.ScheduleComponent.Text.Tomorrow}" Foreground="{DynamicResource TextOnAccentFillColorPrimaryBrush}"
                        Margin="0,1,0,-1"/>
         </Border>
-        <ci:LessonsListBox Grid.Column="1" 
+        <ci:LessonsListBox Grid.Column="1"
                            Subjects="{Binding ProfileService.Profile.Subjects, Mode=OneWay}"
                            LessonControlSettings="{Binding Settings, Mode=OneWay}"
                            ShowCurrentTimeLayoutItemOnlyOnClass="{Binding ShowCurrentLessonOnlyOnClass, Mode=OneWay}"
@@ -96,7 +96,7 @@
                            x:Name="MainLessonsListBox"
                            FadeCompletedClasses="{Binding Settings.FadeCompletedClasses, Mode=OneWay, RelativeSource={RelativeSource AncestorType=local:ScheduleComponent}}"
                            IsLiveUpdatingEnabled="True"/>
-        <ci:LessonsListBox Grid.Column="1" 
+        <ci:LessonsListBox Grid.Column="1"
                            Subjects="{Binding ProfileService.Profile.Subjects, Mode=OneWay}"
                            LessonControlSettings="{Binding Settings, Mode=OneWay}"
                            IsLiveUpdatingEnabled="False"

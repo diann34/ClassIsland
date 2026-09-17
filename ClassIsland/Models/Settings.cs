@@ -537,6 +537,22 @@ public class Settings : ObservableRecipient, ILessonControlSettings, INotificati
         }
     }
 
+    [JsonIgnore]
+    public string ApplicationLanguage
+    {
+        get => GlobalStorageService.GetValue("ApplicationLanguage") ?? LocalizationService.AutomaticLanguage;
+        set
+        {
+            if (string.Equals(value, ApplicationLanguage, StringComparison.OrdinalIgnoreCase)) return;
+            GlobalStorageService.SetValue(
+                "ApplicationLanguage",
+                string.Equals(value, LocalizationService.AutomaticLanguage, StringComparison.OrdinalIgnoreCase)
+                    ? null
+                    : value);
+            OnPropertyChanged();
+        }
+    }
+
     /// <summary>
     /// TaskBarIcon点击行为
     /// </summary>

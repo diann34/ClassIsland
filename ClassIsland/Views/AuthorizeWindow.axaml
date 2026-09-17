@@ -1,4 +1,4 @@
-﻿<ci:ViewBase x:Class="ClassIsland.Views.AuthorizeWindow"
+<ci:ViewBase x:Class="ClassIsland.Views.AuthorizeWindow"
         xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -28,13 +28,13 @@
     <Grid Margin="16" ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,*,Auto" MinHeight="300">
         <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="0 0 0 12"
                     IsVisible="{Binding !ViewModel.IsEditingMode}">
-            <TextBlock Text="验证您的身份" Theme="{StaticResource SubtitleTextBlockStyle}"/>
-            <TextBlock Text="要继续操作，请通过下列的方式验证您的身份。" TextWrapping="Wrap" Margin="0 4 0 0"/>
+            <TextBlock Text="{ci:Tr AuthorizeWindow.Text.VerifyYourIdentity}" Theme="{StaticResource SubtitleTextBlockStyle}"/>
+            <TextBlock Text="{ci:Tr AuthorizeWindow.Text.ToContinuePleaseVerifyYourIdentityUsingOne}" TextWrapping="Wrap" Margin="0 4 0 0"/>
         </StackPanel>
         <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="0 0 0 12"
                     IsVisible="{Binding ViewModel.IsEditingMode}">
-            <TextBlock Text="编辑认证项目" Theme="{StaticResource SubtitleTextBlockStyle}"/>
-            <TextBlock Text="编辑进行此操作需要的认证方式。" TextWrapping="Wrap" Margin="0 4 0 0"/>
+            <TextBlock Text="{ci:Tr AuthorizeWindow.Text.EditAuthenticationItem}" Theme="{StaticResource SubtitleTextBlockStyle}"/>
+            <TextBlock Text="{ci:Tr AuthorizeWindow.Text.EditTheAuthenticationMethodRequiredToPerformThis}" TextWrapping="Wrap" Margin="0 4 0 0"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal"
@@ -44,7 +44,7 @@
             <Button Theme="{StaticResource TransparentButton}"
                     Click="ButtonAddAuthorizeMethod_OnClick">
                 <Button.Content>
-                    <ci:IconText Glyph="&#xe00d;" Text="添加认证方式"></ci:IconText>
+                    <ci:IconText Glyph="&#xe00d;" Text="{ci:Tr AuthorizeWindow.Text.AddAuthenticationMethod}"></ci:IconText>
                 </Button.Content>
             </Button>
             <ComboBox ItemsSource="{x:Static registry:AuthorizeProviderRegistryService.RegisteredAuthorizeProviders}" MinWidth="100"
@@ -78,7 +78,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="0 8 4 8" RowDefinitions="Auto,Auto" ColumnDefinitions="Auto,*">
-                        
+
                         <fa:FAIconSourceElement Grid.Column="0" Grid.Row="0"
                                                 Foreground="{DynamicResource AccentFillColorDefaultBrush}"
                                                 IconSource="{Binding ProviderInfo.IconSource}"
@@ -89,14 +89,14 @@
                                                 TextElement.FontSize="20"
                                                 Classes="repair-fontsize"
                                                 Width="20"/>
-                        
+
                         <TextBlock Grid.Column="1" Grid.Row="0"
                                    VerticalAlignment="Center"
                                    FontWeight="Medium"
                                    FontSize="14">
-                            <Run Text="用"/><Run Text="{Binding ProviderInfo.Name, Mode=OneWay}"/><Run Text="继续"/>
+                            <Run Text="{ci:Tr AuthorizeWindow.Text.Use}"/><Run Text="{Binding ProviderInfo.Name, Mode=OneWay}"/><Run Text="{ci:Tr AuthorizeWindow.Text.Continue}"/>
                         </TextBlock>
-                        <StackPanel Grid.Column="1" Grid.Row="0" 
+                        <StackPanel Grid.Column="1" Grid.Row="0"
                                     VerticalAlignment="Center"
                                     Margin="0 -8"
                                     Orientation="Horizontal"
@@ -109,15 +109,15 @@
                             </StackPanel.IsVisible>
                             <ci:TouchDragThumb/>
                             <Button Theme="{StaticResource TransparentButton}"
-                                    ToolTip.Tip="删除"
+                                    ToolTip.Tip="{ci:Tr AuthorizeWindow.ToolTip.Delete}"
                                     Content="{ci:FluentIcon &#xe671;}"
                                     Foreground="IndianRed">
                                 <Button.Flyout>
                                     <Flyout>
                                         <StackPanel Spacing="8" TextElement.Foreground="{DynamicResource TextFillColorPrimaryBrush}">
-                                            <TextBlock Text="要删除此认证方式吗？" FontWeight="Bold"/>
-                                            <TextBlock Text="此操作无法撤销。"/>
-                                            <Button Content="删除" Click="ButtonRemoveSelectedAuthProvider_OnClick"
+                                            <TextBlock Text="{ci:Tr AuthorizeWindow.Text.DoYouWantToDeleteThisAuthenticationMethod}" FontWeight="Bold"/>
+                                            <TextBlock Text="{ci:Tr AuthorizeWindow.Text.ThisActionCannotBeUndone}"/>
+                                            <Button Content="{ci:Tr AuthorizeWindow.Content.Delete}" Click="ButtonRemoveSelectedAuthProvider_OnClick"
                                                     Classes="accent"/>
                                         </StackPanel>
                                     </Flyout>
@@ -125,29 +125,29 @@
                             </Button>
                         </StackPanel>
 
-                        <controls:AuthorizeProviderPresenter 
+                        <controls:AuthorizeProviderPresenter
                             Grid.Column="1" Grid.Row="1"
                             IsEditingMode="{Binding ViewModel.IsEditingMode, RelativeSource={RelativeSource FindAncestor, AncestorType=local:AuthorizeWindow}, Mode=OneWay}"
                             CredentialItem="{Binding Mode=OneWay}"
                             IsVisible="{Binding IsSelected, RelativeSource={RelativeSource FindAncestor, AncestorType=ListBoxItem}}"/>
-                        
+
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        
+
         <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
               ColumnDefinitions="* *">
             <Button Grid.Column="0" Margin="0 0 2 0"
                     IsCancel="True" HorizontalAlignment="Stretch"
                     Command="{Binding Close}">
-                取消
+                {ci:Tr AuthorizeWindow.Content.Cancel}
             </Button>
             <Button Grid.Column="1" Margin="2 0 0 0"
                     Click="ButtonOk_OnClick"
                     Classes="accent" HorizontalAlignment="Stretch"
                     IsVisible="{Binding ViewModel.IsEditingMode, RelativeSource={RelativeSource FindAncestor, AncestorType=local:AuthorizeWindow}}">
-                确定
+                {ci:Tr AuthorizeWindow.Content.Confirm}
             </Button>
         </Grid>
     </Grid>

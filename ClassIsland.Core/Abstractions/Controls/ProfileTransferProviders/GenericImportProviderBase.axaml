@@ -27,9 +27,9 @@
                     </StackPanel>
                 </controls:FASettingsExpander.Footer>
             </controls:FASettingsExpander>
-            <controls:FASettingsExpander Header="导入目标" IsExpanded="True">
+            <controls:FASettingsExpander Header="{ci:Tr Core.Abstractions.Controls.ProfileTransferProviders.GenericImportProviderBase.Header.ImportTarget}" IsExpanded="True">
                 <controls:FASettingsExpanderItem IsEnabled="{Binding AllowMergeToCurrentProfile}">
-                    <RadioButton IsChecked="{Binding ImportType, Converter={StaticResource IntToRadioButtonSelectionConverter}, ConverterParameter=0}">合并到当前档案</RadioButton>
+                    <RadioButton IsChecked="{Binding ImportType, Converter={StaticResource IntToRadioButtonSelectionConverter}, ConverterParameter=0}">{ci:Tr Core.Abstractions.Controls.ProfileTransferProviders.GenericImportProviderBase.Content.MergeIntoCurrentArchive}</RadioButton>
                 </controls:FASettingsExpanderItem>
                 <controls:FASettingsExpanderItem>
                     <controls:FASettingsExpanderItem.Footer>
@@ -41,10 +41,10 @@
                                     </Binding.ConverterParameter>
                                 </Binding>
                             </ci:Field.IsVisible>
-                            <TextBox Watermark="新档案名称" Text="{Binding NewProfileName}"/>
+                            <TextBox Watermark="{ci:Tr Core.Abstractions.Controls.ProfileTransferProviders.GenericImportProviderBase.Watermark.NewArchiveName}" Text="{Binding NewProfileName}"/>
                         </ci:Field>
                     </controls:FASettingsExpanderItem.Footer>
-                    <RadioButton IsChecked="{Binding ImportType, Converter={StaticResource IntToRadioButtonSelectionConverter}, ConverterParameter=1}">导入到新的档案</RadioButton>
+                    <RadioButton IsChecked="{Binding ImportType, Converter={StaticResource IntToRadioButtonSelectionConverter}, ConverterParameter=1}">{ci:Tr Core.Abstractions.Controls.ProfileTransferProviders.GenericImportProviderBase.Content.ImportIntoANewArchive}</RadioButton>
                 </controls:FASettingsExpanderItem>
             </controls:FASettingsExpander>
         </StackPanel>

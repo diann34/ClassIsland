@@ -65,6 +65,10 @@ public static class Program
         command.Invoke(args);
 
         GlobalStorageService.InitializeGlobalStorage();
+        LocalizationService.Initialize(
+            GlobalStorageService.GetValue("ApplicationLanguage"),
+            typeof(App).Assembly,
+            typeof(AppBase).Assembly);
 
         if (App.ApplicationCommand.Diagnostic)
         {
@@ -209,4 +213,3 @@ public static class Program
         };
     }
 }
-

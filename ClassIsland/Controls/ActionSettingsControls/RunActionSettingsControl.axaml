@@ -13,20 +13,20 @@
             <ComboBox Margin="0 0 3 0"
                       SelectedIndex="{Binding Settings.RunType}">
                 <ci:IconText Glyph="&#xF4B1;"
-                             Text="应用程序" />
+                             Text="{ci:Tr Controls.ActionSettingsControls.RunActionSettingsControl.Text.Application}" />
                 <ci:IconText Glyph="&#xE508;">
                     <ci:IconText.Text>
-                        <OnPlatform Default="终端命令">
-                            <On Options="Windows" Content="cmd 命令" />
+                        <OnPlatform Default="{ci:Tr Controls.ActionSettingsControls.RunActionSettingsControl.Default.TerminalCommand}">
+                            <On Options="Windows" Content="{ci:Tr Controls.ActionSettingsControls.RunActionSettingsControl.Content.CmdCommand}" />
                         </OnPlatform>
                     </ci:IconText.Text>
                 </ci:IconText>
                 <ci:IconText Glyph="&#xE687;"
-                             Text="文件" />
+                             Text="{ci:Tr Controls.ActionSettingsControls.RunActionSettingsControl.Text.File}" />
                 <ci:IconText Glyph="&#xE875;"
-                             Text="文件夹" />
+                             Text="{ci:Tr Controls.ActionSettingsControls.RunActionSettingsControl.Text.Folder}" />
                 <ci:IconText Glyph="&#xE905;"
-                             Text="Url 链接" />
+                             Text="{ci:Tr Controls.ActionSettingsControls.RunActionSettingsControl.Text.UrlLink}" />
             </ComboBox>
             <TextBox Grid.Row="0"
                      Grid.Column="1"
@@ -50,17 +50,17 @@
                                    VerticalAlignment="Stretch"
                                    VerticalContentAlignment="Center"
                                    Glyph="&#xE88D;"
-                                   Text="选择…"
+                                   Text="{ci:Tr Controls.ActionSettingsControls.RunActionSettingsControl.Text.Select}"
                                    IsVisible="{Binding $parent[local:RunActionSettingsControl].IsFileSelector}"
                                    Theme="{StaticResource TransparentButton}"
                                    Click="FileSelectorButton_OnClick"
-                                   ToolTip.Tip="{Binding $parent[local:RunActionSettingsControl].Watermark, StringFormat='选择{0}…'}" />
+                                   ToolTip.Tip="{Binding $parent[local:RunActionSettingsControl].Watermark, StringFormat={ci:Tr Controls.ActionSettingsControls.RunActionSettingsControl.Format.SelectValue}}" />
             <TextBox Grid.Row="1"
                      Grid.Column="1"
                      Text="{Binding Settings.Args, Mode=TwoWay}"
                      IsVisible="{Binding $parent[local:RunActionSettingsControl].IsApplication}"
-                     Watermark="（可选）应用程序启动参数"
-                     ToolTip.Tip="（可选）应用程序启动参数" />
+                     Watermark="{ci:Tr Controls.ActionSettingsControls.RunActionSettingsControl.Watermark.OptionalApplicationStartupParameters}"
+                     ToolTip.Tip="{ci:Tr Controls.ActionSettingsControls.RunActionSettingsControl.ToolTip.OptionalApplicationStartupParameters}" />
         </Grid>
     </Panel>
 </ci:ActionSettingsControlBase>

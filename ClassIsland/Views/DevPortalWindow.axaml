@@ -23,9 +23,9 @@
         <Border Grid.Row="1" Background="{DynamicResource LayerOnMicaBaseAltFillColorDefaultBrush}"
                 VerticalAlignment="Stretch"
                 HorizontalAlignment="Stretch"/>
-        
+
         <TabControl Grid.Row="0" Grid.RowSpan="2" Classes="navigation">
-            <TabItem Header="首页">
+            <TabItem Header="{ci:Tr DevPortalWindow.Header.Home}">
                 <StackPanel Spacing="6">
                     <ci:Field Label="调试时间偏移">
                         <StackPanel Orientation="Horizontal" Spacing="4" Loaded="TargetTime_OnLoaded">
@@ -36,54 +36,54 @@
                                         SelectedTimeChanged="TimePicker_OnSelectedTimeChanged"
                                         Loaded="TargetTime_OnLoaded"
                                         UseSeconds="True"/>
-                            <Button Content="重置" Click="ButtonReset_OnClick"/>
+                            <Button Content="{ci:Tr DevPortalWindow.Content.Reset}" Click="ButtonReset_OnClick"/>
                         </StackPanel>
                     </ci:Field>
                     <ci:Field Label="测试选择器解析">
                         <StackPanel Orientation="Horizontal" Spacing="4" Loaded="TargetTime_OnLoaded">
                             <TextBox Text="{Binding ViewModel.StyleSelector}"/>
-                            <Button Content="解析" Click="ButtonParseSelector_OnClick"/>
+                            <Button Content="{ci:Tr DevPortalWindow.Content.Parse}" Click="ButtonParseSelector_OnClick"/>
                         </StackPanel>
                     </ci:Field>
-                    
-                    <Button Content="测试教程" Click="ButtonTestTutorial_OnClick"/>
+
+                    <Button Content="{ci:Tr DevPortalWindow.Content.TestTutorial}" Click="ButtonTestTutorial_OnClick"/>
                     <Separator/>
-                    
+
                     <Panel Margin="16" Width="328" Height="60">
                         <Border Background="MediumVioletRed"/>
                         <tutorial:TutorialHighlightControl/>
                     </Panel>
                     <Separator/>
-                    
+
                     <StackPanel Orientation="Horizontal">
                         <Button Click="ButtonStartSplash_OnClick">StartSplash</Button>
                         <Button Click="ButtonEndSplash_OnClick">EndSplash</Button>
                     </StackPanel>
-                    
+
                     <Button Click="ButtonTestMve_OnClick">Test MVE</Button>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="控件">
+            <TabItem Header="{ci:Tr DevPortalWindow.Header.Controls}">
                 <ScrollViewer>
                     <StackPanel Spacing="6">
                         <ci:Field Label="ChipListBoxTheme">
                             <ListBox Theme="{StaticResource ChipListBoxTheme}">
-                                <ListBoxItem>大地</ListBoxItem>
-                                <ListBoxItem>海洋</ListBoxItem>
-                                <ListBoxItem>天空</ListBoxItem>
-                                <ListBoxItem IsSelected="True">负世</ListBoxItem>
-                                <ListBoxItem>理性</ListBoxItem>
-                                <ListBoxItem>浪漫</ListBoxItem>
-                                <ListBoxItem>纷争</ListBoxItem>
-                                <ListBoxItem>死亡</ListBoxItem>
-                                <ListBoxItem>诡计</ListBoxItem>
-                                <ListBoxItem>门径</ListBoxItem>
-                                <ListBoxItem>律法</ListBoxItem>
-                                <ListBoxItem>岁月</ListBoxItem>
-                                <ListBoxItem>真我</ListBoxItem>
+                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Earth}</ListBoxItem>
+                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Ocean}</ListBoxItem>
+                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Sky}</ListBoxItem>
+                                <ListBoxItem IsSelected="True">{ci:Tr DevPortalWindow.Content.NegativeWorld}</ListBoxItem>
+                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Reason}</ListBoxItem>
+                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Romance}</ListBoxItem>
+                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Conflict}</ListBoxItem>
+                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Death}</ListBoxItem>
+                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Trick}</ListBoxItem>
+                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Doorway}</ListBoxItem>
+                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Law}</ListBoxItem>
+                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Time}</ListBoxItem>
+                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.TrueSelf}</ListBoxItem>
                             </ListBox>
                         </ci:Field>
-                        
+
                         <ci:ExpressiveLoadingIndicator
                             IsActive="True"/>
                         <Separator />
@@ -93,9 +93,9 @@
                         <ci:Field Label="消息标题">
                             <TextBox Text="{Binding ViewModel.ToastMessage}" />
                         </ci:Field>
-                        <CheckBox Content="用户可以关闭消息" IsChecked="{Binding ViewModel.ToastCanUserClose}" />
-                        <CheckBox Content="消息有内容" IsChecked="{Binding ViewModel.ToastHaveActions}" />
-                        <Button Content="发送！" Classes="accnet" Click="ButtonSendToast_OnClick" />
+                        <CheckBox Content="{ci:Tr DevPortalWindow.Content.UserCanCloseMessage}" IsChecked="{Binding ViewModel.ToastCanUserClose}" />
+                        <CheckBox Content="{ci:Tr DevPortalWindow.Content.MessageHasContent}" IsChecked="{Binding ViewModel.ToastHaveActions}" />
+                        <Button Content="{ci:Tr DevPortalWindow.Content.Send}" Classes="accnet" Click="ButtonSendToast_OnClick" />
                         <Separator />
                         <TextBlock Text="Shimmer" />
                         <ci:Shimmer Width="64"/>
@@ -143,7 +143,7 @@
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="提醒">
+            <TabItem Header="{ci:Tr DevPortalWindow.Header.Reminders}">
                 <StackPanel Spacing="6" Width="400" HorizontalAlignment="Left">
                     <ci:Field Label="提醒标题">
                         <TextBox Text="{Binding ViewModel.NotificationMaskText}"/>
@@ -151,7 +151,7 @@
                     <ci:Field Label="提醒正文">
                         <TextBox Text="{Binding ViewModel.NotificationOverlayText}"/>
                     </ci:Field>
-                    <Button Content="发送！" Classes="accent"
+                    <Button Content="{ci:Tr DevPortalWindow.Content.Send}" Classes="accent"
                             Click="ButtonSendNotification_OnClick"/>
                     <Button Content="Run chain" Classes=""
                             Click="ButtonRunChain_OnClick"/>
@@ -176,14 +176,14 @@
             <TabItem Header="OOBE_Intro">
                 <StackPanel>
                     <ContentPresenter HorizontalAlignment="Stretch"
-                                      Height="400" 
+                                      Height="400"
                                       Content="{Binding ViewModel.OobeIntroControlContent, Mode=OneWay, TargetNullValue='awa'}"/>
                     <Button Classes="accentt" Click="ButtonPlayOobeAnimation_OnClick">Play</Button>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Markdown">
                 <Grid ColumnDefinitions="*, *">
-                    <avaloniaEdit:TextEditor Grid.Column="0" 
+                    <avaloniaEdit:TextEditor Grid.Column="0"
                                              TextChanged="MarkdownEditor_OnTextChanged"
                                              ShowLineNumbers="True"
                                              FontFamily="JetBrains Mono, Cascadia Code,Consolas,Menlo,Monospace"
@@ -198,7 +198,7 @@
                     </mdxaml:MarkdownScrollViewer>
                 </Grid>
             </TabItem>
-            <TabItem Header="调课日历">
+            <TabItem Header="{ci:Tr DevPortalWindow.Header.AdjustmentCalendar}">
                 <controls:ScheduleCalendarControl/>
             </TabItem>
             <TabItem Header="WeatherIcon">
@@ -240,7 +240,7 @@
                     </ci:StickyScrollViewer>
                 </Grid>
             </TabItem>
-            <TabItem Header="竖直抽屉">
+            <TabItem Header="{ci:Tr DevPortalWindow.Header.VerticalDrawer}">
                 <Grid>
                     <ci:VerticalDrawer AllowCollapse="True"
                                        x:Name="VerticalDrawer"
@@ -260,7 +260,7 @@
                             </ScrollViewer>
                         </ci:VerticalDrawer.DrawerContent>
                         <StackPanel Classes="items-halign-left">
-                            <Button Content="打开抽屉" Command="{Binding #VerticalDrawer.Open}"></Button>
+                            <Button Content="{ci:Tr DevPortalWindow.Content.OpenDrawer}" Command="{Binding #VerticalDrawer.Open}"></Button>
                         </StackPanel>
                     </ci:VerticalDrawer>
                 </Grid>

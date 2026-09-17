@@ -12,15 +12,15 @@
                 Classes="settings-container animated-intro"
                 DataContext="{Binding RelativeSource={RelativeSource AncestorType=welcomePages:GeneralPage}}"
                 MaxWidth="600">
-        <TextBlock Text="基本" HorizontalAlignment="Center"
+        <TextBlock Text="{ci:Tr WelcomePages.GeneralPage.Text.Basic}" HorizontalAlignment="Center"
                    Margin="0 0 0 4"
                    Theme="{StaticResource SubtitleTextBlockStyle}"/>
-        <TextBlock Text="配置 ClassIsland 的基本设置。" HorizontalAlignment="Center"
+        <TextBlock Text="{ci:Tr WelcomePages.GeneralPage.Text.ConfigureTheBasicSettingsOfClassIsland}" HorizontalAlignment="Center"
                    Margin="0 0 0 8"/>
-        
+
         <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE304;}"
-                                        Header="学期开始时间"
-                                        Description="设置学期首日，该日期将作为多周轮换课表的计算起点和每周的第一天。">
+                                        Header="{ci:Tr WelcomePages.GeneralPage.Header.SemesterStartTime}"
+                                        Description="{ci:Tr WelcomePages.GeneralPage.Description.SetTheFirstDayOfTheSemesterWhich}">
             <controls:FASettingsExpander.Footer>
                 <StackPanel Orientation="Horizontal"
                             Spacing="4">
@@ -30,20 +30,20 @@
             </controls:FASettingsExpander.Footer>
         </controls:FASettingsExpander>
         <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE4E8;}"
-                                   Header="匿名使用情况分析"
-                                   Description="本应用将通过 SentrySDK 来收集本应用中的使用情况与错误信息，以改进本应用。您的信息会匿名上传，不会包含您的个人信息。您可以自行启用或禁用此功能。">
+                                   Header="{ci:Tr WelcomePages.GeneralPage.Header.AnonymousUsageAnalysis}"
+                                   Description="{ci:Tr WelcomePages.GeneralPage.Description.ThisAppWillUseTheSentrysdkToCollect}">
             <controls:FASettingsExpander.Footer>
                 <ToggleSwitch IsChecked="{Binding ViewModel.SettingsService.Settings.IsSentryEnabled}"/>
             </controls:FASettingsExpander.Footer>
         </controls:FASettingsExpander>
-        
+
         <StackPanel Orientation="Horizontal" Spacing="4" HorizontalAlignment="Center">
             <Button Click="ButtonNext_OnClick"
-                    ToolTip.Tip="下一步"
+                    ToolTip.Tip="{ci:Tr WelcomePages.GeneralPage.ToolTip.NextStep}"
                     Content="{ci:FluentIcon &#xE130;, FontSize=18}"
                     Width="48" Height="48"
                     CornerRadius="24"
-                    Classes="accent" 
+                    Classes="accent"
                     Margin="0 8 0 0"/>
         </StackPanel>
     </StackPanel>

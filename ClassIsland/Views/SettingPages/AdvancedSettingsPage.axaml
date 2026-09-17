@@ -11,23 +11,23 @@
     <ScrollViewer>
         <StackPanel Classes="settings-container animated-intro">
             <controls:FAInfoBar Severity="Warning"
-                              Title="小心！" IsClosable="False"
-                              Message="修改本页面的设置存在风险，请谨慎操作。"
+                              Title="{ci:Tr SettingPages.AdvancedSettingsPage.Title.BeCareful}" IsClosable="False"
+                              Message="{ci:Tr SettingPages.AdvancedSettingsPage.Message.ModifyingTheSettingsOnThisPageCarriesRisks}"
                               IsOpen="True"/>
             <!-- 自动禁用异常插件 -->
-            <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE073;}" 
-                                        Header="自动禁用异常插件"
-                                        Description="启用后，ClassIsland 将自动禁用导致应用崩溃的插件，以避免异常插件进一步影响后续使用。"
+            <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE073;}"
+                                        Header="{ci:Tr SettingPages.AdvancedSettingsPage.Header.AutomaticallyDisableAbnormalPlugins}"
+                                        Description="{ci:Tr SettingPages.AdvancedSettingsPage.Description.WhenEnabledClassIslandWillAutomaticallyDisablePluginsTha}"
                                         >
                 <controls:FASettingsExpander.Footer>
                     <ToggleSwitch IsChecked="{Binding ViewModel.SettingsService.Settings.AutoDisableCorruptPlugins, Mode=TwoWay}"/>
                 </controls:FASettingsExpander.Footer>
             </controls:FASettingsExpander>
-            
+
             <!-- 渲染模式 -->
-            <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE62F;}" 
-                                        Header="渲染模式"
-                                        Description="渲染 UI 时将优先使用此处指定的渲染模式渲染。如果您遇到渲染问题，可尝试更改此选项，否则不要动这个选项。此选项仅在此设备生效。"
+            <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xE62F;}"
+                                        Header="{ci:Tr SettingPages.AdvancedSettingsPage.Header.RenderingMode}"
+                                        Description="{ci:Tr SettingPages.AdvancedSettingsPage.Description.WhenRenderingTheUITheRenderingModeSpecified}"
             >
                 <controls:FASettingsExpander.IsVisible>
                     <OnPlatform Default="False">
@@ -36,8 +36,8 @@
                 </controls:FASettingsExpander.IsVisible>
                 <controls:FASettingsExpander.Footer>
                     <ComboBox SelectedIndex="{Binding ViewModel.RenderingModeSelectedIndex}">
-                        <ComboBoxItem>默认</ComboBoxItem>
-                        <ComboBoxItem>软件（不推荐）</ComboBoxItem>
+                        <ComboBoxItem>{ci:Tr SettingPages.AdvancedSettingsPage.Content.Default}</ComboBoxItem>
+                        <ComboBoxItem>{ci:Tr SettingPages.AdvancedSettingsPage.Content.SoftwareNotRecommended}</ComboBoxItem>
                         <ComboBoxItem>AngleEgl</ComboBoxItem>
                         <ComboBoxItem>Wgl</ComboBoxItem>
                         <ComboBoxItem>Vulkan</ComboBoxItem>
@@ -47,8 +47,8 @@
 
             <Panel IsVisible="{Binding Platform, Source={x:Static ci:AppBase.Current}, Converter={x:Static ObjectConverters.NotEqual}, ConverterParameter='arm64'}">
                 <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xF483;}"
-                                           Header="使用系统标题栏"
-                                           Description="启用后应用窗口将使用系统提供的标题栏而非应用自定义的标题栏。一般情况下，系统标题栏具有更好的兼容性。">
+                                           Header="{ci:Tr SettingPages.AdvancedSettingsPage.Header.UseTheSystemTitleBar}"
+                                           Description="{ci:Tr SettingPages.AdvancedSettingsPage.Description.AfterEnabledTheAppWindowWillUseThe}">
                     <controls:FASettingsExpander.IsVisible>
                         <OnPlatform Default="False">
                             <On Options="Windows" Content="True" />
@@ -59,10 +59,10 @@
                     </controls:FASettingsExpander.Footer>
                 </controls:FASettingsExpander>
             </Panel>
-            
-            <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xF4D1;}" 
-                                        Header="兼容缩放模式"
-                                        Description="启用后应用将忽略 QT_SCREEN_SCALE_FACTORS、QT_SCALE_FACTORS 等环境变量提供的缩放设置，而转为自行通过显示信息等渠道获取缩放信息。可能有助于解决部分平台（如 UOS）下的缩放行为异常问题。">
+
+            <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xF4D1;}"
+                                        Header="{ci:Tr SettingPages.AdvancedSettingsPage.Header.CompatibleWithScalingMode}"
+                                        Description="{ci:Tr SettingPages.AdvancedSettingsPage.Description.OnceEnabledTheAppIgnoresScalingSettingsProvided}">
                 <controls:FASettingsExpander.IsVisible>
                     <OnPlatform Default="False">
                         <On Options="Linux" Content="True"/>

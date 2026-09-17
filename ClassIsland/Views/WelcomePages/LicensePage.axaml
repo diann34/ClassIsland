@@ -8,29 +8,29 @@
              x:Class="ClassIsland.Views.WelcomePages.LicensePage">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"
                 Classes="settings-container animated-intro">
-        <TextBlock Text="同意许可条款" HorizontalAlignment="Center"
+        <TextBlock Text="{ci:Tr WelcomePages.LicensePage.Text.AgreeToTheLicenseTerms}" HorizontalAlignment="Center"
                    Margin="0 0 0 4"
                    Theme="{StaticResource SubtitleTextBlockStyle}"/>
-        <TextBlock Text="要继续使用 ClassIsland，您必须阅读并同意以下许可条款。" HorizontalAlignment="Center"/>
+        <TextBlock Text="{ci:Tr WelcomePages.LicensePage.Text.ToContinueUsingClassIslandYouMustReadAnd}" HorizontalAlignment="Center"/>
         <CheckBox x:Name="ComboBoxOssLicense">
             <TextBlock VerticalAlignment="Center" Margin="0 4 0 0" >
-                我已阅读并同意<HyperlinkButton Content="《ClassIsland 开源许可》" Margin="0 -2 0 0"
+                {ci:Tr WelcomePages.LicensePage.Content.IHaveReadAndAgree}<HyperlinkButton Content="{ci:Tr WelcomePages.LicensePage.Content.ClassIslandOpenSourceLicense}" Margin="0 -2 0 0"
                                         Click="ButtonShowOssLicense_OnClick"/>。
             </TextBlock>
         </CheckBox>
         <CheckBox x:Name="ComboBoxPrivacy">
             <TextBlock VerticalAlignment="Center" Margin="0 4 0 0" >
-                我已阅读并同意<HyperlinkButton Content="《ClassIsland 隐私政策》" Margin="0 -2 0 0"
+                {ci:Tr WelcomePages.LicensePage.Content.IHaveReadAndAgree}<HyperlinkButton Content="{ci:Tr WelcomePages.LicensePage.Content.ClassIslandPrivacyPolicy}" Margin="0 -2 0 0"
                                         Click="ButtonShowPrivacyLicense_OnClick"/>。
             </TextBlock>
         </CheckBox>
         <StackPanel Orientation="Horizontal" Spacing="4" HorizontalAlignment="Center">
             <Button Command="{x:Static views:WelcomeWindow.WelcomeNavigateForwardCommand}"
-                    ToolTip.Tip="下一步"
+                    ToolTip.Tip="{ci:Tr WelcomePages.LicensePage.ToolTip.NextStep}"
                     Content="{ci:FluentIcon &#xE130;, FontSize=18}"
                     Width="48" Height="48"
                     CornerRadius="24"
-                    Classes="accent" 
+                    Classes="accent"
                     Margin="0 8 0 0">
                 <Button.IsEnabled>
                     <MultiBinding Converter="{x:Static BoolConverters.And}" >

@@ -27,7 +27,7 @@
                 <Border VerticalAlignment="Center">
                     <StackPanel Classes="settings-container animated-intro" MaxWidth="600">
                         <Image Source="/Assets/Demo_MainMenu.png" Margin="0 0 0 4"/>
-                        <TextBlock Text="点击任务栏托盘图标可以打开应用主菜单。" 
+                        <TextBlock Text="{ci:Tr WelcomePages.FinishPage.Text.ClickTheTaskbarTrayIconToOpenThe}"
                                    HorizontalAlignment="Center"
                         />
                     </StackPanel>
@@ -35,7 +35,7 @@
                 <Border VerticalAlignment="Center">
                     <StackPanel Classes="settings-container animated-intro" MaxWidth="600">
                         <Image Source="/Assets/Demo_OpenProfileSettingsWindow.png" Margin="0 0 0 4"/>
-                        <TextBlock Text="要编辑课表和时间点，请在应用主菜单中点击【编辑档案】。" 
+                        <TextBlock Text="{ci:Tr WelcomePages.FinishPage.Text.ToEditSchedulesAndTimetablesClickEditProfile}"
                                    HorizontalAlignment="Center"
                         />
                     </StackPanel>
@@ -43,33 +43,33 @@
                 <Border VerticalAlignment="Center">
                     <StackPanel Classes="settings-container animated-intro" MaxWidth="600">
                         <ci:StickerControl Height="85" Width="85"
-                                           Margin="0 0 0 4" 
+                                           Margin="0 0 0 4"
                                            StickerSource="/Assets/HoYoStickers/白厄_再见.png"
                                            StickerToolTip="白厄_再见"
                                            FallbackIcon="{ci:FluentIconSource &#xE31A;, FontSize=85}"/>
-                        <TextBlock Text="完成" HorizontalAlignment="Center"
+                        <TextBlock Text="{ci:Tr WelcomePages.FinishPage.Text.Done}" HorizontalAlignment="Center"
                                    Margin="0 0 0 4"
                                    Theme="{StaticResource SubtitleTextBlockStyle}"/>
-                        <TextBlock Text="恭喜！应用的基本设置已完成，感谢您选用 ClassIsland。点击【&#xE423;】以结束设置向导。" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{ci:Tr WelcomePages.FinishPage.Text.CongratulationsTheBasicSetupIsCompleteThankYou}" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Border>
             </Carousel.Items>
         </Carousel>
-        
-        
+
+
         <StackPanel Orientation="Horizontal" Spacing="4" HorizontalAlignment="Center">
             <Button Click="ButtonPrevious_OnClick"
-                    ToolTip.Tip="上一步"
+                    ToolTip.Tip="{ci:Tr WelcomePages.FinishPage.ToolTip.PreviousStep}"
                     Content="{ci:FluentIcon &#xE108;, FontSize=18}"
                     Width="48" Height="48"
                     CornerRadius="24"
                     Margin="0 8 0 0"/>
             <Button Click="ButtonNext_OnClick"
-                    ToolTip.Tip="下一步"
+                    ToolTip.Tip="{ci:Tr WelcomePages.FinishPage.ToolTip.NextStep}"
                     Content="{ci:FluentIcon &#xE130;, FontSize=18}"
                     Width="48" Height="48"
                     CornerRadius="24"
-                    Classes="accent" 
+                    Classes="accent"
                     Margin="0 8 0 0">
                 <Button.IsVisible>
                     <Binding Path="#Carousel.SelectedIndex" Converter="{x:Static ObjectConverters.NotEqual}">
@@ -80,7 +80,7 @@
                 </Button.IsVisible>
             </Button>
             <Button Command="{x:Static views:WelcomeWindow.FinishWelcomeWizardCommand}"
-                    ToolTip.Tip="完成"
+                    ToolTip.Tip="{ci:Tr WelcomePages.FinishPage.ToolTip.Done}"
                     Content="{ci:FluentIcon &#xE423;, FontSize=18}"
                     Width="48" Height="48"
                     CornerRadius="24"

@@ -1,8 +1,8 @@
 <controls:SettingsPageBase x:Class="ClassIsland.Views.SettingPages.AppearanceSettingsPage"
       xmlns="https://github.com/avaloniaui"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:ClassIsland.Views.SettingPages"
       xmlns:controls="clr-namespace:ClassIsland.Core.Abstractions.Controls;assembly=ClassIsland.Core"
       xmlns:controls1="clr-namespace:ClassIsland.Core.Controls;assembly=ClassIsland.Core"
@@ -13,7 +13,7 @@
       xmlns:classIsland="clr-namespace:ClassIsland"
       xmlns:system="clr-namespace:System;assembly=System.Runtime"
       xmlns:ci="http://classisland.tech/schemas/xaml/core"
-      mc:Ignorable="d" 
+      mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       d:DataContext="{d:DesignInstance local:AppearanceSettingsPage}">
 
@@ -22,11 +22,11 @@
     </controls:SettingsPageBase.Resources>
     <ScrollViewer>
         <StackPanel Classes="settings-container animated-intro">
-            <controls1:IconText Glyph="&#xEF27;" Text="基本" Margin="0 0 0 4" />
+            <controls1:IconText Glyph="&#xEF27;" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.Basic}" Margin="0 0 0 4" />
             <!-- 界面缩放 -->
             <controls2:FASettingsExpander IconSource="{controls1:FluentIconSource &#xF4D1;}"
-                                        Header="界面缩放"
-                                        Description="主界面的缩放大小。">
+                                        Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.InterfaceScaling}"
+                                        Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.ZoomingInAndOutOfTheMainInterface}">
                 <controls2:FASettingsExpander.Footer>
                     <Slider Width="180" Minimum="0.75" Maximum="2.5"
                             VerticalAlignment="Center"
@@ -38,14 +38,14 @@
                             IsSnapToTickEnabled="True"/>
                 </controls2:FASettingsExpander.Footer>
             </controls2:FASettingsExpander>
-            
+
             <!--背景颜色-->
             <controls2:FASettingsExpander IconSource="{controls1:FluentIconSource &#xE523;}"
-                                        Header="背景颜色"
-                                        Description="主界面背景颜色，禁用时将根据应用主题自动选择颜色。">
+                                        Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.BackgroundColor}"
+                                        Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.HomeInterfaceBackgroundColorWhenDisabledTheColor}">
                 <controls2:FASettingsExpander.Footer>
                     <StackPanel Orientation="Horizontal">
-                    
+
                         <ColorPicker
                             VerticalAlignment="Center"
                             Margin="0 0 6 0"
@@ -56,11 +56,11 @@
                     </StackPanel>
                 </controls2:FASettingsExpander.Footer>
             </controls2:FASettingsExpander>
-            
+
             <!-- 背景不透明度 -->
             <controls2:FASettingsExpander IconSource="{controls1:FluentIconSource &#xF37D;}"
-                                        Header="背景不透明度"
-                                        Description="主界面背景的不透明度。">
+                                        Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.BackgroundOpacity}"
+                                        Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.OpacityOfTheMainInterfaceBackground}">
                 <controls2:FASettingsExpander.Footer>
                     <Slider Width="180" Minimum="0" Maximum="1"
                             Classes="auto-tooltip"
@@ -70,11 +70,11 @@
                             IsSnapToTickEnabled="True"/>
                 </controls2:FASettingsExpander.Footer>
             </controls2:FASettingsExpander>
-            
+
             <!-- 圆角半径 -->
             <controls2:FASettingsExpander IconSource="{controls1:FluentIconSource &#xF031;}"
-                                        Header="圆角半径"
-                                        Description="主界面圆角半径，调至最大数值时左右边缘为半圆。">
+                                        Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.CornerRadius}"
+                                        Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.MainInterfaceFilletRadiusWhenSetToThe}">
                 <controls2:FASettingsExpander.Footer>
                     <Slider Grid.Row="0" Width="180" Minimum="0" Maximum="20"
                             Value="{Binding ViewModel.SettingsService.Settings.RadiusX}"
@@ -85,11 +85,11 @@
                             VerticalAlignment="Center"/>
                 </controls2:FASettingsExpander.Footer>
             </controls2:FASettingsExpander>
-            
+
             <!-- 行间隔 -->
             <controls2:FASettingsExpander IconSource="{controls1:FluentIconSource &#xE6EF;}"
-                                        Header="行间隔"
-                                        Description="主界面行间间隔。">
+                                        Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.RowSpacing}"
+                                        Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.LineSpacingOnTheMainInterface}">
                 <controls2:FASettingsExpander.Footer>
                     <StackPanel Orientation="Horizontal">
                         <Slider Width="130" Minimum="0" Maximum="150"
@@ -107,64 +107,64 @@
                     </StackPanel>
                 </controls2:FASettingsExpander.Footer>
             </controls2:FASettingsExpander>
-            
+
             <!-- 分体主界面 -->
             <controls2:FASettingsExpander IconSource="{controls1:FluentIconSource &#xf023;}"
-                                        Header="分体主界面"
-                                        Description="启用后组件会分开。">
+                                        Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.SplitMainInterface}"
+                                        Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.AfterActivationTheComponentWillBeSeparated}">
                 <controls2:FASettingsExpander.Footer>
                     <ToggleSwitch IsChecked="{Binding ViewModel.SettingsService.Settings.IsIslandSeperated}"/>
                 </controls2:FASettingsExpander.Footer>
             </controls2:FASettingsExpander>
-            
+
             <Separator Margin="0 12 0 4" />
-            <controls1:IconText Glyph="&#xE51E;" Text="主题" Margin="0 0 0 4" />
+            <controls1:IconText Glyph="&#xE51E;" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.Theme}" Margin="0 0 0 4" />
             <!-- 应用主题 -->
             <controls2:FASettingsExpander IconSource="{controls1:FluentIconSource &#xE5CB;}"
-                                        Header="应用主题"
-                                        Description="控制应用的明暗主题。">
+                                        Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.ApplicationThemes}"
+                                        Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.ControlTheLightAndDarkThemesOfThe}">
                 <controls2:FASettingsExpander.Footer>
                     <ComboBox Foreground="{DynamicResource MaterialDesignBody}"
                               SelectedIndex="{Binding ViewModel.SettingsService.Settings.Theme}"
                               HorizontalContentAlignment="Left">
-                        <controls1:IconText Glyph="&#xE5CB;" Text="跟随系统" />
-                        <controls1:IconText Glyph="&#xF465;" Text="明亮" />
-                        <controls1:IconText Glyph="&#xF44B;" Text="黑暗" />
+                        <controls1:IconText Glyph="&#xE5CB;" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.FollowTheSystem}" />
+                        <controls1:IconText Glyph="&#xF465;" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.Bright}" />
+                        <controls1:IconText Glyph="&#xF44B;" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.Darkness}" />
                     </ComboBox>
                 </controls2:FASettingsExpander.Footer>
             </controls2:FASettingsExpander>
-            
+
             <!-- 主题色来源 -->
             <controls2:FASettingsExpander IconSource="{controls1:FluentIconSource &#xEC50;}"
-                                        Header="主题色来源"
-                                        Description="控制应用选取主题色的途径。">
+                                        Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.SourceOfThemeColors}"
+                                        Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.ControlTheWayTheAppSelectsTheTheme}">
                 <controls2:FASettingsExpander.Footer>
                     <ComboBox Foreground="{DynamicResource MaterialDesignBody}"
                               SelectionChanged="ButtonUpdateWallpaper_OnClick"
                               HorizontalContentAlignment="Left"
                               SelectedIndex="{Binding ViewModel.SettingsService.Settings.ColorSource}">
                         <ComboBoxItem>
-                            <controls1:IconText Glyph="&#xED39;" Text="自定义" />
+                            <controls1:IconText Glyph="&#xED39;" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.Customizable}" />
                         </ComboBoxItem>
                         <ComboBoxItem IsVisible="False" IsEnabled="False">
-                            <controls1:IconText Glyph="&#xF42D;" Text="系统壁纸" />
+                            <controls1:IconText Glyph="&#xF42D;" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.SystemWallpaper}" />
                         </ComboBoxItem>
                         <ComboBoxItem>
-                            <controls1:IconText Glyph="&#xEA1D;" Text="系统" />
+                            <controls1:IconText Glyph="&#xEA1D;" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.System}" />
                         </ComboBoxItem>
                         <ComboBoxItem IsVisible="False" IsEnabled="False">
-                            <controls1:IconText Glyph="&#xEEED;" Text="屏幕主题色"/>
+                            <controls1:IconText Glyph="&#xEEED;" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.ScreenThemeColors}"/>
                         </ComboBoxItem>
                     </ComboBox>
                 </controls2:FASettingsExpander.Footer>
             </controls2:FASettingsExpander>
-            
+
             <StackPanel>
                 <!-- todo: 仅在使用自定义主题色时显示 -->
                 <!-- 第一主题色 -->
                 <controls2:FASettingsExpander IconSource="{controls1:FluentIconSource &#xE51E;}"
-                                            Header="强调色"
-                                            Description="应用显示强调元素时所使用的颜色。">
+                                            Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.AccentColors}"
+                                            Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.ApplyTheColorsUsedWhenDisplayingHighlightedElements}">
                     <controls2:FASettingsExpander.IsVisible>
                         <Binding Path="ViewModel.SettingsService.Settings.ColorSource"
                                  Converter="{x:Static ObjectConverters.Equal}">
@@ -178,18 +178,18 @@
                             Color="{Binding ViewModel.SettingsService.Settings.PrimaryColor, Mode=TwoWay}" />
                     </controls2:FASettingsExpander.Footer>
                 </controls2:FASettingsExpander>
-                
+
             </StackPanel>
             <!-- 壁纸主题色 -->
             <!-- <StackPanel> -->
             <!--     ~1~ todo: 仅在使用自壁纸主题色时显示 @1@ -->
             <!--     <Separator Margin="0 16 0 8" /> -->
-            <!--     <controls1:IconText Kind="Wallpaper" Text="壁纸主题色" Margin="0 0 0 8" /> -->
+            <!--     <controls1:IconText Kind="Wallpaper" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.WallpaperThemeColors}" Margin="0 0 0 8" /> -->
             <!--     ~1~ 壁纸主题色 @1@ -->
             <!--     <materialDesign:Card> -->
             <!--         <Grid> -->
             <!--             <StackPanel Margin="12"> -->
-            <!--                 <controls1:IconText Kind="PaletteOutline" Text="选择主题色" /> -->
+            <!--                 <controls1:IconText Kind="PaletteOutline" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.ChooseAThemeColor}" /> -->
             <!--                 <Grid VerticalAlignment="Bottom" -->
             <!--                                               IsEnabled="{Binding WallpaperPickingService.IsWorking, Mode=OneWay, Converter={StaticResource BooleanToBooleanReConverter}}"> -->
             <!--                     <Grid.ColumnDefinitions> -->
@@ -204,14 +204,14 @@
             <!--                                                         Click="ButtonUpdateWallpaper_OnClick" -->
             <!--                                                         VerticalAlignment="Center" -->
             <!--                                                         Margin="2 0"> -->
-            <!--                             <controls1:IconText Kind="Refresh" Text="刷新" /> -->
+            <!--                             <controls1:IconText Kind="Refresh" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.Refresh}" /> -->
             <!--                         </Button> -->
             <!--                         ~1~ 预览提取结果 @1@ -->
             <!--                         <Button Style="{StaticResource TransparentButton}" -->
             <!--                                                         Click="ButtonPreviewWallpaper_OnClick" -->
             <!--                                                         VerticalAlignment="Center" -->
             <!--                                                         Margin="2 0"> -->
-            <!--                             <controls1:IconText Kind="EyeOutline" Text="预览提取结果" /> -->
+            <!--                             <controls1:IconText Kind="EyeOutline" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.PreviewTheExtractionResults}" /> -->
             <!--                         </Button> -->
             <!--                     </WrapPanel> -->
             <!--                     ~1~ 颜色选择 @1@ -->
@@ -259,8 +259,8 @@
             <!--             <Expander.Header> -->
             <!--                 <controls1:SettingsControl IconGlyph="RefreshAuto" -->
             <!--                                                                   Foreground="{DynamicResource MaterialDesignBody}" -->
-            <!--                                                                   Header="启用自动提取主题色" -->
-            <!--                                                                   Description="若启用，将会在每分钟刷新一次壁纸主题色，适用于会随时间大幅变化主题色的动态壁纸。" -->
+            <!--                                                                   Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.EnableAutomaticExtractionOfThemeColors}" -->
+            <!--                                                                   Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.WhenEnabledTheWallpaperThemeColorWillRefresh}" -->
             <!--                                                                   IsOn="{Binding ViewModel.SettingsService.Settings.IsWallpaperAutoUpdateEnabled, Mode=TwoWay}" -->
             <!--                                                                   Margin="-12 0" /> -->
             <!--             </Expander.Header> -->
@@ -268,13 +268,13 @@
             <!--                                           IsEnabled="{Binding ViewModel.SettingsService.Settings.IsWallpaperAutoUpdateEnabled, Mode=OneWay}"> -->
             <!--                 ~1~ 自动提取主题色间隔 @1@ -->
             <!--                 <controls1:SettingsControl IconGlyph="ClockOutline" -->
-            <!--                                                                   Header="自动提取主题色间隔" -->
-            <!--                                                                   Description="自动从壁纸提取主题色时间隔的时间，建议根据动态壁纸更新速度按需设置，不宜低于10秒。"> -->
+            <!--                                                                   Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.AutomaticallyExtractsThemeColorIntervals}" -->
+            <!--                                                                   Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.AutomaticallyExtractsTheTimeIntervalForThemeColors}"> -->
             <!--                     <controls1:SettingsControl.Switcher> -->
             <!--                         <Grid> -->
             <!--                             <NumericUpDown MaxValue="36000" MinValue="0" -->
             <!--                                                        Width="150" -->
-            <!--                                                        materialDesign:TextFieldAssist.SuffixText="秒" -->
+            <!--                                                        materialDesign:TextFieldAssist.SuffixText="{ci:Tr SettingPages.AppearanceSettingsPage.Text.Seconds}" -->
             <!--                                                        Foreground="{DynamicResource MaterialDesignBody}" -->
             <!--                                                        Style="{StaticResource MaterialDesignTextBox}" -->
             <!--                                                        Value="{Binding ViewModel.SettingsService.Settings.WallpaperAutoUpdateIntervalSeconds}" /> -->
@@ -286,23 +286,23 @@
             <!--     </materialDesign:Card> -->
             <!-- -->
             <!--     ~1~ 兼容模式 @1@ -->
-            <!--     <controls1:SettingsCard IconGlyph="CogOutline" Header="启用兼容模式" -->
-            <!--                                                    Description="若启用，将从注册表提取壁纸，而非桌面句柄。不兼容动态壁纸。可能会解决一些与壁纸提取相关的玄学问题。" -->
+            <!--     <controls1:SettingsCard IconGlyph="CogOutline" Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.EnableCompatibilityMode}" -->
+            <!--                                                    Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.IfEnabledWallpapersWillBeExtractedFromThe}" -->
             <!--                                                    IsOn="{Binding ViewModel.SettingsService.Settings.IsFallbackModeEnabled, Mode=TwoWay}" /> -->
             <!-- -->
             <!--     ~1~ 实验性取色算法 @1@ -->
-            <!--     <controls1:SettingsCard IconGlyph="FlaskOutline" Header="实验性取色算法" -->
-            <!--                             Description="启用后将使用实验性的取色算法进行取色，取色性能更好。" -->
+            <!--     <controls1:SettingsCard IconGlyph="FlaskOutline" Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.ExperimentalColorPickingAlgorithm}" -->
+            <!--                             Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.AfterActivationAnExperimentalColorPickingAlgorithmWill}" -->
             <!--                             IsOn="{Binding ViewModel.SettingsService.Settings.UseExperimentColorPickingMethod, Mode=TwoWay}" /> -->
             <!--     ~1~ 壁纸层窗口类名 @1@ -->
-            <!--     <controls1:SettingsCard IconGlyph="WindowMaximize" Header="壁纸层窗口类名" -->
+            <!--     <controls1:SettingsCard IconGlyph="WindowMaximize" Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.WallpaperLayerWindowCategoryName}" -->
             <!--                                                    Visibility="{Binding ViewModel.SettingsService.Settings.IsFallbackModeEnabled, Mode=OneWay, Converter={StaticResource InverseBoolToVisConverter}}" -->
-            <!--                                                    Description="获取壁纸时要寻找的壁纸窗口的类名，留空将使用默认类名Progman。当需要从动态壁纸软件（如Wallpaper Engine等）获取壁纸时，请修改此选项为对应壁纸软件的壁纸窗口类名，以正确获取壁纸。若此栏未填写正确，将无法正常获取壁纸。"> -->
+            <!--                                                    Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.WhenObtainingWallpapersTheWallpaperWindowClassName}"> -->
             <!--         <controls1:SettingsCard.Switcher> -->
             <!--             <DockPanel Width="150"> -->
             <!--                 <Button Style="{StaticResource TransparentButton}" -->
             <!--                                                 Content="{materialDesign:PackIcon WindowMaximize}" -->
-            <!--                                                 ToolTip.Tip="浏览…" -->
+            <!--                                                 ToolTip.Tip="{ci:Tr SettingPages.AppearanceSettingsPage.ToolTip.Browse}" -->
             <!--                                                 DockPanel.Dock="Right" -->
             <!--                                                 Click="ButtonBrowseWindows_OnClick" /> -->
             <!--                 <TextBox Foreground="{DynamicResource MaterialDesignBody}" -->
@@ -311,9 +311,9 @@
             <!--         </controls1:SettingsCard.Switcher> -->
             <!--     </controls1:SettingsCard> -->
             <!--     ~1~ 取色亮度波峰 @1@ -->
-            <!--     <controls1:SettingsCard IconGlyph="ChartBellCurve" Header="取色亮度波峰" -->
+            <!--     <controls1:SettingsCard IconGlyph="ChartBellCurve" Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.ColorPickingBrightnessPeak}" -->
             <!--                             Visibility="{Binding ViewModel.SettingsService.Settings.UseExperimentColorPickingMethod, Converter={StaticResource InverseBoolToVisConverter}}" -->
-            <!--                             Description="取色时为亮度更接近此值的颜色赋予更高的权重，修改此值会影响到取色结果中整体颜色的亮度和准确性，请谨慎修改。（默认值：0.6）"> -->
+            <!--                             Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.WhenSelectingColorsAssignHigherWeightsToColors}"> -->
             <!--         <controls1:SettingsCard.Switcher> -->
             <!--             <Grid> -->
             <!--                 <NumericUpDown MaxValue="1" MinValue="0" Width="150" -->
@@ -337,12 +337,12 @@
             <!--         </Style> -->
             <!--     </StackPanel.Style> -->
             <!--     <Separator Margin="0 16 0 8" /> -->
-            <!--     <controls1:IconText Kind="PanoramaVariantOutline" Text="屏幕主题色" Margin="0 0 0 8" /> -->
+            <!--     <controls1:IconText Kind="PanoramaVariantOutline" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.ScreenThemeColors}" Margin="0 0 0 8" /> -->
             <!--     <materialDesign:Card> -->
             <!--         <Grid> -->
             <!--             <ProgressBar Visibility="{Binding WallpaperPickingService.IsWorking, Mode=OneWay, Converter={StaticResource BooleanToVisibilityConverter}}" IsIndeterminate="True" VerticalAlignment="Top"/> -->
             <!--             <StackPanel Margin="12"> -->
-            <!--                 <controls1:IconText Kind="PaletteOutline" Text="选择主题色" /> -->
+            <!--                 <controls1:IconText Kind="PaletteOutline" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.ChooseAThemeColor}" /> -->
             <!--                 <Grid VerticalAlignment="Bottom" IsEnabled="{Binding WallpaperPickingService.IsWorking, Mode=OneWay, Converter={StaticResource BooleanToBooleanReConverter}}"> -->
             <!--                     <Grid.ColumnDefinitions> -->
             <!--                         <ColumnDefinition Width="Auto"/> -->
@@ -370,11 +370,11 @@
             <!--                     <WrapPanel HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="1"> -->
             <!--                         ~1~ 刷新 @1@ -->
             <!--                         <Button Click="ButtonUpdateWallpaper_OnClick" Style="{StaticResource TransparentButton}" VerticalAlignment="Center" Margin="2 0"> -->
-            <!--                             <controls1:IconText Kind="Refresh" Text="刷新"/> -->
+            <!--                             <controls1:IconText Kind="Refresh" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.Refresh}"/> -->
             <!--                         </Button> -->
             <!--                         ~1~ 预览提取结果 @1@ -->
             <!--                         <Button Click="ButtonPreviewWallpaper_OnClick" Style="{StaticResource TransparentButton}" VerticalAlignment="Center" Margin="2 0"> -->
-            <!--                             <controls1:IconText Kind="EyeOutline" Text="预览提取结果"/> -->
+            <!--                             <controls1:IconText Kind="EyeOutline" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.PreviewTheExtractionResults}"/> -->
             <!--                         </Button> -->
             <!--                     </WrapPanel> -->
             <!--                 </Grid> -->
@@ -382,16 +382,16 @@
             <!--         </Grid> -->
             <!--     </materialDesign:Card> -->
             <!--     ~1~ 自动提取主题色 @1@ -->
-            <!--     <controls1:SettingsCard Margin="0 6" IconGlyph="ClockOutline" Header="自动提取主题色间隔" Description="自动从屏幕上提取主题色时间隔的时间，建议设为10秒左右。"> -->
+            <!--     <controls1:SettingsCard Margin="0 6" IconGlyph="ClockOutline" Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.AutomaticallyExtractsThemeColorIntervals}" Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.AutomaticallyExtractsTheThemeColorIntervalFromThe}"> -->
             <!--         <controls1:SettingsCard.Switcher> -->
             <!--             <Grid> -->
-            <!--                 <NumericUpDown MaxValue="300" MinValue="0" Width="100" materialDesign:TextFieldAssist.SuffixText="秒" Foreground="{DynamicResource MaterialDesignBody}" Style="{StaticResource MaterialDesignTextBox}" -->
+            <!--                 <NumericUpDown MaxValue="300" MinValue="0" Width="100" materialDesign:TextFieldAssist.SuffixText="{ci:Tr SettingPages.AppearanceSettingsPage.Text.Seconds}" Foreground="{DynamicResource MaterialDesignBody}" Style="{StaticResource MaterialDesignTextBox}" -->
             <!--                                            Value="{Binding ViewModel.SettingsService.Settings.WallpaperAutoUpdateIntervalSeconds}"/> -->
             <!--             </Grid> -->
             <!--         </controls1:SettingsCard.Switcher> -->
             <!--     </controls1:SettingsCard> -->
             <!--     ~1~ 取色亮度波峰 @1@ -->
-            <!--     <controls1:SettingsCard IconGlyph="ChartBellCurve" Header="取色亮度波峰" Description="取色时为亮度更接近此值的颜色赋予更高的权重。（默认值：0.6）"> -->
+            <!--     <controls1:SettingsCard IconGlyph="ChartBellCurve" Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.ColorPickingBrightnessPeak}" Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.WhenPickingColorsAssignHigherWeightsToColors}"> -->
             <!--         <controls1:SettingsCard.Switcher> -->
             <!--             <Grid> -->
             <!--                 <NumericUpDown MaxValue="1" MinValue="0" Width="100" Foreground="{DynamicResource MaterialDesignBody}" Style="{StaticResource MaterialDesignTextBox}" -->
@@ -401,9 +401,9 @@
             <!--     </controls1:SettingsCard> -->
             <!-- </StackPanel> -->
             <Separator Margin="0 16 0 8" />
-            <controls1:IconText Glyph="&#xF26F;" Text="字体" Margin="0 0 0 8" />
-            <controls2:FASettingsExpander Header="自定义字体"
-                                        Description="自定义主界面显示课表的字体。"
+            <controls1:IconText Glyph="&#xF26F;" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Text.Font}" Margin="0 0 0 8" />
+            <controls2:FASettingsExpander Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.CustomFonts}"
+                                        Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.CustomizeTheFontForTheClassScheduleDisplayed}"
                                         IconSource="{controls1:FluentIconSource &#xF271;}">
                 <controls2:FASettingsExpander.Footer>
                     <ComboBox x:Name="FontComboBox"
@@ -435,7 +435,7 @@
                                     <TextBlock.Styles>
                                         <Style Selector="TextBlock">
                                             <Style Selector="^.DefaultFont">
-                                                <Setter Property="Text" Value="HarmonyOS Sans SC（默认）"/>
+                                                <Setter Property="Text" Value="{ci:Tr SettingPages.AppearanceSettingsPage.Text.DefaultHarmonyOsSansSc}"/>
                                             </Style>
                                             <Setter Property="Text" Value="{Binding }" />
                                         </Style>
@@ -447,8 +447,8 @@
                 </controls2:FASettingsExpander.Footer>
             </controls2:FASettingsExpander>
             <controls2:FASettingsExpander IconSource="{controls1:FluentIconSource &#xF26F;}"
-                                        Header="自定义字重"
-                                        Description="自定义主界面显示的字体的字重，需要对应字体支持。">
+                                        Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.CustomFontWeight}"
+                                        Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.CustomizeTheFontWeightDisplayedOnTheMain}">
                 <controls2:FASettingsExpander.Footer>
                     <ComboBox
                         SelectedItem="{Binding ViewModel.SettingsService.Settings.MainWindowFontWeight2, Converter={StaticResource IntToFontWeightConverter}}"
@@ -480,8 +480,8 @@
             </controls2:FASettingsExpander>
             <!-- 字体大小 -->
             <controls2:FASettingsExpander IconSource="{controls1:FluentIconSource &#xF273;}"
-                                        Header="字体大小"
-                                        Description="调整主界面上各类字体的大小。">
+                                        Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.FontSize}"
+                                        Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.AdjustTheFontSizesOnTheMainInterface}">
                 <controls2:FASettingsExpander.Styles>
                     <Style Selector="controls1|Field">
                         <Setter Property="Width" Value="175"/>
@@ -494,8 +494,8 @@
                         </Style>
                     </Style>
                 </controls2:FASettingsExpander.Styles>
-                <controls2:FASettingsExpanderItem Content="次级字体大小"
-                                                Description="时间点附加信息等">
+                <controls2:FASettingsExpanderItem Content="{ci:Tr SettingPages.AppearanceSettingsPage.Content.SecondaryFontSize}"
+                                                Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.AdditionalInformationAtTimePointsEtc}">
 
                     <controls2:FASettingsExpanderItem.Footer>
                         <controls1:Field>
@@ -503,8 +503,8 @@
                         </controls1:Field>
                     </controls2:FASettingsExpanderItem.Footer>
                 </controls2:FASettingsExpanderItem>
-                <controls2:FASettingsExpanderItem Content="正文字体大小"
-                                                Description="主界面默认字体大小">
+                <controls2:FASettingsExpanderItem Content="{ci:Tr SettingPages.AppearanceSettingsPage.Content.BodyFontSize}"
+                                                Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.DefaultFontSizeOnTheMainInterface}">
 
                     <controls2:FASettingsExpanderItem.Footer>
                         <controls1:Field>
@@ -512,8 +512,8 @@
                         </controls1:Field>
                     </controls2:FASettingsExpanderItem.Footer>
                 </controls2:FASettingsExpanderItem>
-                <controls2:FASettingsExpanderItem Content="强调字体大小"
-                                                Description="课程表、时钟、提醒标题、天气预报等内容">
+                <controls2:FASettingsExpanderItem Content="{ci:Tr SettingPages.AppearanceSettingsPage.Content.EmphasizeFontSize}"
+                                                Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.ContentSuchAsTimetableClockReminderTitlesWeather}">
 
                     <controls2:FASettingsExpanderItem.Footer>
                         <controls1:Field>
@@ -521,8 +521,8 @@
                         </controls1:Field>
                     </controls2:FASettingsExpanderItem.Footer>
                 </controls2:FASettingsExpanderItem>
-                <controls2:FASettingsExpanderItem Content="大号字体大小"
-                                                Description="课程预报等内容">
+                <controls2:FASettingsExpanderItem Content="{ci:Tr SettingPages.AppearanceSettingsPage.Content.LargeFontSize}"
+                                                Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.ContentSuchAsCourseForecastEtc}">
 
                     <controls2:FASettingsExpanderItem.Footer>
                         <controls1:Field>
@@ -531,14 +531,14 @@
                     </controls2:FASettingsExpanderItem.Footer>
                 </controls2:FASettingsExpanderItem>
             </controls2:FASettingsExpander>
-            
+
             <!-- 字体颜色 -->
             <controls2:FASettingsExpander IconSource="{controls1:FluentIconSource &#xF22A;}"
-                                        Header="字体颜色"
-                                        Description="调整字体颜色，将覆盖主题默认值。">
+                                        Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.FontColor}"
+                                        Description="{ci:Tr SettingPages.AppearanceSettingsPage.Description.AdjustTheFontColorToOverrideTheTheme}">
                 <controls2:FASettingsExpander.Footer>
                     <StackPanel Orientation="Horizontal">
-                    
+
                         <ColorPicker
                             VerticalAlignment="Center"
                             Margin="0 0 6 0"
@@ -551,7 +551,7 @@
             </controls2:FASettingsExpander>
             <!-- 字体预览 -->
             <TabControl Classes="compact" Padding="0">
-                <TabItem Header="字体预览">
+                <TabItem Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.FontPreview}">
                     <TextBox
                         FontWeight="{Binding ViewModel.SettingsService.Settings.MainWindowFontWeight2, Converter={StaticResource IntToFontWeightConverter}}"
                         FontSize="17"
@@ -561,15 +561,11 @@
                         FontFamily="{Binding ViewModel.SettingsService.Settings.MainWindowFont, Mode=OneWay, Converter={StaticResource StringToFontFamilyConverter}}"
                         Margin="0 4 0 0"
                         TextAlignment="Center"
-                        xml:space="preserve">当有一天你不再纠结于答案 当我们又重逢于天涯或沧海
-语文 数学 英语 历史 物理 政治 化学 生物 地理
-the quick brown fox jumps over a lazy dog
-THE QUICK BROWN FOX JUMPS OVER A LAZY DOG
-8:00-12:00 1234567890 +-*/</TextBox>
+                        xml:space="preserve">{ci:Tr SettingPages.AppearanceSettingsPage.Content.WhenOneDayYouNoLongerDwellOn}</TextBox>
                 </TabItem>
-                <TabItem Header="字号预览">
+                <TabItem Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.FontSizePreview}">
                     <StackPanel Spacing="2">
-                        <controls1:Field Label="测试文本">
+                        <controls1:Field Label="{ci:Tr SettingPages.AppearanceSettingsPage.Label.TestText}">
                             <TextBox Text="{Binding ViewModel.FontSizeTestText}"/>
                         </controls1:Field>
                         <TextBlock TextWrapping="Wrap"

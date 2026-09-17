@@ -2,14 +2,14 @@
                   x:TypeArguments="componentSettings:SlideComponentSettings"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ClassIsland.Controls.Components"
              xmlns:ci="http://classisland.tech/schemas/xaml/core"
              xmlns:componentSettings="clr-namespace:ClassIsland.Models.ComponentSettings"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:controls="clr-namespace:FluentAvalonia.UI.Controls;assembly=FluentAvalonia"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
     <ci:ComponentBase.Resources>
         <ci:RulesetControl x:Key="RulesetControl" Classes="in-drawer"/>
@@ -20,10 +20,10 @@
             DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:SlideComponentSettingsControl}}">
             <!-- 轮换间隔 -->
             <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xf361;}"
-                                       Header="轮换间隔"
-                                       Description="组件自动轮换的间隔时间">
+                                       Header="{ci:Tr Controls.Components.SlideComponentSettingsControl.Header.RotationIntervals}"
+                                       Description="{ci:Tr Controls.Components.SlideComponentSettingsControl.Description.IntervalTimeForAutomaticComponentRotation}">
                 <controls:FASettingsExpander.Footer>
-                    <ci:Field Suffix="秒">
+                    <ci:Field Suffix="{ci:Tr Controls.Components.SlideComponentSettingsControl.Suffix.Seconds}">
                         <controls:FANumberBox Width="150" SpinButtonPlacementMode="Inline"
                                             Minimum="0.1"
                                             Value="{Binding Settings.SlideSeconds, Converter={x:Static ci:NotNaNConverter.Instance}}"/>
@@ -32,28 +32,28 @@
             </controls:FASettingsExpander>
             <!-- 轮换模式 -->
             <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xefcd;}"
-                                       Header="轮换模式"
-                                       Description="设定轮换组件的行为">
+                                       Header="{ci:Tr Controls.Components.SlideComponentSettingsControl.Header.RotationMode}"
+                                       Description="{ci:Tr Controls.Components.SlideComponentSettingsControl.Description.SetTheBehaviorOfRotatingComponents}">
                 <controls:FASettingsExpander.Footer>
                     <ComboBox SelectedIndex="{Binding Settings.SlideMode}"
                               Width="100">
-                        <ComboBoxItem>循环</ComboBoxItem>
-                        <ComboBoxItem>随机</ComboBoxItem>
-                        <ComboBoxItem>往复</ComboBoxItem>
+                        <ComboBoxItem>{ci:Tr Controls.Components.SlideComponentSettingsControl.Content.Cycle}</ComboBoxItem>
+                        <ComboBoxItem>{ci:Tr Controls.Components.SlideComponentSettingsControl.Content.Random}</ComboBoxItem>
+                        <ComboBoxItem>{ci:Tr Controls.Components.SlideComponentSettingsControl.Content.BackAndForth}</ComboBoxItem>
                     </ComboBox>
                 </controls:FASettingsExpander.Footer>
             </controls:FASettingsExpander>
             <!-- 满足规则时暂停 -->
             <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xec93;}"
-                                       Header="满足规则时暂停"
-                                       Description="在指定规则满足时暂停轮播。">
+                                       Header="{ci:Tr Controls.Components.SlideComponentSettingsControl.Header.PauseWhenTheRulesAreMet}"
+                                       Description="{ci:Tr Controls.Components.SlideComponentSettingsControl.Description.PauseCarouselWhenSpecifiedRulesAreMet}">
                 <controls:FASettingsExpander.Footer>
                     <StackPanel Orientation="Horizontal">
                         <Button HorizontalAlignment="Left"
                                 Theme="{StaticResource TransparentButton}"
                                 Click="ButtonOpenPauseRuleset_OnClick"
                                 IsVisible="{Binding Settings.IsPauseOnRuleEnabled}">
-                            <ci:IconText Glyph="&#xf17e;" Text="编辑规则集…" />
+                            <ci:IconText Glyph="&#xf17e;" Text="{ci:Tr Controls.Components.SlideComponentSettingsControl.Text.EditRuleSet}" />
                         </Button>
                         <ToggleSwitch VerticalAlignment="Center"
                                       IsChecked="{Binding Settings.IsPauseOnRuleEnabled}" />
@@ -62,15 +62,15 @@
             </controls:FASettingsExpander>
             <!-- 满足规则时停止 -->
             <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xee67;}"
-                                       Header="满足规则时停止"
-                                       Description="在指定规则满足时停止轮播。停止时会停止轮播，并回到第一个组件。如果此处的规则和暂停规则同时满足，会停止轮播而不是暂停。">
+                                       Header="{ci:Tr Controls.Components.SlideComponentSettingsControl.Header.StopWhenRulesAreMet}"
+                                       Description="{ci:Tr Controls.Components.SlideComponentSettingsControl.Description.StopsCarouselWhenTheSpecifiedRuleIsMet}">
                 <controls:FASettingsExpander.Footer>
                     <StackPanel Orientation="Horizontal">
                         <Button HorizontalAlignment="Left"
                                 Theme="{StaticResource TransparentButton}"
                                 Click="ButtonOpenStopRuleset_OnClick"
                                 IsVisible="{Binding Settings.IsStopOnRuleEnabled}">
-                            <ci:IconText Glyph="&#xf17e;" Text="编辑规则集…" />
+                            <ci:IconText Glyph="&#xf17e;" Text="{ci:Tr Controls.Components.SlideComponentSettingsControl.Text.EditRuleSet}" />
                         </Button>
                         <ToggleSwitch VerticalAlignment="Center"
                                       IsChecked="{Binding Settings.IsStopOnRuleEnabled}" />
@@ -79,8 +79,8 @@
             </controls:FASettingsExpander>
             <!-- 启用动画 -->
             <controls:FASettingsExpander IconSource="{ci:FluentIconSource &#xedc1;}"
-                                       Header="启用动画"
-                                       Description="启用后，将在切换组件时播放过渡动画。">
+                                       Header="{ci:Tr Controls.Components.SlideComponentSettingsControl.Header.EnableAnimation}"
+                                       Description="{ci:Tr Controls.Components.SlideComponentSettingsControl.Description.OnceEnabledTransitionAnimationsWillPlayWhenSwitching}">
                 <controls:FASettingsExpander.Footer>
                     <ToggleSwitch VerticalAlignment="Center"
                                   IsChecked="{Binding Settings.IsAnimationEnabled, Mode=TwoWay}" />

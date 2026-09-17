@@ -1,27 +1,27 @@
-﻿<UserControl x:Class="ClassIsland.Controls.ClassPlanGroupItemControl"
+<UserControl x:Class="ClassIsland.Controls.ClassPlanGroupItemControl"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ClassIsland.Controls"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:ci="http://classisland.tech/schemas/xaml/core"
              xmlns:views="clr-namespace:ClassIsland.Views"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
         <StackPanel x:Key="DisbandConfirmDialog" VerticalAlignment="Stretch">
             <TextBlock TextWrapping="Wrap" >
-                <Run Text="你确定要解散这个课表群吗？解散后，课表群内的课表将被移动到默认课表群中。"/>
+                <Run Text="{ci:Tr Controls.ClassPlanGroupItemControl.Text.AreYouSureYouWantToDisbandThis}"/>
             </TextBlock>
         </StackPanel>
 
         <StackPanel x:Key="DeleteConfirmDialog" VerticalAlignment="Stretch" Spacing="4">
             <TextBlock TextWrapping="Wrap" >
-                <Run Text="你确定要删除这个课表群吗？删除后，此课表群内的课表也将全部删除。这个操作无法撤销！"/>
+                <Run Text="{ci:Tr Controls.ClassPlanGroupItemControl.Text.AreYouSureYouWantToDeleteThis}"/>
             </TextBlock>
             <TextBlock TextWrapping="Wrap">
-                <Run Text="如果您只是想移除课表群而保留课表，请解散课表群。"/>
+                <Run Text="{ci:Tr Controls.ClassPlanGroupItemControl.Text.IfYouJustWantToRemoveTheTimetable}"/>
             </TextBlock>
         </StackPanel>
     </UserControl.Resources>
@@ -30,15 +30,15 @@
           Background="Transparent">
         <Grid.ContextFlyout>
             <MenuFlyout>
-                <MenuItem Icon="{ci:FluentIcon &#xE6A1;}" Header="临时启用"
+                <MenuItem Icon="{ci:FluentIcon &#xE6A1;}" Header="{ci:Tr Controls.ClassPlanGroupItemControl.Header.EnableTemporarily}"
                           Click="MenuItemTemp_OnClick" />
                 <Separator />
-                <MenuItem Icon="{ci:FluentIcon &#xEE7D;}" Header="重命名" Click="MenuItemRename_OnClick"
+                <MenuItem Icon="{ci:FluentIcon &#xEE7D;}" Header="{ci:Tr Controls.ClassPlanGroupItemControl.Header.Rename}" Click="MenuItemRename_OnClick"
                           IsEnabled="{Binding IsProtected, Converter={StaticResource InvertBooleanConverter}}" />
-                <!--<MenuItem Icon="{materialDesign:PackIcon FileExportOutline}" Header="导出"/>-->
-                <MenuItem Icon="{ci:FluentIcon &#xE931;}" Header="解散" Click="MenuItemDisband_OnClick"
+                <!--<MenuItem Icon="{materialDesign:PackIcon FileExportOutline}" Header="{ci:Tr Controls.ClassPlanGroupItemControl.Header.Export}"/>-->
+                <MenuItem Icon="{ci:FluentIcon &#xE931;}" Header="{ci:Tr Controls.ClassPlanGroupItemControl.Header.Disband}" Click="MenuItemDisband_OnClick"
                           IsEnabled="{Binding IsProtected, Converter={StaticResource InvertBooleanConverter}}" />
-                <MenuItem Icon="{ci:FluentIcon &#xE61D;}" Header="删除" Click="MenuItemDelete_OnClick"
+                <MenuItem Icon="{ci:FluentIcon &#xE61D;}" Header="{ci:Tr Controls.ClassPlanGroupItemControl.Header.Delete}" Click="MenuItemDelete_OnClick"
                           IsEnabled="{Binding IsProtected, Converter={StaticResource InvertBooleanConverter}}" />
             </MenuFlyout>
         </Grid.ContextFlyout>
@@ -52,7 +52,7 @@
                 <RadioButton.IsChecked>
                     <MultiBinding Converter="{StaticResource StringToRadioButtonSelectionConverter}"
                                   Mode="OneWay">
-                        <Binding Path="ViewModel.ProfileService.Profile.SelectedClassPlanGroupId" 
+                        <Binding Path="ViewModel.ProfileService.Profile.SelectedClassPlanGroupId"
                                                  RelativeSource="{RelativeSource FindAncestor, AncestorType=views:ProfileSettingsWindow}"/>
                         <Binding Path="Key" Mode="OneWay"/>
                     </MultiBinding>
@@ -60,7 +60,7 @@
             </RadioButton>
         </StackPanel>
         <Panel Grid.Column="1">
-            <TextBox Text="{Binding Item.Name}" 
+            <TextBox Text="{Binding Item.Name}"
                      x:Name="MainTextBox"
                      IsReadOnly="{Binding IsRenaming, Converter={StaticResource InvertBooleanConverter}}"
                      VerticalAlignment="Center" HorizontalAlignment="Stretch"
@@ -70,7 +70,7 @@
                      Focusable="{Binding IsRenaming}"
                      IsHitTestVisible="{Binding IsRenaming}"
                      KeyDown="TextBox_OnKeyDown"/>
-            <TextBlock Text="{Binding Item.Name}" 
+            <TextBlock Text="{Binding Item.Name}"
                      IsVisible="{Binding !IsRenaming}"
                      VerticalAlignment="Center"
                      HorizontalAlignment="Left"

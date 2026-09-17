@@ -1,6 +1,7 @@
 <UserControl x:Class="ClassIsland.Core.Controls.Ruleset.RulesetControl"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ci="http://classisland.tech/schemas/xaml/core"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ClassIsland.Core.Controls.Ruleset"
@@ -18,16 +19,16 @@
         </Style>
         <Style Selector="Ellipse.rule-state-indicator">
             <Setter Property="Fill" Value="DarkGray"/>
-            <Setter Property="ToolTip.Tip" Value="未知"/>
+            <Setter Property="ToolTip.Tip" Value="{ci:Tr Core.Controls.Ruleset.RulesetControl.ToolTip.Unknown}"/>
 
             <Style Selector="^[DataContext=1]">
                 <Setter Property="Fill" Value="IndianRed"/>
-                <Setter Property="ToolTip.Tip" Value="不满足"/>
+                <Setter Property="ToolTip.Tip" Value="{ci:Tr Core.Controls.Ruleset.RulesetControl.ToolTip.NotSatisfied}"/>
             </Style>
 
             <Style Selector="^[DataContext=2]">
                 <Setter Property="Fill" Value="Green"/>
-                <Setter Property="ToolTip.Tip" Value="已满足"/>
+                <Setter Property="ToolTip.Tip" Value="{ci:Tr Core.Controls.Ruleset.RulesetControl.ToolTip.Satisfied}"/>
             </Style>
         </Style>
     </UserControl.Styles>
@@ -39,12 +40,12 @@
           MinWidth="450"
           x:Name="GridRulesetControlRoot" RowDefinitions="Auto,*">
         <StackPanel Grid.Row="0">
-            <TextBlock Text="规则集" Theme="{StaticResource SubtitleTextBlockStyle}"
+            <TextBlock Text="{ci:Tr Core.Controls.Ruleset.RulesetControl.Text.RuleSet}" Theme="{StaticResource SubtitleTextBlockStyle}"
                            Margin="0 0 0 8" IsVisible="{Binding ShowTitle}"/>
             <WrapPanel Orientation="Horizontal">
-                <ToggleButton 
-                    Content="非"
-                    ToolTip.Tip="反转"
+                <ToggleButton
+                    Content="{ci:Tr Core.Controls.Ruleset.RulesetControl.Content.None}"
+                    ToolTip.Tip="{ci:Tr Core.Controls.Ruleset.RulesetControl.ToolTip.Invert}"
                     IsChecked="{Binding Ruleset.IsReversed}"
                     Margin="0 0 2 0"
                     Classes="light"/>
@@ -53,21 +54,21 @@
                           SelectedIndex="{Binding Ruleset.Mode, Converter={StaticResource RuleLogicalModeToIntConverter}}"
                           Margin="0 0 4 0">
                     <TabStripItem>
-                        <controls:AnimatedIconButton Glyph="&#xE590;" Text="规则组任一满足时" 
+                        <controls:AnimatedIconButton Glyph="&#xE590;" Text="{ci:Tr Core.Controls.Ruleset.RulesetControl.Text.WhenAnyRuleGroupIsMet}"
                                                      Classes="display-role"
                                                      IsKeepingExpanded="{Binding $parent[TabStripItem].IsSelected}" />
                     </TabStripItem>
                     <TabStripItem>
-                        <controls:AnimatedIconButton Glyph="&#xE591;" Text="规则组全部满足时" 
+                        <controls:AnimatedIconButton Glyph="&#xE591;" Text="{ci:Tr Core.Controls.Ruleset.RulesetControl.Text.WhenAllRuleGroupsAreMet}"
                                                      Classes="display-role"
                                                      IsKeepingExpanded="{Binding $parent[TabStripItem].IsSelected}"/>
                     </TabStripItem>
                 </TabStrip>
-                
+
                 <Button Theme="{StaticResource TransparentButton}"
                         Classes="accent"
                         Click="ButtonAddRule_OnClick">
-                    <controls:IconText Glyph="&#xE00D;" Text="添加组"
+                    <controls:IconText Glyph="&#xE00D;" Text="{ci:Tr Core.Controls.Ruleset.RulesetControl.Text.AddGroup}"
                                        Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}"/>
                 </Button>
                 <Ellipse Width="8" Height="8" Margin="4 2 4 0"
@@ -108,9 +109,9 @@
                                       HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
                             <Grid ColumnDefinitions="Auto,*,Auto" HorizontalAlignment="Stretch" Margin="0 0 0 2">
                                 <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
-                                    <ToggleButton 
-                                        Content="非"
-                                        ToolTip.Tip="反转"
+                                    <ToggleButton
+                                        Content="{ci:Tr Core.Controls.Ruleset.RulesetControl.Content.None}"
+                                        ToolTip.Tip="{ci:Tr Core.Controls.Ruleset.RulesetControl.ToolTip.Invert}"
                                         IsChecked="{Binding IsReversed}"
                                         Margin="0 0 2 0"
                                         Classes="light"/>
@@ -119,12 +120,12 @@
                                               SelectedIndex="{Binding Mode, Converter={StaticResource RuleLogicalModeToIntConverter}}"
                                               Margin="0 0 4 0">
                                         <TabStripItem>
-                                            <controls:AnimatedIconButton Glyph="&#xE590;" Text="规则任一满足时" 
+                                            <controls:AnimatedIconButton Glyph="&#xE590;" Text="{ci:Tr Core.Controls.Ruleset.RulesetControl.Text.WhenAnyRuleIsMet}"
                                                                          Classes="display-role"
                                                                          IsKeepingExpanded="{Binding $parent[TabStripItem].IsSelected}" />
                                         </TabStripItem>
                                         <TabStripItem>
-                                            <controls:AnimatedIconButton Glyph="&#xE591;" Text="规则全部满足时" 
+                                            <controls:AnimatedIconButton Glyph="&#xE591;" Text="{ci:Tr Core.Controls.Ruleset.RulesetControl.Text.WhenAllRulesAreMet}"
                                                                          Classes="display-role"
                                                                          IsKeepingExpanded="{Binding $parent[TabStripItem].IsSelected}"/>
                                         </TabStripItem>
@@ -133,7 +134,7 @@
                                             Classes="accent"
                                             Command="{Binding AddRuleCommand, RelativeSource={RelativeSource AncestorType=local:RulesetControl}}"
                                             CommandParameter="{Binding}">
-                                        <controls:IconText Glyph="&#xE00D;" Text="规则"
+                                        <controls:IconText Glyph="&#xE00D;" Text="{ci:Tr Core.Controls.Ruleset.RulesetControl.Text.Rule}"
                                                            Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}"/>
                                     </Button>
                                 </StackPanel>
@@ -143,13 +144,13 @@
                                              Margin="4 4 8 0"
                                              DataContext="{Binding State}"
                                              Classes="rule-state-indicator"/>
-                                    <ToggleSwitch ToolTip.Tip="启用规则集"
+                                    <ToggleSwitch ToolTip.Tip="{ci:Tr Core.Controls.Ruleset.RulesetControl.ToolTip.EnableRuleSet}"
                                                   OnContent="" OffContent=""
                                                   IsChecked="{Binding IsEnabled}"
                                                   Margin="0 0 4 0"/>
                                     <Button
                                         Theme="{StaticResource TransparentButton}"
-                                        ToolTip.Tip="复制"
+                                        ToolTip.Tip="{ci:Tr Core.Controls.Ruleset.RulesetControl.ToolTip.Copy}"
                                         Command="{Binding DuplicateGroupCommand, RelativeSource={RelativeSource AncestorType=local:RulesetControl}}"
                                         CommandParameter="{Binding}"
                                         Margin="0 0 4 0"
@@ -158,7 +159,7 @@
                                     <Button Theme="{StaticResource TransparentButton}"
                                             Command="{Binding RemoveGroupCommand, RelativeSource={RelativeSource AncestorType=local:RulesetControl}}"
                                             CommandParameter="{Binding}"
-                                            ToolTip.Tip="删除"
+                                            ToolTip.Tip="{ci:Tr Core.Controls.Ruleset.RulesetControl.ToolTip.Delete}"
                                             Content="{controls:FluentIcon &#xE671;}">
                                     </Button>
                                 </StackPanel>
@@ -178,7 +179,7 @@
                                                     VerticalAlignment="Top">
                                             <Button Theme="{StaticResource TransparentButton}"
                                                     Classes="circle"
-                                                    ToolTip.Tip="删除"
+                                                    ToolTip.Tip="{ci:Tr Core.Controls.Ruleset.RulesetControl.ToolTip.Delete}"
                                                     Command="{Binding RemoveRuleCommand, RelativeSource={RelativeSource AncestorType=local:RulesetControl}}"
                                                     CommandParameter="{Binding}"
                                                     Content="{controls:FluentIcon &#xE671;}">
@@ -187,8 +188,8 @@
                                                      Margin="4 0 8 0"
                                                      DataContext="{Binding State}"
                                                      Classes="rule-state-indicator"/>
-                                            <ToggleButton Content="非"
-                                                          ToolTip.Tip="反转"
+                                            <ToggleButton Content="{ci:Tr Core.Controls.Ruleset.RulesetControl.Content.None}"
+                                                          ToolTip.Tip="{ci:Tr Core.Controls.Ruleset.RulesetControl.ToolTip.Invert}"
                                                           IsChecked="{Binding IsReversed}"
                                                           Classes="light"/>
                                             <ComboBox Margin="2 0"

@@ -1,8 +1,8 @@
 <ci:SettingsPageBase x:Class="ClassIsland.Views.SettingPages.PluginsSettingsPage"
       xmlns="https://github.com/avaloniaui"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:ClassIsland.Views.SettingPages"
       xmlns:controls="clr-namespace:ClassIsland.Core.Abstractions.Controls;assembly=ClassIsland.Core"
       xmlns:services="clr-namespace:ClassIsland.Core.Abstractions.Services;assembly=ClassIsland.Core"
@@ -20,7 +20,7 @@
       xmlns:helpers="clr-namespace:ClassIsland.Core.Helpers;assembly=ClassIsland.Core"
       xmlns:enums="clr-namespace:ClassIsland.Core.Enums;assembly=ClassIsland.Core"
       xmlns:input="clr-namespace:Avalonia.Labs.Input;assembly=Avalonia.Labs.CommandManager"
-      mc:Ignorable="d" 
+      mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       Loaded="PluginsSettingsPage_OnLoaded"
       Unloaded="PluginsSettingsPage_OnUnloaded"
@@ -38,7 +38,7 @@
                                     Source="{Binding RealIconPath, FallbackValue={x:Null}}"/>
                     <StackPanel Grid.Column="1" >
                         <TextBlock Text="{Binding Manifest.Name}"
-                                                   FontSize="24" 
+                                                   FontSize="24"
                                                    TextTrimming="CharacterEllipsis"
                                                    FontWeight="Medium"
                                                    Margin="0 0 0 4"/>
@@ -46,7 +46,7 @@
                             <TextBlock VerticalAlignment="Center">
                                 <Run Text="{Binding Manifest.Version}"/>
                                 <Run Text=" | " Classes="l-decoration"/>
-                                <ci:NavHyperlink NavTarget="{Binding Manifest.Url}">项目主页</ci:NavHyperlink>
+                                <ci:NavHyperlink NavTarget="{Binding Manifest.Url}">{ci:Tr SettingPages.PluginsSettingsPage.Content.ProjectHomepage}</ci:NavHyperlink>
                                 <Run Text=" | " Classes="l-decoration"/>
                                 <Run Text="{Binding Manifest.Author}"/>
                                 <Run Text=" | " Classes="l-decoration"/>
@@ -66,7 +66,7 @@
                                     <StackPanel Orientation="Horizontal" Spacing="6">
                                         <ci:FluentIcon Glyph="&#xE426;" FontSize="14" VerticalAlignment="Center"/>
                                         <TextBlock VerticalAlignment="Center">
-                                            <Run Text="已加载"/>
+                                            <Run Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.Loaded}"/>
                                         </TextBlock>
                                     </StackPanel>
                                 </Border>
@@ -85,7 +85,7 @@
                                     <StackPanel Orientation="Horizontal" Spacing="6">
                                         <ci:FluentIcon Glyph="&#xE673;" FontSize="14" VerticalAlignment="Center"/>
                                         <TextBlock VerticalAlignment="Center">
-                                            <Run Text="已禁用"/>
+                                            <Run Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.Disabled}"/>
                                         </TextBlock>
                                     </StackPanel>
                                 </Border>
@@ -104,7 +104,7 @@
                                     <StackPanel Orientation="Horizontal" Spacing="6">
                                         <ci:FluentIcon Glyph="&#xE673;" FontSize="14" VerticalAlignment="Center"/>
                                         <TextBlock VerticalAlignment="Center">
-                                            <Run Text="错误"/>
+                                            <Run Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.Error}"/>
                                         </TextBlock>
                                     </StackPanel>
                                 </Border>
@@ -123,16 +123,16 @@
                                     <StackPanel Orientation="Horizontal" Spacing="6">
                                         <ci:FluentIcon Glyph="&#xE673;" FontSize="14" VerticalAlignment="Center"/>
                                         <TextBlock VerticalAlignment="Center">
-                                            <Run Text="未加载"/>
+                                            <Run Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.NotLoaded}"/>
                                         </TextBlock>
                                     </StackPanel>
                                 </Border>
                             </WrapPanel>
                         </WrapPanel>
-                        <WrapPanel Orientation="Horizontal" 
+                        <WrapPanel Orientation="Horizontal"
                                    Margin="0 0 0 4"
                                    IsVisible="{Binding IsLocal}">
-                            <CheckBox Content="已启用" Margin="0 0 6  0"
+                            <CheckBox Content="{ci:Tr SettingPages.PluginsSettingsPage.Content.IsEnabled}" Margin="0 0 6  0"
                                                       VerticalAlignment="Center"
                                                       IsChecked="{Binding IsEnabled}"/>
                             <Button Click="ButtonInstallPlugin_OnClick" Classes="accent"
@@ -147,19 +147,19 @@
                                         <Binding Path="RestartRequired" Converter="{StaticResource InvertBooleanConverter}" Mode="OneWay"/>
                                     </MultiBinding>
                                 </Button.IsVisible>
-                                <ci:IconText Glyph="&#xE1A0;" Text="更新"/>
+                                <ci:IconText Glyph="&#xE1A0;" Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.Update}"/>
                             </Button>
                             <Button VerticalAlignment="Center"
                                     Margin="0 0 6  0"
                                     Click="ButtonUninstall_OnClick"
                                     IsVisible="{Binding !IsUninstalling}">
-                                <ci:IconText Glyph="&#xE61D;" Text="移除"/>
+                                <ci:IconText Glyph="&#xE61D;" Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.Remove}"/>
                             </Button>
                             <Button VerticalAlignment="Center"
                                     Margin="0 0 6  0"
                                     Click="ButtonUndoUninstall_OnClick"
                                     IsVisible="{Binding IsUninstalling}">
-                                <ci:IconText Glyph="&#xE625;" Text="撤销移除"/>
+                                <ci:IconText Glyph="&#xE625;" Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.UndoRemoval}"/>
                             </Button>
                         </WrapPanel>
                         <!-- Market Operations -->
@@ -173,7 +173,7 @@
                                 </MultiBinding>
                             </WrapPanel.IsVisible>
                             <Button Click="ButtonInstallPlugin_OnClick" Classes="accent">
-                                <ci:IconText Glyph="&#xE0D3;" Text="安装"/>
+                                <ci:IconText Glyph="&#xE0D3;" Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.Installation}"/>
                             </Button>
                         </WrapPanel>
                         <WrapPanel Orientation="Horizontal"
@@ -183,48 +183,48 @@
                                     Classes="accent"
                                     Margin="0 0 6 0"
                                     IsVisible="{Binding RestartRequired}">
-                                <ci:IconText Glyph="&#xE0BD;" Text="重启以应用更改"/>
+                                <ci:IconText Glyph="&#xE0BD;" Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.RestartToApplyTheChanges}"/>
                             </Button>
                         </WrapPanel>
-                        <controls2:FAInfoBar Message="此插件未声明支持当前所运行的操作系统。此插件可能不能正常按预期工作。"
+                        <controls2:FAInfoBar Message="{ci:Tr SettingPages.PluginsSettingsPage.Message.ThisPluginDoesNotClaimSupportForThe}"
                                            Severity="Warning"
-                                           IsOpen="{Binding IsNotSupportCurrentOS}"> 
+                                           IsOpen="{Binding IsNotSupportCurrentOS}">
                         </controls2:FAInfoBar>
                         <!-- Download Progresses -->
                         <DockPanel Margin="0 4 0 0" IsVisible="{Binding DownloadProgress.IsDownloading, FallbackValue={x:False}}">
                             <ProgressBar Value="{Binding DownloadProgress.Progress}"/>
                         </DockPanel>
-                        <controls2:FAInfoBar Message="无法安装插件，请检查您的网络连接。更换插件镜像源可能可以解决此问题。"
+                        <controls2:FAInfoBar Message="{ci:Tr SettingPages.PluginsSettingsPage.Message.UnableToInstallPluginsPleaseCheckYourNetwork}"
                                            Severity="Error"
                                            IsOpen="{Binding DownloadProgress.Exception, Mode=OneWay, Converter={x:Static ObjectConverters.IsNotNull}}">
                             <controls2:FAInfoBar.ActionButton>
-                                <HyperlinkButton Click="MenuItemManagePluginSources_OnClick">更换插件镜像源</HyperlinkButton>
+                                <HyperlinkButton Click="MenuItemManagePluginSources_OnClick">{ci:Tr SettingPages.PluginsSettingsPage.Content.ReplaceThePluginImageSource}</HyperlinkButton>
                             </controls2:FAInfoBar.ActionButton>
                         </controls2:FAInfoBar>
-                        
+
                     </StackPanel>
                     <Button Grid.Column="1" VerticalAlignment="Top"
                             HorizontalAlignment="Right"
-                            ToolTip.Tip="更多选项…"
+                            ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.MoreOptions}"
                             Content="{ci:FluentIcon &#xEBAC;}"
                             Theme="{StaticResource TransparentButton}"
                             IsVisible="{Binding IsLocal}">
                         <Button.Flyout>
                             <MenuFlyout>
-                                <MenuItem Icon="{ci:FluentIcon &#xE06F;}" Header="打包插件" Click="MenuItemPackPlugin_OnClick"/>
+                                <MenuItem Icon="{ci:FluentIcon &#xE06F;}" Header="{ci:Tr SettingPages.PluginsSettingsPage.Header.PackagePlugins}" Click="MenuItemPackPlugin_OnClick"/>
                                 <Separator/>
-                                <MenuItem Icon="{ci:FluentIcon &#xE88D;}" Header="打开插件文件夹…" Click="MenuItemOpenPluginFolder_OnClick"/>
-                                <MenuItem Icon="{ci:FluentIcon &#xE5FD;}" Header="打开配置文件夹…" Click="MenuItemOpenPluginConfigFolder_OnClick"/>
+                                <MenuItem Icon="{ci:FluentIcon &#xE88D;}" Header="{ci:Tr SettingPages.PluginsSettingsPage.Header.OpenThePluginFolder}" Click="MenuItemOpenPluginFolder_OnClick"/>
+                                <MenuItem Icon="{ci:FluentIcon &#xE5FD;}" Header="{ci:Tr SettingPages.PluginsSettingsPage.Header.OpenConfigurationFolder}" Click="MenuItemOpenPluginConfigFolder_OnClick"/>
                             </MenuFlyout>
                         </Button.Flyout>
                     </Button>
                 </Grid>
                 <TabStrip Grid.Row="1" x:Name="TabStrip"
                           Classes="compact">
-                    <TabStripItem Content="概览"/>
-                    <TabStripItem Content="错误信息"
+                    <TabStripItem Content="{ci:Tr SettingPages.PluginsSettingsPage.Content.Overview}"/>
+                    <TabStripItem Content="{ci:Tr SettingPages.PluginsSettingsPage.Content.ErrorMessages}"
                                   IsVisible="{Binding Exception, Converter={x:Static ObjectConverters.IsNotNull}}"/>
-                    <TabStripItem Content="依赖项"/>
+                    <TabStripItem Content="{ci:Tr SettingPages.PluginsSettingsPage.Content.Dependencies}"/>
                 </TabStrip>
                 <Panel Grid.Row="2">
                     <Border>
@@ -242,7 +242,7 @@
                                 Markdown="{Binding ViewModel.ReadmeDocument, RelativeSource={RelativeSource FindAncestor, AncestorType=local:PluginsSettingsPage}}">
                                 <mdxaml:MarkdownScrollViewer.Styles>
                                     <StyleInclude Source="avares://ClassIsland.Core/Themes/RichTextStyles.axaml"/>
-                                        
+
                                 </mdxaml:MarkdownScrollViewer.Styles>
                             </mdxaml:MarkdownScrollViewer>
                             <ProgressBar IsVisible="{Binding ViewModel.IsLoadingDocument, RelativeSource={RelativeSource FindAncestor, AncestorType=local:PluginsSettingsPage}}"
@@ -283,27 +283,27 @@
                                 <DataGrid.Columns>
                                     <DataGridTextColumn Width="*"
                                                         Binding="{Binding Id}"
-                                                        Header="插件 ID"/>
+                                                        Header="{ci:Tr SettingPages.PluginsSettingsPage.Header.PluginId}"/>
                                     <DataGridCheckBoxColumn Width="80"
                                                             Binding="{Binding IsRequired}"
-                                                            Header="必选？"/>
+                                                            Header="{ci:Tr SettingPages.PluginsSettingsPage.Header.MustChoose}"/>
                                 </DataGrid.Columns>
                             </DataGrid>
                     </Border>
                 </Panel>
             </Grid>
         </DataTemplate>
-        
+
         <ScrollViewer x:Key="PluginUpdateSettingsDrawer" Width="320"
               HorizontalAlignment="Stretch"
               Margin="16" >
             <StackPanel Grid.Row="0">
-                <TextBlock Text="插件更新设置" Theme="{StaticResource SubtitleTextBlockStyle}"/>
-                
+                <TextBlock Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.PluginUpdateSettings}" Theme="{StaticResource SubtitleTextBlockStyle}"/>
+
                 <CheckBox IsChecked="{Binding ViewModel.SettingsService.Settings.IsPluginsUpdateNotificationEnabled}"
-                          Content="插件有更新时通知我"/>
+                          Content="{ci:Tr SettingPages.PluginsSettingsPage.Content.NotifyMeWhenThePluginIsUpdated}"/>
                 <CheckBox IsChecked="{Binding ViewModel.SettingsService.Settings.IsPluginsAutoUpdateEnabled}"
-                          Content="自动更新插件"/>
+                          Content="{ci:Tr SettingPages.PluginsSettingsPage.Content.AutomaticallyUpdatesPlugins}"/>
             </StackPanel>
         </ScrollViewer>
 
@@ -311,10 +311,10 @@
               HorizontalAlignment="Stretch"
               Margin="16" RowDefinitions="Auto,*">
             <StackPanel Grid.Row="0">
-                <TextBlock Text="管理插件源" Theme="{StaticResource SubtitleTextBlockStyle}"/>
-                
-                <ci:IconText Glyph="&#xE99E;" Text="内置插件源" Margin="0 12 0 8"/>
-                <ci:Field Label="内置插件源镜像" Margin="0 -4">
+                <TextBlock Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.ManagePluginSources}" Theme="{StaticResource SubtitleTextBlockStyle}"/>
+
+                <ci:IconText Glyph="&#xE99E;" Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.BuiltInPluginSource}" Margin="0 12 0 8"/>
+                <ci:Field Label="{ci:Tr SettingPages.PluginsSettingsPage.Label.BuiltInPluginSourceMirror}" Margin="0 -4">
                     <ComboBox SelectedValue="{Binding ViewModel.SettingsService.Settings.OfficialSelectedMirror, Mode=TwoWay}"
                               SelectedValueBinding="{Binding Key}"
                               ItemsSource="{Binding ViewModel.OfficialPluginMirrors.List}">
@@ -325,19 +325,19 @@
                         </ComboBox.ItemTemplate>
                     </ComboBox>
                 </ci:Field>
-                <CheckBox Content="忽略 SSL/TLS 证书错误"
+                <CheckBox Content="{ci:Tr SettingPages.PluginsSettingsPage.Content.AvoidSslTlsCertificateErrors}"
                           Margin="0 8 0 0"
                           VerticalAlignment="Center"
-                          ToolTip.Tip="禁用插件镜像证书校验, 将降低安全性。"
+                          ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.DisablingPluginImageCertificateVerificationWillReduceSec}"
                           IsChecked="{Binding ViewModel.SettingsService.Settings.IgnoreSslForPluginMirrors, Mode=TwoWay}"/>
                 <Separator Margin="0 16 0 8"/>
-                <ci:IconText Glyph="&#xE99A;" Text="自定义插件源" Margin="0 0 0 8"/>
+                <ci:IconText Glyph="&#xE99A;" Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.CustomPluginSources}" Margin="0 0 0 8"/>
                 <WrapPanel Margin="0 0 0 0">
                     <Button Theme="{StaticResource TransparentButton}" Click="ButtonAddPluginSource_OnClick">
-                        <ci:IconText Glyph="&#xE00D;" Text="添加"/>
+                        <ci:IconText Glyph="&#xE00D;" Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.Added}"/>
                     </Button>
                     <Button Theme="{StaticResource TransparentButton}" Click="ButtonRemovePluginSource_OnClick">
-                        <ci:IconText Glyph="&#xE61D;" Text="删除"/>
+                        <ci:IconText Glyph="&#xE61D;" Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.Delete}"/>
                     </Button>
                 </WrapPanel>
             </StackPanel>
@@ -355,7 +355,7 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Url" Binding="{Binding Url, Mode=TwoWay}"
                                         Width="4*"/>
-                    <DataGridTemplateColumn Header="镜像"
+                    <DataGridTemplateColumn Header="{ci:Tr SettingPages.PluginsSettingsPage.Header.Mirroring}"
                                             Width="*">
                         <DataGridTemplateColumn.CellEditingTemplate>
                             <DataTemplate>
@@ -393,7 +393,7 @@
                         Margin="0 10 0 0">
                     <StackPanel Spacing="6" Orientation="Horizontal">
                         <ci:FluentIcon Glyph="&#xF430;" VerticalAlignment="Center"/>
-                        <TextBlock Text="安装未知来源的插件可能存在风险。"
+                        <TextBlock Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.InstallingPluginsFromUnknownSourcesMayCarryRisks}"
                                    FontWeight="SemiBold"
                                    TextWrapping="Wrap"/>
                     </StackPanel>
@@ -409,7 +409,7 @@
                                         Margin="0 0 0 8"
                                         Padding="12">
                                     <Grid ColumnDefinitions="Auto,*">
-                                        <Border Grid.Column="0" Width="48" Height="48" 
+                                        <Border Grid.Column="0" Width="48" Height="48"
                                                 CornerRadius="4" ClipToBounds="True"
                                                 VerticalAlignment="Top" Margin="0 0 12 0">
                                             <Image Source="{Binding IconBitmap}"/>
@@ -441,7 +441,7 @@
                                                 <Grid ColumnDefinitions="Auto,*">
                                                     <ci:FluentIcon Grid.Column="0" Glyph="&#xF430;" VerticalAlignment="Top" Margin="0 0 8 0"/>
                                                     <TextBlock Grid.Column="1"
-                                                               Text="此插件未声明支持当前所运行的操作系统。此插件可能不能正常按预期工作。"
+                                                               Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.ThisPluginDoesNotClaimSupportForThe}"
                                                                FontWeight="SemiBold"
                                                                TextWrapping="Wrap"
                                                                VerticalAlignment="Center"
@@ -462,7 +462,7 @@
             <Grid>
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                     <ci:StickerControl Height="72" Width="72"
-                                       Margin="0 0 0 8" 
+                                       Margin="0 0 0 8"
                                        StickerSource="/Assets/HoYoStickers/光辉矢愿_不可以看.png"
                                        StickerToolTip="光辉矢愿_不可以看"
                                        FallbackIcon="{ci:FluentIconSource &#xE262;, FontSize=72}"/>
@@ -479,9 +479,9 @@
                         </Classes.NoPlugins>
                         <TextBlock.Styles>
                             <Style Selector="TextBlock">
-                                <Setter Property="Text" Value="找不到符合条件的插件，请调整筛选条件后重试" />
+                                <Setter Property="Text" Value="{ci:Tr SettingPages.PluginsSettingsPage.Text.NoMatchingPlugins}" />
                                 <Style Selector="^.LocalPlugins.NoPlugins">
-                                    <Setter Property="Text" Value="还没有安装任何插件，不妨去插件市场看看吧" />
+                                    <Setter Property="Text" Value="{ci:Tr SettingPages.PluginsSettingsPage.Text.NoPluginsInstalled}" />
                                 </Style>
                             </Style>
                         </TextBlock.Styles>
@@ -498,7 +498,7 @@
                                 <Binding Path="!!!Count" Source="{x:Static services:IPluginService.LoadedPlugins}"/>
                             </MultiBinding>
                         </Button.IsVisible>
-                        <ci:IconText Glyph="&#xF08B;" Text="前往插件市场" />
+                        <ci:IconText Glyph="&#xF08B;" Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.HeadToThePluginMarket}" />
                     </Button>
                 </StackPanel>
             </Grid>
@@ -510,14 +510,14 @@
                                       IsPanelOpened="{Binding ViewModel.IsDetailsShown, Mode=TwoWay}"
                                       IsVisible="{Binding !ViewModel.SettingsService.Settings.IsPluginMarketWarningVisible}">
             <controls1:ListDetailView.TitleElement>
-                <TextBlock Text="插件详细" VerticalAlignment="Center"
+                <TextBlock Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.DetailedPlugins}" VerticalAlignment="Center"
                            Theme="{StaticResource SubtitleTextBlockStyle}"/>
             </controls1:ListDetailView.TitleElement>
             <controls1:ListDetailView.LeftContent>
                 <Grid RowDefinitions="Auto,*">
                     <StackPanel Grid.Row="0">
                         <Grid Margin="4 0">
-                            <TextBox Watermark="搜索插件…"
+                            <TextBox Watermark="{ci:Tr SettingPages.PluginsSettingsPage.Watermark.SearchForPlugins}"
                                      Text="{Binding ViewModel.PluginFilterText, UpdateSourceTrigger=PropertyChanged}"
                                      KeyDown="TextBoxFilter_OnKeyDown"
                                      Padding="26 4"
@@ -533,41 +533,41 @@
                             <TabStrip SelectedIndex="{Binding ViewModel.PluginCategoryIndex}"
                                       Classes="compact"
                                       SelectionChanged="ListBoxCategory_OnSelectionChanged">
-                                <TabStripItem Content="市场"/>
-                                <TabStripItem Content="已安装"/>
+                                <TabStripItem Content="{ci:Tr SettingPages.PluginsSettingsPage.Content.Market}"/>
+                                <TabStripItem Content="{ci:Tr SettingPages.PluginsSettingsPage.Content.Installed}"/>
                             </TabStrip>
 
                             <Button Content="{ci:FluentIcon &#xEBAC;}"
                                     Theme="{StaticResource TransparentButton}"
-                                    ToolTip.Tip="更多选项…"
+                                    ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.MoreOptions}"
                                     DockPanel.Dock="Right">
                                 <Button.Flyout>
                                     <MenuFlyout>
-                                        <MenuItem Icon="{ci:FluentIcon &#xE0B5;}" Header="从缓存重载插件源" 
+                                        <MenuItem Icon="{ci:FluentIcon &#xE0B5;}" Header="{ci:Tr SettingPages.PluginsSettingsPage.Header.OverloadPluginSourcesFromCache}"
                                                   Click="MenuItemReloadFromCache_OnClick"
                                                   IsEnabled="{Binding ViewModel.PluginMarketService.IsLoadingPluginSource, Converter={StaticResource InvertBooleanConverter}}"/>
-                                        <MenuItem Icon="{ci:FluentIcon &#xE99A;}" Header="管理插件源…"
+                                        <MenuItem Icon="{ci:FluentIcon &#xE99A;}" Header="{ci:Tr SettingPages.PluginsSettingsPage.Header.ManagingPluginSources}"
                                                   Click="MenuItemManagePluginSources_OnClick"
                                                   IsEnabled="{Binding ViewModel.PluginMarketService.IsLoadingPluginSource, Converter={StaticResource InvertBooleanConverter}}"/>
-                                        <MenuItem Icon="{ci:FluentIcon &#xE161;}" Header="插件更新设置…"
+                                        <MenuItem Icon="{ci:FluentIcon &#xE161;}" Header="{ci:Tr SettingPages.PluginsSettingsPage.Header.PluginUpdateSettings}"
                                                   Click="MenuItemPluginUpdateSettings_OnClick"
                                                   IsEnabled="{Binding ViewModel.PluginMarketService.IsLoadingPluginSource, Converter={StaticResource InvertBooleanConverter}}"/>
                                         <Separator/>
-                                        <MenuItem Icon="{ci:FluentIcon &#xE071;}" Header="从本地安装…"
+                                        <MenuItem Icon="{ci:FluentIcon &#xE071;}" Header="{ci:Tr SettingPages.PluginsSettingsPage.Header.InstallFromLocal}"
                                                   Click="ButtonInstallFromLocal_OnClick"/>
                                         <Separator/>
-                                        <MenuItem Icon="{ci:FluentIcon &#xE88D;}" Header="打开插件文件夹…"
+                                        <MenuItem Icon="{ci:FluentIcon &#xE88D;}" Header="{ci:Tr SettingPages.PluginsSettingsPage.Header.OpenThePluginFolder}"
                                                   Click="MenuItemOpenPluginsFolder_OnClick"/>
-                                        
+
                                     </MenuFlyout>
                                 </Button.Flyout>
                             </Button>
-                            
-                            <Button DockPanel.Dock="Right" 
+
+                            <Button DockPanel.Dock="Right"
                                     Theme="{StaticResource TransparentButton}"
                                     Click="ButtonBaseRefreshPlugins_OnClick"
                                     IsEnabled="{Binding ViewModel.PluginMarketService.IsLoadingPluginSource, Converter={StaticResource InvertBooleanConverter}}">
-                                <ci:IconText Glyph="&#xE0B5;" Text="刷新"/>
+                                <ci:IconText Glyph="&#xE0B5;" Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.Refresh}"/>
                             </Button>
 
                         </DockPanel>
@@ -633,10 +633,10 @@
                                     <!-- 错误标志 -->
                                     <WrapPanel Grid.Column="2"
                                                Grid.Row="0"
-                                               Grid.RowSpan="2" 
+                                               Grid.RowSpan="2"
                                                Orientation="Horizontal"
                                                VerticalAlignment="Top" HorizontalAlignment="Right">
-                                        <StackPanel Orientation="Horizontal" ToolTip.Tip="下载量" Margin="2 0 0 0">
+                                        <StackPanel Orientation="Horizontal" ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.DownloadVolume}" Margin="2 0 0 0">
                                             <ci:FluentIcon Width="16" Height="16" FontSize="16"
                                                            Glyph="&#xE0D2;" VerticalAlignment="Center"/>
                                             <TextBlock Text="{Binding Value.DownloadCount, Converter={StaticResource LargeNumberToFriendlyNumberConverter}}"
@@ -648,14 +648,14 @@
                                             <TextBlock Text="{Binding Value.StarsCount, Converter={StaticResource LargeNumberToFriendlyNumberConverter}}"
                                                        FontSize="12" VerticalAlignment="Center"/>
                                         </StackPanel>
-                                        <ci:FluentIcon ToolTip.Tip="此插件将在重启后被移除。"
+                                        <ci:FluentIcon ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.ThisPluginWillBeRemovedAfterTheRestart}"
                                                          Foreground="Orange"
                                                          Width="16" Height="16"
                                                          VerticalAlignment="Center"
                                                          IsVisible="{Binding Value.IsUninstalling}"
                                                          Margin="4 0 0 0"
                                                          Glyph="&#xE61C;"/>
-                                        <ci:FluentIcon ToolTip.Tip="插件需要重启以应用更改。"
+                                        <ci:FluentIcon ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.PluginsNeedToRestartToApplyChanges}"
                                                        Foreground="Orange"
                                                        Width="16" Height="16"
                                                        VerticalAlignment="Center"
@@ -663,38 +663,38 @@
                                                        Margin="2 0 0 0"
                                                        Glyph="&#xE0BC;"/>
                                         <ci:FluentIcon Foreground="Red"
-                                                       ToolTip.Tip="加载此插件时出现错误。"
+                                                       ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.AnErrorOccursWhenLoadingThisPlugin}"
                                                        Width="16" Height="16"
                                                        Margin="2 0 0 0"
                                                        VerticalAlignment="Center"
                                                        Glyph="&#xE808;"
                                                        IsVisible="{Binding Value.Exception, Converter={x:Static ObjectConverters.IsNotNull}}"/>
-                                        <ci:FluentIcon ToolTip.Tip="更新可用。"
+                                        <ci:FluentIcon ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.UpdateAvailable}"
                                                        Width="16" Height="16"
                                                        VerticalAlignment="Center"
                                                        IsVisible="{Binding Value.IsUpdateAvailable}"
                                                        Margin="2 0 0 0"
                                                        Glyph="&#xE1A0;"/>
-                                        <ci:FluentIcon ToolTip.Tip="此插件已安装。"
+                                        <ci:FluentIcon ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.ThisPluginIsInstalled}"
                                                        Width="16" Height="16"
                                                        VerticalAlignment="Center"
                                                        IsVisible="{Binding Value.IsLocal}"
                                                        Margin="2 0 0 0"
                                                        Glyph="&#xE5AC;"/>
                                     </WrapPanel>
-                                    
+
                                     <!-- 操作按钮 -->
                                     <StackPanel Grid.Column="2"
                                           Grid.Row="0"
-                                          Grid.RowSpan="2" 
+                                          Grid.RowSpan="2"
                                           Orientation="Horizontal"
                                           Margin="4 0 0 0"
                                           IsEnabled="{Binding Value.DownloadProgress.IsDownloading, Converter={StaticResource InvertBooleanConverter}}"
                                           VerticalAlignment="Bottom" HorizontalAlignment="Right">
                                         <Panel>
-                                            
+
                                             <Button
-                                                ToolTip.Tip="安装"
+                                                ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.Installation}"
                                                 Classes="accent"
                                                 CornerRadius="14"
                                                 Width="28" Height="28"
@@ -711,7 +711,7 @@
                                                 </Button.IsVisible>
                                             </Button>
                                             <Button
-                                                ToolTip.Tip="更新"
+                                                ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.Update}"
                                                 Classes="accent"
                                                 CornerRadius="14"
                                                 Width="28" Height="28"
@@ -734,7 +734,7 @@
                                                                     Maximum="100"/>
                                         </Panel>
                                         <Button
-                                            ToolTip.Tip="重启以应用更改"
+                                            ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.RestartToApplyTheChanges}"
                                             CornerRadius="14"
                                             Width="28" Height="28"
                                             Click="ButtonRestart_OnClick"
@@ -744,7 +744,7 @@
                                         </Button>
 
                                         <CheckBox IsVisible="{Binding Value.IsLocal}"
-                                                  ToolTip.Tip="启用插件"
+                                                  ToolTip.Tip="{ci:Tr SettingPages.PluginsSettingsPage.ToolTip.EnablePlugins}"
                                                   Margin="4 0 0 0"
                                                   Padding="0"
                                                   VerticalAlignment="Bottom"
@@ -755,7 +755,7 @@
                         </ListBox.ItemTemplate>
                     </ListBox>
 
-                    
+
                 </Grid>
             </controls1:ListDetailView.LeftContent>
             <controls1:ListDetailView.RightContent>
@@ -784,7 +784,7 @@
                                        Height="75"
                                        Width="75" />
                     </Grid>
-                    <TextBlock Text="插件"
+                    <TextBlock Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.Plugins}"
                                HorizontalAlignment="Center"
                                TextAlignment="Center"
                                Margin="0 8 0 0"
@@ -794,7 +794,7 @@
                                HorizontalAlignment="Center"
                                TextWrapping="Wrap"
                                Width="320">
-                        <Run Text="欢迎使用插件！插件可以扩展 ClassIsland 的功能，比如添加一个组件，或者和其它软件联动，等等。" />
+                        <Run Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.WelcomeToPluginsPluginsCanExtendClassIslandS}" />
 
                     </TextBlock>
                     <Border Width="320"
@@ -809,7 +809,7 @@
                             <TextBlock TextAlignment="Center"
                                        HorizontalAlignment="Center"
                                        TextWrapping="Wrap"
-                                       Text="需要注意，插件可以以 ClassIsland 的身份使用各项系统资源并请求任意权限，还可以自由访问设备上的所有文件。请不要安装来路不明的插件，开发者也无法保证市场所提供的插件都是绝对安全的。ClassIsland 开发团队对使用插件造成的一切后果概不负责。" />
+                                       Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.PleaseNoteThatPluginsCanUseSystemResources}" />
                         </StackPanel>
                     </Border>
 
@@ -817,7 +817,7 @@
                             Margin="0 16 0 0"
                             Classes="accent"
                             Click="ButtonAgreePluginNotice_OnClick">
-                        <ci:IconText Glyph="&#xE424;" Text="同意并开始使用插件"/>
+                        <ci:IconText Glyph="&#xE424;" Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.AgreeAndStartUsingThePlugin}"/>
                     </Button>
                 </StackPanel></ScrollViewer>
             </Border>
@@ -827,8 +827,8 @@
                     Opacity="0.8"/>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                 <controls2:FAProgressRing IsIndeterminate="True" Width="64" Height="64" />
-                <TextBlock Text="正在解析..." 
-                           Margin="0 16 0 0" 
+                <TextBlock Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.AnalyzingIt}"
+                           Margin="0 16 0 0"
                            HorizontalAlignment="Center"
                            FontSize="16"/>
             </StackPanel>
@@ -871,11 +871,11 @@
                                FontSize="12"
                                TextAlignment="Center"
                                HorizontalAlignment="Center">
-                        <Run Text="共 "/>
+                        <Run Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.Together}"/>
                         <Run Text="{Binding ViewModel.DragInstallTotalCount}"/>
-                        <Run Text=" 个文件，识别到 "/>
+                        <Run Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.FilesRecognized}"/>
                         <Run Text="{Binding ViewModel.DragInstallSupportedCount}"/>
-                        <Run Text=" 个插件包"/>
+                        <Run Text="{ci:Tr SettingPages.PluginsSettingsPage.Text.PluginPackages}"/>
                     </TextBlock>
                 </StackPanel>
             </Border>

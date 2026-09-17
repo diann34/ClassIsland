@@ -17,25 +17,25 @@
                 Classes="settings-container animated-intro"
                 DataContext="{Binding RelativeSource={RelativeSource AncestorType=welcomePages:SystemPage}}"
                 MaxWidth="600">
-        <TextBlock Text="系统" HorizontalAlignment="Center"
+        <TextBlock Text="{ci:Tr WelcomePages.SystemPage.Text.System}" HorizontalAlignment="Center"
                    Margin="0 0 0 4"
                    Theme="{StaticResource SubtitleTextBlockStyle}"/>
-        <TextBlock Text="设置ClassIsland的系统集成功能，这些功能可以优化您使用本软件的体验。" HorizontalAlignment="Center"
+        <TextBlock Text="{ci:Tr WelcomePages.SystemPage.Text.SetClassIslandSSystemIntegrationFeaturesWhichCan}" HorizontalAlignment="Center"
                    Margin="0 0 0 8"/>
-        
+
         <CheckBox IsChecked="{Binding ViewModel.CreateStartupShortcut}">
             <CheckBox.IsVisible>
                 <OnPlatform Default="True">
                     <On Options="macOS" Content="False"/>
                 </OnPlatform>
             </CheckBox.IsVisible>
-            <ci:Thing IconSource="{ci:FluentIconSource &#xE342;}" Header="开机自启"
-                      Description="在系统启动时自动运行本应用。" />
+            <ci:Thing IconSource="{ci:FluentIconSource &#xE342;}" Header="{ci:Tr WelcomePages.SystemPage.Header.StartOnBoot}"
+                      Description="{ci:Tr WelcomePages.SystemPage.Description.RunThisApplicationAutomaticallyAtSystemStartup}" />
         </CheckBox>
         <!--<CheckBox>
             <controls:SettingsControl HasSwitcher="False"
-                                      IconGlyph="Link" Header="文件关联"
-                                      Description="注册*.cip文件格式关联，便于导入档案文件。" />
+                                      IconGlyph="Link" Header="{ci:Tr WelcomePages.SystemPage.Header.FileAssociation}"
+                                      Description="{ci:Tr WelcomePages.SystemPage.Description.RegisterTheCipFileFormatAssociationForEasier}" />
         </CheckBox>-->
         <CheckBox IsChecked="{Binding ViewModel.CreateDesktopShortcut}">
             <CheckBox.IsVisible>
@@ -43,8 +43,8 @@
                     <On Options="macOS" Content="False"/>
                 </OnPlatform>
             </CheckBox.IsVisible>
-            <ci:Thing IconSource="{ci:FluentIconSource &#xE62F;}" Header="创建桌面快捷方式"
-                      Description="在桌面上添加软件快捷方式。" />
+            <ci:Thing IconSource="{ci:FluentIconSource &#xE62F;}" Header="{ci:Tr WelcomePages.SystemPage.Header.CreateDesktopShortcuts}"
+                      Description="{ci:Tr WelcomePages.SystemPage.Description.AddSoftwareShortcutsToTheDesktop}" />
         </CheckBox>
         <CheckBox IsChecked="{Binding ViewModel.CreateStartMenuShortcut}">
             <CheckBox.IsVisible>
@@ -56,8 +56,8 @@
                 </MultiBinding>
             </CheckBox.IsVisible>
             <ci:Thing IconSource="{ci:FluentIconSource &#xE064;}"
-                      Header="创建开始菜单快捷方式"
-                      Description="在开始菜单上添加软件快捷方式。" />
+                      Header="{ci:Tr WelcomePages.SystemPage.Header.CreateAShortcutForTheStartMenu}"
+                      Description="{ci:Tr WelcomePages.SystemPage.Description.AddSoftwareShortcutsToTheStartMenu}" />
         </CheckBox>
         <CheckBox IsChecked="{Binding ViewModel.RegisterUrlScheme}">
             <CheckBox.IsVisible>
@@ -66,8 +66,8 @@
                 </OnPlatform>
             </CheckBox.IsVisible>
             <ci:Thing IconSource="{ci:FluentIconSource &#xEAB0;}"
-                      Header="注册 Url 协议"
-                      Description="允许第三方应用或网页通过 Url 协议 classisland:// 调用本应用的部分功能，详见帮助文档。" />
+                      Header="{ci:Tr WelcomePages.SystemPage.Header.RegisterUrlProtocol}"
+                      Description="{ci:Tr WelcomePages.SystemPage.Description.AllowsThirdPartyApplicationsOrWebPagesTo}" />
         </CheckBox>
         <CheckBox Margin="22 0 0 0"
                   IsChecked="{Binding ViewModel.CreateClassSwapShortcut}"
@@ -78,23 +78,23 @@
                 </OnPlatform>
             </CheckBox.IsVisible>
             <ci:Thing IconSource="{ci:FluentIconSource &#xE15F;}"
-                      Header="在桌面创建换课快捷方式"
-                      Description="打开此快捷方式可以一键开始换课。" />
+                      Header="{ci:Tr WelcomePages.SystemPage.Header.CreateACourseSwitchingShortcutOnTheDesktop}"
+                      Description="{ci:Tr WelcomePages.SystemPage.Description.OpenThisShortcutToStartCourseSwitchingWith}" />
         </CheckBox>
-        
+
         <StackPanel Orientation="Horizontal" Spacing="4" HorizontalAlignment="Center">
             <Button Command="{x:Static views:WelcomeWindow.WelcomeNavigateBackCommand}"
-                    ToolTip.Tip="上一步"
+                    ToolTip.Tip="{ci:Tr WelcomePages.SystemPage.ToolTip.PreviousStep}"
                     Content="{ci:FluentIcon &#xE108;, FontSize=18}"
                     Width="48" Height="48"
                     CornerRadius="24"
                     Margin="0 8 0 0"/>
             <Button Command="{x:Static views:WelcomeWindow.WelcomeNavigateForwardCommand}"
-                    ToolTip.Tip="下一步"
+                    ToolTip.Tip="{ci:Tr WelcomePages.SystemPage.ToolTip.NextStep}"
                     Content="{ci:FluentIcon &#xE130;, FontSize=18}"
                     Width="48" Height="48"
                     CornerRadius="24"
-                    Classes="accent" 
+                    Classes="accent"
                     Margin="0 8 0 0"/>
         </StackPanel>
     </StackPanel>
