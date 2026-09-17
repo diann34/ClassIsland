@@ -29,9 +29,18 @@ public static class FAContentDialogExtensions
         {
             dialog.Content = LocalizationService.TranslateText(content);
         }
-        dialog.PrimaryButtonText = LocalizationService.TranslateText(dialog.PrimaryButtonText);
-        dialog.SecondaryButtonText = LocalizationService.TranslateText(dialog.SecondaryButtonText);
-        dialog.CloseButtonText = LocalizationService.TranslateText(dialog.CloseButtonText);
+        if (dialog.PrimaryButtonText is string primaryButtonText)
+        {
+            dialog.PrimaryButtonText = LocalizationService.TranslateText(primaryButtonText);
+        }
+        if (dialog.SecondaryButtonText is string secondaryButtonText)
+        {
+            dialog.SecondaryButtonText = LocalizationService.TranslateText(secondaryButtonText);
+        }
+        if (dialog.CloseButtonText is string closeButtonText)
+        {
+            dialog.CloseButtonText = LocalizationService.TranslateText(closeButtonText);
+        }
 
         if (tl == null)
         {
