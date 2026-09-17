@@ -1,9 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net10.0-macos26.5</TargetFramework>
+        <TargetFramework>net10.0-macos27.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <!-- The .NET 10 Xcode 27 binding pack still marks its API surface as evaluation. -->
+        <NoWarn>$(NoWarn);XCODE_27_0_PREVIEW</NoWarn>
     </PropertyGroup>
 
 
