@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="TutorialControllerWindow.Content.Skip" xml:space="preserve">
+    <value>跳过</value>
+  </data>
+  <data name="TutorialControllerWindow.Text.AreYouSureYouWantToSkipThis" xml:space="preserve">
+    <value>是否确定跳过本段落教程？您稍后可以在【主菜单】-&gt;【教学…】中重看本段教程。</value>
+  </data>
+  <data name="TutorialControllerWindow.Text.SkipTutorial" xml:space="preserve">
+    <value>跳过教程</value>
+  </data>
+  <data name="TutorialControllerWindow.Text.TutorialInProgress" xml:space="preserve">
+    <value>教学进行中…</value>
+  </data>
+  <data name="TutorialControllerWindow.Title.TutorialControlWindow" xml:space="preserve">
+    <value>教程控制窗口</value>
+  </data>
+  <data name="TutorialControllerWindow.ToolTip.Skip" xml:space="preserve">
+    <value>跳过</value>
+  </data>
+</root>

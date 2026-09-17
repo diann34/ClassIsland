@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="DataTransferPage.Description.ComponentsAutomationAndOtherConfigurationFiles" xml:space="preserve">
+    <value>组件、自动化等配置文件。</value>
+  </data>
+  <data name="DataTransferPage.Description.IncludesTimetableContentScheduleSubjectDefinitionsAndOth" xml:space="preserve">
+    <value>包括课表内容、时间安排、科目定义等信息。</value>
+  </data>
+  <data name="DataTransferPage.Description.IncludesVariousApplicationPreferencesSuchAsHiddenSetting" xml:space="preserve">
+    <value>包括应用的各个首选项，如隐藏设置、颜色设置、提醒/铃声设置、天气信息等。</value>
+  </data>
+  <data name="DataTransferPage.Header.ApplicationSettings" xml:space="preserve">
+    <value>应用设置</value>
+  </data>
+  <data name="DataTransferPage.Header.Browse" xml:space="preserve">
+    <value>浏览…</value>
+  </data>
+  <data name="DataTransferPage.Header.Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="DataTransferPage.Header.Import" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="DataTransferPage.Header.OtherConfiguration" xml:space="preserve">
+    <value>其它配置</value>
+  </data>
+  <data name="DataTransferPage.Header.TimetableConfiguration" xml:space="preserve">
+    <value>课表配置</value>
+  </data>
+  <data name="DataTransferPage.Message.TheDataExportFunctionHereIsMainlyUsed" xml:space="preserve">
+    <value>此处的数据导出功能主要用于在不同 ClassIsland 实例间转移数据。若需导出诊断信息，请前往【应用设置】-&gt;【更多选项…】-&gt;【导出诊断数据】；若需备份应用数据，请使用【应用设置】-&gt;【通用】-&gt;【存储】中的备份功能。</value>
+  </data>
+  <data name="DataTransferPage.Text.DataMigration" xml:space="preserve">
+    <value>数据迁移</value>
+  </data>
+  <data name="DataTransferPage.Text.ImportDataToOrExportDataFromClassIsland" xml:space="preserve">
+    <value>向 ClassIsland 导入或从 ClassIsland 导出数据。</value>
+  </data>
+  <data name="DataTransferPage.ToolTip.Done" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="DataTransferPage.ToolTip.NextStep" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="DataTransferPage.ToolTip.PreviousStep" xml:space="preserve">
+    <value>上一步</value>
+  </data>
+  <data name="DataTransferPage.Description.BrowseForExportLocationManually" xml:space="preserve">
+    <value>手动浏览导出位置</value>
+  </data>
+  <data name="DataTransferPage.Description.BrowseForImportLocationManually" xml:space="preserve">
+    <value>手动浏览导入位置</value>
+  </data>
+  <data name="DataTransferPage.Text.ExportCompleted" xml:space="preserve">
+    <value>导出完成</value>
+  </data>
+  <data name="DataTransferPage.Text.ExportCompletedSuccessfully" xml:space="preserve">
+    <value>已成功完成导出。</value>
+  </data>
+  <data name="DataTransferPage.Text.ExportDestination" xml:space="preserve">
+    <value>导出目标</value>
+  </data>
+  <data name="DataTransferPage.Text.Exporting" xml:space="preserve">
+    <value>正在导出</value>
+  </data>
+  <data name="DataTransferPage.Text.ExportWillFinishSoon" xml:space="preserve">
+    <value>请坐和放宽，导出很快就能完成。</value>
+  </data>
+  <data name="DataTransferPage.Text.ImportCompleted" xml:space="preserve">
+    <value>导入完成</value>
+  </data>
+  <data name="DataTransferPage.Text.ImportCompletedSuccessfully" xml:space="preserve">
+    <value>已成功完成导入。</value>
+  </data>
+  <data name="DataTransferPage.Text.ImportSource" xml:space="preserve">
+    <value>导入来源</value>
+  </data>
+  <data name="DataTransferPage.Text.Importing" xml:space="preserve">
+    <value>正在导入</value>
+  </data>
+  <data name="DataTransferPage.Text.ImportWillFinishSoon" xml:space="preserve">
+    <value>请坐和放宽，导入很快就能完成。</value>
+  </data>
+  <data name="DataTransferPage.Text.SelectDataToExport" xml:space="preserve">
+    <value>选择要导出的数据</value>
+  </data>
+  <data name="DataTransferPage.Text.SelectDataToImport" xml:space="preserve">
+    <value>选择要导入的数据</value>
+  </data>
+  <data name="DataTransferPage.Text.SelectInformationToExport" xml:space="preserve">
+    <value>选择要导出的信息</value>
+  </data>
+  <data name="DataTransferPage.Text.SelectInformationToImport" xml:space="preserve">
+    <value>选择要导入的信息</value>
+  </data>
+  <data name="DataTransferPage.Text.SelectTheDataSourceToImport" xml:space="preserve">
+    <value>选择要导入的数据来源。</value>
+  </data>
+  <data name="DataTransferPage.Text.SelectTheDestinationToExportTo" xml:space="preserve">
+    <value>选择要导出到的目标。</value>
+  </data>
+  <data name="Views.DataTransferPage.Button.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Views.DataTransferPage.Button.RestartAndContinue" xml:space="preserve">
+    <value>重启并继续</value>
+  </data>
+  <data name="Views.DataTransferPage.Content.RestartToApplyImport" xml:space="preserve">
+    <value>应用需要重启以完全应用导入操作，要继续吗？</value>
+  </data>
+  <data name="Views.DataTransferPage.Content.RestartToContinueImport" xml:space="preserve">
+    <value>应用需要重启以继续导入操作，要重启以继续导入吗？</value>
+  </data>
+  <data name="Views.DataTransferPage.Message.UnexpectedExportError" xml:space="preserve">
+    <value>导出数据时发生意外错误。</value>
+  </data>
+  <data name="Views.DataTransferPage.Message.UnexpectedImportError" xml:space="preserve">
+    <value>导入时发生意外错误</value>
+  </data>
+  <data name="Views.DataTransferPage.Title.RestartToContinue" xml:space="preserve">
+    <value>重启以继续</value>
+  </data>
+  <data name="Views.DataTransferPage.Description.ExportToClassIsland2DataFile" xml:space="preserve">
+    <value>支持导出为可以导入到其它 ClassIsland 2 实例的文件格式。</value>
+  </data>
+  <data name="Views.DataTransferPage.Description.ImportFromClassIsland1" xml:space="preserve">
+    <value>支持从 1.x 版本的 ClassIsland 导入课表、组件配置、自动化配置、应用设置、部分插件和主题等数据。</value>
+  </data>
+  <data name="Views.DataTransferPage.Description.ImportFromClassIsland2DataFile" xml:space="preserve">
+    <value>支持从 ClassIsland 2.x 数据文件导入课表、组件配置、自动化配置、应用设置、部分插件和主题等数据。</value>
+  </data>
+  <data name="Views.DataTransferPage.Description.ImportFromClassWidgets1" xml:space="preserve">
+    <value>支持从 Class Widgets 1 导入全部课表信息和大部分配置。</value>
+  </data>
+  <data name="Views.DataTransferPage.FileType.ClassIslandDataFile" xml:space="preserve">
+    <value>ClassIsland 数据文件</value>
+  </data>
+  <data name="Views.DataTransferPage.FileType.ClassIslandExecutable" xml:space="preserve">
+    <value>ClassIsland 可执行文件</value>
+  </data>
+  <data name="Views.DataTransferPage.Message.UpgradingImportedPlugins" xml:space="preserve">
+    <value>正在升级从 ClassIsland 1 导入的插件到兼容 ClassIsland 2 的版本，这可能需要一定的时间，应用将在升级完成后显示一条通知。部分插件可能暂不支持 ClassIsland 2。</value>
+  </data>
+  <data name="Views.DataTransferPage.Title.BrowseClassIsland2ExportFile" xml:space="preserve">
+    <value>浏览 ClassIsland 2 导出文件</value>
+  </data>
+  <data name="Views.DataTransferPage.Title.BrowseClassWidgetsInstallation" xml:space="preserve">
+    <value>浏览 Class Widgets 安装（即有 ClassWidgets[.exe]）的文件夹或其数据目录</value>
+  </data>
+  <data name="Views.DataTransferPage.Title.SelectExportFileDestination" xml:space="preserve">
+    <value>浏览保存的导出文件</value>
+  </data>
+  <data name="Views.DataTransferPage.Title.SelectPreviousClassIslandInstance" xml:space="preserve">
+    <value>选择先前版本的 ClassIsland 实例</value>
+  </data>
+  <data name="Views.DataTransferPage.Title.UpgradingPlugins" xml:space="preserve">
+    <value>正在升级插件</value>
+  </data>
+</root>

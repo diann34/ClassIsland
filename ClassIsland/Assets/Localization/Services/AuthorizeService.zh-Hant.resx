@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Services.AuthorizeService.Message.AuthenticationCreationFailed" xml:space="preserve">
+    <value>建立驗證資訊時發生例外狀況：{0}</value>
+  </data>
+  <data name="Services.AuthorizeService.Message.AuthenticationFailed" xml:space="preserve">
+    <value>驗證時發生例外狀況：{0}</value>
+  </data>
+  <data name="Services.AuthorizeService.Title.AuthenticationCreationFailed" xml:space="preserve">
+    <value>建立驗證資訊失敗</value>
+  </data>
+  <data name="Services.AuthorizeService.Title.AuthenticationFailed" xml:space="preserve">
+    <value>驗證失敗</value>
+  </data>
+</root>

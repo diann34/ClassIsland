@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople" xml:space="preserve">
+    <value>某一日，祂从天坠落。人们抬头仰望，于是看见了星空。星月送来神的女儿，她愿成为人的伴侣。长风化作她的轺车，四海落成她的园圃。鸟雀衔来善的种子，百花编织爱的颂歌。她便是这样降生于世，行于大地，与人类一同长大，与世界一起发芽。而今，终焉之时将至。而今，归去之时已至。就此告别吧，美丽的世界。此后，将有群星闪耀，因为我如今来过。此后，将有百花绽放，因为我从未离去。请将我的箭、我的花、与我的爱，织成新生的种子，带向那枯萎的大地。然后，便让它开出永恒而无瑕的…人性之华吧。我名为爱莉希雅……最初的律者，人之律者。</value>
+  </data>
+  <data name="Core.ThemeBase.OffContent.Off" xml:space="preserve">
+    <value>关</value>
+  </data>
+  <data name="Core.ThemeBase.OnContent.On" xml:space="preserve">
+    <value>开</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Conflict" xml:space="preserve">
+    <value>纷争</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Death" xml:space="preserve">
+    <value>死亡</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Doorway" xml:space="preserve">
+    <value>门径</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Earth" xml:space="preserve">
+    <value>大地</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Law" xml:space="preserve">
+    <value>律法</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.NegativeWorld" xml:space="preserve">
+    <value>负世</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Ocean" xml:space="preserve">
+    <value>海洋</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Reason" xml:space="preserve">
+    <value>理性</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Romance" xml:space="preserve">
+    <value>浪漫</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Sky" xml:space="preserve">
+    <value>天空</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Time" xml:space="preserve">
+    <value>岁月</value>
+  </data>
+  <data name="Core.Themes.ChipListBox.Content.Trick" xml:space="preserve">
+    <value>诡计</value>
+  </data>
+  <data name="Core.Themes.MyNavigationPageStyles.ToolTip.Return" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Core.Themes.TextBaselineFixes.Content.IAmTheSunThatWillEventuallyRise" xml:space="preserve">
+    <value>我是，终将升起的烈阳！</value>
+  </data>
+  <data name="Core.Themes.TextBaselineFixes.Content.Test1" xml:space="preserve">
+    <value>测试1</value>
+  </data>
+  <data name="Core.Themes.TextBaselineFixes.Content.Test2" xml:space="preserve">
+    <value>测试2</value>
+  </data>
+  <data name="Core.Themes.TextBaselineFixes.Content.Test3" xml:space="preserve">
+    <value>测试3</value>
+  </data>
+  <data name="Core.Themes.TextBaselineFixes.Content.TestText" xml:space="preserve">
+    <value>测试文本</value>
+  </data>
+  <data name="Core.StylesBase.OffContent.Off" xml:space="preserve">
+    <value>关</value>
+  </data>
+  <data name="Core.StylesBase.OnContent.On" xml:space="preserve">
+    <value>开</value>
+  </data>
+  <data name="Core.StylesBase.ToolTip.ImageLoadFailed" xml:space="preserve">
+    <value>喔唷，图片加载失败啦</value>
+  </data>
+</root>

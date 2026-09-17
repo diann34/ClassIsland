@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.ClockSettingsPage.Content.AlignTheRingtone" xml:space="preserve">
+    <value>對齊鈴聲</value>
+  </data>
+  <data name="SettingPages.ClockSettingsPage.Content.AutomaticTimeOffset" xml:space="preserve">
+    <value>自動時間偏移</value>
+  </data>
+  <data name="SettingPages.ClockSettingsPage.Content.TimeServer" xml:space="preserve">
+    <value>時間服務器</value>
+  </data>
+  <data name="SettingPages.ClockSettingsPage.Description.IfEnabledTheTimeOffsetIsAutomaticallyAdjusted" xml:space="preserve">
+    <value>若啓用，每天自動以設定的增量值調整時間偏移量。</value>
+  </data>
+  <data name="SettingPages.ClockSettingsPage.Description.SetTheOffsetBetweenCourseTimeAndActual" xml:space="preserve">
+    <value>設定課程時間與實際時間的偏移值。增大偏移以抵消鈴聲提前，減小偏移以抵消鈴聲滯後。</value>
+  </data>
+  <data name="SettingPages.ClockSettingsPage.Description.WhenEnabledTheAppWillUsePreciseTime" xml:space="preserve">
+    <value>啓用後，應用將使用從指定服務器同步的精確時間，而不是使用系統時間。</value>
+  </data>
+  <data name="SettingPages.ClockSettingsPage.Header.TimeOffset" xml:space="preserve">
+    <value>時間偏移</value>
+  </data>
+  <data name="SettingPages.ClockSettingsPage.Header.UsePreciseTime" xml:space="preserve">
+    <value>使用精確時間</value>
+  </data>
+  <data name="SettingPages.ClockSettingsPage.Text.Clock" xml:space="preserve">
+    <value>時鐘</value>
+  </data>
+  <data name="SettingPages.ClockSettingsPage.Text.SyncNow" xml:space="preserve">
+    <value>立即同步</value>
+  </data>
+  <data name="SettingPages.ClockSettingsPage.Suffix.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+</root>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="WelcomePages.LicensePage.Content.ClassIslandOpenSourceLicense" xml:space="preserve">
+    <value>《ClassIsland 开源许可》</value>
+  </data>
+  <data name="WelcomePages.LicensePage.Content.ClassIslandPrivacyPolicy" xml:space="preserve">
+    <value>《ClassIsland 隐私政策》</value>
+  </data>
+  <data name="WelcomePages.LicensePage.Content.IHaveReadAndAgree" xml:space="preserve">
+    <value>我已阅读并同意</value>
+  </data>
+  <data name="WelcomePages.LicensePage.Text.AgreeToTheLicenseTerms" xml:space="preserve">
+    <value>同意许可条款</value>
+  </data>
+  <data name="WelcomePages.LicensePage.Text.ToContinueUsingClassIslandYouMustReadAnd" xml:space="preserve">
+    <value>要继续使用 ClassIsland，您必须阅读并同意以下许可条款。</value>
+  </data>
+  <data name="WelcomePages.LicensePage.ToolTip.NextStep" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+</root>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Sunday" xml:space="preserve"><value>週日</value></data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Monday" xml:space="preserve"><value>週一</value></data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Tuesday" xml:space="preserve"><value>週二</value></data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Wednesday" xml:space="preserve"><value>週三</value></data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Thursday" xml:space="preserve"><value>週四</value></data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Friday" xml:space="preserve"><value>週五</value></data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Saturday" xml:space="preserve"><value>週六</value></data>
+</root>

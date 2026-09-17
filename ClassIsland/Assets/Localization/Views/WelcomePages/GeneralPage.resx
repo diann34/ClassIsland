@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="WelcomePages.GeneralPage.Description.SetTheFirstDayOfTheSemesterWhich" xml:space="preserve">
+    <value>设置学期首日，该日期将作为多周轮换课表的计算起点和每周的第一天。</value>
+  </data>
+  <data name="WelcomePages.GeneralPage.Description.ThisAppWillUseTheSentrysdkToCollect" xml:space="preserve">
+    <value>本应用将通过 SentrySDK 来收集本应用中的使用情况与错误信息，以改进本应用。您的信息会匿名上传，不会包含您的个人信息。您可以自行启用或禁用此功能。</value>
+  </data>
+  <data name="WelcomePages.GeneralPage.Header.AnonymousUsageAnalysis" xml:space="preserve">
+    <value>匿名使用情况分析</value>
+  </data>
+  <data name="WelcomePages.GeneralPage.Header.SemesterStartTime" xml:space="preserve">
+    <value>学期开始时间</value>
+  </data>
+  <data name="WelcomePages.GeneralPage.Text.Basic" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="WelcomePages.GeneralPage.Text.ConfigureTheBasicSettingsOfClassIsland" xml:space="preserve">
+    <value>配置 ClassIsland 的基本设置。</value>
+  </data>
+  <data name="WelcomePages.GeneralPage.ToolTip.NextStep" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+</root>

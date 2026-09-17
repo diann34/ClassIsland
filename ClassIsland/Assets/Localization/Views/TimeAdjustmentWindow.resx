@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="TimeAdjustmentWindow.Header.AlignTheRingtone" xml:space="preserve">
+    <value>对齐铃声</value>
+  </data>
+  <data name="TimeAdjustmentWindow.Text.AfterCalibrationTheTimeOffsetWillBeAdjusted" xml:space="preserve">
+    <value>校准后，将调整时间偏移，使当前时间更改为目标时间。</value>
+  </data>
+  <data name="TimeAdjustmentWindow.Text.CurrentTime" xml:space="preserve">
+    <value>当前时间</value>
+  </data>
+  <data name="TimeAdjustmentWindow.Text.TargetTime" xml:space="preserve">
+    <value>目标时间</value>
+  </data>
+  <data name="TimeAdjustmentWindow.Text.WhenTheTargetTimeIsReachedOrThe" xml:space="preserve">
+    <value>当到达目标时间点或对应铃声响起时，按下上方的按钮以进行校准。</value>
+  </data>
+  <data name="TimeAdjustmentWindow.ToolTip.AlignToNextAlarm" xml:space="preserve">
+    <value>对齐到下个铃声</value>
+  </data>
+  <data name="TimeAdjustmentWindow.ToolTip.AlignToNextFullMinute" xml:space="preserve">
+    <value>对齐到下个整分钟</value>
+  </data>
+  <data name="TimeAdjustmentWindow.ToolTip.Calibrate" xml:space="preserve">
+    <value>校准</value>
+  </data>
+  <data name="TimeAdjustmentWindow.Label.TimeOffset" xml:space="preserve">
+    <value>时间偏移</value>
+  </data>
+  <data name="TimeAdjustmentWindow.Suffix.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+</root>

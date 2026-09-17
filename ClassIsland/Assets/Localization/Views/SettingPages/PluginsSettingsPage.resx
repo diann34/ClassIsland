@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.PluginsSettingsPage.Content.AutomaticallyUpdatesPlugins" xml:space="preserve">
+    <value>自动更新插件</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.AvoidSslTlsCertificateErrors" xml:space="preserve">
+    <value>忽略 SSL/TLS 证书错误</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.Dependencies" xml:space="preserve">
+    <value>依赖项</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.ErrorMessages" xml:space="preserve">
+    <value>错误信息</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.Installed" xml:space="preserve">
+    <value>已安装</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.IsEnabled" xml:space="preserve">
+    <value>已启用</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.Market" xml:space="preserve">
+    <value>市场</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.NotifyMeWhenThePluginIsUpdated" xml:space="preserve">
+    <value>插件有更新时通知我</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.Overview" xml:space="preserve">
+    <value>概览</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.ProjectHomepage" xml:space="preserve">
+    <value>项目主页</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.ReplaceThePluginImageSource" xml:space="preserve">
+    <value>更换插件镜像源</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Header.InstallFromLocal" xml:space="preserve">
+    <value>从本地安装…</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Header.ManagingPluginSources" xml:space="preserve">
+    <value>管理插件源…</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Header.Mirroring" xml:space="preserve">
+    <value>镜像</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Header.MustChoose" xml:space="preserve">
+    <value>必选？</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Header.OpenConfigurationFolder" xml:space="preserve">
+    <value>打开配置文件夹…</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Header.OpenThePluginFolder" xml:space="preserve">
+    <value>打开插件文件夹…</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Header.OverloadPluginSourcesFromCache" xml:space="preserve">
+    <value>从缓存重载插件源</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Header.PackagePlugins" xml:space="preserve">
+    <value>打包插件</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Header.PluginId" xml:space="preserve">
+    <value>插件 ID</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Header.PluginUpdateSettings" xml:space="preserve">
+    <value>插件更新设置…</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.ThisPluginDoesNotClaimSupportForThe" xml:space="preserve">
+    <value>此插件未声明支持当前所运行的操作系统。此插件可能不能正常按预期工作。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.UnableToInstallPluginsPleaseCheckYourNetwork" xml:space="preserve">
+    <value>无法安装插件，请检查您的网络连接。更换插件镜像源可能可以解决此问题。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.Added" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.AgreeAndStartUsingThePlugin" xml:space="preserve">
+    <value>同意并开始使用插件</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.AnalyzingIt" xml:space="preserve">
+    <value>正在解析...</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.BuiltInPluginSource" xml:space="preserve">
+    <value>内置插件源</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.CustomPluginSources" xml:space="preserve">
+    <value>自定义插件源</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.DetailedPlugins" xml:space="preserve">
+    <value>插件详细</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.Disabled" xml:space="preserve">
+    <value>已禁用</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.FilesRecognized" xml:space="preserve">
+    <value> 个文件，识别到 </value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.HeadToThePluginMarket" xml:space="preserve">
+    <value>前往插件市场</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.Installation" xml:space="preserve">
+    <value>安装</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.InstallingPluginsFromUnknownSourcesMayCarryRisks" xml:space="preserve">
+    <value>安装未知来源的插件可能存在风险。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.Loaded" xml:space="preserve">
+    <value>已加载</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.ManagePluginSources" xml:space="preserve">
+    <value>管理插件源</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.NotLoaded" xml:space="preserve">
+    <value>未加载</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.PleaseNoteThatPluginsCanUseSystemResources" xml:space="preserve">
+    <value>需要注意，插件可以以 ClassIsland 的身份使用各项系统资源并请求任意权限，还可以自由访问设备上的所有文件。请不要安装来路不明的插件，开发者也无法保证市场所提供的插件都是绝对安全的。ClassIsland 开发团队对使用插件造成的一切后果概不负责。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.PluginPackages" xml:space="preserve">
+    <value> 个插件包</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.PluginUpdateSettings" xml:space="preserve">
+    <value>插件更新设置</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.Plugins" xml:space="preserve">
+    <value>插件</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.Remove" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.RestartToApplyTheChanges" xml:space="preserve">
+    <value>重启以应用更改</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.ThisPluginDoesNotClaimSupportForThe" xml:space="preserve">
+    <value>此插件未声明支持当前所运行的操作系统。此插件可能不能正常按预期工作。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.Together" xml:space="preserve">
+    <value>共 </value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.UndoRemoval" xml:space="preserve">
+    <value>撤销移除</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.WelcomeToPluginsPluginsCanExtendClassIslandS" xml:space="preserve">
+    <value>欢迎使用插件！插件可以扩展 ClassIsland 的功能，比如添加一个组件，或者和其它软件联动，等等。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.ToolTip.AnErrorOccursWhenLoadingThisPlugin" xml:space="preserve">
+    <value>加载此插件时出现错误。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.ToolTip.DisablingPluginImageCertificateVerificationWillReduceSec" xml:space="preserve">
+    <value>禁用插件镜像证书校验, 将降低安全性。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.ToolTip.DownloadVolume" xml:space="preserve">
+    <value>下载量</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.ToolTip.EnablePlugins" xml:space="preserve">
+    <value>启用插件</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.ToolTip.Installation" xml:space="preserve">
+    <value>安装</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.ToolTip.MoreOptions" xml:space="preserve">
+    <value>更多选项…</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.ToolTip.PluginsNeedToRestartToApplyChanges" xml:space="preserve">
+    <value>插件需要重启以应用更改。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.ToolTip.RestartToApplyTheChanges" xml:space="preserve">
+    <value>重启以应用更改</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.ToolTip.ThisPluginIsInstalled" xml:space="preserve">
+    <value>此插件已安装。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.ToolTip.ThisPluginWillBeRemovedAfterTheRestart" xml:space="preserve">
+    <value>此插件将在重启后被移除。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.ToolTip.Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.ToolTip.UpdateAvailable" xml:space="preserve">
+    <value>更新可用。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Watermark.SearchForPlugins" xml:space="preserve">
+    <value>搜索插件…</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Label.BuiltInPluginSourceMirror" xml:space="preserve">
+    <value>内置插件源镜像</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.NoMatchingPlugins" xml:space="preserve">
+    <value>找不到符合条件的插件，请调整筛选条件后重试</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Text.NoPluginsInstalled" xml:space="preserve">
+    <value>还没有安装任何插件，不妨去插件市场看看吧</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Title.PackagePlugin" xml:space="preserve">
+    <value>打包插件</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Title.ConfirmInstallation" xml:space="preserve">
+    <value>确认安装？</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Title.InstallFromLocalFile" xml:space="preserve">
+    <value>从本地安装插件</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Title.UnsupportedOperatingSystem" xml:space="preserve">
+    <value>操作系统不受该插件支持</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Title.MissingDependencies" xml:space="preserve">
+    <value>缺少依赖项</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.UnsupportedOperatingSystem" xml:space="preserve">
+    <value>此插件所声明支持的操作系统并未包括当前所运行的操作系统。&#xA;如果继续安装此插件，此插件将可能无法正常工作。您要继续安装此插件吗？</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.MissingDependencies" xml:space="preserve">
+    <value>此插件的部分必选依赖项未安装且无法从市场获取。如果继续安装此插件，此插件将可能无法工作。您要继续安装此插件吗？&#xA;&#xA;未找到的必选依赖项：&#xA;{0}</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.PackagePluginFailed" xml:space="preserve">
+    <value>无法打包插件 {0}</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.NoInstallablePluginPackages" xml:space="preserve">
+    <value>未能从选择的文件中解析出任何可安装的插件包。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.InstallPluginFailed" xml:space="preserve">
+    <value>无法安装插件 {0}</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.PluginsInstalled" xml:space="preserve">
+    <value>成功安装了 {0} 个插件。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.PluginInstallFailures" xml:space="preserve">
+    <value>安装失败：{0} 个插件。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Hint.OnlyPluginPackagesSupported" xml:space="preserve">
+    <value>仅支持 {0} 插件包</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Hint.DragPluginPackageHere" xml:space="preserve">
+    <value>请拖入插件包文件</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Hint.ReleaseToInstallPlugins" xml:space="preserve">
+    <value>松开以安装 {0} 个插件</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Hint.UnsupportedFilesIgnored" xml:space="preserve">
+    <value>将忽略 {0} 个不受支持的文件</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Hint.MultipleSelectionSupported" xml:space="preserve">
+    <value>支持多选（{0}）</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Hint.DragPluginsToInstall" xml:space="preserve">
+    <value>将插件拖入到此处，松手即可安装。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.LoadPluginSourceFailed" xml:space="preserve"><value>无法加载插件源</value></data>
+  <data name="SettingPages.PluginsSettingsPage.Message.LoadDocumentFailed" xml:space="preserve"><value>&gt; 无法加载文档：{0}</value></data>
+</root>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Core.Abstractions.Controls.ProfileTransferProviders.GenericImportProviderBase.Content.ImportIntoANewArchive" xml:space="preserve">
+    <value>导入到新的档案</value>
+  </data>
+  <data name="Core.Abstractions.Controls.ProfileTransferProviders.GenericImportProviderBase.Content.MergeIntoCurrentArchive" xml:space="preserve">
+    <value>合并到当前档案</value>
+  </data>
+  <data name="Core.Abstractions.Controls.ProfileTransferProviders.GenericImportProviderBase.Header.ImportTarget" xml:space="preserve">
+    <value>导入目标</value>
+  </data>
+  <data name="Core.Abstractions.Controls.ProfileTransferProviders.GenericImportProviderBase.Watermark.NewArchiveName" xml:space="preserve">
+    <value>新档案名称</value>
+  </data>
+</root>

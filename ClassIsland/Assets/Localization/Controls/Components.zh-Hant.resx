@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.Components.ClockComponentSettingsControl.Description.AfterEnablingTheClockWillDisplayTimePrecise" xml:space="preserve">
+    <value>啓用後，時鐘將顯示精準到秒的時間。</value>
+  </data>
+  <data name="Controls.Components.ClockComponentSettingsControl.Description.DisplaySystemTimeWithoutTimeOffset" xml:space="preserve">
+    <value>顯示不經過時間偏移的系統時間。</value>
+  </data>
+  <data name="Controls.Components.ClockComponentSettingsControl.Description.SimulateTheFlashingEffectOfTheElectronicClock" xml:space="preserve">
+    <value>模擬電子時鐘的分隔符閃動效果。</value>
+  </data>
+  <data name="Controls.Components.ClockComponentSettingsControl.Header.FlashTimeSeparator" xml:space="preserve">
+    <value>閃動時間分隔符</value>
+  </data>
+  <data name="Controls.Components.ClockComponentSettingsControl.Header.ShowSeconds" xml:space="preserve">
+    <value>顯示秒數</value>
+  </data>
+  <data name="Controls.Components.ClockComponentSettingsControl.Header.UseActualTime" xml:space="preserve">
+    <value>使用實際時間</value>
+  </data>
+  <data name="Controls.Components.CountDownComponent.Text.Distance" xml:space="preserve">
+    <value>距離</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.AdvancedTiming" xml:space="preserve">
+    <value>高級計時</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.Countdown" xml:space="preserve">
+    <value>倒計時</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.CountdownConjunction" xml:space="preserve">
+    <value>倒計時連接詞</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.CustomizeTheFirstDayOfTheWeek" xml:space="preserve">
+    <value>自定義每週的第一天</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.Cycle" xml:space="preserve">
+    <value>週期</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.CycleStartTime" xml:space="preserve">
+    <value>週期開始時間</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.Default" xml:space="preserve">
+    <value>默認</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.EndDate" xml:space="preserve">
+    <value>結束日期</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.EnforcingNaturalTime" xml:space="preserve">
+    <value>強制自然時間</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.FixedTime" xml:space="preserve">
+    <value>固定時間</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.Friday" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.LimitTheNumberOfCycles" xml:space="preserve">
+    <value>限制週期循環次數</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.MandatoryCourseTime" xml:space="preserve">
+    <value>強制課程時間</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.Monday" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.ProgressBar" xml:space="preserve">
+    <value>進度條</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.ProgressLoop" xml:space="preserve">
+    <value>進度環</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.Saturday" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.StartDate" xml:space="preserve">
+    <value>開始日期</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.Sunday" xml:space="preserve">
+    <value>星期日</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.ThisWeek" xml:space="preserve">
+    <value>本週</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.Thursday" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.TimeMode" xml:space="preserve">
+    <value>時間模式</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.Today" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.Tuesday" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.UseAccentColorsOnTheProgressBar" xml:space="preserve">
+    <value>進度條使用強調色</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.UseHighlightColorForCountdownConjunction" xml:space="preserve">
+    <value>倒計時連接詞使用強調顏色</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Content.Wednesday" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.AfterEnabledTheCountdownConnectorColorMatchesThe" xml:space="preserve">
+    <value>啓用後，倒計時連接詞顏色與字體顏色一致，否則爲默認顏色。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.ByDefaultACountdownTimeWillBeObtained" xml:space="preserve">
+    <value>默認情況下將從當日課程安排獲取倒計時時間，以當天的第一個上課或課間休息時間點的開始時間爲開始時間，最後一個上課或課間休息時間點的結束時間爲結束時間。如果當日課程不可用，將使用從當日凌晨至次日凌晨的自然時間。當在右側複選框指定了時間模式後，如果選擇的時間模式不可用，將不會進行倒計時。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.ByDefaultACountdownTimeWillBeObtained2" xml:space="preserve">
+    <value>默認情況下將從本週課程安排獲取倒計時時間，以本週的第一個上課或課間休息時間點的開始時間爲開始時間，最後一個上課或課間休息時間點的結束時間爲結束時間。如果本週課程不可用，將使用從本週第一天凌晨至本週最後一天次日凌晨的自然時間。當在右側複選框指定了時間模式後，如果選擇的時間模式不可用，將不會進行倒計時。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.ByDefaultTheWeekOfTheSemesterStart" xml:space="preserve">
+    <value>默認情況下將使用在【基本】中設置的學期開始時間的星期作爲每週的第一天，啓用後將使用此處指定的星期。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.FontSizeForEventNamesAndCountdowns" xml:space="preserve">
+    <value>事件名稱和倒計時的字體大小。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.InformationToBeDisplayedOnTheComponent" xml:space="preserve">
+    <value>要在組件上顯示的信息</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.OnceEnabledTheMaximumNumberOfLoopsIn" xml:space="preserve">
+    <value>啓用後，將限制倒計時週期的最大循環次數。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.OnceEnabledTheProgressBarWillUseThe" xml:space="preserve">
+    <value>啓用後，進度條將使用選定的主題色作爲主題色，而不是使用應用的主題色。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.StartAndEndTimesOfTheCountdown" xml:space="preserve">
+    <value>倒計時的開始和結束時間。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.TheDateTheCountdownBegins" xml:space="preserve">
+    <value>倒計時開始的日期。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.TheDateWhenTheCountdownIs0Days" xml:space="preserve">
+    <value>倒計時爲 0 天時的日期。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.TheFontColorOfTheEventNameAnd" xml:space="preserve">
+    <value>事件名稱和倒計時的字體顏色。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.TheStartTimeOfTheEntireCycleStarting" xml:space="preserve">
+    <value>整個週期的開始時間，從週期前階段開始計時。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Description.WillBeDisplayedAsTheEventNameFor" xml:space="preserve">
+    <value>會作爲設定日期事件名稱顯示。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Header.AccentColors" xml:space="preserve">
+    <value>強調色</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Header.CountdownName" xml:space="preserve">
+    <value>倒計時名稱</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Header.DisplayContent" xml:space="preserve">
+    <value>顯示內容</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Header.FontSize" xml:space="preserve">
+    <value>字體大小</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Header.Time" xml:space="preserve">
+    <value>時間</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.CycleDuration" xml:space="preserve">
+    <value>週期持續時間</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.CycleTimingDuration" xml:space="preserve">
+    <value>週期計時時長</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.DDays" xml:space="preserve">
+    <value>%d - 天</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.DTotalDays" xml:space="preserve">
+    <value>%D - 總天數</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.DurationAfterTheCycle" xml:space="preserve">
+    <value>週期後時長</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.DurationBeforeTheCycle" xml:space="preserve">
+    <value>週期前時長</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.DurationToShowTheCountdownForTheCycle" xml:space="preserve">
+    <value>週期要顯示倒計時的時長</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.FormattingVariableInstructions" xml:space="preserve">
+    <value>格式化變量說明</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.HHours" xml:space="preserve">
+    <value>%h - 小時</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.HTotalHours" xml:space="preserve">
+    <value>%H - 總小時數</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.IntervalDurationBeforeThisCycleStartsTiming" xml:space="preserve">
+    <value>在本週期開始計時前的間隔時長</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.IntervalDurationFromTheEndOfThisCycle" xml:space="preserve">
+    <value>從本週期計時結束，到下個週期開始的間隔時長</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.LRemainingPercentage" xml:space="preserve">
+    <value>%L - 剩餘百分比</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.MMinutes" xml:space="preserve">
+    <value>%m - 分鐘</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.MTotalMinutes" xml:space="preserve">
+    <value>%M - 總分鐘數</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.PElapsedPercentage" xml:space="preserve">
+    <value>%P - 已過百分比</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.PElapsedPercentageTwoDecimalPlaces" xml:space="preserve">
+    <value>%p - 已過百分比(兩位小數)</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.SSeconds" xml:space="preserve">
+    <value>%s - 秒</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.STotalSeconds" xml:space="preserve">
+    <value>%S - 總秒數</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.TheAboveValuesAreRoundedToTheNearest" xml:space="preserve">
+    <value>以上數值四捨五入取整。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.TheAboveValuesAreRoundedUp" xml:space="preserve">
+    <value>以上數值向上取整。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.TheAboveValuesTakeTheCorrespondingElementS" xml:space="preserve">
+    <value>以上數值取對應元素的值。</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.XMilliseconds" xml:space="preserve">
+    <value>%x - 毫秒</value>
+  </data>
+  <data name="Controls.Components.CountDownComponentSettingsControl.Text.XTotalMilliseconds" xml:space="preserve">
+    <value>%X - 總毫秒數</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Content.PauseDuration" xml:space="preserve">
+    <value>暫停時長</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Content.PausePosition" xml:space="preserve">
+    <value>暫停位置</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Description.ComponentContentScrollSpeed" xml:space="preserve">
+    <value>組件內容的滾動速度</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Description.DurationToStayDuringEachPause" xml:space="preserve">
+    <value>每次暫停時停留的時長</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Description.ScrollOffsetDuringPause" xml:space="preserve">
+    <value>暫停時的滾動偏移值</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Description.StopScrollingWhenTheSpecifiedRulesAreMet" xml:space="preserve">
+    <value>在指定規則滿足時停止滾動。停止時會停止滾動，並回到初始位置。</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Description.WhenEnabledTheScrollWillPauseForA" xml:space="preserve">
+    <value>啓用後，將在滾動到指定位置後暫停滾動一段時間</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Header.ScrollSpeed" xml:space="preserve">
+    <value>滾動速度</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Header.StopWhenRulesAreMet" xml:space="preserve">
+    <value>滿足規則時停止</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Header.TimedPause" xml:space="preserve">
+    <value>定時暫停</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Message.TheScrollComponentOnlyStartsScrollingWhenThe" xml:space="preserve">
+    <value>滾動組件僅在組件內容超出滾動組件寬度時纔會開始滾動。您可能需要在【高級設置】中爲本組件設置【最大寬度】或【固定寬度】以限制組件的寬度，這樣在組件內容超出限制的寬度時內容纔會開始滾動。</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Text.EditRuleSet" xml:space="preserve">
+    <value>編輯規則集…</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponent.Text.Tomorrow" xml:space="preserve">
+    <value>明天</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.AdditionalInformationToDisplay" xml:space="preserve">
+    <value>要顯示的附加信息</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.AlwaysShows" xml:space="preserve">
+    <value>總是顯示</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.CountdownDurationToTheEndOfATime" xml:space="preserve">
+    <value>時間點結束倒計時時長</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.DisplayedAfterSchool" xml:space="preserve">
+    <value>放學後顯示</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.DisplayedWhenNoCourseIsShown" xml:space="preserve">
+    <value>無展示課程時顯示</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.DisplaysPreciseCountdowns" xml:space="preserve">
+    <value>顯示精確倒計時</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.None" xml:space="preserve">
+    <value>無</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.NotDisplayed" xml:space="preserve">
+    <value>不顯示</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.PlaceholderContentForDaysAfterClassesEnd" xml:space="preserve">
+    <value>當日課程結束的佔位符內容</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.PlaceholderContentForDaysWithNoClasses" xml:space="preserve">
+    <value>當日沒有課程的佔位符內容</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.ThereAreNoClassesToday" xml:space="preserve">
+    <value>今天沒有課程。</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.UseFuzzyCountdown" xml:space="preserve">
+    <value>使用模糊倒計時</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Content.View" xml:space="preserve">
+    <value>查看…</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Description.CoursesAlreadyAttendedWillBeFadedAndDisplayed" xml:space="preserve">
+    <value>已經上過的課程將被淡化顯示。</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Description.DisplayTheSpecifiedPlaceholderWhenTheScheduleIs" xml:space="preserve">
+    <value>噹噹前沒有加載課表或當日所有課程都已結束且不顯示第二日課程時，顯示指定的佔位符。</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Description.DisplaysAdditionalInformationAtTheCurrentPointIn" xml:space="preserve">
+    <value>在當前的時間點上顯示當前時間點的附加信息。</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Description.DisplaysTheCountdownAsTheCurrentPointIs" xml:space="preserve">
+    <value>在當前時間點將要結束時顯示倒計時。</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Description.HideCompletedCoursesOnlyTheCurrentCourseAnd" xml:space="preserve">
+    <value>隱藏已結束的課程，只顯示當前課程與暫未開始的課程。</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Description.HighlightCoursesInTheTemporaryLayerOnlyCourses" xml:space="preserve">
+    <value>將臨時層中的換課課程以高亮色標記，僅支持使用“換課”修改的課程。</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Description.MakeTheTimetableAppearMoreCompactOrRelaxed" xml:space="preserve">
+    <value>使課程表顯示更緊湊或寬鬆。</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Description.SetWhenTomorrowSScheduleWillBeDisplayed" xml:space="preserve">
+    <value>設置什麼時候顯示明天課表。</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Description.WhenInTheClassTypeOnlyTheCurrent" xml:space="preserve">
+    <value>在處於上課類型的時間點時，只顯示當前時間點。</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Header.CountdownToTheTimePointEnd" xml:space="preserve">
+    <value>時間點結束倒計時</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Header.CoursesThatHaveEndedAreNotDisplayed" xml:space="preserve">
+    <value>不顯示已結束的課程</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Header.DisplaysTomorrowSClassSchedule" xml:space="preserve">
+    <value>顯示明天課表</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Header.DownplayTheCoursesYouVeTaken" xml:space="preserve">
+    <value>淡化上過的課程</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Header.MarkTheTransferCourse" xml:space="preserve">
+    <value>標記換課課程</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Header.OnlyShowTheCurrentClassDuringClass" xml:space="preserve">
+    <value>上課時僅顯示當前課程</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Header.PlaceholdersAreDisplayedWhenThereAreNoClasses" xml:space="preserve">
+    <value>無課程時顯示佔位符</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Header.ShowAdditionalInformationOfTheTimePoint" xml:space="preserve">
+    <value>顯示時間點附加信息</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Header.SpacingBetweenClassScheduleTexts" xml:space="preserve">
+    <value>課程表文本間距</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Message.TheSettingsHereCanBeOverwrittenByThe" xml:space="preserve">
+    <value>此處的設置可以在檔案設置中被附加設置覆蓋。</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Text.Countdown" xml:space="preserve">
+    <value>倒計時</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Text.DurationOfTheTimePoint" xml:space="preserve">
+    <value>時間點持續時間</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Text.ElapsedTimeDuration" xml:space="preserve">
+    <value>已過時間/持續時間</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Text.ElapsedTimePercentage" xml:space="preserve">
+    <value>已過時間百分比</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Text.RemainingTime" xml:space="preserve">
+    <value>剩餘時間</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Text.RemainingTimeDuration" xml:space="preserve">
+    <value>剩餘時間/持續時間</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Text.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="Controls.Components.ScheduleComponentSettingsControl.Text.WhenTheRemainingTimeIsInsufficient" xml:space="preserve">
+    <value>當剩餘時間不足</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Content.BackAndForth" xml:space="preserve">
+    <value>往復</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Content.Cycle" xml:space="preserve">
+    <value>循環</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Content.Random" xml:space="preserve">
+    <value>隨機</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Description.IntervalTimeForAutomaticComponentRotation" xml:space="preserve">
+    <value>組件自動輪換的間隔時間</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Description.OnceEnabledTransitionAnimationsWillPlayWhenSwitching" xml:space="preserve">
+    <value>啓用後，將在切換組件時播放過渡動畫。</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Description.PauseCarouselWhenSpecifiedRulesAreMet" xml:space="preserve">
+    <value>在指定規則滿足時暫停輪播。</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Description.SetTheBehaviorOfRotatingComponents" xml:space="preserve">
+    <value>設定輪換組件的行爲</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Description.StopsCarouselWhenTheSpecifiedRuleIsMet" xml:space="preserve">
+    <value>在指定規則滿足時停止輪播。停止時會停止輪播，並回到第一個組件。如果此處的規則和暫停規則同時滿足，會停止輪播而不是暫停。</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Header.EnableAnimation" xml:space="preserve">
+    <value>啓用動畫</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Header.PauseWhenTheRulesAreMet" xml:space="preserve">
+    <value>滿足規則時暫停</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Header.RotationIntervals" xml:space="preserve">
+    <value>輪換間隔</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Header.RotationMode" xml:space="preserve">
+    <value>輪換模式</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Header.StopWhenRulesAreMet" xml:space="preserve">
+    <value>滿足規則時停止</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Text.EditRuleSet" xml:space="preserve">
+    <value>編輯規則集…</value>
+  </data>
+  <data name="Controls.Components.TextComponentSettingsControl.Description.ModifyTheSizeOfTheTextYouWant" xml:space="preserve">
+    <value>修改要顯示的文本的大小。</value>
+  </data>
+  <data name="Controls.Components.TextComponentSettingsControl.Description.SelectTheColorOfTheTextYouWant" xml:space="preserve">
+    <value>選擇要顯示文本的顏色。</value>
+  </data>
+  <data name="Controls.Components.TextComponentSettingsControl.Description.TheTextToDisplay" xml:space="preserve">
+    <value>要顯示的文本。</value>
+  </data>
+  <data name="Controls.Components.TextComponentSettingsControl.Header.CustomizeFontColors" xml:space="preserve">
+    <value>自定義字體顏色</value>
+  </data>
+  <data name="Controls.Components.TextComponentSettingsControl.Header.FontSize" xml:space="preserve">
+    <value>字體大小</value>
+  </data>
+  <data name="Controls.Components.TextComponentSettingsControl.Header.TextContent" xml:space="preserve">
+    <value>文本內容</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Content.AirPressure" xml:space="preserve">
+    <value>氣壓</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Content.AlwaysShows" xml:space="preserve">
+    <value>總是顯示</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Content.BlurredLongDurationRainfallCountdownTimeDisplayAccuracy" xml:space="preserve">
+    <value>模糊長時間降雨倒計時時間顯示精度</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Content.DisplaysTheWarningType" xml:space="preserve">
+    <value>顯示預警類型</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Content.Humidity" xml:space="preserve">
+    <value>溼度</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Content.NotDisplayed" xml:space="preserve">
+    <value>不顯示</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Content.OnlyWhenThereIsNoCorrespondingIcon" xml:space="preserve">
+    <value>僅當沒有對應圖標時</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Content.PerceivedTemperature" xml:space="preserve">
+    <value>體感溫度</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Content.WeatherTypeTemperature" xml:space="preserve">
+    <value>天氣類型/氣溫</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Content.WindPower" xml:space="preserve">
+    <value>風力</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Description.DisplaysASummaryOfCurrentWeatherInformation" xml:space="preserve">
+    <value>顯示當前天氣信息摘要。</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Description.OnceEnabledAlertsWillAppearAsIconsOn" xml:space="preserve">
+    <value>啓用後，預警將以圖標形式顯示在天氣組件上。</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Description.OnceEnabledTheExpectedPrecipitationTimeAndRemaining" xml:space="preserve">
+    <value>啓用後，將顯示降水即將到來的時間和降水剩餘時間。正數代表降水即將到來的時間，負數代表剩餘時間。</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Description.SetTheWarningTypeUnderWhatCircumstancesIt" xml:space="preserve">
+    <value>設置何種情況下顯示預警類型。</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Description.WhenEnabledRainfallTimesLongerThan60Minutes" xml:space="preserve">
+    <value>開啓後，大於 60min 的降雨時間將會以 0.5h 爲單位模糊顯示，關閉則總是以精確分鐘顯示。</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Header.DisplayWarningSignals" xml:space="preserve">
+    <value>顯示預警信號</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Header.DisplaysPrecipitationAlerts" xml:space="preserve">
+    <value>顯示降水提示</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Header.DisplaysWeatherInformation" xml:space="preserve">
+    <value>顯示天氣信息</value>
+  </data>
+  <data name="Controls.Components.WeatherComponentSettingsControl.Message.ThisPageOnlyContainsComponentSettingsToAdjust" xml:space="preserve">
+    <value>本頁面僅包含組件設置，要調整顯示天氣的城市，請轉到【天氣】選項卡</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Suffix.PixelsPerSecond" xml:space="preserve">
+    <value>px/秒</value>
+  </data>
+  <data name="Controls.Components.RollingComponentSettingsControl.Suffix.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="Controls.Components.SlideComponentSettingsControl.Suffix.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+</root>

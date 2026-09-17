@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Core.Controls.Automation.ActionControl.Text.AddAction" xml:space="preserve">
+    <value>添加行动</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.Text.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.Text.Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.ToolTip.AnErrorOccurredTheLastTimeThisAction" xml:space="preserve">
+    <value>上次运行此行动时发生错误。</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.ToolTip.DeleteThisAction" xml:space="preserve">
+    <value>删除该行动。</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionSetRunningControl.Text.Interrupt" xml:space="preserve">
+    <value>中断</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionSetRunningControl.Text.Restore" xml:space="preserve">
+    <value>恢复</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionSetRunningControl.Text.Trigger" xml:space="preserve">
+    <value>触发</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionSetRunningControl.ToolTip.InterruptActionExecution" xml:space="preserve">
+    <value>中断行动运行。</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionSetRunningControl.ToolTip.TriggerAction" xml:space="preserve">
+    <value>触发行动。</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionSetRunningControl.ToolTip.TriggerRecoveryAction" xml:space="preserve">
+    <value>触发恢复行动。</value>
+  </data>
+  <data name="Core.Controls.Automation.TriggerSettingsControl.Text.AddTrigger" xml:space="preserve">
+    <value>添加触发器</value>
+  </data>
+  <data name="Core.Controls.Automation.TriggerSettingsControl.ToolTip.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.Content.Undo" xml:space="preserve">
+    <value>撤销</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.Text.UnknownAction" xml:space="preserve">
+    <value>{0}（未知行动）</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.Message.ActionDeleted" xml:space="preserve">
+    <value>已删除行动“{0}”。</value>
+  </data>
+</root>

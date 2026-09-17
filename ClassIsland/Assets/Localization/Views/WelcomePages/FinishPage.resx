@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="WelcomePages.FinishPage.Text.ClickTheTaskbarTrayIconToOpenThe" xml:space="preserve">
+    <value>点击任务栏托盘图标可以打开应用主菜单。</value>
+  </data>
+  <data name="WelcomePages.FinishPage.Text.CongratulationsTheBasicSetupIsCompleteThankYou" xml:space="preserve">
+    <value>恭喜！应用的基本设置已完成，感谢您选用 ClassIsland。点击【&amp;#xE423;】以结束设置向导。</value>
+  </data>
+  <data name="WelcomePages.FinishPage.Text.Done" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="WelcomePages.FinishPage.Text.ToEditSchedulesAndTimetablesClickEditProfile" xml:space="preserve">
+    <value>要编辑课表和时间点，请在应用主菜单中点击【编辑档案】。</value>
+  </data>
+  <data name="WelcomePages.FinishPage.ToolTip.Done" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="WelcomePages.FinishPage.ToolTip.NextStep" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="WelcomePages.FinishPage.ToolTip.PreviousStep" xml:space="preserve">
+    <value>上一步</value>
+  </data>
+</root>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="MainWindow.Header.ApplySettings" xml:space="preserve">
+    <value>應用設置…</value>
+  </data>
+  <data name="MainWindow.Header.ChangeClass" xml:space="preserve">
+    <value>換課…</value>
+  </data>
+  <data name="MainWindow.Header.ClearAllReminders" xml:space="preserve">
+    <value>清除全部提醒</value>
+  </data>
+  <data name="MainWindow.Header.EditMainInterface" xml:space="preserve">
+    <value>編輯主界面…</value>
+  </data>
+  <data name="MainWindow.Header.EditProfile" xml:space="preserve">
+    <value>編輯檔案…</value>
+  </data>
+  <data name="MainWindow.Header.EnableSchedule" xml:space="preserve">
+    <value>啓用課表</value>
+  </data>
+  <data name="MainWindow.Header.Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="MainWindow.Header.HelpDocumentation" xml:space="preserve">
+    <value>幫助文檔…</value>
+  </data>
+  <data name="MainWindow.Header.HideMainInterface" xml:space="preserve">
+    <value>隱藏主界面</value>
+  </data>
+  <data name="MainWindow.Header.LoadingTemporarySchedule" xml:space="preserve">
+    <value>加載臨時課表…</value>
+  </data>
+  <data name="MainWindow.Header.MoreOptions" xml:space="preserve">
+    <value>更多選項…</value>
+  </data>
+  <data name="MainWindow.Header.Restart" xml:space="preserve">
+    <value>重啓</value>
+  </data>
+  <data name="MainWindow.Header.ScreenshotTool" xml:space="preserve">
+    <value>截圖工具</value>
+  </data>
+  <data name="MainWindow.Header.ShowCrashWindow" xml:space="preserve">
+    <value>顯示崩潰窗口</value>
+  </data>
+  <data name="MainWindow.Header.ShowMainInterface" xml:space="preserve">
+    <value>顯示主界面</value>
+  </data>
+  <data name="MainWindow.Header.Teaching" xml:space="preserve">
+    <value>教學…</value>
+  </data>
+  <data name="MainWindow.Header.TutorialEditor" xml:space="preserve">
+    <value>教程編輯器</value>
+  </data>
+  <data name="MainWindow.Text.AddComponent" xml:space="preserve">
+    <value>添加組件</value>
+  </data>
+  <data name="MainWindow.Text.Appearance" xml:space="preserve">
+    <value>外觀</value>
+  </data>
+  <data name="MainWindow.Text.Done" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="MainWindow.Text.NewMainInterfaceRow" xml:space="preserve">
+    <value>新主界面行</value>
+  </data>
+  <data name="MainWindow.Text.ResetView" xml:space="preserve">
+    <value>重置視圖</value>
+  </data>
+  <data name="MainWindow.ToolTip.Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="MainWindow.ToolTip.Delete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="MainWindow.ToolTip.Settings" xml:space="preserve">
+    <value>設置…</value>
+  </data>
+  <data name="MainWindow.ToolTip.ThisRowCanDisplayReminders" xml:space="preserve">
+    <value>此行可以顯示提醒</value>
+  </data>
+  <data name="MainWindow.ToolTip.ThisRowIsTheMainRow" xml:space="preserve">
+    <value>此行是主要行</value>
+  </data>
+  <data name="MainWindow.Title.EditMainInterface" xml:space="preserve">
+    <value>編輯主介面 | ClassIsland</value>
+  </data>
+  <data name="MainWindow.Message.AllNotificationRowsDisabled" xml:space="preserve">
+    <value>您已停用所有主介面列的提醒顯示功能。如果沒有外掛程式註冊其他提醒接收者，提醒將不會顯示，也不會播放提醒音效、特效和語音。</value>
+  </data>
+  <data name="MainWindow.Message.FirstRowSetAsPrimary" xml:space="preserve">
+    <value>已將第一列設為主要列。</value>
+  </data>
+  <data name="MainWindow.Message.MustKeepOneMainInterfaceRow" xml:space="preserve">
+    <value>至少需要保留 1 個主介面列。</value>
+  </data>
+  <data name="MainWindow.Message.UnsupportedMouseClickSettingDisabled" xml:space="preserve">
+    <value>【啟用滑鼠點擊】設定項目已不再支援並自動停用，感謝您的支持與理解。</value>
+  </data>
+  <data name="MainWindow.Title.UnsupportedSettingDisabled" xml:space="preserve">
+    <value>已停用不支援的設定</value>
+  </data>
+</root>

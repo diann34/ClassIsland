@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="ProfileSettingsWindow.Content.AutomaticallyMoveToTheNextCourseAfterSelecting" xml:space="preserve">
+    <value>选完科目自动移动到下一个课程</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.CreateATemporaryTimetableSimultaneously" xml:space="preserve">
+    <value>同时创建临时时间表</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.EnableAutomatically" xml:space="preserve">
+    <value>自动启用</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.GoToTheSchedulingTimetable" xml:space="preserve">
+    <value>前往编排时间表</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.GoToTheSettingsTimetable" xml:space="preserve">
+    <value>前往设置时间表</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.HiddenByDefault" xml:space="preserve">
+    <value>默认隐藏</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.Inherit" xml:space="preserve">
+    <value>继承</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.LearnMore" xml:space="preserve">
+    <value>了解更多…</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.Override" xml:space="preserve">
+    <value>覆盖</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.PermanentCourseSwap" xml:space="preserve">
+    <value>永久换课</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.RedoLastStepCtrlY" xml:space="preserve">
+    <value>重做上一步 (Ctrl+Y)</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.ThisSubjectIsAnOutdoorCourse" xml:space="preserve">
+    <value>该科目是户外课程</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.UndoLastStepCtrlZ" xml:space="preserve">
+    <value>撤销上一步 (Ctrl+Z)</value>
+  </data>
+  <data name="ProfileSettingsWindow.Content.YouCanGroupYourTimetablesIntoGroupsAnd" xml:space="preserve">
+    <value>您可以通过课表群对课表进行分组，并灵活地启用一批课表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.Abbreviation" xml:space="preserve">
+    <value>简称</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.ArchiveEditing" xml:space="preserve">
+    <value>档案编辑</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.Disabled" xml:space="preserve">
+    <value>已禁止</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.EditSubject" xml:space="preserve">
+    <value>编辑科目</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.Enable" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.ImportExport" xml:space="preserve">
+    <value>导入/导出</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.OutdoorCourse" xml:space="preserve">
+    <value>户外课程？</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.Rename" xml:space="preserve">
+    <value>重命名</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.Reschedule" xml:space="preserve">
+    <value>调课</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.Subject" xml:space="preserve">
+    <value>科目</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.SubjectName" xml:space="preserve">
+    <value>科目名</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.SubjectTeacher" xml:space="preserve">
+    <value>科任老师</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.TimePointDuration" xml:space="preserve">
+    <value>时间点时长</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.Timetable" xml:space="preserve">
+    <value>时间表</value>
+  </data>
+  <data name="ProfileSettingsWindow.Header.Timetable2" xml:space="preserve">
+    <value>课表</value>
+  </data>
+  <data name="ProfileSettingsWindow.Message.BeforeSettingUpTheTimetableYouNeedTo" xml:space="preserve">
+    <value>在设置课表之前，您需要在【时间表】页面中根据学校的作息安排编排时间表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Message.TheCurrentProfileIsNotTrustedAndAction" xml:space="preserve">
+    <value>当前档案不受信任，行动时间点不会自动运行。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Message.ThisIsATemporaryLayeredTimetableAndWill" xml:space="preserve">
+    <value>这是一个临时层课表，将在使用过后自动删除。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Message.YouHaveNotSetATimetableForThis" xml:space="preserve">
+    <value>您还没有为此课表设置时间表。在编排课程之前，您需要在【详细信息】中为本课表设置一个时间表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.OffContent.EnableTemporaryLayer" xml:space="preserve">
+    <value>启用临时层</value>
+  </data>
+  <data name="ProfileSettingsWindow.OffContent.LoadTimetable" xml:space="preserve">
+    <value>加载课表</value>
+  </data>
+  <data name="ProfileSettingsWindow.OnContent.EnableTemporaryLayer" xml:space="preserve">
+    <value>启用临时层</value>
+  </data>
+  <data name="ProfileSettingsWindow.OnContent.LoadTimetable" xml:space="preserve">
+    <value>加载课表</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.Action" xml:space="preserve">
+    <value>行动</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.AdjustMultiWeekRotationOffset" xml:space="preserve">
+    <value>调整多周轮换偏移…</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.BreakTime" xml:space="preserve">
+    <value>课间休息</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.Clear" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.ClearTemporaryLayer" xml:space="preserve">
+    <value>清除临时层</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.ClearTemporaryTimetable" xml:space="preserve">
+    <value>清除临时课表</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.Confirm" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.CoversExistingCurricula" xml:space="preserve">
+    <value>覆盖现有课程</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.Create" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.CreateTemporaryLayer" xml:space="preserve">
+    <value>创建临时层</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.Current" xml:space="preserve">
+    <value>当前：</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.CurrentlyEnabledTimetable" xml:space="preserve">
+    <value>当前启用的课表</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.Day" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.DefaultCourse" xml:space="preserve">
+    <value>默认课程</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.DeleteTheSchedule" xml:space="preserve">
+    <value>要删除时间表</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.DeleteTheTimetable" xml:space="preserve">
+    <value>要删除课表</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.Divider" xml:space="preserve">
+    <value>分割线</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.EditActionPoints" xml:space="preserve">
+    <value>编辑时间点</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.EditSubjectInformation" xml:space="preserve">
+    <value>编辑科目信息</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.IfATimePointIsHiddenByDefault" xml:space="preserve">
+    <value>若默认隐藏一个时间点，那么只有在处于此时间点时，此时间点才会显示。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.IfTheTeachingScheduleChangesOnTheDay" xml:space="preserve">
+    <value>若当天授课计划有变，可临时选择某一课表作为当天的课表。该设置仅在当天有效。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.InClass" xml:space="preserve">
+    <value>上课</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.ManageAndSwitchSavedProfilesSwitchingProfilesRequires" xml:space="preserve">
+    <value>管理与切换保存的档案。切换档案需要重新启动应用。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.ManageProfiles" xml:space="preserve">
+    <value>管理档案</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.ManageTimetableGroups" xml:space="preserve">
+    <value>管理课表群</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.ModifyCourse" xml:space="preserve">
+    <value>修改课程</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.MoreOptions" xml:space="preserve">
+    <value>更多选项</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.MultiWeekRotationOffset" xml:space="preserve">
+    <value>多周轮换偏移</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.NewProfile" xml:space="preserve">
+    <value>新建档案</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.NewTimetableGroup" xml:space="preserve">
+    <value>新建课表群</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.NoTimetableSelected" xml:space="preserve">
+    <value>未选择课表</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.OpenFolder" xml:space="preserve">
+    <value>打开文件夹</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.RemakeHistory" xml:space="preserve">
+    <value>重做历史</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.ScheduleGroup" xml:space="preserve">
+    <value>课表群</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.ScheduleInformation" xml:space="preserve">
+    <value>课程表信息</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.SwapTheCoursesThenClickCompleteSwap" xml:space="preserve">
+    <value>交换的课程，然后点击【完成交换】。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.SwappingCoursesSelectTheCourseToSwapWith" xml:space="preserve">
+    <value>正在交换课程。选择要与</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.TemporaryLayer" xml:space="preserve">
+    <value>临时层</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.TemporaryLayeredTimetablesWillIgnoreTheForcedEnablement" xml:space="preserve">
+    <value>临时层课表将忽略触发规则强制启用。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.TemporaryLayeredTimetablesWillTakePrecedenceOverTemporar" xml:space="preserve">
+    <value>临时层课表将优先于临时课表应用。临时层课表将在该课表过期后自动清除。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.TemporaryTimetable" xml:space="preserve">
+    <value>临时课表</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.TemporaryTimetableGroup" xml:space="preserve">
+    <value>临时课表群</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.Text" xml:space="preserve">
+    <value>吗？</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.TheTemporaryTimetableIsOverriddenByTheTemporary" xml:space="preserve">
+    <value>临时课表被临时层课表覆盖。要使用临时课表，请暂时禁用或清除临时层课表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.ThisActionCannotBeUndone" xml:space="preserve">
+    <value>此操作无法撤销。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.ThisScheduleWillNotBeAutomaticallyEnabledIt" xml:space="preserve">
+    <value>该课表不会自动启用，只能通过临时课表或临时层手动启用该课表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.ThisTimetableWillBeAutomaticallyEnabledAccordingTo" xml:space="preserve">
+    <value>将会根据触发规则自动启用该课表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.TimetableInformation" xml:space="preserve">
+    <value>时间表信息</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.UndoHistory" xml:space="preserve">
+    <value>撤销历史</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.Week" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="ProfileSettingsWindow.Text.YourOrganizationHasDisabledTheProfileEditingFeature" xml:space="preserve">
+    <value>您的组织已禁用档案编辑功能。</value>
+  </data>
+  <data name="ProfileSettingsWindow.Title.DistrustedFiles" xml:space="preserve">
+    <value>不信任的档案</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.AddABreakTimePoint" xml:space="preserve">
+    <value>添加课间休息时间点。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.AddADivider" xml:space="preserve">
+    <value>添加分割线。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.AddAnActionTimePoint" xml:space="preserve">
+    <value>添加行动时间点。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.AddClassStartTimePoint" xml:space="preserve">
+    <value>添加上课时间点。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ClearTemporaryLayerTimetable" xml:space="preserve">
+    <value>清除临时层课表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ClearTheSelectedTemporaryTimetableAndRestoreTo" xml:space="preserve">
+    <value>清除选择的临时课表，并恢复至正常课表安排。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.CopyACopyOfTheCurrentlySelectedSchedule" xml:space="preserve">
+    <value>复制一个当前选中的课表的副本。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.CopyTheSelectedSchedule" xml:space="preserve">
+    <value>复制选中的时间表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.CopyTheSelectedSubject" xml:space="preserve">
+    <value>复制选中的科目。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.CreateACopyAtTheSelectedTimePoint" xml:space="preserve">
+    <value>创建选中时间点的副本。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.CreateANewProfile" xml:space="preserve">
+    <value>新建档案。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.CreateANewSchedule" xml:space="preserve">
+    <value>新建一个时间表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.CreateANewScheduleGroup" xml:space="preserve">
+    <value>创建一个新的课表群。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.CreateANewSubject" xml:space="preserve">
+    <value>新建一个科目。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.CreateANewTimetable" xml:space="preserve">
+    <value>新建一个课表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.CreateATemporaryClassScheduleLayer" xml:space="preserve">
+    <value>创建临时课表层。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.CurrentlyEnabledArchives" xml:space="preserve">
+    <value>当前启用的档案</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.DeleteTheClassSchedule" xml:space="preserve">
+    <value>删除该课表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.DeleteTheSelectedSubject" xml:space="preserve">
+    <value>删除选中的科目。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.DeleteTheSelectedTimePoint" xml:space="preserve">
+    <value>删除选中的时间点。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.DeleteThisSchedule" xml:space="preserve">
+    <value>删除该时间表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.DragAndDropToAdjustTheOrderOf" xml:space="preserve">
+    <value>拖拽调整科目顺序</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ImplementTemporaryClassSchedules" xml:space="preserve">
+    <value>启用临时课表</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ImportExternalCourseInformationOrExportCurrentFile" xml:space="preserve">
+    <value>导入外部的课程信息，或导出当前的档案信息。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ListView" xml:space="preserve">
+    <value>列表视图</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.LocateTheSelectedTimePoint" xml:space="preserve">
+    <value>定位到选择的时间点</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.Magnification" xml:space="preserve">
+    <value>放大</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ManageTimetableGroups" xml:space="preserve">
+    <value>管理课表群</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.MonthView" xml:space="preserve">
+    <value>月视图</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.OpenTheArchiveFolder" xml:space="preserve">
+    <value>打开档案文件夹。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.PerimeterView" xml:space="preserve">
+    <value>周视图</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.RedoCtrlYStepByStep" xml:space="preserve">
+    <value>重做 (Ctrl+Y 单步)</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.RefreshTheCurrentView" xml:space="preserve">
+    <value>刷新当前视图。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ReloadTheProfileList" xml:space="preserve">
+    <value>重新加载档案列表。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ReorderTheTimePointsInThisTimetable" xml:space="preserve">
+    <value>重新排序该时间表中的时间点。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.SaveTheCurrentArchiveFile" xml:space="preserve">
+    <value>保存当前档案文件。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.SnapToTimePoints" xml:space="preserve">
+    <value>时间点吸附</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.TheCurrentArchiveIsNotTrustedAndSome" xml:space="preserve">
+    <value>当前档案不受信任，部分功能受限。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ThisTimetableIsActive" xml:space="preserve">
+    <value>此时间表正在活动。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.Timetable" xml:space="preserve">
+    <value>时间表</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.TriggerRule" xml:space="preserve">
+    <value>触发规则</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.UndoCtrlZSingleStep" xml:space="preserve">
+    <value>撤销 (Ctrl+Z 单步)</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ViewAndEditTheBasicInformationOfThe" xml:space="preserve">
+    <value>查看并编辑时间表的基本信息。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ViewAndEditTheBasicInformationOfThe2" xml:space="preserve">
+    <value>查看并编辑课表的基本信息。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ViewProfileEditorHelp" xml:space="preserve">
+    <value>查看档案编辑器帮助</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ViewTheInheritanceStatusOfAdditionalSettingsFor" xml:space="preserve">
+    <value>查看课表的所有时间点的附加设置继承情况。</value>
+  </data>
+  <data name="ProfileSettingsWindow.ToolTip.ZoomOut" xml:space="preserve">
+    <value>缩小</value>
+  </data>
+  <data name="ProfileSettingsWindow.Label.Name" xml:space="preserve"><value>名称</value></data>
+  <data name="ProfileSettingsWindow.Label.TimeLayout" xml:space="preserve"><value>时间表</value></data>
+  <data name="ProfileSettingsWindow.Label.ClassPlanGroup" xml:space="preserve"><value>课表群</value></data>
+  <data name="ProfileSettingsWindow.Label.ExpirationDate" xml:space="preserve"><value>失效日期</value></data>
+  <data name="ProfileSettingsWindow.Label.OverrideMode" xml:space="preserve"><value>覆盖模式</value></data>
+  <data name="ProfileSettingsWindow.Label.ChangeCourseTo" xml:space="preserve"><value>换课成…</value></data>
+  <data name="ProfileSettingsWindow.Label.EnableDate" xml:space="preserve"><value>启用日期</value></data>
+  <data name="ProfileSettingsWindow.Label.Add" xml:space="preserve"><value>添加</value></data>
+  <data name="ProfileSettingsWindow.Label.Copy" xml:space="preserve"><value>复制</value></data>
+  <data name="ProfileSettingsWindow.Label.Details" xml:space="preserve"><value>详细信息</value></data>
+  <data name="ProfileSettingsWindow.Label.DetailedDashboard" xml:space="preserve"><value>详细看板</value></data>
+  <data name="ProfileSettingsWindow.Label.CreateTemporaryLayer" xml:space="preserve"><value>创建临时层</value></data>
+  <data name="ProfileSettingsWindow.Label.Delete" xml:space="preserve"><value>删除</value></data>
+  <data name="ProfileSettingsWindow.Label.Refresh" xml:space="preserve"><value>刷新</value></data>
+  <data name="ProfileSettingsWindow.Label.DefaultClassTimePointDuration" xml:space="preserve"><value>默认上课时间点时长</value></data>
+  <data name="ProfileSettingsWindow.Label.DefaultBreakTimePointDuration" xml:space="preserve"><value>默认课间时间点时长</value></data>
+  <data name="ProfileSettingsWindow.Label.ClassTime" xml:space="preserve"><value>上课</value></data>
+  <data name="ProfileSettingsWindow.Label.BreakTime" xml:space="preserve"><value>课间</value></data>
+  <data name="ProfileSettingsWindow.Label.Divider" xml:space="preserve"><value>分割线</value></data>
+  <data name="ProfileSettingsWindow.Label.Action" xml:space="preserve"><value>行动</value></data>
+  <data name="ProfileSettingsWindow.Label.CreateCopy" xml:space="preserve"><value>创建副本</value></data>
+  <data name="ProfileSettingsWindow.Label.TimeLayoutInformation" xml:space="preserve"><value>时间表信息</value></data>
+  <data name="ProfileSettingsWindow.Label.DeleteTimeLayout" xml:space="preserve"><value>删除时间表</value></data>
+  <data name="ProfileSettingsWindow.Label.StartTime" xml:space="preserve"><value>开始时间</value></data>
+  <data name="ProfileSettingsWindow.Label.EndTime" xml:space="preserve"><value>结束时间</value></data>
+  <data name="ProfileSettingsWindow.Label.Type" xml:space="preserve"><value>类型</value></data>
+  <data name="ProfileSettingsWindow.Label.BreakName" xml:space="preserve"><value>课间名称</value></data>
+  <data name="ProfileSettingsWindow.Label.SubjectName" xml:space="preserve"><value>科目名</value></data>
+  <data name="ProfileSettingsWindow.Label.Abbreviation" xml:space="preserve"><value>简称</value></data>
+  <data name="ProfileSettingsWindow.Label.SubjectTeacher" xml:space="preserve"><value>科任老师</value></data>
+  <data name="ProfileSettingsWindow.Label.ModifyCourse" xml:space="preserve"><value>修改课程</value></data>
+  <data name="ProfileSettingsWindow.Label.SwapCourse" xml:space="preserve"><value>交换课程</value></data>
+  <data name="ProfileSettingsWindow.Label.Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="ProfileSettingsWindow.Label.CompleteSwap" xml:space="preserve"><value>完成交换</value></data>
+  <data name="ProfileSettingsWindow.Label.Untrusted" xml:space="preserve"><value>不信任</value></data>
+  <data name="ProfileSettingsWindow.Label.Save" xml:space="preserve"><value>保存</value></data>
+  <data name="ProfileSettingsWindow.Label.ImportExport" xml:space="preserve"><value>导入/导出</value></data>
+  <data name="ProfileSettingsWindow.Label.Help" xml:space="preserve"><value>帮助</value></data>
+  <data name="ProfileSettingsWindow.Label.None" xml:space="preserve"><value>（无）</value></data>
+  <data name="ProfileSettingsWindow.Label.ProfileName" xml:space="preserve"><value>档案名称</value></data>
+  <data name="ProfileSettingsWindow.Suffix.Minutes" xml:space="preserve"><value>分钟</value></data>
+  <data name="ProfileSettingsWindow.Operation.Import" xml:space="preserve"><value>导入</value></data>
+  <data name="ProfileSettingsWindow.Operation.Export" xml:space="preserve"><value>导出</value></data>
+  <data name="ProfileSettingsWindow.Operation.Execute" xml:space="preserve"><value>执行</value></data>
+  <data name="ProfileSettingsWindow.Operation.Transfer" xml:space="preserve"><value>迁移</value></data>
+  <data name="ProfileSettingsWindow.Button.TrustThisProfile" xml:space="preserve"><value>信任此档案</value></data>
+  <data name="ProfileSettingsWindow.Button.Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="ProfileSettingsWindow.Button.Create" xml:space="preserve"><value>新建</value></data>
+  <data name="ProfileSettingsWindow.Button.Rename" xml:space="preserve"><value>重命名</value></data>
+  <data name="ProfileSettingsWindow.Button.Delete" xml:space="preserve"><value>删除</value></data>
+  <data name="ProfileSettingsWindow.Button.RestartNow" xml:space="preserve"><value>立即重启</value></data>
+  <data name="ProfileSettingsWindow.Button.CreateClassPlan" xml:space="preserve"><value>新建课表</value></data>
+  <data name="ProfileSettingsWindow.Button.Undo" xml:space="preserve"><value>撤销</value></data>
+  <data name="ProfileSettingsWindow.Button.Continue" xml:space="preserve"><value>继续</value></data>
+  <data name="ProfileSettingsWindow.Dialog.UntrustedProfile.Title" xml:space="preserve"><value>不信任的档案</value></data>
+  <data name="ProfileSettingsWindow.Dialog.UntrustedProfile.Content" xml:space="preserve"><value>当前档案不受信任，部分功能（如行动时间点等）将禁用。如果您信任此档案并希望启用这些受限的功能，请将此档案设置为信任。</value></data>
+  <data name="ProfileSettingsWindow.Dialog.CreateProfile.Title" xml:space="preserve"><value>新建档案</value></data>
+  <data name="ProfileSettingsWindow.Dialog.RenameProfile.Title" xml:space="preserve"><value>重命名档案</value></data>
+  <data name="ProfileSettingsWindow.Dialog.DeleteProfile.Title" xml:space="preserve"><value>删除档案</value></data>
+  <data name="ProfileSettingsWindow.Dialog.DeleteProfile.Content" xml:space="preserve"><value>您确定要删除档案 {0} 吗？此操作无法撤销，档案内的课表、时间表、科目等信息都将被删除！</value></data>
+  <data name="ProfileSettingsWindow.Dialog.ContinueTransfer.Title" xml:space="preserve"><value>要继续{0}吗</value></data>
+  <data name="ProfileSettingsWindow.Dialog.ContinueTransfer.Content" xml:space="preserve"><value>您先前已经成功地{0}了档案，您还要继续{0}吗？</value></data>
+  <data name="ProfileSettingsWindow.Toast.ProfileSavedToPath" xml:space="preserve"><value>已保存到 {0}。</value></data>
+  <data name="ProfileSettingsWindow.Toast.FailedToSaveProfile" xml:space="preserve"><value>无法保存档案</value></data>
+  <data name="ProfileSettingsWindow.Toast.ProfileWithSameNameAlreadyExists" xml:space="preserve"><value>无法重命名档案，因为已存在一个相同名称的档案。</value></data>
+  <data name="ProfileSettingsWindow.Toast.CannotDeleteLoadedOrPendingProfile" xml:space="preserve"><value>无法删除已加载或将要加载的档案。</value></data>
+  <data name="ProfileSettingsWindow.Toast.RestartRequired.Title" xml:space="preserve"><value>需要重启</value></data>
+  <data name="ProfileSettingsWindow.Toast.RestartRequired.Message" xml:space="preserve"><value>切换档案需要重启应用以生效。</value></data>
+  <data name="ProfileSettingsWindow.Toast.TemporaryLayerAlreadyExistsForDate" xml:space="preserve"><value>在这一天已存在一个临时层课表，无法创建新的临时层课表。</value></data>
+  <data name="ProfileSettingsWindow.Toast.WeeklyClassPlanEntryCompleted" xml:space="preserve"><value>已完成本周课表的录入。</value></data>
+  <data name="ProfileSettingsWindow.Toast.MovedToNextDayClassPlan" xml:space="preserve"><value>已跳转到次日课表。</value></data>
+  <data name="ProfileSettingsWindow.Toast.ClassPlanEntryCompleted" xml:space="preserve"><value>已完成此课表的课程录入。</value></data>
+  <data name="ProfileSettingsWindow.Toast.TimeLayoutIsStillInUse" xml:space="preserve"><value>仍有课表在使用该时间表。删除时间表前需要删除所有使用该时间表的课表。</value></data>
+  <data name="ProfileSettingsWindow.Toast.NoSuitablePositionToInsertTimePoint" xml:space="preserve"><value>没有合适的位置来插入新的时间点。</value></data>
+  <data name="ProfileSettingsWindow.Toast.TimePointInsertedBeforeSelection" xml:space="preserve"><value>已向前插入了新的时间点。</value></data>
+  <data name="ProfileSettingsWindow.Toast.InsertedTimePointWasShortened" xml:space="preserve"><value>没有足够的空间完全插入该时间点，已缩短时间点长度。</value></data>
+  <data name="ProfileSettingsWindow.Toast.DividerAlreadyExistsHere" xml:space="preserve"><value>这里已经存在一条分割线。</value></data>
+  <data name="ProfileSettingsWindow.Toast.ActionAlreadyExistsHere" xml:space="preserve"><value>这里已经存在一个行动。</value></data>
+  <data name="ProfileSettingsWindow.Toast.NotEnoughSpaceToCopyTimePoint" xml:space="preserve"><value>没有足够的空间来复制时间点。</value></data>
+  <data name="ProfileSettingsWindow.Toast.NoSuitablePositionToCopyTimePoint" xml:space="preserve"><value>没有合适的位置来复制时间点。</value></data>
+  <data name="ProfileSettingsWindow.Toast.CopiedTimePointWasShortened" xml:space="preserve"><value>没有足够的空间完全复制该时间点，已缩短时间点长度。</value></data>
+  <data name="ProfileSettingsWindow.Toast.TimePointCopyCreated" xml:space="preserve"><value>已创建时间点副本。</value></data>
+  <data name="ProfileSettingsWindow.Toast.SubjectsDeleted" xml:space="preserve"><value>已删除 {0} 个科目。</value></data>
+  <data name="ProfileSettingsWindow.Toast.InvalidCourseSelection" xml:space="preserve"><value>选择课程区域无效。</value></data>
+  <data name="ProfileSettingsWindow.UndoDescription.AddTimePoint" xml:space="preserve"><value>添加{0}</value></data>
+  <data name="ProfileSettingsWindow.UndoDescription.DeleteTimePoint" xml:space="preserve"><value>删除{0}</value></data>
+</root>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="WelcomePages.SystemPage.Description.AddSoftwareShortcutsToTheDesktop" xml:space="preserve">
+    <value>在桌面上添加软件快捷方式。</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Description.AddSoftwareShortcutsToTheStartMenu" xml:space="preserve">
+    <value>在开始菜单上添加软件快捷方式。</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Description.AllowsThirdPartyApplicationsOrWebPagesTo" xml:space="preserve">
+    <value>允许第三方应用或网页通过 Url 协议 classisland:// 调用本应用的部分功能，详见帮助文档。</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Description.OpenThisShortcutToStartCourseSwitchingWith" xml:space="preserve">
+    <value>打开此快捷方式可以一键开始换课。</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Description.RegisterTheCipFileFormatAssociationForEasier" xml:space="preserve">
+    <value>注册*.cip文件格式关联，便于导入档案文件。</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Description.RunThisApplicationAutomaticallyAtSystemStartup" xml:space="preserve">
+    <value>在系统启动时自动运行本应用。</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Header.CreateACourseSwitchingShortcutOnTheDesktop" xml:space="preserve">
+    <value>在桌面创建换课快捷方式</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Header.CreateAShortcutForTheStartMenu" xml:space="preserve">
+    <value>创建开始菜单快捷方式</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Header.CreateDesktopShortcuts" xml:space="preserve">
+    <value>创建桌面快捷方式</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Header.FileAssociation" xml:space="preserve">
+    <value>文件关联</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Header.RegisterUrlProtocol" xml:space="preserve">
+    <value>注册 Url 协议</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Header.StartOnBoot" xml:space="preserve">
+    <value>开机自启</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Text.SetClassIslandSSystemIntegrationFeaturesWhichCan" xml:space="preserve">
+    <value>设置ClassIsland的系统集成功能，这些功能可以优化您使用本软件的体验。</value>
+  </data>
+  <data name="WelcomePages.SystemPage.Text.System" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="WelcomePages.SystemPage.ToolTip.NextStep" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="WelcomePages.SystemPage.ToolTip.PreviousStep" xml:space="preserve">
+    <value>上一步</value>
+  </data>
+</root>

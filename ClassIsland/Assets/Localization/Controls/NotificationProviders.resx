@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.NotificationProviders.AfterSchoolNotificationProviderSettingsControl.Content.View" xml:space="preserve">
+    <value>查看…</value>
+  </data>
+  <data name="Controls.NotificationProviders.AfterSchoolNotificationProviderSettingsControl.Description.DisplayAProminentReminderAtTheEndOf" xml:space="preserve">
+    <value>在当日所有时间点结束后显示醒目提醒，提示已经放学。</value>
+  </data>
+  <data name="Controls.NotificationProviders.AfterSchoolNotificationProviderSettingsControl.Header.SendRemindersAfterSchool" xml:space="preserve">
+    <value>在放学时发出提醒</value>
+  </data>
+  <data name="Controls.NotificationProviders.AfterSchoolNotificationProviderSettingsControl.Message.TheSettingsHereCanBeOverwrittenByThe" xml:space="preserve">
+    <value>此处的设置可以在档案设置中被附加设置覆盖。</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Text.Grow" xml:space="preserve">
+    <value>长</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Text.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Text.StillLeftBeforeClass" xml:space="preserve">
+    <value>距上课还剩</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Text.TheNextLessonIs" xml:space="preserve">
+    <value>下节课是：</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Text.ThisSection" xml:space="preserve">
+    <value>本节</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Content.EnableVoice" xml:space="preserve">
+    <value>启用语音</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Content.IndoorCoursePreClassReminderTime" xml:space="preserve">
+    <value>室内课程课前提醒时间</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Content.OutdoorClassesReminderTimeBeforeClass" xml:space="preserve">
+    <value>室外课程课前提醒时间</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Content.View" xml:space="preserve">
+    <value>查看…</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Description.DesignatedTimeRemindersForClassesBeforeIndoorClasses" xml:space="preserve">
+    <value>在室内课程的上课前指定时间进行上课提醒。</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Description.IssueAProminentReminderAtTheEndOf" xml:space="preserve">
+    <value>在下课时发出醒目提醒，提示已经下课。</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Description.IssueProminentRemindersBeforeClassToPromptStudents" xml:space="preserve">
+    <value>在上课前一段时间发出醒目提醒，提示做好上课准备。</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Description.IssueProminentRemindersDuringClassToIndicateThat" xml:space="preserve">
+    <value>在上课时发出醒目提醒，提示已经上课。</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Description.SetADesignatedTimeForClassRemindersBefore" xml:space="preserve">
+    <value>在室外课程的上课前指定时间进行上课提醒。</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Description.WhenCourseRemindersAreDisplayedTheNameOf" xml:space="preserve">
+    <value>在显示课程相关的提醒时同时展示并播报对应科任老师的名字</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Header.DisplayTheNameOfTheSubjectTeacher" xml:space="preserve">
+    <value>显示科任老师名字</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Header.GiveRemindersAfterClass" xml:space="preserve">
+    <value>在下课时发出提醒</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Header.GiveRemindersDuringPreClassPreparation" xml:space="preserve">
+    <value>在课前准备时发出提醒</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Header.SendRemindersDuringClass" xml:space="preserve">
+    <value>在上课时发出提醒</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Message.TheSettingsHereCanBeOverwrittenByThe" xml:space="preserve">
+    <value>此处的设置可以在档案设置中被附加设置覆盖。</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Watermark.Disabled" xml:space="preserve">
+    <value>（禁用）</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherForecastNotificationProvider.Text.TheDayAfterTomorrow" xml:space="preserve">
+    <value>后天</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherForecastNotificationProvider.Text.Today" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherForecastNotificationProvider.Text.Tomorrow" xml:space="preserve">
+    <value>明天</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherForecastNotificationProvider.Text.WeatherForecast" xml:space="preserve">
+    <value>天气预报</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherHourlyForecastNotificationProvider.Text.WeatherForecast" xml:space="preserve">
+    <value>天气预报</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Content.DisabledByDefault" xml:space="preserve">
+    <value>默认禁用</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Content.EnabledByDefault" xml:space="preserve">
+    <value>默认启用</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Description.TheDefaultDisplayModeForExtremeWeatherAlerts" xml:space="preserve">
+    <value>极端天气提醒的默认显示模式，可以在各个时间点覆盖该设置。</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Description.TheDefaultWeatherForecastDisplayModeAllowsYou" xml:space="preserve">
+    <value>天气预报的默认显示模式，可以在各个时间点覆盖该设置。</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Description.TheSpeedAtWhichTextScrollsOnceWhen" xml:space="preserve">
+    <value>显示天气预警详细信息时文本滚动一轮的速度。无论此选项设置为何值，滚动一轮的时间始终限制在10~90秒内。</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Description.WhenAWeatherWarningIsIssuedNotificationsAre" xml:space="preserve">
+    <value>当发布气象预警时，会在指定的时间段进行通知。</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Description.WhenTheWeatherForecastIsEnabledItWill" xml:space="preserve">
+    <value>若启用天气预报，会在指定时间段显示今天和明后两天的天气概况。</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Header.ActivateExtremeWeatherWarnings" xml:space="preserve">
+    <value>启用极端天气预警</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Header.DefaultExtremeWeatherAlertDisplayMode" xml:space="preserve">
+    <value>默认极端天气提醒显示模式</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Header.DefaultWeatherForecastDisplayMode" xml:space="preserve">
+    <value>默认天气预报显示模式</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Header.EnableWeatherForecasts" xml:space="preserve">
+    <value>启用天气预报</value>
+  </data>
+  <data name="Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Header.ExtremeWeatherWarningScrollingSpeedWordsSecond" xml:space="preserve">
+    <value>极端天气预警滚动速度（字/秒）</value>
+  </data>
+  <data name="Controls.NotificationProviders.AfterSchoolNotificationProviderSettingsControl.Label.ReminderDisplayContent" xml:space="preserve">
+    <value>提醒显示内容</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Label.ClassEndReminderText" xml:space="preserve">
+    <value>下课提醒文字</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Label.ClassMaskText" xml:space="preserve">
+    <value>上课遮罩文字</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Label.IndoorClassPreparationMaskText" xml:space="preserve">
+    <value>室内课程准备上课遮罩文字</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Label.IndoorClassPreparationReminderText" xml:space="preserve">
+    <value>室内课程准备上课提醒文字</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Label.OutdoorClassPreparationMaskText" xml:space="preserve">
+    <value>户外课程准备上课遮罩文字</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Label.OutdoorClassPreparationReminderText" xml:space="preserve">
+    <value>户外课程准备上课提醒文字</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderSettingsControl.Suffix.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Duration.Hours" xml:space="preserve"><value>{0} 小时</value></data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Duration.MinutesShort" xml:space="preserve"><value>{0} 分</value></data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Duration.Minutes" xml:space="preserve"><value>{0} 分钟</value></data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Duration.Seconds" xml:space="preserve"><value>{0} 秒</value></data>
+</root>

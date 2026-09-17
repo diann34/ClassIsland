@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="MveTestView.Description.CallOpenOnTheLastCreatedView" xml:space="preserve">
+    <value>对上一次创建的视图调用 Open。</value>
+  </data>
+  <data name="MveTestView.Description.CallShowOnTheLastCreatedViewAgain" xml:space="preserve">
+    <value>对上一次创建的视图再次调用 Show。</value>
+  </data>
+  <data name="MveTestView.Description.CreateANewViewHostAndDisplayThe" xml:space="preserve">
+    <value>创建新的视图宿主，并在其中显示 MVE 测试视图。</value>
+  </data>
+  <data name="MveTestView.Description.CreateAnMveTestViewAndDisplayIt" xml:space="preserve">
+    <value>创建 MVE 测试视图，并交由默认视图宿主显示。</value>
+  </data>
+  <data name="MveTestView.Description.HideTheLastCreatedView" xml:space="preserve">
+    <value>隐藏上一次创建的视图。</value>
+  </data>
+  <data name="MveTestView.Description.InterceptCancelableCloseRequestsAndShowAMessage" xml:space="preserve">
+    <value>拦截可取消的关闭请求，并显示关闭事件已拦截提示。</value>
+  </data>
+  <data name="MveTestView.Description.OpenALargeImageTestView" xml:space="preserve">
+    <value>打开大图像测试视图。</value>
+  </data>
+  <data name="MveTestView.Description.ReuseTheCurrentViewHostToCreateAnd" xml:space="preserve">
+    <value>复用当前视图宿主创建并显示 MVE 测试视图。</value>
+  </data>
+  <data name="MveTestView.Description.UseModalDisplayWhenOpeningANewView" xml:space="preserve">
+    <value>打开新视图时使用模态显示。</value>
+  </data>
+  <data name="MveTestView.Header.CloseThePreviousView" xml:space="preserve">
+    <value>关闭上个视图</value>
+  </data>
+  <data name="MveTestView.Header.ClosingNotAllowed" xml:space="preserve">
+    <value>不允许关闭</value>
+  </data>
+  <data name="MveTestView.Header.OpenANewViewInANewView" xml:space="preserve">
+    <value>在新视图宿主打开新视图</value>
+  </data>
+  <data name="MveTestView.Header.OpenANewViewInTheCurrentView" xml:space="preserve">
+    <value>在当前视图宿主打开新视图</value>
+  </data>
+  <data name="MveTestView.Header.OpenANewViewInTheDefaultView" xml:space="preserve">
+    <value>在默认视图宿主打开新视图</value>
+  </data>
+  <data name="MveTestView.Header.ReuseTheLastViewOpen" xml:space="preserve">
+    <value>复用上个视图(Open)</value>
+  </data>
+  <data name="MveTestView.Header.ReuseTheLastViewShow" xml:space="preserve">
+    <value>复用上个视图(Show)</value>
+  </data>
+  <data name="MveTestView.Header.ShowWithModalDisplay" xml:space="preserve">
+    <value>带模态显示</value>
+  </data>
+  <data name="MveTestView.Header.TestLargeImages" xml:space="preserve">
+    <value>测试大图像</value>
+  </data>
+  <data name="MveTestView.Text.OpenView" xml:space="preserve">
+    <value>打开视图</value>
+  </data>
+  <data name="MveTestView.Text.OperateOnThePreviousView" xml:space="preserve">
+    <value>操作上一个视图</value>
+  </data>
+</root>

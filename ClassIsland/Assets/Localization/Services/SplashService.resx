@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Services.SplashService.Status.Starting" xml:space="preserve">
+    <value>正在启动…</value>
+  </data>
+  <data name="Services.SplashService.Status.LoadingInterfaceThemeFirstStage" xml:space="preserve">
+    <value>正在加载界面主题（1）</value>
+  </data>
+  <data name="Services.SplashService.Status.InitializingMainInterfaceFirstStage" xml:space="preserve">
+    <value>正在初始化主界面（步骤 1/2）</value>
+  </data>
+  <data name="Services.SplashService.Status.InitializingTrayMenu" xml:space="preserve">
+    <value>正在初始化托盘菜单</value>
+  </data>
+  <data name="Services.SplashService.Status.InitializingInput" xml:space="preserve">
+    <value>正在初始化输入</value>
+  </data>
+  <data name="Services.SplashService.Status.LoadingInterfaceThemeSecondStage" xml:space="preserve">
+    <value>正在加载界面主题（2）</value>
+  </data>
+  <data name="Services.SplashService.Status.StartingHangDetection" xml:space="preserve">
+    <value>正在启动挂起检查服务</value>
+  </data>
+  <data name="Services.SplashService.Status.CreatingTaskbarIcon" xml:space="preserve">
+    <value>正在创建任务栏图标</value>
+  </data>
+  <data name="Services.SplashService.Status.StartingUpdateService" xml:space="preserve">
+    <value>正在进行更新服务启动操作</value>
+  </data>
+  <data name="Services.SplashService.Status.LoadingProfile" xml:space="preserve">
+    <value>正在加载档案</value>
+  </data>
+  <data name="Services.SplashService.Status.StartingMainInterfaceServices" xml:space="preserve">
+    <value>正在启动主界面所需的服务</value>
+  </data>
+  <data name="Services.SplashService.Status.InitializingMainInterfaceSecondStage" xml:space="preserve">
+    <value>正在初始化主界面（步骤 2/2）</value>
+  </data>
+  <data name="Services.SplashService.Status.RunningPostStartupTasks" xml:space="preserve">
+    <value>正在进行启动后操作</value>
+  </data>
+</root>

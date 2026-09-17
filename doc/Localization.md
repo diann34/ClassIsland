@@ -4,13 +4,18 @@ ClassIsland 的 UI 本地化使用资源 ID，不在运行时对任意用户文�
 
 ## 资源目录
 
-每个包含 UI 的程序集在 `Assets/Localization` 下维护标准 `.resx` 资源：
+每个包含 UI 的程序集在 `Assets/Localization` 下维护标准 `.resx` 资源。资源文件按照使用它们的代码位置拆分，例如：
 
-- `Localization.resx` 是简体中文回退资源；
-- `Localization.zh-Hant.resx` 是繁体中文资源；
-- 以后新增语言时，复制回退资源为 `Localization.<culture>.resx`，翻译资源值并保留全部资源 ID，然后在 `LocalizationService` 的 `RegisteredLanguages` 注册表中显式注册该语言。
+- `Views/ProfileSettingsWindow.resx`：档案编辑窗口的简体中文回退资源；
+- `Views/ProfileSettingsWindow.zh-Hant.resx`：档案编辑窗口的繁体中文资源；
+- `Views/SettingPages/GeneralSettingsPage.resx`：常规设置页的简体中文回退资源；
+- `Controls/TimeRuleEditControl.zh-Hant.resx`：时间规则控件的繁体中文资源。
 
-目录结构固定为：
+中性文件（不带文化名称的 `.resx`）是简体中文回退资源。以后新增语言时，为每个中性文件添加同路径、同名的 `.<culture>.resx` 文件，翻译资源值并保留全部资源 ID，然后在 `LocalizationService` 的 `RegisteredLanguages` 注册表中显式注册该语言。
+
+资源文件由程序集清单统一加载，因此拆分或新增资源文件时不需要修改调用代码。语言仍然只通过 `RegisteredLanguages` 显式注册，不会根据现有资源文件动态出现在语言列表中。
+
+资源项结构固定为：
 
 ```xml
 <data name="SettingPages.GeneralSettingsPage.Header.StartOnBoot" xml:space="preserve">

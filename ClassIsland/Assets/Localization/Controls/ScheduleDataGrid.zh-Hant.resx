@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.Content.GoToCreate" xml:space="preserve">
+    <value>前往創建</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.Header.Time" xml:space="preserve">
+    <value>時間</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.Text.No" xml:space="preserve">
+    <value>第</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.Text.ThereIsNoTimetableHereYetWhyNot" xml:space="preserve">
+    <value>這裏還沒有課表，不妨先點擊上方的【新課表】按鈕創建課表吧</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.Text.Week" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.Text.YouNeedToSetAScheduleFirstBefore" xml:space="preserve">
+    <value>您需要先設置時間表才能創建課表</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.ToolTip.NextWeek" xml:space="preserve">
+    <value>下一週</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.ToolTip.PreviousWeek" xml:space="preserve">
+    <value>上一週</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridCellControl.Text.None" xml:space="preserve">
+    <value>（無）</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Content.CopiedFrom" xml:space="preserve">
+    <value>複製自</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.Create" xml:space="preserve">
+    <value>創建</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.NewTimetable" xml:space="preserve">
+    <value>新建課表</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.NewTimetable2" xml:space="preserve">
+    <value>新課表</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.TemporaryLayer" xml:space="preserve">
+    <value>臨時層</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.Week" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.ToolTip.TimetableInformation" xml:space="preserve">
+    <value>課表信息…</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Label.Name" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Label.Timetable" xml:space="preserve">
+    <value>時間表</value>
+  </data>
+</root>

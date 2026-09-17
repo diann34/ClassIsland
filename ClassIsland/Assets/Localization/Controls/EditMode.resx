@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.EditMode.EditModeView.Content.Acrylic" xml:space="preserve">
+    <value>亚克力</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.Added" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.AdvancedSettings" xml:space="preserve">
+    <value>高级设置</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.BodyFontSize" xml:space="preserve">
+    <value>正文字体大小</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.ComponentSettings" xml:space="preserve">
+    <value>组件设置</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.Disable" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.EmphasizeFontSize" xml:space="preserve">
+    <value>强调字体大小</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.Enable" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.GlassLike" xml:space="preserve">
+    <value>类液态玻璃</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.HideByRules" xml:space="preserve">
+    <value>按规则隐藏</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.Inherit" xml:space="preserve">
+    <value>继承</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.LargeFontSize" xml:space="preserve">
+    <value>大号字体大小</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.MaterialType" xml:space="preserve">
+    <value>材质类型</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.Mica" xml:space="preserve">
+    <value>云母</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.SecondaryFontSize" xml:space="preserve">
+    <value>次级字体大小</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.AdditionalInformationAtTimePointsEtc" xml:space="preserve">
+    <value>时间点附加信息等</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.AdjustFontColorWillOverrideTheValuesSet" xml:space="preserve">
+    <value>调整字体颜色，将覆盖【外观】设置和主界面行中设置的值。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.AdjustTheSizeOfVariousFontsOnComponents" xml:space="preserve">
+    <value>调整组件上各类字体的大小，将覆盖【外观】设置和主界面行中设置的字体大小。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.AfterActivationTheComponentWillBeSeparated" xml:space="preserve">
+    <value>启用后组件会分开。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.AfterActivationTheMainInterfaceWillBeSeparated" xml:space="preserve">
+    <value>启用后主界面会分开。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.ContentSuchAsCourseForecastEtc" xml:space="preserve">
+    <value>课程预报等内容</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.ContentSuchAsTimetableClockReminderTitlesWeather" xml:space="preserve">
+    <value>课程表、时钟、提醒标题、天气预报等内容</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.CurrentMainInterfaceRowBackgroundColorWillUse" xml:space="preserve">
+    <value>当前主界面行背景颜色，禁用时将使用上级默认值。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.CustomMainInterfaceBackgroundEffectsAvailableOnlyOn" xml:space="preserve">
+    <value>自定义主界面的背景效果，仅在较新版本的 Windows 上可用，可能会产生额外性能开销。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.DefaultFontSizeOnTheMainInterface" xml:space="preserve">
+    <value>主界面默认字体大小</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.HomeInterfaceBackgroundColorWhenDisabledTheColor" xml:space="preserve">
+    <value>主界面背景颜色，禁用时将根据应用主题自动选择颜色。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.LineSpacingOnTheMainInterface" xml:space="preserve">
+    <value>主界面行间间隔。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.MainInterfaceFilletRadiusWhenSetToThe" xml:space="preserve">
+    <value>主界面圆角半径，调至最大数值时左右边缘为半圆。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.OpacityOfTheBackgroundOfTheCurrentMain" xml:space="preserve">
+    <value>当前主界面行的背景的不透明度，禁用将使用上级默认值。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.OpacityOfTheMainInterfaceBackground" xml:space="preserve">
+    <value>主界面背景的不透明度。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.TheCurrentMainInterfaceBackgroundFilletRadiusWhen" xml:space="preserve">
+    <value>当前主界面行背景圆角半径，调至最大数值时左右边缘为半圆。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.TheOverallOpacityOfTheMainInterfaceRow" xml:space="preserve">
+    <value>主界面行整体的不透明度。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Description.ZoomingInAndOutOfTheMainInterface" xml:space="preserve">
+    <value>主界面的缩放大小。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.BackgroundColor" xml:space="preserve">
+    <value>背景颜色</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.BackgroundOpacity" xml:space="preserve">
+    <value>背景不透明度</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.CornerRadius" xml:space="preserve">
+    <value>圆角半径</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.CustomBackgroundColor" xml:space="preserve">
+    <value>自定义背景颜色</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.CustomBackgroundCornerRadius" xml:space="preserve">
+    <value>自定义背景圆角半径</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.CustomBackgroundEffect" xml:space="preserve">
+    <value>自定义背景效果</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.CustomBackgroundOpacity" xml:space="preserve">
+    <value>自定义背景不透明度</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.FontColor" xml:space="preserve">
+    <value>字体颜色</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.FontSize" xml:space="preserve">
+    <value>字体大小</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.InterfaceScaling" xml:space="preserve">
+    <value>界面缩放</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.MoreAppearanceSettings" xml:space="preserve">
+    <value>更多外观设置</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.Opacity" xml:space="preserve">
+    <value>不透明度</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.RowSpacing" xml:space="preserve">
+    <value>行间隔</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Header.SplitMainInterface" xml:space="preserve">
+    <value>分体主界面</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Text.Appearance" xml:space="preserve">
+    <value>外观</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Text.Basic" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Text.DragTheComponentOntoTheMainInterfaceTo" xml:space="preserve">
+    <value>将组件拖动到主界面上即可添加组件。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Text.Edit" xml:space="preserve">
+    <value>编辑…</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Text.Font" xml:space="preserve">
+    <value>字体</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Text.MainInterfaceRowSettings" xml:space="preserve">
+    <value>主界面行设置</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Text.SelectTheComponentConfigurationToEnable" xml:space="preserve">
+    <value>选择要启用的组件配置</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Text.SelectTheComponentToAddOrDragThe" xml:space="preserve">
+    <value>选择要添加的组件，或将组件拖动到主界面上即可添加组件。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.ToolTip.Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.ToolTip.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.ToolTip.EditRuleSet" xml:space="preserve">
+    <value>编辑规则集…</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.ToolTip.New" xml:space="preserve">
+    <value>新建…</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.ToolTip.OpenConfigurationFolder" xml:space="preserve">
+    <value>打开配置文件夹…</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.ToolTip.Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.ToolTip.Rename" xml:space="preserve">
+    <value>重命名</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Watermark.Filter" xml:space="preserve">
+    <value>筛选…</value>
+  </data>
+  <data name="Controls.EditMode.EditableComponentsListBox.Header.CreateACopy" xml:space="preserve">
+    <value>创建副本</value>
+  </data>
+  <data name="Controls.EditMode.EditableComponentsListBox.Header.WrapItInANewContainer" xml:space="preserve">
+    <value>包裹到新容器</value>
+  </data>
+  <data name="Controls.EditMode.EditableComponentsListBox.ToolTip.ComponentSettings" xml:space="preserve">
+    <value>组件设置</value>
+  </data>
+  <data name="Controls.EditMode.EditableComponentsListBox.ToolTip.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Controls.EditMode.EditableComponentsListBox.ToolTip.MoreOptions" xml:space="preserve">
+    <value>更多选项…</value>
+  </data>
+  <data name="Controls.EditMode.EditableComponentsListBox.ToolTip.ViewSubcomponents" xml:space="preserve">
+    <value>查看子组件</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.ConfirmDeleteComponentProfile" xml:space="preserve">
+    <value>您确定要删除组件配置 {0} 吗？此操作无法撤销，组件配置内的组件信息都将被删除！</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Label.ComponentName" xml:space="preserve">
+    <value>组件名</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Label.ComponentProfileName" xml:space="preserve">
+    <value>组件配置方案名称</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Message.ComponentProfileAlreadyExists" xml:space="preserve">
+    <value>无法重命名组件配置，因为已存在一个相同名称的组件配置。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Message.LoadedComponentProfileCannotBeDeleted" xml:space="preserve">
+    <value>无法删除已加载或将要加载的组件配置。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Title.CreateComponentProfile" xml:space="preserve">
+    <value>创建组件配置</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Title.DeleteComponentProfile" xml:space="preserve">
+    <value>删除组件配置</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Title.RenameComponentProfile" xml:space="preserve">
+    <value>重命名组件配置方案</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Title.EditRuleset" xml:space="preserve"><value>编辑规则集</value></data>
+  <data name="Controls.EditMode.EditableComponentsListBoxDropHandler.Message.ContainerCannotContainItself" xml:space="preserve"><value>容器组件不能包含自己。</value></data>
+</root>

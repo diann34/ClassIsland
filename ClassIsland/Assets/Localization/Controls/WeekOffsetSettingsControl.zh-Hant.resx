@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.WeekOffsetSettingsControl.Text.AdjustThePositionOfMultiWeekRotationFor" xml:space="preserve">
+    <value>調整本週的多周輪換位置。</value>
+  </data>
+  <data name="Controls.WeekOffsetSettingsControl.Text.Apply" xml:space="preserve">
+    <value>應用</value>
+  </data>
+  <data name="Controls.WeekOffsetSettingsControl.Text.Reset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="Controls.WeekOffsetSettingsControl.ToolTip.ResetMultiWeekRotationOffsetToTheStart" xml:space="preserve">
+    <value>將多周輪換偏移重置爲學期開始時間。</value>
+  </data>
+  <data name="Controls.WeekOffsetSettingsControl.Header.AlternatingWeeks" xml:space="preserve"><value>單雙週：</value></data>
+  <data name="Controls.WeekOffsetSettingsControl.Header.WeekRotation" xml:space="preserve"><value>{0}週輪替：</value></data>
+  <data name="Controls.WeekOffsetSettingsControl.Item.OddWeek" xml:space="preserve"><value>單週</value></data>
+  <data name="Controls.WeekOffsetSettingsControl.Item.EvenWeek" xml:space="preserve"><value>雙週</value></data>
+  <data name="Controls.WeekOffsetSettingsControl.Item.WeekPosition" xml:space="preserve"><value>{0}/{1}週</value></data>
+</root>

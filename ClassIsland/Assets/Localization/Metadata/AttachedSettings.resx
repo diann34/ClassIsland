@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Metadata.AttachedSettings.AfterSchoolNotification" xml:space="preserve"><value>放学提醒设置</value></data>
+  <data name="Metadata.AttachedSettings.ClassNotification" xml:space="preserve"><value>上课提醒设置</value></data>
+  <data name="Metadata.AttachedSettings.LessonDisplay" xml:space="preserve"><value>课程显示设置</value></data>
+  <data name="Metadata.AttachedSettings.WeatherNotification" xml:space="preserve"><value>天气提醒设置</value></data>
+</root>

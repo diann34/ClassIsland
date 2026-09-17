@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.Content.GoToCreate" xml:space="preserve">
+    <value>前往创建</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.Header.Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.Text.No" xml:space="preserve">
+    <value>第</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.Text.ThereIsNoTimetableHereYetWhyNot" xml:space="preserve">
+    <value>这里还没有课表，不妨先点击上方的【新课表】按钮创建课表吧</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.Text.Week" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.Text.YouNeedToSetAScheduleFirstBefore" xml:space="preserve">
+    <value>您需要先设置时间表才能创建课表</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.ToolTip.NextWeek" xml:space="preserve">
+    <value>下一周</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGrid.ToolTip.PreviousWeek" xml:space="preserve">
+    <value>上一周</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridCellControl.Text.None" xml:space="preserve">
+    <value>（无）</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Content.CopiedFrom" xml:space="preserve">
+    <value>复制自</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.Create" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.NewTimetable" xml:space="preserve">
+    <value>新建课表</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.NewTimetable2" xml:space="preserve">
+    <value>新课表</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.TemporaryLayer" xml:space="preserve">
+    <value>临时层</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Text.Week" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.ToolTip.TimetableInformation" xml:space="preserve">
+    <value>课表信息…</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Label.Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="Controls.ScheduleDataGrid.ScheduleDataGridColHeaderControl.Label.Timetable" xml:space="preserve">
+    <value>时间表</value>
+  </data>
+</root>

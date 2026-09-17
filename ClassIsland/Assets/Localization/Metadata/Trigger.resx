@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Metadata.Trigger.ApplicationStarted" xml:space="preserve"><value>应用启动时</value></data>
+  <data name="Metadata.Trigger.ApplicationStopping" xml:space="preserve"><value>应用退出时</value></data>
+  <data name="Metadata.Trigger.CurrentTimeStateChanged" xml:space="preserve"><value>当前时间状态变化时</value></data>
+  <data name="Metadata.Trigger.AfterSchool" xml:space="preserve"><value>放学时</value></data>
+  <data name="Metadata.Trigger.BreakStarted" xml:space="preserve"><value>课间休息时</value></data>
+  <data name="Metadata.Trigger.BeforeTimePoint" xml:space="preserve"><value>特定时间点前</value></data>
+  <data name="Metadata.Trigger.RulesetUpdated" xml:space="preserve"><value>规则集更新时</value></data>
+  <data name="Metadata.Trigger.SignalReceived" xml:space="preserve"><value>收到信号时</value></data>
+  <data name="Metadata.Trigger.RunFromTrayMenu" xml:space="preserve"><value>从托盘菜单运行时</value></data>
+  <data name="Metadata.Trigger.UriInvoked" xml:space="preserve"><value>调用 Uri 时</value></data>
+</root>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.TimeRuleEditControl.Content.AndTodayFallsWithinTheFollowingDateRange" xml:space="preserve">
+    <value>並且今天處於以下日期範圍</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Content.Confirm" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.ACertainDay" xml:space="preserve">
+    <value>某天</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.AddEnabledDate" xml:space="preserve">
+    <value>添加啓用日期</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.Added" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.Cycle" xml:space="preserve">
+    <value>循環</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.Days" xml:space="preserve">
+    <value>天。</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.EnableOnceADay" xml:space="preserve">
+    <value>天啓用一次。</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.Every" xml:space="preserve">
+    <value>每</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.ModifyDate" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.Of" xml:space="preserve">
+    <value>的</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.OffsetBack" xml:space="preserve">
+    <value>向後偏移</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.SinceTheStartOfSchoolEvery" xml:space="preserve">
+    <value>從開學起，每</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.TheTimetableOnlyTakesEffectWhenAllRules" xml:space="preserve">
+    <value>課表只有在規則全部滿足時纔會生效。</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.TriggerRule" xml:space="preserve">
+    <value>觸發規則</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.Weekly" xml:space="preserve">
+    <value>每週</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.WhenTodayIs" xml:space="preserve">
+    <value>當今天是：</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Text.WhenTodayIsAnyOfTheFollowingDates" xml:space="preserve">
+    <value>當今天是以下任意日期：</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.ToolTip.Edit" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.ToolTip.Remove" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="Controls.TimeRuleEditControl.Option.EveryWeek" xml:space="preserve"><value>每周啓用</value></data>
+  <data name="Controls.TimeRuleEditControl.Option.OddWeek" xml:space="preserve"><value>單周</value></data>
+  <data name="Controls.TimeRuleEditControl.Option.EvenWeek" xml:space="preserve"><value>雙周</value></data>
+  <data name="Controls.TimeRuleEditControl.Option.CycleWeek" xml:space="preserve"><value>第{0}周</value></data>
+  <data name="Controls.TimeRuleEditControl.Option.TwoWeeks" xml:space="preserve"><value>兩周</value></data>
+  <data name="Controls.TimeRuleEditControl.Option.WeekCount" xml:space="preserve"><value>{0}周</value></data>
+  <data name="Controls.TimeRuleEditControl.Toast.DateAlreadyExists" xml:space="preserve"><value>日期已存在。</value></data>
+</root>

@@ -13,6 +13,9 @@ public static class LocalizationService
 
     private static readonly List<ResourceManager> ResourceManagers = [];
 
+    private static readonly Dictionary<string, ResourceManager> ResourceManagersByKey =
+        new(StringComparer.Ordinal);
+
     private static readonly Dictionary<string, SupportedLanguage> RegisteredLanguages =
         new(StringComparer.OrdinalIgnoreCase)
         {
@@ -33,13 +36,19 @@ public static class LocalizationService
     {
         var systemCulture = CultureInfo.CurrentUICulture;
         ResourceManagers.Clear();
+        ResourceManagersByKey.Clear();
         FallbackKeys.Clear();
 
         foreach (var assembly in resourceAssemblies.Distinct())
         {
-            ResourceManagers.Add(new ResourceManager(
-                $"{assembly.GetName().Name}.Assets.Localization.Localization",
-                assembly));
+            var resourcePrefix = $"{assembly.GetName().Name}.Assets.Localization.";
+            var resourceBaseNames = assembly.GetManifestResourceNames()
+                .Where(x => x.StartsWith(resourcePrefix, StringComparison.Ordinal) &&
+                            x.EndsWith(".resources", StringComparison.Ordinal))
+                .Select(x => x[..^".resources".Length])
+                .OrderBy(x => x, StringComparer.Ordinal);
+
+            ResourceManagers.AddRange(resourceBaseNames.Select(x => new ResourceManager(x, assembly)));
         }
 
         LoadFallbackKeys();
@@ -58,12 +67,10 @@ public static class LocalizationService
     public static string Translate(string key)
     {
         var culture = CultureInfo.GetCultureInfo(CurrentCultureName);
-        foreach (var resourceManager in ResourceManagers)
+        if (ResourceManagersByKey.TryGetValue(key, out var resourceManager) &&
+            resourceManager.GetString(key, culture) is { } value)
         {
-            if (resourceManager.GetString(key, culture) is { } value)
-            {
-                return value;
-            }
+            return value;
         }
 
         return key;
@@ -141,10 +148,17 @@ public static class LocalizationService
 
             foreach (DictionaryEntry entry in resourceSet)
             {
-                if (entry is { Key: string key, Value: string value } && !FallbackKeys.ContainsKey(value))
+                if (entry is not { Key: string key, Value: string value })
                 {
-                    FallbackKeys[value] = key;
+                    continue;
                 }
+
+                if (!ResourceManagersByKey.TryAdd(key, resourceManager))
+                {
+                    throw new InvalidOperationException($"Duplicate localization resource ID: {key}");
+                }
+
+                FallbackKeys.TryAdd(value, key);
             }
         }
     }

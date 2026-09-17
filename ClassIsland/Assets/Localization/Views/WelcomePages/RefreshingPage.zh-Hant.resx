@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="WelcomePages.RefreshingPage.Content.SelectTheSchedulesAndTimetablesToKeep" xml:space="preserve">
+    <value>選擇要保留的課表和時間表…</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Description.ApplicationSettingsSuchAsSemesterStartTimeHidden" xml:space="preserve">
+    <value>應用的設置選項，如學期開始時間、隱藏規則、提醒等設置。</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Description.CanExtendTheFunctionalityOfTheApplication" xml:space="preserve">
+    <value>可以擴展應用的功能。</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Description.ContentDisplayedOnTheMainInterface" xml:space="preserve">
+    <value>主界面顯示的內容。</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Description.ContentThatTheApplicationAutomaticallyExecutesInSpecific" xml:space="preserve">
+    <value>應用在特定情況下自動執行的內容。</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Description.IncludesSchedulesTimetablesAndOtherInformation" xml:space="preserve">
+    <value>包含課表、時間表等信息。</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Header.ApplicationSettings" xml:space="preserve">
+    <value>應用設置</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Header.Archives" xml:space="preserve">
+    <value>檔案</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Header.Automation" xml:space="preserve">
+    <value>自動化</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Header.ComponentConfiguration" xml:space="preserve">
+    <value>組件配置</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Header.Plugins" xml:space="preserve">
+    <value>插件</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Text.RenovatingPleaseWait" xml:space="preserve">
+    <value>正在翻新，請稍後…</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Text.Renovation" xml:space="preserve">
+    <value>翻新</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Text.SelectTheContentToResetTheSelectedContent" xml:space="preserve">
+    <value>選擇要重置的內容。選中的內容將被重置至初始狀態，重置前應用將創建一個備份，以便還原至重置前的狀態。</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Text.Timetable" xml:space="preserve">
+    <value>時間表</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.Text.Timetable2" xml:space="preserve">
+    <value>課表</value>
+  </data>
+  <data name="WelcomePages.RefreshingPage.ToolTip.NextStep" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="Views.WelcomePages.RefreshingPage.Message.RefreshCompleted" xml:space="preserve">
+    <value>翻新成功。</value>
+  </data>
+  <data name="Views.WelcomePages.RefreshingPage.Message.RefreshSettingsFailed" xml:space="preserve">
+    <value>無法翻新設定</value>
+  </data>
+</root>

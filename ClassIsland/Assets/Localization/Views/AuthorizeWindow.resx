@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="AuthorizeWindow.Content.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="AuthorizeWindow.Content.Confirm" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="AuthorizeWindow.Content.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="AuthorizeWindow.Text.AddAuthenticationMethod" xml:space="preserve">
+    <value>添加认证方式</value>
+  </data>
+  <data name="AuthorizeWindow.Text.Continue" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="AuthorizeWindow.Text.DoYouWantToDeleteThisAuthenticationMethod" xml:space="preserve">
+    <value>要删除此认证方式吗？</value>
+  </data>
+  <data name="AuthorizeWindow.Text.EditAuthenticationItem" xml:space="preserve">
+    <value>编辑认证项目</value>
+  </data>
+  <data name="AuthorizeWindow.Text.EditTheAuthenticationMethodRequiredToPerformThis" xml:space="preserve">
+    <value>编辑进行此操作需要的认证方式。</value>
+  </data>
+  <data name="AuthorizeWindow.Text.ThisActionCannotBeUndone" xml:space="preserve">
+    <value>此操作无法撤销。</value>
+  </data>
+  <data name="AuthorizeWindow.Text.ToContinuePleaseVerifyYourIdentityUsingOne" xml:space="preserve">
+    <value>要继续操作，请通过下列的方式验证您的身份。</value>
+  </data>
+  <data name="AuthorizeWindow.Text.Use" xml:space="preserve">
+    <value>用</value>
+  </data>
+  <data name="AuthorizeWindow.Text.VerifyYourIdentity" xml:space="preserve">
+    <value>验证您的身份</value>
+  </data>
+  <data name="AuthorizeWindow.ToolTip.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Views.AuthorizeWindow.Message.AddAtLeastOneAuthenticationMethod" xml:space="preserve">
+    <value>请至少添加一个认证方式。</value>
+  </data>
+  <data name="Views.AuthorizeWindow.Message.AuthenticationMethodValidationFailed" xml:space="preserve">
+    <value>认证方式的设置验证失败，请检查认证方式配置。</value>
+  </data>
+</root>

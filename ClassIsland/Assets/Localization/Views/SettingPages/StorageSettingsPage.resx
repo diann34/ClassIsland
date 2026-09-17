@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.StorageSettingsPage.Content.AutomaticBackupInterval" xml:space="preserve">
+    <value>自动备份间隔</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Content.AutomaticBackupLimit" xml:space="preserve">
+    <value>自动备份上限</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Content.BackUpImmediately" xml:space="preserve">
+    <value>立即备份</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Content.BackupFileSizeUsage" xml:space="preserve">
+    <value>备份文件占用大小</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Content.LastTimeTheAutomaticBackupWasSuccessfullyCompleted" xml:space="preserve">
+    <value>上次成功自动备份</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Content.RestoreBackup" xml:space="preserve">
+    <value>恢复备份…</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Content.ViewBackupFiles" xml:space="preserve">
+    <value>查看备份文件…</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Description.NumberOfDaysBetweenAutomaticBackups" xml:space="preserve">
+    <value>自动备份时的间隔天数。</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Description.OnceEnabledClassIslandWillAutomaticallyBackUpThe" xml:space="preserve">
+    <value>启用后，ClassIsland 将每隔一段时间自动备份当前的档案和配置文件。</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Description.PerformManualBackupTheBackupIncludesConfigurationFiles" xml:space="preserve">
+    <value>进行手动备份。备份的内容包括 Config/ 文件夹内的配置文件、 Profiles/ 文件夹内的档案文件和 Settings.json 设置文件。手动备份产生的备份文件不会被自动清除。</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Description.RestartToRecoveryModeAndRestoreToThe" xml:space="preserve">
+    <value>重启到恢复模式并恢复到指定的备份。</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Description.TheMaximumAllowedAutomaticBackupWhenTheNumber" xml:space="preserve">
+    <value>最多允许存在的自动备份上限。当自动备份数量达到上限时，将覆盖最旧的备份。设置为 0 则为无上限。</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Header.EnableAutomaticBackups" xml:space="preserve">
+    <value>启用自动备份</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Header.ManualBackup" xml:space="preserve">
+    <value>手动备份</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Message.SomeClassIslandConfigurationFilesAreCorruptedAndUnable" xml:space="preserve">
+    <value>ClassIsland 部分配置文件已损坏且无法加载，这些配置文件已恢复至默认值。</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Text.Backup" xml:space="preserve">
+    <value>备份</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Text.BelowIsTheSpaceUsageOfVariousTypes" xml:space="preserve">
+    <value>以下是 应用内 产生的各个类型文件的空间占用情况，您可以在此处清理部分临时和缓存文件。</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Text.Details" xml:space="preserve">
+    <value>详细信息…</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Text.StorageSpace" xml:space="preserve">
+    <value>存储空间</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.ToolTip.BackupSuccessful" xml:space="preserve">
+    <value>备份成功。</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Suffix.Days" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Suffix.Items" xml:space="preserve">
+    <value>个</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Message.BackupFailed" xml:space="preserve">
+    <value>无法创建备份</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Message.BackupSucceeded" xml:space="preserve">
+    <value>备份成功。</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Message.BrowseBackupFilesFailed" xml:space="preserve">
+    <value>无法浏览备份文件</value>
+  </data>
+</root>

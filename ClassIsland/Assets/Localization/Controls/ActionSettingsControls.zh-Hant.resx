@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.ActionSettingsControls.AppRestartActionSettingsControl.Content.SilentRestart" xml:space="preserve">
+    <value>靜默重啓</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.Text.ApplicationSettingsNotFound" xml:space="preserve">
+    <value>找不到應用設置。</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.Text.ChangeTo" xml:space="preserve">
+    <value>修改爲</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.Text.CurrentValue" xml:space="preserve">
+    <value>當前值</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.Text.SelectApplicationSettings" xml:space="preserve">
+    <value>選擇應用設置</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.ToolTip.EnterCurrentValue" xml:space="preserve">
+    <value>填入當前值</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.Watermark.SearchApplicationSettings" xml:space="preserve">
+    <value>搜索應用設置…</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.EnableAdvancedSettings" xml:space="preserve">
+    <value>啓用高級設置</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.EnableContentVoice" xml:space="preserve">
+    <value>啓用正文語音</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.EnableReminderEffects" xml:space="preserve">
+    <value>啓用提醒特效</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.EnableReminderSounds" xml:space="preserve">
+    <value>啓用提醒音效</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.EnableTitleVoice" xml:space="preserve">
+    <value>啓用標題語音</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.PinReminder" xml:space="preserve">
+    <value>置頂提醒</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Content.WaitForReminderToEnd" xml:space="preserve">
+    <value>等待提醒結束</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Text.ReminderSettings" xml:space="preserve">
+    <value>提醒設置</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Text.ReminderSettings2" xml:space="preserve">
+    <value>提醒設置…</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.ToolTip.WhenEnabledActionsWillWaitForThisReminder" xml:space="preserve">
+    <value>啓用後，行動將等待此提醒直至提醒結束。</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Watermark.DefaultSound" xml:space="preserve">
+    <value>（默認音效）</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Watermark.Optional" xml:space="preserve">
+    <value>選填</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.RunActionSettingsControl.Content.CmdCommand" xml:space="preserve">
+    <value>cmd 命令</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.RunActionSettingsControl.Default.TerminalCommand" xml:space="preserve">
+    <value>終端命令</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.RunActionSettingsControl.Text.Application" xml:space="preserve">
+    <value>應用程序</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.RunActionSettingsControl.Text.File" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.RunActionSettingsControl.Text.Folder" xml:space="preserve">
+    <value>文件夾</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.RunActionSettingsControl.Text.Select" xml:space="preserve">
+    <value>選擇…</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.RunActionSettingsControl.Text.UrlLink" xml:space="preserve">
+    <value>Url 鏈接</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.RunActionSettingsControl.ToolTip.OptionalApplicationStartupParameters" xml:space="preserve">
+    <value>（可選）應用程序啓動參數</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.RunActionSettingsControl.Watermark.OptionalApplicationStartupParameters" xml:space="preserve">
+    <value>（可選）應用程序啓動參數</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.WeatherNotificationActionSettingControl.Content.HourlyWeatherForecast" xml:space="preserve">
+    <value>逐小時天氣預報</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.WeatherNotificationActionSettingControl.Content.ThreeDayWeatherForecast" xml:space="preserve">
+    <value>三天天氣預報</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.WeatherNotificationActionSettingControl.Content.WeatherAlerts" xml:space="preserve">
+    <value>氣象預警</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Label.BodyContent" xml:space="preserve">
+    <value>正文內容</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Label.BodyDuration" xml:space="preserve">
+    <value>正文持續時間</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Label.CustomReminderSound" xml:space="preserve">
+    <value>自訂提醒音效</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Label.TitleContent" xml:space="preserve">
+    <value>標題內容</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Label.TitleDuration" xml:space="preserve">
+    <value>標題持續時間</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.NotificationActionSettingsControl.Suffix.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.SleepActionSettingsControl.Suffix.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.ModifyAppSettingsActionSettingsControl.Fallback.Select" xml:space="preserve">
+    <value>選擇…</value>
+  </data>
+  <data name="Controls.ActionSettingsControls.RunActionSettingsControl.Format.SelectValue" xml:space="preserve">
+    <value>選擇{0}…</value>
+  </data>
+</root>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Metadata.Rule.AlwaysTrue" xml:space="preserve"><value>总是为真</value></data>
+  <data name="Metadata.Rule.AlwaysFalse" xml:space="preserve"><value>总是为假</value></data>
+  <data name="Metadata.Rule.ForegroundWindowClassName" xml:space="preserve"><value>前台窗口类名</value></data>
+  <data name="Metadata.Rule.ForegroundWindowTitle" xml:space="preserve"><value>前台窗口标题</value></data>
+  <data name="Metadata.Rule.ForegroundWindowState" xml:space="preserve"><value>前台窗口状态是</value></data>
+  <data name="Metadata.Rule.ForegroundWindowProcess" xml:space="preserve"><value>前台窗口进程</value></data>
+  <data name="Metadata.Rule.CurrentSubject" xml:space="preserve"><value>科目是</value></data>
+  <data name="Metadata.Rule.NextSubject" xml:space="preserve"><value>下节课科目是</value></data>
+  <data name="Metadata.Rule.PreviousSubject" xml:space="preserve"><value>上节课科目是</value></data>
+  <data name="Metadata.Rule.CurrentTimeState" xml:space="preserve"><value>当前时间状态是</value></data>
+  <data name="Metadata.Rule.CurrentWeather" xml:space="preserve"><value>当前天气是</value></data>
+  <data name="Metadata.Rule.TomorrowWeather" xml:space="preserve"><value>明天天气是</value></data>
+  <data name="Metadata.Rule.WeatherAlertExists" xml:space="preserve"><value>存在气象预警</value></data>
+  <data name="Metadata.Rule.PrecipitationStartsOrEndsIn" xml:space="preserve"><value>距离降水开始/结束还剩</value></data>
+  <data name="Metadata.Rule.IsSunriseOrSunset" xml:space="preserve"><value>是否日出/日落</value></data>
+</root>

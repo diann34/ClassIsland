@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.ScheduleDataGridColHeaderControl.Toast.SelectValidTimeLayout" xml:space="preserve"><value>请选择一个有效的时间表。</value></data>
+  <data name="Controls.ScheduleDataGridColHeaderControl.Toast.SelectValidClassPlanToCopy" xml:space="preserve"><value>请选择一个有效要复制的课表。</value></data>
+</root>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.ManagementPolicySettingsPage.Description.AfterEnablingThisEasterEggsInTheInterface" xml:space="preserve">
+    <value>啓用此項後，界面中的彩蛋將被禁用。</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Description.AfterEnablingThisOptionUsersWillNotBe" xml:space="preserve">
+    <value>啓用此項後，用戶將不能創建、刪除和編輯課表，同時【導入/導出】也將被禁用。臨時換課和啓用臨時課表功能不受影響。</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Description.AfterEnablingThisUsersWillNotBeAble" xml:space="preserve">
+    <value>啓用此項後，用戶將不能創建、刪除和編輯時間表，同時【導入/導出】也將被禁用。</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Description.AfterEnablingThisUsersWillNotBeAble2" xml:space="preserve">
+    <value>啓用此項後，用戶將不能創建、刪除和編輯科目，同時【導入/導出】也將被禁用。</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Description.AfterEnablingThisUsersWillNotBeAble3" xml:space="preserve">
+    <value>啓用此項後，用戶將不能編輯檔案內所有內容，同時【導入/導出】功能也將被禁用。臨時換課和啓用臨時課表功能不受影響。</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Description.AfterEnablingThisUsersWillNotBeAble4" xml:space="preserve">
+    <value>啓用此項後，用戶將不能自定義啓動界面。如果先前調整過啓動界面自定義設置，這些設置會被清除。</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Description.AfterEnablingThisUsersWillNotBeAble5" xml:space="preserve">
+    <value>啓用此項後，用戶將不能調整應用的設置。但先前調整過的設置在啓用此項後不受影響。</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Description.AfterEnablingThisUsersWillNotBeAble6" xml:space="preserve">
+    <value>啓用此項後，用戶將不能進入調試頁面。</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Description.ControlWhetherUsersCanVoluntarilyExitCentralizedControl" xml:space="preserve">
+    <value>控制用戶是否能主動退出集控。禁用後，用戶將無法自行退出集控。</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Header.AllowsExitFromCentralizedControl" xml:space="preserve">
+    <value>允許退出集控</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Header.BanEasterEggs" xml:space="preserve">
+    <value>禁用彩蛋</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Header.DisableCustomStartupLoadingInterfaces" xml:space="preserve">
+    <value>禁止自定義啓動加載界面</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Header.DisableTheDebugMenu" xml:space="preserve">
+    <value>禁用調試菜單</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Header.EditingAppSettingsIsProhibited" xml:space="preserve">
+    <value>禁止編輯應用設置</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Header.EditingArchivesIsProhibited" xml:space="preserve">
+    <value>禁止編輯檔案</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Header.EditingClassSchedulesIsProhibited" xml:space="preserve">
+    <value>禁止編輯課表</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Header.EditingSchedulesIsProhibited" xml:space="preserve">
+    <value>禁止編輯時間表</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Header.EditingSubjectsIsProhibited" xml:space="preserve">
+    <value>禁止編輯科目</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Message.SomePolicySettingsMayRequireARestartTo" xml:space="preserve">
+    <value>部分策略設置可能需要重啓才能生效。</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Text.ApplicationSettings" xml:space="preserve">
+    <value>應用設置</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Text.Archives" xml:space="preserve">
+    <value>檔案</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Text.Miscellaneous" xml:space="preserve">
+    <value>雜項</value>
+  </data>
+  <data name="SettingPages.ManagementPolicySettingsPage.Text.RestartApplication" xml:space="preserve">
+    <value>重啓應用</value>
+  </data>
+</root>

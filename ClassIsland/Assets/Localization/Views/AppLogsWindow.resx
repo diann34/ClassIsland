@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="AppLogsWindow.Header.Area" xml:space="preserve">
+    <value>区域</value>
+  </data>
+  <data name="AppLogsWindow.Header.Content" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="AppLogsWindow.Header.Level" xml:space="preserve">
+    <value>等级</value>
+  </data>
+  <data name="AppLogsWindow.Header.Log" xml:space="preserve">
+    <value>日志</value>
+  </data>
+  <data name="AppLogsWindow.Header.Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="AppLogsWindow.Text.ClearLog" xml:space="preserve">
+    <value>清空日志</value>
+  </data>
+  <data name="AppLogsWindow.Text.CopySelected" xml:space="preserve">
+    <value>复制选中</value>
+  </data>
+  <data name="AppLogsWindow.Text.Debug" xml:space="preserve">
+    <value>调试</value>
+  </data>
+  <data name="AppLogsWindow.Text.Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="AppLogsWindow.Text.Fatal" xml:space="preserve">
+    <value>灾难</value>
+  </data>
+  <data name="AppLogsWindow.Text.Information" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="AppLogsWindow.Text.ScrollToBottom" xml:space="preserve">
+    <value>滚动到最底</value>
+  </data>
+  <data name="AppLogsWindow.Text.Trace" xml:space="preserve">
+    <value>追踪</value>
+  </data>
+  <data name="AppLogsWindow.Text.Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="AppLogsWindow.Watermark.FilterLogs" xml:space="preserve">
+    <value>筛选日志…</value>
+  </data>
+</root>

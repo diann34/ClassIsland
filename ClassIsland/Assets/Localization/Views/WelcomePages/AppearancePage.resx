@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="WelcomePages.AppearancePage.Description.MainInterfaceFilletRadiusWhenSetToThe" xml:space="preserve">
+    <value>主界面圆角半径，调至最大数值时左右边缘为半圆。</value>
+  </data>
+  <data name="WelcomePages.AppearancePage.Description.OpacityOfTheMainInterfaceBackground" xml:space="preserve">
+    <value>主界面背景的不透明度。</value>
+  </data>
+  <data name="WelcomePages.AppearancePage.Description.ZoomingInAndOutOfTheMainInterface" xml:space="preserve">
+    <value>主界面的缩放大小。</value>
+  </data>
+  <data name="WelcomePages.AppearancePage.Header.BackgroundOpacity" xml:space="preserve">
+    <value>背景不透明度</value>
+  </data>
+  <data name="WelcomePages.AppearancePage.Header.CornerRadius" xml:space="preserve">
+    <value>圆角半径</value>
+  </data>
+  <data name="WelcomePages.AppearancePage.Header.InterfaceScaling" xml:space="preserve">
+    <value>界面缩放</value>
+  </data>
+  <data name="WelcomePages.AppearancePage.Text.AdjustTheAppearanceOfTheClassIslandMainInterface" xml:space="preserve">
+    <value>调整 ClassIsland 主界面的外观。</value>
+  </data>
+  <data name="WelcomePages.AppearancePage.Text.Appearance" xml:space="preserve">
+    <value>外观</value>
+  </data>
+  <data name="WelcomePages.AppearancePage.ToolTip.NextStep" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="WelcomePages.AppearancePage.ToolTip.PreviousStep" xml:space="preserve">
+    <value>上一步</value>
+  </data>
+</root>

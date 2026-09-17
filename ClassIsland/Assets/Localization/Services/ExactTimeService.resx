@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Services.ExactTimeService.Status.NotSynchronized" xml:space="preserve">
+    <value>时间尚未同步。</value>
+  </data>
+  <data name="Services.ExactTimeService.Status.SynchronizedAt" xml:space="preserve">
+    <value>成功地在 {0} 同步了时间</value>
+  </data>
+  <data name="Services.ExactTimeService.Status.SynchronizationFailed" xml:space="preserve">
+    <value>同步时间失败：{0}</value>
+  </data>
+  <data name="Services.ExactTimeService.Status.Synchronizing" xml:space="preserve">
+    <value>正在同步时间……</value>
+  </data>
+</root>

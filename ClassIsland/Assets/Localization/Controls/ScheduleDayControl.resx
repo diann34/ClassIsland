@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.ScheduleDayControl.Text.Clear" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="Controls.ScheduleDayControl.Text.Confirm" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="Controls.ScheduleDayControl.Text.SelectTheTimetableToTemporarilyEnable" xml:space="preserve">
+    <value>选择要临时启用的课表</value>
+  </data>
+  <data name="Controls.ScheduleDayControl.ToolTip.ClearTemporaryTimetable" xml:space="preserve">
+    <value>清除临时课表</value>
+  </data>
+  <data name="Controls.ScheduleDayControl.ToolTip.Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Controls.ScheduleDayControl.ToolTip.ReserveTemporaryTimetable" xml:space="preserve">
+    <value>预定临时课表</value>
+  </data>
+</root>

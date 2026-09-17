@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.JoinManagementDialog.Content.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Controls.JoinManagementDialog.Content.Connection" xml:space="preserve">
+    <value>連接</value>
+  </data>
+  <data name="Controls.JoinManagementDialog.Text.ConfigurationFile" xml:space="preserve">
+    <value>配置文件：</value>
+  </data>
+  <data name="Controls.JoinManagementDialog.Text.ConnectTheCurrentClassIslandInstanceToTheManagement" xml:space="preserve">
+    <value>將當前ClassIsland實例連接到管理組織。</value>
+  </data>
+  <data name="Controls.JoinManagementDialog.Text.JoinManagement" xml:space="preserve">
+    <value>加入管理</value>
+  </data>
+  <data name="Controls.JoinManagementDialog.Title.JoinManagement" xml:space="preserve">
+    <value>加入管理</value>
+  </data>
+  <data name="Controls.JoinManagementDialog.Label.OptionalId" xml:space="preserve">
+    <value>ID（選填）</value>
+  </data>
+  <data name="Controls.JoinManagementDialog.FileType.ConfigurationFile" xml:space="preserve">
+    <value>設定檔</value>
+  </data>
+</root>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="ClassPlanDetailsWindow.Header.AdditionalSettingResults" xml:space="preserve">
+    <value>附加设置结果</value>
+  </data>
+  <data name="ClassPlanDetailsWindow.Header.Subject" xml:space="preserve">
+    <value>科目</value>
+  </data>
+  <data name="ClassPlanDetailsWindow.Header.Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="ClassPlanDetailsWindow.Header.TimetableDetails" xml:space="preserve">
+    <value>课表详细信息</value>
+  </data>
+  <data name="ClassPlanDetailsWindow.Text.TheFollowingAdditionalSettingsWillBeAppliedIn" xml:space="preserve">
+    <value>以下的附加设置将按从上到下的顺序使用。</value>
+  </data>
+  <data name="ClassPlanDetailsWindow.Text.TimetableDetails" xml:space="preserve">
+    <value>课表详细信息</value>
+  </data>
+  <data name="ClassPlanDetailsWindow.ToolTip.Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="ClassPlanDetailsWindow.Label.AdditionalSettingsToView" xml:space="preserve">
+    <value>要查看的附加设置</value>
+  </data>
+  <data name="Views.ClassPlanDetailsWindow.Summary.UseApplicationOrDefaultSettings" xml:space="preserve"><value>小结：将使用在【应用设置】中的设置或默认设置。</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Summary.UseTargetSettings" xml:space="preserve"><value>小结：将使用在{0}的设置。</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Target.Lesson" xml:space="preserve"><value>课程</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Target.Subject" xml:space="preserve"><value>科目</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Target.TimePoint" xml:space="preserve"><value>时间点</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Target.ClassPlan" xml:space="preserve"><value>课表</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Target.TimeLayout" xml:space="preserve"><value>时间表</value></data>
+</root>

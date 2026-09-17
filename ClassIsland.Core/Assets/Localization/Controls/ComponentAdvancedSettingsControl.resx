@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.Acrylic" xml:space="preserve">
+    <value>亚克力</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.BodyFontSize" xml:space="preserve">
+    <value>正文字体大小</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.Disable" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.EmphasizeFontSize" xml:space="preserve">
+    <value>强调字体大小</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.Enable" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.GlassLike" xml:space="preserve">
+    <value>类液态玻璃</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.Inherit" xml:space="preserve">
+    <value>继承</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.LargeFontSize" xml:space="preserve">
+    <value>大号字体大小</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.MaterialType" xml:space="preserve">
+    <value>材质类型</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.Mica" xml:space="preserve">
+    <value>云母</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Content.SecondaryFontSize" xml:space="preserve">
+    <value>次级字体大小</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.AdditionalInformationAtTimePointsEtc" xml:space="preserve">
+    <value>时间点附加信息等</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.AdjustFontColorWillOverrideTheValuesSet" xml:space="preserve">
+    <value>调整字体颜色，将覆盖【外观】设置和主界面行中设置的值。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.AdjustTheSizeOfVariousFontsOnComponents" xml:space="preserve">
+    <value>调整组件上各类字体的大小，将覆盖【外观】设置和主界面行中设置的字体大小。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.AfterEnablingTheComponentWillUseAFixed" xml:space="preserve">
+    <value>启用后，组件将使用固定宽度，不会自动适应内容宽度。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.AutomaticallyHideThisComponentWhenTheSpecifiedConditions" xml:space="preserve">
+    <value>在指定规则满足时，自动隐藏此组件。注意此处的隐藏不会释放组件资源。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.ContentSuchAsCourseForecastEtc" xml:space="preserve">
+    <value>课程预报等内容</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.ContentSuchAsTimetableClockReminderTitlesWeather" xml:space="preserve">
+    <value>课程表、时钟、提醒标题、天气预报等内容</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.CornerRadiusOfTheCurrentComponentBackgroundWhen" xml:space="preserve">
+    <value>当前组件背景圆角半径，调至最大数值时左右边缘为半圆。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.CurrentComponentBackgroundColorTheDefaultValueOf" xml:space="preserve">
+    <value>当前组件背景颜色，禁用时将使用上级默认值。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.CustomMainInterfaceBackgroundEffectsAvailableOnlyOn" xml:space="preserve">
+    <value>自定义主界面的背景效果，仅在较新版本的 Windows 上可用，可能会产生额外性能开销。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.DefaultFontSizeOnTheMainInterface" xml:space="preserve">
+    <value>主界面默认字体大小</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.LimitsTheMaximumAndMinimumWidthOfThe" xml:space="preserve">
+    <value>限制控件的最大和最小宽度。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.OverallOpacityOfTheComponent" xml:space="preserve">
+    <value>组件整体的不透明度。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.SetsTheDistanceBetweenThisComponentAndOther" xml:space="preserve">
+    <value>设置此组件与其他组件的距离。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.SpecifiesHowTheComponentIsAlignedWithinThe" xml:space="preserve">
+    <value>指定组件在显示容器中对齐的方式。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Description.TheOpacityOfTheCurrentComponentSBackground" xml:space="preserve">
+    <value>当前组件的背景的不透明度，禁用将使用上级默认值。</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.Alignment" xml:space="preserve">
+    <value>对齐方式</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.CustomBackgroundColor" xml:space="preserve">
+    <value>自定义背景颜色</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.CustomBackgroundCornerRadius" xml:space="preserve">
+    <value>自定义背景圆角半径</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.CustomBackgroundEffect" xml:space="preserve">
+    <value>自定义背景效果</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.CustomBackgroundOpacity" xml:space="preserve">
+    <value>自定义背景不透明度</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.CustomMargin" xml:space="preserve">
+    <value>自定义边距</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.FixedWidth" xml:space="preserve">
+    <value>固定宽度</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.FontColor" xml:space="preserve">
+    <value>字体颜色</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.FontSize" xml:space="preserve">
+    <value>字体大小</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.HideByRules" xml:space="preserve">
+    <value>按规则隐藏</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.Opacity" xml:space="preserve">
+    <value>不透明度</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Header.WidthRestriction" xml:space="preserve">
+    <value>宽度限制</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Text.Appearance" xml:space="preserve">
+    <value>外观</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Text.EditRuleSet" xml:space="preserve">
+    <value>编辑规则集…</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Text.Font" xml:space="preserve">
+    <value>字体</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Text.Layout" xml:space="preserve">
+    <value>布局</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Text.MaximumWidth" xml:space="preserve">
+    <value>最大宽度</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.Text.MinimumWidth" xml:space="preserve">
+    <value>最小宽度</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.ToolTip.Center" xml:space="preserve">
+    <value>居中</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.ToolTip.LeftAlign" xml:space="preserve">
+    <value>左对齐</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.ToolTip.RightAlign" xml:space="preserve">
+    <value>右对齐</value>
+  </data>
+  <data name="Core.Controls.ComponentAdvancedSettingsControl.ToolTip.Stretch" xml:space="preserve">
+    <value>拉伸</value>
+  </data>
+</root>

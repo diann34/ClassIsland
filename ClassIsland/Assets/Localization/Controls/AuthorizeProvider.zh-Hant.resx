@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.AuthorizeProvider.PasswordAuthorizeProvider.Text.ChangePassword" xml:space="preserve">
+    <value>更改密碼</value>
+  </data>
+  <data name="Controls.AuthorizeProvider.PasswordAuthorizeProvider.Text.ConfirmationPasswordDoesNotMatchPassword" xml:space="preserve">
+    <value>確認密碼與密碼不一致。</value>
+  </data>
+  <data name="Controls.AuthorizeProvider.PasswordAuthorizeProvider.Text.IncorrectPassword" xml:space="preserve">
+    <value>密碼不正確。</value>
+  </data>
+  <data name="Controls.AuthorizeProvider.PasswordAuthorizeProvider.Text.PasswordHasBeenSet" xml:space="preserve">
+    <value>密碼已設定。</value>
+  </data>
+  <data name="Controls.AuthorizeProvider.PasswordAuthorizeProvider.Text.PleaseEnterPassword" xml:space="preserve">
+    <value>請輸入密碼。</value>
+  </data>
+  <data name="Controls.AuthorizeProvider.PasswordAuthorizeProvider.ToolTip.Confirm" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="Controls.AuthorizeProvider.PasswordAuthorizeProvider.Watermark.ConfirmPassword" xml:space="preserve">
+    <value>確認密碼</value>
+  </data>
+  <data name="Controls.AuthorizeProvider.PasswordAuthorizeProvider.Watermark.Password" xml:space="preserve">
+    <value>密碼</value>
+  </data>
+</root>

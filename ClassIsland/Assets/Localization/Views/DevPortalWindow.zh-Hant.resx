@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="DevPortalWindow.Content.Conflict" xml:space="preserve">
+    <value>紛爭</value>
+  </data>
+  <data name="DevPortalWindow.Content.Death" xml:space="preserve">
+    <value>死亡</value>
+  </data>
+  <data name="DevPortalWindow.Content.Doorway" xml:space="preserve">
+    <value>門徑</value>
+  </data>
+  <data name="DevPortalWindow.Content.Earth" xml:space="preserve">
+    <value>大地</value>
+  </data>
+  <data name="DevPortalWindow.Content.Law" xml:space="preserve">
+    <value>律法</value>
+  </data>
+  <data name="DevPortalWindow.Content.MessageHasContent" xml:space="preserve">
+    <value>消息有內容</value>
+  </data>
+  <data name="DevPortalWindow.Content.NegativeWorld" xml:space="preserve">
+    <value>負世</value>
+  </data>
+  <data name="DevPortalWindow.Content.Ocean" xml:space="preserve">
+    <value>海洋</value>
+  </data>
+  <data name="DevPortalWindow.Content.OpenDrawer" xml:space="preserve">
+    <value>打開抽屜</value>
+  </data>
+  <data name="DevPortalWindow.Content.Parse" xml:space="preserve">
+    <value>解析</value>
+  </data>
+  <data name="DevPortalWindow.Content.Reason" xml:space="preserve">
+    <value>理性</value>
+  </data>
+  <data name="DevPortalWindow.Content.Reset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="DevPortalWindow.Content.Romance" xml:space="preserve">
+    <value>浪漫</value>
+  </data>
+  <data name="DevPortalWindow.Content.Send" xml:space="preserve">
+    <value>發送！</value>
+  </data>
+  <data name="DevPortalWindow.Content.Sky" xml:space="preserve">
+    <value>天空</value>
+  </data>
+  <data name="DevPortalWindow.Content.TestTutorial" xml:space="preserve">
+    <value>測試教程</value>
+  </data>
+  <data name="DevPortalWindow.Content.Time" xml:space="preserve">
+    <value>歲月</value>
+  </data>
+  <data name="DevPortalWindow.Content.Trick" xml:space="preserve">
+    <value>詭計</value>
+  </data>
+  <data name="DevPortalWindow.Content.TrueSelf" xml:space="preserve">
+    <value>真我</value>
+  </data>
+  <data name="DevPortalWindow.Content.UserCanCloseMessage" xml:space="preserve">
+    <value>用戶可以關閉消息</value>
+  </data>
+  <data name="DevPortalWindow.Header.AdjustmentCalendar" xml:space="preserve">
+    <value>調課日曆</value>
+  </data>
+  <data name="DevPortalWindow.Header.Controls" xml:space="preserve">
+    <value>控件</value>
+  </data>
+  <data name="DevPortalWindow.Header.Home" xml:space="preserve">
+    <value>首頁</value>
+  </data>
+  <data name="DevPortalWindow.Header.Reminders" xml:space="preserve">
+    <value>提醒</value>
+  </data>
+  <data name="DevPortalWindow.Header.VerticalDrawer" xml:space="preserve">
+    <value>豎直抽屜</value>
+  </data>
+</root>

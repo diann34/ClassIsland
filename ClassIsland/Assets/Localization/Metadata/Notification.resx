@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Metadata.Notification.Action.Name" xml:space="preserve"><value>行动提醒</value></data>
+  <data name="Metadata.Notification.Action.Description" xml:space="preserve"><value>显示由行动发出的提醒。</value></data>
+  <data name="Metadata.Notification.AfterSchool.Name" xml:space="preserve"><value>放学提醒</value></data>
+  <data name="Metadata.Notification.AfterSchool.Description" xml:space="preserve"><value>在当天的课程结束后发出提醒。</value></data>
+  <data name="Metadata.Notification.Class.Name" xml:space="preserve"><value>上下课提醒</value></data>
+  <data name="Metadata.Notification.Class.Description" xml:space="preserve"><value>在准备上课、上课和下课时发出醒目提醒，并预告下一节课程。</value></data>
+  <data name="Metadata.Notification.ClassPreparing.Name" xml:space="preserve"><value>准备上课提醒</value></data>
+  <data name="Metadata.Notification.ClassPreparing.Description" xml:space="preserve"><value>在上课前指定时间发出提醒。</value></data>
+  <data name="Metadata.Notification.ClassStarted.Name" xml:space="preserve"><value>上课提醒</value></data>
+  <data name="Metadata.Notification.ClassStarted.Description" xml:space="preserve"><value>在上课时发出提醒。</value></data>
+  <data name="Metadata.Notification.BreakStarted.Name" xml:space="preserve"><value>下课提醒</value></data>
+  <data name="Metadata.Notification.BreakStarted.Description" xml:space="preserve"><value>在下课时发出提醒。</value></data>
+  <data name="Metadata.Notification.Management.Name" xml:space="preserve"><value>集控提醒</value></data>
+  <data name="Metadata.Notification.Management.Description" xml:space="preserve"><value>来自集控服务器的提醒。</value></data>
+  <data name="Metadata.Notification.Weather.Name" xml:space="preserve"><value>天气预警</value></data>
+  <data name="Metadata.Notification.Weather.Description" xml:space="preserve"><value>当有降雨或者极端天气时发出提醒。</value></data>
+</root>

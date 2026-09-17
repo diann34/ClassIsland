@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.ManagementSettingsPage.Content.Management" xml:space="preserve">
+    <value>的管理。</value>
+  </data>
+  <data name="SettingPages.ManagementSettingsPage.Content.SchoolOrganizationalItCanCentrallyDistributeSchedulesSch" xml:space="preserve">
+    <value>学校/组织的 IT 可以通过集控功能向学校内的 ClassIsland 实例统一分发课表、时间表和科目等信息，并且可以集中调整软件设置和限制部分功能的使用，提高管理的便利性。</value>
+  </data>
+  <data name="SettingPages.ManagementSettingsPage.Content.ServerType" xml:space="preserve">
+    <value>服务端类型：</value>
+  </data>
+  <data name="SettingPages.ManagementSettingsPage.Content.YouAreCurrentlyAffected" xml:space="preserve">
+    <value>您目前正在受</value>
+  </data>
+  <data name="SettingPages.ManagementSettingsPage.Content.YouCanAdjustSomeOfYourAppS" xml:space="preserve">
+    <value>您可以在不启用云端集控的情况下调整应用的一些策略。</value>
+  </data>
+  <data name="SettingPages.ManagementSettingsPage.Text.CentralizedControl" xml:space="preserve">
+    <value>集控</value>
+  </data>
+  <data name="SettingPages.ManagementSettingsPage.Text.ClientInformation" xml:space="preserve">
+    <value>客户端信息</value>
+  </data>
+  <data name="SettingPages.ManagementSettingsPage.Text.JoinManagement" xml:space="preserve">
+    <value>加入管理</value>
+  </data>
+  <data name="SettingPages.ManagementSettingsPage.Text.LearnMore" xml:space="preserve">
+    <value>了解更多</value>
+  </data>
+  <data name="SettingPages.ManagementSettingsPage.Text.LimitingStrategy" xml:space="preserve">
+    <value>限制策略…</value>
+  </data>
+  <data name="SettingPages.ManagementSettingsPage.Text.Management" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="SettingPages.ManagementSettingsPage.Text.PasswordProtectionSettings" xml:space="preserve">
+    <value>密码保护设置…</value>
+  </data>
+  <data name="SettingPages.ManagementSettingsPage.Text.ServerSideInformation" xml:space="preserve">
+    <value>服务端信息</value>
+  </data>
+</root>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Core.Controls.Tutorial.TutorialBarrier.Content.SkipTutorial" xml:space="preserve">
+    <value>略過教學</value>
+  </data>
+  <data name="Core.Controls.Tutorial.TutorialBarrier.Message.TutorialInProgress" xml:space="preserve">
+    <value>教學正在進行中，請等目前段落教學結束後再使用此功能。</value>
+  </data>
+  <data name="Core.Controls.Tutorial.TutorialBarrier.Title.ActionUnavailableDuringTutorial" xml:space="preserve">
+    <value>o((&gt;ω&lt; ))o 這裡不能點！</value>
+  </data>
+</root>

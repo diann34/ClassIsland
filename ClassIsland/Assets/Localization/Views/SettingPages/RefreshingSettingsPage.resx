@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.RefreshingSettingsPage.Content.ApplicationSettings" xml:space="preserve">
+    <value>应用设置</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.Archives" xml:space="preserve">
+    <value>档案</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.Automation" xml:space="preserve">
+    <value>自动化</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.ComponentConfiguration" xml:space="preserve">
+    <value>组件配置</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.DisplaysNotificationsOnTheNextStartup" xml:space="preserve">
+    <value>在下次启动时显示通知</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.Empty" xml:space="preserve">
+    <value>清空</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.ExitTheAppImmediately" xml:space="preserve">
+    <value>立即退出应用</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.NotificationTitle" xml:space="preserve">
+    <value>通知标题</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.Plugins" xml:space="preserve">
+    <value>插件</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.RenovateImmediately" xml:space="preserve">
+    <value>立即翻新</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.ResetToDefaultValues" xml:space="preserve">
+    <value>重置为默认值</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.TestNotifications" xml:space="preserve">
+    <value>测试通知</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.Timetable" xml:space="preserve">
+    <value>时间表</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.Timetable2" xml:space="preserve">
+    <value>课表</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Description.AfterEnabledTheNextTimeARenovationPrompt" xml:space="preserve">
+    <value>启用后，在下次显示翻新提示时将其替换为迎新指引，指引不熟悉 ClassIsland 的新同学上手本应用，并对应用进行翻新。此选项在生效一次后将自动关闭。</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Description.ByDefaultTheFollowingRenovationScopeWillBe" xml:space="preserve">
+    <value>默认情况下将勾选以下翻新范围，翻新时会重置对应的设置。</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Description.IfAUserIgnoresANotificationTheApp" xml:space="preserve">
+    <value>如果用户忽略了通知，应用会在下次启动时再次发送给通知询问用户。这里可以设置翻新或迎新指引通知在触发后最多可以显示次数。</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Description.OnceEnabledARenovationOrWelcomeGuidanceNotification" xml:space="preserve">
+    <value>启用后，将在下一次启动应用时立即显示翻新或迎新指引通知。此选项生效后将被关闭。</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Description.SetTheRenovationOrWelcomeGuidanceToBe" xml:space="preserve">
+    <value>设置在不启动 ClassIsland 多少天后显示翻新或迎新指引。</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Description.WhenLaunchingClassIslandAfterALongPeriodWithout" xml:space="preserve">
+    <value>当在长时间未启动 ClassIsland 的寒假/暑假等学期结束后的长假后启动 ClassIsland 时，显示桌面通知询问是否重新设置应用的部分设置以适应新学期。</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Header.HighestNumberOfNotificationsDisplayed" xml:space="preserve">
+    <value>最高通知显示次数</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Header.NotificationDisplayInterval" xml:space="preserve">
+    <value>通知显示间隔</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Header.RegularRenovations" xml:space="preserve">
+    <value>定期翻新</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Header.WelcomeModel" xml:space="preserve">
+    <value>迎新模式</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Text.DefaultRenovationScope" xml:space="preserve">
+    <value>默认翻新范围</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Text.NotificationOption" xml:space="preserve">
+    <value>通知选项</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Text.RemainingNotificationCount" xml:space="preserve">
+    <value>剩余通知次数：</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.ToolTip.SelectContentToKeep" xml:space="preserve">
+    <value>选择保留的内容…</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Description.CreateAndSwitchToANewConfigurationFile" xml:space="preserve">
+    <value>将创建并切换到一个全新的配置文件。</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Description.DisableEnabledPlugins" xml:space="preserve">
+    <value>将禁用已经启用的插件。</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Label.NotificationContent" xml:space="preserve">
+    <value>通知内容</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Suffix.Days" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Suffix.Times" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Button.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Button.Reset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.ResetOnboardingMessageSettings" xml:space="preserve">
+    <value>确定要重置迎新消息设置吗？此操作不可撤销！</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Message.OnboardingMessageReset" xml:space="preserve">
+    <value>已重置迎新消息。</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Title.ResetOnboardingMessageSettings" xml:space="preserve">
+    <value>重置迎新消息设置</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Title.ResetWelcomeMessages" xml:space="preserve">
+    <value>重置迎新消息设置</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.ConfirmResetWelcomeMessages" xml:space="preserve">
+    <value>确定要重置迎新消息设置吗？此操作不可撤销！</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Message.WelcomeMessagesReset" xml:space="preserve">
+    <value>已重置迎新消息。</value>
+  </data>
+</root>

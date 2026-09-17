@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Metadata.SettingsPage.Advanced" xml:space="preserve"><value>進階</value></data>
+  <data name="Metadata.SettingsPage.Components" xml:space="preserve"><value>元件</value></data>
+  <data name="Metadata.SettingsPage.Brushes" xml:space="preserve"><value>筆刷</value></data>
+  <data name="Metadata.SettingsPage.Error" xml:space="preserve"><value>發生錯誤！</value></data>
+  <data name="Metadata.SettingsPage.ManagementCredentials" xml:space="preserve"><value>集控認證設定</value></data>
+  <data name="Metadata.SettingsPage.ManagementPolicy" xml:space="preserve"><value>集控原則</value></data>
+  <data name="Metadata.SettingsPage.Privacy" xml:space="preserve"><value>隱私權</value></data>
+  <data name="Metadata.SettingsPage.Refreshing" xml:space="preserve"><value>翻新與迎新</value></data>
+  <data name="Metadata.SettingsPage.Storage" xml:space="preserve"><value>儲存空間</value></data>
+  <data name="Metadata.SettingsPage.Test" xml:space="preserve"><value>測試頁面</value></data>
+  <data name="Metadata.SettingsPage.Weather" xml:space="preserve"><value>天氣</value></data>
+</root>

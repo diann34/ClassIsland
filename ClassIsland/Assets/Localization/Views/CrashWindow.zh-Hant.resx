@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="CrashWindow.Header.ClassIslandCrashReport" xml:space="preserve">
+    <value>ClassIsland 崩潰報告</value>
+  </data>
+  <data name="CrashWindow.Message.ThisExceptionCannotBeIgnoredYouNeedTo" xml:space="preserve">
+    <value>這個異常無法被忽略，您需要重啓或退出應用。很抱歉對您的使用造成不便。</value>
+  </data>
+  <data name="CrashWindow.Text.ClassIslandHasEncounteredASeriousErrorAndCannot" xml:space="preserve">
+    <value>ClassIsland 碰到了嚴重錯誤而無法正常運行。您可以保存下方的錯誤信息並向他人尋求幫助。如果您認爲這是由軟件本身的錯誤所致，請點擊下方“反饋問題”按鈕。</value>
+  </data>
+  <data name="CrashWindow.Text.Copy" xml:space="preserve">
+    <value>複製</value>
+  </data>
+  <data name="CrashWindow.Text.Debug" xml:space="preserve">
+    <value>調試</value>
+  </data>
+  <data name="CrashWindow.Text.ExitApplication" xml:space="preserve">
+    <value>退出應用</value>
+  </data>
+  <data name="CrashWindow.Text.Ignore" xml:space="preserve">
+    <value>忽略</value>
+  </data>
+  <data name="CrashWindow.Text.ReportIssue" xml:space="preserve">
+    <value>反饋問題</value>
+  </data>
+  <data name="CrashWindow.Text.RestartApplication" xml:space="preserve">
+    <value>重啓應用</value>
+  </data>
+  <data name="CrashWindow.Text.ClassIslandEncounteredAnError" xml:space="preserve">
+    <value>ClassIsland 發生錯誤</value>
+  </data>
+  <data name="CrashWindow.Text.ClassIslandEncounteredAnErrorWithEmoticon" xml:space="preserve">
+    <value>ClassIsland 發生錯誤 ヽ(*。&gt;Д&lt;)o゜</value>
+  </data>
+</root>

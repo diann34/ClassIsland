@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.ComponentsSettingsPage.Content.Acrylic" xml:space="preserve">
+    <value>亚克力</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Content.BodyFontSize" xml:space="preserve">
+    <value>正文字体大小</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Content.Disable" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Content.EmphasizeFontSize" xml:space="preserve">
+    <value>强调字体大小</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Content.Enable" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Content.EnterEditMode" xml:space="preserve">
+    <value>进入编辑模式</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Content.GlassLike" xml:space="preserve">
+    <value>类液态玻璃</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Content.HideByRules" xml:space="preserve">
+    <value>按规则隐藏</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Content.Inherit" xml:space="preserve">
+    <value>继承</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Content.LargeFontSize" xml:space="preserve">
+    <value>大号字体大小</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Content.MaterialType" xml:space="preserve">
+    <value>材质类型</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Content.Mica" xml:space="preserve">
+    <value>云母</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Content.SecondaryFontSize" xml:space="preserve">
+    <value>次级字体大小</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.AdditionalInformationAtTimePointsEtc" xml:space="preserve">
+    <value>时间点附加信息等</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.AdjustFontColorWillOverrideTheValuesSet" xml:space="preserve">
+    <value>调整字体颜色，将覆盖【外观】设置和主界面行中设置的值。</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.AdjustTheSizeOfVariousFontsOnComponents" xml:space="preserve">
+    <value>调整组件上各类字体的大小，将覆盖【外观】设置和主界面行中设置的字体大小。</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.AfterActivationTheMainInterfaceWillBeSeparated" xml:space="preserve">
+    <value>启用后主界面会分开。</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.AutomaticallyHideThisComponentWhenTheSpecifiedConditions" xml:space="preserve">
+    <value>在指定规则满足时，自动隐藏此组件。注意此处的隐藏不会释放组件资源。</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.ContentSuchAsCourseForecastEtc" xml:space="preserve">
+    <value>课程预报等内容</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.ContentSuchAsTimetableClockReminderTitlesWeather" xml:space="preserve">
+    <value>课程表、时钟、提醒标题、天气预报等内容</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.CurrentMainInterfaceRowBackgroundColorWillUse" xml:space="preserve">
+    <value>当前主界面行背景颜色，禁用时将使用上级默认值。</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.CustomMainInterfaceBackgroundEffectsAvailableOnlyOn" xml:space="preserve">
+    <value>自定义主界面的背景效果，仅在较新版本的 Windows 上可用，可能会产生额外性能开销。</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.DefaultFontSizeOnTheMainInterface" xml:space="preserve">
+    <value>主界面默认字体大小</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.OpacityOfTheBackgroundOfTheCurrentMain" xml:space="preserve">
+    <value>当前主界面行的背景的不透明度，禁用将使用上级默认值。</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.TheCurrentMainInterfaceBackgroundFilletRadiusWhen" xml:space="preserve">
+    <value>当前主界面行背景圆角半径，调至最大数值时左右边缘为半圆。</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Description.TheOverallOpacityOfTheMainInterfaceRow" xml:space="preserve">
+    <value>主界面行整体的不透明度。</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.AdvancedSettings" xml:space="preserve">
+    <value>高级设置</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.ComponentLibrary" xml:space="preserve">
+    <value>组件库</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.ComponentSettings" xml:space="preserve">
+    <value>组件设置</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.CreateACopy" xml:space="preserve">
+    <value>创建副本</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.CustomBackgroundColor" xml:space="preserve">
+    <value>自定义背景颜色</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.CustomBackgroundCornerRadius" xml:space="preserve">
+    <value>自定义背景圆角半径</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.CustomBackgroundEffect" xml:space="preserve">
+    <value>自定义背景效果</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.CustomBackgroundOpacity" xml:space="preserve">
+    <value>自定义背景不透明度</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.FontColor" xml:space="preserve">
+    <value>字体颜色</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.FontSize" xml:space="preserve">
+    <value>字体大小</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.HideByRules" xml:space="preserve">
+    <value>按规则隐藏</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.MoveDownOneRow" xml:space="preserve">
+    <value>向下移动一行</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.MoveToSelectedContainer" xml:space="preserve">
+    <value>移动到选中的容器</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.MoveUpOneRow" xml:space="preserve">
+    <value>向上移动一行</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.Opacity" xml:space="preserve">
+    <value>不透明度</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.RemoveFromContainerComponent" xml:space="preserve">
+    <value>从容器组件移出</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.RowSettings" xml:space="preserve">
+    <value>行设置</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.SplitMainInterface" xml:space="preserve">
+    <value>分体主界面</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Header.WrapItInANewContainer" xml:space="preserve">
+    <value>包裹到新容器</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Message.NewFeatureYouCanNowUseEditMode" xml:space="preserve">
+    <value>新功能：现在可以使用⌈编辑模式⌋更加直观地编辑主界面上的组件！</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Text.Appearance" xml:space="preserve">
+    <value>外观</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Text.ChildComponentsOfThisComponent" xml:space="preserve">
+    <value>此组件的子组件</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Text.Edit" xml:space="preserve">
+    <value>编辑…</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Text.EditRuleSet" xml:space="preserve">
+    <value>编辑规则集…</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Text.Font" xml:space="preserve">
+    <value>字体</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Text.TheFollowingComponentsWillBeDisplayedOnThe" xml:space="preserve">
+    <value>以下组件将显示在主界面上，从组件库拖动组件以添加组件。</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.ToolTip.Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.ToolTip.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.ToolTip.EditRuleSet" xml:space="preserve">
+    <value>编辑规则集…</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.ToolTip.InsertARowBelow" xml:space="preserve">
+    <value>在下方插入一行</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.ToolTip.MoreOptions" xml:space="preserve">
+    <value>更多选项…</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.ToolTip.New" xml:space="preserve">
+    <value>新建…</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.ToolTip.OpenConfigurationFolder" xml:space="preserve">
+    <value>打开配置文件夹…</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.ToolTip.Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.ToolTip.ReturnToPreviousLevel" xml:space="preserve">
+    <value>返回上一层级</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.ToolTip.ThisRowCanDisplayReminders" xml:space="preserve">
+    <value>此行可以显示提醒</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.ToolTip.ThisRowIsTheMainRow" xml:space="preserve">
+    <value>此行是主要行</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.ToolTip.ViewSubcomponents" xml:space="preserve">
+    <value>查看子组件</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Label.ConfigurationProfile" xml:space="preserve">
+    <value>配置方案</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Label.ComponentName" xml:space="preserve">
+    <value>组件名</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Title.CreateComponentProfile" xml:space="preserve">
+    <value>创建组件配置</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Message.CreatedMainInterfaceRowAbove" xml:space="preserve"><value>已向上创建新主界面行。</value></data>
+  <data name="SettingPages.ComponentsSettingsPage.Message.CreatedMainInterfaceRowBelow" xml:space="preserve"><value>已向下创建新主界面行。</value></data>
+  <data name="SettingPages.ComponentsSettingsPage.Message.CannotMoveContainerIntoItself" xml:space="preserve"><value>不能将容器组件移动到自身（或其子级）的子组件中。</value></data>
+</root>

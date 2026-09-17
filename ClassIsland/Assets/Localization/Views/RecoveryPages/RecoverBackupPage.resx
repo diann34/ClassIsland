@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="RecoveryPages.RecoverBackupPage.Content.FullRestoreFullyRestoreToTheSelectedBackup" xml:space="preserve">
+    <value>完整恢复：完整恢复到选定备份，不保留新添加的文件</value>
+  </data>
+  <data name="RecoveryPages.RecoverBackupPage.Content.IncrementalRestoreReplaceExistingFilesInTheBackup" xml:space="preserve">
+    <value>增量恢复：替换备份中已有的文件，保留新添加的文件</value>
+  </data>
+  <data name="RecoveryPages.RecoverBackupPage.Text.RestoreToTheSelectedBackup" xml:space="preserve">
+    <value>恢复到选定备份</value>
+  </data>
+  <data name="RecoveryPages.RecoverBackupPage.Text.SelectTheBackupToRestore" xml:space="preserve">
+    <value>选择要恢复的备份</value>
+  </data>
+  <data name="RecoveryPages.RecoverBackupPage.ToolTip.Return" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Views.RecoveryPages.RecoverBackupPage.Message.RestoreBackupFailed" xml:space="preserve">
+    <value>无法恢复备份</value>
+  </data>
+  <data name="Views.RecoveryPages.RecoverBackupPage.Title.RestoreBackup" xml:space="preserve">
+    <value>恢复备份</value>
+  </data>
+  <data name="Views.RecoveryPages.RecoverBackupPage.Content.ConfirmRestoreBackup" xml:space="preserve">
+    <value>您确定要把应用配置恢复到备份 {0} 的状态吗？此操作无法撤销。</value>
+  </data>
+</root>

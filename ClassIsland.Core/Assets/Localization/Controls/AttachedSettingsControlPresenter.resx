@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Header.Inherit" xml:space="preserve">
+    <value>继承</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Header.Overwritten" xml:space="preserve">
+    <value>被覆盖</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Text.TheSettingsHereMayOverwriteTheSettingsOf" xml:space="preserve">
+    <value>此处的设置可能会覆盖以下节点的设置。</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Text.TheSettingsOfTheFollowingNodesMayOverwrite" xml:space="preserve">
+    <value>以下节点的设置可能会覆盖此处的设置。</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.ToolTip.AdditionalSettingsHelp" xml:space="preserve">
+    <value>附加设置帮助…</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.ToolTip.Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.ToolTip.ViewTheInheritanceOfThisSetting" xml:space="preserve">
+    <value>查看此设置的继承情况…</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.ToolTip.WhetherToEnableSpecificSettingsHere" xml:space="preserve">
+    <value>是否在此处启用特定的设置</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Message.NodeNotUsedByAnyTimetable" xml:space="preserve">
+    <value>当前节点未被任何一个课表使用，无法给出分析结果。</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Dependency.Lesson" xml:space="preserve">
+    <value>课表 {0}，第{1}节</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Dependency.ClassPlan" xml:space="preserve">
+    <value>课表 {0}</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Dependency.TimePoint" xml:space="preserve">
+    <value>时间表 {0}，{1:t}-{2:t}</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Dependency.Subject" xml:space="preserve">
+    <value>科目 {0}</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Dependency.TimeLayout" xml:space="preserve">
+    <value>时间表 {0}</value>
+  </data>
+</root>

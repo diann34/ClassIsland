@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="TutorialScriptEditWindow.Content.EnableScript" xml:space="preserve">
+    <value>启用脚本</value>
+  </data>
+  <data name="TutorialScriptEditWindow.Header.EditTutorialScript" xml:space="preserve">
+    <value>编辑教程脚本</value>
+  </data>
+  <data name="TutorialScriptEditWindow.Text.LuaTutorialScript" xml:space="preserve">
+    <value>Lua 教程脚本</value>
+  </data>
+</root>

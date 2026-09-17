@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Content.BreakTime" xml:space="preserve">
+    <value>課間休息</value>
+  </data>
+  <data name="Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Content.InClass" xml:space="preserve">
+    <value>上課</value>
+  </data>
+  <data name="Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Content.SchoolDismissal" xml:space="preserve">
+    <value>放學</value>
+  </data>
+  <data name="Controls.TriggerSettingsControls.TrayMenuTriggerSettingsControl.Content.Restore" xml:space="preserve">
+    <value>恢復</value>
+  </data>
+  <data name="Controls.TriggerSettingsControls.TrayMenuTriggerSettingsControl.Watermark.MenuDisplayName" xml:space="preserve">
+    <value>（菜單顯示名稱）</value>
+  </data>
+  <data name="Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Prefix.Before" xml:space="preserve">
+    <value>之前</value>
+  </data>
+  <data name="Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Suffix.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+</root>

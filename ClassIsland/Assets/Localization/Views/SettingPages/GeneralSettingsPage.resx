@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.GeneralSettingsPage.Content.ActionsPerformedWhenLeftClickingTouchClickingThe" xml:space="preserve">
+    <value>鼠标左键点击/触屏单击本应用托盘图标时进行的操作。无论此设置处于何种选项，鼠标右键点击/触屏长按托盘图标总是会打开主菜单。此选项可能因为桌面环境差异而无法工作。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.Disable" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.DisplaysDetailedStatusInformation" xml:space="preserve">
+    <value>显示详细状态信息</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.DuringClass" xml:space="preserve">
+    <value>上课时</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.ExitApplication" xml:space="preserve">
+    <value>退出应用</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.Fancy" xml:space="preserve">
+    <value>华丽</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.FollowTheSystem" xml:space="preserve">
+    <value>跟随系统</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.IgnoreNotRecommended" xml:space="preserve">
+    <value>忽略（不推荐）</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.LaunchText" xml:space="preserve">
+    <value>启动文字</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.MaximumMultiWeekRotationCycle" xml:space="preserve">
+    <value>最大多周轮换周数</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.PreviewTheStartupInterface" xml:space="preserve">
+    <value>预览启动界面</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.ShowCrashReport" xml:space="preserve">
+    <value>显示崩溃报告</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.ShowNotifications" xml:space="preserve">
+    <value>显示通知</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.SilentRestartApplication" xml:space="preserve">
+    <value>静默重启应用</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.Standard" xml:space="preserve">
+    <value>标准</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.StartupIcon" xml:space="preserve">
+    <value>启动图标</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.TheCustomLaunchInterfaceFeatureHasBeenDisabled" xml:space="preserve">
+    <value>自定义启动界面功能已被您所在的组织禁用。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.WhenTheForegroundIsAFullScreenWindow" xml:space="preserve">
+    <value>前台是全屏窗口时</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Content.WhenTheForegroundIsMaximizedWindow" xml:space="preserve">
+    <value>前台是最大化窗口时</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Default.LeftClickTouchClickTheTrayIconIn" xml:space="preserve">
+    <value>鼠标左键点击/触屏单击本应用托盘图标时进行的操作。无论此设置处于何种选项，鼠标右键点击/触屏长按托盘图标总是会打开主菜单。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Description.AfterActivationTheAccuracyOfTheMainInterface" xml:space="preserve">
+    <value>启用后将降低主界面进度条精度，降低主界面更新频率，以减少应用的性能占用。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Description.AllowsThirdPartyApplicationsOrWebPagesTo" xml:space="preserve">
+    <value>允许第三方应用或网页通过 Url 协议 classisland:// 调用本应用的部分功能，详见帮助文档。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Description.ByDefaultClassIslandEnsuresThatAnimationPlaybackComplete" xml:space="preserve">
+    <value>默认情况下 ClassIsland 在进行阻塞 UI 线程的操作时，会确保动画播放完成。启用此选项后将不会等待动画播放完成，可以一定程度上地提升加载速度。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Description.ChooseTheLanguageUsedByTheClassIslandInterface" xml:space="preserve">
+    <value>选择 ClassIsland 界面使用的语言。更改将在重启应用后生效。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Description.ControlTheAnimationLevelOfTheAppInterface" xml:space="preserve">
+    <value>控制应用界面的动画级别，禁用动画选项不适用于应用主界面和部分控件。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Description.DisplaysTheLoadingInterfaceAtStartupNoteIf" xml:space="preserve">
+    <value>启动时显示加载界面。注意：在不启用【禁用动画等待】的情况下，此功能会拖慢启动速度。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Description.NoteIfDisableAnimationWaitIsNotEnabled" xml:space="preserve">
+    <value>注意：在不启用【禁用动画等待】的情况下，此选项会拖慢启动速度。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Description.SetTheFirstDayOfTheSemesterWhich" xml:space="preserve">
+    <value>设置学期首日，该日期将作为多周轮换课表的计算起点和每周的第一天。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Description.TheAppWillRunAutomaticallyWhenYourSystem" xml:space="preserve">
+    <value>在您的系统启动时自动运行本应用。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Description.TheMainInterfaceWillBeHiddenInSelected" xml:space="preserve">
+    <value>将在以下选定的情况隐藏主界面，以防止遮挡屏幕影响授课。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Description.WhenEnabledIfClassIslandExperiencesAnUnexpectedCrash" xml:space="preserve">
+    <value>启用后，如果 ClassIsland 发生意外崩溃，将自动按照右侧选择的方法处理崩溃，以确保教学不受到影响。如果发生的是不可忽略的异常，应用将自动退出。您可以在日志记录中查看崩溃详情。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.AdvancedMode" xml:space="preserve">
+    <value>高级模式</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.AnimationLevel" xml:space="preserve">
+    <value>动画级别</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.BasicMode" xml:space="preserve">
+    <value>基础模式</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.ClickTrayIconBehavior" xml:space="preserve">
+    <value>点击托盘图标行为</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.DisableAnimationWait" xml:space="preserve">
+    <value>禁用动画等待</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.DisplayLanguage" xml:space="preserve">
+    <value>显示语言</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.HideWindow" xml:space="preserve">
+    <value>隐藏窗口</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.ReduceMainInterfaceProgressBarAccuracy" xml:space="preserve">
+    <value>降低主界面进度条精度</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.RegisterUrlProtocol" xml:space="preserve">
+    <value>注册 Url 协议</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.SemesterStartTime" xml:space="preserve">
+    <value>学期开始时间</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.ShowStartupLoadingScreen" xml:space="preserve">
+    <value>显示启动加载界面</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.StartOnBoot" xml:space="preserve">
+    <value>开机自启</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Header.TeachingSafeMode" xml:space="preserve">
+    <value>教学安全模式</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Message.ClassIslandIsOpenSourceAndFreeSoftwareThe" xml:space="preserve">
+    <value>ClassIsland 是开源免费的软件，官方没有提供任何形式的付费支持服务，源代码仓库地址在 https://github.com/ClassIsland/ClassIsland/。如果您通过有偿协助等付费方式取得本应用，在遇到问题时请在与卖家约定的服务框架下，优先向卖家求助。如果卖家没有提供您预期的服务，请退款或通过其它形式积极维护您的合法权益。</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Text.Behavior" xml:space="preserve">
+    <value>行为</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Text.EditRuleSet" xml:space="preserve">
+    <value>编辑规则集…</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Text.Interface" xml:space="preserve">
+    <value>界面</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Text.Language" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Text.OpenCourseChangeWindow" xml:space="preserve">
+    <value>打开换课窗口</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Text.OpenMainMenu" xml:space="preserve">
+    <value>打开主菜单</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Text.OpenProfileEditWindow" xml:space="preserve">
+    <value>打开档案编辑窗口</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Text.OpenSettingsWindow" xml:space="preserve">
+    <value>打开设置窗口</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Text.ShowHideMainInterface" xml:space="preserve">
+    <value>显示/隐藏主界面</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.ToolTip.AdjustMultiWeekRotationOffset" xml:space="preserve">
+    <value>调整多周轮换偏移…</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Watermark.DefaultIcon" xml:space="preserve">
+    <value>（默认图标）</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Watermark.Starting" xml:space="preserve">
+    <value>正在启动…</value>
+  </data>
+  <data name="SettingPages.GeneralSettingsPage.Suffix.Weeks" xml:space="preserve">
+    <value>周</value>
+  </data>
+</root>

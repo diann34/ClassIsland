@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.TimeLine.TimeLineListControl.ToolTip.DeleteTimePoint" xml:space="preserve">
+    <value>删除时间点</value>
+  </data>
+  <data name="Controls.TimeLine.TimeLineListControl.ToolTip.EditTimePoint" xml:space="preserve">
+    <value>编辑时间点…</value>
+  </data>
+  <data name="Controls.TimeLine.TimeLineListItemControl.ToolTip.Duration" xml:space="preserve">
+    <value>持续时间</value>
+  </data>
+  <data name="Controls.TimeLine.TimeLineListItemControl.ToolTip.TimePeriod" xml:space="preserve">
+    <value>时间段</value>
+  </data>
+  <data name="Controls.TimeLine.TimeLineListItemExpandingAdornerControl.Text.Added" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Controls.TimeLine.TimeLineListItemExpandingAdornerControl.Text.Break" xml:space="preserve">
+    <value>课间</value>
+  </data>
+  <data name="Controls.TimeLine.TimeLineListItemExpandingAdornerControl.Text.InClass" xml:space="preserve">
+    <value>上课</value>
+  </data>
+  <data name="Controls.TimeLine.TimeLineListItemExpandingAdornerControl.ToolTip.AddBreakTimePoint" xml:space="preserve">
+    <value>添加上课间休息时间点。</value>
+  </data>
+  <data name="Controls.TimeLine.TimeLineListItemExpandingAdornerControl.ToolTip.AddClassStartTimePoint" xml:space="preserve">
+    <value>添加上课时间点。</value>
+  </data>
+  <data name="Controls.TimeLine.TimeLineListItemExpandingAdornerControl.ToolTip.Hide" xml:space="preserve">
+    <value>隐藏</value>
+  </data>
+</root>

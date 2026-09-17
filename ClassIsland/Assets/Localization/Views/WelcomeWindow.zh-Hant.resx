@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Views.WelcomeWindow.Button.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Views.WelcomeWindow.Button.Exit" xml:space="preserve">
+    <value>結束</value>
+  </data>
+  <data name="Views.WelcomeWindow.Content.ExitBeforeSetupCompleted" xml:space="preserve">
+    <value>您需要完成設定才能開始使用本應用程式。關閉此視窗將直接結束應用程式。</value>
+  </data>
+  <data name="Views.WelcomeWindow.Title.ExitClassIsland" xml:space="preserve">
+    <value>結束 ClassIsland</value>
+  </data>
+</root>

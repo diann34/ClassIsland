@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Core.Controls.Ruleset.RulesetControl.Content.None" xml:space="preserve">
+    <value>非</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.AddGroup" xml:space="preserve">
+    <value>添加組</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.Rule" xml:space="preserve">
+    <value>規則</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.RuleSet" xml:space="preserve">
+    <value>規則集</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.WhenAllRuleGroupsAreMet" xml:space="preserve">
+    <value>規則組全部滿足時</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.WhenAllRulesAreMet" xml:space="preserve">
+    <value>規則全部滿足時</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.WhenAnyRuleGroupIsMet" xml:space="preserve">
+    <value>規則組任一滿足時</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.Text.WhenAnyRuleIsMet" xml:space="preserve">
+    <value>規則任一滿足時</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.Copy" xml:space="preserve">
+    <value>複製</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.Delete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.EnableRuleSet" xml:space="preserve">
+    <value>啓用規則集</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.Invert" xml:space="preserve">
+    <value>反轉</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetStringMatchingSettingsControl.Content.RegularExpression" xml:space="preserve">
+    <value>正則</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.NotSatisfied" xml:space="preserve">
+    <value>不符合</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.Satisfied" xml:space="preserve">
+    <value>已符合</value>
+  </data>
+  <data name="Core.Controls.Ruleset.RulesetControl.ToolTip.Unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+</root>

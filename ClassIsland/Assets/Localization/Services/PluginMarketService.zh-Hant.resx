@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Services.PluginMarketService.Button.RestartNow" xml:space="preserve">
+    <value>立即重新啟動</value>
+  </data>
+  <data name="Services.PluginMarketService.Message.PluginUpdateCompleted" xml:space="preserve">
+    <value>已將 {0} 個外掛程式升級至最新版本，將在下次啟動應用程式時生效。</value>
+  </data>
+  <data name="Services.PluginMarketService.Message.PluginUpdateFailed" xml:space="preserve">
+    <value>無法更新外掛程式。請檢查網路設定，或更換外掛程式映像來源後再試一次。</value>
+  </data>
+  <data name="Services.PluginMarketService.Message.PluginUpdatePartiallyCompleted" xml:space="preserve">
+    <value>已將 {0} 個外掛程式升級至最新版本，{1} 個外掛程式升級失敗。將在下次啟動應用程式時生效。</value>
+  </data>
+  <data name="Services.PluginMarketService.Message.PluginUpdatesAvailable" xml:space="preserve">
+    <value>有 {0} 個外掛程式有新版本可用，按一下以檢視詳細資訊。</value>
+  </data>
+  <data name="Services.PluginMarketService.Title.PluginUpdateCompleted" xml:space="preserve">
+    <value>外掛程式更新完成</value>
+  </data>
+  <data name="Services.PluginMarketService.Title.PluginUpdateFailed" xml:space="preserve">
+    <value>外掛程式更新失敗</value>
+  </data>
+  <data name="Services.PluginMarketService.Title.PluginUpdatesAvailable" xml:space="preserve">
+    <value>有可用的外掛程式更新</value>
+  </data>
+</root>

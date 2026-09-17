@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingsWindowNew.Content.ActuallyItUsuallyLoadsBeforeYouEvenFinish" xml:space="preserve">
+    <value>（其實一般你還沒看完就加載好了）</value>
+  </data>
+  <data name="SettingsWindowNew.Content.ShowEchoHoleWhileLoadingTheSettingsPage" xml:space="preserve">
+    <value>在加載設置頁面時顯示回聲洞</value>
+  </data>
+  <data name="SettingsWindowNew.Header.ApplicationSettings" xml:space="preserve">
+    <value>應用設置</value>
+  </data>
+  <data name="SettingsWindowNew.Header.CentralControlOptions" xml:space="preserve">
+    <value>集控選項…</value>
+  </data>
+  <data name="SettingsWindowNew.Header.CreateAQuickCourseChangeIcon" xml:space="preserve">
+    <value>創建快捷換課圖標</value>
+  </data>
+  <data name="SettingsWindowNew.Header.CreateAShortcut" xml:space="preserve">
+    <value>創建快捷方式....</value>
+  </data>
+  <data name="SettingsWindowNew.Header.CreateAShortcutForTheStartMenu" xml:space="preserve">
+    <value>創建開始菜單快捷方式</value>
+  </data>
+  <data name="SettingsWindowNew.Header.CreateDesktopShortcuts" xml:space="preserve">
+    <value>創建桌面快捷方式</value>
+  </data>
+  <data name="SettingsWindowNew.Header.DataMigration" xml:space="preserve">
+    <value>數據遷移…</value>
+  </data>
+  <data name="SettingsWindowNew.Header.DebugWindowRules" xml:space="preserve">
+    <value>調試窗口規則…</value>
+  </data>
+  <data name="SettingsWindowNew.Header.ExitManagement" xml:space="preserve">
+    <value>退出管理…</value>
+  </data>
+  <data name="SettingsWindowNew.Header.ExperimentalFunction" xml:space="preserve">
+    <value>實驗性功能…</value>
+  </data>
+  <data name="SettingsWindowNew.Header.ExportDiagnosticData" xml:space="preserve">
+    <value>導出診斷數據</value>
+  </data>
+  <data name="SettingsWindowNew.Header.JoinManagement" xml:space="preserve">
+    <value>加入管理…</value>
+  </data>
+  <data name="SettingsWindowNew.Header.Log" xml:space="preserve">
+    <value>日誌…</value>
+  </data>
+  <data name="SettingsWindowNew.Header.OpenTheAppDirectory" xml:space="preserve">
+    <value>打開應用目錄…</value>
+  </data>
+  <data name="SettingsWindowNew.Header.OpenTheDataDirectory" xml:space="preserve">
+    <value>打開數據目錄…</value>
+  </data>
+  <data name="SettingsWindowNew.Header.OpenTheLogDirectory" xml:space="preserve">
+    <value>打開日誌目錄…</value>
+  </data>
+  <data name="SettingsWindowNew.Header.RestartToRecoveryMode" xml:space="preserve">
+    <value>重啓到恢復模式</value>
+  </data>
+  <data name="SettingsWindowNew.Text.ExperimentalFeatures" xml:space="preserve">
+    <value>實驗性功能</value>
+  </data>
+  <data name="SettingsWindowNew.Text.FeaturesUnderDevelopmentTestingThatMayBeUnstable" xml:space="preserve">
+    <value>正在開發/測試的不穩定功能，可能會出現Bug等問題，請謹慎使用。</value>
+  </data>
+  <data name="SettingsWindowNew.Text.RequiresRestart" xml:space="preserve">
+    <value>需要重啓</value>
+  </data>
+  <data name="SettingsWindowNew.ToolTip.AppVersion" xml:space="preserve">
+    <value>應用版本</value>
+  </data>
+  <data name="SettingsWindowNew.ToolTip.MoreOptions" xml:space="preserve">
+    <value>更多選項…</value>
+  </data>
+  <data name="SettingsWindowNew.ToolTip.Return" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="SettingsWindowNew.ToolTip.SomeSettingsRequireARestartToTakeEffect" xml:space="preserve">
+    <value>部分設置需要重啓才能生效，點擊以重啓應用。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Button.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Button.Restart" xml:space="preserve">
+    <value>重新啟動</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Button.Continue" xml:space="preserve">
+    <value>繼續</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Button.Enable" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Content.EnableUrlProtocolForShortcut" xml:space="preserve">
+    <value>快速換課捷徑需要啟用【註冊 URL 通訊協定】選項才能運作。您要啟用嗎？</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Content.ExportDiagnosticDataWarning" xml:space="preserve">
+    <value>您正在匯出應用程式的診斷資料。匯出的診斷資料將包含應用程式 30 天內產生的記錄、系統及環境資訊、應用程式設定、目前載入的設定檔、使用的外掛程式（如有）和集中管理設定（如有），可能包含敏感資訊，請在匯出後仔細檢查。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Header.CreateQuickCourseChangeShortcut" xml:space="preserve">
+    <value>建立快速換課捷徑</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Header.ExportDiagnosticData" xml:space="preserve">
+    <value>匯出診斷資訊</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.DiagnosticDataExportedTo" xml:space="preserve">
+    <value>已將診斷資訊匯出至 {0}。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.ExitManagementFailed" xml:space="preserve">
+    <value>無法退出管理：{0}</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.ExportingDiagnosticData" xml:space="preserve">
+    <value>正在匯出診斷資訊…</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.QuickCourseChangeShortcutCreatedAt" xml:space="preserve">
+    <value>已在 {0} 建立快速換課圖示。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Title.ExitManagementFailed" xml:space="preserve">
+    <value>無法退出管理</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Title.ExportDiagnosticData" xml:space="preserve">
+    <value>匯出診斷資料</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Content.RestartRequired" xml:space="preserve">
+    <value>部分設定需要重新啟動才能套用變更。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.CreateDesktopShortcutFailed" xml:space="preserve">
+    <value>無法建立桌面捷徑</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.CreateDesktopShortcutSucceeded" xml:space="preserve">
+    <value>已建立桌面捷徑。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.CreateStartMenuShortcutFailed" xml:space="preserve">
+    <value>無法建立開始功能表捷徑</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.CreateStartMenuShortcutSucceeded" xml:space="preserve">
+    <value>已建立開始功能表捷徑。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Title.RestartRequired" xml:space="preserve">
+    <value>需要重新啟動</value>
+  </data>
+  <data name="Views.SettingsWindowNew.FileType.Archive" xml:space="preserve"><value>壓縮檔</value></data>
+  <data name="Views.SettingsWindowNew.FileType.Shortcut" xml:space="preserve"><value>捷徑</value></data>
+  <data name="Views.SettingsWindowNew.Message.ExportDiagnosticInformationFailed" xml:space="preserve"><value>無法匯出診斷資訊</value></data>
+  <data name="Views.SettingsWindowNew.Message.CreateQuickCourseChangeShortcutFailed" xml:space="preserve"><value>無法建立快速換課圖示</value></data>
+</root>

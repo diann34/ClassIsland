@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.PrivacySettingsPage.Content.ClassIslandPrivacyPolicy" xml:space="preserve">
+    <value>《ClassIsland 隐私政策》</value>
+  </data>
+  <data name="SettingPages.PrivacySettingsPage.Description.AfterActivationTheAppWillCollectUsageData" xml:space="preserve">
+    <value>启用后，应用将收集应用的使用情况与错误信息并上传，以改进此应用。上传的信息不包含您的个人信息。为了确保环境块完全刷新，可能需要重启计算机才能使本设置完全生效。</value>
+  </data>
+  <data name="SettingPages.PrivacySettingsPage.Header.EnableAnonymousUsageAnalysis" xml:space="preserve">
+    <value>启用匿名使用情况分析</value>
+  </data>
+  <data name="SettingPages.PrivacySettingsPage.Text.AnonymousUsageAnalysis" xml:space="preserve">
+    <value>匿名使用情况分析</value>
+  </data>
+  <data name="SettingPages.PrivacySettingsPage.Text.ForMoreInformationPleaseSee" xml:space="preserve">
+    <value>更多信息请见</value>
+  </data>
+  <data name="SettingPages.PrivacySettingsPage.Text.ThisAppWillUseTheSentrysdkToCollect" xml:space="preserve">
+    <value>本应用将通过 SentrySDK 来收集本应用中的使用情况与错误信息，以改进本应用。您的信息会匿名上传，不会包含您的个人信息。您可以自行启用或禁用此功能。</value>
+  </data>
+</root>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Services.AppUpdating.UpdateService.Message.NewVersionAvailable" xml:space="preserve">
+    <value>{0} -&gt; {1}&#xA;点击以查看详细信息。</value>
+  </data>
+  <data name="Services.AppUpdating.UpdateService.Message.UpdatedToVersion" xml:space="preserve">
+    <value>应用已更新到 {0}，点击以查看详细信息。</value>
+  </data>
+  <data name="Services.AppUpdating.UpdateService.Title.NewVersionAvailable" xml:space="preserve">
+    <value>发现新版本</value>
+  </data>
+  <data name="Services.AppUpdating.UpdateService.Title.UpdateSucceeded" xml:space="preserve">
+    <value>更新成功</value>
+  </data>
+</root>

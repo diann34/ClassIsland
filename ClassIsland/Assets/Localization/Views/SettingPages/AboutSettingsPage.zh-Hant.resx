@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.AboutSettingsPage.Content.Contributors" xml:space="preserve">
+    <value>貢獻人員</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.DevelopedWithInspirationFrom" xml:space="preserve">
+    <value>的啓發而開發。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.FeatureVote" xml:space="preserve">
+    <value>功能投票</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.FrequentlyUsedLinks" xml:space="preserve">
+    <value>常用鏈接</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.IntelligentEducationAlliance" xml:space="preserve">
+    <value>智教聯盟</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.IssueFeedbackFeatureSuggestions" xml:space="preserve">
+    <value>問題反饋/功能建議</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.ProvidesServerResources" xml:space="preserve">
+    <value>提供服務器資源，</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.ProvidesTTSTelemetryAndOtherServiceResources" xml:space="preserve">
+    <value>提供 TTS、遙測等服務資源。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.SomeImageResourcesAssetsHoyostickersComeFromMihoyo" xml:space="preserve">
+    <value>部分圖像資源（/Assets/HoYoStickers/*）來自米遊社和 Bilibili 裝扮表情包，版權歸 miHoYo 所有。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.Thanks" xml:space="preserve">
+    <value>感謝</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.ThanksToOtherThirdPartyLibrariesAndContributing" xml:space="preserve">
+    <value>感謝其他使用的第三方庫和貢獻成員，詳見貢獻名單和第三方庫。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.ThanksToTheStudentsWhoAssistedInTesting" xml:space="preserve">
+    <value>感謝協助本應用測試的同學。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.TheAppFontUsesHuaweiSHarmonyosSans" xml:space="preserve">
+    <value>應用字體使用了華爲出品的 HarmonyOS Sans。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.TheInterfaceThemeAndSomeControlsUseThe" xml:space="preserve">
+    <value>界面主題和部分控件使用了 FluentAvalonia 框架。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.ThirdPartyLibraries" xml:space="preserve">
+    <value>第三方庫</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.ThisProjectIsSupportedBy" xml:space="preserve">
+    <value>本項目受到</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.ViewDiagnosticInformation" xml:space="preserve">
+    <value>查看診斷信息</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.WeatherDataIsSourcedFromXiaomiWeather" xml:space="preserve">
+    <value>天氣數據來源於小米天氣。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.Website" xml:space="preserve">
+    <value>網站…</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Content.WuEnze" xml:space="preserve">
+    <value>吳恩澤</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Description.ThisProjectIsLicensedUnderTheGnuGeneral" xml:space="preserve">
+    <value>本項目基於 GNU General Public License v3.0 獲得許可。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Header.Acknowledgements" xml:space="preserve">
+    <value>鳴謝</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Header.EchoCave" xml:space="preserve">
+    <value>回聲洞</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Header.EncounteringIssues" xml:space="preserve">
+    <value>遇到問題？</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Text.AboutClassIsland" xml:space="preserve">
+    <value>關於 ClassIsland</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Text.Contributors" xml:space="preserve">
+    <value>貢獻人員</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Text.HelpDocumentation" xml:space="preserve">
+    <value>幫助文檔</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Text.JoinTheCommunity" xml:space="preserve">
+    <value>加入社區</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Text.OpenSourceLicense" xml:space="preserve">
+    <value>開放源代碼許可</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Text.PrivacyPolicy" xml:space="preserve">
+    <value>隱私政策</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Text.ProjectHomepage" xml:space="preserve">
+    <value>項目主頁</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Text.Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Text.ThanksToTheFollowingStudentsForTheirContributions" xml:space="preserve">
+    <value>感謝以下同學爲本項目做出的貢獻！</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Text.ThirdPartyLibraries" xml:space="preserve">
+    <value>第三方庫</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Text.ThisAppIsDedicatedToTheClassmatesWho" xml:space="preserve">
+    <value>謹以此應用，獻給現在或曾經陪伴着我的同學們。願時光流轉，各位能與所念之人重逢。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Format.License" xml:space="preserve">
+    <value>授權條款：{0}</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Title.DiagnosticInformation" xml:space="preserve">
+    <value>診斷資訊</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Message.CopyDiagnosticInformationFailed" xml:space="preserve">
+    <value>複製失敗，請全選診斷資訊文字後手動複製。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Message.CopySucceeded" xml:space="preserve">
+    <value>複製成功！</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Title.LoadContributorsFailed" xml:space="preserve">
+    <value>無法取得貢獻者名單</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Title.PrivacyPolicy" xml:space="preserve">
+    <value>ClassIsland 隱私權政策</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Title.ViewImage" xml:space="preserve">
+    <value>檢視圖片</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Button.ViewInBrowser" xml:space="preserve">
+    <value>在瀏覽器中檢視</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Text.ClickToViewCommunityQuotes" xml:space="preserve"><value>點擊此處即可查看 ClassIsland 使用者社群的趣味發言</value></data>
+</root>

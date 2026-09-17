@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="ClassChangingWindow.Content.AdvancedCourseSwap" xml:space="preserve">
+    <value>高級換課...</value>
+  </data>
+  <data name="ClassChangingWindow.Content.PermanentCourseSwap" xml:space="preserve">
+    <value>永久換課</value>
+  </data>
+  <data name="ClassChangingWindow.Header.SwapCourse" xml:space="preserve">
+    <value>換課</value>
+  </data>
+  <data name="ClassChangingWindow.Text.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ClassChangingWindow.Text.ChooseTheCourseToSwap" xml:space="preserve">
+    <value>選擇要調換的課程。</value>
+  </data>
+  <data name="ClassChangingWindow.Text.ConfirmCourseSwap" xml:space="preserve">
+    <value>確認換課</value>
+  </data>
+  <data name="ClassChangingWindow.Text.Exchange" xml:space="preserve">
+    <value>交換</value>
+  </data>
+  <data name="ClassChangingWindow.Text.NextStep" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="ClassChangingWindow.Text.PreviousStep" xml:space="preserve">
+    <value>上一步</value>
+  </data>
+  <data name="ClassChangingWindow.Text.Replace" xml:space="preserve">
+    <value>替換</value>
+  </data>
+  <data name="ClassChangingWindow.Text.SelectTheCourseToSwapWithTheCourse" xml:space="preserve">
+    <value>選擇要與剛剛選擇的課程調換的課程。點擊複選框可以切換調換模式。</value>
+  </data>
+  <data name="ClassChangingWindow.Text.SwapCourse" xml:space="preserve">
+    <value>換課</value>
+  </data>
+  <data name="ClassChangingWindow.ToolTip.CancelCourseSwapOperation" xml:space="preserve">
+    <value>取消換課操作。</value>
+  </data>
+  <data name="ClassChangingWindow.ToolTip.ConfirmAndApplyTheCourseSwap" xml:space="preserve">
+    <value>確認並應用換課。</value>
+  </data>
+  <data name="ClassChangingWindow.ToolTip.GoBackToThePreviousStep" xml:space="preserve">
+    <value>返回上一步。</value>
+  </data>
+  <data name="ClassChangingWindow.ToolTip.IfSelectedTemporaryTimetableLayersWillNotBe" xml:space="preserve">
+    <value>如果選擇，將不會在換課時創建臨時層課表，而會直接應用到原課表上。</value>
+  </data>
+  <data name="ClassChangingWindow.ToolTip.OpenTheReschedulingInterfaceSupportingCrossDaySwap" xml:space="preserve">
+    <value>打開調課界面，支持跨天的換課選項和更復雜的調課方案。</value>
+  </data>
+  <data name="ClassChangingWindow.ToolTip.ProceedToTheNextStep" xml:space="preserve">
+    <value>進入下一步。</value>
+  </data>
+  <data name="ClassChangingWindow.ToolTip.TimetableForTheCoursesToBeSwapped" xml:space="preserve">
+    <value>要換課的課表</value>
+  </data>
+  <data name="ClassChangingWindow.Label.ChangeCourseTo" xml:space="preserve">
+    <value>換課成…</value>
+  </data>
+  <data name="Views.ClassChangingWindow.Content.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Views.ClassChangingWindow.Content.Continue" xml:space="preserve">
+    <value>繼續</value>
+  </data>
+  <data name="Views.ClassChangingWindow.Content.OverwriteCurrentTemporaryLayer" xml:space="preserve">
+    <value>目前已有臨時層課表，若繼續換課，該臨時層將被覆寫。是否繼續？</value>
+  </data>
+  <data name="Views.ClassChangingWindow.Message.InvalidSelectedCourse" xml:space="preserve">
+    <value>選取的課程無效。</value>
+  </data>
+  <data name="Views.ClassChangingWindow.Title.OverwriteCurrentTemporaryLayer" xml:space="preserve">
+    <value>覆寫目前的臨時層</value>
+  </data>
+</root>

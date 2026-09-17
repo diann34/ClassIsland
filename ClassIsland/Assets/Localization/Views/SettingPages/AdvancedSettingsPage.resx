@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.AdvancedSettingsPage.Content.Default" xml:space="preserve">
+    <value>默认</value>
+  </data>
+  <data name="SettingPages.AdvancedSettingsPage.Content.SoftwareNotRecommended" xml:space="preserve">
+    <value>软件（不推荐）</value>
+  </data>
+  <data name="SettingPages.AdvancedSettingsPage.Description.AfterEnabledTheAppWindowWillUseThe" xml:space="preserve">
+    <value>启用后应用窗口将使用系统提供的标题栏而非应用自定义的标题栏。一般情况下，系统标题栏具有更好的兼容性。</value>
+  </data>
+  <data name="SettingPages.AdvancedSettingsPage.Description.OnceEnabledTheAppIgnoresScalingSettingsProvided" xml:space="preserve">
+    <value>启用后应用将忽略 QT_SCREEN_SCALE_FACTORS、QT_SCALE_FACTORS 等环境变量提供的缩放设置，而转为自行通过显示信息等渠道获取缩放信息。可能有助于解决部分平台（如 UOS）下的缩放行为异常问题。</value>
+  </data>
+  <data name="SettingPages.AdvancedSettingsPage.Description.WhenEnabledClassIslandWillAutomaticallyDisablePluginsTha" xml:space="preserve">
+    <value>启用后，ClassIsland 将自动禁用导致应用崩溃的插件，以避免异常插件进一步影响后续使用。</value>
+  </data>
+  <data name="SettingPages.AdvancedSettingsPage.Description.WhenRenderingTheUITheRenderingModeSpecified" xml:space="preserve">
+    <value>渲染 UI 时将优先使用此处指定的渲染模式渲染。如果您遇到渲染问题，可尝试更改此选项，否则不要动这个选项。此选项仅在此设备生效。</value>
+  </data>
+  <data name="SettingPages.AdvancedSettingsPage.Header.AutomaticallyDisableAbnormalPlugins" xml:space="preserve">
+    <value>自动禁用异常插件</value>
+  </data>
+  <data name="SettingPages.AdvancedSettingsPage.Header.CompatibleWithScalingMode" xml:space="preserve">
+    <value>兼容缩放模式</value>
+  </data>
+  <data name="SettingPages.AdvancedSettingsPage.Header.RenderingMode" xml:space="preserve">
+    <value>渲染模式</value>
+  </data>
+  <data name="SettingPages.AdvancedSettingsPage.Header.UseTheSystemTitleBar" xml:space="preserve">
+    <value>使用系统标题栏</value>
+  </data>
+  <data name="SettingPages.AdvancedSettingsPage.Message.ModifyingTheSettingsOnThisPageCarriesRisks" xml:space="preserve">
+    <value>修改本页面的设置存在风险，请谨慎操作。</value>
+  </data>
+  <data name="SettingPages.AdvancedSettingsPage.Title.BeCareful" xml:space="preserve">
+    <value>小心！</value>
+  </data>
+</root>

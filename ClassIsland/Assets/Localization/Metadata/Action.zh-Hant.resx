@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Metadata.Action.RestartClassIsland" xml:space="preserve"><value>重新啟動 ClassIsland</value></data>
+  <data name="Metadata.Action.ShowNotification" xml:space="preserve"><value>顯示提醒</value></data>
+  <data name="Metadata.Action.WaitForDuration" xml:space="preserve"><value>等待時長</value></data>
+  <data name="Metadata.Action.ShowWeatherNotification" xml:space="preserve"><value>顯示天氣提醒</value></data>
+</root>

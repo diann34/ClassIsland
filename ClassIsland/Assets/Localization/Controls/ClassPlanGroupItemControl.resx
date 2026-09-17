@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.ClassPlanGroupItemControl.Header.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Controls.ClassPlanGroupItemControl.Header.Disband" xml:space="preserve">
+    <value>解散</value>
+  </data>
+  <data name="Controls.ClassPlanGroupItemControl.Header.EnableTemporarily" xml:space="preserve">
+    <value>临时启用</value>
+  </data>
+  <data name="Controls.ClassPlanGroupItemControl.Header.Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="Controls.ClassPlanGroupItemControl.Header.Rename" xml:space="preserve">
+    <value>重命名</value>
+  </data>
+  <data name="Controls.ClassPlanGroupItemControl.Text.AreYouSureYouWantToDeleteThis" xml:space="preserve">
+    <value>你确定要删除这个课表群吗？删除后，此课表群内的课表也将全部删除。这个操作无法撤销！</value>
+  </data>
+  <data name="Controls.ClassPlanGroupItemControl.Text.AreYouSureYouWantToDisbandThis" xml:space="preserve">
+    <value>你确定要解散这个课表群吗？解散后，课表群内的课表将被移动到默认课表群中。</value>
+  </data>
+  <data name="Controls.ClassPlanGroupItemControl.Text.IfYouJustWantToRemoveTheTimetable" xml:space="preserve">
+    <value>如果您只是想移除课表群而保留课表，请解散课表群。</value>
+  </data>
+  <data name="Controls.ClassPlanGroupItemControl.Dialog.DisbandGroup.Title" xml:space="preserve"><value>解散课表群</value></data>
+  <data name="Controls.ClassPlanGroupItemControl.Dialog.DeleteGroup.Title" xml:space="preserve"><value>删除课表群</value></data>
+  <data name="Controls.ClassPlanGroupItemControl.Button.Disband" xml:space="preserve"><value>解散</value></data>
+  <data name="Controls.ClassPlanGroupItemControl.Button.Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="Controls.ClassPlanGroupItemControl.Button.Delete" xml:space="preserve"><value>删除</value></data>
+</root>

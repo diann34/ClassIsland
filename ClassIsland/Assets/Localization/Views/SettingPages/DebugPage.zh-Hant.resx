@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.DebugPage.Content.CentralizedControlManagementInProgress" xml:space="preserve">
+    <value>正在集控管理</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.CrashTest" xml:space="preserve">
+    <value>崩潰測試</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.CrashTest3SecondDelay" xml:space="preserve">
+    <value>崩潰測試（延遲3秒）</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.CrashTestTask" xml:space="preserve">
+    <value>崩潰測試（Task）</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.CrashTestThrowToStackTop" xml:space="preserve">
+    <value>崩潰測試（扔到棧頂）</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.DebugMenu" xml:space="preserve">
+    <value>調試菜單</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.DumpScheduleRelationshipDiagram" xml:space="preserve">
+    <value>轉儲課表關係圖</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.MainWindowDebugInterface" xml:space="preserve">
+    <value>主窗口調試界面</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.OpenMarkdownDocument" xml:space="preserve">
+    <value>打開 Markdown 文檔</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.OverrideSettingsVersion" xml:space="preserve">
+    <value>覆蓋設置版本</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.Reset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.ShowAutomationUsageInstructions" xml:space="preserve">
+    <value>顯示自動化使用須知</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.ShowPluginUsageInstructions" xml:space="preserve">
+    <value>顯示插件使用須知</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.ShowTestNotifications" xml:space="preserve">
+    <value>顯示測試通知</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.StartMainTimer" xml:space="preserve">
+    <value>啓動主計時器</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.StopMainTimer" xml:space="preserve">
+    <value>停止主計時器</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.TestPositioning" xml:space="preserve">
+    <value>測試定位</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.TriggerClassEnd" xml:space="preserve">
+    <value>觸發下課</value>
+  </data>
+  <data name="SettingPages.DebugPage.Content.TriggerClassStart" xml:space="preserve">
+    <value>觸發上課</value>
+  </data>
+  <data name="SettingPages.DebugPage.Description.ContinuouslyAdjustTimeOffsetToControlTimeFlow" xml:space="preserve">
+    <value>持續調整時間偏移，以控制時間流速。</value>
+  </data>
+  <data name="SettingPages.DebugPage.Description.DonTPressUnlessYouHaveTheChance" xml:space="preserve">
+    <value>沒事別按。</value>
+  </data>
+  <data name="SettingPages.DebugPage.Header.ApplicationSettings" xml:space="preserve">
+    <value>應用設置</value>
+  </data>
+  <data name="SettingPages.DebugPage.Header.CourseServices" xml:space="preserve">
+    <value>課程服務</value>
+  </data>
+  <data name="SettingPages.DebugPage.Header.DangerousOperations" xml:space="preserve">
+    <value>危險操作</value>
+  </data>
+  <data name="SettingPages.DebugPage.Header.DeviationOfDebuggingTime" xml:space="preserve">
+    <value>調試時間偏移</value>
+  </data>
+  <data name="SettingPages.DebugPage.Header.EnableTheDebugMenu" xml:space="preserve">
+    <value>啓用調試菜單</value>
+  </data>
+  <data name="SettingPages.DebugPage.Header.FunctionalTesting" xml:space="preserve">
+    <value>功能測試</value>
+  </data>
+  <data name="SettingPages.DebugPage.Header.GarbageCollection" xml:space="preserve">
+    <value>垃圾回收</value>
+  </data>
+  <data name="SettingPages.DebugPage.Header.TimeFlow" xml:space="preserve">
+    <value>時間流速</value>
+  </data>
+  <data name="SettingPages.DebugPage.Message.ForDebuggingOnlyUnlessYouKnowWhatYou" xml:space="preserve">
+    <value>僅供調試，除非你能知道您在做什麼，請不要使用以下按鈕。</value>
+  </data>
+  <data name="SettingPages.DebugPage.ToolTip.ResetTheTimeFlowRate" xml:space="preserve">
+    <value>重置時間流速</value>
+  </data>
+</root>

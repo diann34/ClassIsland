@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.UpdateSettingsPage.Content.AutomaticallyCheckForUpdatesAndNotifyNotifications" xml:space="preserve">
+    <value>自动检查更新并通知</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Content.AutomaticallyChecksForUpdatesAndDownloads" xml:space="preserve">
+    <value>自动检查更新并下载</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Content.AutomaticallyChecksForUpdatesAndInstalls" xml:space="preserve">
+    <value>自动检查更新并安装</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Content.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Content.CheckDownloadStatus" xml:space="preserve">
+    <value>查看下载状态</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Content.CheckForUpdates" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Content.CheckTheChangelog" xml:space="preserve">
+    <value>查看更新日志</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Content.DownloadAndInstall" xml:space="preserve">
+    <value>下载并安装</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Content.InstallUpdates" xml:space="preserve">
+    <value>安装更新</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Content.MandatoryCheckForUpdates" xml:space="preserve">
+    <value>强制检查更新</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Content.NeverUpdatesAutomatically" xml:space="preserve">
+    <value>从不自动更新</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Content.RestartAndApplyTheUpdate" xml:space="preserve">
+    <value>重启并应用更新</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Description.ControlTheTargetVersionOfAppUpdatesThe" xml:space="preserve">
+    <value>控制应用的更新目标版本。版本的发行节奏和稳定程度因更新通道而异，部分通道可能包含不稳定的功能，请谨慎使用。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Description.ForceTheAppToUpdateToTheLatest" xml:space="preserve">
+    <value>强制将应用更新到当前通道上的最新版本，即使此版本比应用当前版本更旧。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Description.SetTheAppSUpdateMode" xml:space="preserve">
+    <value>设置应用的更新模式。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Header.DebugDebugSettings" xml:space="preserve">
+    <value>(debug)调试设置</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Header.DownloadOnly" xml:space="preserve">
+    <value>仅下载</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Header.UpdateChannels" xml:space="preserve">
+    <value>更新通道</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Header.UpdateLog" xml:space="preserve">
+    <value>更新日志</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Header.UpdateSettings" xml:space="preserve">
+    <value>更新设置</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Header.UpdateTheMode" xml:space="preserve">
+    <value>更新模式</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Message.TheUpdateHasBeenSuccessfullyDeployedAndThe" xml:space="preserve">
+    <value>已成功部署更新，下次启动应用时将启动新版本。您也可以现在重启以立即使用新版本的 ClassIsland。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Text.DiscoverTheNewVersion" xml:space="preserve">
+    <value>发现新版本：</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Text.DownloadProgress" xml:space="preserve">
+    <value>下载进度</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Text.LastInspectionUpdateTime" xml:space="preserve">
+    <value>上次检查更新时间：</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Title.AnErrorOccurredDuringDeploymentPleaseTryAgain" xml:space="preserve">
+    <value>部署时发生错误，请稍后重试。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Title.IfAnErrorOccursDuringAnUpdateCheck" xml:space="preserve">
+    <value>更新时发生错误，请检查您的网络连接并重试。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Title.UpdateWillBeAppliedAfterTheRestart" xml:space="preserve">
+    <value>更新将在重启后应用</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Watermark.LeaveBlankToDisable" xml:space="preserve">
+    <value>留空禁用</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Label.OverrideMetadataPublicKey" xml:space="preserve">
+    <value>覆盖元数据公钥</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Label.OverridePdcRootUrl" xml:space="preserve">
+    <value>覆盖 PDC 根 Url</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Label.OverrideSubchannel" xml:space="preserve">
+    <value>覆盖子频道</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Text.AlreadyLatestVersionWithEasterEgg" xml:space="preserve">
+    <value>已经是最新版啦，真棒，夸夸你哦♪</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Text.UpdatedToLatestVersion" xml:space="preserve">
+    <value>真棒，您已更新到最新版本！</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Status.UpToDate" xml:space="preserve">
+    <value>您已更新到最新版本。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Status.UpdateAvailable" xml:space="preserve">
+    <value>检测到更新。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Status.UpdateDownloaded" xml:space="preserve">
+    <value>已准备好安装更新。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Status.UpdateDeployed" xml:space="preserve">
+    <value>更新已就绪。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.WorkingStatus.Idle" xml:space="preserve">
+    <value>就绪</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.WorkingStatus.CheckingUpdates" xml:space="preserve">
+    <value>正在检查更新…</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.WorkingStatus.DownloadingUpdates" xml:space="preserve">
+    <value>正在下载更新…</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.WorkingStatus.ExtractingUpdates" xml:space="preserve">
+    <value>正在部署更新…</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.DownloadStatus.Pending" xml:space="preserve">
+    <value>等待下载</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.DownloadStatus.Downloading" xml:space="preserve">
+    <value>正在下载</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.DownloadStatus.Completed" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.DownloadStatus.Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+</root>

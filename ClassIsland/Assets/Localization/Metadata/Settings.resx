@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Metadata.Settings.WindowDockingLocation.TopLeft" xml:space="preserve"><value>左上角</value></data>
+  <data name="Metadata.Settings.WindowDockingLocation.TopCenter" xml:space="preserve"><value>中上侧</value></data>
+  <data name="Metadata.Settings.WindowDockingLocation.TopRight" xml:space="preserve"><value>右上角</value></data>
+  <data name="Metadata.Settings.WindowDockingLocation.BottomLeft" xml:space="preserve"><value>左下角</value></data>
+  <data name="Metadata.Settings.WindowDockingLocation.BottomCenter" xml:space="preserve"><value>中下侧</value></data>
+  <data name="Metadata.Settings.WindowDockingLocation.BottomRight" xml:space="preserve"><value>右下角</value></data>
+  <data name="Metadata.Settings.WindowOffsetRight" xml:space="preserve"><value>窗口向右偏移</value></data>
+  <data name="Metadata.Settings.WindowOffsetDown" xml:space="preserve"><value>窗口向下偏移</value></data>
+</root>

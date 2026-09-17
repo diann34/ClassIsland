@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Services.RefreshingService.Button.Confirm" xml:space="preserve">
+    <value>好</value>
+  </data>
+  <data name="Services.RefreshingService.Button.ExitAndDoNotShowAgain" xml:space="preserve">
+    <value>退出并不再显示</value>
+  </data>
+  <data name="Services.RefreshingService.Button.Later" xml:space="preserve">
+    <value>以后再说</value>
+  </data>
+  <data name="Services.RefreshingService.Button.NotNow" xml:space="preserve">
+    <value>暂时不用</value>
+  </data>
+  <data name="Services.RefreshingService.Button.RefreshNow" xml:space="preserve">
+    <value>立即翻新</value>
+  </data>
+  <data name="Services.RefreshingService.Message.DefaultOnboarding" xml:space="preserve">
+    <value>屏幕上的课表是由本大屏课表软件 ClassIsland 显示的。ClassIsland 能一目了然地显示各种信息，并支持高度自定义。要了解如何使用 ClassIsland 吗？</value>
+  </data>
+  <data name="Services.RefreshingService.Message.DefaultRefreshing" xml:space="preserve">
+    <value>ClassIsland 似乎已经有一个长假没有启动了，部分设置可能已经过期。要跟随欢迎向导重新设置如学期开始时间等设置吗？</value>
+  </data>
+  <data name="Services.RefreshingService.Title.DefaultOnboarding" xml:space="preserve">
+    <value>欢迎使用 ClassIsland (/≧▽≦)/</value>
+  </data>
+  <data name="Services.RefreshingService.Title.DefaultRefreshing" xml:space="preserve">
+    <value>翻新 ClassIsland</value>
+  </data>
+  <data name="Services.RefreshingService.Title.WelcomeToClassIsland" xml:space="preserve">
+    <value>欢迎使用 ClassIsland</value>
+  </data>
+</root>

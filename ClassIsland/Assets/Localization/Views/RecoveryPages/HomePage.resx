@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="RecoveryPages.HomePage.Content.ClearTemporaryFiles" xml:space="preserve">
+    <value>清除临时文件</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Content.ContinueUsingClassIsland" xml:space="preserve">
+    <value>继续使用 ClassIsland</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Content.ContinueUsingClassIslandInDiagnosticMode" xml:space="preserve">
+    <value>以诊断模式继续使用 ClassIsland</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Content.ContinueUsingClassIslandInSafeMode" xml:space="preserve">
+    <value>以安全模式继续使用 ClassIsland</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Content.OpenLogDirectory" xml:space="preserve">
+    <value>打开日志目录</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Content.ResetAllConfigurations" xml:space="preserve">
+    <value>重置全部配置</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Content.ResetAllInformation" xml:space="preserve">
+    <value>重置全部信息</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Content.ResetApplicationSettings" xml:space="preserve">
+    <value>重置应用设置</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Content.RestoreBackup" xml:space="preserve">
+    <value>恢复备份</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Content.Rollback" xml:space="preserve">
+    <value>回滚</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Description.DeleteAllCachesAndTemporaryFiles" xml:space="preserve">
+    <value>删除所有缓存和临时文件。</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Description.DisableAllPluginsAndAutomationFeatures" xml:space="preserve">
+    <value>禁用所有插件和自动化功能。</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Description.LogDetailedInformationAndEnableConsoleOutput" xml:space="preserve">
+    <value>在日志中记录详细的信息，并启用控制台输出。</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Description.ResetAllApplicationConfigurationsIncludingApplicationSet" xml:space="preserve">
+    <value>重置应用的所有配置，包括应用设置、组件配置、自动化配置、插件设置等，不影响档案配置。</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Description.ResetAllApplicationInformationToThePreInstallation" xml:space="preserve">
+    <value>重置应用的所有信息，恢复到安装前的状态。</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Description.ResetApplicationSettingsInformationWithoutAffectingProfi" xml:space="preserve">
+    <value>重置应用的设置信息，不影响档案、组件、自动化、插件等的配置。</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Description.RestoreTheCorrectlyConfiguredProfileFromAPrevious" xml:space="preserve">
+    <value>从先前的备份恢复处于正确状态的配置文件。</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Description.RollBackToAPreviousVersionOfClassIsland" xml:space="preserve">
+    <value>回滚到之前的 ClassIsland 版本</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Text.SelectAnActionToContinue" xml:space="preserve">
+    <value>选择一个操作以继续。</value>
+  </data>
+  <data name="RecoveryPages.HomePage.Text.SelectAnOption" xml:space="preserve">
+    <value>选择一个选项</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.ClearTemporaryFilesFailed" xml:space="preserve">
+    <value>无法清除临时文件</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.FeatureInDevelopment" xml:space="preserve">
+    <value>此功能仍在开发中</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.OperationCompletedSuccessfully" xml:space="preserve">
+    <value>操作成功完成。</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.ResetApplicationSettingsFailed" xml:space="preserve">
+    <value>无法重置应用设置</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.InstallationDetectionFailed" xml:space="preserve">
+    <value>无法检测其他安装实例的状态：{0}&#xA;“回滚”选项将不可用。</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Title.ClearTemporaryFiles" xml:space="preserve">
+    <value>清除临时文件</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Content.ConfirmClearTemporaryFiles" xml:space="preserve">
+    <value>此操作将删除所有缓存和临时文件，并且无法恢复。您确定要清除临时文件吗？</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Title.ResetApplicationSettings" xml:space="preserve">
+    <value>重置应用设置</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Content.ConfirmResetApplicationSettings" xml:space="preserve">
+    <value>此操作将重置应用的设置信息，并且无法恢复，不影响档案、组件、自动化、插件等的配置。您确定要重置应用设置吗？&#xA;&#xA;如果您确实希望重置应用设置，请在下方文本框输入 ⌈我确认重置应用设置⌋。</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Verification.ResetApplicationSettings" xml:space="preserve">
+    <value>我确认重置应用设置</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Title.ResetAllConfiguration" xml:space="preserve">
+    <value>重置全部配置</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Content.ConfirmResetAllConfiguration" xml:space="preserve">
+    <value>此操作将重置应用的除档案外的全部设置，包括组件、自动化等配置。您确定要重置全部配置吗？&#xA;&#xA;如果您确实希望重置全部配置，请在下方文本框输入 ⌈我确认重置除课表信息外全部配置⌋。</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Verification.ResetAllConfiguration" xml:space="preserve">
+    <value>我确认重置除课表信息外全部配置</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Title.ResetAllData" xml:space="preserve">
+    <value>重置全部信息</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Content.ConfirmResetAllData" xml:space="preserve">
+    <value>此操作将重置应用的所有信息，恢复到安装前的状态，包括档案配置、应用设置、组件配置、自动化配置、插件设置、已安装的插件等，并且无法恢复。您确定要重置全部信息吗？&#xA;&#xA;如果您确实希望重置全部信息，请在下方文本框输入 ⌈我确认重置包括课表配置在内的全部信息⌋。</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Verification.ResetAllData" xml:space="preserve">
+    <value>我确认重置包括课表配置在内的全部信息</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.OperationCompleted" xml:space="preserve">
+    <value>操作成功完成。</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.FeatureUnderDevelopment" xml:space="preserve">
+    <value>此功能仍在开发中</value>
+  </data>
+</root>

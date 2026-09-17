@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.WeatherSettingsPage.Content.AutomaticallyObtainLocation" xml:space="preserve">
+    <value>自动获取位置</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Content.CitySelection" xml:space="preserve">
+    <value>城市选择</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Content.ConfigureTheWeatherBriefingWidgetIn" xml:space="preserve">
+    <value>中配置天气简报组件。</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Content.CoordinatePositioning" xml:space="preserve">
+    <value>坐标定位</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Content.ExclusionList" xml:space="preserve">
+    <value>排除列表</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Content.LocationCoordinates" xml:space="preserve">
+    <value>位置坐标</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Content.ReminderPage" xml:space="preserve">
+    <value>【提醒】页面</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Content.SelectCity" xml:space="preserve">
+    <value>选择城市</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Content.ToAdjustTheWeatherQuickInfoOnThe" xml:space="preserve">
+    <value>。
+                    要调整主界面上的天气快速信息，请在</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Content.ToAdjustWeatherAlertSettingsGoTo" xml:space="preserve">
+    <value>要调整天气提醒设置，请转到</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Content.WidgetPage" xml:space="preserve">
+    <value>【组件】页面</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Description.AdjustTheAppearanceOfIconsUsedWhenDisplaying" xml:space="preserve">
+    <value>调整在显示天气类型时使用的图标外观。</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Description.AlertsContainingTheFollowingStringsWillNotBe" xml:space="preserve">
+    <value>包含以下字符串的预警将不会显示，一行一条排除项。</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Description.EnterTheLatitudeAndLongitudeCoordinatesUsedTo" xml:space="preserve">
+    <value>输入用于获取天气信息的经纬坐标。</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Description.IfEnabledTheLocationInformationWillBeAutomatically" xml:space="preserve">
+    <value>启用后，将在应用每次启动时自动更新位置信息。</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Description.NotRecommendedToEnableIfEnabledTheApp" xml:space="preserve">
+    <value>不建议启用。启用后，应用将通过不安全的 HTTP 协议获取天气信息。</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Description.SelectTheCurrentCityForWeatherQueries" xml:space="preserve">
+    <value>选择当前所在的城市，以用于天气查询。</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Description.SetTheLocationInformationAndAcquisitionMethodFor" xml:space="preserve">
+    <value>设置 ClassIsland 用于查询天气的位置信息及获取方式。</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Header.DoNotUseTlsProtocolToObtainWeather" xml:space="preserve">
+    <value>不使用 TLS 协议获取天气</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Header.ExcludedWeatherAlerts" xml:space="preserve">
+    <value>排除的气象预警</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Header.WeatherIconPack" xml:space="preserve">
+    <value>天气图标包</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Header.WeatherLocation" xml:space="preserve">
+    <value>天气位置</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Text.AirQuality" xml:space="preserve">
+    <value>空气质量</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Text.AppearanceAndAdvancedSettings" xml:space="preserve">
+    <value>外观与高级设置</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Text.Humidity" xml:space="preserve">
+    <value>湿度</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Text.LocationSettings" xml:space="preserve">
+    <value>位置设置</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Text.NoCityMatchingTheCriteriaWasFoundPlease" xml:space="preserve">
+    <value>找不到符合条件的城市。请更换搜索关键字，然后再试一次。</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Text.SearchCity" xml:space="preserve">
+    <value>搜索城市</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Text.ShowCoordinates" xml:space="preserve">
+    <value>显示坐标</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Text.WeatherPreview" xml:space="preserve">
+    <value>天气预览</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Text.WindPower" xml:space="preserve">
+    <value>风力</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.ToolTip.AutoLocate" xml:space="preserve">
+    <value>自动定位</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.ToolTip.EditCity" xml:space="preserve">
+    <value>编辑城市</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.ToolTip.Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Watermark.SearchCityOrProvince" xml:space="preserve">
+    <value>搜索城市或省份…</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Prefix.Latitude" xml:space="preserve">
+    <value>纬度</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Prefix.Longitude" xml:space="preserve">
+    <value>经度</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Format.UpdatedAt" xml:space="preserve">
+    <value>更新于 {0:HH:mm}</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Message.Locating" xml:space="preserve">
+    <value>正在定位...</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Message.LocationSucceeded" xml:space="preserve">
+    <value>定位成功</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Message.WeatherRefreshSucceeded" xml:space="preserve">
+    <value>天气刷新成功</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Message.CoordinatePrecisionDegraded" xml:space="preserve">
+    <value>此天气信息的坐标精度已降低至 {0} 位小数</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Message.GetCurrentLocationFailed" xml:space="preserve">
+    <value>无法获取当前位置：{0}</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Message.WeatherRefreshFailed" xml:space="preserve">
+    <value>天气刷新失败：{0}</value>
+  </data>
+</root>

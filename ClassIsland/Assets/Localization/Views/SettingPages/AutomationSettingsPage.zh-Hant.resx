@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.AutomationSettingsPage.Content.AutomationAllowsAutomaticModificationAndInvocationOfVari" xml:space="preserve">
+    <value>自動化允許自動修改 ClassIsland 的各項設置，並調用
+　外部程序，可能有一定安全風險。
+　不當的自動化編寫可能對正常教學造成影響，請勿濫用。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Content.EnableRecovery" xml:space="preserve">
+    <value>啓用恢復</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Content.WelcomeToAutomationAutomationEnablesClassIslandToAct" xml:space="preserve">
+    <value>歡迎使用自動化！
+　自動化可以使 ClassIsland 根據條件自動作出行動，
+　比如修改應用設置、打開應用，等等。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Description.AutomationIsAFeatureThatEnablesClassIslandTo" xml:space="preserve">
+    <value>自動化是一種可使 ClassIsland 自動作出行動的功能。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Header.EnableAutomation" xml:space="preserve">
+    <value>啓用自動化</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.AddAutomation" xml:space="preserve">
+    <value>添加自動化</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.AgreeAndStartUsingAutomation" xml:space="preserve">
+    <value>同意並開始使用自動化</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.AndWhenTheRuleSetIsSatisfied" xml:space="preserve">
+    <value>並且滿足規則集時</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.Automation" xml:space="preserve">
+    <value>自動化</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.Copy" xml:space="preserve">
+    <value>複製</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.Delete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.Help" xml:space="preserve">
+    <value>幫助…</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.New" xml:space="preserve">
+    <value>新建…</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.Open" xml:space="preserve">
+    <value>打開…</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.ReadingAutomationHelp" xml:space="preserve">
+    <value>閱讀自動化幫助</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.ResumeActionWhenTheRulesAreNoLonger" xml:space="preserve">
+    <value>當規則不再滿足時，恢復行動。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.SelectOrAddAnAutomationOnTheLeft" xml:space="preserve">
+    <value>在左側選擇或添加一個自動化，然後在此處進行設置。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.TheWorkflowDoesNotConsiderTheRuleSet" xml:space="preserve">
+    <value>工作流運行時不會考慮規則集。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.TriggerAction" xml:space="preserve">
+    <value>觸發行動</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.WhenAnEventIsTriggered" xml:space="preserve">
+    <value>當事件觸發時</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Text.WhenTheRuleSetIsNoLongerMet" xml:space="preserve">
+    <value>當規則集不再滿足時，將自動恢復行動。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.ToolTip.AddAnAutomation" xml:space="preserve">
+    <value>添加一個自動化。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.ToolTip.AutomatedConfigurationScheme" xml:space="preserve">
+    <value>自動化配置方案</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.ToolTip.CreateACopyOfThisAutomation" xml:space="preserve">
+    <value>創建該自動化的副本。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.ToolTip.DeleteTheAutomation" xml:space="preserve">
+    <value>刪除該自動化。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.ToolTip.NameOfAutomation" xml:space="preserve">
+    <value>自動化名稱。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.ToolTip.NewAutomationConfigurationPlan" xml:space="preserve">
+    <value>新建自動化配置方案…</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.ToolTip.OpenTheAutomationConfigurationFolder" xml:space="preserve">
+    <value>打開自動化配置文件夾…</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.ToolTip.OpenTheAutomationHelpDocumentation" xml:space="preserve">
+    <value>打開自動化幫助文檔…</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.ToolTip.TheAutomationIsRunning" xml:space="preserve">
+    <value>該自動化正在運行。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.ToolTip.WhetherTheAutomationIsEnabledForRecovery" xml:space="preserve">
+    <value>該自動化是否啓用恢復。</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Watermark.NameOfTheAutomation" xml:space="preserve">
+    <value>自動化名稱</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Label.ConfigurationProfileName" xml:space="preserve">
+    <value>設定檔名稱</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Title.CreateAutomationProfile" xml:space="preserve">
+    <value>建立自動化設定檔</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Message.AutomationDeleted" xml:space="preserve"><value>已刪除自動化「{0}」。</value></data>
+</root>

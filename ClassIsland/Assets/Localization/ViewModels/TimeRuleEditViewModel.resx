@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Sunday" xml:space="preserve"><value>日</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Monday" xml:space="preserve"><value>一</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Tuesday" xml:space="preserve"><value>二</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Wednesday" xml:space="preserve"><value>三</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Thursday" xml:space="preserve"><value>四</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Friday" xml:space="preserve"><value>五</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Saturday" xml:space="preserve"><value>六</value></data>
+</root>

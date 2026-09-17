@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.ErrorSettingsPage.Text.AnUnknownErrorOccurredWhileAttemptingToNavigate" xml:space="preserve">
+    <value>在嘗試導航到請求的的頁面時發生了一個未知錯誤，詳細請見應用日誌。</value>
+  </data>
+  <data name="SettingPages.ErrorSettingsPage.Text.OhWowIMadeAMistake" xml:space="preserve">
+    <value>歐呦，出錯啦！</value>
+  </data>
+  <data name="SettingPages.ErrorSettingsPage.Text.PageForRequestNotFound" xml:space="preserve">
+    <value>找不到請求的頁面。</value>
+  </data>
+</root>

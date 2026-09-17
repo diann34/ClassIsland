@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.SpeechProviderSettingsControls.EdgeTtsSpeechServiceSettingsControl.Description.NoteEdgettsRequiresAnInternetConnectionToWork" xml:space="preserve">
+    <value>注意：EdgeTTS需要聯網工作，並且可能存在一定延遲。</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Content.Concurrency" xml:space="preserve">
+    <value>併發數</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Content.SavePreset" xml:space="preserve">
+    <value>保存預設</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Content.ServerIP" xml:space="preserve">
+    <value>服務器 IP</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Content.ServerPort" xml:space="preserve">
+    <value>服務器端口</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Content.TextLanguage" xml:space="preserve">
+    <value>文本語言</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Content.TextSplittingMethod" xml:space="preserve">
+    <value>文本分割方法</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Content.VoiceName" xml:space="preserve">
+    <value>語音名稱</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Content.VoicePreset" xml:space="preserve">
+    <value>語音預設…</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Description.AudioCacheUsedToDistinguishDifferentVoicesLocally" xml:space="preserve">
+    <value>用於在本地區分不同語音的音頻緩存。</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Description.IfYouAreNotSureAboutTheFunction" xml:space="preserve">
+    <value>如果您不清楚這些設置的作用，請不要修改這些設置。</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Description.ReferenceAudioPathRelativeToTheServerS" xml:space="preserve">
+    <value>服務器上相對服務器工作路徑的參考音頻路徑。</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Header.Action" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Header.AdvancedOptions" xml:space="preserve">
+    <value>高級選項</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Header.Name" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Text.ManageGPTSovitsVoicePresets" xml:space="preserve">
+    <value>管理 GPT-SoVITS 語音預設。</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Text.SavePreset" xml:space="preserve">
+    <value>保存預設</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Text.VoicePresets" xml:space="preserve">
+    <value>語音預設</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.ToolTip.CreateACopy" xml:space="preserve">
+    <value>創建副本</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.ToolTip.Load" xml:space="preserve">
+    <value>加載</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.ToolTip.Override" xml:space="preserve">
+    <value>覆蓋</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.ToolTip.Remove" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.EdgeTtsSpeechServiceSettingsControl.Label.Voice" xml:space="preserve">
+    <value>EdgeTTS 語音</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Label.ReferenceAudioLanguage" xml:space="preserve">
+    <value>參考音訊語言</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Label.ReferenceAudioPath" xml:space="preserve">
+    <value>參考音訊路徑</value>
+  </data>
+  <data name="Controls.SpeechProviderSettingsControls.GptSovitsSpeechServiceSettingsControl.Label.ReferenceAudioText" xml:space="preserve">
+    <value>參考音訊文字</value>
+  </data>
+</root>

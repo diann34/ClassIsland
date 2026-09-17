@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.TutorialEditor.TutorialActionsEditControl.Content.ExecuteAction" xml:space="preserve">
+    <value>执行行动</value>
+  </data>
+  <data name="Controls.TutorialEditor.TutorialActionsEditControl.Content.ExecuteUri" xml:space="preserve">
+    <value>执行 Uri</value>
+  </data>
+  <data name="Controls.TutorialEditor.TutorialActionsEditControl.Content.JumpToParagraph" xml:space="preserve">
+    <value>跳转到段落</value>
+  </data>
+  <data name="Controls.TutorialEditor.TutorialActionsEditControl.Content.NextParagraph" xml:space="preserve">
+    <value>下一段</value>
+  </data>
+  <data name="Controls.TutorialEditor.TutorialActionsEditControl.Content.NextSentence" xml:space="preserve">
+    <value>下一句</value>
+  </data>
+  <data name="Controls.TutorialEditor.TutorialActionsEditControl.Content.None" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="Controls.TutorialEditor.TutorialActionsEditControl.Content.PreviousParagraph" xml:space="preserve">
+    <value>上一段</value>
+  </data>
+  <data name="Controls.TutorialEditor.TutorialActionsEditControl.Content.PreviousSentence" xml:space="preserve">
+    <value>上一句</value>
+  </data>
+  <data name="Controls.TutorialEditor.TutorialActionsEditControl.Content.Stop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="Controls.TutorialEditor.TutorialActionsEditControl.Text.Added" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Controls.TutorialEditor.TutorialActionsEditControl.Text.Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Controls.TutorialEditor.TutorialActionsEditControl.Text.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+</root>

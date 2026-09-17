@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Services.Management.ManagementService.Button.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Services.Management.ManagementService.Button.Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="Services.Management.ManagementService.Button.Join" xml:space="preserve">
+    <value>加入</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.ConfirmExitOrganization" xml:space="preserve">
+    <value>確定要退出組織 {0} 的管理嗎？</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.ConfirmJoinOrganization" xml:space="preserve">
+    <value>確定要加入組織 {0} 的管理嗎？</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.CoreVersionIncompatible" xml:space="preserve">
+    <value>您正在核心主要版本（{0}）與集中管理資料核心主要版本（{1}）不同的 ClassIsland 中加入集中管理，這可能導致資料損毀。請執行與貴組織集中管理服務相容的 ClassIsland 版本，或聯絡管理員以取得詳細資訊。</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.JoinedOrganization" xml:space="preserve">
+    <value>已加入組織 {0} 的管理。應用程式將重新啟動以套用變更。</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.LeftOrganization" xml:space="preserve">
+    <value>已退出組織 {0} 的管理。應用程式將重新啟動以套用變更。</value>
+  </data>
+  <data name="Services.Management.ManagementService.SubHeader.ExitManagement" xml:space="preserve">
+    <value>退出集中管理</value>
+  </data>
+  <data name="Services.Management.ManagementService.SubHeader.JoinManagement" xml:space="preserve">
+    <value>加入集中管理</value>
+  </data>
+  <data name="Services.Management.ManagementService.Title.CoreVersionIncompatible" xml:space="preserve">
+    <value>集中管理核心版本不相容</value>
+  </data>
+  <data name="Services.Management.ManagementService.Title.JoinedManagement" xml:space="preserve">
+    <value>已加入集中管理</value>
+  </data>
+  <data name="Services.Management.ManagementService.Title.LeftManagement" xml:space="preserve">
+    <value>已退出集中管理</value>
+  </data>
+</root>

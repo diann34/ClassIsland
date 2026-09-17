@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="RefreshingScopesConfigDialog.Content.Confirm" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="RefreshingScopesConfigDialog.Header.EditRefreshRange" xml:space="preserve">
+    <value>編輯翻新範圍</value>
+  </data>
+  <data name="RefreshingScopesConfigDialog.Header.Timetable" xml:space="preserve">
+    <value>時間表</value>
+  </data>
+  <data name="RefreshingScopesConfigDialog.Header.Timetable2" xml:space="preserve">
+    <value>課表</value>
+  </data>
+  <data name="RefreshingScopesConfigDialog.Text.SelectItemsToKeepWhenRefreshing" xml:space="preserve">
+    <value>選擇翻新時要保留的內容</value>
+  </data>
+  <data name="RefreshingScopesConfigDialog.Text.TheFollowingItemsWillNotBeDeletedDuring" xml:space="preserve">
+    <value>以下內容在翻新時不會被刪除。</value>
+  </data>
+</root>

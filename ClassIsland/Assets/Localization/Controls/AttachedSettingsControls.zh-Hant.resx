@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.AttachedSettingsControls.AfterSchoolNotificationAttachedSettingsControl.Content.EnableAfterSchoolReminder" xml:space="preserve">
+    <value>啓用放學提醒。</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Content.EnableClassEndReminder" xml:space="preserve">
+    <value>啓用下課提醒。</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Content.EnableClassStartReminder" xml:space="preserve">
+    <value>啓用上課提醒。</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Content.EnablePrepareForClassReminder" xml:space="preserve">
+    <value>啓用準備上課提醒。</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Header.BreakTime" xml:space="preserve">
+    <value>課間休息</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Header.InClass" xml:space="preserve">
+    <value>上課</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Header.PrepareForClass" xml:space="preserve">
+    <value>準備上課</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Watermark.Disabled" xml:space="preserve">
+    <value>（禁用）</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Content.CountdownToTheTimePointEnd" xml:space="preserve">
+    <value>時間點結束倒計時</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Content.OnlyShowTheCurrentClassDuringClass" xml:space="preserve">
+    <value>上課時僅顯示當前課程</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Content.ShowAdditionalInformationOfTheTimePoint" xml:space="preserve">
+    <value>顯示時間點附加信息</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Content.UseFuzzyCountdown" xml:space="preserve">
+    <value>使用模糊倒計時</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Text.Countdown" xml:space="preserve">
+    <value>倒計時</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Text.DurationOfTheTimePoint" xml:space="preserve">
+    <value>時間點持續時間</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Text.ElapsedTimeDuration" xml:space="preserve">
+    <value>已過時間/持續時間</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Text.ElapsedTimePercentage" xml:space="preserve">
+    <value>已過時間百分比</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Text.RemainingTime" xml:space="preserve">
+    <value>剩餘時間</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Text.RemainingTimeDuration" xml:space="preserve">
+    <value>剩餘時間/持續時間</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.DisableHere" xml:space="preserve">
+    <value>在此處禁用</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.EnableHere" xml:space="preserve">
+    <value>在此處啓用</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.InheritGlobalSettings" xml:space="preserve">
+    <value>繼承全局設置</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.AfterSchoolNotificationAttachedSettingsControl.Label.AfterSchoolReminderText" xml:space="preserve">
+    <value>放學提醒文字</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Label.ClassEndReminderText" xml:space="preserve">
+    <value>下課提醒文字</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Label.ClassMaskText" xml:space="preserve">
+    <value>上課遮罩文字</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Label.PrepareForClassMaskText" xml:space="preserve">
+    <value>準備上課遮罩文字</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Label.PrepareForClassReminderText" xml:space="preserve">
+    <value>準備上課提醒文字</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Label.PrepareForClassReminderTime" xml:space="preserve">
+    <value>準備上課提醒時間</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.ClassNotificationAttachedSettingsControl.Suffix.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Label.AdditionalInformationToDisplay" xml:space="preserve">
+    <value>要顯示的附加資訊</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Label.PreciseCountdownDuration" xml:space="preserve">
+    <value>顯示精確倒數計時長度</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Prefix.Remaining" xml:space="preserve">
+    <value>剩餘</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Suffix.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.LessonControlAttachedSettingsControl.Suffix.SecondsRemaining" xml:space="preserve">
+    <value>秒時</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Label.WeatherAlertMode" xml:space="preserve">
+    <value>氣象預警提醒模式</value>
+  </data>
+  <data name="Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Label.WeatherForecastMode" xml:space="preserve">
+    <value>天氣預報提醒模式</value>
+  </data>
+</root>

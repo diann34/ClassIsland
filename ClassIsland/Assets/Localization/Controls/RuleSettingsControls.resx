@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Controls.RuleSettingsControls.CurrentWeatherRuleSettingsControl.Content.IncludeSimilarWeather" xml:space="preserve">
+    <value>包含相似天气</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.CurrentWeatherRuleSettingsControl.ToolTip.WhenCheckedSelectingGeneralWeatherCategoriesLikeRain" xml:space="preserve">
+    <value>勾选后，选择如“雨”、“雪”等大类天气时，将自动匹配其包含的所有具体天气（如“小雨”、“中雪”等）。</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.RainTimeRuleSettingsControl.Text.End" xml:space="preserve">
+    <value>结束</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.RainTimeRuleSettingsControl.Text.Start" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.SunRiseSetRuleSettingsControl.Text.Sunrise" xml:space="preserve">
+    <value>日出</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.SunRiseSetRuleSettingsControl.Text.Sunset" xml:space="preserve">
+    <value>日落</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.AfterSchool" xml:space="preserve">
+    <value>放学后</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.BreakTime" xml:space="preserve">
+    <value>课间休息</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.InClass" xml:space="preserve">
+    <value>上课</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.None" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.PrepareForClassUnavailable" xml:space="preserve">
+    <value>准备上课（不可用）</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.WindowStatusRuleSettingsControl.Content.FullScreen" xml:space="preserve">
+    <value>全屏</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.WindowStatusRuleSettingsControl.Content.Maximize" xml:space="preserve">
+    <value>最大化</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.WindowStatusRuleSettingsControl.Content.Minimize" xml:space="preserve">
+    <value>最小化</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.WindowStatusRuleSettingsControl.Content.Normal" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="Controls.RuleSettingsControls.RainTimeRuleSettingsControl.Suffix.Minutes" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+</root>

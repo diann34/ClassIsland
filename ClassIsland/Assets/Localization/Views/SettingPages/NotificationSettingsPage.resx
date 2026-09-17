@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.NotificationSettingsPage.Content.AdvancedSettings" xml:space="preserve">
+    <value>高级设置</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Content.CustomSoundEffects" xml:space="preserve">
+    <value>自定义音效</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Content.EnabledByDefault" xml:space="preserve">
+    <value>默认启用</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Content.GoToTheComponentsPage" xml:space="preserve">
+    <value>前往【组件】页面</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Content.RemindsYouOfRenderingAccuracyForSpecialEffects" xml:space="preserve">
+    <value>提醒特效渲染精度</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Content.SoundEffectsVolume" xml:space="preserve">
+    <value>音效音量</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Content.TestReadingText" xml:space="preserve">
+    <value>测试朗读文本</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Content.TestYourVoice" xml:space="preserve">
+    <value>测试语音</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Content.VoiceEngine" xml:space="preserve">
+    <value>语音引擎</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Content.VoiceVolume" xml:space="preserve">
+    <value>语音音量</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Description.AfterEnablingRemindersProminentAlertsWillBeIssued" xml:space="preserve">
+    <value>启用提醒后，将会在对重要事件发出醒目提醒。拖动提醒提供方以调整对应类型提醒的优先级。</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Description.BroadcastRemindersByVoiceWhenIssuingReminders" xml:space="preserve">
+    <value>在发出提醒时用语音播报提醒内容。</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Description.ForcingRemindersToAppearAndPinningTheMain" xml:space="preserve">
+    <value>在发出提醒时强制显示并置顶主界面。</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Description.HighlightsTheAccuracyOfRenderingEffectsUsingLower" xml:space="preserve">
+    <value>提醒特效渲染时的精度，使用较低的精度性能可以获得较好的性能。</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Description.OnceEnabledTheSettingsHereWillOverrideThe" xml:space="preserve">
+    <value>启用后，此处的设置将覆盖全局设置和提醒请求中要求的设置。</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Description.SetCustomSoundEffectsLeavingThemBlankTo" xml:space="preserve">
+    <value>设置自定义音效，留空以禁用。如果音效长于提醒显示时间，多出来的部分会被截断。</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Description.WhenEnabledAFullScreenEmphasisEffectWill" xml:space="preserve">
+    <value>启用后，发出提醒时会播放全屏强调特效。</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Description.WhenEnabledASoundEffectWillPlayWhen" xml:space="preserve">
+    <value>启用后，发出提醒时会播放音效。</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Header.AlertProviders" xml:space="preserve">
+    <value>提醒提供方</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Header.BasicSettings" xml:space="preserve">
+    <value>基本设置</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Header.EnableReminderHighlightEffects" xml:space="preserve">
+    <value>启用提醒强调特效</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Header.EnableReminderSounds" xml:space="preserve">
+    <value>启用提醒音效</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Header.EnableReminders" xml:space="preserve">
+    <value>启用提醒</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Header.EnableSpecialAdvancedSettingsForThisAlertSource" xml:space="preserve">
+    <value>对此提醒来源启用特殊高级设置</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Header.EnableVoiceReminders" xml:space="preserve">
+    <value>启用提醒语音</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Header.PinReminder" xml:space="preserve">
+    <value>置顶提醒</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Header.ReminderChannels" xml:space="preserve">
+    <value>提醒渠道</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Message.TheSettingsHereWillOverrideTheSettingsRequired" xml:space="preserve">
+    <value>此处的设置将覆盖全局设置和提醒请求中要求的设置。</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Message.YouHaveDisabledRemindersForAllMainInterface" xml:space="preserve">
+    <value>您禁用了所有主界面行的提醒功能，这可能会导致所有提醒都无法显示。要修复此问题，您需要在【组件】页面至少为一个主界面行开启提醒。</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Text.TheReminderProviderDidNotSetItUp" xml:space="preserve">
+    <value>该提醒提供方没有设置。</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Title.RemindersMayNotBeDisplayed" xml:space="preserve">
+    <value>提醒可能无法显示</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Watermark.DefaultSound" xml:space="preserve">
+    <value>（默认音效）</value>
+  </data>
+  <data name="SettingPages.NotificationSettingsPage.Text.SpeechPreview" xml:space="preserve"><value>风带来了故事的种子，时间使之发芽。</value></data>
+</root>

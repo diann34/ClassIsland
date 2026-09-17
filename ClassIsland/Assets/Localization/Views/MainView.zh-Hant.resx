@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="MainView.Header.ApplySettings" xml:space="preserve">
+    <value>應用設置…</value>
+  </data>
+  <data name="MainView.Header.ChangeClass" xml:space="preserve">
+    <value>換課…</value>
+  </data>
+  <data name="MainView.Header.EditMainInterface" xml:space="preserve">
+    <value>編輯主界面…</value>
+  </data>
+  <data name="MainView.Header.EditProfile" xml:space="preserve">
+    <value>編輯檔案…</value>
+  </data>
+  <data name="MainView.Header.Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="MainView.Header.LoadingTemporarySchedule" xml:space="preserve">
+    <value>加載臨時課表…</value>
+  </data>
+  <data name="MainView.Header.Restart" xml:space="preserve">
+    <value>重啓</value>
+  </data>
+  <data name="MainView.Message.InEarlyDevelopmentMostFeaturesAreStillUnavailable" xml:space="preserve">
+    <value>早期開發中，大部分功能仍不可用，不代表最終品質。</value>
+  </data>
+</root>

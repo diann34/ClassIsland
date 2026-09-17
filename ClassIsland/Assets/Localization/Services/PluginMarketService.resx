@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Services.PluginMarketService.Button.RestartNow" xml:space="preserve">
+    <value>立即重启</value>
+  </data>
+  <data name="Services.PluginMarketService.Message.PluginUpdateCompleted" xml:space="preserve">
+    <value>已将 {0} 个插件升级到最新版本，将在下次启动应用时生效。</value>
+  </data>
+  <data name="Services.PluginMarketService.Message.PluginUpdateFailed" xml:space="preserve">
+    <value>无法更新插件。请检查您的网络设置，或更换插件镜像源，然后再试一遍。</value>
+  </data>
+  <data name="Services.PluginMarketService.Message.PluginUpdatePartiallyCompleted" xml:space="preserve">
+    <value>已将 {0} 个插件升级到最新版本，{1} 个插件升级失败。将在下次启动应用时生效。</value>
+  </data>
+  <data name="Services.PluginMarketService.Message.PluginUpdatesAvailable" xml:space="preserve">
+    <value>有 {0} 个插件有新版本可用，点击以查看详细信息。</value>
+  </data>
+  <data name="Services.PluginMarketService.Title.PluginUpdateCompleted" xml:space="preserve">
+    <value>插件更新完成</value>
+  </data>
+  <data name="Services.PluginMarketService.Title.PluginUpdateFailed" xml:space="preserve">
+    <value>插件更新失败</value>
+  </data>
+  <data name="Services.PluginMarketService.Title.PluginUpdatesAvailable" xml:space="preserve">
+    <value>插件更新可用</value>
+  </data>
+</root>

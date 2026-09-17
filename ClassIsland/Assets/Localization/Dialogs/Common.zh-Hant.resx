@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Dialogs.Common.AuthenticationCreationFailed" xml:space="preserve">
+    <value>建立驗證資訊失敗</value>
+  </data>
+  <data name="Dialogs.Common.AuthenticationFailed" xml:space="preserve">
+    <value>驗證失敗</value>
+  </data>
+  <data name="Dialogs.Common.Confirm" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="Dialogs.Common.CorruptConfiguration" xml:space="preserve">
+    <value>設定檔損壞</value>
+  </data>
+  <data name="Dialogs.Common.DebugMenuDisabled" xml:space="preserve">
+    <value>除錯選單已停用</value>
+  </data>
+  <data name="Dialogs.Common.DirectoryPermissionError" xml:space="preserve">
+    <value>目錄權限錯誤</value>
+  </data>
+  <data name="Dialogs.Common.JoinedManagement" xml:space="preserve">
+    <value>已加入集控</value>
+  </data>
+  <data name="Dialogs.Common.LeftManagement" xml:space="preserve">
+    <value>已退出集控</value>
+  </data>
+  <data name="Dialogs.Common.ManagementCoreIncompatible" xml:space="preserve">
+    <value>集控核心版本不相容</value>
+  </data>
+  <data name="Dialogs.Common.ManagementExitFailed" xml:space="preserve">
+    <value>無法退出管理</value>
+  </data>
+  <data name="Dialogs.Common.NavigationFailed" xml:space="preserve">
+    <value>導航失敗</value>
+  </data>
+  <data name="Dialogs.Common.NewVersionAvailable" xml:space="preserve">
+    <value>發現新版本</value>
+  </data>
+  <data name="Dialogs.Common.RecoveryMode" xml:space="preserve">
+    <value>進入復原模式</value>
+  </data>
+  <data name="Dialogs.Common.RestartFailed" xml:space="preserve">
+    <value>重新啟動失敗</value>
+  </data>
+  <data name="Dialogs.Common.RunningFromTemporaryDirectory" xml:space="preserve">
+    <value>偵測到應用程式正在暫存目錄下執行</value>
+  </data>
+  <data name="Dialogs.Common.UpdateSucceeded" xml:space="preserve">
+    <value>更新成功</value>
+  </data>
+  <data name="Dialogs.Common.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Dialogs.Common.Create" xml:space="preserve">
+    <value>建立</value>
+  </data>
+  <data name="Dialogs.Common.Delete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Dialogs.Common.Rename" xml:space="preserve">
+    <value>重新命名</value>
+  </data>
+</root>

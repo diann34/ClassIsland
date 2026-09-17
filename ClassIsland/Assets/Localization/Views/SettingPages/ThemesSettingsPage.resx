@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.ThemesSettingsPage.Content.GoToAppearanceSettings" xml:space="preserve">
+    <value>前往【外观】设置</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Content.Installed" xml:space="preserve">
+    <value>已安装</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Content.Market" xml:space="preserve">
+    <value>市场</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Header.OpenTheThemeFolder" xml:space="preserve">
+    <value>打开主题文件夹…</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Header.PackingTheme" xml:space="preserve">
+    <value>打包主题…</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Header.UndoUninstalling" xml:space="preserve">
+    <value>撤销卸载</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Header.UninstallTheTheme" xml:space="preserve">
+    <value>卸载主题</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Message.AfterEnablingSupportedThemesSuchAsFluentYou" xml:space="preserve">
+    <value>在启用了支持的主题（如 Fluent）后，您可以在直接【外观】设置中开启【分体主界面】选项使主界面分开。在没有开启此选项时，即使启用了支持的主题，主界面也不会分开。</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Text.AgreeAndStartUsingTheTopic" xml:space="preserve">
+    <value>同意并开始使用主题</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Text.ErrorMessages" xml:space="preserve">
+    <value>错误信息</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Text.OpenTheThemeFolder" xml:space="preserve">
+    <value>打开主题文件夹…</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Text.OverloadTheTheme" xml:space="preserve">
+    <value>重载主题</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Text.PleaseNoteThatThemesAreLoadedInXaml" xml:space="preserve">
+    <value>需要注意，主题以 XAML 样式的形式加载，可能存在与部分 ClassIsland 版本不兼容，甚至使应用完全无法使用的情况。并且主题在加载过程中会转译为可执行代码，可以以 ClassIsland 的身份和权限执行任意代码。请不要安装来路不明的主题，开发者也无法保证市场所提供的主题都是绝对安全的。ClassIsland 开发团队对使用主题造成的一切后果概不负责。</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Text.RefreshTheMarket" xml:space="preserve">
+    <value>刷新市场</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Text.Theme" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Text.ThemeLoadingOrder" xml:space="preserve">
+    <value>主题加载顺序</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Text.ThemesWillBeLoadedInTheFollowingOrder" xml:space="preserve">
+    <value>主题将按照以下的顺序加载，后加载的主题可以覆盖前面主题的样式。拖动以对主题进行排序。</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Text.WelcomeToThemesThemesCanModifyOrEven" xml:space="preserve">
+    <value>欢迎使用主题！主题可以修改甚至完全重塑 ClassIsland 主界面的外观。您可以使用主题功能打造出独一无二的 ClassIsland 界面。</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.ToolTip.AnErrorOccursWhenLoadingThisTopic" xml:space="preserve">
+    <value>加载此主题时发生错误</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.ToolTip.Installation" xml:space="preserve">
+    <value>安装</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.ToolTip.MoreOptions" xml:space="preserve">
+    <value>更多选项…</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.ToolTip.RestartToApplyTheChanges" xml:space="preserve">
+    <value>重启以应用更改</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.ToolTip.Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.ToolTip.Website" xml:space="preserve">
+    <value>网站…</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Message.AtLeastOneThemeRequired" xml:space="preserve">
+    <value>您必须启用至少一个主题，以保证主界面有显示样式可用。</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Message.RefreshMarketplaceFailed" xml:space="preserve">
+    <value>无法刷新市场</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Title.PackageTheme" xml:space="preserve"><value>打包主题</value></data>
+  <data name="SettingPages.ThemesSettingsPage.FileType.ClassIslandThemePackage" xml:space="preserve"><value>ClassIsland 主题包</value></data>
+  <data name="SettingPages.ThemesSettingsPage.Message.PackageThemeFailed" xml:space="preserve"><value>无法打包主题 {0}</value></data>
+</root>

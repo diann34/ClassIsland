@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="TutorialEditorWindow.Content.EditScript" xml:space="preserve">
+    <value>编辑脚本…</value>
+  </data>
+  <data name="TutorialEditorWindow.Content.EnableBarrier" xml:space="preserve">
+    <value>启用屏障</value>
+  </data>
+  <data name="TutorialEditorWindow.Content.EnableScript" xml:space="preserve">
+    <value>启用脚本</value>
+  </data>
+  <data name="TutorialEditorWindow.Content.HighlightTarget" xml:space="preserve">
+    <value>高亮目标</value>
+  </data>
+  <data name="TutorialEditorWindow.Content.MakeTargetModal" xml:space="preserve">
+    <value>使目标具有模态</value>
+  </data>
+  <data name="TutorialEditorWindow.Content.PointToTarget" xml:space="preserve">
+    <value>指向目标</value>
+  </data>
+  <data name="TutorialEditorWindow.Content.UseLightdismissInsteadOfTheButtonOnThe" xml:space="preserve">
+    <value>使用 LightDismiss 代替右侧按钮</value>
+  </data>
+  <data name="TutorialEditorWindow.Content.WaitableToBeTriggeredExternally" xml:space="preserve">
+    <value>可等待被外部推动</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.Basic" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.Content" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.EnterEvent" xml:space="preserve">
+    <value>进入事件</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.File" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.LeftButtonEvent" xml:space="preserve">
+    <value>左按钮事件</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.Open" xml:space="preserve">
+    <value>打开…</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.RightButtonEvent" xml:space="preserve">
+    <value>右按钮事件</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.Run" xml:space="preserve">
+    <value>运行</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.RunCurrentTutorial" xml:space="preserve">
+    <value>运行当前教程</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.RunFromTheCurrentParagraph" xml:space="preserve">
+    <value>从当前段落开始运行</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.Save" xml:space="preserve">
+    <value>保存…</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.SaveAs" xml:space="preserve">
+    <value>另存为…</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.Script" xml:space="preserve">
+    <value>脚本</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.StopRunning" xml:space="preserve">
+    <value>停止运行</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.TargetSelector" xml:space="preserve">
+    <value>目标选择器</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.Title" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.TutorialChapterInformation" xml:space="preserve">
+    <value>教程章节信息…</value>
+  </data>
+  <data name="TutorialEditorWindow.Header.TutorialEditor" xml:space="preserve">
+    <value>教程编辑器</value>
+  </data>
+  <data name="TutorialEditorWindow.Text.Added" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="TutorialEditorWindow.Text.Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="TutorialEditorWindow.Text.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="TutorialEditorWindow.Text.EditThisStatementSLuaScriptUsingAn" xml:space="preserve">
+    <value>使用独立编辑器编辑此语句的 Lua 脚本。</value>
+  </data>
+  <data name="TutorialEditorWindow.Text.Paragraph" xml:space="preserve">
+    <value>段落</value>
+  </data>
+  <data name="TutorialEditorWindow.Text.Statement" xml:space="preserve">
+    <value>语句</value>
+  </data>
+  <data name="TutorialEditorWindow.Text.Tutorial" xml:space="preserve">
+    <value>教程</value>
+  </data>
+  <data name="TutorialEditorWindow.Text.TutorialGroup" xml:space="preserve">
+    <value>教程组</value>
+  </data>
+  <data name="TutorialEditorWindow.Text.TutorialScript" xml:space="preserve">
+    <value>教程脚本</value>
+  </data>
+  <data name="TutorialEditorWindow.Watermark.Default" xml:space="preserve">
+    <value>（默认）</value>
+  </data>
+  <data name="TutorialEditorWindow.Watermark.Disabled" xml:space="preserve">
+    <value>（禁用）</value>
+  </data>
+  <data name="TutorialEditorWindow.Label.Content" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="TutorialEditorWindow.Label.Description" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="TutorialEditorWindow.Label.HeaderImage" xml:space="preserve">
+    <value>头图</value>
+  </data>
+  <data name="TutorialEditorWindow.Label.Icon" xml:space="preserve">
+    <value>图标</value>
+  </data>
+  <data name="TutorialEditorWindow.Label.LeftButton" xml:space="preserve">
+    <value>左侧按钮</value>
+  </data>
+  <data name="TutorialEditorWindow.Label.RightButton" xml:space="preserve">
+    <value>右侧按钮</value>
+  </data>
+  <data name="TutorialEditorWindow.Label.TargetControlSelector" xml:space="preserve">
+    <value>目标控件选择器</value>
+  </data>
+  <data name="TutorialEditorWindow.Label.TeachingTipPlacementMode" xml:space="preserve">
+    <value>教学提示摆放模式</value>
+  </data>
+  <data name="TutorialEditorWindow.Label.Title" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="TutorialEditorWindow.Label.TopLevelClassName" xml:space="preserve">
+    <value>TopLevel 类名</value>
+  </data>
+</root>

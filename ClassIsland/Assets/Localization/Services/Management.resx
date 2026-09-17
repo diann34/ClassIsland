@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Services.Management.ManagementService.Button.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Services.Management.ManagementService.Button.Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="Services.Management.ManagementService.Button.Join" xml:space="preserve">
+    <value>加入</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.ConfirmExitOrganization" xml:space="preserve">
+    <value>确定要退出组织 {0} 的管理吗？</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.ConfirmJoinOrganization" xml:space="preserve">
+    <value>确定要加入组织 {0} 的管理吗？</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.CoreVersionIncompatible" xml:space="preserve">
+    <value>您正在核心版本主版本号（{0}）与集控数据核心版本主版本号（{1}）不同的 ClassIsland 加入集控，这可能会导致您的数据损坏。请运行兼容贵组织集控服务的 ClassIsland 版本，或者联系您的管理员了解详细信息。</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.JoinedOrganization" xml:space="preserve">
+    <value>已加入组织 {0} 的管理。应用将重启以应用更改。</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.LeftOrganization" xml:space="preserve">
+    <value>已退出组织 {0} 的管理。应用将重启以应用更改。</value>
+  </data>
+  <data name="Services.Management.ManagementService.SubHeader.ExitManagement" xml:space="preserve">
+    <value>退出集控</value>
+  </data>
+  <data name="Services.Management.ManagementService.SubHeader.JoinManagement" xml:space="preserve">
+    <value>加入集控</value>
+  </data>
+  <data name="Services.Management.ManagementService.Title.CoreVersionIncompatible" xml:space="preserve">
+    <value>集控核心版本不兼容</value>
+  </data>
+  <data name="Services.Management.ManagementService.Title.JoinedManagement" xml:space="preserve">
+    <value>已加入集控</value>
+  </data>
+  <data name="Services.Management.ManagementService.Title.LeftManagement" xml:space="preserve">
+    <value>已退出集控</value>
+  </data>
+</root>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="MainWindow.Header.ApplySettings" xml:space="preserve">
+    <value>应用设置…</value>
+  </data>
+  <data name="MainWindow.Header.ChangeClass" xml:space="preserve">
+    <value>换课…</value>
+  </data>
+  <data name="MainWindow.Header.ClearAllReminders" xml:space="preserve">
+    <value>清除全部提醒</value>
+  </data>
+  <data name="MainWindow.Header.EditMainInterface" xml:space="preserve">
+    <value>编辑主界面…</value>
+  </data>
+  <data name="MainWindow.Header.EditProfile" xml:space="preserve">
+    <value>编辑档案…</value>
+  </data>
+  <data name="MainWindow.Header.EnableSchedule" xml:space="preserve">
+    <value>启用课表</value>
+  </data>
+  <data name="MainWindow.Header.Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="MainWindow.Header.HelpDocumentation" xml:space="preserve">
+    <value>帮助文档…</value>
+  </data>
+  <data name="MainWindow.Header.HideMainInterface" xml:space="preserve">
+    <value>隐藏主界面</value>
+  </data>
+  <data name="MainWindow.Header.LoadingTemporarySchedule" xml:space="preserve">
+    <value>加载临时课表…</value>
+  </data>
+  <data name="MainWindow.Header.MoreOptions" xml:space="preserve">
+    <value>更多选项…</value>
+  </data>
+  <data name="MainWindow.Header.Restart" xml:space="preserve">
+    <value>重启</value>
+  </data>
+  <data name="MainWindow.Header.ScreenshotTool" xml:space="preserve">
+    <value>截图工具</value>
+  </data>
+  <data name="MainWindow.Header.ShowCrashWindow" xml:space="preserve">
+    <value>显示崩溃窗口</value>
+  </data>
+  <data name="MainWindow.Header.ShowMainInterface" xml:space="preserve">
+    <value>显示主界面</value>
+  </data>
+  <data name="MainWindow.Header.Teaching" xml:space="preserve">
+    <value>教学…</value>
+  </data>
+  <data name="MainWindow.Header.TutorialEditor" xml:space="preserve">
+    <value>教程编辑器</value>
+  </data>
+  <data name="MainWindow.Text.AddComponent" xml:space="preserve">
+    <value>添加组件</value>
+  </data>
+  <data name="MainWindow.Text.Appearance" xml:space="preserve">
+    <value>外观</value>
+  </data>
+  <data name="MainWindow.Text.Done" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="MainWindow.Text.NewMainInterfaceRow" xml:space="preserve">
+    <value>新主界面行</value>
+  </data>
+  <data name="MainWindow.Text.ResetView" xml:space="preserve">
+    <value>重置视图</value>
+  </data>
+  <data name="MainWindow.ToolTip.Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="MainWindow.ToolTip.Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="MainWindow.ToolTip.Settings" xml:space="preserve">
+    <value>设置…</value>
+  </data>
+  <data name="MainWindow.ToolTip.ThisRowCanDisplayReminders" xml:space="preserve">
+    <value>此行可以显示提醒</value>
+  </data>
+  <data name="MainWindow.ToolTip.ThisRowIsTheMainRow" xml:space="preserve">
+    <value>此行是主要行</value>
+  </data>
+  <data name="MainWindow.Title.EditMainInterface" xml:space="preserve">
+    <value>编辑主界面 | ClassIsland</value>
+  </data>
+  <data name="MainWindow.Message.AllNotificationRowsDisabled" xml:space="preserve">
+    <value>您已经禁用了所有主界面行的提醒显示功能。如果没有插件注册其它提醒消费者，提醒将不会显示，也不会播放提醒音效、特效和语音。</value>
+  </data>
+  <data name="MainWindow.Message.FirstRowSetAsPrimary" xml:space="preserve">
+    <value>已将第一行设置为主要行。</value>
+  </data>
+  <data name="MainWindow.Message.MustKeepOneMainInterfaceRow" xml:space="preserve">
+    <value>至少需要保留 1 个主界面行。</value>
+  </data>
+  <data name="MainWindow.Message.UnsupportedMouseClickSettingDisabled" xml:space="preserve">
+    <value>【启用鼠标点击】设置项目不再受到支持并已自动禁用，感谢您的支持与理解。</value>
+  </data>
+  <data name="MainWindow.Title.UnsupportedSettingDisabled" xml:space="preserve">
+    <value>已禁用不支持的设置</value>
+  </data>
+</root>

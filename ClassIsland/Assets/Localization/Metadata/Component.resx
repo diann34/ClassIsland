@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Metadata.Component.Clock.Description" xml:space="preserve"><value>显示现在的时间，支持精确到秒。</value></data>
+  <data name="Metadata.Component.Countdown.Description" xml:space="preserve"><value>显示距离某一天的倒计时。</value></data>
+  <data name="Metadata.Component.Date.Name" xml:space="preserve"><value>日期</value></data>
+  <data name="Metadata.Component.Date.Description" xml:space="preserve"><value>显示今天的日期和星期。</value></data>
+  <data name="Metadata.Component.Group.Name" xml:space="preserve"><value>分组容器</value></data>
+  <data name="Metadata.Component.Group.Description" xml:space="preserve"><value>将多个组件组合到一个组件中显示。</value></data>
+  <data name="Metadata.Component.Rolling.Name" xml:space="preserve"><value>滚动容器</value></data>
+  <data name="Metadata.Component.Rolling.Description" xml:space="preserve"><value>滚动显示组件内的内容。</value></data>
+  <data name="Metadata.Component.Schedule.Name" xml:space="preserve"><value>课程表</value></data>
+  <data name="Metadata.Component.Schedule.Description" xml:space="preserve"><value>显示当前的课程表信息。</value></data>
+  <data name="Metadata.Component.Separator.Description" xml:space="preserve"><value>显示一个分割线，视觉上对组件进行分组。</value></data>
+  <data name="Metadata.Component.Slide.Name" xml:space="preserve"><value>轮播容器</value></data>
+  <data name="Metadata.Component.Slide.Description" xml:space="preserve"><value>轮播多个组件。</value></data>
+  <data name="Metadata.Component.Stack.Name" xml:space="preserve"><value>堆叠容器</value></data>
+  <data name="Metadata.Component.Stack.Description" xml:space="preserve"><value>将多个容器堆叠显示。</value></data>
+  <data name="Metadata.Component.Text.Name" xml:space="preserve"><value>文本</value></data>
+  <data name="Metadata.Component.Text.Description" xml:space="preserve"><value>显示自定义文本。</value></data>
+  <data name="Metadata.Component.Weather.Name" xml:space="preserve"><value>天气简报</value></data>
+  <data name="Metadata.Component.Weather.Description" xml:space="preserve"><value>显示当前的天气概况和气象预警。</value></data>
+</root>

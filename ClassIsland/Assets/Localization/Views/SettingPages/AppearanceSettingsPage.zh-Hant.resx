@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="SettingPages.AppearanceSettingsPage.Content.BodyFontSize" xml:space="preserve">
+    <value>正文字體大小</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Content.EmphasizeFontSize" xml:space="preserve">
+    <value>強調字體大小</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Content.LargeFontSize" xml:space="preserve">
+    <value>大號字體大小</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Content.SecondaryFontSize" xml:space="preserve">
+    <value>次級字體大小</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Content.WhenOneDayYouNoLongerDwellOn" xml:space="preserve">
+    <value>當有一天你不再糾結於答案 當我們又重逢於天涯或滄海
+語文 數學 英語 歷史 物理 政治 化學 生物 地理
+the quick brown fox jumps over a lazy dog
+THE QUICK BROWN FOX JUMPS OVER A LAZY DOG
+8:00-12:00 1234567890 +-*/</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.AdditionalInformationAtTimePointsEtc" xml:space="preserve">
+    <value>時間點附加信息等</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.AdjustTheFontColorToOverrideTheTheme" xml:space="preserve">
+    <value>調整字體顏色，將覆蓋主題默認值。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.AdjustTheFontSizesOnTheMainInterface" xml:space="preserve">
+    <value>調整主界面上各類字體的大小。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.AfterActivationAnExperimentalColorPickingAlgorithmWill" xml:space="preserve">
+    <value>啓用後將使用實驗性的取色算法進行取色，取色性能更好。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.AfterActivationTheComponentWillBeSeparated" xml:space="preserve">
+    <value>啓用後組件會分開。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.ApplyTheColorsUsedWhenDisplayingHighlightedElements" xml:space="preserve">
+    <value>應用顯示強調元素時所使用的顏色。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.AutomaticallyExtractsTheThemeColorIntervalFromThe" xml:space="preserve">
+    <value>自動從屏幕上提取主題色時間隔的時間，建議設爲10秒左右。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.AutomaticallyExtractsTheTimeIntervalForThemeColors" xml:space="preserve">
+    <value>自動從壁紙提取主題色時間隔的時間，建議根據動態壁紙更新速度按需設置，不宜低於10秒。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.ContentSuchAsCourseForecastEtc" xml:space="preserve">
+    <value>課程預報等內容</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.ContentSuchAsTimetableClockReminderTitlesWeather" xml:space="preserve">
+    <value>課程表、時鐘、提醒標題、天氣預報等內容</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.ControlTheLightAndDarkThemesOfThe" xml:space="preserve">
+    <value>控制應用的明暗主題。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.ControlTheWayTheAppSelectsTheTheme" xml:space="preserve">
+    <value>控制應用選取主題色的途徑。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.CustomizeTheFontForTheClassScheduleDisplayed" xml:space="preserve">
+    <value>自定義主界面顯示課表的字體。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.CustomizeTheFontWeightDisplayedOnTheMain" xml:space="preserve">
+    <value>自定義主界面顯示的字體的字重，需要對應字體支持。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.DefaultFontSizeOnTheMainInterface" xml:space="preserve">
+    <value>主界面默認字體大小</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.HomeInterfaceBackgroundColorWhenDisabledTheColor" xml:space="preserve">
+    <value>主界面背景顏色，禁用時將根據應用主題自動選擇顏色。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.IfEnabledWallpapersWillBeExtractedFromThe" xml:space="preserve">
+    <value>若啓用，將從註冊表提取壁紙，而非桌面句柄。不兼容動態壁紙。可能會解決一些與壁紙提取相關的玄學問題。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.LineSpacingOnTheMainInterface" xml:space="preserve">
+    <value>主界面行間間隔。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.MainInterfaceFilletRadiusWhenSetToThe" xml:space="preserve">
+    <value>主界面圓角半徑，調至最大數值時左右邊緣爲半圓。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.OpacityOfTheMainInterfaceBackground" xml:space="preserve">
+    <value>主界面背景的不透明度。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.WhenEnabledTheWallpaperThemeColorWillRefresh" xml:space="preserve">
+    <value>若啓用，將會在每分鐘刷新一次壁紙主題色，適用於會隨時間大幅變化主題色的動態壁紙。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.WhenObtainingWallpapersTheWallpaperWindowClassName" xml:space="preserve">
+    <value>獲取壁紙時要尋找的壁紙窗口的類名，留空將使用默認類名Progman。當需要從動態壁紙軟件（如Wallpaper Engine等）獲取壁紙時，請修改此選項爲對應壁紙軟件的壁紙窗口類名，以正確獲取壁紙。若此欄未填寫正確，將無法正常獲取壁紙。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.WhenPickingColorsAssignHigherWeightsToColors" xml:space="preserve">
+    <value>取色時爲亮度更接近此值的顏色賦予更高的權重。（默認值：0.6）</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.WhenSelectingColorsAssignHigherWeightsToColors" xml:space="preserve">
+    <value>取色時爲亮度更接近此值的顏色賦予更高的權重，修改此值會影響到取色結果中整體顏色的亮度和準確性，請謹慎修改。（默認值：0.6）</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Description.ZoomingInAndOutOfTheMainInterface" xml:space="preserve">
+    <value>主界面的縮放大小。</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.AccentColors" xml:space="preserve">
+    <value>強調色</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.ApplicationThemes" xml:space="preserve">
+    <value>應用主題</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.AutomaticallyExtractsThemeColorIntervals" xml:space="preserve">
+    <value>自動提取主題色間隔</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.BackgroundColor" xml:space="preserve">
+    <value>背景顏色</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.BackgroundOpacity" xml:space="preserve">
+    <value>背景不透明度</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.ColorPickingBrightnessPeak" xml:space="preserve">
+    <value>取色亮度波峯</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.CornerRadius" xml:space="preserve">
+    <value>圓角半徑</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.CustomFontWeight" xml:space="preserve">
+    <value>自定義字重</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.CustomFonts" xml:space="preserve">
+    <value>自定義字體</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.EnableAutomaticExtractionOfThemeColors" xml:space="preserve">
+    <value>啓用自動提取主題色</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.EnableCompatibilityMode" xml:space="preserve">
+    <value>啓用兼容模式</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.ExperimentalColorPickingAlgorithm" xml:space="preserve">
+    <value>實驗性取色算法</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.FontColor" xml:space="preserve">
+    <value>字體顏色</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.FontPreview" xml:space="preserve">
+    <value>字體預覽</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.FontSize" xml:space="preserve">
+    <value>字體大小</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.FontSizePreview" xml:space="preserve">
+    <value>字號預覽</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.InterfaceScaling" xml:space="preserve">
+    <value>界面縮放</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.RowSpacing" xml:space="preserve">
+    <value>行間隔</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.SourceOfThemeColors" xml:space="preserve">
+    <value>主題色來源</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.SplitMainInterface" xml:space="preserve">
+    <value>分體主界面</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Header.WallpaperLayerWindowCategoryName" xml:space="preserve">
+    <value>壁紙層窗口類名</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.Basic" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.Bright" xml:space="preserve">
+    <value>明亮</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.ChooseAThemeColor" xml:space="preserve">
+    <value>選擇主題色</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.Customizable" xml:space="preserve">
+    <value>自定義</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.Darkness" xml:space="preserve">
+    <value>黑暗</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.FollowTheSystem" xml:space="preserve">
+    <value>跟隨系統</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.Font" xml:space="preserve">
+    <value>字體</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.PreviewTheExtractionResults" xml:space="preserve">
+    <value>預覽提取結果</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.ScreenThemeColors" xml:space="preserve">
+    <value>屏幕主題色</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.Seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.System" xml:space="preserve">
+    <value>系統</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.SystemWallpaper" xml:space="preserve">
+    <value>系統壁紙</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.Theme" xml:space="preserve">
+    <value>主題</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.WallpaperThemeColors" xml:space="preserve">
+    <value>壁紙主題色</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.ToolTip.Browse" xml:space="preserve">
+    <value>瀏覽…</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Label.TestText" xml:space="preserve">
+    <value>測試文字</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.DefaultHarmonyOsSansSc" xml:space="preserve">
+    <value>HarmonyOS Sans SC（預設）</value>
+  </data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.FontPreview" xml:space="preserve"><value>風帶來故事的種子，時間使之發芽。The quick brown fox jumps over a lazy dog.</value></data>
+</root>
