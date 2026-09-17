@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Avalonia.Threading;
 using ClassIsland.Core;
 using ClassIsland.Core.Abstractions.Services;
+using ClassIsland.Core.Services;
 using ClassIsland.Platforms.Abstraction;
 using CommunityToolkit.Mvvm.ComponentModel;
 
@@ -17,7 +18,8 @@ namespace ClassIsland.Services;
 
 public class ExactTimeService : ObservableRecipient, IExactTimeService
 {
-    private string _syncStatusMessage = "时间尚未同步。";
+    private string _syncStatusMessage = LocalizationService.Translate(
+        "Services.ExactTimeService.Status.NotSynchronized");
 
     private DateTime PrevDateTime { get; set; } = DateTime.MinValue;
 
@@ -149,7 +151,7 @@ public class ExactTimeService : ObservableRecipient, IExactTimeService
         _isSyncingTime = true;
 
         Logger.LogInformation("正在从 {} 同步时间", SettingsService.Settings.ExactTimeServer);
-        SyncStatusMessage = $"正在同步时间……";
+        SyncStatusMessage = LocalizationService.Translate("Services.ExactTimeService.Status.Synchronizing");
         var prev = SettingsService.Settings.IsExactTimeEnabled ? NtpClock.Now.LocalDateTime : DateTime.Now;
         try
         {
@@ -162,12 +164,14 @@ public class ExactTimeService : ObservableRecipient, IExactTimeService
             }
 
             Logger.LogInformation("成功地同步了时间，现在是 {}", nowBase.ToString());
-            SyncStatusMessage = $"成功地在{nowBase}同步了时间";
+            SyncStatusMessage = LocalizationService.Translate(
+                "Services.ExactTimeService.Status.SynchronizedAt", nowBase);
         }
         catch (Exception ex)
         {
             Logger.LogError(ex, "同步时间失败。");
-            SyncStatusMessage = $"同步时间失败：{ex.Message}";
+            SyncStatusMessage = LocalizationService.Translate(
+                "Services.ExactTimeService.Status.SynchronizationFailed", ex.Message);
         }
         finally
         {

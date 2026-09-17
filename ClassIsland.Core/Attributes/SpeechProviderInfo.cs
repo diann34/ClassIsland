@@ -1,4 +1,6 @@
-﻿namespace ClassIsland.Core.Attributes;
+﻿using ClassIsland.Core.Services;
+
+namespace ClassIsland.Core.Attributes;
 
 /// <summary>
 /// 语音提供方信息
@@ -14,7 +16,7 @@ public class SpeechProviderInfo(string id, string name) : Attribute
     /// <summary>
     /// 名称
     /// </summary>
-    public string Name { get; } = name;
+    public string Name { get; } = LocalizationService.TranslateText(name);
 
     /// <summary>
     /// 设置控件类型

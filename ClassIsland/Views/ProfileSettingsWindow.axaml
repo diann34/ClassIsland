@@ -57,10 +57,10 @@
                         Margin="16">
                 <TextBlock Text="{ci:Tr ProfileSettingsWindow.Text.ScheduleInformation}" Theme="{StaticResource SubtitleTextBlockStyle}" />
                 <controls:FAInfoBar Message="{ci:Tr ProfileSettingsWindow.Message.ThisIsATemporaryLayeredTimetableAndWill}" IsVisible="{Binding IsOverlay}"/>
-                <ci:Field Label="名称">
+                <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.Name}">
                     <TextBox Text="{Binding Name}"/>
                 </ci:Field>
-                <ci:Field Label="时间表">
+                <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.TimeLayout}">
                     <ComboBox SelectedValue="{Binding TimeLayoutId}"
                               SelectedValueBinding="{Binding Key}"
                               ItemsSource="{Binding $parent[views:ProfileSettingsWindow].ViewModel.TimeLayouts.List}"
@@ -73,7 +73,7 @@
                         </ComboBox.ItemTemplate>
                     </ComboBox>
                 </ci:Field>
-                <ci:Field Label="课表群">
+                <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.ClassPlanGroup}">
                     <ComboBox SelectedValue="{Binding AssociatedGroup, Mode=TwoWay}"
                               SelectedValueBinding="{Binding Key}"
                               ItemsSource="{Binding $parent[views:ProfileSettingsWindow].ViewModel.ClassPlanGroups.List}"
@@ -206,7 +206,7 @@
                         Spacing="8"
                         DataContext="{Binding ViewModel.SelectedTimeLayout}">
                 <TextBlock Text="{ci:Tr ProfileSettingsWindow.Text.TimetableInformation}" Theme="{StaticResource SubtitleTextBlockStyle}"/>
-                <ci:Field Label="名称">
+                <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.Name}">
                     <TextBox Margin="0 4 0 0"
                              Text="{Binding Name}"/>
                 </ci:Field>
@@ -368,11 +368,11 @@
                                           Margin="0 -8"
                                           OnContent="" OffContent=""
                                           IsChecked="{Binding ViewModel.ProfileService.Profile.IsTempClassPlanGroupEnabled}" />
-                            <ci:Field Grid.Column="2" Label="失效日期">
+                            <ci:Field Grid.Column="2" Label="{ci:Tr ProfileSettingsWindow.Label.ExpirationDate}">
                                 <CalendarDatePicker VerticalAlignment="Center"
                                                     SelectedDate="{Binding ViewModel.ProfileService.Profile.TempClassPlanGroupExpireTime}" />
                                 </ci:Field>
-                            <ci:Field Grid.Column="3" Label="覆盖模式" Margin="2 0 0 0">
+                            <ci:Field Grid.Column="3" Label="{ci:Tr ProfileSettingsWindow.Label.OverrideMode}" Margin="2 0 0 0">
                                 <ComboBox SelectedIndex="{Binding ViewModel.ProfileService.Profile.TempClassPlanGroupType, Converter={StaticResource TempClassPlanGroupTypeToIntConverter}}"
                                           VerticalAlignment="Center">
                                     <ComboBoxItem>{ci:Tr ProfileSettingsWindow.Content.Override}</ComboBoxItem>
@@ -419,7 +419,7 @@
                 <TextBlock Text="{ci:Tr ProfileSettingsWindow.Text.ModifyCourse}"
                            Theme="{StaticResource SubtitleTextBlockStyle}"
                            Margin="0 0 0 8" />
-                <ci:Field Label="换课成…">
+                <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.ChangeCourseTo}">
                     <ComboBox HorizontalAlignment="Stretch"
                               Margin="0 0 0 8"
                               ItemsSource="{Binding ViewModel.Subjects.List, UpdateSourceTrigger=PropertyChanged}"
@@ -450,7 +450,7 @@
         <Flyout x:Key="CreateOverlayFlyout">
             <StackPanel Spacing="12" Width="250">
                 <TextBlock Text="{ci:Tr ProfileSettingsWindow.Text.CreateTemporaryLayer}" FontWeight="Bold" />
-                <ci:Field Label="时间表">
+                <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.TimeLayout}">
                     <ComboBox
                         HorizontalAlignment="Stretch"
                         ItemsSource="{Binding ViewModel.TimeLayouts.List}"
@@ -463,7 +463,7 @@
                         </ComboBox.ItemTemplate>
                     </ComboBox>
                 </ci:Field>
-                <ci:Field Label="启用日期">
+                <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.EnableDate}">
                     <CalendarDatePicker
                         HorizontalAlignment="Stretch"
                         SelectedDate="{Binding ViewModel.OverlayEnableDateTime}" />
@@ -531,11 +531,11 @@
                                                                  IsEnabled="{Binding !ViewModel.ManagementService.Policy.DisableProfileClassPlanEditing}">
                                                 <controls:FACommandBar.PrimaryCommands>
                                                     <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xe00d;}"
-                                                                               Label="添加" ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.CreateANewTimetable}"
+                                                                               Label="{ci:Tr ProfileSettingsWindow.Label.Add}" ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.CreateANewTimetable}"
                                                                                Click="ButtonAddClassPlan_OnClick" />
                                                     <controls:FACommandBarSeparator />
                                                     <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xe58d;}"
-                                                                               Label="复制" ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.CopyACopyOfTheCurrentlySelectedSchedule}"
+                                                                               Label="{ci:Tr ProfileSettingsWindow.Label.Copy}" ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.CopyACopyOfTheCurrentlySelectedSchedule}"
                                                                                Click="ButtonDuplicateClassPlan_OnClick" />
                                                 </controls:FACommandBar.PrimaryCommands>
                                             </controls:FACommandBar>
@@ -888,24 +888,24 @@
                                                     <controls:FACommandBar.PrimaryCommands>
                                                         <controls:FACommandBarButton
                                                             IconSource="{ci:FluentIconSource &#xe9e4;}"
-                                                            Label="详细信息"
+                                                            Label="{ci:Tr ProfileSettingsWindow.Label.Details}"
                                                             Click="ButtonOpenClassPlanDetails_OnClick"
                                                             ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.ViewAndEditTheBasicInformationOfThe2}" />
                                                         <controls:FACommandBarButton
                                                             IconSource="{ci:FluentIconSource &#xe077;}"
-                                                            Label="详细看板"
+                                                            Label="{ci:Tr ProfileSettingsWindow.Label.DetailedDashboard}"
                                                             ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.ViewTheInheritanceStatusOfAdditionalSettingsFor}"
                                                             Click="ButtonOpenClassPlanDetailsWindow_OnClick" />
                                                         <controls:FACommandBarButton
                                                             IconSource="{ci:FluentIconSource &#xea2f;}"
-                                                            Label="创建临时层"
+                                                            Label="{ci:Tr ProfileSettingsWindow.Label.CreateTemporaryLayer}"
                                                             ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.CreateATemporaryClassScheduleLayer}"
                                                             Click="ButtonOpenCreateOverlayClassPlanFlyout_OnClick"
                                                             IsEnabled="{Binding ViewModel.SelectedClassPlan.IsOverlay, Converter={StaticResource BooleanToBooleanReConverter}}"
                                                             Flyout="{StaticResource CreateOverlayFlyout}" />
                                                         <controls:FACommandBarButton
                                                             IconSource="{ci:FluentIconSource &#xe61d;}"
-                                                            Label="删除"
+                                                            Label="{ci:Tr ProfileSettingsWindow.Label.Delete}"
                                                             ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.DeleteTheClassSchedule}"
                                                             Flyout="{StaticResource DeleteClassPlanConfirmFlyout}" />
                                                     </controls:FACommandBar.PrimaryCommands>
@@ -1112,7 +1112,7 @@
                                                                Classes="hide-popup-indicator">
                                             <controls:FACommandBar.PrimaryCommands>
                                                 <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xE0B5;}"
-                                                                             Label="刷新"
+                                                                             Label="{ci:Tr ProfileSettingsWindow.Label.Refresh}"
                                                                              Click="ButtonRefreshScheduleDataGrid_OnClick"
                                                                              ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.RefreshTheCurrentView}" />
                                                 <controls:FACommandBarSeparator />
@@ -1140,24 +1140,24 @@
                                                     </StackPanel>
                                                 </controls:FACommandBarElementContainer>
                                                 <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xe9e4;}"
-                                                                             Label="详细信息"
+                                                                             Label="{ci:Tr ProfileSettingsWindow.Label.Details}"
                                                                              Click="ButtonOpenClassPlanDetails_OnClick"
                                                                              IsVisible="{Binding ViewModel.SelectedClassPlan, Converter={x:Static ObjectConverters.IsNotNull}}"
                                                                              ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.ViewAndEditTheBasicInformationOfThe2}" />
                                                 <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xe077;}"
-                                                                             Label="详细看板"
+                                                                             Label="{ci:Tr ProfileSettingsWindow.Label.DetailedDashboard}"
                                                                              ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.ViewTheInheritanceStatusOfAdditionalSettingsFor}"
                                                                              Click="ButtonOpenClassPlanDetailsWindow_OnClick"
                                                                              IsVisible="{Binding ViewModel.SelectedClassPlan, Converter={x:Static ObjectConverters.IsNotNull}}" />
                                                 <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xea2f;}"
-                                                                             Label="创建临时层"
+                                                                             Label="{ci:Tr ProfileSettingsWindow.Label.CreateTemporaryLayer}"
                                                                              ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.CreateATemporaryClassScheduleLayer}"
                                                                              Click="ButtonOpenCreateOverlayClassPlanFlyout_OnClick"
                                                                              IsVisible="{Binding ViewModel.SelectedClassPlan, Converter={x:Static ObjectConverters.IsNotNull}}"
                                                                              IsEnabled="{Binding ViewModel.SelectedClassPlan.IsOverlay, Converter={StaticResource BooleanToBooleanReConverter}, FallbackValue={x:False}}"
                                                                              Flyout="{StaticResource CreateOverlayFlyout}" />
                                                 <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xe61d;}"
-                                                                             Label="删除"
+                                                                             Label="{ci:Tr ProfileSettingsWindow.Label.Delete}"
                                                                              ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.DeleteTheClassSchedule}"
                                                                              Flyout="{StaticResource DeleteClassPlanConfirmFlyout}"
                                                                              IsVisible="{Binding ViewModel.SelectedClassPlan, Converter={x:Static ObjectConverters.IsNotNull}}" />
@@ -1235,7 +1235,7 @@
                                                                Classes="hide-popup-indicator">
                                             <controls:FACommandBar.PrimaryCommands>
                                                 <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xE0B5;}"
-                                                                           Label="刷新"
+                                                                           Label="{ci:Tr ProfileSettingsWindow.Label.Refresh}"
                                                                            Click="ButtonRefreshScheduleDataGrid_OnClick"
                                                                            ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.RefreshTheCurrentView}" />
                                             </controls:FACommandBar.PrimaryCommands>
@@ -1271,12 +1271,12 @@
                                         <controls:FACommandBar.PrimaryCommands>
                                             <controls:FACommandBarButton Click="ButtonAddTimeLayout_OnClick" ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.CreateANewSchedule}"
                                                                        IconSource="{ci:FluentIconSource &#xE00D;}"
-                                                                       Label="添加"/>
+                                                                       Label="{ci:Tr ProfileSettingsWindow.Label.Add}"/>
                                             <controls:FACommandBarSeparator />
                                             <controls:FACommandBarButton Click="ButtonDuplicateTimeLayout_OnClick" ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.CopyTheSelectedSchedule}"
                                                                        IconSource="{ci:FluentIconSource &#xE58D;}"
                                                                        IsEnabled="{Binding ViewModel.SelectedTimeLayout, Converter={x:Static ObjectConverters.IsNotNull}}"
-                                                                       Label="复制"/>
+                                                                       Label="{ci:Tr ProfileSettingsWindow.Label.Copy}"/>
                                         </controls:FACommandBar.PrimaryCommands>
                                     </controls:FACommandBar>
                                 </ci:TutorialBarrier>
@@ -1326,13 +1326,13 @@
                                           ExpandDirection="Up" Header="{ci:Tr ProfileSettingsWindow.Header.TimePointDuration}"
                                           IsEnabled="{Binding ViewModel.ManagementService.Policy.DisableProfileTimeLayoutEditing, Converter={StaticResource InvertBooleanConverter}, RelativeSource={RelativeSource FindAncestor, AncestorType=views:ProfileSettingsWindow}}">
                                     <StackPanel Spacing="4">
-                                        <ci:Field Label="默认上课时间点时长" Suffix="分钟">
+                                        <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.DefaultClassTimePointDuration}" Suffix="{ci:Tr ProfileSettingsWindow.Suffix.Minutes}">
                                             <controls:FANumberBox
                                                 Maximum="36000" Minimum="0" HorizontalAlignment="Stretch"
                                                 Foreground="{DynamicResource MaterialDesignBody}"
                                                 Value="{Binding ViewModel.SettingsService.Settings.DefaultOnClassTimePointMinutes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={x:Static ci:NotNaNConverter.Instance}}" />
                                         </ci:Field>
-                                        <ci:Field Label="默认课间时间点时长" Suffix="分钟">
+                                        <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.DefaultBreakTimePointDuration}" Suffix="{ci:Tr ProfileSettingsWindow.Suffix.Minutes}">
                                             <controls:FANumberBox
                                                 Maximum="36000" Minimum="0" HorizontalAlignment="Stretch"
                                                 Foreground="{DynamicResource MaterialDesignBody}"
@@ -1363,26 +1363,26 @@
                                                 <controls:FACommandBarButton Click="ButtonAddClassTime_OnClick"
                                                                            IconSource="{ci:FluentIconSource &#xE47A;}"
                                                                            ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.AddClassStartTimePoint}"
-                                                                           Label="上课"/>
+                                                                           Label="{ci:Tr ProfileSettingsWindow.Label.ClassTime}"/>
                                                 <controls:FACommandBarButton Click="ButtonAddBreakTime_OnClick"
                                                                            IconSource="{ci:FluentIconSource &#xE4C4;}"
                                                                            ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.AddABreakTimePoint}"
-                                                                           Label="课间"/>
+                                                                           Label="{ci:Tr ProfileSettingsWindow.Label.BreakTime}"/>
                                                 <controls:FACommandBarButton Click="ButtonAddSeparator_OnClick"
                                                                            IconSource="{ci:FluentIconSource &#xF021;}"
                                                                            ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.AddADivider}"
-                                                                           Label="分割线"/>
+                                                                           Label="{ci:Tr ProfileSettingsWindow.Label.Divider}"/>
                                                 <controls:FACommandBarButton Click="ButtonAddActionTimePoint_OnClick"
                                                                            IconSource="{ci:FluentIconSource &#xE01F;}"
                                                                            ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.AddAnActionTimePoint}"
-                                                                           Label="行动" />
+                                                                           Label="{ci:Tr ProfileSettingsWindow.Label.Action}" />
                                                 <controls:FACommandBarSeparator />
                                                 <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xE58B;}"
                                                                            Command="{Binding $parent[views:ProfileSettingsWindow].DuplicateTimePointCommand}"
                                                                            CommandParameter="{Binding $parent[views:ProfileSettingsWindow].ViewModel.SelectedTimePoint}"
                                                                            ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.CreateACopyAtTheSelectedTimePoint}"
                                                                            IsEnabled="{Binding $parent[views:ProfileSettingsWindow].ViewModel.SelectedTimePoint, Converter={x:Static ObjectConverters.IsNotNull}}"
-                                                                           Label="创建副本" />
+                                                                           Label="{ci:Tr ProfileSettingsWindow.Label.CreateCopy}" />
                                                 <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xE195;}"
                                                                            ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.UndoCtrlZSingleStep}"
                                                                            IsEnabled="{Binding $parent[views:ProfileSettingsWindow].ViewModel.CanUndo}">
@@ -1427,7 +1427,7 @@
                                                 <controls:FACommandBarButton Click="ButtonRemoveTimePoint_OnClick"
                                                                            ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.DeleteTheSelectedTimePoint}"
                                                                            IsEnabled="{Binding $parent[views:ProfileSettingsWindow].ViewModel.SelectedTimePoint, Converter={x:Static ObjectConverters.IsNotNull}}"
-                                                                           Label="删除">
+                                                                           Label="{ci:Tr ProfileSettingsWindow.Label.Delete}">
                                                     <controls:FACommandBarButton.IconSource>
                                                         <controls:FASymbolIconSource Symbol="Remove"/>
                                                     </controls:FACommandBarButton.IconSource>
@@ -1435,15 +1435,15 @@
                                                 <controls:FACommandBarButton Click="ButtonRefreshTimeLayout_OnClick"
                                                                            IconSource="{ci:FluentIconSource &#xE0B5;}"
                                                                            ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.ReorderTheTimePointsInThisTimetable}"
-                                                                           Label="刷新"/>
+                                                                           Label="{ci:Tr ProfileSettingsWindow.Label.Refresh}"/>
                                                 <controls:FACommandBarSeparator />
                                                 <controls:FACommandBarButton Click="ButtonEditTimeLayoutInfo_OnClick"
                                                                            IconSource="{ci:FluentIconSource &#xE9E4;}"
                                                                            ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.ViewAndEditTheBasicInformationOfThe}"
-                                                                           Label="时间表信息"/>
+                                                                           Label="{ci:Tr ProfileSettingsWindow.Label.TimeLayoutInformation}"/>
                                                 <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xE61D;}"
                                                                            ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.DeleteThisSchedule}"
-                                                                           Label="删除时间表">
+                                                                           Label="{ci:Tr ProfileSettingsWindow.Label.DeleteTimeLayout}">
                                                     <controls:FACommandBarButton.Flyout>
                                                         <Flyout>
                                                             <StackPanel Spacing="8">
@@ -1640,18 +1640,18 @@
                                                     <TextBlock Text="{ci:Tr ProfileSettingsWindow.Text.EditActionPoints}"
                                                                Theme="{StaticResource SubtitleTextBlockStyle}" />
                                                     <!--<TextBlock Text="{Binding}"/>-->
-                                                    <ci:Field Label="开始时间">
+                                                    <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.StartTime}">
                                                         <TimePicker
                                                             SelectedTime="{Binding ViewModel.SelectedTimePoint.StartTime}"
                                                             UseSeconds="True" />
                                                     </ci:Field>
-                                                    <ci:Field Label="结束时间" x:Name="FieldEndTime">
+                                                    <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.EndTime}" x:Name="FieldEndTime">
                                                         <TimePicker
                                                             SelectedTime="{Binding ViewModel.SelectedTimePoint.EndTime}"
                                                             UseSeconds="True">
                                                         </TimePicker>
                                                     </ci:Field>
-                                                    <ci:Field Label="类型" x:Name="FieldTimeLayoutType">
+                                                    <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.Type}" x:Name="FieldTimeLayoutType">
                                                         <ListBox
                                                             Theme="{StaticResource ChipListBoxTheme}"
                                                             SelectedIndex="{Binding ViewModel.SelectedTimePoint.TimeType}">
@@ -1698,7 +1698,7 @@
                                                     </WrapPanel>
                                                 </StackPanel>
                                                 <StackPanel x:Name="StackPanelBreakingTimePointSettings">
-                                                    <ci:Field Label="课间名称">
+                                                    <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.BreakName}">
                                                         <AutoCompleteBox
                                                             ItemsSource="{Binding $parent[views:ProfileSettingsWindow].ViewModel.CurrentProfileBreakNames}"
                                                             Text="{Binding ViewModel.SelectedTimePoint.BreakName}"
@@ -1773,14 +1773,14 @@
                                      IsEnabled="{Binding ViewModel.ManagementService.Policy.DisableProfileSubjectsEditing, Converter={StaticResource BooleanToBooleanReConverter}}">
                                 <controls:FACommandBar.PrimaryCommands>
                                     <controls:FACommandBarButton Click="ButtonAddSubject_OnClick" ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.CreateANewSubject}"
-                                                               IconSource="{ci:FluentIconSource &#xE00D;}" Label="添加"/>
+                                                               IconSource="{ci:FluentIconSource &#xE00D;}" Label="{ci:Tr ProfileSettingsWindow.Label.Add}"/>
                                     <controls:FACommandBarSeparator/>
                                     <controls:FACommandBarButton Click="ButtonDuplicateSubject_OnClick" ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.CopyTheSelectedSubject}"
                                                                IsEnabled="{Binding ViewModel.SelectedSubjectKvp, Converter={x:Static ObjectConverters.IsNotNull}}"
-                                                               IconSource="{ci:FluentIconSource &#xE58D;}" Label="复制"/>
+                                                               IconSource="{ci:FluentIconSource &#xE58D;}" Label="{ci:Tr ProfileSettingsWindow.Label.Copy}"/>
                                     <controls:FACommandBarButton Click="ButtonDeleteSubject_OnClick" ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.DeleteTheSelectedSubject}"
                                                                IsEnabled="{Binding ViewModel.SelectedSubjectKvp, Converter={x:Static ObjectConverters.IsNotNull}}"
-                                                               IconSource="{ci:FluentIconSource &#xE61D;}" Label="删除"/>
+                                                               IconSource="{ci:FluentIconSource &#xE61D;}" Label="{ci:Tr ProfileSettingsWindow.Label.Delete}"/>
                                 </controls:FACommandBar.PrimaryCommands>
                             </controls:FACommandBar>
                             <!-- 科目选择 -->
@@ -1893,17 +1893,17 @@
                                             <!-- 科目名 & 简称 -->
                                             <Grid ColumnDefinitions="*,*">
                                                 <!-- 科目名 -->
-                                                <ci:Field Grid.Column="0" Label="科目名" Margin="0 0 2 0">
+                                                <ci:Field Grid.Column="0" Label="{ci:Tr ProfileSettingsWindow.Label.SubjectName}" Margin="0 0 2 0">
                                                     <TextBox x:Name="TextBoxSubjectName"
                                                              Text="{Binding Name}" />
                                                 </ci:Field>
                                                 <!-- 简称 -->
-                                                <ci:Field Grid.Column="1" Label="简称" Margin="2 0 0 0">
+                                                <ci:Field Grid.Column="1" Label="{ci:Tr ProfileSettingsWindow.Label.Abbreviation}" Margin="2 0 0 0">
                                                     <TextBox Text="{Binding Initial}" />
                                                 </ci:Field>
                                             </Grid>
                                             <!-- 科任老师 -->
-                                            <ci:Field Label="科任老师">
+                                            <ci:Field Label="{ci:Tr ProfileSettingsWindow.Label.SubjectTeacher}">
                                                 <TextBox Text="{Binding TeacherName}" />
                                             </ci:Field>
                                             <!-- 户外课程 -->
@@ -1954,7 +1954,7 @@
                                 <controls:FACommandBar.PrimaryCommands>
                                     <controls:FACommandBarButton Click="ButtonRefreshScheduleAdjustmentView_OnClick"
                                                                IconSource="{ci:FluentIconSource &#xE0B5;}"
-                                                               Label="刷新"
+                                                               Label="{ci:Tr ProfileSettingsWindow.Label.Refresh}"
                                                                IsEnabled="{Binding ViewModel.IsInScheduleSwappingMode, Converter={StaticResource InvertBooleanConverter}}"/>
                                     <controls:FACommandBarSeparator>
                                         <controls:FACommandBarSeparator.IsVisible>
@@ -1968,7 +1968,7 @@
                                     </controls:FACommandBarSeparator>
                                     <controls:FACommandBarButton Click="ButtonEditClassInfoTemp_OnClick"
                                                                IconSource="{ci:FluentIconSource &#xE7C9;}"
-                                                               Label="修改课程"
+                                                               Label="{ci:Tr ProfileSettingsWindow.Label.ModifyCourse}"
                                                                IsEnabled="{Binding ViewModel.IsInScheduleSwappingMode, Converter={StaticResource InvertBooleanConverter}}">
                                         <controls:FACommandBarButton.IsVisible>
                                             <Binding Path="#ScheduleAdjustmentTabControl.SelectedIndex"
@@ -1981,7 +1981,7 @@
                                     </controls:FACommandBarButton>
                                     <controls:FACommandBarButton Click="ButtonSwapSchedule_OnClick"
                                                                IconSource="{ci:FluentIconSource &#xE15F;}"
-                                                               Label="交换课程"
+                                                               Label="{ci:Tr ProfileSettingsWindow.Label.SwapCourse}"
                                                                IsEnabled="{Binding ViewModel.IsInScheduleSwappingMode, Converter={StaticResource InvertBooleanConverter}}">
                                         <controls:FACommandBarButton.IsVisible>
                                             <Binding Path="#ScheduleAdjustmentTabControl.SelectedIndex"
@@ -1994,7 +1994,7 @@
                                     </controls:FACommandBarButton>
                                     <controls:FACommandBarButton Click="ButtonCancelClassSwap_OnClick"
                                                                IconSource="{ci:FluentIconSource &#xE671;}"
-                                                               Label="取消"
+                                                               Label="{ci:Tr ProfileSettingsWindow.Label.Cancel}"
                                                                IsEnabled="{Binding !ViewModel.IsInScheduleSwappingMode, Converter={StaticResource InvertBooleanConverter}}">
                                         <controls:FACommandBarButton.IsVisible>
                                             <MultiBinding Converter="{x:Static BoolConverters.And}">
@@ -2010,7 +2010,7 @@
                                     </controls:FACommandBarButton>
                                     <controls:FACommandBarButton Click="ButtonSwapScheduleComplete_OnClick"
                                                                IconSource="{ci:FluentIconSource &#xE424;}"
-                                                               Label="完成交换"
+                                                               Label="{ci:Tr ProfileSettingsWindow.Label.CompleteSwap}"
                                                                IsEnabled="{Binding !ViewModel.IsInScheduleSwappingMode, Converter={StaticResource InvertBooleanConverter}}">
                                         <controls:FACommandBarButton.IsVisible>
                                             <MultiBinding Converter="{x:Static BoolConverters.And}">
@@ -2185,7 +2185,7 @@
                                                    Click="ButtonOpenProfileManager_OnClick"/>
                         <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xe6b1;}"
                                                    Click="ButtonOpenTempClassPlans_OnClick"
-                                                   Label="{Binding ViewModel.LessonsService.CurrentClassPlan.Name, FallbackValue='（无）'}"
+                                                   Label="{Binding ViewModel.LessonsService.CurrentClassPlan.Name, FallbackValue={ci:Tr ProfileSettingsWindow.Label.None}}"
                                                    ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.ImplementTemporaryClassSchedules}"/>
                         <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xe92f;}"
                                                    Click="ButtonClassPlansGroup_OnClick"
@@ -2193,16 +2193,16 @@
                                                    Label="{Binding Data.Name, Source={StaticResource ClassPlanGroupBindingProxy}, Mode=OneWay}"/>
                         <controls:FACommandBarSeparator/>
                         <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xf431;}"
-                                                   Label="不信任"
+                                                   Label="{ci:Tr ProfileSettingsWindow.Label.Untrusted}"
                                                    Click="ButtonTrustProfile_OnClick"
                                                    ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.TheCurrentArchiveIsNotTrustedAndSome}"
                                                    IsVisible="{Binding ViewModel.ProfileService.IsCurrentProfileTrusted, Converter={StaticResource InvertBooleanConverter}}" />
                         <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xeeb5;}"
-                                                   Label="保存"
+                                                   Label="{ci:Tr ProfileSettingsWindow.Label.Save}"
                                                    Click="ButtonSaveProfile_OnClick"
                                                    ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.SaveTheCurrentArchiveFile}"/>
                         <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xe68f;}"
-                                                   Label="导入/导出"
+                                                   Label="{ci:Tr ProfileSettingsWindow.Label.ImportExport}"
                                                    Click="ButtonOpenProfileImportPage_OnClick"
                                                    ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.ImportExternalCourseInformationOrExportCurrentFile}">
                             <controls:FACommandBarButton.IsVisible>
@@ -2215,7 +2215,7 @@
                             </controls:FACommandBarButton.IsVisible>
                         </controls:FACommandBarButton>
                         <controls:FACommandBarButton IconSource="{ci:FluentIconSource &#xee2f;}"
-                                                   Label="帮助"
+                                                   Label="{ci:Tr ProfileSettingsWindow.Label.Help}"
                                                    Click="ButtonHelp_OnClick"
                                                    CommandParameter="https://docs.classisland.tech/app/profile/"
                                                    ToolTip.Tip="{ci:Tr ProfileSettingsWindow.ToolTip.ViewProfileEditorHelp}"/>

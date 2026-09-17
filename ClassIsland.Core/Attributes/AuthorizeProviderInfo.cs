@@ -2,6 +2,7 @@
 
 
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 
 /// <summary>
@@ -21,7 +22,7 @@ public class AuthorizeProviderInfo(string id, string name, string iconExpression
     /// <summary>
     /// 此认证提供方的名称
     /// </summary>
-    public string Name { get; } = name;
+    public string Name { get; } = LocalizationService.TranslateText(name);
 
     /// <summary>
     /// 此认证提供方的图标

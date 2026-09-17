@@ -6,6 +6,7 @@ using Avalonia.Interactivity;
 using Avalonia.Platform.Storage;
 using ClassIsland.Core.Abstractions.Services.Management;
 using ClassIsland.Core.Controls;
+using ClassIsland.Core.Services;
 using ClassIsland.Shared;
 using ClassIsland.Shared.Helpers;
 using ClassIsland.Shared.Models.Management;
@@ -20,7 +21,8 @@ public partial class JoinManagementDialog : MyWindow
 {
     public static List<FilePickerFileType> ManagementConfigFileTypes { get; } =
     [
-        new FilePickerFileType("配置文件")
+        new FilePickerFileType(LocalizationService.Translate(
+            "Controls.JoinManagementDialog.FileType.ConfigurationFile"))
         {
             Patterns =["*.json"]
         }

@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using Avalonia.Controls.Templates;
 using Avalonia.Markup.Xaml.Templates;
+using ClassIsland.Core.Services;
 
 namespace ClassIsland.Core.Models.Weather;
 
@@ -27,7 +28,7 @@ public class WeatherIconTemplateRegistryInfo
     internal WeatherIconTemplateRegistryInfo(string id, string name, IDataTemplate template)
     {
         Id = id;
-        Name = name;
+        Name = LocalizationService.TranslateText(name);
         Template = template;
     }
 }

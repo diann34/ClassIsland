@@ -20,6 +20,7 @@ using ClassIsland.Core.Controls.Ruleset;
 using ClassIsland.Core.Helpers.UI;
 using ClassIsland.Core.Models.Components;
 using ClassIsland.Core.Models.UI;
+using ClassIsland.Core.Services;
 using ClassIsland.Core.Services.Registry;
 using ClassIsland.Platforms.Abstraction;
 using ClassIsland.Services;
@@ -224,7 +225,8 @@ public partial class EditModeView : UserControl
         control.Ruleset = ViewModel.MainViewModel.SelectedComponentSettings.HidingRules;
         SettingsPageBase.OpenDrawerCommand.Execute(control);
         ViewModel.SecondaryDrawerContent = control;
-        ViewModel.SecondaryDrawerTitle = "编辑规则集";
+        ViewModel.SecondaryDrawerTitle = LocalizationService.Translate(
+            "Controls.EditMode.EditModeView.Title.EditRuleset");
         ViewModel.SecondaryDrawerState = VerticalDrawerOpenState.Opened;
     }
     private void ButtonOpenRulesetForMainWindowLine_OnClick(object? sender, RoutedEventArgs e)
@@ -235,7 +237,8 @@ public partial class EditModeView : UserControl
         control.Ruleset = ViewModel.SelectedMainWindowLineSettings.HidingRules;
         SettingsPageBase.OpenDrawerCommand.Execute(control);
         ViewModel.SecondaryDrawerContent = control;
-        ViewModel.SecondaryDrawerTitle = "编辑规则集";
+        ViewModel.SecondaryDrawerTitle = LocalizationService.Translate(
+            "Controls.EditMode.EditModeView.Title.EditRuleset");
         ViewModel.SecondaryDrawerState = VerticalDrawerOpenState.Opened;
     }
 
@@ -285,7 +288,7 @@ public partial class EditModeView : UserControl
             Content = new Field()
             {
                 Content = textBox,
-                Label = "组件名",
+                Label = LocalizationService.Translate("Controls.EditMode.EditModeView.Label.ComponentName"),
                 Suffix = ".json"
             }
         }.ShowAsyncAuto();
@@ -332,7 +335,8 @@ public partial class EditModeView : UserControl
         var r = await new FAContentDialog()
         {
             Title = "删除组件配置",
-            Content = $"您确定要删除组件配置 {name} 吗？此操作无法撤销，组件配置内的组件信息都将被删除！",
+            Content = LocalizationService.Translate(
+                "Controls.EditMode.EditModeView.Content.ConfirmDeleteComponentProfile", name),
             DefaultButton = FAContentDialogButton.Primary,
             PrimaryButtonText = "删除",
             SecondaryButtonText = "取消"
@@ -359,7 +363,8 @@ public partial class EditModeView : UserControl
             Content = new Field()
             {
                 Content = textBox,
-                Label = "组件配置方案名称",
+                Label = LocalizationService.Translate(
+                    "Controls.EditMode.EditModeView.Label.ComponentProfileName"),
                 Suffix = ".json"
             },
             DefaultButton = FAContentDialogButton.Primary,

@@ -2,6 +2,7 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using ClassIsland.Core;
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using ClassIsland.Services;
 using FluentAvalonia.UI.Controls;
 using System;
@@ -39,7 +40,9 @@ public partial class HomePage : UserControl
             }
             catch (Exception ex)
             {
-                this.ShowErrorToast($"无法检测其他安装实例的状态:{ex.Message}" + Environment.NewLine + "\"回滚\"选项将不可用。");
+                this.ShowErrorToast(LocalizationService.Translate(
+                    "Views.RecoveryPages.HomePage.Message.InstallationDetectionFailed",
+                    ex.Message));
                 validInstallations = new List<string>();
             }
 
@@ -69,8 +72,9 @@ public partial class HomePage : UserControl
 
     private async void ButtonCleanTempFiles_OnClick(object sender, RoutedEventArgs e)
     {
-        var result = await ContentDialogHelper.ShowConfirmationDialog("清除临时文件", 
-            "此操作将删除所有缓存和临时文件，并且无法恢复。您确定要清除临时文件吗？",
+        var result = await ContentDialogHelper.ShowConfirmationDialog(
+            LocalizationService.Translate("Views.RecoveryPages.HomePage.Title.ClearTemporaryFiles"),
+            LocalizationService.Translate("Views.RecoveryPages.HomePage.Content.ConfirmClearTemporaryFiles"),
             root: TopLevel.GetTopLevel(this));
         if (!result)
         {
@@ -97,9 +101,10 @@ public partial class HomePage : UserControl
 
     private async void ButtonResetSettings_OnClick(object sender, RoutedEventArgs e)
     {
-        var result = await ContentDialogHelper.ShowConfirmationDialog("重置应用设置",
-            "此操作将重置应用的设置信息，并且无法恢复，不影响档案、组件、自动化、插件等的配置。您确定要重置应用设置吗？"+Environment.NewLine+Environment.NewLine+"如果您确实希望重置应用设置，请在下方文本框输入 ⌈我确认重置应用设置⌋。",
-            "我确认重置应用设置",
+        var result = await ContentDialogHelper.ShowConfirmationDialog(
+            LocalizationService.Translate("Views.RecoveryPages.HomePage.Title.ResetApplicationSettings"),
+            LocalizationService.Translate("Views.RecoveryPages.HomePage.Content.ConfirmResetApplicationSettings"),
+            LocalizationService.Translate("Views.RecoveryPages.HomePage.Verification.ResetApplicationSettings"),
             root: TopLevel.GetTopLevel(this));
         if (!result)
         {
@@ -126,9 +131,10 @@ public partial class HomePage : UserControl
 
     private async void ButtonResetConfigs_OnClick(object sender, RoutedEventArgs e)
     {
-        var result = await ContentDialogHelper.ShowConfirmationDialog("重置全部配置",
-            "此操作将重置应用的除档案外的全部设置，包括组件、自动化等配置。您确定要重置全部配置吗？"+Environment.NewLine+Environment.NewLine+"如果您确实希望重置全部配置，请在下方文本框输入 ⌈我确认重置除课表信息外全部配置⌋。",
-            "我确认重置除课表信息外全部配置",
+        var result = await ContentDialogHelper.ShowConfirmationDialog(
+            LocalizationService.Translate("Views.RecoveryPages.HomePage.Title.ResetAllConfiguration"),
+            LocalizationService.Translate("Views.RecoveryPages.HomePage.Content.ConfirmResetAllConfiguration"),
+            LocalizationService.Translate("Views.RecoveryPages.HomePage.Verification.ResetAllConfiguration"),
             root: TopLevel.GetTopLevel(this));
         if (!result)
         {
@@ -160,9 +166,10 @@ public partial class HomePage : UserControl
 
     private async void ButtonResetAll_OnClick(object sender, RoutedEventArgs e)
     {
-        var result = await ContentDialogHelper.ShowConfirmationDialog("重置全部信息",
-            "此操作将重置应用的所有信息，恢复到安装前的状态，包括档案配置、应用设置、组件配置、自动化配置、插件设置、已安装的插件等，并且无法恢复。您确定要重置全部信息吗？"+Environment.NewLine+Environment.NewLine+"如果您确实希望重置全部信息，请在下方文本框输入 ⌈我确认重置包括课表配置在内的全部信息⌋。",
-            "我确认重置包括课表配置在内的全部信息",
+        var result = await ContentDialogHelper.ShowConfirmationDialog(
+            LocalizationService.Translate("Views.RecoveryPages.HomePage.Title.ResetAllData"),
+            LocalizationService.Translate("Views.RecoveryPages.HomePage.Content.ConfirmResetAllData"),
+            LocalizationService.Translate("Views.RecoveryPages.HomePage.Verification.ResetAllData"),
             root: TopLevel.GetTopLevel(this));
         if (!result)
         {

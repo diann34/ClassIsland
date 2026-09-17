@@ -3,6 +3,7 @@ using System.Text.Json.Serialization;
 using ClassIsland.Core.Abstractions.Models;
 using ClassIsland.Core.Enums.Tutorial;
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using FluentAvalonia.UI.Controls;
 using MoonSharp.Interpreter;
@@ -66,7 +67,8 @@ public partial class TutorialSentence : ObservableObject, IXmlnsAttached
     /// <summary>
     /// 右侧按钮文字，留空代表没有这个按钮
     /// </summary>
-    [ObservableProperty] private string _rightButtonText = "下一条";
+    [ObservableProperty] private string _rightButtonText = LocalizationService.Translate(
+        "Core.Models.Tutorial.TutorialSentence.Button.Next");
 
     /// <summary>
     /// 右侧按钮点击动作

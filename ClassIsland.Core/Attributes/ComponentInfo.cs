@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using ClassIsland.Core.Helpers.UI;
 using ClassIsland.Core.Models.Plugin;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 
 namespace ClassIsland.Core.Attributes;
@@ -81,7 +82,8 @@ public class ComponentInfo : Attribute
     /// <summary>
     /// 用于 UI 展示的来源名称。
     /// </summary>
-    public string SourceName => SourcePlugin?.Manifest.Name ?? "内置";
+    public string SourceName => SourcePlugin?.Manifest.Name ?? LocalizationService.Translate(
+        "Core.Attributes.ComponentInfo.Source.BuiltIn");
 
     /// <inheritdoc />
     public ComponentInfo(string guid, string name, string iconSource, string description = "") : this(guid, name,
@@ -94,7 +96,7 @@ public class ComponentInfo : Attribute
     public ComponentInfo(string guid, string name, string description = "")
     {
         Guid = Guid.Parse(guid);
-        Name = name;
-        Description = description;
+        Name = LocalizationService.TranslateText(name);
+        Description = LocalizationService.TranslateText(description);
     }
 }

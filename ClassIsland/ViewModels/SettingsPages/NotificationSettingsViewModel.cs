@@ -8,6 +8,7 @@ using System.Reactive.Linq;
 using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Abstractions.Services.Management;
 using ClassIsland.Core.Abstractions.Services.SpeechService;
+using ClassIsland.Core.Services;
 using ClassIsland.Models;
 using ClassIsland.Models.Notification;
 using ClassIsland.Services;
@@ -77,7 +78,8 @@ public partial class NotificationSettingsViewModel : ObservableRecipient
         EdgeTts.GetVoice().FindAll(i => i.Locale.Contains("zh-CN"));
 
     // 现有的测试语音文本属性
-    private string _testSpeechText = "风带来了故事的种子，时间使之发芽。";
+    private string _testSpeechText = LocalizationService.Translate(
+        "SettingPages.NotificationSettingsPage.Text.SpeechPreview");
     private GptSoVitsSpeechSettings? _selectedGptSoVitsSpeechPreset;
     private INotificationSenderRegisterInfo? _selectedRegisterInfo;
     private string? _notificationSettingsSelectedChannel;

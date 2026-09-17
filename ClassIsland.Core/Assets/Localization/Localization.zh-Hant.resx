@@ -399,4 +399,70 @@
   <data name="Core.StylesBase.ToolTip.ImageLoadFailed" xml:space="preserve">
     <value>喔唷，圖片載入失敗啦</value>
   </data>
+  <data name="Core.Helpers.UI.ContentDialogHelper.Button.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Core.Helpers.UI.ContentDialogHelper.Button.Confirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Core.Helpers.UI.ContentDialogHelper.Message.IncorrectVerificationResult" xml:space="preserve">
+    <value>驗證結果不正確，請重新輸入。</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Message.NodeNotUsedByAnyTimetable" xml:space="preserve">
+    <value>目前節點未被任何課表使用，無法提供分析結果。</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.Content.Undo" xml:space="preserve">
+    <value>復原</value>
+  </data>
+  <data name="Core.Controls.Tutorial.TutorialBarrier.Content.SkipTutorial" xml:space="preserve">
+    <value>略過教學</value>
+  </data>
+  <data name="Core.Controls.Tutorial.TutorialBarrier.Message.TutorialInProgress" xml:space="preserve">
+    <value>教學正在進行中，請等目前段落教學結束後再使用此功能。</value>
+  </data>
+  <data name="Core.Controls.Tutorial.TutorialBarrier.Title.ActionUnavailableDuringTutorial" xml:space="preserve">
+    <value>o((&gt;ω&lt; ))o 這裡不能點！</value>
+  </data>
+  <data name="Core.Controls.DocumentReaderWindow.Title.DocumentLoadFailed" xml:space="preserve">
+    <value>無法載入文件 {0}</value>
+  </data>
+  <data name="Core.FileTypes.ClassIslandPluginPackage" xml:space="preserve">
+    <value>ClassIsland 外掛程式套件</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Dependency.Lesson" xml:space="preserve">
+    <value>課表 {0}，第 {1} 節</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Dependency.ClassPlan" xml:space="preserve">
+    <value>課表 {0}</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Dependency.TimePoint" xml:space="preserve">
+    <value>時間表 {0}，{1:t}-{2:t}</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Dependency.Subject" xml:space="preserve">
+    <value>科目 {0}</value>
+  </data>
+  <data name="Core.Controls.AttachedSettingsControlPresenter.Dependency.TimeLayout" xml:space="preserve">
+    <value>時間表 {0}</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.Text.UnknownAction" xml:space="preserve">
+    <value>{0}（未知行動）</value>
+  </data>
+  <data name="Core.Controls.Automation.ActionItemControl.Message.ActionDeleted" xml:space="preserve">
+    <value>已刪除行動「{0}」。</value>
+  </data>
+  <data name="Core.Attributes.ComponentInfo.Source.BuiltIn" xml:space="preserve">
+    <value>內建</value>
+  </data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Sunday" xml:space="preserve"><value>週日</value></data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Monday" xml:space="preserve"><value>週一</value></data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Tuesday" xml:space="preserve"><value>週二</value></data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Wednesday" xml:space="preserve"><value>週三</value></data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Thursday" xml:space="preserve"><value>週四</value></data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Friday" xml:space="preserve"><value>週五</value></data>
+  <data name="Core.Converters.WeekIndexToWeekStringConverter.Saturday" xml:space="preserve"><value>週六</value></data>
+  <data name="Core.Converters.TimeTypeToTimeTypeNameConverter.Class" xml:space="preserve"><value>上課</value></data>
+  <data name="Core.Converters.TimeTypeToTimeTypeNameConverter.Break" xml:space="preserve"><value>課間休息</value></data>
+  <data name="Core.Converters.TimeTypeToTimeTypeNameConverter.Separator" xml:space="preserve"><value>分隔線</value></data>
+  <data name="Core.Converters.TimeTypeToTimeTypeNameConverter.Action" xml:space="preserve"><value>行動</value></data>
+  <data name="Core.Models.Tutorial.TutorialSentence.Button.Next" xml:space="preserve"><value>下一則</value></data>
 </root>

@@ -11,6 +11,7 @@ using ClassIsland.Core.Enums.SettingsWindow;
 using ClassIsland.Core.Helpers.UI;
 using ClassIsland.Core.Models.UI;
 using ClassIsland.Core.Models.Weather;
+using ClassIsland.Core.Services;
 using ClassIsland.Services;
 using ClassIsland.Shared;
 using ClassIsland.ViewModels.SettingsPages;
@@ -73,7 +74,8 @@ public partial class WeatherSettingsPage : SettingsPageBase
         {
             toast.Close();
             Logger.LogError(exception, "无法获取当前位置");
-            this.ShowErrorToast($"无法获取当前位置：{exception.Message}");
+            this.ShowErrorToast(LocalizationService.Translate(
+                "SettingPages.WeatherSettingsPage.Message.GetCurrentLocationFailed", exception.Message));
         }
     }
 
@@ -92,7 +94,9 @@ public partial class WeatherSettingsPage : SettingsPageBase
             {
                 if (result.IsPrecisionDegraded)
                 {
-                    this.ShowWarningToast($"此天气信息降级了坐标精度: {result.DegradedPrecision}位小数");
+                    this.ShowWarningToast(LocalizationService.Translate(
+                        "SettingPages.WeatherSettingsPage.Message.CoordinatePrecisionDegraded",
+                        result.DegradedPrecision));
                     this.ShowSuccessToast("天气刷新成功");
                 }
                 else
@@ -102,13 +106,15 @@ public partial class WeatherSettingsPage : SettingsPageBase
             }
             else
             {
-                this.ShowErrorToast($"天气刷新失败: {result.ErrorMessage}");
+                this.ShowErrorToast(LocalizationService.Translate(
+                    "SettingPages.WeatherSettingsPage.Message.WeatherRefreshFailed", result.ErrorMessage));
             }
         }
         catch (Exception exception)
         {
             Logger.LogError(exception, "天气刷新失败");
-            this.ShowErrorToast($"天气刷新失败: {exception.Message}");
+            this.ShowErrorToast(LocalizationService.Translate(
+                "SettingPages.WeatherSettingsPage.Message.WeatherRefreshFailed", exception.Message));
         }
     }
 

@@ -9,6 +9,7 @@ using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Controls;
 using ClassIsland.Core.Enums;
 using ClassIsland.Core.Models.ProfileAnalyzing;
+using ClassIsland.Core.Services;
 using ClassIsland.Models;
 using ClassIsland.Shared;
 using ClassIsland.Shared.Interfaces;
@@ -129,7 +130,8 @@ public partial class ClassPlanDetailsWindow : ViewBase
             );
         }
 
-        ViewModel.Summary = "小结：将使用在【应用设置】中的设置或默认设置。";
+        ViewModel.Summary = LocalizationService.Translate(
+            "Views.ClassPlanDetailsWindow.Summary.UseApplicationOrDefaultSettings");
         foreach (var i in nodes)
         {
             if (!ProfileAnalyzeService.Nodes.TryGetValue(i.Key, out var node))
@@ -155,10 +157,23 @@ public partial class ClassPlanDetailsWindow : ViewBase
             if (IAttachedSettings.GetIsEnabled(settings))
             {
                 item.State = AttachedSettingsControlState.Enabled;
-                ViewModel.Summary = $"小结：将使用在{
-                    node.Target switch {
-                        AttachedSettingsTargets.None => "???", AttachedSettingsTargets.Lesson => "课程", AttachedSettingsTargets.Subject => "科目", AttachedSettingsTargets.TimePoint => "时间点", AttachedSettingsTargets.ClassPlan => "课表", AttachedSettingsTargets.TimeLayout => "时间表", _ => "???" }
-                }的设置。";
+                var targetName = node.Target switch
+                {
+                    AttachedSettingsTargets.Lesson => LocalizationService.Translate(
+                        "Views.ClassPlanDetailsWindow.Target.Lesson"),
+                    AttachedSettingsTargets.Subject => LocalizationService.Translate(
+                        "Views.ClassPlanDetailsWindow.Target.Subject"),
+                    AttachedSettingsTargets.TimePoint => LocalizationService.Translate(
+                        "Views.ClassPlanDetailsWindow.Target.TimePoint"),
+                    AttachedSettingsTargets.ClassPlan => LocalizationService.Translate(
+                        "Views.ClassPlanDetailsWindow.Target.ClassPlan"),
+                    AttachedSettingsTargets.TimeLayout => LocalizationService.Translate(
+                        "Views.ClassPlanDetailsWindow.Target.TimeLayout"),
+                    _ => "???"
+                };
+                ViewModel.Summary = LocalizationService.Translate(
+                    "Views.ClassPlanDetailsWindow.Summary.UseTargetSettings",
+                    targetName);
             }
             else
                 item.State = AttachedSettingsControlState.Disabled;

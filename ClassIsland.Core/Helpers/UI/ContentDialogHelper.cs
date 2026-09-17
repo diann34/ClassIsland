@@ -2,6 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Media;
 using ClassIsland.Core.Extensions.UI;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 using ShimSkiaSharp;
 
@@ -33,7 +34,7 @@ public static class ContentDialogHelper
             {
                 new TextBlock()
                 {
-                    Text = body,
+                    Text = LocalizationService.TranslateText(body),
                     TextWrapping = TextWrapping.Wrap
                 }
             }
@@ -45,11 +46,11 @@ public static class ContentDialogHelper
 
         var dialog = new FAContentDialog()
         {
-            Title = title,
+            Title = LocalizationService.TranslateText(title),
             Content = stackPanel,
             DefaultButton = FAContentDialogButton.Primary,
-            PrimaryButtonText = positiveText,
-            CloseButtonText = negativeText
+            PrimaryButtonText = LocalizationService.TranslateText(positiveText),
+            CloseButtonText = LocalizationService.TranslateText(negativeText)
         };
         var r = await dialog.ShowAsyncAuto(root);
         if (r != FAContentDialogResult.Primary)
@@ -61,7 +62,8 @@ public static class ContentDialogHelper
             return true;
         if (textBox.Text == confirmation) 
             return true;
-        root?.ShowWarningToast("验证结果不正确，请重新输入。");
+        root?.ShowWarningToast(LocalizationService.Translate(
+            "Core.Helpers.UI.ContentDialogHelper.Message.IncorrectVerificationResult"));
         return false;
 
     }

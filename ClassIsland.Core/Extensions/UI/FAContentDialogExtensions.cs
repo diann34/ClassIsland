@@ -4,6 +4,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Controls.Primitives;
 using ClassIsland.Core.Abstractions.Services.UI;
 using ClassIsland.Core.Enums.UI;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 
 namespace ClassIsland.Core.Extensions.UI;
@@ -20,6 +21,18 @@ public static class FAContentDialogExtensions
     /// <param name="tl">指定的 TopLevel</param>
     public static async Task<FAContentDialogResult> ShowAsyncAuto(this FAContentDialog dialog, TopLevel? tl = null)
     {
+        if (dialog.Title is string title)
+        {
+            dialog.Title = LocalizationService.TranslateText(title);
+        }
+        if (dialog.Content is string content)
+        {
+            dialog.Content = LocalizationService.TranslateText(content);
+        }
+        dialog.PrimaryButtonText = LocalizationService.TranslateText(dialog.PrimaryButtonText);
+        dialog.SecondaryButtonText = LocalizationService.TranslateText(dialog.SecondaryButtonText);
+        dialog.CloseButtonText = LocalizationService.TranslateText(dialog.CloseButtonText);
+
         if (tl == null)
         {
             switch (Application.Current?.ApplicationLifetime)

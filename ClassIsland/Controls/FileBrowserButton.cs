@@ -7,6 +7,7 @@ using Avalonia.Controls;
 using Avalonia.Platform.Storage;
 using ClassIsland.Core;
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using ClassIsland.Platforms.Abstraction;
 using Microsoft.Win32;
 
@@ -103,7 +104,8 @@ public class FileBrowserButton : Button
 
 
 
-    public static readonly FilePickerFileType TypeApplication = new("应用程序")
+    public static readonly FilePickerFileType TypeApplication = new(
+        LocalizationService.Translate("Controls.FileBrowserButton.FileType.Application"))
     {
         Patterns =
             OperatingSystem.IsWindows() ? ["*.exe", "*.bat", "*.cmd"] :
@@ -114,7 +116,8 @@ public class FileBrowserButton : Button
         MimeTypes = ["application/exe", "application/x-executable", "application/x-msdownload", "text/x-shellscript"]
     };
 
-    public static readonly FilePickerFileType TypeAll = new("所有文件")
+    public static readonly FilePickerFileType TypeAll = new(
+        LocalizationService.Translate("Controls.FileBrowserButton.FileType.AllFiles"))
     {
         Patterns = ["*.*"],
         AppleUniformTypeIdentifiers = ["public.item"],

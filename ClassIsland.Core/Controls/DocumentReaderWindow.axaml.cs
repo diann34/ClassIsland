@@ -12,6 +12,7 @@ using Avalonia.Interactivity;
 using Avalonia.Platform;
 using ClassIsland.Core.Helpers;
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using ClassIsland.Shared;
 using Microsoft.Extensions.Logging;
 
@@ -87,7 +88,9 @@ public partial class DocumentReaderWindow : MyWindow
         catch (Exception ex)
         {
             IAppHost.GetService<ILogger<DocumentReaderWindow>>().LogError(ex, "无法加载文档 {}", Source);
-            this.ShowErrorToast($"无法加载文档 {Source}", ex);
+            this.ShowErrorToast(
+                LocalizationService.Translate("Core.Controls.DocumentReaderWindow.Title.DocumentLoadFailed", Source),
+                ex);
         }
         IsLoading = false;
     }
@@ -105,6 +108,7 @@ public partial class DocumentReaderWindow : MyWindow
 
     private void Control_OnLoaded(object? sender, RoutedEventArgs e)
     {
+        Title = LocalizationService.TranslateText(Title);
         LoadDocument();
     }
 }

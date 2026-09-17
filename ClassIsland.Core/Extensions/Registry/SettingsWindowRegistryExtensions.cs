@@ -1,6 +1,7 @@
 using ClassIsland.Core.Abstractions.Controls;
 using ClassIsland.Core.Attributes;
 using ClassIsland.Core.Models.SettingsWindow;
+using ClassIsland.Core.Services;
 using ClassIsland.Core.Services.Registry;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -62,7 +63,7 @@ public static class SettingsWindowRegistryExtensions
         return services.AddSettingsPageGroup(id, new SettingsPageGroupInfo()
         {
             IconExpression = icon,
-            Name = name
+            Name = LocalizationService.TranslateText(name)
         });
     }
     

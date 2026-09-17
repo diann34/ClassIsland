@@ -10,6 +10,7 @@ using ClassIsland.Core.Attributes;
 using ClassIsland.Shared.Enums;
 using ClassIsland.Shared.Interfaces;
 using ClassIsland.Core.Models.Notification;
+using ClassIsland.Core.Services;
 using ClassIsland.Helpers;
 using ClassIsland.Models;
 using ClassIsland.Models.AttachedSettings;
@@ -36,7 +37,10 @@ public class ClassNotificationProvider : NotificationProviderBase<ClassNotificat
     private string FormatTeacher(Subject subject)
     {
         var name = subject.GetFirstName();
-        return string.IsNullOrWhiteSpace(name) ? string.Empty : $"由{name}老师任教";
+        return string.IsNullOrWhiteSpace(name)
+            ? string.Empty
+            : LocalizationService.Translate(
+                "Services.NotificationProviders.ClassNotificationProvider.Speech.Teacher", name);
     }
 
     private NotificationRequest? _onClassNotificationRequest;
@@ -138,7 +142,9 @@ public class ClassNotificationProvider : NotificationProviderBase<ClassNotificat
             MaskContent = NotificationContent.CreateTwoIconsMask(mask, rightIcon: "lucide(\ue54f)", factory:
                 x =>
                 {
-                    x.SpeechContent = $"距上课还剩{TimeSpanFormatHelper.Format(deltaTime)}。";
+                    x.SpeechContent = LocalizationService.Translate(
+                        "Services.NotificationProviders.ClassNotificationProvider.Speech.ClassStartsIn",
+                        TimeSpanFormatHelper.Format(deltaTime));
                     x.Duration = TimeSpan.FromSeconds(3);
                     x.IsSpeechEnabled = Settings.IsSpeechEnabledOnClassPreparing;
                 }),
@@ -148,7 +154,11 @@ public class ClassNotificationProvider : NotificationProviderBase<ClassNotificat
                 ShowTeacherName = Settings.ShowTeacherName
             })
             {
-                SpeechContent = $"{message} 下节课是：{LessonsService.NextClassSubject.Name}{(Settings.ShowTeacherName ? $"，{FormatTeacher(LessonsService.NextClassSubject)}" : "")}。",
+                SpeechContent = LocalizationService.Translate(
+                    "Services.NotificationProviders.ClassNotificationProvider.Speech.NextClass",
+                    message,
+                    LessonsService.NextClassSubject.Name,
+                    Settings.ShowTeacherName ? $"，{FormatTeacher(LessonsService.NextClassSubject)}" : ""),
                 EndTime = new DateTime(DateOnly.FromDateTime(ExactTimeService.GetCurrentLocalDateTime()), TimeOnly.FromTimeSpan(LessonsService.NextClassTimeLayoutItem.StartTime)),
                 IsSpeechEnabled = Settings.IsSpeechEnabledOnClassPreparing
             },
@@ -230,7 +240,13 @@ public class ClassNotificationProvider : NotificationProviderBase<ClassNotificat
             })
             {
                 Duration = showOverlayText ? TimeSpan.FromSeconds(20) : TimeSpan.FromSeconds(10),
-                SpeechContent = $"本节{LessonsService.CurrentTimeLayoutItem.BreakNameText}常{TimeSpanFormatHelper.Format(LessonsService.CurrentTimeLayoutItem.Last)}，下节课是：{LessonsService.NextClassSubject.Name}{(Settings.ShowTeacherName ? $"，{FormatTeacher(LessonsService.NextClassSubject)}" : "")}。{overlayText}",
+                SpeechContent = LocalizationService.Translate(
+                    "Services.NotificationProviders.ClassNotificationProvider.Speech.BreakAndNextClass",
+                    LessonsService.CurrentTimeLayoutItem.BreakNameText,
+                    TimeSpanFormatHelper.Format(LessonsService.CurrentTimeLayoutItem.Last),
+                    LessonsService.NextClassSubject.Name,
+                    Settings.ShowTeacherName ? $"，{FormatTeacher(LessonsService.NextClassSubject)}" : "",
+                    overlayText),
                 IsSpeechEnabled = Settings.IsSpeechEnabledOnClassOff
             }
         });

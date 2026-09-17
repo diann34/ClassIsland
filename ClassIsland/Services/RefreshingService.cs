@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using ClassIsland.Core;
 using ClassIsland.Core.Abstractions.Services;
+using ClassIsland.Core.Services;
 using ClassIsland.Platforms.Abstraction;
 using ClassIsland.Platforms.Abstraction.Models;
 using ClassIsland.Shared;
@@ -62,12 +63,12 @@ public class RefreshingService(SettingsService settingsService, IExactTimeServic
     {
         await PlatformServices.DesktopToastService.ShowToastAsync(new DesktopToastContent()
         {
-            Title = DefaultRefreshingToastTitle,
-            Body = DefaultRefreshingToastBody,
+            Title = LocalizationService.TranslateText(DefaultRefreshingToastTitle),
+            Body = LocalizationService.TranslateText(DefaultRefreshingToastBody),
             Buttons =
             {
-                ["暂时不用"] = () => { },
-                ["立即翻新"] = async void () => await BeginRefresh(),
+                [LocalizationService.Translate("Services.RefreshingService.Button.NotNow")] = () => { },
+                [LocalizationService.Translate("Services.RefreshingService.Button.RefreshNow")] = async void () => await BeginRefresh(),
             }
         });
     }
@@ -76,19 +77,19 @@ public class RefreshingService(SettingsService settingsService, IExactTimeServic
     {
         var r = await new FATaskDialog()
         {
-            Header = SettingsService.Settings.OnboardingToastTitle,
-            Content = SettingsService.Settings.OnboardingToastBody,
+            Header = LocalizationService.TranslateText(SettingsService.Settings.OnboardingToastTitle),
+            Content = LocalizationService.TranslateText(SettingsService.Settings.OnboardingToastBody),
             Buttons =
             [
-                new FATaskDialogButton("退出并不再显示", 0),
-                new FATaskDialogButton("以后再说", 1),
-                new FATaskDialogButton("好",2)
+                new FATaskDialogButton(LocalizationService.Translate("Services.RefreshingService.Button.ExitAndDoNotShowAgain"), 0),
+                new FATaskDialogButton(LocalizationService.Translate("Services.RefreshingService.Button.Later"), 1),
+                new FATaskDialogButton(LocalizationService.Translate("Services.RefreshingService.Button.Confirm"),2)
                 {
                     IsDefault = true
                 },
             ],
             XamlRoot = AppBase.Current.GetRootWindow(),
-            Title = "欢迎使用 ClassIsland"
+            Title = LocalizationService.Translate("Services.RefreshingService.Title.WelcomeToClassIsland")
         }.ShowAsync();
         if (Equals(r, 0))
         {

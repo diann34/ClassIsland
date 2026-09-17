@@ -21,6 +21,7 @@ using ClassIsland.Core.Attributes;
 using ClassIsland.Core.Enums.SettingsWindow;
 using ClassIsland.Core.Helpers.UI;
 using ClassIsland.Core.Models.Plugin;
+using ClassIsland.Core.Services;
 using ClassIsland.Platforms.Abstraction;
 using ClassIsland.Shared;
 using ClassIsland.ViewModels.SettingsPages;
@@ -95,7 +96,9 @@ public partial class PluginsSettingsPage : SettingsPageBase
         }
         catch (Exception e)
         {
-            document = $"> 无法加载文档：{e.Message}";
+            document = LocalizationService.Translate(
+                "SettingPages.PluginsSettingsPage.Message.LoadDocumentFailed",
+                e.Message);
         }
         finally
         {
@@ -138,7 +141,7 @@ public partial class PluginsSettingsPage : SettingsPageBase
         PopupHelper.DisableAllPopups();
         var file = await PlatformServices.FilePickerService.SaveFilePickerAsync(new FilePickerSaveOptions()
         {
-            Title = "打包插件",
+            Title = LocalizationService.Translate("SettingPages.PluginsSettingsPage.Title.PackagePlugin"),
             FileTypeChoices = [
                 IPluginService.PluginPackageFileType
             ],
@@ -167,7 +170,9 @@ public partial class PluginsSettingsPage : SettingsPageBase
         }
         catch (Exception ex)
         {
-            this.ShowErrorToast($"无法打包插件 {ViewModel.SelectedPluginInfo.Manifest.Id}", ex);
+            this.ShowErrorToast(LocalizationService.Translate(
+                "SettingPages.PluginsSettingsPage.Message.PackagePluginFailed",
+                ViewModel.SelectedPluginInfo.Manifest.Id), ex);
         }
     }
 
@@ -318,7 +323,8 @@ public partial class PluginsSettingsPage : SettingsPageBase
         if (manifests.Count == 0)
         {
             ViewModel.IsInstallingLocalPlugin = false;
-            this.ShowWarningToast("未能从选择的文件中解析出任何可安装的插件包。");
+            this.ShowWarningToast(LocalizationService.Translate(
+                "SettingPages.PluginsSettingsPage.Message.NoInstallablePluginPackages"));
             return;
         }
 
@@ -328,7 +334,7 @@ public partial class PluginsSettingsPage : SettingsPageBase
 
         var dialog = new FAContentDialog()
         {
-            Title = "确认安装?",
+            Title = LocalizationService.Translate("SettingPages.PluginsSettingsPage.Title.ConfirmInstallation"),
             Content = manifests,
             ContentTemplate = contentTemplate,
             PrimaryButtonText = "安装",
@@ -367,17 +373,20 @@ public partial class PluginsSettingsPage : SettingsPageBase
             catch (Exception ex)
             {
                 failed++;
-                this.ShowErrorToast($"无法安装插件 {path}", ex);
+                this.ShowErrorToast(LocalizationService.Translate(
+                    "SettingPages.PluginsSettingsPage.Message.InstallPluginFailed", path), ex);
             }
         }
         if (success > 0)
         {
-            this.ShowSuccessToast($"成功安装了 {success} 个插件。");
+            this.ShowSuccessToast(LocalizationService.Translate(
+                "SettingPages.PluginsSettingsPage.Message.PluginsInstalled", success));
             RequestRestart();
         }
         else if (failed > 0)
         {
-            this.ShowWarningToast($"安装失败：{failed} 个插件。");
+            this.ShowWarningToast(LocalizationService.Translate(
+                "SettingPages.PluginsSettingsPage.Message.PluginInstallFailures", failed));
         }
     }
 
@@ -391,7 +400,7 @@ public partial class PluginsSettingsPage : SettingsPageBase
         PopupHelper.DisableAllPopups();
         var file = await PlatformServices.FilePickerService.OpenFilesPickerAsync(new FilePickerOpenOptions()
         {
-            Title = "从本地安装插件",
+            Title = LocalizationService.Translate("SettingPages.PluginsSettingsPage.Title.InstallFromLocalFile"),
             FileTypeFilter = [IPluginService.PluginPackageFileType],
             AllowMultiple = true
         }, TopLevel.GetTopLevel(this) ?? AppBase.Current.GetRootWindow());
@@ -444,8 +453,10 @@ public partial class PluginsSettingsPage : SettingsPageBase
         {
             var result = await new FAContentDialog()
             {
-                Title = "操作系统不受该插件支持",
-                Content = "此插件所声明支持的操作系统并未包括当前所运行的操作系统。" + Environment.NewLine + "如果继续安装此插件，此插件将可能无法正常工作。您要继续安装此插件吗？",
+                Title = LocalizationService.Translate(
+                    "SettingPages.PluginsSettingsPage.Title.UnsupportedOperatingSystem"),
+                Content = LocalizationService.Translate(
+                    "SettingPages.PluginsSettingsPage.Content.UnsupportedOperatingSystem"),
                 SecondaryButtonText = "取消",
                 PrimaryButtonText = "继续",
                 DefaultButton = FAContentDialogButton.Secondary
@@ -460,9 +471,10 @@ public partial class PluginsSettingsPage : SettingsPageBase
         {
             var result = await new FAContentDialog()
             {
-                Title = "缺少依赖项",
-                Content = "此插件的部分必选依赖项未安装且无法从市场获取。如果继续安装此插件，此插件将可能无法工作。您要继续安装此插件吗？" + Environment.NewLine + Environment.NewLine +
-                          "未找到的必选依赖项：" + Environment.NewLine + string.Join(Environment.NewLine, missingPlugins),
+                Title = LocalizationService.Translate("SettingPages.PluginsSettingsPage.Title.MissingDependencies"),
+                Content = LocalizationService.Translate(
+                    "SettingPages.PluginsSettingsPage.Content.MissingDependencies",
+                    string.Join(Environment.NewLine, missingPlugins)),
                 SecondaryButtonText = "取消",
                 PrimaryButtonText = "继续",
                 DefaultButton = FAContentDialogButton.Secondary
@@ -607,15 +619,24 @@ public partial class PluginsSettingsPage : SettingsPageBase
 
         if (supported <= 0)
         {
-            ViewModel.DragInstallHintText = $"仅支持 {IPluginService.PluginPackageExtension} 插件包";
-            ViewModel.DragInstallSubHintText = "请拖入插件包文件";
+            ViewModel.DragInstallHintText = LocalizationService.Translate(
+                "SettingPages.PluginsSettingsPage.Hint.OnlyPluginPackagesSupported",
+                IPluginService.PluginPackageExtension);
+            ViewModel.DragInstallSubHintText = LocalizationService.Translate(
+                "SettingPages.PluginsSettingsPage.Hint.DragPluginPackageHere");
             e.DragEffects = DragDropEffects.None;
             return;
         }
 
-        ViewModel.DragInstallHintText = supported == 1 ? "松开以安装 1 个插件" : $"松开以安装 {supported} 个插件";
+        ViewModel.DragInstallHintText = LocalizationService.Translate(
+            "SettingPages.PluginsSettingsPage.Hint.ReleaseToInstallPlugins", supported);
         var ignored = files.Count - supported;
-        ViewModel.DragInstallSubHintText = ignored > 0 ? $"将忽略 {ignored} 个不受支持的文件" : $"支持多选（{IPluginService.PluginPackageExtension}）";
+        ViewModel.DragInstallSubHintText = ignored > 0
+            ? LocalizationService.Translate(
+                "SettingPages.PluginsSettingsPage.Hint.UnsupportedFilesIgnored", ignored)
+            : LocalizationService.Translate(
+                "SettingPages.PluginsSettingsPage.Hint.MultipleSelectionSupported",
+                IPluginService.PluginPackageExtension);
         e.DragEffects = DragDropEffects.Copy;
     }
     private async void Grid_Drop(object sender, DragEventArgs e)
@@ -688,4 +709,3 @@ public partial class PluginsSettingsPage : SettingsPageBase
         Dispatcher.UIThread.InvokeAsync(() => OpenDrawer("PluginUpdateSettingsDrawer"));
     }
 }
-

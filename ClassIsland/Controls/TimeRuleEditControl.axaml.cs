@@ -5,8 +5,8 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Data.Converters;
 using Avalonia.Threading;
-using ClassIsland.Core.Extensions;
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using ClassIsland.Services;
 using ClassIsland.Shared.Models.Profile;
 using ClassIsland.ViewModels;
@@ -132,14 +132,21 @@ public partial class TimeRuleEditControl : UserControl
         
         if (TimeRule.WeekCountDivTotal == 2)
         {
-            ViewModel.WeekCountDivOptions = ["每周启用", "单周", "双周"];
+            ViewModel.WeekCountDivOptions =
+            [
+                LocalizationService.Translate("Controls.TimeRuleEditControl.Option.EveryWeek"),
+                LocalizationService.Translate("Controls.TimeRuleEditControl.Option.OddWeek"),
+                LocalizationService.Translate("Controls.TimeRuleEditControl.Option.EvenWeek")
+            ];
         }
         else
         {
-            ViewModel.WeekCountDivOptions = ["每周启用"];
+            ViewModel.WeekCountDivOptions =
+                [LocalizationService.Translate("Controls.TimeRuleEditControl.Option.EveryWeek")];
             for (var i = 1; i <= TimeRule.WeekCountDivTotal; i++)
             {
-                ViewModel.WeekCountDivOptions.Add($"第{i.ToChinese()}周");
+                ViewModel.WeekCountDivOptions.Add(LocalizationService.Translate(
+                    "Controls.TimeRuleEditControl.Option.CycleWeek", i));
             }
         }
 
@@ -156,10 +163,12 @@ public partial class TimeRuleEditControl : UserControl
         if (ViewModel.WeekCountDivTotalOptions.Count == MaxCycle - 1) return;
         _updatingDivTotal = true;
         
-        ViewModel.WeekCountDivTotalOptions = ["两周"];
+        ViewModel.WeekCountDivTotalOptions =
+            [LocalizationService.Translate("Controls.TimeRuleEditControl.Option.TwoWeeks")];
         for (var i = 3; i <= MaxCycle; i++)
         {
-            ViewModel.WeekCountDivTotalOptions.Add($"{i.ToChinese()}周");
+            ViewModel.WeekCountDivTotalOptions.Add(LocalizationService.Translate(
+                "Controls.TimeRuleEditControl.Option.WeekCount", i));
         }
 
         var w = ViewModel.WeekCountDivTotalIndex;
@@ -205,7 +214,8 @@ public partial class TimeRuleEditControl : UserControl
         var newDateOnly = DateOnly.FromDateTime(ViewModel.NewDateTime);
         if (TimeRule.EnableDates.Contains(newDateOnly))
         {
-            this.ShowWarningToast("日期已存在。");
+            this.ShowWarningToast(LocalizationService.Translate(
+                "Controls.TimeRuleEditControl.Toast.DateAlreadyExists"));
             return;
         }
         if (date is {} d)

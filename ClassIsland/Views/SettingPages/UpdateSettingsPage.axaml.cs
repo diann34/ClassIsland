@@ -8,6 +8,7 @@ using ClassIsland.Core;
 using ClassIsland.Core.Abstractions.Controls;
 using ClassIsland.Core.Attributes;
 using ClassIsland.Core.Enums.SettingsWindow;
+using ClassIsland.Core.Services;
 using ClassIsland.Enums.AppUpdating;
 using ClassIsland.Services.AppUpdating;
 using ClassIsland.Shared;
@@ -40,30 +41,30 @@ public partial class UpdateSettingsPage : SettingsPageBase
     public static readonly FuncValueConverter<UpdateStatus, string> UpdateStatusToMessageConverter =
         new(x => x switch
         {
-            UpdateStatus.UpToDate => "您已更新到最新版本。",
-            UpdateStatus.UpdateAvailable => "检测到更新。" ,
-            UpdateStatus.UpdateDownloaded => "已准备好安装更新。",
-            UpdateStatus.UpdateDeployed => "更新已就绪。",
+            UpdateStatus.UpToDate => LocalizationService.Translate("SettingPages.UpdateSettingsPage.Status.UpToDate"),
+            UpdateStatus.UpdateAvailable => LocalizationService.Translate("SettingPages.UpdateSettingsPage.Status.UpdateAvailable"),
+            UpdateStatus.UpdateDownloaded => LocalizationService.Translate("SettingPages.UpdateSettingsPage.Status.UpdateDownloaded"),
+            UpdateStatus.UpdateDeployed => LocalizationService.Translate("SettingPages.UpdateSettingsPage.Status.UpdateDeployed"),
             _ => ""
         });
     
     public static readonly FuncValueConverter<UpdateWorkingStatus, string> UpdateWorkingStatusToMessageConverter =
         new(x => x switch
         {
-            UpdateWorkingStatus.Idle => "就绪",
-            UpdateWorkingStatus.CheckingUpdates => "正在检查更新…",
-            UpdateWorkingStatus.DownloadingUpdates => "正在下载更新…",
-            UpdateWorkingStatus.ExtractingUpdates => "正在部署更新…",
+            UpdateWorkingStatus.Idle => LocalizationService.Translate("SettingPages.UpdateSettingsPage.WorkingStatus.Idle"),
+            UpdateWorkingStatus.CheckingUpdates => LocalizationService.Translate("SettingPages.UpdateSettingsPage.WorkingStatus.CheckingUpdates"),
+            UpdateWorkingStatus.DownloadingUpdates => LocalizationService.Translate("SettingPages.UpdateSettingsPage.WorkingStatus.DownloadingUpdates"),
+            UpdateWorkingStatus.ExtractingUpdates => LocalizationService.Translate("SettingPages.UpdateSettingsPage.WorkingStatus.ExtractingUpdates"),
             _ => "???"
         });
 
     public static readonly FuncValueConverter<DownloadState, string> DownloadStateToMessageConverter =
         new(x => x switch
         {
-            DownloadState.Pending => "等待下载",
-            DownloadState.Downloading => "正在下载",
-            DownloadState.Completed => "完成",
-            DownloadState.Error => "错误",
+            DownloadState.Pending => LocalizationService.Translate("SettingPages.UpdateSettingsPage.DownloadStatus.Pending"),
+            DownloadState.Downloading => LocalizationService.Translate("SettingPages.UpdateSettingsPage.DownloadStatus.Downloading"),
+            DownloadState.Completed => LocalizationService.Translate("SettingPages.UpdateSettingsPage.DownloadStatus.Completed"),
+            DownloadState.Error => LocalizationService.Translate("SettingPages.UpdateSettingsPage.DownloadStatus.Error"),
             _ => "???"
         });
     

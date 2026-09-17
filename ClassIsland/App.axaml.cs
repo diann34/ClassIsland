@@ -462,7 +462,9 @@ public partial class App : AppBase, IAppHost
                 Logger?.LogInformation("因教学安全模式设定，应用将忽略异常并显示一条通知");
                 try
                 {
-                    await PlatformServices.DesktopToastService.ShowToastAsync("崩溃报告", $"ClassIsland 发生了一个无法处理的错误：{e.Message}");
+                    await PlatformServices.DesktopToastService.ShowToastAsync(
+                        LocalizationService.Translate("App.Title.CrashReport"),
+                        LocalizationService.Translate("App.Message.UnhandledError", e.Message));
                 }
                 catch (Exception exception)
                 {
@@ -579,15 +581,15 @@ public partial class App : AppBase, IAppHost
         await new FATaskDialog()
         {
             Title = "ClassIsland",
-            Header = "欢迎使用 2.2-Misha Developer Preview",
-            Content = "此版本仅供开发人员进行早期预览，稳定性欠佳，不适用于生产环境或日常使用。如果您在使用的过程中遇到问题，欢迎前往 GitHub issues 上提交 issue！",
+            Header = LocalizationService.Translate("App.Header.DeveloperPreview"),
+            Content = LocalizationService.Translate("App.Message.DeveloperPreviewWarning"),
             IconSource = new AdvancedImageIconSource()
             {
                 Uri = "avares://ClassIsland/Assets/HoYoStickers/米沙_欢迎光临.png"
             },
             XamlRoot = GetRootWindow(),
             Buttons = [
-                new FATaskDialogButton("确定", true)
+                new FATaskDialogButton(LocalizationService.Translate("Dialogs.Common.Confirm"), true)
                 {
                     IsDefault = true
                 }
@@ -598,7 +600,9 @@ public partial class App : AppBase, IAppHost
         // 检测临时目录
         if (Environment.CurrentDirectory.Contains(Path.GetTempPath()))
         {
-            await CommonTaskDialogs.ShowDialog("检测到应用正在临时目录下运行", "ClassIsland 正在临时目录下运行，应用设置、课表等数据很可能无法保存，或在应用退出后被自动删除。在使用本应用前，请务必将本应用解压到一个适合的位置。");
+            await CommonTaskDialogs.ShowDialog(
+                LocalizationService.Translate("App.Title.RunningFromTemporaryDirectory"),
+                LocalizationService.Translate("App.Message.RunningFromTemporaryDirectory"));
             Environment.Exit(0);
             return;
         }
@@ -623,7 +627,9 @@ public partial class App : AppBase, IAppHost
         }
         catch (Exception ex)
         {
-            await CommonTaskDialogs.ShowDialog("目录权限错误", $"ClassIsland 无法写入当前目录：{ex.Message}"+Environment.NewLine+Environment.NewLine+"请将本软件解压到一个合适的位置后再运行。");
+            await CommonTaskDialogs.ShowDialog(
+                LocalizationService.Translate("App.Title.DirectoryPermissionError"),
+                LocalizationService.Translate("App.Message.DirectoryPermissionError", ex.Message));
             Environment.Exit(0);
             return;
         }
@@ -637,13 +643,13 @@ public partial class App : AppBase, IAppHost
             Logger?.LogDebug("应用多次启动失败。startupCount={startupCount}",startupCount);
             var dialog = new FATaskDialog()
             {
-                Title = "进入恢复模式",
-                Content = "ClassIsland 多次启动失败，您需要进入恢复模式以尝试修复 ClassIsland 吗？",
+                Title = LocalizationService.Translate("App.Title.EnterRecoveryMode"),
+                Content = LocalizationService.Translate("App.Message.EnterRecoveryMode"),
                 XamlRoot = GetRootWindow(),
                 Buttons =
                 [
-                    new FATaskDialogButton("取消", false),
-                    new FATaskDialogButton("进入恢复模式", true)
+                    new FATaskDialogButton(LocalizationService.Translate("App.Content.Cancel"), false),
+                    new FATaskDialogButton(LocalizationService.Translate("App.Content.EnterRecoveryMode"), true)
                     {
                         IsDefault = true
                     }
@@ -841,13 +847,13 @@ public partial class App : AppBase, IAppHost
                 var dialog = new FATaskDialog()
                 {
                     Title = "ClassIsland",
-                    Header = "当前界面缩放是否正常？",
-                    Content = "如果您发现当前界面缩放相对系统缩放过小，可点击【不正常】按钮使应用启用兼容缩放模式，以缓解在部分平台上的缩放异常的问题。",
+                    Header = LocalizationService.Translate("App.Title.ScaleCompatibilityPrompt"),
+                    Content = LocalizationService.Translate("App.Message.ScaleCompatibilityPrompt"),
                     XamlRoot = GetRootWindow(),
                     Buttons =
                     [
-                        new FATaskDialogButton("正常", false),
-                        new FATaskDialogButton("不正常", true)
+                        new FATaskDialogButton(LocalizationService.Translate("App.Content.ScaleIsNormal"), false),
+                        new FATaskDialogButton(LocalizationService.Translate("App.Content.ScaleIsIncorrect"), true)
                     ],
                 };
                 var r = await dialog.ShowAsync();
@@ -942,12 +948,12 @@ public partial class App : AppBase, IAppHost
             GetService<SettingsService>().Settings.LastUpdateStatus = UpdateStatus.UpToDate;
             var content = new DesktopToastContent()
             {
-                Title = "更新完成。",
-                Body = $"应用已更新到版本{AppVersion}。",
+                Title = LocalizationService.Translate("App.Title.UpdateCompleted"),
+                Body = LocalizationService.Translate("App.Message.UpdatedToVersion", AppVersion),
                 Buttons =
                 {
                     {
-                        "查看更新日志",
+                        LocalizationService.Translate("App.Content.ViewChangelog"),
                         () => uriNavigationService.NavigateWrapped(new Uri("classisland://app/settings/update"))
                     }
                 }
@@ -998,24 +1004,27 @@ public partial class App : AppBase, IAppHost
         File.Delete(startupCountFilePath);
         if (ConfigureFileHelper.Errors.FirstOrDefault(x => x.Critical) != null)
         {
-            PlatformServices.DesktopToastService.ShowToastAsync("配置文件损坏", "ClassIsland 部分配置文件已损坏且无法加载，这些配置文件已恢复至默认值。点击此消息以查看详细信息和从过往备份中恢复配置文件。", () => GetService<IUriNavigationService>().NavigateWrapped(new Uri("classisland://app/config-errors")));
+            PlatformServices.DesktopToastService.ShowToastAsync(
+                LocalizationService.Translate("App.Title.CorruptConfiguration"),
+                LocalizationService.Translate("App.Message.CorruptConfigurationRecovered"),
+                () => GetService<IUriNavigationService>().NavigateWrapped(new Uri("classisland://app/config-errors")));
         }
         if (Settings.CorruptPluginsDisabledLastSession)
         {
             Settings.CorruptPluginsDisabledLastSession = false;
             var content = new DesktopToastContent()
             {
-                Title = "已自动禁用异常插件",
-                Body = "ClassIsland 已自动禁用导致上次崩溃的插件。您可以在排除问题后前往【应用设置】->【插件】中重新启用这些插件，或在【应用设置】->【基本】中调整是否自动禁用异常插件。",
+                Title = LocalizationService.Translate("App.Title.FaultyPluginsDisabled"),
+                Body = LocalizationService.Translate("App.Message.FaultyPluginsDisabled"),
                 Buttons =
                 {
                     {
-                        "打开插件设置",
+                        LocalizationService.Translate("App.Content.OpenPluginSettings"),
                         () => GetService<IUriNavigationService>()
                             .NavigateWrapped(new Uri("classisland://app/settings/classisland.plugins"))
                     },
                     {
-                        "管理异常插件行为",
+                        LocalizationService.Translate("App.Content.ManageFaultyPluginBehavior"),
                         () => GetService<IUriNavigationService>()
                             .NavigateWrapped(new Uri("classisland://app/settings/general"))
                     }
@@ -1120,13 +1129,13 @@ public partial class App : AppBase, IAppHost
     {
         var dialog = new FATaskDialog()
         {
-            Title = "ClassIsland 已在运行",
-            Content = "ClassIsland 已经启动，请通过任务栏托盘图标进行设置等操作。" +Environment.NewLine+Environment.NewLine+
-                      "如果您无法看到主界面，可能是因为您在托盘图标菜单中选择了【隐藏主界面】，或者有隐藏主界面的规则或行动正在生效。",
+            Title = LocalizationService.Translate("App.Title.InstanceAlreadyRunning"),
+            Content = LocalizationService.Translate("App.Message.InstanceAlreadyRunning") + Environment.NewLine + Environment.NewLine +
+                      LocalizationService.Translate("App.Message.MainInterfaceMayBeHidden"),
             XamlRoot = GetRootWindow(),
             Buttons =
             [
-                new FATaskDialogButton("取消", false)
+                new FATaskDialogButton(LocalizationService.Translate("App.Content.Cancel"), false)
             ],
             Commands =
             [
@@ -1134,8 +1143,8 @@ public partial class App : AppBase, IAppHost
                 {
                     DialogResult = true,
                     ClosesOnInvoked = true,
-                    Text = "重启当前实例",
-                    Description = "结束正在运行的 ClassIsland 实例，然后再次启动本实例。",
+                    Text = LocalizationService.Translate("App.Content.RestartCurrentInstance"),
+                    Description = LocalizationService.Translate("App.Message.RestartRunningInstance"),
                     IconSource = new FluentIconSource("\ue0bd"),
                 }
             ]
@@ -1163,7 +1172,9 @@ public partial class App : AppBase, IAppHost
         }
         catch (Exception e)
         {
-            await CommonTaskDialogs.ShowDialog("重启失败", "无法重新启动应用，可能当前运行的实例正在以管理员身份运行。请使用任务管理器终止正在运行的实例，然后再试一次。"+Environment.NewLine+Environment.NewLine+$"{e.Message}");
+            await CommonTaskDialogs.ShowDialog(
+                LocalizationService.Translate("App.Title.RestartFailed"),
+                LocalizationService.Translate("App.Message.RestartFailedWithDetails", e.Message));
         }
     }
 
@@ -1264,4 +1275,3 @@ public partial class App : AppBase, IAppHost
         Stop();
     }
 }
-

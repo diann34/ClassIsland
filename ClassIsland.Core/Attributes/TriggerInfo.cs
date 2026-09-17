@@ -1,6 +1,7 @@
 ﻿namespace ClassIsland.Core.Attributes;
 
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 
 /// <summary>
@@ -20,7 +21,7 @@ public class TriggerInfo(string id, string name, string iconExpression = "\uED55
     /// <summary>
     /// 触发器名称
     /// </summary>
-    public string Name { get; } = name;
+    public string Name { get; } = LocalizationService.TranslateText(name);
 
     /// <summary>
     /// 触发器图标

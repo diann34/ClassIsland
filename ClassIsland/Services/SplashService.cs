@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Abstractions.Services.Management;
+using ClassIsland.Core.Services;
 using ClassIsland.Shared;
 using CommunityToolkit.Mvvm.ComponentModel;
 
@@ -9,7 +10,7 @@ namespace ClassIsland.Services;
 
 public class SplashService: ObservableRecipient, ISplashService
 {
-    private string _splashStatus = "正在启动…";
+    private string _splashStatus = LocalizationService.Translate("Services.SplashService.Status.Starting");
     private double _currentProgress = 0.0;
     private ISplashProvider? _currentSplashProvider;
 
@@ -28,7 +29,7 @@ public class SplashService: ObservableRecipient, ISplashService
     {
         if (SettingsService.Settings.ShowDetailedStatusOnSplash)
         {
-            SplashStatus = message;
+            SplashStatus = LocalizationService.TranslateText(message);
         }
     }
 
@@ -72,7 +73,7 @@ public class SplashService: ObservableRecipient, ISplashService
 
     private SettingsService SettingsService { get; }
 
-    private static string DefaultText { get; } = "正在启动…";
+    private static string DefaultText { get; } = LocalizationService.Translate("Services.SplashService.Status.Starting");
 
     public SplashService(SettingsService settingsService, IManagementService managementService)
     {

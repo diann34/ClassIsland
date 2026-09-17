@@ -1,4 +1,5 @@
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 
 namespace ClassIsland.Core.Attributes;
@@ -22,7 +23,7 @@ public class ActionInfo(string id, string name, string? iconExpression = null, b
     /// <summary>
     /// 行动提供方名称。
     /// </summary>
-    public string Name { get; } = name;
+    public string Name { get; } = LocalizationService.TranslateText(name);
 
     /// <summary>
     /// 行动提供方图标。

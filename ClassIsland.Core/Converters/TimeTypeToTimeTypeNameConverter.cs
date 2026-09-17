@@ -1,5 +1,6 @@
 using System.Globalization;
 using Avalonia.Data.Converters;
+using ClassIsland.Core.Services;
 using ClassIsland.Shared.Models.Profile;
 
 namespace ClassIsland.Core.Converters;
@@ -25,10 +26,10 @@ public class TimeTypeToTimeTypeNameConverter : IValueConverter
         }
         return type switch
         {
-            0 => "上课",
-            1 => "课间休息",
-            2 => "分割线",
-            3 => "行动",
+            0 => LocalizationService.Translate("Core.Converters.TimeTypeToTimeTypeNameConverter.Class"),
+            1 => LocalizationService.Translate("Core.Converters.TimeTypeToTimeTypeNameConverter.Break"),
+            2 => LocalizationService.Translate("Core.Converters.TimeTypeToTimeTypeNameConverter.Separator"),
+            3 => LocalizationService.Translate("Core.Converters.TimeTypeToTimeTypeNameConverter.Action"),
             _ => "？？？"
         };
     }

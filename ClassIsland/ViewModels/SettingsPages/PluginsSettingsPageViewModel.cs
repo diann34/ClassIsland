@@ -5,6 +5,7 @@ using System.Reactive.Linq;
 using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.ComponentModels;
 using ClassIsland.Core.Models.Plugin;
+using ClassIsland.Core.Services;
 using ClassIsland.Services;
 using ClassIsland.Views.SettingPages;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -36,7 +37,8 @@ public partial class PluginsSettingsPageViewModel : ObservableRecipient
     [ObservableProperty] private bool _isDragInstallValid = false;
     [ObservableProperty] private int _dragInstallTotalCount = 0;
     [ObservableProperty] private int _dragInstallSupportedCount = 0;
-    [ObservableProperty] private string _dragInstallHintText = "将插件拖入到此处，松手即可安装。";
+    [ObservableProperty] private string _dragInstallHintText = LocalizationService.Translate(
+        "SettingPages.PluginsSettingsPage.Hint.DragPluginsToInstall");
     [ObservableProperty] private string _dragInstallSubHintText = "";
     [ObservableProperty] private bool _pluginListBoxHasItems = false;
 

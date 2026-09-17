@@ -1,6 +1,7 @@
 ﻿namespace ClassIsland.Core.Attributes;
 
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 
 /// <summary>
@@ -24,12 +25,12 @@ public class NotificationChannelInfo(string guid, string name, string descriptio
     /// <summary>
     /// 渠道名称
     /// </summary>
-    public string Name { get; } = name;
+    public string Name { get; } = LocalizationService.TranslateText(name);
 
     /// <summary>
     /// 渠道描述
     /// </summary>
-    public string Description { get; } = description;
+    public string Description { get; } = LocalizationService.TranslateText(description);
 
     /// <summary>
     /// 设置界面类型

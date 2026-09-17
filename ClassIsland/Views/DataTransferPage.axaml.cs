@@ -21,6 +21,7 @@ using ClassIsland.Core;
 using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Helpers.UI;
 using ClassIsland.Core.Models.Components;
+using ClassIsland.Core.Services;
 using ClassIsland.Enums;
 using ClassIsland.Helpers.ProfileTransferHelpers;
 using ClassIsland.Models;
@@ -82,7 +83,8 @@ public partial class DataTransferPage : UserControl
         ViewModel.PerformImportAction = BeginPerformClassIslandImport;
         ViewModel.PageIndex = 1;
         ViewModel.ImportSourcePath = "";
-        ViewModel.ImportDescription = "支持从 1.x 版本的 ClassIsland 导入课表、组件配置、自动化配置、应用设置、部分插件和主题等数据。";
+        ViewModel.ImportDescription = LocalizationService.Translate(
+            "Views.DataTransferPage.Description.ImportFromClassIsland1");
         ViewModel.IsExport = false;
     }
 
@@ -97,10 +99,11 @@ public partial class DataTransferPage : UserControl
         PopupHelper.DisableAllPopups();
         var file = await PlatformServices.FilePickerService.OpenFilesPickerAsync(new FilePickerOpenOptions()
         {
-            Title = "选择先前版本的 ClassIsland 实例",
+            Title = LocalizationService.Translate("Views.DataTransferPage.Title.SelectPreviousClassIslandInstance"),
             FileTypeFilter =
             [
-                new FilePickerFileType("ClassIsland 可执行文件")
+                new FilePickerFileType(LocalizationService.Translate(
+                    "Views.DataTransferPage.FileType.ClassIslandExecutable"))
                 {
                     Patterns = ["ClassIsland.exe"]
                 }
@@ -262,7 +265,8 @@ public partial class DataTransferPage : UserControl
         ViewModel.PerformImportAction = BeginPerformClassIsland2Import;
         ViewModel.PageIndex = 1;
         ViewModel.ImportSourcePath = "";
-        ViewModel.ImportDescription = "支持从 ClassIsland 2.x 数据文件导入课表、组件配置、自动化配置、应用设置、部分插件和主题等数据。";
+        ViewModel.ImportDescription = LocalizationService.Translate(
+            "Views.DataTransferPage.Description.ImportFromClassIsland2DataFile");
         ViewModel.IsExport = false;
     }
     
@@ -277,8 +281,9 @@ public partial class DataTransferPage : UserControl
         PopupHelper.DisableAllPopups();
         var file = await PlatformServices.FilePickerService.OpenFilesPickerAsync(new FilePickerOpenOptions()
         {
-            Title = "浏览 ClassIsland 2 导出文件",
-            FileTypeFilter = [ new FilePickerFileType("ClassIsland 数据文件")
+            Title = LocalizationService.Translate("Views.DataTransferPage.Title.BrowseClassIsland2ExportFile"),
+            FileTypeFilter = [ new FilePickerFileType(LocalizationService.Translate(
+                "Views.DataTransferPage.FileType.ClassIslandDataFile"))
                 {
                     Patterns = ["*.cidata"]
                 } 
@@ -422,7 +427,8 @@ public partial class DataTransferPage : UserControl
         ViewModel.PerformImportAction = PerformClassIsland2ExportAction;
         ViewModel.PageIndex = 1;
         ViewModel.ImportSourcePath = "";
-        ViewModel.ImportDescription = "支持导出为可以导入到其它 ClassIsland 2 实例的文件格式。";
+        ViewModel.ImportDescription = LocalizationService.Translate(
+            "Views.DataTransferPage.Description.ExportToClassIsland2DataFile");
         ViewModel.IsExport = true;
     }
 
@@ -438,8 +444,9 @@ public partial class DataTransferPage : UserControl
         PopupHelper.DisableAllPopups();
         var file = await PlatformServices.FilePickerService.SaveFilePickerAsync(new FilePickerSaveOptions
         {
-            Title = "浏览保存的导出文件",
-            FileTypeChoices = [ new FilePickerFileType("ClassIsland 数据文件")
+            Title = LocalizationService.Translate("Views.DataTransferPage.Title.SelectExportFileDestination"),
+            FileTypeChoices = [ new FilePickerFileType(LocalizationService.Translate(
+                "Views.DataTransferPage.FileType.ClassIslandDataFile"))
                 {
                     Patterns = ["*.cidata"]
                 } 
@@ -555,7 +562,8 @@ public partial class DataTransferPage : UserControl
         ViewModel.PerformImportAction = PerformClassWidgetsImportAction;
         ViewModel.PageIndex = 1;
         ViewModel.ImportSourcePath = "";
-        ViewModel.ImportDescription = "支持从 Class Widgets 1 导入全部课表信息和大部分配置。";
+        ViewModel.ImportDescription = LocalizationService.Translate(
+            "Views.DataTransferPage.Description.ImportFromClassWidgets1");
         ViewModel.IsExport = false;
     }
     
@@ -570,7 +578,8 @@ public partial class DataTransferPage : UserControl
         PopupHelper.DisableAllPopups();
         var file = await PlatformServices.FilePickerService.OpenFoldersPickerAsync(new FolderPickerOpenOptions()
         {
-            Title = "浏览 Class Widgets 安装（即有 ClassWidgets[.exe]）的文件夹或其数据目录"
+            Title = LocalizationService.Translate(
+                "Views.DataTransferPage.Title.BrowseClassWidgetsInstallation")
         }, topLevel);
         PopupHelper.RestoreAllPopups();
         if (file.Count <= 0)
@@ -796,8 +805,8 @@ public partial class DataTransferPage : UserControl
         {
             await PlatformServices.DesktopToastService.ShowToastAsync(new DesktopToastContent()
             {
-                Title = "正在升级插件",
-                Body = "正在升级从 ClassIsland 1 导入的插件到兼容 ClassIsland 2 的版本，这可能需要一定的时间，应用将在升级完成后显示一条通知。部分插件可能暂不支持 ClassIsland 2。"
+                Title = LocalizationService.Translate("Views.DataTransferPage.Title.UpgradingPlugins"),
+                Body = LocalizationService.Translate("Views.DataTransferPage.Message.UpgradingImportedPlugins")
             });
             await IAppHost.GetService<IPluginMarketService>().RefreshPluginSourceAsync();
             IAppHost.GetService<IPluginMarketService>().UpdateAllPlugins(true);

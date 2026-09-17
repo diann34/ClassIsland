@@ -13,6 +13,7 @@ using ClassIsland.Core.Attributes;
 using ClassIsland.Core.Enums;
 using ClassIsland.Core.Helpers.UI;
 using ClassIsland.Core.Models.ProfileAnalyzing;
+using ClassIsland.Core.Services;
 using ClassIsland.Shared;
 using ClassIsland.Shared.Interfaces;
 using ClassIsland.Shared.Models.Profile;
@@ -285,7 +286,10 @@ public partial class AttachedSettingsControlPresenter : UserControl, INotifyProp
             case AttachedSettingsTargets.Lesson:
                 if (ProfileService.Profile.ClassPlans.TryGetValue(ContentId, out var classPlan))
                 {
-                    DependencyItemTitle = $"课表 {classPlan.Name}，第{ContentIndex}节";
+                    DependencyItemTitle = LocalizationService.Translate(
+                        "Core.Controls.AttachedSettingsControlPresenter.Dependency.Lesson",
+                        classPlan.Name,
+                        ContentIndex);
                 }
 
                 if (policy.DisableProfileClassPlanEditing)
@@ -296,7 +300,9 @@ public partial class AttachedSettingsControlPresenter : UserControl, INotifyProp
             case AttachedSettingsTargets.ClassPlan:
                 if (ProfileService.Profile.ClassPlans.TryGetValue(ContentId, out var classPlan2))
                 {
-                    DependencyItemTitle = $"课表 {classPlan2.Name}";
+                    DependencyItemTitle = LocalizationService.Translate(
+                        "Core.Controls.AttachedSettingsControlPresenter.Dependency.ClassPlan",
+                        classPlan2.Name);
                 }
                 if (policy.DisableProfileClassPlanEditing)
                 {
@@ -306,7 +312,11 @@ public partial class AttachedSettingsControlPresenter : UserControl, INotifyProp
             case AttachedSettingsTargets.TimePoint:
                 if (ProfileService.Profile.TimeLayouts.TryGetValue(ContentId, out var timeLayout) && node.Object is TimeLayoutItem item)
                 {
-                    DependencyItemTitle = $"时间表 {timeLayout.Name}，{item.StartTime:t}-{item.EndTime:t}";
+                    DependencyItemTitle = LocalizationService.Translate(
+                        "Core.Controls.AttachedSettingsControlPresenter.Dependency.TimePoint",
+                        timeLayout.Name,
+                        item.StartTime,
+                        item.EndTime);
                 }
                 if (policy.DisableProfileTimeLayoutEditing)
                 {
@@ -317,7 +327,9 @@ public partial class AttachedSettingsControlPresenter : UserControl, INotifyProp
             case AttachedSettingsTargets.Subject:
                 if (node.Object is Subject subject)
                 {
-                    DependencyItemTitle = $"科目 {subject.Name}";
+                    DependencyItemTitle = LocalizationService.Translate(
+                        "Core.Controls.AttachedSettingsControlPresenter.Dependency.Subject",
+                        subject.Name);
                 }
                 if (policy.DisableProfileSubjectsEditing)
                 {
@@ -327,7 +339,9 @@ public partial class AttachedSettingsControlPresenter : UserControl, INotifyProp
             case AttachedSettingsTargets.TimeLayout:
                 if (node.Object is TimeLayout item2)
                 {
-                    DependencyItemTitle = $"时间表 {item2.Name}";
+                    DependencyItemTitle = LocalizationService.Translate(
+                        "Core.Controls.AttachedSettingsControlPresenter.Dependency.TimeLayout",
+                        item2.Name);
                 }
                 if (policy.DisableProfileTimeLayoutEditing)
                 {

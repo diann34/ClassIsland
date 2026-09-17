@@ -12,6 +12,7 @@ using Avalonia.Threading;
 using Avalonia.VisualTree;
 using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using ClassIsland.Services;
 using ClassIsland.Shared;
 using ClassIsland.Shared.Helpers;
@@ -186,13 +187,15 @@ public partial class ScheduleDataGridColHeaderControl : TemplatedControl
         if (timeLayoutId == Guid.Empty ||
             !profileService.Profile.TimeLayouts.ContainsKey(timeLayoutId))
         {
-            this.ShowWarningToast("请选择一个有效的时间表。");
+            this.ShowWarningToast(LocalizationService.Translate(
+                "Controls.ScheduleDataGridColHeaderControl.Toast.SelectValidTimeLayout"));
             return;
         }
         if (ViewModel.CopyFromClassPlan && (ViewModel.CopyClassPlanSource == Guid.Empty ||
              !profileService.Profile.ClassPlans.ContainsKey(ViewModel.CopyClassPlanSource)))
         {
-            this.ShowWarningToast("请选择一个有效要复制的课表。");
+            this.ShowWarningToast(LocalizationService.Translate(
+                "Controls.ScheduleDataGridColHeaderControl.Toast.SelectValidClassPlanToCopy"));
             return;
         }
         

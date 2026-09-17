@@ -2,6 +2,7 @@
 using Avalonia.Platform.Storage;
 using ClassIsland.Core.Attributes;
 using ClassIsland.Core.Models.Plugin;
+using ClassIsland.Core.Services;
 using ClassIsland.Shared;
 
 namespace ClassIsland.Core.Abstractions.Services;
@@ -28,7 +29,8 @@ public interface IPluginService
     /// <summary>
     /// 插件包文件类型
     /// </summary>
-    public static FilePickerFileType PluginPackageFileType { get; } = new("ClassIsland 插件包")
+    public static FilePickerFileType PluginPackageFileType { get; } = new(
+        LocalizationService.Translate("Core.FileTypes.ClassIslandPluginPackage"))
     {
         Patterns = ["*.cipx"]
     };

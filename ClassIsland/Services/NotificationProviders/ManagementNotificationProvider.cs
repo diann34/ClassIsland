@@ -4,6 +4,7 @@ using ClassIsland.Core.Abstractions.Services.Management;
 using ClassIsland.Core.Abstractions.Services.NotificationProviders;
 using ClassIsland.Core.Attributes;
 using ClassIsland.Core.Models.Notification;
+using ClassIsland.Core.Services;
 using ClassIsland.Shared.Interfaces;
 using ClassIsland.Shared.Models.Management;
 using ClassIsland.Shared.Protobuf.Command;
@@ -58,7 +59,10 @@ public class ManagementNotificationProvider : NotificationProviderBase
 
         var repeatCounts = Math.Max(1, payload.RepeatCounts);
         var durationSeconds = payload.DurationSeconds <= 0 ? 5 : payload.DurationSeconds;
-        var maskText = string.IsNullOrWhiteSpace(payload.MessageMask) ? "集控通知" : payload.MessageMask;
+        var maskText = string.IsNullOrWhiteSpace(payload.MessageMask)
+            ? LocalizationService.Translate(
+                "Services.NotificationProviders.ManagementNotificationProvider.Mask.ManagementNotification")
+            : payload.MessageMask;
         var messageContent = string.IsNullOrWhiteSpace(payload.MessageContent) ? "" : payload.MessageContent;
 
         Logger.LogInformation("接受集控消息：{} {}", payload.MessageMask, payload.MessageContent);

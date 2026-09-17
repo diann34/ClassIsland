@@ -16,6 +16,7 @@ using ClassIsland.Core.Abstractions.Services.Management;
 using ClassIsland.Core.Attributes;
 using ClassIsland.Core.Enums.SettingsWindow;
 using ClassIsland.Core.Services.Registry;
+using ClassIsland.Core.Services;
 using ClassIsland.Shared;
 using ClassIsland.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
@@ -619,7 +620,10 @@ public partial class SettingsWindowNew : ViewBase, IFANavigationPageFactory
         catch (Exception ex)
         {
             Logger.LogError(ex, "无法退出管理。");
-            _ = CommonTaskDialogs.ShowDialog("无法退出管理", $"无法退出管理：{ex.Message}", this);
+            _ = CommonTaskDialogs.ShowDialog(
+                LocalizationService.Translate("Views.SettingsWindowNew.Title.ExitManagementFailed"),
+                LocalizationService.Translate("Views.SettingsWindowNew.Message.ExitManagementFailed", ex.Message),
+                this);
         }
     }
 
@@ -632,7 +636,7 @@ public partial class SettingsWindowNew : ViewBase, IFANavigationPageFactory
     {
         var message = new ToastMessage()
         {
-            Message = "正在导出诊断信息…",
+            Message = LocalizationService.Translate("Views.SettingsWindowNew.Message.ExportingDiagnosticData"),
             CanUserClose = false,
             AutoClose = false,
         };
@@ -640,13 +644,13 @@ public partial class SettingsWindowNew : ViewBase, IFANavigationPageFactory
         {
             var r = await new FATaskDialog()
             {
-                Header = "导出诊断信息",
-                Content = "您正在导出应用的诊断数据。导出的诊断数据将包含应用 30 天内产生的日志、系统及环境信息、应用设置、当前加载的档案、所使用的插件（如有）和集控设置（如有），可能包含敏感信息，请在导出后注意检查。",
+                Header = LocalizationService.Translate("Views.SettingsWindowNew.Header.ExportDiagnosticData"),
+                Content = LocalizationService.Translate("Views.SettingsWindowNew.Content.ExportDiagnosticDataWarning"),
                 XamlRoot = this,
                 Buttons =
                 {
-                    new FATaskDialogButton("取消", false),
-                    new FATaskDialogButton("继续", true)
+                    new FATaskDialogButton(LocalizationService.Translate("Views.SettingsWindowNew.Button.Cancel"), false),
+                    new FATaskDialogButton(LocalizationService.Translate("Views.SettingsWindowNew.Button.Continue"), true)
                     {
                         IsDefault = true
                     }
@@ -660,13 +664,14 @@ public partial class SettingsWindowNew : ViewBase, IFANavigationPageFactory
             PopupHelper.DisableAllPopups();
             var file = await PlatformServices.FilePickerService.SaveFilePickerAsync(new FilePickerSaveOptions()
             {
-                Title = "导出诊断数据",
+                Title = LocalizationService.Translate("Views.SettingsWindowNew.Title.ExportDiagnosticData"),
                 SuggestedStartLocation =
                     await TopLevel.GetTopLevel(this)!.StorageProvider.TryGetFolderFromPathAsync(
                         Environment.GetFolderPath(Environment.SpecialFolder.Desktop)),
                 FileTypeChoices =
                 [
-                    new FilePickerFileType("压缩文件")
+                    new FilePickerFileType(LocalizationService.Translate(
+                        "Views.SettingsWindowNew.FileType.Archive"))
                     {
                         Patterns = ["*.zip"]
                     }
@@ -688,7 +693,8 @@ public partial class SettingsWindowNew : ViewBase, IFANavigationPageFactory
                 outputStream.Position = 0;
             }
             await DiagnosticService.ExportDiagnosticData(outputStream);
-            this.ShowSuccessToast($"已导出诊断信息到 {file}。");
+            this.ShowSuccessToast(LocalizationService.Translate(
+                "Views.SettingsWindowNew.Message.DiagnosticDataExportedTo", file));
         }
         catch (Exception exception)
         {
@@ -752,13 +758,13 @@ public partial class SettingsWindowNew : ViewBase, IFANavigationPageFactory
         {
             var urlDialogResult = await new FATaskDialog()
             {
-                Header = "创建快捷换课快捷方式",
-                Content = "快捷换课快捷方式需要启用【注册 Url 协议】选项才能工作。您要启用它吗？",
+                Header = LocalizationService.Translate("Views.SettingsWindowNew.Header.CreateQuickCourseChangeShortcut"),
+                Content = LocalizationService.Translate("Views.SettingsWindowNew.Content.EnableUrlProtocolForShortcut"),
                 XamlRoot = this,
                 Buttons =
                 {
-                    new FATaskDialogButton("取消", false),
-                    new FATaskDialogButton("启用", true)
+                    new FATaskDialogButton(LocalizationService.Translate("Views.SettingsWindowNew.Button.Cancel"), false),
+                    new FATaskDialogButton(LocalizationService.Translate("Views.SettingsWindowNew.Button.Enable"), true)
                     {
                         IsDefault = true
                     }
@@ -779,7 +785,8 @@ public partial class SettingsWindowNew : ViewBase, IFANavigationPageFactory
                 await TopLevel.GetTopLevel(this)!.StorageProvider.TryGetFolderFromPathAsync(
                     Environment.GetFolderPath(Environment.SpecialFolder.Desktop)),
             FileTypeChoices = [
-                new FilePickerFileType("快捷方式")
+                new FilePickerFileType(LocalizationService.Translate(
+                    "Views.SettingsWindowNew.FileType.Shortcut"))
                 {
                     Patterns = ["*.url"]
                 }
@@ -803,7 +810,8 @@ public partial class SettingsWindowNew : ViewBase, IFANavigationPageFactory
                 outputStream.Position = 0;
             }
             await ShortcutHelpers.CreateClassSwapShortcutAsync(outputStream);
-            this.ShowSuccessToast($"已创建快捷换课图标到 {file}。");
+            this.ShowSuccessToast(LocalizationService.Translate(
+                "Views.SettingsWindowNew.Message.QuickCourseChangeShortcutCreatedAt", file));
         }
         catch (Exception exception)
         {

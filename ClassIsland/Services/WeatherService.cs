@@ -15,6 +15,7 @@ using Avalonia.Threading;
 using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Models.Ruleset;
 using ClassIsland.Core.Models.Weather;
+using ClassIsland.Core.Services;
 using ClassIsland.Helpers;
 using ClassIsland.Models;
 using ClassIsland.Models.Rules;
@@ -307,7 +308,8 @@ public class WeatherService : ObservableRecipient, IHostedService, IWeatherServi
                 if (!found)
                 {
                     result.IsSuccess = false;
-                    result.ErrorMessage = "无法通过经纬度获取城市信息";
+                    result.ErrorMessage = LocalizationService.Translate(
+                        "Services.WeatherService.Message.CityLookupByCoordinatesFailed");
                     throw new InvalidOperationException(result.ErrorMessage);
                 }
                 if (usedPrecision < 4)
@@ -333,7 +335,8 @@ public class WeatherService : ObservableRecipient, IHostedService, IWeatherServi
                 else
                 {
                     Logger.LogError("无法通过CityId获取城市信息");
-                    result.ErrorMessage = "无法通过CityId获取城市信息";
+                    result.ErrorMessage = LocalizationService.Translate(
+                        "Services.WeatherService.Message.CityLookupByIdFailed");
                     return result;
                 }
             }

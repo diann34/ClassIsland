@@ -1,5 +1,6 @@
 using ClassIsland.Core.Enums.SettingsWindow;
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 
 namespace ClassIsland.Core.Attributes;
@@ -35,7 +36,7 @@ public class SettingsPageInfo : Attribute
     public SettingsPageInfo(string id, string name, SettingsPageCategory category=SettingsPageCategory.External)
     {
         Id = id;
-        Name = name;
+        Name = LocalizationService.TranslateText(name);
         Category = category;
     }
 

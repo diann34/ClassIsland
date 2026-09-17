@@ -1,6 +1,7 @@
 ﻿namespace ClassIsland.Core.Attributes;
 
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 
 /// <summary>
@@ -72,7 +73,7 @@ public class NotificationProviderInfo : Attribute
     public NotificationProviderInfo(string guid, string name, string description = "")
     {
         Guid = Guid.Parse(guid);
-        Name = name;
-        Description = description;
+        Name = LocalizationService.TranslateText(name);
+        Description = LocalizationService.TranslateText(description);
     }
 }

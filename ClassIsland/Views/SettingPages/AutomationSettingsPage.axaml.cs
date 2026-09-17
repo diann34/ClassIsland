@@ -12,6 +12,7 @@ using ClassIsland.Core.Extensions;
 using ClassIsland.Core.Extensions.UI;
 using ClassIsland.Core.Helpers.UI;
 using ClassIsland.Core.Models.UI;
+using ClassIsland.Core.Services;
 using ClassIsland.Platforms.Abstraction;
 using ClassIsland.Services;
 using ClassIsland.Shared;
@@ -53,7 +54,9 @@ public partial class AutomationSettingsPage : SettingsPageBase
         {
             Content = "撤销"
         };
-        var toastMessage = new ToastMessage($"已删除自动化“{workflow.ActionSet.Name}”。")
+        var toastMessage = new ToastMessage(LocalizationService.Translate(
+            "SettingPages.AutomationSettingsPage.Message.AutomationDeleted",
+            workflow.ActionSet.Name))
         {
             ActionContent = revertButton,
             Duration = TimeSpan.FromSeconds(10)
@@ -102,7 +105,8 @@ public partial class AutomationSettingsPage : SettingsPageBase
             Content = new Field
             {
                 Content = textBox,
-                Label = "配置方案名称",
+                Label = LocalizationService.Translate(
+                    "SettingPages.AutomationSettingsPage.Label.ConfigurationProfileName"),
                 Suffix = ".json"
             }
         }.ShowAsyncAuto();

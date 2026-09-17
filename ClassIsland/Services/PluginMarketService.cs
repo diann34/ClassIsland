@@ -11,6 +11,7 @@ using ClassIsland.Core;
 using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Helpers;
 using ClassIsland.Core.Models;
+using ClassIsland.Core.Services;
 using ClassIsland.Core.Models.Plugin;
 using ClassIsland.Platforms.Abstraction;
 using ClassIsland.Platforms.Abstraction.Models;
@@ -174,8 +175,9 @@ public class PluginMarketService : ObservableRecipient, IPluginMarketService
                 {
                     await PlatformServices.DesktopToastService.ShowToastAsync(new DesktopToastContent()
                     {
-                        Title = "插件更新可用",
-                        Body = $"有 {count} 个插件有新版本可用，点击以查看详细信息。",
+                        Title = LocalizationService.Translate("Services.PluginMarketService.Title.PluginUpdatesAvailable"),
+                        Body = LocalizationService.Translate(
+                            "Services.PluginMarketService.Message.PluginUpdatesAvailable", count),
                         Activated = (_, _) => IAppHost.GetService<IUriNavigationService>().NavigateWrapped(new Uri("classisland://app/settings/classisland.plugins"))
                     });
                 }
@@ -242,11 +244,12 @@ public class PluginMarketService : ObservableRecipient, IPluginMarketService
                     {
                         PlatformServices.DesktopToastService.ShowToastAsync(new DesktopToastContent()
                         {
-                            Title = "插件更新完成",
-                            Body = $"已将 {success} 个插件升级到最新版本，将在下次启动应用时生效。",
+                            Title = LocalizationService.Translate("Services.PluginMarketService.Title.PluginUpdateCompleted"),
+                            Body = LocalizationService.Translate(
+                                "Services.PluginMarketService.Message.PluginUpdateCompleted", success),
                             Buttons =
                             {
-                                { "立即重启", () => AppBase.Current.Restart() }
+                                { LocalizationService.Translate("Services.PluginMarketService.Button.RestartNow"), () => AppBase.Current.Restart() }
                             }
                         });
                     }
@@ -254,11 +257,14 @@ public class PluginMarketService : ObservableRecipient, IPluginMarketService
                     {
                         PlatformServices.DesktopToastService.ShowToastAsync(new DesktopToastContent()
                         {
-                            Title = "插件更新完成",
-                            Body = $"已将 {success} 个插件升级到最新版本，{toUpdate.Count - success} 个插件升级失败。将在下次启动应用时生效。",
+                            Title = LocalizationService.Translate("Services.PluginMarketService.Title.PluginUpdateCompleted"),
+                            Body = LocalizationService.Translate(
+                                "Services.PluginMarketService.Message.PluginUpdatePartiallyCompleted",
+                                success,
+                                toUpdate.Count - success),
                             Buttons =
                             {
-                                { "立即重启", () => AppBase.Current.Restart() }
+                                { LocalizationService.Translate("Services.PluginMarketService.Button.RestartNow"), () => AppBase.Current.Restart() }
                             }
                         });
                     }
@@ -266,8 +272,8 @@ public class PluginMarketService : ObservableRecipient, IPluginMarketService
                     {
                         PlatformServices.DesktopToastService.ShowToastAsync(new DesktopToastContent()
                         {
-                            Title = "插件更新失败",
-                            Body = $"无法更新插件。请检查您的网络设置，或更换插件镜像源，然后再试一遍。"
+                            Title = LocalizationService.Translate("Services.PluginMarketService.Title.PluginUpdateFailed"),
+                            Body = LocalizationService.Translate("Services.PluginMarketService.Message.PluginUpdateFailed")
                         });
                     }
 

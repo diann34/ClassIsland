@@ -1,5 +1,6 @@
 using Avalonia.Controls;
 using ClassIsland.Core.Models.UI;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 
 namespace ClassIsland.Core.Helpers.UI;
@@ -49,7 +50,7 @@ public static class ToastsHelper
     /// <returns>返回 <see cref="ToastMessage"/> 实例引用。</returns>
     public static ToastMessage ShowToastRef(this Control control, string message)
     {
-        return ShowToastRef(control, new ToastMessage(message));
+        return ShowToastRef(control, new ToastMessage(LocalizationService.TranslateText(message)));
     }
 
     /// <summary>
@@ -70,7 +71,7 @@ public static class ToastsHelper
     /// <returns>返回 <see cref="ToastMessage"/> 实例引用。</returns>
     public static ToastMessage ShowWarningToastRef(this Control control, string message)
     {
-        return ShowToastRef(control, new ToastMessage(message)
+        return ShowToastRef(control, new ToastMessage(LocalizationService.TranslateText(message))
         {
             Severity = FAInfoBarSeverity.Warning
         });
@@ -94,7 +95,7 @@ public static class ToastsHelper
     /// <returns>返回 <see cref="ToastMessage"/> 实例引用。</returns>
     public static ToastMessage ShowErrorToastRef(this Control control, string message)
     {
-        return ShowToastRef(control, new ToastMessage(message)
+        return ShowToastRef(control, new ToastMessage(LocalizationService.TranslateText(message))
         {
             Severity = FAInfoBarSeverity.Error,
             Duration = TimeSpan.FromSeconds(10)
@@ -119,7 +120,7 @@ public static class ToastsHelper
     /// <returns>返回 <see cref="ToastMessage"/> 实例引用。</returns>
     public static ToastMessage ShowSuccessToastRef(this Control control, string message)
     {
-        return ShowToastRef(control, new ToastMessage(message)
+        return ShowToastRef(control, new ToastMessage(LocalizationService.TranslateText(message))
         {
             Severity = FAInfoBarSeverity.Success
         });
@@ -147,7 +148,7 @@ public static class ToastsHelper
     {
         var message = new ToastMessage()
         {
-            Title = title,
+            Title = LocalizationService.TranslateText(title),
             Message = exception.Message,
             Severity = FAInfoBarSeverity.Error,
             AutoClose = false

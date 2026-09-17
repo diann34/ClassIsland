@@ -1,4 +1,5 @@
 using CommunityToolkit.Mvvm.ComponentModel;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 
 namespace ClassIsland.Core.Models.UI;
@@ -35,8 +36,8 @@ public class ToastMessage : ObservableRecipient
     /// </summary>
     public ToastMessage(string title, string message)
     {
-        _message = message;
-        _title = title;
+        _message = LocalizationService.TranslateText(message);
+        _title = LocalizationService.TranslateText(title);
     }
 
     /// <summary>
@@ -45,7 +46,7 @@ public class ToastMessage : ObservableRecipient
     public string Message
     {
         get => _message;
-        init => SetProperty(ref _message, value);
+        init => SetProperty(ref _message, LocalizationService.TranslateText(value));
     }
 
     /// <summary>
@@ -54,7 +55,7 @@ public class ToastMessage : ObservableRecipient
     public string Title
     {
         get => _title;
-        init => SetProperty(ref _title, value);
+        init => SetProperty(ref _title, LocalizationService.TranslateText(value));
     }
 
     /// <summary>

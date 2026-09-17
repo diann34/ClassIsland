@@ -11,6 +11,7 @@ using Avalonia.Interactivity;
 using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Abstractions.Services.Management;
 using ClassIsland.Core.Extensions.UI;
+using ClassIsland.Core.Services;
 using ClassIsland.Shared;
 using ClassIsland.Shared.Models.Profile;
 using ClassIsland.ViewModels;
@@ -129,10 +130,10 @@ public sealed partial class ClassPlanGroupItemControl : UserControl, INotifyProp
     {
         var result = await new FAContentDialog()
         {
-            Title = "解散课表群",
+            Title = LocalizationService.Translate("Controls.ClassPlanGroupItemControl.Dialog.DisbandGroup.Title"),
             Content = this.FindResource("DisbandConfirmDialog"),
-            PrimaryButtonText = "解散",
-            SecondaryButtonText = "取消",
+            PrimaryButtonText = LocalizationService.Translate("Controls.ClassPlanGroupItemControl.Button.Disband"),
+            SecondaryButtonText = LocalizationService.Translate("Controls.ClassPlanGroupItemControl.Button.Cancel"),
             DefaultButton = FAContentDialogButton.Primary
         }.ShowAsyncAuto(TopLevel.GetTopLevel(this));
         if (result != FAContentDialogResult.Primary)
@@ -147,10 +148,10 @@ public sealed partial class ClassPlanGroupItemControl : UserControl, INotifyProp
     {
         var result = await new FAContentDialog()
         {
-            Title = "解散课表群",
+            Title = LocalizationService.Translate("Controls.ClassPlanGroupItemControl.Dialog.DeleteGroup.Title"),
             Content = this.FindResource("DeleteConfirmDialog"),
-            PrimaryButtonText = "删除",
-            SecondaryButtonText = "取消",
+            PrimaryButtonText = LocalizationService.Translate("Controls.ClassPlanGroupItemControl.Button.Delete"),
+            SecondaryButtonText = LocalizationService.Translate("Controls.ClassPlanGroupItemControl.Button.Cancel"),
             DefaultButton = FAContentDialogButton.Primary
         }.ShowAsyncAuto(TopLevel.GetTopLevel(this));
         if (result != FAContentDialogResult.Primary)

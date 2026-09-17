@@ -23,6 +23,7 @@ using ClassIsland.Core.Helpers;
 using ClassIsland.Core.Helpers.Native;
 using ClassIsland.Core.Models;
 using ClassIsland.Core.Models.Updating;
+using ClassIsland.Core.Services;
 using ClassIsland.Enums.AppUpdating;
 using ClassIsland.Helpers;
 using ClassIsland.Models;
@@ -200,8 +201,11 @@ public class UpdateService : IHostedService, INotifyPropertyChanged
         if (Settings.LastUpdateStatus == UpdateStatus.UpdateDeployed)
         {
             CleanupPrevDeployments();
-            await PlatformServices.DesktopToastService.ShowToastAsync("更新成功",
-                $"应用已更新到 {AppBase.AppVersion}，点击以查看详细信息。", UpdateNotificationClickedCallback);
+            await PlatformServices.DesktopToastService.ShowToastAsync(
+                LocalizationService.Translate("Services.AppUpdating.UpdateService.Title.UpdateSucceeded"),
+                LocalizationService.Translate(
+                    "Services.AppUpdating.UpdateService.Message.UpdatedToVersion", AppBase.AppVersion),
+                UpdateNotificationClickedCallback);
             Settings.LastUpdateStatus = UpdateStatus.UpToDate;
         }
         
@@ -290,9 +294,13 @@ public class UpdateService : IHostedService, INotifyPropertyChanged
                 new Uri($"api/v1/public/distributions/{latest.DistributionId}/{subChannel}", UriKind.Relative),
                 UpdateDistributionInfoPath);
             Settings.LastUpdateStatus = UpdateStatus.UpdateAvailable;
-            await PlatformServices.DesktopToastService.ShowToastAsync("发现新版本",
-                $"{Assembly.GetExecutingAssembly().GetName().Version} -> {latest.Version}" +Environment.NewLine+
-                "点击以查看详细信息。", UpdateNotificationClickedCallback);
+            await PlatformServices.DesktopToastService.ShowToastAsync(
+                LocalizationService.Translate("Services.AppUpdating.UpdateService.Title.NewVersionAvailable"),
+                LocalizationService.Translate(
+                    "Services.AppUpdating.UpdateService.Message.NewVersionAvailable",
+                    Assembly.GetExecutingAssembly().GetName().Version,
+                    latest.Version),
+                UpdateNotificationClickedCallback);
 
             Settings.LastUpdateStatus = UpdateStatus.UpdateAvailable;
             spanGetDetail.Finish(SpanStatus.Ok);

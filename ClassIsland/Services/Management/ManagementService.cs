@@ -8,6 +8,7 @@ using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Abstractions.Services.Management;
 using ClassIsland.Core.Controls;
 using ClassIsland.Core.Enums;
+using ClassIsland.Core.Services;
 using ClassIsland.Shared.Abstraction.Services;
 using ClassIsland.Shared.Enums;
 using ClassIsland.Shared.Models.Management;
@@ -178,8 +179,12 @@ public class ManagementService : IManagementService
             Manifest = await Connection.GetManifest();
             if (Manifest.CoreVersion.Major != IAppHost.CoreVersion.Major)
             {
-                await CommonTaskDialogs.ShowDialog("集控核心版本不兼容",
-                    $"您正在核心版本主版本号（{IAppHost.CoreVersion}）与集控数据核心版本主版本号（{Manifest.CoreVersion}）不同的 ClassIsland 加入集控，这可能会导致您的数据损坏。请运行兼容贵组织集控服务的 ClassIsland 版本，或者联系您的管理员了解详细信息。");
+                await CommonTaskDialogs.ShowDialog(
+                    LocalizationService.Translate("Services.Management.ManagementService.Title.CoreVersionIncompatible"),
+                    LocalizationService.Translate(
+                        "Services.Management.ManagementService.Message.CoreVersionIncompatible",
+                        IAppHost.CoreVersion,
+                        Manifest.CoreVersion));
                 return false;
             }
             SaveConfig(ManagementManifestPath, Manifest);
@@ -238,12 +243,15 @@ public class ManagementService : IManagementService
         var dialog = new FATaskDialog
         {
             Title = "ClassIsland",
-            SubHeader = "加入集控",
-            Content = $"确定要加入组织 {mf.OrganizationName} 的管理吗？",
+            SubHeader = LocalizationService.Translate("Services.Management.ManagementService.SubHeader.JoinManagement"),
+            Content = LocalizationService.Translate(
+                "Services.Management.ManagementService.Message.ConfirmJoinOrganization", mf.OrganizationName),
             Buttons =
             {
-                FATaskDialogButton.CancelButton,
-                new FATaskDialogButton("加入", true)
+                new FATaskDialogButton(
+                    LocalizationService.Translate("Services.Management.ManagementService.Button.Cancel"), false),
+                new FATaskDialogButton(
+                    LocalizationService.Translate("Services.Management.ManagementService.Button.Join"), true)
                 {
                     IsDefault = true
                 }
@@ -267,7 +275,10 @@ public class ManagementService : IManagementService
             }
         }
         SaveConfig(ManagementSettingsPath, w);
-        await CommonTaskDialogs.ShowDialog("已加入集控", $"已加入组织 {mf.OrganizationName} 的管理。应用将重启以应用更改。");
+        await CommonTaskDialogs.ShowDialog(
+            LocalizationService.Translate("Services.Management.ManagementService.Title.JoinedManagement"),
+            LocalizationService.Translate(
+                "Services.Management.ManagementService.Message.JoinedOrganization", mf.OrganizationName));
         await SetupManagement();
 
         AppBase.Current.Restart();
@@ -288,12 +299,15 @@ public class ManagementService : IManagementService
         var dialog = new FATaskDialog
         {
             Title = "ClassIsland",
-            SubHeader = "退出集控",
-            Content = $"确定要退出组织 {Manifest.OrganizationName} 的管理吗？",
+            SubHeader = LocalizationService.Translate("Services.Management.ManagementService.SubHeader.ExitManagement"),
+            Content = LocalizationService.Translate(
+                "Services.Management.ManagementService.Message.ConfirmExitOrganization", Manifest.OrganizationName),
             Buttons =
             {
-                FATaskDialogButton.CancelButton,
-                new FATaskDialogButton("退出", true)
+                new FATaskDialogButton(
+                    LocalizationService.Translate("Services.Management.ManagementService.Button.Cancel"), false),
+                new FATaskDialogButton(
+                    LocalizationService.Translate("Services.Management.ManagementService.Button.Exit"), true)
                 {
                     IsDefault = true
                 }
@@ -307,7 +321,10 @@ public class ManagementService : IManagementService
         Settings.IsManagementEnabled = false;
         SaveConfig(ManagementSettingsPath, Settings);
 
-        await CommonTaskDialogs.ShowDialog("已退出集控", $"已退出组织 {Manifest.OrganizationName} 的管理。应用将重启以应用更改。");
+        await CommonTaskDialogs.ShowDialog(
+            LocalizationService.Translate("Services.Management.ManagementService.Title.LeftManagement"),
+            LocalizationService.Translate(
+                "Services.Management.ManagementService.Message.LeftOrganization", Manifest.OrganizationName));
 
         AppBase.Current.Restart();
     }

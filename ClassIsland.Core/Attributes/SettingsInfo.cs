@@ -1,5 +1,7 @@
 namespace ClassIsland.Core.Attributes;
 
+using ClassIsland.Core.Services;
+
 /// <summary>
 /// 应用设置属性信息。<br/>
 /// 用于：行动“应用设置”中用户选择应用设置。
@@ -19,7 +21,7 @@ public class SettingsInfo(
     /// <summary>
     /// 应用设置属性中文名称。
     /// </summary>
-    public string? Name { get; set; } = name;
+    public string? Name { get; set; } = name == null ? null : LocalizationService.TranslateText(name);
 
     /// <summary>
     /// 应用设置属性图标。
@@ -29,7 +31,7 @@ public class SettingsInfo(
     /// <summary>
     /// 应用设置属性枚举项中文名称。
     /// </summary>
-    public string[]? Enums { get; set; } = enums;
+    public string[]? Enums { get; set; } = enums?.Select(LocalizationService.TranslateText).ToArray();
 
     /// <summary>
     /// 应用设置属性排序顺序。数字越大排在越后。

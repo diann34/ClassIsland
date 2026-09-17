@@ -24,6 +24,7 @@ using ClassIsland.Core.Controls.Ruleset;
 using ClassIsland.Core.Enums.SettingsWindow;
 using ClassIsland.Core.Helpers.UI;
 using ClassIsland.Core.Models.Components;
+using ClassIsland.Core.Services;
 using ClassIsland.Platforms.Abstraction;
 using ClassIsland.Services;
 using ClassIsland.Shared;
@@ -93,7 +94,7 @@ public partial class ComponentsSettingsPage : SettingsPageBase
             Content = new Field()
             {
                 Content = textBox,
-                Label = "组件名",
+                Label = LocalizationService.Translate("SettingPages.ComponentsSettingsPage.Label.ComponentName"),
                 Suffix = ".json"
             }
         }.ShowAsyncAuto();

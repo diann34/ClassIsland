@@ -6,6 +6,7 @@ using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Abstractions.Services.NotificationProviders;
 using ClassIsland.Core.Attributes;
 using ClassIsland.Core.Models.Notification;
+using ClassIsland.Core.Services;
 using ClassIsland.Shared.Abstraction.Models;
 using ClassIsland.Models.AttachedSettings;
 using ClassIsland.Models.NotificationProviderSettings;
@@ -42,7 +43,9 @@ public class AfterSchoolNotificationProvider : NotificationProviderBase<AfterSch
 
         ShowNotification(new NotificationRequest
         {
-            MaskContent = NotificationContent.CreateTwoIconsMask("放学", rightIcon: "\ued34"),
+            MaskContent = NotificationContent.CreateTwoIconsMask(
+                LocalizationService.Translate("Services.NotificationProviders.AfterSchoolNotificationProvider.Mask.AfterSchool"),
+                rightIcon: "\ued34"),
             OverlayContent = NotificationContent.CreateSimpleTextContent(settings.NotificationMsg, x => x.Duration=TimeSpan.FromSeconds(30))
         });
     }

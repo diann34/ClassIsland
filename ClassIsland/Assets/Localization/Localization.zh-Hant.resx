@@ -5241,4 +5241,1002 @@ THE QUICK BROWN FOX JUMPS OVER A LAZY DOG
   <data name="SettingPages.WeatherSettingsPage.Format.UpdatedAt" xml:space="preserve">
     <value>更新於 {0:HH:mm}</value>
   </data>
+  <data name="Services.NotificationProviders.ClassNotificationProvider.Speech.Teacher" xml:space="preserve">
+    <value>由{0}老師任教</value>
+  </data>
+  <data name="Services.NotificationProviders.ClassNotificationProvider.Speech.ClassStartsIn" xml:space="preserve">
+    <value>距上課還剩{0}。</value>
+  </data>
+  <data name="Services.NotificationProviders.ClassNotificationProvider.Speech.NextClass" xml:space="preserve">
+    <value>{0} 下節課是：{1}{2}。</value>
+  </data>
+  <data name="Services.NotificationProviders.ClassNotificationProvider.Speech.BreakAndNextClass" xml:space="preserve">
+    <value>本節{0}長{1}，下節課是：{2}{3}。{4}</value>
+  </data>
+  <data name="App.Message.CorruptConfigurationRecovered" xml:space="preserve">
+    <value>ClassIsland 部分設定檔已損毀且無法載入，這些設定檔已還原為預設值。按一下此訊息可檢視詳細資訊，並從先前的備份還原設定檔。</value>
+  </data>
+  <data name="App.Message.FaultyPluginsDisabled" xml:space="preserve">
+    <value>ClassIsland 已自動停用導致上次當機的外掛程式。排除問題後，您可以前往【應用程式設定】-&gt;【外掛程式】重新啟用，或在【應用程式設定】-&gt;【基本】調整是否自動停用異常外掛程式。</value>
+  </data>
+  <data name="App.Message.InstanceAlreadyRunning" xml:space="preserve">
+    <value>ClassIsland 已經啟動，請透過工作列通知區圖示進行設定等操作。</value>
+  </data>
+  <data name="App.Message.MainInterfaceMayBeHidden" xml:space="preserve">
+    <value>如果看不到主介面，可能是您在通知區圖示選單中選擇了【隱藏主介面】，或有隱藏主介面的規則或動作正在生效。</value>
+  </data>
+  <data name="App.Message.RestartRunningInstance" xml:space="preserve">
+    <value>結束正在執行的 ClassIsland 執行個體，然後再次啟動此執行個體。</value>
+  </data>
+  <data name="App.Message.RestartFailed" xml:space="preserve">
+    <value>無法重新啟動應用程式，目前執行中的執行個體可能正以系統管理員身分執行。請使用工作管理員終止該執行個體，然後再試一次。</value>
+  </data>
+  <data name="App.Message.RunningFromDesktop" xml:space="preserve">
+    <value>ClassIsland 正在桌面上執行，應用程式設定、課表等資料將直接儲存在桌面。使用前請將本應用程式移至獨立資料夾。</value>
+  </data>
+  <data name="App.Message.RunningFromTemporaryDirectory" xml:space="preserve">
+    <value>ClassIsland 正在暫存目錄中執行，應用程式設定、課表等資料可能無法儲存，或在結束後被自動刪除。使用前請務必將本應用程式解壓縮到合適的位置。</value>
+  </data>
+  <data name="App.Message.ScaleCompatibilityPrompt" xml:space="preserve">
+    <value>如果目前介面縮放比系統縮放過小，可按一下【不正常】啟用相容縮放模式，以改善部分平台上的縮放異常。</value>
+  </data>
+  <data name="App.Title.FaultyPluginsDisabled" xml:space="preserve">
+    <value>已自動停用異常外掛程式</value>
+  </data>
+  <data name="App.Title.InstanceAlreadyRunning" xml:space="preserve">
+    <value>ClassIsland 已在執行</value>
+  </data>
+  <data name="App.Title.RunningFromDesktop" xml:space="preserve">
+    <value>偵測到正在桌面上執行</value>
+  </data>
+  <data name="App.Title.ScaleCompatibilityPrompt" xml:space="preserve">
+    <value>目前介面縮放是否正常？</value>
+  </data>
+  <data name="App.Content.ManageFaultyPluginBehavior" xml:space="preserve">
+    <value>管理異常外掛程式行為</value>
+  </data>
+  <data name="App.Content.OpenPluginSettings" xml:space="preserve">
+    <value>開啟外掛程式設定</value>
+  </data>
+  <data name="App.Content.RestartCurrentInstance" xml:space="preserve">
+    <value>重新啟動目前執行個體</value>
+  </data>
+  <data name="App.Content.ScaleIsIncorrect" xml:space="preserve">
+    <value>不正常</value>
+  </data>
+  <data name="App.Content.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="App.Content.EnterRecoveryMode" xml:space="preserve">
+    <value>進入復原模式</value>
+  </data>
+  <data name="App.Content.ScaleIsNormal" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="App.Message.DirectoryPermissionError" xml:space="preserve">
+    <value>ClassIsland 無法寫入目前目錄：{0}&#xA;&#xA;請將本軟體解壓縮到合適的位置後再執行。</value>
+  </data>
+  <data name="App.Message.EnterRecoveryMode" xml:space="preserve">
+    <value>ClassIsland 多次啟動失敗，是否要進入復原模式嘗試修復 ClassIsland？</value>
+  </data>
+  <data name="App.Message.RestartFailedWithDetails" xml:space="preserve">
+    <value>無法重新啟動應用程式，目前執行中的執行個體可能正以系統管理員身分執行。請使用工作管理員終止該執行個體，然後再試一次。&#xA;&#xA;{0}</value>
+  </data>
+  <data name="App.Title.CorruptConfiguration" xml:space="preserve">
+    <value>設定檔損毀</value>
+  </data>
+  <data name="App.Title.DirectoryPermissionError" xml:space="preserve">
+    <value>目錄權限錯誤</value>
+  </data>
+  <data name="App.Title.EnterRecoveryMode" xml:space="preserve">
+    <value>進入復原模式</value>
+  </data>
+  <data name="App.Title.RestartFailed" xml:space="preserve">
+    <value>重新啟動失敗</value>
+  </data>
+  <data name="MainWindow.Message.AllNotificationRowsDisabled" xml:space="preserve">
+    <value>您已停用所有主介面列的提醒顯示功能。如果沒有外掛程式註冊其他提醒接收者，提醒將不會顯示，也不會播放提醒音效、特效和語音。</value>
+  </data>
+  <data name="MainWindow.Message.FirstRowSetAsPrimary" xml:space="preserve">
+    <value>已將第一列設為主要列。</value>
+  </data>
+  <data name="MainWindow.Message.MustKeepOneMainInterfaceRow" xml:space="preserve">
+    <value>至少需要保留 1 個主介面列。</value>
+  </data>
+  <data name="Views.AuthorizeWindow.Message.AddAtLeastOneAuthenticationMethod" xml:space="preserve">
+    <value>請至少新增一種驗證方式。</value>
+  </data>
+  <data name="Views.AuthorizeWindow.Message.AuthenticationMethodValidationFailed" xml:space="preserve">
+    <value>驗證方式的設定驗證失敗，請檢查驗證方式設定。</value>
+  </data>
+  <data name="Views.ClassChangingWindow.Content.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Views.ClassChangingWindow.Content.Continue" xml:space="preserve">
+    <value>繼續</value>
+  </data>
+  <data name="Views.ClassChangingWindow.Content.OverwriteCurrentTemporaryLayer" xml:space="preserve">
+    <value>目前已有臨時層課表，若繼續換課，該臨時層將被覆寫。是否繼續？</value>
+  </data>
+  <data name="Views.ClassChangingWindow.Message.InvalidSelectedCourse" xml:space="preserve">
+    <value>選取的課程無效。</value>
+  </data>
+  <data name="Views.ClassChangingWindow.Title.OverwriteCurrentTemporaryLayer" xml:space="preserve">
+    <value>覆寫目前的臨時層</value>
+  </data>
+  <data name="Views.DataTransferPage.Button.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Views.DataTransferPage.Button.RestartAndContinue" xml:space="preserve">
+    <value>重新啟動並繼續</value>
+  </data>
+  <data name="Views.DataTransferPage.Content.RestartToApplyImport" xml:space="preserve">
+    <value>應用程式需要重新啟動才能完整套用匯入操作。要繼續嗎？</value>
+  </data>
+  <data name="Views.DataTransferPage.Content.RestartToContinueImport" xml:space="preserve">
+    <value>應用程式需要重新啟動才能繼續匯入。要重新啟動並繼續嗎？</value>
+  </data>
+  <data name="Views.DataTransferPage.Message.UnexpectedExportError" xml:space="preserve">
+    <value>匯出資料時發生未預期的錯誤。</value>
+  </data>
+  <data name="Views.DataTransferPage.Message.UnexpectedImportError" xml:space="preserve">
+    <value>匯入時發生未預期的錯誤</value>
+  </data>
+  <data name="Views.DataTransferPage.Title.RestartToContinue" xml:space="preserve">
+    <value>重新啟動以繼續</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.ClearTemporaryFilesFailed" xml:space="preserve">
+    <value>無法清除暫存檔案</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.FeatureInDevelopment" xml:space="preserve">
+    <value>此功能仍在開發中</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.OperationCompletedSuccessfully" xml:space="preserve">
+    <value>操作已成功完成。</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.ResetApplicationSettingsFailed" xml:space="preserve">
+    <value>無法重設應用程式設定</value>
+  </data>
+  <data name="Views.RecoveryPages.RecoverBackupPage.Message.RestoreBackupFailed" xml:space="preserve">
+    <value>無法還原備份</value>
+  </data>
+  <data name="Views.ScreenshotHelperWindow.Message.SelectValidWindow" xml:space="preserve">
+    <value>請先選擇有效的視窗。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Button.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Button.Restart" xml:space="preserve">
+    <value>重新啟動</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Button.Continue" xml:space="preserve">
+    <value>繼續</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Button.Enable" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Content.EnableUrlProtocolForShortcut" xml:space="preserve">
+    <value>快速換課捷徑需要啟用【註冊 URL 通訊協定】選項才能運作。您要啟用嗎？</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Content.ExportDiagnosticDataWarning" xml:space="preserve">
+    <value>您正在匯出應用程式的診斷資料。匯出的診斷資料將包含應用程式 30 天內產生的記錄、系統及環境資訊、應用程式設定、目前載入的設定檔、使用的外掛程式（如有）和集中管理設定（如有），可能包含敏感資訊，請在匯出後仔細檢查。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Header.CreateQuickCourseChangeShortcut" xml:space="preserve">
+    <value>建立快速換課捷徑</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Header.ExportDiagnosticData" xml:space="preserve">
+    <value>匯出診斷資訊</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.DiagnosticDataExportedTo" xml:space="preserve">
+    <value>已將診斷資訊匯出至 {0}。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.ExitManagementFailed" xml:space="preserve">
+    <value>無法退出管理：{0}</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.ExportingDiagnosticData" xml:space="preserve">
+    <value>正在匯出診斷資訊…</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.QuickCourseChangeShortcutCreatedAt" xml:space="preserve">
+    <value>已在 {0} 建立快速換課圖示。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Title.ExitManagementFailed" xml:space="preserve">
+    <value>無法退出管理</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Title.ExportDiagnosticData" xml:space="preserve">
+    <value>匯出診斷資料</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Content.RestartRequired" xml:space="preserve">
+    <value>部分設定需要重新啟動才能套用變更。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.CreateDesktopShortcutFailed" xml:space="preserve">
+    <value>無法建立桌面捷徑</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.CreateDesktopShortcutSucceeded" xml:space="preserve">
+    <value>已建立桌面捷徑。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.CreateStartMenuShortcutFailed" xml:space="preserve">
+    <value>無法建立開始功能表捷徑</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Message.CreateStartMenuShortcutSucceeded" xml:space="preserve">
+    <value>已建立開始功能表捷徑。</value>
+  </data>
+  <data name="Views.SettingsWindowNew.Title.RestartRequired" xml:space="preserve">
+    <value>需要重新啟動</value>
+  </data>
+  <data name="Views.WelcomeWindow.Button.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Views.WelcomeWindow.Button.Exit" xml:space="preserve">
+    <value>結束</value>
+  </data>
+  <data name="Views.WelcomeWindow.Content.ExitBeforeSetupCompleted" xml:space="preserve">
+    <value>您需要完成設定才能開始使用本應用程式。關閉此視窗將直接結束應用程式。</value>
+  </data>
+  <data name="Views.WelcomeWindow.Title.ExitClassIsland" xml:space="preserve">
+    <value>結束 ClassIsland</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Button.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Button.Reset" xml:space="preserve">
+    <value>重設</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.ResetOnboardingMessageSettings" xml:space="preserve">
+    <value>確定要重設迎新訊息設定嗎？此操作無法復原！</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Message.OnboardingMessageReset" xml:space="preserve">
+    <value>已重設迎新訊息。</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Title.ResetOnboardingMessageSettings" xml:space="preserve">
+    <value>重設迎新訊息設定</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Message.BackupFailed" xml:space="preserve">
+    <value>無法建立備份</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Message.BackupSucceeded" xml:space="preserve">
+    <value>備份成功。</value>
+  </data>
+  <data name="SettingPages.StorageSettingsPage.Message.BrowseBackupFilesFailed" xml:space="preserve">
+    <value>無法瀏覽備份檔案</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Message.AtLeastOneThemeRequired" xml:space="preserve">
+    <value>您必須啟用至少一個主題，以確保主介面有可用的顯示樣式。</value>
+  </data>
+  <data name="SettingPages.ThemesSettingsPage.Message.RefreshMarketplaceFailed" xml:space="preserve">
+    <value>無法重新整理市集</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Message.Locating" xml:space="preserve">
+    <value>正在定位...</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Message.LocationSucceeded" xml:space="preserve">
+    <value>定位成功</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Message.WeatherRefreshSucceeded" xml:space="preserve">
+    <value>天氣重新整理成功</value>
+  </data>
+  <data name="Services.AppUpdating.UpdateService.Message.NewVersionAvailable" xml:space="preserve">
+    <value>{0} -&gt; {1}&#xA;按一下以檢視詳細資訊。</value>
+  </data>
+  <data name="Services.AppUpdating.UpdateService.Message.UpdatedToVersion" xml:space="preserve">
+    <value>應用程式已更新至 {0}，按一下以檢視詳細資訊。</value>
+  </data>
+  <data name="Services.AppUpdating.UpdateService.Title.NewVersionAvailable" xml:space="preserve">
+    <value>發現新版本</value>
+  </data>
+  <data name="Services.AppUpdating.UpdateService.Title.UpdateSucceeded" xml:space="preserve">
+    <value>更新成功</value>
+  </data>
+  <data name="Services.AuthorizeService.Message.AuthenticationCreationFailed" xml:space="preserve">
+    <value>建立驗證資訊時發生例外狀況：{0}</value>
+  </data>
+  <data name="Services.AuthorizeService.Message.AuthenticationFailed" xml:space="preserve">
+    <value>驗證時發生例外狀況：{0}</value>
+  </data>
+  <data name="Services.AuthorizeService.Title.AuthenticationCreationFailed" xml:space="preserve">
+    <value>建立驗證資訊失敗</value>
+  </data>
+  <data name="Services.AuthorizeService.Title.AuthenticationFailed" xml:space="preserve">
+    <value>驗證失敗</value>
+  </data>
+  <data name="Services.ExactTimeService.Status.NotSynchronized" xml:space="preserve">
+    <value>時間尚未同步。</value>
+  </data>
+  <data name="Services.ExactTimeService.Status.SynchronizedAt" xml:space="preserve">
+    <value>已於 {0} 成功同步時間</value>
+  </data>
+  <data name="Services.ExactTimeService.Status.SynchronizationFailed" xml:space="preserve">
+    <value>同步時間失敗：{0}</value>
+  </data>
+  <data name="Services.ExactTimeService.Status.Synchronizing" xml:space="preserve">
+    <value>正在同步時間……</value>
+  </data>
+  <data name="Services.Management.ManagementService.Button.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Services.Management.ManagementService.Button.Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="Services.Management.ManagementService.Button.Join" xml:space="preserve">
+    <value>加入</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.ConfirmExitOrganization" xml:space="preserve">
+    <value>確定要退出組織 {0} 的管理嗎？</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.ConfirmJoinOrganization" xml:space="preserve">
+    <value>確定要加入組織 {0} 的管理嗎？</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.CoreVersionIncompatible" xml:space="preserve">
+    <value>您正在核心主要版本（{0}）與集中管理資料核心主要版本（{1}）不同的 ClassIsland 中加入集中管理，這可能導致資料損毀。請執行與貴組織集中管理服務相容的 ClassIsland 版本，或聯絡管理員以取得詳細資訊。</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.JoinedOrganization" xml:space="preserve">
+    <value>已加入組織 {0} 的管理。應用程式將重新啟動以套用變更。</value>
+  </data>
+  <data name="Services.Management.ManagementService.Message.LeftOrganization" xml:space="preserve">
+    <value>已退出組織 {0} 的管理。應用程式將重新啟動以套用變更。</value>
+  </data>
+  <data name="Services.Management.ManagementService.SubHeader.ExitManagement" xml:space="preserve">
+    <value>退出集中管理</value>
+  </data>
+  <data name="Services.Management.ManagementService.SubHeader.JoinManagement" xml:space="preserve">
+    <value>加入集中管理</value>
+  </data>
+  <data name="Services.Management.ManagementService.Title.CoreVersionIncompatible" xml:space="preserve">
+    <value>集中管理核心版本不相容</value>
+  </data>
+  <data name="Services.Management.ManagementService.Title.JoinedManagement" xml:space="preserve">
+    <value>已加入集中管理</value>
+  </data>
+  <data name="Services.Management.ManagementService.Title.LeftManagement" xml:space="preserve">
+    <value>已退出集中管理</value>
+  </data>
+  <data name="Services.UriNavigationService.Message.NavigationFailed" xml:space="preserve">
+    <value>無法導覽至 {0}：{1}</value>
+  </data>
+  <data name="Services.UriNavigationService.Title.NavigationFailed" xml:space="preserve">
+    <value>導覽失敗</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Message.CoordinatePrecisionDegraded" xml:space="preserve">
+    <value>此天氣資訊的座標精度已降低至 {0} 位小數</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Message.GetCurrentLocationFailed" xml:space="preserve">
+    <value>無法取得目前位置：{0}</value>
+  </data>
+  <data name="SettingPages.WeatherSettingsPage.Message.WeatherRefreshFailed" xml:space="preserve">
+    <value>天氣重新整理失敗：{0}</value>
+  </data>
+  <data name="Services.RefreshingService.Button.Confirm" xml:space="preserve">
+    <value>好</value>
+  </data>
+  <data name="Services.RefreshingService.Button.ExitAndDoNotShowAgain" xml:space="preserve">
+    <value>結束並不再顯示</value>
+  </data>
+  <data name="Services.RefreshingService.Button.Later" xml:space="preserve">
+    <value>稍後再說</value>
+  </data>
+  <data name="Services.RefreshingService.Button.NotNow" xml:space="preserve">
+    <value>暫時不用</value>
+  </data>
+  <data name="Services.RefreshingService.Button.RefreshNow" xml:space="preserve">
+    <value>立即翻新</value>
+  </data>
+  <data name="Services.RefreshingService.Message.DefaultOnboarding" xml:space="preserve">
+    <value>螢幕上的課表是由大螢幕課表軟體 ClassIsland 顯示的。ClassIsland 能清楚顯示各種資訊，並支援高度自訂。要瞭解如何使用 ClassIsland 嗎？</value>
+  </data>
+  <data name="Services.RefreshingService.Message.DefaultRefreshing" xml:space="preserve">
+    <value>ClassIsland 似乎已經有一個長假沒有啟動，部分設定可能已過期。要跟隨歡迎精靈重新設定學期開始時間等項目嗎？</value>
+  </data>
+  <data name="Services.RefreshingService.Title.DefaultOnboarding" xml:space="preserve">
+    <value>歡迎使用 ClassIsland (/≧▽≦)/</value>
+  </data>
+  <data name="Services.RefreshingService.Title.DefaultRefreshing" xml:space="preserve">
+    <value>翻新 ClassIsland</value>
+  </data>
+  <data name="Services.RefreshingService.Title.WelcomeToClassIsland" xml:space="preserve">
+    <value>歡迎使用 ClassIsland</value>
+  </data>
+  <data name="MainWindow.Message.UnsupportedMouseClickSettingDisabled" xml:space="preserve">
+    <value>【啟用滑鼠點擊】設定項目已不再支援並自動停用，感謝您的支持與理解。</value>
+  </data>
+  <data name="MainWindow.Title.UnsupportedSettingDisabled" xml:space="preserve">
+    <value>已停用不支援的設定</value>
+  </data>
+  <data name="Services.PluginMarketService.Button.RestartNow" xml:space="preserve">
+    <value>立即重新啟動</value>
+  </data>
+  <data name="Services.PluginMarketService.Message.PluginUpdateCompleted" xml:space="preserve">
+    <value>已將 {0} 個外掛程式升級至最新版本，將在下次啟動應用程式時生效。</value>
+  </data>
+  <data name="Services.PluginMarketService.Message.PluginUpdateFailed" xml:space="preserve">
+    <value>無法更新外掛程式。請檢查網路設定，或更換外掛程式映像來源後再試一次。</value>
+  </data>
+  <data name="Services.PluginMarketService.Message.PluginUpdatePartiallyCompleted" xml:space="preserve">
+    <value>已將 {0} 個外掛程式升級至最新版本，{1} 個外掛程式升級失敗。將在下次啟動應用程式時生效。</value>
+  </data>
+  <data name="Services.PluginMarketService.Message.PluginUpdatesAvailable" xml:space="preserve">
+    <value>有 {0} 個外掛程式有新版本可用，按一下以檢視詳細資訊。</value>
+  </data>
+  <data name="Services.PluginMarketService.Title.PluginUpdateCompleted" xml:space="preserve">
+    <value>外掛程式更新完成</value>
+  </data>
+  <data name="Services.PluginMarketService.Title.PluginUpdateFailed" xml:space="preserve">
+    <value>外掛程式更新失敗</value>
+  </data>
+  <data name="Services.PluginMarketService.Title.PluginUpdatesAvailable" xml:space="preserve">
+    <value>有可用的外掛程式更新</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Content.ConfirmDeleteComponentProfile" xml:space="preserve">
+    <value>您確定要刪除元件設定 {0} 嗎？此操作無法復原，設定中的元件資訊都將被刪除！</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Label.ComponentName" xml:space="preserve">
+    <value>元件名稱</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Label.ComponentProfileName" xml:space="preserve">
+    <value>元件設定檔名稱</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Message.ComponentProfileAlreadyExists" xml:space="preserve">
+    <value>無法重新命名元件設定，因為已有相同名稱的元件設定。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Message.LoadedComponentProfileCannotBeDeleted" xml:space="preserve">
+    <value>無法刪除已載入或即將載入的元件設定。</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Title.CreateComponentProfile" xml:space="preserve">
+    <value>建立元件設定</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Title.DeleteComponentProfile" xml:space="preserve">
+    <value>刪除元件設定</value>
+  </data>
+  <data name="Controls.EditMode.EditModeView.Title.RenameComponentProfile" xml:space="preserve">
+    <value>重新命名元件設定檔</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Label.ConfigurationProfileName" xml:space="preserve">
+    <value>設定檔名稱</value>
+  </data>
+  <data name="SettingPages.AutomationSettingsPage.Title.CreateAutomationProfile" xml:space="preserve">
+    <value>建立自動化設定檔</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Label.ComponentName" xml:space="preserve">
+    <value>元件名稱</value>
+  </data>
+  <data name="SettingPages.ComponentsSettingsPage.Title.CreateComponentProfile" xml:space="preserve">
+    <value>建立元件設定</value>
+  </data>
+  <data name="Dialogs.Common.Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Dialogs.Common.Create" xml:space="preserve">
+    <value>建立</value>
+  </data>
+  <data name="Dialogs.Common.Delete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Dialogs.Common.Rename" xml:space="preserve">
+    <value>重新命名</value>
+  </data>
+  <data name="Views.DataTransferPage.Description.ExportToClassIsland2DataFile" xml:space="preserve">
+    <value>支援匯出為可匯入其他 ClassIsland 2 執行個體的檔案格式。</value>
+  </data>
+  <data name="Views.DataTransferPage.Description.ImportFromClassIsland1" xml:space="preserve">
+    <value>支援從 ClassIsland 1.x 匯入課表、元件設定、自動化設定、應用程式設定、部分外掛程式與主題等資料。</value>
+  </data>
+  <data name="Views.DataTransferPage.Description.ImportFromClassIsland2DataFile" xml:space="preserve">
+    <value>支援從 ClassIsland 2.x 資料檔匯入課表、元件設定、自動化設定、應用程式設定、部分外掛程式與主題等資料。</value>
+  </data>
+  <data name="Views.DataTransferPage.Description.ImportFromClassWidgets1" xml:space="preserve">
+    <value>支援從 Class Widgets 1 匯入所有課表資訊和大部分設定。</value>
+  </data>
+  <data name="Views.DataTransferPage.FileType.ClassIslandDataFile" xml:space="preserve">
+    <value>ClassIsland 資料檔</value>
+  </data>
+  <data name="Views.DataTransferPage.FileType.ClassIslandExecutable" xml:space="preserve">
+    <value>ClassIsland 可執行檔</value>
+  </data>
+  <data name="Views.DataTransferPage.Message.UpgradingImportedPlugins" xml:space="preserve">
+    <value>正在將從 ClassIsland 1 匯入的外掛程式升級為相容 ClassIsland 2 的版本。這可能需要一些時間，完成後應用程式會顯示通知。部分外掛程式可能暫不支援 ClassIsland 2。</value>
+  </data>
+  <data name="Views.DataTransferPage.Title.BrowseClassIsland2ExportFile" xml:space="preserve">
+    <value>瀏覽 ClassIsland 2 匯出檔案</value>
+  </data>
+  <data name="Views.DataTransferPage.Title.BrowseClassWidgetsInstallation" xml:space="preserve">
+    <value>瀏覽 Class Widgets 安裝資料夾（包含 ClassWidgets[.exe]）或其資料目錄</value>
+  </data>
+  <data name="Views.DataTransferPage.Title.SelectExportFileDestination" xml:space="preserve">
+    <value>選擇匯出檔案的儲存位置</value>
+  </data>
+  <data name="Views.DataTransferPage.Title.SelectPreviousClassIslandInstance" xml:space="preserve">
+    <value>選擇舊版 ClassIsland 執行個體</value>
+  </data>
+  <data name="Views.DataTransferPage.Title.UpgradingPlugins" xml:space="preserve">
+    <value>正在升級外掛程式</value>
+  </data>
+  <data name="Controls.FileBrowserButton.FileType.Application" xml:space="preserve">
+    <value>應用程式</value>
+  </data>
+  <data name="Controls.FileBrowserButton.FileType.AllFiles" xml:space="preserve">
+    <value>所有檔案</value>
+  </data>
+  <data name="Controls.JoinManagementDialog.FileType.ConfigurationFile" xml:space="preserve">
+    <value>設定檔</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Title.PackagePlugin" xml:space="preserve">
+    <value>封裝外掛程式</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Title.ConfirmInstallation" xml:space="preserve">
+    <value>確認安裝？</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Title.InstallFromLocalFile" xml:space="preserve">
+    <value>從本機安裝外掛程式</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Title.UnsupportedOperatingSystem" xml:space="preserve">
+    <value>此作業系統不受外掛程式支援</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Title.MissingDependencies" xml:space="preserve">
+    <value>缺少相依項目</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.UnsupportedOperatingSystem" xml:space="preserve">
+    <value>此外掛程式宣告支援的作業系統不包含目前執行的作業系統。&#xA;如果繼續安裝，此外掛程式可能無法正常運作。您要繼續安裝嗎？</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Content.MissingDependencies" xml:space="preserve">
+    <value>此外掛程式的部分必要相依項目尚未安裝，且無法從市集取得。如果繼續安裝，此外掛程式可能無法運作。您要繼續安裝嗎？&#xA;&#xA;找不到的必要相依項目：&#xA;{0}</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.PackagePluginFailed" xml:space="preserve">
+    <value>無法封裝外掛程式 {0}</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.NoInstallablePluginPackages" xml:space="preserve">
+    <value>無法從所選檔案中解析出任何可安裝的外掛程式套件。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.InstallPluginFailed" xml:space="preserve">
+    <value>無法安裝外掛程式 {0}</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.PluginsInstalled" xml:space="preserve">
+    <value>已成功安裝 {0} 個外掛程式。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Message.PluginInstallFailures" xml:space="preserve">
+    <value>安裝失敗：{0} 個外掛程式。</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Hint.OnlyPluginPackagesSupported" xml:space="preserve">
+    <value>僅支援 {0} 外掛程式套件</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Hint.DragPluginPackageHere" xml:space="preserve">
+    <value>請拖入外掛程式套件檔案</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Hint.ReleaseToInstallPlugins" xml:space="preserve">
+    <value>放開以安裝 {0} 個外掛程式</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Hint.UnsupportedFilesIgnored" xml:space="preserve">
+    <value>將忽略 {0} 個不受支援的檔案</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Hint.MultipleSelectionSupported" xml:space="preserve">
+    <value>支援多選（{0}）</value>
+  </data>
+  <data name="Services.SplashService.Status.Starting" xml:space="preserve">
+    <value>正在啟動…</value>
+  </data>
+  <data name="Services.SplashService.Status.LoadingInterfaceThemeFirstStage" xml:space="preserve">
+    <value>正在載入介面主題（1）</value>
+  </data>
+  <data name="Services.SplashService.Status.InitializingMainInterfaceFirstStage" xml:space="preserve">
+    <value>正在初始化主介面（步驟 1/2）</value>
+  </data>
+  <data name="Services.SplashService.Status.InitializingTrayMenu" xml:space="preserve">
+    <value>正在初始化系統匣選單</value>
+  </data>
+  <data name="Services.SplashService.Status.InitializingInput" xml:space="preserve">
+    <value>正在初始化輸入</value>
+  </data>
+  <data name="Services.SplashService.Status.LoadingInterfaceThemeSecondStage" xml:space="preserve">
+    <value>正在載入介面主題（2）</value>
+  </data>
+  <data name="Services.SplashService.Status.StartingHangDetection" xml:space="preserve">
+    <value>正在啟動停止回應偵測服務</value>
+  </data>
+  <data name="Services.SplashService.Status.CreatingTaskbarIcon" xml:space="preserve">
+    <value>正在建立工作列圖示</value>
+  </data>
+  <data name="Services.SplashService.Status.StartingUpdateService" xml:space="preserve">
+    <value>正在啟動更新服務</value>
+  </data>
+  <data name="Services.SplashService.Status.LoadingProfile" xml:space="preserve">
+    <value>正在載入檔案</value>
+  </data>
+  <data name="Services.SplashService.Status.StartingMainInterfaceServices" xml:space="preserve">
+    <value>正在啟動主介面所需的服務</value>
+  </data>
+  <data name="Services.SplashService.Status.InitializingMainInterfaceSecondStage" xml:space="preserve">
+    <value>正在初始化主介面（步驟 2/2）</value>
+  </data>
+  <data name="Services.SplashService.Status.RunningPostStartupTasks" xml:space="preserve">
+    <value>正在執行啟動後作業</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Status.UpToDate" xml:space="preserve">
+    <value>您已更新至最新版本。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Status.UpdateAvailable" xml:space="preserve">
+    <value>偵測到更新。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Status.UpdateDownloaded" xml:space="preserve">
+    <value>已準備好安裝更新。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.Status.UpdateDeployed" xml:space="preserve">
+    <value>更新已就緒。</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.WorkingStatus.Idle" xml:space="preserve">
+    <value>就緒</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.WorkingStatus.CheckingUpdates" xml:space="preserve">
+    <value>正在檢查更新…</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.WorkingStatus.DownloadingUpdates" xml:space="preserve">
+    <value>正在下載更新…</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.WorkingStatus.ExtractingUpdates" xml:space="preserve">
+    <value>正在部署更新…</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.DownloadStatus.Pending" xml:space="preserve">
+    <value>等待下載</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.DownloadStatus.Downloading" xml:space="preserve">
+    <value>正在下載</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.DownloadStatus.Completed" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="SettingPages.UpdateSettingsPage.DownloadStatus.Error" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="SettingPages.PluginsSettingsPage.Hint.DragPluginsToInstall" xml:space="preserve">
+    <value>將外掛程式拖曳至此處，放開即可安裝。</value>
+  </data>
+  <data name="App.Title.CrashReport" xml:space="preserve">
+    <value>當機報告</value>
+  </data>
+  <data name="App.Message.UnhandledError" xml:space="preserve">
+    <value>ClassIsland 發生無法處理的錯誤：{0}</value>
+  </data>
+  <data name="App.Header.DeveloperPreview" xml:space="preserve">
+    <value>歡迎使用 2.2-Misha Developer Preview</value>
+  </data>
+  <data name="App.Message.DeveloperPreviewWarning" xml:space="preserve">
+    <value>此版本僅供開發人員搶先預覽，穩定性較差，不適合正式環境或日常使用。若使用時遇到問題，歡迎前往 GitHub issues 回報！</value>
+  </data>
+  <data name="App.Title.RunningFromTemporaryDirectory" xml:space="preserve">
+    <value>偵測到應用程式正在暫存目錄中執行</value>
+  </data>
+  <data name="App.Title.UpdateCompleted" xml:space="preserve">
+    <value>更新完成。</value>
+  </data>
+  <data name="App.Message.UpdatedToVersion" xml:space="preserve">
+    <value>應用程式已更新至版本 {0}。</value>
+  </data>
+  <data name="App.Content.ViewChangelog" xml:space="preserve">
+    <value>檢視更新記錄</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.InstallationDetectionFailed" xml:space="preserve">
+    <value>無法偵測其他安裝執行個體的狀態：{0}&#xA;「回復」選項將無法使用。</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Title.ClearTemporaryFiles" xml:space="preserve">
+    <value>清除暫存檔案</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Content.ConfirmClearTemporaryFiles" xml:space="preserve">
+    <value>此操作將刪除所有快取與暫存檔案，且無法復原。您確定要清除暫存檔案嗎？</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Title.ResetApplicationSettings" xml:space="preserve">
+    <value>重設應用程式設定</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Content.ConfirmResetApplicationSettings" xml:space="preserve">
+    <value>此操作將重設應用程式設定且無法復原，但不影響檔案、元件、自動化及外掛程式等設定。您確定要重設應用程式設定嗎？&#xA;&#xA;若確定要重設，請在下方文字方塊輸入「我確認重設應用程式設定」。</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Verification.ResetApplicationSettings" xml:space="preserve">
+    <value>我確認重設應用程式設定</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Title.ResetAllConfiguration" xml:space="preserve">
+    <value>重設所有設定</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Content.ConfirmResetAllConfiguration" xml:space="preserve">
+    <value>此操作將重設檔案以外的所有應用程式設定，包括元件與自動化等設定。您確定要重設所有設定嗎？&#xA;&#xA;若確定要重設，請在下方文字方塊輸入「我確認重設課表資訊以外的所有設定」。</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Verification.ResetAllConfiguration" xml:space="preserve">
+    <value>我確認重設課表資訊以外的所有設定</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Title.ResetAllData" xml:space="preserve">
+    <value>重設所有資料</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Content.ConfirmResetAllData" xml:space="preserve">
+    <value>此操作將重設應用程式的所有資料並回復至安裝前狀態，包括檔案設定、應用程式設定、元件設定、自動化設定、外掛程式設定及已安裝的外掛程式等，且無法復原。您確定要重設所有資料嗎？&#xA;&#xA;若確定要重設，請在下方文字方塊輸入「我確認重設包括課表設定在內的所有資料」。</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Verification.ResetAllData" xml:space="preserve">
+    <value>我確認重設包括課表設定在內的所有資料</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.OperationCompleted" xml:space="preserve">
+    <value>操作已成功完成。</value>
+  </data>
+  <data name="Views.RecoveryPages.HomePage.Message.FeatureUnderDevelopment" xml:space="preserve">
+    <value>此功能仍在開發中</value>
+  </data>
+  <data name="Views.RecoveryPages.RecoverBackupPage.Title.RestoreBackup" xml:space="preserve">
+    <value>還原備份</value>
+  </data>
+  <data name="Views.RecoveryPages.RecoverBackupPage.Content.ConfirmRestoreBackup" xml:space="preserve">
+    <value>您確定要將應用程式設定還原至備份 {0} 的狀態嗎？此操作無法復原。</value>
+  </data>
+  <data name="Views.WelcomePages.RefreshingPage.Message.RefreshCompleted" xml:space="preserve">
+    <value>翻新成功。</value>
+  </data>
+  <data name="Views.WelcomePages.RefreshingPage.Message.RefreshSettingsFailed" xml:space="preserve">
+    <value>無法翻新設定</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Title.ResetWelcomeMessages" xml:space="preserve">
+    <value>重設迎新訊息設定</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Content.ConfirmResetWelcomeMessages" xml:space="preserve">
+    <value>確定要重設迎新訊息設定嗎？此操作無法復原！</value>
+  </data>
+  <data name="SettingPages.RefreshingSettingsPage.Message.WelcomeMessagesReset" xml:space="preserve">
+    <value>已重設迎新訊息。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Title.DiagnosticInformation" xml:space="preserve">
+    <value>診斷資訊</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Message.CopyDiagnosticInformationFailed" xml:space="preserve">
+    <value>複製失敗，請全選診斷資訊文字後手動複製。</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Message.CopySucceeded" xml:space="preserve">
+    <value>複製成功！</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Title.LoadContributorsFailed" xml:space="preserve">
+    <value>無法取得貢獻者名單</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Title.PrivacyPolicy" xml:space="preserve">
+    <value>ClassIsland 隱私權政策</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Title.ViewImage" xml:space="preserve">
+    <value>檢視圖片</value>
+  </data>
+  <data name="SettingPages.AboutSettingsPage.Button.ViewInBrowser" xml:space="preserve">
+    <value>在瀏覽器中檢視</value>
+  </data>
+  <data name="Helpers.TimeSpanFormatHelper.Format.Hours" xml:space="preserve"><value>{0}小時</value></data>
+  <data name="Helpers.TimeSpanFormatHelper.Format.MinutesShort" xml:space="preserve"><value>{0}分</value></data>
+  <data name="Helpers.TimeSpanFormatHelper.Format.Minutes" xml:space="preserve"><value>{0}分鐘</value></data>
+  <data name="Helpers.TimeSpanFormatHelper.Format.Seconds" xml:space="preserve"><value>{0}秒</value></data>
+  <data name="Controls.WeekOffsetSettingsControl.Header.AlternatingWeeks" xml:space="preserve"><value>單雙週：</value></data>
+  <data name="Controls.WeekOffsetSettingsControl.Header.WeekRotation" xml:space="preserve"><value>{0}週輪替：</value></data>
+  <data name="Controls.WeekOffsetSettingsControl.Item.OddWeek" xml:space="preserve"><value>單週</value></data>
+  <data name="Controls.WeekOffsetSettingsControl.Item.EvenWeek" xml:space="preserve"><value>雙週</value></data>
+  <data name="Controls.WeekOffsetSettingsControl.Item.WeekPosition" xml:space="preserve"><value>{0}/{1}週</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Summary.UseApplicationOrDefaultSettings" xml:space="preserve"><value>小結：將使用【應用程式設定】中的設定或預設設定。</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Summary.UseTargetSettings" xml:space="preserve"><value>小結：將使用{0}的設定。</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Target.Lesson" xml:space="preserve"><value>課程</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Target.Subject" xml:space="preserve"><value>科目</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Target.TimePoint" xml:space="preserve"><value>時間點</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Target.ClassPlan" xml:space="preserve"><value>課表</value></data>
+  <data name="Views.ClassPlanDetailsWindow.Target.TimeLayout" xml:space="preserve"><value>時間表</value></data>
+  <data name="SettingPages.AutomationSettingsPage.Message.AutomationDeleted" xml:space="preserve"><value>已刪除自動化「{0}」。</value></data>
+  <data name="SettingPages.ComponentsSettingsPage.Message.CreatedMainInterfaceRowAbove" xml:space="preserve"><value>已在上方建立新的主介面列。</value></data>
+  <data name="SettingPages.ComponentsSettingsPage.Message.CreatedMainInterfaceRowBelow" xml:space="preserve"><value>已在下方建立新的主介面列。</value></data>
+  <data name="SettingPages.ComponentsSettingsPage.Message.CannotMoveContainerIntoItself" xml:space="preserve"><value>無法將容器元件移至自身或其子層的子元件中。</value></data>
+  <data name="SettingPages.ThemesSettingsPage.Title.PackageTheme" xml:space="preserve"><value>封裝主題</value></data>
+  <data name="SettingPages.ThemesSettingsPage.FileType.ClassIslandThemePackage" xml:space="preserve"><value>ClassIsland 主題套件</value></data>
+  <data name="SettingPages.ThemesSettingsPage.Message.PackageThemeFailed" xml:space="preserve"><value>無法封裝主題 {0}</value></data>
+  <data name="Views.SettingsWindowNew.FileType.Archive" xml:space="preserve"><value>壓縮檔</value></data>
+  <data name="Views.SettingsWindowNew.FileType.Shortcut" xml:space="preserve"><value>捷徑</value></data>
+  <data name="Views.SettingsWindowNew.Message.ExportDiagnosticInformationFailed" xml:space="preserve"><value>無法匯出診斷資訊</value></data>
+  <data name="Views.SettingsWindowNew.Message.CreateQuickCourseChangeShortcutFailed" xml:space="preserve"><value>無法建立快速換課圖示</value></data>
+  <data name="Services.NotificationProviders.AfterSchoolNotificationProvider.Mask.AfterSchool" xml:space="preserve"><value>放學</value></data>
+  <data name="Services.NotificationProviders.ManagementNotificationProvider.Mask.ManagementNotification" xml:space="preserve"><value>集控通知</value></data>
+  <data name="Metadata.SettingsPageGroup.General" xml:space="preserve"><value>一般</value></data>
+  <data name="Metadata.SettingsPageGroup.MainInterface" xml:space="preserve"><value>主介面</value></data>
+  <data name="Metadata.Rule.AlwaysTrue" xml:space="preserve"><value>永遠為真</value></data>
+  <data name="Metadata.Rule.AlwaysFalse" xml:space="preserve"><value>永遠為假</value></data>
+  <data name="Metadata.Rule.ForegroundWindowClassName" xml:space="preserve"><value>前景視窗類別名稱</value></data>
+  <data name="Metadata.Rule.ForegroundWindowTitle" xml:space="preserve"><value>前景視窗標題</value></data>
+  <data name="Metadata.Rule.ForegroundWindowState" xml:space="preserve"><value>前景視窗狀態是</value></data>
+  <data name="Metadata.Rule.ForegroundWindowProcess" xml:space="preserve"><value>前景視窗程序</value></data>
+  <data name="Metadata.Rule.CurrentSubject" xml:space="preserve"><value>科目是</value></data>
+  <data name="Metadata.Rule.NextSubject" xml:space="preserve"><value>下一節課科目是</value></data>
+  <data name="Metadata.Rule.PreviousSubject" xml:space="preserve"><value>上一節課科目是</value></data>
+  <data name="Metadata.Rule.CurrentTimeState" xml:space="preserve"><value>目前時間狀態是</value></data>
+  <data name="Metadata.Rule.CurrentWeather" xml:space="preserve"><value>目前天氣是</value></data>
+  <data name="Metadata.Rule.TomorrowWeather" xml:space="preserve"><value>明天天氣是</value></data>
+  <data name="Metadata.Rule.WeatherAlertExists" xml:space="preserve"><value>存在氣象警報</value></data>
+  <data name="Metadata.Rule.PrecipitationStartsOrEndsIn" xml:space="preserve"><value>距降水開始/結束還剩</value></data>
+  <data name="Metadata.Rule.IsSunriseOrSunset" xml:space="preserve"><value>是否日出/日落</value></data>
+  <data name="Metadata.WeatherIcon.LucideDefault" xml:space="preserve"><value>Lucide（預設）</value></data>
+  <data name="Metadata.WeatherIcon.PlainText" xml:space="preserve"><value>純文字</value></data>
+  <data name="Metadata.AttachedSettings.AfterSchoolNotification" xml:space="preserve"><value>放學提醒設定</value></data>
+  <data name="Metadata.AttachedSettings.ClassNotification" xml:space="preserve"><value>上課提醒設定</value></data>
+  <data name="Metadata.AttachedSettings.LessonDisplay" xml:space="preserve"><value>課程顯示設定</value></data>
+  <data name="Metadata.AttachedSettings.WeatherNotification" xml:space="preserve"><value>天氣提醒設定</value></data>
+  <data name="Metadata.Component.Clock.Description" xml:space="preserve"><value>顯示目前時間，支援精確至秒。</value></data>
+  <data name="Metadata.Component.Countdown.Description" xml:space="preserve"><value>顯示距離某一天的倒數計時。</value></data>
+  <data name="Metadata.Component.Date.Name" xml:space="preserve"><value>日期</value></data>
+  <data name="Metadata.Component.Date.Description" xml:space="preserve"><value>顯示今天的日期與星期。</value></data>
+  <data name="Metadata.Component.Group.Name" xml:space="preserve"><value>群組容器</value></data>
+  <data name="Metadata.Component.Group.Description" xml:space="preserve"><value>將多個元件組合在一個元件中顯示。</value></data>
+  <data name="Metadata.Component.Rolling.Name" xml:space="preserve"><value>捲動容器</value></data>
+  <data name="Metadata.Component.Rolling.Description" xml:space="preserve"><value>捲動顯示元件內的內容。</value></data>
+  <data name="Metadata.Component.Schedule.Name" xml:space="preserve"><value>課程表</value></data>
+  <data name="Metadata.Component.Schedule.Description" xml:space="preserve"><value>顯示目前的課程表資訊。</value></data>
+  <data name="Metadata.Component.Separator.Description" xml:space="preserve"><value>顯示分隔線，在視覺上將元件分組。</value></data>
+  <data name="Metadata.Component.Slide.Name" xml:space="preserve"><value>輪播容器</value></data>
+  <data name="Metadata.Component.Slide.Description" xml:space="preserve"><value>輪播多個元件。</value></data>
+  <data name="Metadata.Component.Stack.Name" xml:space="preserve"><value>堆疊容器</value></data>
+  <data name="Metadata.Component.Stack.Description" xml:space="preserve"><value>將多個容器堆疊顯示。</value></data>
+  <data name="Metadata.Component.Text.Name" xml:space="preserve"><value>文字</value></data>
+  <data name="Metadata.Component.Text.Description" xml:space="preserve"><value>顯示自訂文字。</value></data>
+  <data name="Metadata.Component.Weather.Name" xml:space="preserve"><value>天氣摘要</value></data>
+  <data name="Metadata.Component.Weather.Description" xml:space="preserve"><value>顯示目前天氣概況與氣象警報。</value></data>
+  <data name="Metadata.Action.RestartClassIsland" xml:space="preserve"><value>重新啟動 ClassIsland</value></data>
+  <data name="Metadata.Action.ShowNotification" xml:space="preserve"><value>顯示提醒</value></data>
+  <data name="Metadata.Action.WaitForDuration" xml:space="preserve"><value>等待時長</value></data>
+  <data name="Metadata.Action.ShowWeatherNotification" xml:space="preserve"><value>顯示天氣提醒</value></data>
+  <data name="Metadata.Trigger.ApplicationStarted" xml:space="preserve"><value>應用程式啟動時</value></data>
+  <data name="Metadata.Trigger.ApplicationStopping" xml:space="preserve"><value>應用程式結束時</value></data>
+  <data name="Metadata.Trigger.CurrentTimeStateChanged" xml:space="preserve"><value>目前時間狀態變更時</value></data>
+  <data name="Metadata.Trigger.AfterSchool" xml:space="preserve"><value>放學時</value></data>
+  <data name="Metadata.Trigger.BreakStarted" xml:space="preserve"><value>課間休息時</value></data>
+  <data name="Metadata.Trigger.BeforeTimePoint" xml:space="preserve"><value>特定時間點前</value></data>
+  <data name="Metadata.Trigger.RulesetUpdated" xml:space="preserve"><value>規則集更新時</value></data>
+  <data name="Metadata.Trigger.SignalReceived" xml:space="preserve"><value>收到訊號時</value></data>
+  <data name="Metadata.Trigger.RunFromTrayMenu" xml:space="preserve"><value>從系統匣選單執行時</value></data>
+  <data name="Metadata.Trigger.UriInvoked" xml:space="preserve"><value>呼叫 URI 時</value></data>
+  <data name="Metadata.Notification.Action.Name" xml:space="preserve"><value>行動提醒</value></data>
+  <data name="Metadata.Notification.Action.Description" xml:space="preserve"><value>顯示由行動發出的提醒。</value></data>
+  <data name="Metadata.Notification.AfterSchool.Name" xml:space="preserve"><value>放學提醒</value></data>
+  <data name="Metadata.Notification.AfterSchool.Description" xml:space="preserve"><value>在當天課程結束後發出提醒。</value></data>
+  <data name="Metadata.Notification.Class.Name" xml:space="preserve"><value>上下課提醒</value></data>
+  <data name="Metadata.Notification.Class.Description" xml:space="preserve"><value>在準備上課、上課與下課時發出醒目提醒，並預告下一節課程。</value></data>
+  <data name="Metadata.Notification.ClassPreparing.Name" xml:space="preserve"><value>準備上課提醒</value></data>
+  <data name="Metadata.Notification.ClassPreparing.Description" xml:space="preserve"><value>在上課前指定時間發出提醒。</value></data>
+  <data name="Metadata.Notification.ClassStarted.Name" xml:space="preserve"><value>上課提醒</value></data>
+  <data name="Metadata.Notification.ClassStarted.Description" xml:space="preserve"><value>在上課時發出提醒。</value></data>
+  <data name="Metadata.Notification.BreakStarted.Name" xml:space="preserve"><value>下課提醒</value></data>
+  <data name="Metadata.Notification.BreakStarted.Description" xml:space="preserve"><value>在下課時發出提醒。</value></data>
+  <data name="Metadata.Notification.Management.Name" xml:space="preserve"><value>集控提醒</value></data>
+  <data name="Metadata.Notification.Management.Description" xml:space="preserve"><value>來自集控伺服器的提醒。</value></data>
+  <data name="Metadata.Notification.Weather.Name" xml:space="preserve"><value>氣象警報</value></data>
+  <data name="Metadata.Notification.Weather.Description" xml:space="preserve"><value>有降雨或極端天氣時發出提醒。</value></data>
+  <data name="Metadata.Speech.SystemTts" xml:space="preserve"><value>系統 TTS</value></data>
+  <data name="Metadata.SettingsPage.Advanced" xml:space="preserve"><value>進階</value></data>
+  <data name="Metadata.SettingsPage.Components" xml:space="preserve"><value>元件</value></data>
+  <data name="Metadata.SettingsPage.Brushes" xml:space="preserve"><value>筆刷</value></data>
+  <data name="Metadata.SettingsPage.Error" xml:space="preserve"><value>發生錯誤！</value></data>
+  <data name="Metadata.SettingsPage.ManagementCredentials" xml:space="preserve"><value>集控認證設定</value></data>
+  <data name="Metadata.SettingsPage.ManagementPolicy" xml:space="preserve"><value>集控原則</value></data>
+  <data name="Metadata.SettingsPage.Privacy" xml:space="preserve"><value>隱私權</value></data>
+  <data name="Metadata.SettingsPage.Refreshing" xml:space="preserve"><value>翻新與迎新</value></data>
+  <data name="Metadata.SettingsPage.Storage" xml:space="preserve"><value>儲存空間</value></data>
+  <data name="Metadata.SettingsPage.Test" xml:space="preserve"><value>測試頁面</value></data>
+  <data name="Metadata.SettingsPage.Weather" xml:space="preserve"><value>天氣</value></data>
+  <data name="Metadata.ActionMenu.SelectApplicationSetting" xml:space="preserve"><value>選擇應用程式設定…</value></data>
+  <data name="Metadata.ActionMenu.ComponentProfile" xml:space="preserve"><value>元件設定檔</value></data>
+  <data name="Metadata.ActionMenu.ShowNotification" xml:space="preserve"><value>顯示提醒…</value></data>
+  <data name="Metadata.ActionMenu.ShowNotificationAndWait" xml:space="preserve"><value>顯示提醒並等待…</value></data>
+  <data name="Metadata.Settings.WindowDockingLocation.TopLeft" xml:space="preserve"><value>左上角</value></data>
+  <data name="Metadata.Settings.WindowDockingLocation.TopCenter" xml:space="preserve"><value>上方中央</value></data>
+  <data name="Metadata.Settings.WindowDockingLocation.TopRight" xml:space="preserve"><value>右上角</value></data>
+  <data name="Metadata.Settings.WindowDockingLocation.BottomLeft" xml:space="preserve"><value>左下角</value></data>
+  <data name="Metadata.Settings.WindowDockingLocation.BottomCenter" xml:space="preserve"><value>下方中央</value></data>
+  <data name="Metadata.Settings.WindowDockingLocation.BottomRight" xml:space="preserve"><value>右下角</value></data>
+  <data name="Metadata.Settings.WindowOffsetRight" xml:space="preserve"><value>視窗向右偏移</value></data>
+  <data name="Metadata.Settings.WindowOffsetDown" xml:space="preserve"><value>視窗向下偏移</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Sunday" xml:space="preserve"><value>日</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Monday" xml:space="preserve"><value>一</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Tuesday" xml:space="preserve"><value>二</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Wednesday" xml:space="preserve"><value>三</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Thursday" xml:space="preserve"><value>四</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Friday" xml:space="preserve"><value>五</value></data>
+  <data name="ViewModels.TimeRuleEditViewModel.Weekday.Saturday" xml:space="preserve"><value>六</value></data>
+  <data name="SettingPages.AppearanceSettingsPage.Text.FontPreview" xml:space="preserve"><value>風帶來故事的種子，時間使之發芽。The quick brown fox jumps over a lazy dog.</value></data>
+  <data name="SettingPages.NotificationSettingsPage.Text.SpeechPreview" xml:space="preserve"><value>風帶來了故事的種子，時間使之發芽。</value></data>
+  <data name="SettingPages.AboutSettingsPage.Text.ClickToViewCommunityQuotes" xml:space="preserve"><value>點擊此處即可查看 ClassIsland 使用者社群的趣味發言</value></data>
+  <data name="SettingPages.PluginsSettingsPage.Message.LoadPluginSourceFailed" xml:space="preserve"><value>無法載入外掛程式來源</value></data>
+  <data name="Controls.EditMode.EditModeView.Title.EditRuleset" xml:space="preserve"><value>編輯規則集</value></data>
+  <data name="Controls.EditMode.EditableComponentsListBoxDropHandler.Message.ContainerCannotContainItself" xml:space="preserve"><value>容器元件不能包含自己。</value></data>
+  <data name="Services.WeatherService.Message.CityLookupByCoordinatesFailed" xml:space="preserve"><value>無法透過經緯度取得城市資訊</value></data>
+  <data name="Services.WeatherService.Message.CityLookupByIdFailed" xml:space="preserve"><value>無法透過 CityId 取得城市資訊</value></data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Duration.Hours" xml:space="preserve"><value>{0} 小時</value></data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Duration.MinutesShort" xml:space="preserve"><value>{0} 分</value></data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Duration.Minutes" xml:space="preserve"><value>{0} 分鐘</value></data>
+  <data name="Controls.NotificationProviders.ClassNotificationProviderControl.Duration.Seconds" xml:space="preserve"><value>{0} 秒</value></data>
+  <data name="SettingPages.PluginsSettingsPage.Message.LoadDocumentFailed" xml:space="preserve"><value>&gt; 無法載入文件：{0}</value></data>
+  <data name="ProfileSettingsWindow.Label.Name" xml:space="preserve"><value>名稱</value></data>
+  <data name="ProfileSettingsWindow.Label.TimeLayout" xml:space="preserve"><value>時間表</value></data>
+  <data name="ProfileSettingsWindow.Label.ClassPlanGroup" xml:space="preserve"><value>課表羣</value></data>
+  <data name="ProfileSettingsWindow.Label.ExpirationDate" xml:space="preserve"><value>失效日期</value></data>
+  <data name="ProfileSettingsWindow.Label.OverrideMode" xml:space="preserve"><value>覆蓋模式</value></data>
+  <data name="ProfileSettingsWindow.Label.ChangeCourseTo" xml:space="preserve"><value>換課成…</value></data>
+  <data name="ProfileSettingsWindow.Label.EnableDate" xml:space="preserve"><value>啓用日期</value></data>
+  <data name="ProfileSettingsWindow.Label.Add" xml:space="preserve"><value>添加</value></data>
+  <data name="ProfileSettingsWindow.Label.Copy" xml:space="preserve"><value>複製</value></data>
+  <data name="ProfileSettingsWindow.Label.Details" xml:space="preserve"><value>詳細信息</value></data>
+  <data name="ProfileSettingsWindow.Label.DetailedDashboard" xml:space="preserve"><value>詳細看板</value></data>
+  <data name="ProfileSettingsWindow.Label.CreateTemporaryLayer" xml:space="preserve"><value>創建臨時層</value></data>
+  <data name="ProfileSettingsWindow.Label.Delete" xml:space="preserve"><value>刪除</value></data>
+  <data name="ProfileSettingsWindow.Label.Refresh" xml:space="preserve"><value>刷新</value></data>
+  <data name="ProfileSettingsWindow.Label.DefaultClassTimePointDuration" xml:space="preserve"><value>默認上課時間點時長</value></data>
+  <data name="ProfileSettingsWindow.Label.DefaultBreakTimePointDuration" xml:space="preserve"><value>默認課間時間點時長</value></data>
+  <data name="ProfileSettingsWindow.Label.ClassTime" xml:space="preserve"><value>上課</value></data>
+  <data name="ProfileSettingsWindow.Label.BreakTime" xml:space="preserve"><value>課間</value></data>
+  <data name="ProfileSettingsWindow.Label.Divider" xml:space="preserve"><value>分割線</value></data>
+  <data name="ProfileSettingsWindow.Label.Action" xml:space="preserve"><value>行動</value></data>
+  <data name="ProfileSettingsWindow.Label.CreateCopy" xml:space="preserve"><value>創建副本</value></data>
+  <data name="ProfileSettingsWindow.Label.TimeLayoutInformation" xml:space="preserve"><value>時間表信息</value></data>
+  <data name="ProfileSettingsWindow.Label.DeleteTimeLayout" xml:space="preserve"><value>刪除時間表</value></data>
+  <data name="ProfileSettingsWindow.Label.StartTime" xml:space="preserve"><value>開始時間</value></data>
+  <data name="ProfileSettingsWindow.Label.EndTime" xml:space="preserve"><value>結束時間</value></data>
+  <data name="ProfileSettingsWindow.Label.Type" xml:space="preserve"><value>類型</value></data>
+  <data name="ProfileSettingsWindow.Label.BreakName" xml:space="preserve"><value>課間名稱</value></data>
+  <data name="ProfileSettingsWindow.Label.SubjectName" xml:space="preserve"><value>科目名</value></data>
+  <data name="ProfileSettingsWindow.Label.Abbreviation" xml:space="preserve"><value>簡稱</value></data>
+  <data name="ProfileSettingsWindow.Label.SubjectTeacher" xml:space="preserve"><value>科任老師</value></data>
+  <data name="ProfileSettingsWindow.Label.ModifyCourse" xml:space="preserve"><value>修改課程</value></data>
+  <data name="ProfileSettingsWindow.Label.SwapCourse" xml:space="preserve"><value>交換課程</value></data>
+  <data name="ProfileSettingsWindow.Label.Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="ProfileSettingsWindow.Label.CompleteSwap" xml:space="preserve"><value>完成交換</value></data>
+  <data name="ProfileSettingsWindow.Label.Untrusted" xml:space="preserve"><value>不信任</value></data>
+  <data name="ProfileSettingsWindow.Label.Save" xml:space="preserve"><value>保存</value></data>
+  <data name="ProfileSettingsWindow.Label.ImportExport" xml:space="preserve"><value>導入/導出</value></data>
+  <data name="ProfileSettingsWindow.Label.Help" xml:space="preserve"><value>幫助</value></data>
+  <data name="ProfileSettingsWindow.Label.None" xml:space="preserve"><value>（無）</value></data>
+  <data name="ProfileSettingsWindow.Label.ProfileName" xml:space="preserve"><value>檔案名稱</value></data>
+  <data name="ProfileSettingsWindow.Suffix.Minutes" xml:space="preserve"><value>分鐘</value></data>
+  <data name="ProfileSettingsWindow.Operation.Import" xml:space="preserve"><value>導入</value></data>
+  <data name="ProfileSettingsWindow.Operation.Export" xml:space="preserve"><value>導出</value></data>
+  <data name="ProfileSettingsWindow.Operation.Execute" xml:space="preserve"><value>執行</value></data>
+  <data name="ProfileSettingsWindow.Operation.Transfer" xml:space="preserve"><value>遷移</value></data>
+  <data name="ProfileSettingsWindow.Button.TrustThisProfile" xml:space="preserve"><value>信任此檔案</value></data>
+  <data name="ProfileSettingsWindow.Button.Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="ProfileSettingsWindow.Button.Create" xml:space="preserve"><value>新建</value></data>
+  <data name="ProfileSettingsWindow.Button.Rename" xml:space="preserve"><value>重命名</value></data>
+  <data name="ProfileSettingsWindow.Button.Delete" xml:space="preserve"><value>刪除</value></data>
+  <data name="ProfileSettingsWindow.Button.RestartNow" xml:space="preserve"><value>立即重啓</value></data>
+  <data name="ProfileSettingsWindow.Button.CreateClassPlan" xml:space="preserve"><value>新建課表</value></data>
+  <data name="ProfileSettingsWindow.Button.Undo" xml:space="preserve"><value>撤銷</value></data>
+  <data name="ProfileSettingsWindow.Button.Continue" xml:space="preserve"><value>繼續</value></data>
+  <data name="ProfileSettingsWindow.Dialog.UntrustedProfile.Title" xml:space="preserve"><value>不信任的檔案</value></data>
+  <data name="ProfileSettingsWindow.Dialog.UntrustedProfile.Content" xml:space="preserve"><value>當前檔案不受信任，部分功能（如行動時間點等）將禁用。如果您信任此檔案並希望啓用這些受限的功能，請將此檔案設置爲信任。</value></data>
+  <data name="ProfileSettingsWindow.Dialog.CreateProfile.Title" xml:space="preserve"><value>新建檔案</value></data>
+  <data name="ProfileSettingsWindow.Dialog.RenameProfile.Title" xml:space="preserve"><value>重命名檔案</value></data>
+  <data name="ProfileSettingsWindow.Dialog.DeleteProfile.Title" xml:space="preserve"><value>刪除檔案</value></data>
+  <data name="ProfileSettingsWindow.Dialog.DeleteProfile.Content" xml:space="preserve"><value>您確定要刪除檔案 {0} 嗎？此操作無法撤銷，檔案內的課表、時間表、科目等信息都將被刪除！</value></data>
+  <data name="ProfileSettingsWindow.Dialog.ContinueTransfer.Title" xml:space="preserve"><value>要繼續{0}嗎</value></data>
+  <data name="ProfileSettingsWindow.Dialog.ContinueTransfer.Content" xml:space="preserve"><value>您先前已經成功地{0}了檔案，您還要繼續{0}嗎？</value></data>
+  <data name="ProfileSettingsWindow.Toast.ProfileSavedToPath" xml:space="preserve"><value>已保存到 {0}。</value></data>
+  <data name="ProfileSettingsWindow.Toast.FailedToSaveProfile" xml:space="preserve"><value>無法保存檔案</value></data>
+  <data name="ProfileSettingsWindow.Toast.ProfileWithSameNameAlreadyExists" xml:space="preserve"><value>無法重命名檔案，因爲已存在一個相同名稱的檔案。</value></data>
+  <data name="ProfileSettingsWindow.Toast.CannotDeleteLoadedOrPendingProfile" xml:space="preserve"><value>無法刪除已加載或將要加載的檔案。</value></data>
+  <data name="ProfileSettingsWindow.Toast.RestartRequired.Title" xml:space="preserve"><value>需要重啓</value></data>
+  <data name="ProfileSettingsWindow.Toast.RestartRequired.Message" xml:space="preserve"><value>切換檔案需要重啓應用以生效。</value></data>
+  <data name="ProfileSettingsWindow.Toast.TemporaryLayerAlreadyExistsForDate" xml:space="preserve"><value>在這一天已存在一個臨時層課表，無法創建新的臨時層課表。</value></data>
+  <data name="ProfileSettingsWindow.Toast.WeeklyClassPlanEntryCompleted" xml:space="preserve"><value>已完成本周課表的錄入。</value></data>
+  <data name="ProfileSettingsWindow.Toast.MovedToNextDayClassPlan" xml:space="preserve"><value>已跳轉到次日課表。</value></data>
+  <data name="ProfileSettingsWindow.Toast.ClassPlanEntryCompleted" xml:space="preserve"><value>已完成此課表的課程錄入。</value></data>
+  <data name="ProfileSettingsWindow.Toast.TimeLayoutIsStillInUse" xml:space="preserve"><value>仍有課表在使用該時間表。刪除時間表前需要刪除所有使用該時間表的課表。</value></data>
+  <data name="ProfileSettingsWindow.Toast.NoSuitablePositionToInsertTimePoint" xml:space="preserve"><value>沒有合適的位置來插入新的時間點。</value></data>
+  <data name="ProfileSettingsWindow.Toast.TimePointInsertedBeforeSelection" xml:space="preserve"><value>已向前插入了新的時間點。</value></data>
+  <data name="ProfileSettingsWindow.Toast.InsertedTimePointWasShortened" xml:space="preserve"><value>沒有足夠的空間完全插入該時間點，已縮短時間點長度。</value></data>
+  <data name="ProfileSettingsWindow.Toast.DividerAlreadyExistsHere" xml:space="preserve"><value>這裏已經存在一條分割線。</value></data>
+  <data name="ProfileSettingsWindow.Toast.ActionAlreadyExistsHere" xml:space="preserve"><value>這裏已經存在一個行動。</value></data>
+  <data name="ProfileSettingsWindow.Toast.NotEnoughSpaceToCopyTimePoint" xml:space="preserve"><value>沒有足夠的空間來複製時間點。</value></data>
+  <data name="ProfileSettingsWindow.Toast.NoSuitablePositionToCopyTimePoint" xml:space="preserve"><value>沒有合適的位置來複製時間點。</value></data>
+  <data name="ProfileSettingsWindow.Toast.CopiedTimePointWasShortened" xml:space="preserve"><value>沒有足夠的空間完全複製該時間點，已縮短時間點長度。</value></data>
+  <data name="ProfileSettingsWindow.Toast.TimePointCopyCreated" xml:space="preserve"><value>已創建時間點副本。</value></data>
+  <data name="ProfileSettingsWindow.Toast.SubjectsDeleted" xml:space="preserve"><value>已刪除 {0} 個科目。</value></data>
+  <data name="ProfileSettingsWindow.Toast.InvalidCourseSelection" xml:space="preserve"><value>選擇課程區域無效。</value></data>
+  <data name="ProfileSettingsWindow.UndoDescription.AddTimePoint" xml:space="preserve"><value>添加{0}</value></data>
+  <data name="ProfileSettingsWindow.UndoDescription.DeleteTimePoint" xml:space="preserve"><value>刪除{0}</value></data>
+  <data name="Controls.TimeRuleEditControl.Option.EveryWeek" xml:space="preserve"><value>每周啓用</value></data>
+  <data name="Controls.TimeRuleEditControl.Option.OddWeek" xml:space="preserve"><value>單周</value></data>
+  <data name="Controls.TimeRuleEditControl.Option.EvenWeek" xml:space="preserve"><value>雙周</value></data>
+  <data name="Controls.TimeRuleEditControl.Option.CycleWeek" xml:space="preserve"><value>第{0}周</value></data>
+  <data name="Controls.TimeRuleEditControl.Option.TwoWeeks" xml:space="preserve"><value>兩周</value></data>
+  <data name="Controls.TimeRuleEditControl.Option.WeekCount" xml:space="preserve"><value>{0}周</value></data>
+  <data name="Controls.TimeRuleEditControl.Toast.DateAlreadyExists" xml:space="preserve"><value>日期已存在。</value></data>
+  <data name="Controls.ScheduleDataGridColHeaderControl.Toast.SelectValidTimeLayout" xml:space="preserve"><value>請選擇一個有效的時間表。</value></data>
+  <data name="Controls.ScheduleDataGridColHeaderControl.Toast.SelectValidClassPlanToCopy" xml:space="preserve"><value>請選擇一個有效要複製的課表。</value></data>
+  <data name="Controls.ClassPlanGroupItemControl.Dialog.DisbandGroup.Title" xml:space="preserve"><value>解散課表羣</value></data>
+  <data name="Controls.ClassPlanGroupItemControl.Dialog.DeleteGroup.Title" xml:space="preserve"><value>刪除課表羣</value></data>
+  <data name="Controls.ClassPlanGroupItemControl.Button.Disband" xml:space="preserve"><value>解散</value></data>
+  <data name="Controls.ClassPlanGroupItemControl.Button.Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="Controls.ClassPlanGroupItemControl.Button.Delete" xml:space="preserve"><value>刪除</value></data>
 </root>

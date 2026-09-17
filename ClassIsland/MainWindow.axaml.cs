@@ -33,6 +33,7 @@ using ClassIsland.Core.Helpers.Native;
 using ClassIsland.Core.Helpers.UI;
 using ClassIsland.Core.Models.Components;
 using ClassIsland.Core.Models.Notification;
+using ClassIsland.Core.Services;
 using ClassIsland.Core.Models.Tutorial;
 using ClassIsland.Helpers;
 using ClassIsland.Models.EventArgs;
@@ -734,7 +735,9 @@ public partial class MainWindow : Window, ITopmostEffectPlayer
         if (ViewModel.Settings.IsMouseClickingEnabled)
         {
             ViewModel.Settings.IsMouseClickingEnabled = false;
-            await PlatformServices.DesktopToastService.ShowToastAsync("已禁用不支持的设置", "【启用鼠标点击】设置项目不再受到支持并已自动禁用，感谢您的支持与理解。");
+            await PlatformServices.DesktopToastService.ShowToastAsync(
+                LocalizationService.Translate("MainWindow.Title.UnsupportedSettingDisabled"),
+                LocalizationService.Translate("MainWindow.Message.UnsupportedMouseClickSettingDisabled"));
         }
         
         UpdateWindowPos();

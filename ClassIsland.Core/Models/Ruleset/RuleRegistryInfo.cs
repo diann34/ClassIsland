@@ -1,4 +1,5 @@
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using FluentAvalonia.UI.Controls;
 
 namespace ClassIsland.Core.Models.Ruleset;
@@ -26,7 +27,9 @@ public class RuleRegistryInfo(string id, string name = "", string iconExpression
     /// <summary>
     /// 规则显示名称。
     /// </summary>
-    public string Name { get; internal set; } = string.IsNullOrEmpty(name) ? id : name;
+    public string Name { get; internal set; } = string.IsNullOrEmpty(name)
+        ? id
+        : LocalizationService.TranslateText(name);
 
     /// <summary>
     /// 设置控件类型。

@@ -9,6 +9,7 @@ using ClassIsland.Core;
 using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Controls;
 using ClassIsland.Core.Models.UriNavigation;
+using ClassIsland.Core.Services;
 using ClassIsland.Platforms.Abstraction;
 using ClassIsland.Shared.IPC.Abstractions.Services;
 using dotnetCampus.Ipc.CompilerServices.GeneratedProxies;
@@ -89,7 +90,9 @@ public class UriNavigationService : IUriNavigationService
             {
                 exc = ex;
                 Logger.LogError(ex, "无法导航到 {}", uri);
-                _ = CommonTaskDialogs.ShowDialog("导航失败", $"无法导航到 {uri}：{ex.Message}");
+                _ = CommonTaskDialogs.ShowDialog(
+                    LocalizationService.Translate("Services.UriNavigationService.Title.NavigationFailed"),
+                    LocalizationService.Translate("Services.UriNavigationService.Message.NavigationFailed", uri, ex.Message));
             }
         });
         exception = exc;

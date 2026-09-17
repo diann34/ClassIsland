@@ -6,6 +6,7 @@ using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Helpers.UI;
 using ClassIsland.Core.Models.Automation;
 using ClassIsland.Core.Models.UI;
+using ClassIsland.Core.Services;
 using ClassIsland.Shared;
 using ClassIsland.Shared.Models.Automation;
 using CommunityToolkit.Mvvm.Input;
@@ -42,7 +43,9 @@ public partial class ActionItemControl : UserControl
             IActionService.ActionInfos.TryGetValue(ActionItem.Id, out var actionInfo)
                 ? actionInfo.IconSource
                 : IconExpressionHelper.TryParseOrNull("\uee31");
-        ActionInfoIconText.Text = actionInfo?.Name ?? $"{ActionItem.Id}（未知行动）";
+        ActionInfoIconText.Text = actionInfo?.Name ?? LocalizationService.Translate(
+            "Core.Controls.Automation.ActionItemControl.Text.UnknownAction",
+            ActionItem.Id);
 
         if (newControl != null)
         {
@@ -125,7 +128,9 @@ public partial class ActionItemControl : UserControl
                 var index = ActionSet.ActionItems.IndexOf(actionItem);
 
                 var revertButton = new Button { Content = "撤销" };
-                var toastMessage = new ToastMessage($"已删除行动“{ActionInfoIconText.Text}”。")
+                var toastMessage = new ToastMessage(LocalizationService.Translate(
+                    "Core.Controls.Automation.ActionItemControl.Message.ActionDeleted",
+                    ActionInfoIconText.Text))
                 {
                     ActionContent = revertButton,
                     Duration = TimeSpan.FromSeconds(10)

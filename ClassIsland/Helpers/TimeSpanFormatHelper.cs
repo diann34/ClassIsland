@@ -1,4 +1,5 @@
 ﻿using System;
+using ClassIsland.Core.Services;
 
 namespace ClassIsland.Helpers;
 
@@ -13,22 +14,24 @@ public static class TimeSpanFormatHelper
 
         if (h >= 1)
         {
-            r += $"{Math.Floor(ts.TotalHours)}小时";
+            r += LocalizationService.Translate(
+                "Helpers.TimeSpanFormatHelper.Format.Hours",
+                Math.Floor(ts.TotalHours));
         }
         if (m >= 1)
         {
             if (s >= 1)
             {
-                r += $"{m}分";
+                r += LocalizationService.Translate("Helpers.TimeSpanFormatHelper.Format.MinutesShort", m);
             }
             else
             {
-                r += $"{m}分钟";
+                r += LocalizationService.Translate("Helpers.TimeSpanFormatHelper.Format.Minutes", m);
             }
         }
         if (s >= 1)
         {
-            r += $"{s}秒";
+            r += LocalizationService.Translate("Helpers.TimeSpanFormatHelper.Format.Seconds", s);
         }
 
         return r;

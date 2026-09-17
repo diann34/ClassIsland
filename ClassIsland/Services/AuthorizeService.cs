@@ -6,6 +6,7 @@ using Avalonia.Controls;
 using ClassIsland.Core;
 using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Controls;
+using ClassIsland.Core.Services;
 using ClassIsland.Models.Authorize;
 using ClassIsland.Views;
 using Microsoft.Extensions.Logging;
@@ -38,7 +39,10 @@ public class AuthorizeService(ILogger<AuthorizeService> logger) : IAuthorizeServ
         catch (Exception e)
         {
             logger.LogError(e, "创建认证信息时发生异常");
-            await CommonTaskDialogs.ShowDialog("创建认证信息失败", $"创建认证信息时发生异常：{e.Message}", parent);
+            await CommonTaskDialogs.ShowDialog(
+                LocalizationService.Translate("Services.AuthorizeService.Title.AuthenticationCreationFailed"),
+                LocalizationService.Translate("Services.AuthorizeService.Message.AuthenticationCreationFailed", e.Message),
+                parent);
             return credentialString;
         }
     }
@@ -59,7 +63,10 @@ public class AuthorizeService(ILogger<AuthorizeService> logger) : IAuthorizeServ
         catch (Exception e)
         {
             logger.LogError(e, "认证时发生异常");
-            await CommonTaskDialogs.ShowDialog("认证失败", $"认证时发生异常：{e.Message}", parent);
+            await CommonTaskDialogs.ShowDialog(
+                LocalizationService.Translate("Services.AuthorizeService.Title.AuthenticationFailed"),
+                LocalizationService.Translate("Services.AuthorizeService.Message.AuthenticationFailed", e.Message),
+                parent);
             return false;
         }
     }

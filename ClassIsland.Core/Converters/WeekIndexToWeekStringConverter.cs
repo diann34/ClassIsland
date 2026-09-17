@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Globalization;
 using System.Linq;
 using Avalonia.Data.Converters;
+using ClassIsland.Core.Services;
 
 
 namespace ClassIsland.Core.Converters;
@@ -23,13 +24,13 @@ public class WeekIndexToWeekStringConverter : IValueConverter
 
         static string ToWeek(int index) => index switch
         {
-            0 => "周日",
-            1 => "周一",
-            2 => "周二",
-            3 => "周三",
-            4 => "周四",
-            5 => "周五",
-            6 => "周六",
+            0 => LocalizationService.Translate("Core.Converters.WeekIndexToWeekStringConverter.Sunday"),
+            1 => LocalizationService.Translate("Core.Converters.WeekIndexToWeekStringConverter.Monday"),
+            2 => LocalizationService.Translate("Core.Converters.WeekIndexToWeekStringConverter.Tuesday"),
+            3 => LocalizationService.Translate("Core.Converters.WeekIndexToWeekStringConverter.Wednesday"),
+            4 => LocalizationService.Translate("Core.Converters.WeekIndexToWeekStringConverter.Thursday"),
+            5 => LocalizationService.Translate("Core.Converters.WeekIndexToWeekStringConverter.Friday"),
+            6 => LocalizationService.Translate("Core.Converters.WeekIndexToWeekStringConverter.Saturday"),
             _ => "???"
         };
     }

@@ -12,6 +12,7 @@ using Avalonia.Threading;
 using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Extensions;
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using ClassIsland.Services;
 using ClassIsland.ViewModels;
 using Microsoft.Extensions.Logging;
@@ -63,7 +64,14 @@ public partial class WeekOffsetSettingsControl : UserControl
             Spacing = 4,
             Children =
             {
-                new TextBlock { Text = cycleWeeks == 2 ? "单双周：" : $"{cycleWeeks.ToChinese()}周轮换：" },
+                new TextBlock
+                {
+                    Text = cycleWeeks == 2
+                        ? LocalizationService.Translate("Controls.WeekOffsetSettingsControl.Header.AlternatingWeeks")
+                        : LocalizationService.Translate(
+                            "Controls.WeekOffsetSettingsControl.Header.WeekRotation",
+                            cycleWeeks.ToChinese())
+                },
                 new ListBox
                 {
                     ItemsSource = CreateWeekItems(cycleWeeks),
@@ -82,10 +90,17 @@ public partial class WeekOffsetSettingsControl : UserControl
     static ObservableCollection<string> CreateWeekItems(int cycleWeeks)
     {
         if (cycleWeeks == 2)
-            return ["单周", "双周"];
+            return
+            [
+                LocalizationService.Translate("Controls.WeekOffsetSettingsControl.Item.OddWeek"),
+                LocalizationService.Translate("Controls.WeekOffsetSettingsControl.Item.EvenWeek")
+            ];
         return new ObservableCollection<string>(
             Enumerable.Range(1, cycleWeeks)
-                      .Select(i => $"{i}/{cycleWeeks}周")
+                      .Select(i => LocalizationService.Translate(
+                          "Controls.WeekOffsetSettingsControl.Item.WeekPosition",
+                          i,
+                          cycleWeeks))
         );
     }
 

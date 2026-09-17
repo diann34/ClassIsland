@@ -3,6 +3,7 @@ using Avalonia.Interactivity;
 using ClassIsland.Core;
 using ClassIsland.Core.Controls;
 using ClassIsland.Core.Helpers.UI;
+using ClassIsland.Core.Services;
 using ClassIsland.Services;
 using ClassIsland.ViewModels.RecoveryPages;
 using FluentAvalonia.UI.Controls;
@@ -102,8 +103,11 @@ public partial class RecoverBackupPage : UserControl
             return;
         }
 
-        var result = await ContentDialogHelper.ShowConfirmationDialog("恢复备份",
-            $"您确定要把应用配置恢复到备份 {ViewModel.SelectedBackupName} 的状态吗？此操作无法撤销。",
+        var result = await ContentDialogHelper.ShowConfirmationDialog(
+            LocalizationService.Translate("Views.RecoveryPages.RecoverBackupPage.Title.RestoreBackup"),
+            LocalizationService.Translate(
+                "Views.RecoveryPages.RecoverBackupPage.Content.ConfirmRestoreBackup",
+                ViewModel.SelectedBackupName),
             root: TopLevel.GetTopLevel(this));
         if (!result)
         {

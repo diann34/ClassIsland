@@ -14,6 +14,7 @@ using ClassIsland.Core.Abstractions.Services;
 using ClassIsland.Core.Attributes;
 using ClassIsland.Core.Models.Plugin;
 using ClassIsland.Core.Models.XamlTheme;
+using ClassIsland.Core.Services;
 using ClassIsland.Services;
 using ClassIsland.ViewModels.SettingsPages;
 using CommunityToolkit.Mvvm.Input;
@@ -142,9 +143,10 @@ public partial class ThemesSettingsPage : SettingsPageBase
             .SaveFilePickerAsync(new FilePickerSaveOptions()
             {
                 SuggestedFileName = info.Manifest.Id + ".zip",
-                Title = "打包主题",
+                Title = LocalizationService.Translate("SettingPages.ThemesSettingsPage.Title.PackageTheme"),
                 FileTypeChoices = [
-                    new FilePickerFileType("ClassIsland 主题包")
+                    new FilePickerFileType(LocalizationService.Translate(
+                        "SettingPages.ThemesSettingsPage.FileType.ClassIslandThemePackage"))
                     {
                         Patterns = ["*.zip"]
                     }
@@ -171,7 +173,9 @@ public partial class ThemesSettingsPage : SettingsPageBase
         }
         catch (Exception ex)
         {
-            this.ShowErrorToast($"无法打包主题 {info.Manifest.Id}", ex);
+            this.ShowErrorToast(LocalizationService.Translate(
+                "SettingPages.ThemesSettingsPage.Message.PackageThemeFailed",
+                info.Manifest.Id), ex);
         }
     }
 
