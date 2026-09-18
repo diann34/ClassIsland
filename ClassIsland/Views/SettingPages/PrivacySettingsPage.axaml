@@ -24,9 +24,7 @@
                 <TextBlock Margin="0 6 0 0" TextWrapping="Wrap">
                     <Run Text="{ci:Tr SettingPages.PrivacySettingsPage.Text.ForMoreInformationPleaseSee}">
                     </Run>
-                    <HyperlinkButton Click="HyperlinkMsAppCenter_OnClick">
-                        {ci:Tr SettingPages.PrivacySettingsPage.Content.ClassIslandPrivacyPolicy}
-                    </HyperlinkButton>
+                    <HyperlinkButton Click="HyperlinkMsAppCenter_OnClick" Content="{ci:Tr SettingPages.PrivacySettingsPage.Content.ClassIslandPrivacyPolicy}"/>
                     。
                 </TextBlock>
             </StackPanel>

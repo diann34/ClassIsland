@@ -36,8 +36,8 @@
                 </controls:FASettingsExpander.IsVisible>
                 <controls:FASettingsExpander.Footer>
                     <ComboBox SelectedIndex="{Binding ViewModel.RenderingModeSelectedIndex}">
-                        <ComboBoxItem>{ci:Tr SettingPages.AdvancedSettingsPage.Content.Default}</ComboBoxItem>
-                        <ComboBoxItem>{ci:Tr SettingPages.AdvancedSettingsPage.Content.SoftwareNotRecommended}</ComboBoxItem>
+                        <ComboBoxItem Content="{ci:Tr SettingPages.AdvancedSettingsPage.Content.Default}"/>
+                        <ComboBoxItem Content="{ci:Tr SettingPages.AdvancedSettingsPage.Content.SoftwareNotRecommended}"/>
                         <ComboBoxItem>AngleEgl</ComboBoxItem>
                         <ComboBoxItem>Wgl</ComboBoxItem>
                         <ComboBoxItem>Vulkan</ComboBoxItem>

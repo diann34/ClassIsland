@@ -47,8 +47,8 @@
                         <Grid>
                             <ComboBox Foreground="{DynamicResource MaterialDesignBody}"
                                       SelectedIndex="{Binding Settings.ForecastShowMode, Converter={StaticResource ShowModeToIntConverter}}">
-                                <system:String>{ci:Tr Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Content.DisabledByDefault}</system:String>
-                                <system:String>{ci:Tr Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Content.EnabledByDefault}</system:String>
+                                <ComboBoxItem Content="{ci:Tr Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Content.DisabledByDefault}"/>
+                                <ComboBoxItem Content="{ci:Tr Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Content.EnabledByDefault}"/>
                             </ComboBox>
                         </Grid>
                     </fa:FASettingsExpander.Footer>
@@ -64,8 +64,8 @@
                         <Grid>
                             <ComboBox Foreground="{DynamicResource MaterialDesignBody}"
                                       SelectedIndex="{Binding Settings.AlertShowMode, Converter={StaticResource ShowModeToIntConverter}}">
-                                <system:String>{ci:Tr Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Content.DisabledByDefault}</system:String>
-                                <system:String>{ci:Tr Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Content.EnabledByDefault}</system:String>
+                                <ComboBoxItem Content="{ci:Tr Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Content.DisabledByDefault}"/>
+                                <ComboBoxItem Content="{ci:Tr Controls.NotificationProviders.WeatherNotificationProviderSettingsControl.Content.EnabledByDefault}"/>
                             </ComboBox>
                         </Grid>
                             </fa:FASettingsExpander.Footer>

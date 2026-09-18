@@ -158,8 +158,8 @@
                                                 Description="{ci:Tr SettingPages.WindowSettingsPage.Description.WhenClassIslandResetsTheWindowTopBottomStatus}">
                     <controls1:FASettingsExpanderItem.Footer>
                         <ComboBox SelectedIndex="{Binding ViewModel.SettingsService.Settings.WindowTopmostRecheckMode}">
-                            <ComboBoxItem>{ci:Tr SettingPages.WindowSettingsPage.Content.WhenWindowLevelsChangeDefault}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr SettingPages.WindowSettingsPage.Content.WhenTheFrontDeskWindowChanges}</ComboBoxItem>
+                            <ComboBoxItem Content="{ci:Tr SettingPages.WindowSettingsPage.Content.WhenWindowLevelsChangeDefault}"/>
+                            <ComboBoxItem Content="{ci:Tr SettingPages.WindowSettingsPage.Content.WhenTheFrontDeskWindowChanges}"/>
                             <ComboBoxItem>
                                 <StackPanel Orientation="Horizontal"
                                             Classes="items-valign-center"
@@ -206,9 +206,9 @@
                     <controls1:FASettingsExpanderItem.Footer>
                         <ComboBox SelectedIndex="{Binding ViewModel.SettingsService.Settings.MainWindowBackgroundMaterialType, Mode=TwoWay, Converter={x:Static ci:EnumToIntConverter.Instance}}"
                                   Foreground="{DynamicResource MaterialDesignBody}">
-                            <ComboBoxItem>{ci:Tr SettingPages.WindowSettingsPage.Content.Acrylic}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr SettingPages.WindowSettingsPage.Content.GlassLike}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr SettingPages.WindowSettingsPage.Content.Mica}</ComboBoxItem>
+                            <ComboBoxItem Content="{ci:Tr SettingPages.WindowSettingsPage.Content.Acrylic}"/>
+                            <ComboBoxItem Content="{ci:Tr SettingPages.WindowSettingsPage.Content.GlassLike}"/>
+                            <ComboBoxItem Content="{ci:Tr SettingPages.WindowSettingsPage.Content.Mica}"/>
                         </ComboBox>
                     </controls1:FASettingsExpanderItem.Footer>
                 </controls1:FASettingsExpanderItem>

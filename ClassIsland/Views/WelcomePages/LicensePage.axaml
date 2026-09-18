@@ -14,13 +14,13 @@
         <TextBlock Text="{ci:Tr WelcomePages.LicensePage.Text.ToContinueUsingClassIslandYouMustReadAnd}" HorizontalAlignment="Center"/>
         <CheckBox x:Name="ComboBoxOssLicense">
             <TextBlock VerticalAlignment="Center" Margin="0 4 0 0" >
-                {ci:Tr WelcomePages.LicensePage.Content.IHaveReadAndAgree}<HyperlinkButton Content="{ci:Tr WelcomePages.LicensePage.Content.ClassIslandOpenSourceLicense}" Margin="0 -2 0 0"
+                <Run Text="{ci:Tr WelcomePages.LicensePage.Content.IHaveReadAndAgree}"/><HyperlinkButton Content="{ci:Tr WelcomePages.LicensePage.Content.ClassIslandOpenSourceLicense}" Margin="0 -2 0 0"
                                         Click="ButtonShowOssLicense_OnClick"/>。
             </TextBlock>
         </CheckBox>
         <CheckBox x:Name="ComboBoxPrivacy">
             <TextBlock VerticalAlignment="Center" Margin="0 4 0 0" >
-                {ci:Tr WelcomePages.LicensePage.Content.IHaveReadAndAgree}<HyperlinkButton Content="{ci:Tr WelcomePages.LicensePage.Content.ClassIslandPrivacyPolicy}" Margin="0 -2 0 0"
+                <Run Text="{ci:Tr WelcomePages.LicensePage.Content.IHaveReadAndAgree}"/><HyperlinkButton Content="{ci:Tr WelcomePages.LicensePage.Content.ClassIslandPrivacyPolicy}" Margin="0 -2 0 0"
                                         Click="ButtonShowPrivacyLicense_OnClick"/>。
             </TextBlock>
         </CheckBox>

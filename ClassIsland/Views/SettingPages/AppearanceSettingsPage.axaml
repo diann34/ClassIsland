@@ -561,7 +561,7 @@
                         FontFamily="{Binding ViewModel.SettingsService.Settings.MainWindowFont, Mode=OneWay, Converter={StaticResource StringToFontFamilyConverter}}"
                         Margin="0 4 0 0"
                         TextAlignment="Center"
-                        xml:space="preserve">{ci:Tr SettingPages.AppearanceSettingsPage.Content.WhenOneDayYouNoLongerDwellOn}</TextBox>
+                        xml:space="preserve" Text="{ci:Tr SettingPages.AppearanceSettingsPage.Content.WhenOneDayYouNoLongerDwellOn}"/>
                 </TabItem>
                 <TabItem Header="{ci:Tr SettingPages.AppearanceSettingsPage.Header.FontSizePreview}">
                     <StackPanel Spacing="2">

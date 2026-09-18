@@ -51,15 +51,15 @@
                         <ComboBox Grid.Row="0" Grid.Column="1"
                                   SelectionChanged="SelectingItemsControl_OnSelectionChanged"
                                   SelectedIndex="{Binding Kind, Converter={x:Static views:TutorialEditorWindow.TutorialActionKindToIntConverter}}">
-                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.None}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.NextSentence}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.PreviousSentence}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.NextParagraph}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.PreviousParagraph}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.JumpToParagraph}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.Stop}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.ExecuteAction}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.ExecuteUri}</ComboBoxItem>
+                            <ComboBoxItem Content="{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.None}"/>
+                            <ComboBoxItem Content="{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.NextSentence}"/>
+                            <ComboBoxItem Content="{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.PreviousSentence}"/>
+                            <ComboBoxItem Content="{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.NextParagraph}"/>
+                            <ComboBoxItem Content="{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.PreviousParagraph}"/>
+                            <ComboBoxItem Content="{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.JumpToParagraph}"/>
+                            <ComboBoxItem Content="{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.Stop}"/>
+                            <ComboBoxItem Content="{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.ExecuteAction}"/>
+                            <ComboBoxItem Content="{ci:Tr Controls.TutorialEditor.TutorialActionsEditControl.Content.ExecuteUri}"/>
                         </ComboBox>
                         <TextBox Grid.Row="0" Grid.Column="2" Text="{Binding StringParameter}">
                             <TextBox.IsVisible>

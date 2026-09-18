@@ -30,8 +30,8 @@
             <NumericUpDown Value="{Binding ViewModel.Scale, Converter={x:Static ci:NotNaNConverter.Instance}}"/>
         </ci:Field>
         <Grid>
-            <Button HorizontalAlignment="Left" Click="ButtonRefresh_OnClick">{ci:Tr ScreenshotHelperWindow.Content.Refresh}</Button>
-            <Button HorizontalAlignment="Right" Classes="accent" Click="ButtonScreenshot_OnClick">{ci:Tr ScreenshotHelperWindow.Content.Screenshot}</Button>
+            <Button HorizontalAlignment="Left" Click="ButtonRefresh_OnClick" Content="{ci:Tr ScreenshotHelperWindow.Content.Refresh}"/>
+            <Button HorizontalAlignment="Right" Classes="accent" Click="ButtonScreenshot_OnClick" Content="{ci:Tr ScreenshotHelperWindow.Content.Screenshot}"/>
         </Grid>
     </StackPanel>
 </ci:ViewBase>

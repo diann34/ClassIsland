@@ -26,12 +26,12 @@
                             <ComboBox SelectedIndex="{Binding Settings.MainWeatherInfoKind}"
                                       IsVisible="{Binding Settings.ShowMainWeatherInfo}"
                                       MinWidth="110">
-                                <ComboBoxItem>{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.WeatherTypeTemperature}</ComboBoxItem>
-                                <ComboBoxItem>{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.Humidity}</ComboBoxItem>
-                                <ComboBoxItem>{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.WindPower}</ComboBoxItem>
+                                <ComboBoxItem Content="{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.WeatherTypeTemperature}"/>
+                                <ComboBoxItem Content="{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.Humidity}"/>
+                                <ComboBoxItem Content="{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.WindPower}"/>
                                 <ComboBoxItem>AQI</ComboBoxItem>
-                                <ComboBoxItem>{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.AirPressure}</ComboBoxItem>
-                                <ComboBoxItem>{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.PerceivedTemperature}</ComboBoxItem>
+                                <ComboBoxItem Content="{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.AirPressure}"/>
+                                <ComboBoxItem Content="{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.PerceivedTemperature}"/>
                             </ComboBox>
                             <ToggleSwitch IsChecked="{Binding Settings.ShowMainWeatherInfo}"/>
                         </StackPanel>
@@ -50,9 +50,9 @@
                                                     Description="{ci:Tr Controls.Components.WeatherComponentSettingsControl.Description.SetTheWarningTypeUnderWhatCircumstancesIt}">
                         <controls1:FASettingsExpanderItem.Footer>
                             <ComboBox SelectedIndex="{Binding Settings.AlertsTitleShowMode}">
-                                <ComboBoxItem>{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.NotDisplayed}</ComboBoxItem>
-                                <ComboBoxItem>{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.OnlyWhenThereIsNoCorrespondingIcon}</ComboBoxItem>
-                                <ComboBoxItem>{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.AlwaysShows}</ComboBoxItem>
+                                <ComboBoxItem Content="{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.NotDisplayed}"/>
+                                <ComboBoxItem Content="{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.OnlyWhenThereIsNoCorrespondingIcon}"/>
+                                <ComboBoxItem Content="{ci:Tr Controls.Components.WeatherComponentSettingsControl.Content.AlwaysShows}"/>
                             </ComboBox>
                         </controls1:FASettingsExpanderItem.Footer>
                     </controls1:FASettingsExpanderItem>

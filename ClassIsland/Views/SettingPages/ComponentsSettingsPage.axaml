@@ -450,9 +450,9 @@
                                                        Description="{ci:Tr SettingPages.ComponentsSettingsPage.Description.AfterActivationTheMainInterfaceWillBeSeparated}">
                                 <controls:FASettingsExpander.Footer>
                                     <ComboBox SelectedIndex="{Binding IslandSeparationMode}">
-                                        <ComboBoxItem>{ci:Tr SettingPages.ComponentsSettingsPage.Content.Inherit}</ComboBoxItem>
-                                        <ComboBoxItem>{ci:Tr SettingPages.ComponentsSettingsPage.Content.Disable}</ComboBoxItem>
-                                        <ComboBoxItem>{ci:Tr SettingPages.ComponentsSettingsPage.Content.Enable}</ComboBoxItem>
+                                        <ComboBoxItem Content="{ci:Tr SettingPages.ComponentsSettingsPage.Content.Inherit}"/>
+                                        <ComboBoxItem Content="{ci:Tr SettingPages.ComponentsSettingsPage.Content.Disable}"/>
+                                        <ComboBoxItem Content="{ci:Tr SettingPages.ComponentsSettingsPage.Content.Enable}"/>
                                     </ComboBox>
                                 </controls:FASettingsExpander.Footer>
                             </controls:FASettingsExpander>
@@ -488,17 +488,17 @@
                                 </controls:FASettingsExpander.IsVisible>
                                 <controls:FASettingsExpander.Footer>
                                     <ComboBox SelectedIndex="{Binding BackgroundMaterialOverrideMode}">
-                                        <ComboBoxItem>{ci:Tr SettingPages.ComponentsSettingsPage.Content.Inherit}</ComboBoxItem>
-                                        <ComboBoxItem>{ci:Tr SettingPages.ComponentsSettingsPage.Content.Disable}</ComboBoxItem>
-                                        <ComboBoxItem>{ci:Tr SettingPages.ComponentsSettingsPage.Content.Enable}</ComboBoxItem>
+                                        <ComboBoxItem Content="{ci:Tr SettingPages.ComponentsSettingsPage.Content.Inherit}"/>
+                                        <ComboBoxItem Content="{ci:Tr SettingPages.ComponentsSettingsPage.Content.Disable}"/>
+                                        <ComboBoxItem Content="{ci:Tr SettingPages.ComponentsSettingsPage.Content.Enable}"/>
                                     </ComboBox>
                                 </controls:FASettingsExpander.Footer>
                                 <controls:FASettingsExpanderItem Content="{ci:Tr SettingPages.ComponentsSettingsPage.Content.MaterialType}">
                                     <controls:FASettingsExpanderItem.Footer>
                                         <ComboBox SelectedIndex="{Binding BackgroundMaterialType, Mode=TwoWay, Converter={x:Static ci:EnumToIntConverter.Instance}}">
-                                            <ComboBoxItem>{ci:Tr SettingPages.ComponentsSettingsPage.Content.Acrylic}</ComboBoxItem>
-                                            <ComboBoxItem>{ci:Tr SettingPages.ComponentsSettingsPage.Content.GlassLike}</ComboBoxItem>
-                                            <ComboBoxItem>{ci:Tr SettingPages.ComponentsSettingsPage.Content.Mica}</ComboBoxItem>
+                                            <ComboBoxItem Content="{ci:Tr SettingPages.ComponentsSettingsPage.Content.Acrylic}"/>
+                                            <ComboBoxItem Content="{ci:Tr SettingPages.ComponentsSettingsPage.Content.GlassLike}"/>
+                                            <ComboBoxItem Content="{ci:Tr SettingPages.ComponentsSettingsPage.Content.Mica}"/>
                                         </ComboBox>
                                     </controls:FASettingsExpanderItem.Footer>
                                 </controls:FASettingsExpanderItem>
@@ -658,7 +658,7 @@
                         Text="{ci:Tr SettingPages.ComponentsSettingsPage.Text.Edit}"
                         Click="ButtonOpenRuleset_OnClick"
                         ToolTip.Tip="{ci:Tr SettingPages.ComponentsSettingsPage.ToolTip.EditRuleSet}"/>
-                <CheckBox IsChecked="{Binding ViewModel.SelectedComponentSettings.HideOnRule}">{ci:Tr SettingPages.ComponentsSettingsPage.Content.HideByRules}</CheckBox>
+                <CheckBox IsChecked="{Binding ViewModel.SelectedComponentSettings.HideOnRule}" Content="{ci:Tr SettingPages.ComponentsSettingsPage.Content.HideByRules}"/>
             </StackPanel>
         </Grid>
 

@@ -23,12 +23,12 @@
 
                         <StackPanel>
                             <TextBlock  TextWrapping="Wrap">
-                                <Run>{ci:Tr SettingPages.ManagementSettingsPage.Content.SchoolOrganizationalItCanCentrallyDistributeSchedulesSch}</Run>
+                                <Run Text="{ci:Tr SettingPages.ManagementSettingsPage.Content.SchoolOrganizationalItCanCentrallyDistributeSchedulesSch}"/>
                             </TextBlock>
                             <TextBlock  TextWrapping="Wrap" Margin="0 6 0 0" IsVisible="{Binding ManagementService.IsManagementEnabled}">
-                                <Run>{ci:Tr SettingPages.ManagementSettingsPage.Content.YouAreCurrentlyAffected}</Run>
+                                <Run Text="{ci:Tr SettingPages.ManagementSettingsPage.Content.YouAreCurrentlyAffected}"/>
                                 <Run Text="{Binding ManagementService.Manifest.OrganizationName}"/>
-                                <Run>{ci:Tr SettingPages.ManagementSettingsPage.Content.Management}</Run>
+                                <Run Text="{ci:Tr SettingPages.ManagementSettingsPage.Content.Management}"/>
                             </TextBlock>
                         </StackPanel>
                     </StackPanel>
@@ -58,7 +58,7 @@
 
                         <StackPanel>
                             <TextBlock  TextWrapping="Wrap">
-                                <Run>{ci:Tr SettingPages.ManagementSettingsPage.Content.YouCanAdjustSomeOfYourAppS}</Run>
+                                <Run Text="{ci:Tr SettingPages.ManagementSettingsPage.Content.YouCanAdjustSomeOfYourAppS}"/>
                             </TextBlock>
                         </StackPanel>
                     </StackPanel>
@@ -107,7 +107,7 @@
                 </controls1:FASettingsExpanderItem>
                 <controls1:FASettingsExpanderItem>
                     <TextBlock TextWrapping="Wrap">
-                        <Run>{ci:Tr SettingPages.ManagementSettingsPage.Content.ServerType}</Run><Run Text="{Binding ManagementService.Manifest.ServerKind}"/>
+                        <Run Text="{ci:Tr SettingPages.ManagementSettingsPage.Content.ServerType}"/><Run Text="{Binding ManagementService.Manifest.ServerKind}"/>
                     </TextBlock>
                 </controls1:FASettingsExpanderItem>
             </StackPanel>

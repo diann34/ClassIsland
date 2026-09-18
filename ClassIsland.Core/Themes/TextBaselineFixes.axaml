@@ -10,13 +10,13 @@
         <Border Padding="20">
             <!-- Add Controls for Previewer Here -->
             <StackPanel Spacing="6">
-                <CheckBox>{ci:Tr Core.Themes.TextBaselineFixes.Content.IAmTheSunThatWillEventuallyRise}</CheckBox>
+                <CheckBox Content="{ci:Tr Core.Themes.TextBaselineFixes.Content.IAmTheSunThatWillEventuallyRise}"/>
                 <ComboBox SelectedIndex="0">
-                    <ComboBoxItem>{ci:Tr Core.Themes.TextBaselineFixes.Content.Test1}</ComboBoxItem>
-                    <ComboBoxItem>{ci:Tr Core.Themes.TextBaselineFixes.Content.Test2}</ComboBoxItem>
-                    <ComboBoxItem>{ci:Tr Core.Themes.TextBaselineFixes.Content.Test3}</ComboBoxItem>
+                    <ComboBoxItem Content="{ci:Tr Core.Themes.TextBaselineFixes.Content.Test1}"/>
+                    <ComboBoxItem Content="{ci:Tr Core.Themes.TextBaselineFixes.Content.Test2}"/>
+                    <ComboBoxItem Content="{ci:Tr Core.Themes.TextBaselineFixes.Content.Test3}"/>
                 </ComboBox>
-                <Button>{ci:Tr Core.Themes.TextBaselineFixes.Content.TestText}</Button>
+                <Button Content="{ci:Tr Core.Themes.TextBaselineFixes.Content.TestText}"/>
             </StackPanel>
         </Border>
     </Design.PreviewWith>

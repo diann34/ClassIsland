@@ -207,7 +207,7 @@
                         <ci:Empty Text="{ci:Tr Controls.ScheduleDataGrid.ScheduleDataGrid.Text.YouNeedToSetAScheduleFirstBefore}" Icon="{ci:FluentIconSource &#xF0ED;, FontSize=64}"/>
                         <Button Classes="accent"
                                 Command="{x:Static ci:UriNavigationCommands.UriNavigationCommand}"
-                                CommandParameter="classisland://app/profile/timelayouts">{ci:Tr Controls.ScheduleDataGrid.ScheduleDataGrid.Content.GoToCreate}</Button>
+                                CommandParameter="classisland://app/profile/timelayouts" Content="{ci:Tr Controls.ScheduleDataGrid.ScheduleDataGrid.Content.GoToCreate}"/>
                     </StackPanel>
                     <ci:Empty Grid.Row="1"
                               Margin="0 60 0 0">

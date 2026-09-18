@@ -335,9 +335,7 @@
                                     </Style>
                                 </TextBlock.Styles>
                             </TextBlock>
-                            <Button Click="ButtonShowChangeLogs_OnClick">
-                                {ci:Tr SettingPages.UpdateSettingsPage.Content.CheckTheChangelog}
-                            </Button>
+                            <Button Click="ButtonShowChangeLogs_OnClick" Content="{ci:Tr SettingPages.UpdateSettingsPage.Content.CheckTheChangelog}"/>
                         </StackPanel>
                     </Grid>
                 </TabItem>
@@ -349,10 +347,10 @@
                                                    Description="{ci:Tr SettingPages.UpdateSettingsPage.Description.SetTheAppSUpdateMode}">
                             <controls:FASettingsExpander.Footer>
                                 <ComboBox SelectedIndex="{Binding ViewModel.SettingsService.Settings.UpdateMode}">
-                                    <ComboBoxItem>{ci:Tr SettingPages.UpdateSettingsPage.Content.NeverUpdatesAutomatically}</ComboBoxItem>
-                                    <ComboBoxItem>{ci:Tr SettingPages.UpdateSettingsPage.Content.AutomaticallyCheckForUpdatesAndNotifyNotifications}</ComboBoxItem>
-                                    <ComboBoxItem>{ci:Tr SettingPages.UpdateSettingsPage.Content.AutomaticallyChecksForUpdatesAndDownloads}</ComboBoxItem>
-                                    <ComboBoxItem>{ci:Tr SettingPages.UpdateSettingsPage.Content.AutomaticallyChecksForUpdatesAndInstalls}</ComboBoxItem>
+                                    <ComboBoxItem Content="{ci:Tr SettingPages.UpdateSettingsPage.Content.NeverUpdatesAutomatically}"/>
+                                    <ComboBoxItem Content="{ci:Tr SettingPages.UpdateSettingsPage.Content.AutomaticallyCheckForUpdatesAndNotifyNotifications}"/>
+                                    <ComboBoxItem Content="{ci:Tr SettingPages.UpdateSettingsPage.Content.AutomaticallyChecksForUpdatesAndDownloads}"/>
+                                    <ComboBoxItem Content="{ci:Tr SettingPages.UpdateSettingsPage.Content.AutomaticallyChecksForUpdatesAndInstalls}"/>
                                 </ComboBox>
                             </controls:FASettingsExpander.Footer>
                         </controls:FASettingsExpander>

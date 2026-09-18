@@ -78,7 +78,7 @@
                                    IsOpen="{Binding !ViewModel.HasValidMainWindowLine, Mode=OneWay}">
                     <controls3:FAInfoBar.ActionButton>
                         <Button Command="{x:Static ci:UriNavigationCommands.UriNavigationCommand}"
-                                CommandParameter="classisland://app/settings/components">{ci:Tr SettingPages.NotificationSettingsPage.Content.GoToTheComponentsPage}</Button>
+                                CommandParameter="classisland://app/settings/components" Content="{ci:Tr SettingPages.NotificationSettingsPage.Content.GoToTheComponentsPage}"/>
                     </controls3:FAInfoBar.ActionButton>
                 </controls3:FAInfoBar>
 
@@ -208,7 +208,7 @@
                             <StackPanel Orientation="Horizontal"
                                         Classes="items-valign-center"
                                         Spacing="6">
-                                <TextBlock>{ci:Tr SettingPages.NotificationSettingsPage.Content.AdvancedSettings}</TextBlock>
+                                <TextBlock Text="{ci:Tr SettingPages.NotificationSettingsPage.Content.AdvancedSettings}"/>
                                 <controls1:NotificationProviderSettingsIndicatorControl
                                     VerticalAlignment="Center"
                                     IsSettingsEnabled="True"
@@ -408,7 +408,7 @@
                                     <StackPanel Orientation="Horizontal"
                                                 Classes="items-valign-center"
                                                 Spacing="6">
-                                        <TextBlock>{ci:Tr SettingPages.NotificationSettingsPage.Content.AdvancedSettings}</TextBlock>
+                                        <TextBlock Text="{ci:Tr SettingPages.NotificationSettingsPage.Content.AdvancedSettings}"/>
                                         <controls1:NotificationProviderSettingsIndicatorControl
                                             Margin="0 -2 0 2"
                                             IsSettingsEnabled="{Binding ProviderSettings.IsSettingsEnabled}"

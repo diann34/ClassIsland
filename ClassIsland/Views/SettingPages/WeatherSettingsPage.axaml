@@ -323,7 +323,7 @@
                     Padding="12"
                     Margin="0 8 0 0">
                 <TextBlock TextWrapping="Wrap" FontSize="12" Opacity="0.8">
-                    {ci:Tr SettingPages.WeatherSettingsPage.Content.ToAdjustWeatherAlertSettingsGoTo}<ci:NavHyperlink NavTarget="classisland://app/settings/notification">{ci:Tr SettingPages.WeatherSettingsPage.Content.ReminderPage}</ci:NavHyperlink>{ci:Tr SettingPages.WeatherSettingsPage.Content.ToAdjustTheWeatherQuickInfoOnThe}<ci:NavHyperlink NavTarget="classisland://app/settings/components">{ci:Tr SettingPages.WeatherSettingsPage.Content.WidgetPage}</ci:NavHyperlink>{ci:Tr SettingPages.WeatherSettingsPage.Content.ConfigureTheWeatherBriefingWidgetIn}
+                    <Run Text="{ci:Tr SettingPages.WeatherSettingsPage.Content.ToAdjustWeatherAlertSettingsGoTo}"/><ci:NavHyperlink NavTarget="classisland://app/settings/notification" Content="{ci:Tr SettingPages.WeatherSettingsPage.Content.ReminderPage}"/><Run Text="{ci:Tr SettingPages.WeatherSettingsPage.Content.ToAdjustTheWeatherQuickInfoOnThe}"/><ci:NavHyperlink NavTarget="classisland://app/settings/components" Content="{ci:Tr SettingPages.WeatherSettingsPage.Content.WidgetPage}"/><Run Text="{ci:Tr SettingPages.WeatherSettingsPage.Content.ConfigureTheWeatherBriefingWidgetIn}"/>
                 </TextBlock>
             </Border>
         </StackPanel>

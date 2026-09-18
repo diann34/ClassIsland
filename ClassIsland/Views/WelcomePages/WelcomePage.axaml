@@ -81,13 +81,13 @@
                         </Style>
                     </StackPanel.Styles>
                     <HyperlinkButton Click="ButtonDataMigration_OnClick">
-                        <TextBlock>{ci:Tr WelcomePages.WelcomePage.Content.DataMigration}</TextBlock>
+                        <TextBlock Text="{ci:Tr WelcomePages.WelcomePage.Content.DataMigration}"/>
                     </HyperlinkButton>
                     <HyperlinkButton Click="ButtonEnterRecovery_OnClick">
-                        <TextBlock>{ci:Tr WelcomePages.WelcomePage.Content.TroubleshootingRestoreBackup}</TextBlock>
+                        <TextBlock Text="{ci:Tr WelcomePages.WelcomePage.Content.TroubleshootingRestoreBackup}"/>
                     </HyperlinkButton>
                     <HyperlinkButton Click="ButtonJoinManagement_OnClick">
-                        <TextBlock>{ci:Tr WelcomePages.WelcomePage.Content.JoinManagement}</TextBlock>
+                        <TextBlock Text="{ci:Tr WelcomePages.WelcomePage.Content.JoinManagement}"/>
                     </HyperlinkButton>
                 </StackPanel>
             </StackPanel>

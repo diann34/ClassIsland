@@ -11,15 +11,9 @@
                 Spacing="4"
                 Orientation="Horizontal">
         <ComboBox VerticalAlignment="Center" x:Name="StateComboBox" SelectionChanged="StateComboBox_SelectionChanged">
-            <ComboBoxItem>
-                {ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Content.InClass}
-            </ComboBoxItem>
-            <ComboBoxItem>
-                {ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Content.BreakTime}
-            </ComboBoxItem>
-            <ComboBoxItem>
-                {ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Content.SchoolDismissal}
-            </ComboBoxItem>
+            <ComboBoxItem Content="{ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Content.InClass}"/>
+            <ComboBoxItem Content="{ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Content.BreakTime}"/>
+            <ComboBoxItem Content="{ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Content.SchoolDismissal}"/>
         </ComboBox>
         <ci:Field Prefix="{ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Prefix.Before}" Suffix="{ci:Tr Controls.TriggerSettingsControls.PreTimePointTriggerSettingsControl.Suffix.Seconds}">
             <NumericUpDown Value="{Binding $parent[local:PreTimePointTriggerSettingsControl].Settings.TimeSeconds, Converter={x:Static ci:NotNaNConverter.Instance}}" />

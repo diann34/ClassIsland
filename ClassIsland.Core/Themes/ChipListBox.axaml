@@ -78,18 +78,18 @@
     <Design.PreviewWith>
         <Border Padding="20" Width="400">
             <ListBox Theme="{StaticResource ChipListBoxTheme}">
-                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Earth}</ListBoxItem>
-                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Ocean}</ListBoxItem>
-                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Sky}</ListBoxItem>
-                <ListBoxItem IsSelected="True">{ci:Tr Core.Themes.ChipListBox.Content.NegativeWorld}</ListBoxItem>
-                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Reason}</ListBoxItem>
-                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Romance}</ListBoxItem>
-                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Conflict}</ListBoxItem>
-                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Death}</ListBoxItem>
-                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Trick}</ListBoxItem>
-                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Doorway}</ListBoxItem>
-                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Law}</ListBoxItem>
-                <ListBoxItem>{ci:Tr Core.Themes.ChipListBox.Content.Time}</ListBoxItem>
+                <ListBoxItem Content="{ci:Tr Core.Themes.ChipListBox.Content.Earth}"/>
+                <ListBoxItem Content="{ci:Tr Core.Themes.ChipListBox.Content.Ocean}"/>
+                <ListBoxItem Content="{ci:Tr Core.Themes.ChipListBox.Content.Sky}"/>
+                <ListBoxItem IsSelected="True" Content="{ci:Tr Core.Themes.ChipListBox.Content.NegativeWorld}"/>
+                <ListBoxItem Content="{ci:Tr Core.Themes.ChipListBox.Content.Reason}"/>
+                <ListBoxItem Content="{ci:Tr Core.Themes.ChipListBox.Content.Romance}"/>
+                <ListBoxItem Content="{ci:Tr Core.Themes.ChipListBox.Content.Conflict}"/>
+                <ListBoxItem Content="{ci:Tr Core.Themes.ChipListBox.Content.Death}"/>
+                <ListBoxItem Content="{ci:Tr Core.Themes.ChipListBox.Content.Trick}"/>
+                <ListBoxItem Content="{ci:Tr Core.Themes.ChipListBox.Content.Doorway}"/>
+                <ListBoxItem Content="{ci:Tr Core.Themes.ChipListBox.Content.Law}"/>
+                <ListBoxItem Content="{ci:Tr Core.Themes.ChipListBox.Content.Time}"/>
                 <ListBoxItem>■■</ListBoxItem>
             </ListBox>
         </Border>

@@ -16,21 +16,11 @@
     </ci:RuleSettingsControlBase.Resources>
     <Grid DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:TimeStateRuleSettingsControl}}">
         <ComboBox SelectedIndex="{Binding Settings.State, Converter={StaticResource TimeStateToClassConverter}}">
-            <ComboBoxItem>
-                {ci:Tr Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.None}
-            </ComboBoxItem>
-            <ComboBoxItem>
-                {ci:Tr Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.InClass}
-            </ComboBoxItem>
-            <ComboBoxItem IsEnabled="False" IsVisible="False">
-                {ci:Tr Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.PrepareForClassUnavailable}
-            </ComboBoxItem>
-            <ComboBoxItem>
-                {ci:Tr Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.BreakTime}
-            </ComboBoxItem>
-            <ComboBoxItem>
-                {ci:Tr Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.AfterSchool}
-            </ComboBoxItem>
+            <ComboBoxItem Content="{ci:Tr Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.None}"/>
+            <ComboBoxItem Content="{ci:Tr Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.InClass}"/>
+            <ComboBoxItem IsEnabled="False" IsVisible="False" Content="{ci:Tr Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.PrepareForClassUnavailable}"/>
+            <ComboBoxItem Content="{ci:Tr Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.BreakTime}"/>
+            <ComboBoxItem Content="{ci:Tr Controls.RuleSettingsControls.TimeStateRuleSettingsControl.Content.AfterSchool}"/>
         </ComboBox>
     </Grid>
 </ci:RuleSettingsControlBase>

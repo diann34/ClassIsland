@@ -82,9 +82,7 @@
                                        VerticalAlignment="Center"
                                        IsVisible="{Binding IsSelected, RelativeSource={RelativeSource FindAncestor, AncestorType=ListBoxItem}}">
                                  <commands:NavHyperlink NavTarget="{Binding PackageProjectUrl}"
-                                                        ToolTip.Tip="{Binding PackageProjectUrl}">
-                                     {ci:Tr SettingPages.AboutSettingsPage.Content.Website}
-                                 </commands:NavHyperlink>
+                                                        ToolTip.Tip="{Binding PackageProjectUrl}" Content="{ci:Tr SettingPages.AboutSettingsPage.Content.Website}"/>
                                  <commands:NavHyperlink NavTarget="{Binding LicenseUrl}"
                                                         ToolTip.Tip="{Binding LicenseUrl}">
                                      <TextBlock Text="{Binding License, StringFormat={ci:Tr SettingPages.AboutSettingsPage.Format.License}}" />
@@ -280,16 +278,16 @@
                     IsClickEnabled="True"/>
                 <controls3:FASettingsExpanderItem>
                     <TextBlock LineHeight="30" Margin="0 0 0 0" FontSize="14" TextWrapping="Wrap">
-                        {ci:Tr SettingPages.AboutSettingsPage.Content.ThisProjectIsSupportedBy}
+                        <Run Text="{ci:Tr SettingPages.AboutSettingsPage.Content.ThisProjectIsSupportedBy}"/>
                         <HyperlinkButton Click="Hyperlink2_OnClick">DuguSand/class_form</HyperlinkButton>
-                        {ci:Tr SettingPages.AboutSettingsPage.Content.DevelopedWithInspirationFrom}<LineBreak/>
-                        {ci:Tr SettingPages.AboutSettingsPage.Content.TheInterfaceThemeAndSomeControlsUseThe}<LineBreak/>
-                        {ci:Tr SettingPages.AboutSettingsPage.Content.TheAppFontUsesHuaweiSHarmonyosSans}<LineBreak/>
-                        {ci:Tr SettingPages.AboutSettingsPage.Content.ThanksToTheStudentsWhoAssistedInTesting}<LineBreak/>
-                        {ci:Tr SettingPages.AboutSettingsPage.Content.Thanks}<commands:NavHyperlink NavTarget="https://forum.smart-teach.cn/">{ci:Tr SettingPages.AboutSettingsPage.Content.IntelligentEducationAlliance}</commands:NavHyperlink>{ci:Tr SettingPages.AboutSettingsPage.Content.ProvidesServerResources}<commands:NavHyperlink NavTarget="https://xiaowuap.com/">{ci:Tr SettingPages.AboutSettingsPage.Content.WuEnze}</commands:NavHyperlink>{ci:Tr SettingPages.AboutSettingsPage.Content.ProvidesTTSTelemetryAndOtherServiceResources}<LineBreak/>
-                        {ci:Tr SettingPages.AboutSettingsPage.Content.WeatherDataIsSourcedFromXiaomiWeather}<LineBreak/>
-                        {ci:Tr SettingPages.AboutSettingsPage.Content.SomeImageResourcesAssetsHoyostickersComeFromMihoyo}<LineBreak/>
-                        {ci:Tr SettingPages.AboutSettingsPage.Content.ThanksToOtherThirdPartyLibrariesAndContributing}
+                        <Run Text="{ci:Tr SettingPages.AboutSettingsPage.Content.DevelopedWithInspirationFrom}"/><LineBreak/>
+                        <Run Text="{ci:Tr SettingPages.AboutSettingsPage.Content.TheInterfaceThemeAndSomeControlsUseThe}"/><LineBreak/>
+                        <Run Text="{ci:Tr SettingPages.AboutSettingsPage.Content.TheAppFontUsesHuaweiSHarmonyosSans}"/><LineBreak/>
+                        <Run Text="{ci:Tr SettingPages.AboutSettingsPage.Content.ThanksToTheStudentsWhoAssistedInTesting}"/><LineBreak/>
+                        <Run Text="{ci:Tr SettingPages.AboutSettingsPage.Content.Thanks}"/><commands:NavHyperlink NavTarget="https://forum.smart-teach.cn/" Content="{ci:Tr SettingPages.AboutSettingsPage.Content.IntelligentEducationAlliance}"/><Run Text="{ci:Tr SettingPages.AboutSettingsPage.Content.ProvidesServerResources}"/><commands:NavHyperlink NavTarget="https://xiaowuap.com/" Content="{ci:Tr SettingPages.AboutSettingsPage.Content.WuEnze}"/><Run Text="{ci:Tr SettingPages.AboutSettingsPage.Content.ProvidesTTSTelemetryAndOtherServiceResources}"/><LineBreak/>
+                        <Run Text="{ci:Tr SettingPages.AboutSettingsPage.Content.WeatherDataIsSourcedFromXiaomiWeather}"/><LineBreak/>
+                        <Run Text="{ci:Tr SettingPages.AboutSettingsPage.Content.SomeImageResourcesAssetsHoyostickersComeFromMihoyo}"/><LineBreak/>
+                        <Run Text="{ci:Tr SettingPages.AboutSettingsPage.Content.ThanksToOtherThirdPartyLibrariesAndContributing}"/>
                     </TextBlock>
                 </controls3:FASettingsExpanderItem>
 

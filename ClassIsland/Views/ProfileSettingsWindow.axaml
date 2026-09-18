@@ -346,7 +346,7 @@
                 <StackPanel Grid.Row="0">
                     <TextBlock Text="{ci:Tr ProfileSettingsWindow.Text.ScheduleGroup}" Theme="{StaticResource SubtitleTextBlockStyle}"/>
                     <TextBlock TextWrapping="Wrap" Margin="0 6 0 0">
-                        {ci:Tr ProfileSettingsWindow.Content.YouCanGroupYourTimetablesIntoGroupsAnd}<ci:NavHyperlink NavTarget="https://docs.classisland.tech/app/profile/classplan#%E8%AF%BE%E8%A1%A8%E7%BE%A4">{ci:Tr ProfileSettingsWindow.Content.LearnMore}</ci:NavHyperlink>
+                        <Run Text="{ci:Tr ProfileSettingsWindow.Content.YouCanGroupYourTimetablesIntoGroupsAnd}"/><ci:NavHyperlink NavTarget="https://docs.classisland.tech/app/profile/classplan#%E8%AF%BE%E8%A1%A8%E7%BE%A4" Content="{ci:Tr ProfileSettingsWindow.Content.LearnMore}"/>
                     </TextBlock>
                     <StackPanel IsVisible="{Binding ViewModel.ProfileService.Profile.TempClassPlanGroupId, Converter={x:Static ObjectConverters.IsNotNull}}">
                         <Separator Margin="0 12 0 4" />
@@ -375,8 +375,8 @@
                             <ci:Field Grid.Column="3" Label="{ci:Tr ProfileSettingsWindow.Label.OverrideMode}" Margin="2 0 0 0">
                                 <ComboBox SelectedIndex="{Binding ViewModel.ProfileService.Profile.TempClassPlanGroupType, Converter={StaticResource TempClassPlanGroupTypeToIntConverter}}"
                                           VerticalAlignment="Center">
-                                    <ComboBoxItem>{ci:Tr ProfileSettingsWindow.Content.Override}</ComboBoxItem>
-                                    <ComboBoxItem>{ci:Tr ProfileSettingsWindow.Content.Inherit}</ComboBoxItem>
+                                    <ComboBoxItem Content="{ci:Tr ProfileSettingsWindow.Content.Override}"/>
+                                    <ComboBoxItem Content="{ci:Tr ProfileSettingsWindow.Content.Inherit}"/>
                                 </ComboBox>
                             </ci:Field>
                         </Grid>
@@ -435,9 +435,7 @@
                 <CheckBox
                     IsEnabled="{Binding !ViewModel.ManagementService.Policy.DisableProfileClassPlanEditing}"
                     IsChecked="{Binding ViewModel.IsTempSwapMode, Converter={StaticResource InvertBooleanConverter}}"
-                    Margin="0 0 0 8">
-                    {ci:Tr ProfileSettingsWindow.Content.PermanentCourseSwap}
-                </CheckBox>
+                    Margin="0 0 0 8" Content="{ci:Tr ProfileSettingsWindow.Content.PermanentCourseSwap}"/>
                 <Button Click="ButtonEditClassInfoTempConfirm_OnClick"
                         HorizontalAlignment="Left"
                         Classes="accent"
@@ -2038,9 +2036,7 @@
                                         </controls:FACommandBarElementContainer.IsVisible>
                                         <CheckBox
                                             IsEnabled="{Binding !ViewModel.ManagementService.Policy.DisableProfileClassPlanEditing}"
-                                            IsChecked="{Binding ViewModel.IsTempSwapMode, Converter={StaticResource InvertBooleanConverter}}">
-                                            {ci:Tr ProfileSettingsWindow.Content.PermanentCourseSwap}
-                                        </CheckBox>
+                                            IsChecked="{Binding ViewModel.IsTempSwapMode, Converter={StaticResource InvertBooleanConverter}}" Content="{ci:Tr ProfileSettingsWindow.Content.PermanentCourseSwap}"/>
                                     </controls:FACommandBarElementContainer>
                                 </controls:FACommandBar.PrimaryCommands>
                             </controls:FACommandBar>

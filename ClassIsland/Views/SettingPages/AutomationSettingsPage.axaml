@@ -366,7 +366,7 @@
                            Theme="{StaticResource SubtitleTextBlockStyle}" />
                 <TextBlock Margin="0 10 0 0"
                            xml:space="preserve" LineSpacing="4">
-　{ci:Tr SettingPages.AutomationSettingsPage.Content.WelcomeToAutomationAutomationEnablesClassIslandToAct}</TextBlock>
+                    <Run Text="　"/><Run Text="{ci:Tr SettingPages.AutomationSettingsPage.Content.WelcomeToAutomationAutomationEnablesClassIslandToAct}"/></TextBlock>
                 <Button Margin="0 15"
                         Command="{x:Static ci:UriNavigationCommands.UriNavigationCommand}"
                         CommandParameter="https://docs.classisland.tech/app/automation.html"
@@ -382,8 +382,7 @@
                     <StackPanel Spacing="-7">
                         <ci:IconText Glyph="&#xF430;"
                                      Text="{ci:Tr SettingPages.AutomationSettingsPage.Text.Warning}" />
-                        <TextBlock xml:space="preserve" LineSpacing="3">
-{ci:Tr SettingPages.AutomationSettingsPage.Content.AutomationAllowsAutomaticModificationAndInvocationOfVari}</TextBlock>
+                        <TextBlock xml:space="preserve" LineSpacing="3" Text="{ci:Tr SettingPages.AutomationSettingsPage.Content.AutomationAllowsAutomaticModificationAndInvocationOfVari}"/>
                     </StackPanel>
                 </Border>
                 <Button Margin="0 20 0 0"

@@ -68,19 +68,19 @@
                     <StackPanel Spacing="6">
                         <ci:Field Label="ChipListBoxTheme">
                             <ListBox Theme="{StaticResource ChipListBoxTheme}">
-                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Earth}</ListBoxItem>
-                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Ocean}</ListBoxItem>
-                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Sky}</ListBoxItem>
-                                <ListBoxItem IsSelected="True">{ci:Tr DevPortalWindow.Content.NegativeWorld}</ListBoxItem>
-                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Reason}</ListBoxItem>
-                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Romance}</ListBoxItem>
-                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Conflict}</ListBoxItem>
-                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Death}</ListBoxItem>
-                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Trick}</ListBoxItem>
-                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Doorway}</ListBoxItem>
-                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Law}</ListBoxItem>
-                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.Time}</ListBoxItem>
-                                <ListBoxItem>{ci:Tr DevPortalWindow.Content.TrueSelf}</ListBoxItem>
+                                <ListBoxItem Content="{ci:Tr DevPortalWindow.Content.Earth}"/>
+                                <ListBoxItem Content="{ci:Tr DevPortalWindow.Content.Ocean}"/>
+                                <ListBoxItem Content="{ci:Tr DevPortalWindow.Content.Sky}"/>
+                                <ListBoxItem IsSelected="True" Content="{ci:Tr DevPortalWindow.Content.NegativeWorld}"/>
+                                <ListBoxItem Content="{ci:Tr DevPortalWindow.Content.Reason}"/>
+                                <ListBoxItem Content="{ci:Tr DevPortalWindow.Content.Romance}"/>
+                                <ListBoxItem Content="{ci:Tr DevPortalWindow.Content.Conflict}"/>
+                                <ListBoxItem Content="{ci:Tr DevPortalWindow.Content.Death}"/>
+                                <ListBoxItem Content="{ci:Tr DevPortalWindow.Content.Trick}"/>
+                                <ListBoxItem Content="{ci:Tr DevPortalWindow.Content.Doorway}"/>
+                                <ListBoxItem Content="{ci:Tr DevPortalWindow.Content.Law}"/>
+                                <ListBoxItem Content="{ci:Tr DevPortalWindow.Content.Time}"/>
+                                <ListBoxItem Content="{ci:Tr DevPortalWindow.Content.TrueSelf}"/>
                             </ListBox>
                         </ci:Field>
 
@@ -130,11 +130,11 @@
                                 <TextBox Width="325"/>
                                 <ScrollViewer Width="325" Height="325">
                                     <StackPanel>
-                                        <TextBlock Text="{StaticResource TestStringLong}" TextWrapping="Wrap" />
-                                        <TextBlock Text="{StaticResource TestStringLong}" TextWrapping="Wrap" />
-                                        <TextBlock Text="{StaticResource TestStringLong}" TextWrapping="Wrap" />
-                                        <TextBlock Text="{StaticResource TestStringLong}" TextWrapping="Wrap" />
-                                        <TextBlock Text="{StaticResource TestStringLong}" TextWrapping="Wrap" />
+                                        <TextBlock Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}" TextWrapping="Wrap" />
+                                        <TextBlock Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}" TextWrapping="Wrap" />
+                                        <TextBlock Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}" TextWrapping="Wrap" />
+                                        <TextBlock Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}" TextWrapping="Wrap" />
+                                        <TextBlock Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}" TextWrapping="Wrap" />
                                     </StackPanel>
                                 </ScrollViewer>
                                 <CheckBox/>
@@ -227,14 +227,14 @@
                         </ci:StickyScrollViewer.HeaderContent>
                         <StackPanel>
                             <TextBlock FontSize="24" TextWrapping="Wrap">
-                                <Run Text="{StaticResource TestStringLong}"/>
-                                <Run Text="{StaticResource TestStringLong}"/>
-                                <Run Text="{StaticResource TestStringLong}"/>
-                                <Run Text="{StaticResource TestStringLong}"/>
-                                <Run Text="{StaticResource TestStringLong}"/>
-                                <Run Text="{StaticResource TestStringLong}"/>
-                                <Run Text="{StaticResource TestStringLong}"/>
-                                <Run Text="{StaticResource TestStringLong}"/>
+                                <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
                             </TextBlock>
                         </StackPanel>
                     </ci:StickyScrollViewer>
@@ -248,14 +248,14 @@
                         <ci:VerticalDrawer.DrawerContent>
                             <ScrollViewer Width="400">
                                 <TextBlock TextWrapping="Wrap">
-                                    <Run Text="{StaticResource TestStringLong}"/>
-                                    <Run Text="{StaticResource TestStringLong}"/>
-                                    <Run Text="{StaticResource TestStringLong}"/>
-                                    <Run Text="{StaticResource TestStringLong}"/>
-                                    <Run Text="{StaticResource TestStringLong}"/>
-                                    <Run Text="{StaticResource TestStringLong}"/>
-                                    <Run Text="{StaticResource TestStringLong}"/>
-                                    <Run Text="{StaticResource TestStringLong}"/>
+                                    <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                    <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                    <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                    <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                    <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                    <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                    <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
+                                    <Run Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
                                 </TextBlock>
                             </ScrollViewer>
                         </ci:VerticalDrawer.DrawerContent>

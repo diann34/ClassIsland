@@ -140,15 +140,11 @@
               ColumnDefinitions="* *">
             <Button Grid.Column="0" Margin="0 0 2 0"
                     IsCancel="True" HorizontalAlignment="Stretch"
-                    Command="{Binding Close}">
-                {ci:Tr AuthorizeWindow.Content.Cancel}
-            </Button>
+                    Command="{Binding Close}" Content="{ci:Tr AuthorizeWindow.Content.Cancel}"/>
             <Button Grid.Column="1" Margin="2 0 0 0"
                     Click="ButtonOk_OnClick"
                     Classes="accent" HorizontalAlignment="Stretch"
-                    IsVisible="{Binding ViewModel.IsEditingMode, RelativeSource={RelativeSource FindAncestor, AncestorType=local:AuthorizeWindow}}">
-                {ci:Tr AuthorizeWindow.Content.Confirm}
-            </Button>
+                    IsVisible="{Binding ViewModel.IsEditingMode, RelativeSource={RelativeSource FindAncestor, AncestorType=local:AuthorizeWindow}}" Content="{ci:Tr AuthorizeWindow.Content.Confirm}"/>
         </Grid>
     </Grid>
 </ci:ViewBase>

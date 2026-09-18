@@ -279,7 +279,7 @@
                     Text="{ci:Tr Controls.EditMode.EditModeView.Text.Edit}"
                     Click="ButtonOpenRulesetForComponent_OnClick"
                     ToolTip.Tip="{ci:Tr Controls.EditMode.EditModeView.ToolTip.EditRuleSet}"/>
-                <CheckBox IsChecked="{Binding ViewModel.MainViewModel.SelectedComponentSettings.HideOnRule}">{ci:Tr Controls.EditMode.EditModeView.Content.HideByRules}</CheckBox>
+                <CheckBox IsChecked="{Binding ViewModel.MainViewModel.SelectedComponentSettings.HideOnRule}" Content="{ci:Tr Controls.EditMode.EditModeView.Content.HideByRules}"/>
             </StackPanel>
         </Grid>
 
@@ -309,7 +309,7 @@
                     Text="{ci:Tr Controls.EditMode.EditModeView.Text.Edit}"
                     Click="ButtonOpenRulesetForMainWindowLine_OnClick"
                     ToolTip.Tip="{ci:Tr Controls.EditMode.EditModeView.ToolTip.EditRuleSet}"/>
-                <CheckBox IsChecked="{Binding ViewModel.SelectedMainWindowLineSettings.HideOnRule}">{ci:Tr Controls.EditMode.EditModeView.Content.HideByRules}</CheckBox>
+                <CheckBox IsChecked="{Binding ViewModel.SelectedMainWindowLineSettings.HideOnRule}" Content="{ci:Tr Controls.EditMode.EditModeView.Content.HideByRules}"/>
             </StackPanel>
         </Grid>
         <ScrollViewer HorizontalAlignment="Stretch"
@@ -322,9 +322,9 @@
                                            Description="{ci:Tr Controls.EditMode.EditModeView.Description.AfterActivationTheMainInterfaceWillBeSeparated}">
                     <controls:FASettingsExpander.Footer>
                         <ComboBox SelectedIndex="{Binding IslandSeparationMode}">
-                            <ComboBoxItem>{ci:Tr Controls.EditMode.EditModeView.Content.Inherit}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Controls.EditMode.EditModeView.Content.Disable}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Controls.EditMode.EditModeView.Content.Enable}</ComboBoxItem>
+                            <ComboBoxItem Content="{ci:Tr Controls.EditMode.EditModeView.Content.Inherit}"/>
+                            <ComboBoxItem Content="{ci:Tr Controls.EditMode.EditModeView.Content.Disable}"/>
+                            <ComboBoxItem Content="{ci:Tr Controls.EditMode.EditModeView.Content.Enable}"/>
                         </ComboBox>
                     </controls:FASettingsExpander.Footer>
                 </controls:FASettingsExpander>
@@ -360,17 +360,17 @@
                     </controls:FASettingsExpander.IsVisible>
                     <controls:FASettingsExpander.Footer>
                         <ComboBox SelectedIndex="{Binding BackgroundMaterialOverrideMode}">
-                            <ComboBoxItem>{ci:Tr Controls.EditMode.EditModeView.Content.Inherit}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Controls.EditMode.EditModeView.Content.Disable}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Controls.EditMode.EditModeView.Content.Enable}</ComboBoxItem>
+                            <ComboBoxItem Content="{ci:Tr Controls.EditMode.EditModeView.Content.Inherit}"/>
+                            <ComboBoxItem Content="{ci:Tr Controls.EditMode.EditModeView.Content.Disable}"/>
+                            <ComboBoxItem Content="{ci:Tr Controls.EditMode.EditModeView.Content.Enable}"/>
                         </ComboBox>
                     </controls:FASettingsExpander.Footer>
                     <controls:FASettingsExpanderItem Content="{ci:Tr Controls.EditMode.EditModeView.Content.MaterialType}">
                         <controls:FASettingsExpanderItem.Footer>
                             <ComboBox SelectedIndex="{Binding BackgroundMaterialType, Mode=TwoWay, Converter={x:Static ci:EnumToIntConverter.Instance}}">
-                                <ComboBoxItem>{ci:Tr Controls.EditMode.EditModeView.Content.Acrylic}</ComboBoxItem>
-                                <ComboBoxItem>{ci:Tr Controls.EditMode.EditModeView.Content.GlassLike}</ComboBoxItem>
-                                <ComboBoxItem>{ci:Tr Controls.EditMode.EditModeView.Content.Mica}</ComboBoxItem>
+                                <ComboBoxItem Content="{ci:Tr Controls.EditMode.EditModeView.Content.Acrylic}"/>
+                                <ComboBoxItem Content="{ci:Tr Controls.EditMode.EditModeView.Content.GlassLike}"/>
+                                <ComboBoxItem Content="{ci:Tr Controls.EditMode.EditModeView.Content.Mica}"/>
                             </ComboBox>
                         </controls:FASettingsExpanderItem.Footer>
                     </controls:FASettingsExpanderItem>

@@ -81,7 +81,7 @@
                           IsVisible="{Binding !ViewModel.SettingsService.Settings.IsThemeWarningVisible}">
             <controls:FAInfoBar.ActionButton>
                 <HyperlinkButton Command="{x:Static ci:UriNavigationCommands.UriNavigationCommand}"
-                                 CommandParameter="classisland://app/settings/appearance">{ci:Tr SettingPages.ThemesSettingsPage.Content.GoToAppearanceSettings}</HyperlinkButton>
+                                 CommandParameter="classisland://app/settings/appearance" Content="{ci:Tr SettingPages.ThemesSettingsPage.Content.GoToAppearanceSettings}"/>
             </controls:FAInfoBar.ActionButton>
         </controls:FAInfoBar>
 
@@ -89,8 +89,8 @@
             <TabStrip Grid.Column="0" Classes="compact"
                       SelectionChanged="ListBoxCategory_OnSelectionChanged"
                       SelectedIndex="{Binding ViewModel.ThemeCategoryIndex}">
-                <TabStripItem>{ci:Tr SettingPages.ThemesSettingsPage.Content.Market}</TabStripItem>
-                <TabStripItem>{ci:Tr SettingPages.ThemesSettingsPage.Content.Installed}</TabStripItem>
+                <TabStripItem Content="{ci:Tr SettingPages.ThemesSettingsPage.Content.Market}"/>
+                <TabStripItem Content="{ci:Tr SettingPages.ThemesSettingsPage.Content.Installed}"/>
             </TabStrip>
 
             <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">

@@ -20,17 +20,17 @@
         <ci:Field Label="{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Label.WeatherAlertMode}">
             <ComboBox SelectedIndex="{Binding Settings.AlertShowMode, Converter={StaticResource NotificationModeToIntConverter}}"
                       Margin="0 0 0 4">
-                <system:String>{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.DisableHere}</system:String>
-                <system:String>{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.EnableHere}</system:String>
-                <system:String>{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.InheritGlobalSettings}</system:String>
+                <ComboBoxItem Content="{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.DisableHere}"/>
+                <ComboBoxItem Content="{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.EnableHere}"/>
+                <ComboBoxItem Content="{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.InheritGlobalSettings}"/>
             </ComboBox>
         </ci:Field>
         <ci:Field Label="{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Label.WeatherForecastMode}">
             <ComboBox SelectedIndex="{Binding Settings.ForecastShowMode, Converter={StaticResource NotificationModeToIntConverter}}"
                       Margin="0 0 0 4">
-                <system:String>{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.DisableHere}</system:String>
-                <system:String>{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.EnableHere}</system:String>
-                <system:String>{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.InheritGlobalSettings}</system:String>
+                <ComboBoxItem Content="{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.DisableHere}"/>
+                <ComboBoxItem Content="{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.EnableHere}"/>
+                <ComboBoxItem Content="{ci:Tr Controls.AttachedSettingsControls.WeatherNotificationAttachedSettingsControl.Content.InheritGlobalSettings}"/>
             </ComboBox>
         </ci:Field>
     </StackPanel>

@@ -204,10 +204,10 @@
                     <controls:FASettingsExpander.Footer>
                         <Grid>
                             <ComboBox SelectedIndex="{Binding Settings.TomorrowScheduleShowMode}">
-                                <ComboBoxItem>{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.NotDisplayed}</ComboBoxItem>
-                                <ComboBoxItem>{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.DisplayedAfterSchool}</ComboBoxItem>
-                                <ComboBoxItem>{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.AlwaysShows}</ComboBoxItem>
-                                <ComboBoxItem>{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.DisplayedWhenNoCourseIsShown}</ComboBoxItem>
+                                <ComboBoxItem Content="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.NotDisplayed}"/>
+                                <ComboBoxItem Content="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.DisplayedAfterSchool}"/>
+                                <ComboBoxItem Content="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.AlwaysShows}"/>
+                                <ComboBoxItem Content="{ci:Tr Controls.Components.ScheduleComponentSettingsControl.Content.DisplayedWhenNoCourseIsShown}"/>
                             </ComboBox>
                         </Grid>
                     </controls:FASettingsExpander.Footer>

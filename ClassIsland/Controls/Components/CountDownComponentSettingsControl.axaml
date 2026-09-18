@@ -84,7 +84,7 @@
                             </Binding.ConverterParameter>
                         </Binding>
                     </controls3:FASettingsExpanderItem.IsVisible>
-                    <CheckBox IsChecked="{Binding Settings.IsAdvancedCycleTimingEnabled}">{ci:Tr Controls.Components.CountDownComponentSettingsControl.Content.AdvancedTiming}</CheckBox>
+                    <CheckBox IsChecked="{Binding Settings.IsAdvancedCycleTimingEnabled}" Content="{ci:Tr Controls.Components.CountDownComponentSettingsControl.Content.AdvancedTiming}"/>
                 </controls3:FASettingsExpanderItem>
                 <controls3:FASettingsExpanderItem>
                     <controls3:FASettingsExpanderItem.Footer>

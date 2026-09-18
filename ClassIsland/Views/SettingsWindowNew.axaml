@@ -165,14 +165,12 @@
                            Margin="0 0 0 4" />
                 <TextBlock Text="{ci:Tr SettingsWindowNew.Text.FeaturesUnderDevelopmentTestingThatMayBeUnstable}" TextWrapping="Wrap"
                            Margin="0 0 0 16" />
-                <CheckBox IsChecked="{Binding SettingsService.Settings.ShowEchoCaveWhenSettingsPageLoading}"
+                    <CheckBox IsChecked="{Binding SettingsService.Settings.ShowEchoCaveWhenSettingsPageLoading}"
                           Margin="0 0 0 6"
                           IsEnabled="{Binding ManagementService.Policy.DisableEasterEggs, Converter={StaticResource BooleanToBooleanReConverter}}">
                     <TextBlock TextWrapping="Wrap">
-                        {ci:Tr SettingsWindowNew.Content.ShowEchoHoleWhileLoadingTheSettingsPage}
-                        <Run TextDecorations="{x:Static TextDecorations.Strikethrough}">
-                            {ci:Tr SettingsWindowNew.Content.ActuallyItUsuallyLoadsBeforeYouEvenFinish}
-                        </Run>
+                        <Run Text="{ci:Tr SettingsWindowNew.Content.ShowEchoHoleWhileLoadingTheSettingsPage}"/>
+                        <Run TextDecorations="{x:Static TextDecorations.Strikethrough}" Text="{ci:Tr SettingsWindowNew.Content.ActuallyItUsuallyLoadsBeforeYouEvenFinish}"/>
                     </TextBlock>
                 </CheckBox>
             </StackPanel>

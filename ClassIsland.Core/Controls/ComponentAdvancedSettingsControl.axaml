@@ -72,17 +72,17 @@
                 </controls:FASettingsExpander.IsVisible>
                 <controls:FASettingsExpander.Footer>
                     <ComboBox SelectedIndex="{Binding BackgroundMaterialOverrideMode}">
-                        <ComboBoxItem>{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.Inherit}</ComboBoxItem>
-                        <ComboBoxItem>{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.Disable}</ComboBoxItem>
-                        <ComboBoxItem>{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.Enable}</ComboBoxItem>
+                        <ComboBoxItem Content="{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.Inherit}"/>
+                        <ComboBoxItem Content="{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.Disable}"/>
+                        <ComboBoxItem Content="{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.Enable}"/>
                     </ComboBox>
                 </controls:FASettingsExpander.Footer>
                 <controls:FASettingsExpanderItem Content="{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.MaterialType}">
                     <controls:FASettingsExpanderItem.Footer>
                         <ComboBox SelectedIndex="{Binding BackgroundMaterialType, Mode=TwoWay, Converter={x:Static ci:EnumToIntConverter.Instance}}">
-                            <ComboBoxItem>{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.Acrylic}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.GlassLike}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.Mica}</ComboBoxItem>
+                            <ComboBoxItem Content="{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.Acrylic}"/>
+                            <ComboBoxItem Content="{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.GlassLike}"/>
+                            <ComboBoxItem Content="{ci:Tr Core.Controls.ComponentAdvancedSettingsControl.Content.Mica}"/>
                         </ComboBox>
                     </controls:FASettingsExpanderItem.Footer>
                 </controls:FASettingsExpanderItem>

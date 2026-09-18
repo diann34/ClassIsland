@@ -13,18 +13,10 @@
     <Grid DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:WindowStatusRuleSettingsControl}}">
         <ComboBox SelectedIndex="{Binding Settings.State}"
                   >
-            <ComboBoxItem>
-                {ci:Tr Controls.RuleSettingsControls.WindowStatusRuleSettingsControl.Content.Normal}
-            </ComboBoxItem>
-            <ComboBoxItem>
-                {ci:Tr Controls.RuleSettingsControls.WindowStatusRuleSettingsControl.Content.Maximize}
-            </ComboBoxItem>
-            <ComboBoxItem>
-                {ci:Tr Controls.RuleSettingsControls.WindowStatusRuleSettingsControl.Content.Minimize}
-            </ComboBoxItem>
-            <ComboBoxItem>
-                {ci:Tr Controls.RuleSettingsControls.WindowStatusRuleSettingsControl.Content.FullScreen}
-            </ComboBoxItem>
+            <ComboBoxItem Content="{ci:Tr Controls.RuleSettingsControls.WindowStatusRuleSettingsControl.Content.Normal}"/>
+            <ComboBoxItem Content="{ci:Tr Controls.RuleSettingsControls.WindowStatusRuleSettingsControl.Content.Maximize}"/>
+            <ComboBoxItem Content="{ci:Tr Controls.RuleSettingsControls.WindowStatusRuleSettingsControl.Content.Minimize}"/>
+            <ComboBoxItem Content="{ci:Tr Controls.RuleSettingsControls.WindowStatusRuleSettingsControl.Content.FullScreen}"/>
         </ComboBox>
     </Grid>
 </ci:RuleSettingsControlBase>

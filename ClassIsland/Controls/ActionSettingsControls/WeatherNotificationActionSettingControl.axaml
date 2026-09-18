@@ -11,9 +11,9 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:WeatherNotificationActionSettingControl}}">
         <ComboBox SelectedIndex="{Binding Settings.NotificationKind}">
-            <ComboBoxItem>{ci:Tr Controls.ActionSettingsControls.WeatherNotificationActionSettingControl.Content.ThreeDayWeatherForecast}</ComboBoxItem>
-            <ComboBoxItem>{ci:Tr Controls.ActionSettingsControls.WeatherNotificationActionSettingControl.Content.WeatherAlerts}</ComboBoxItem>
-            <ComboBoxItem>{ci:Tr Controls.ActionSettingsControls.WeatherNotificationActionSettingControl.Content.HourlyWeatherForecast}</ComboBoxItem>
+            <ComboBoxItem Content="{ci:Tr Controls.ActionSettingsControls.WeatherNotificationActionSettingControl.Content.ThreeDayWeatherForecast}"/>
+            <ComboBoxItem Content="{ci:Tr Controls.ActionSettingsControls.WeatherNotificationActionSettingControl.Content.WeatherAlerts}"/>
+            <ComboBoxItem Content="{ci:Tr Controls.ActionSettingsControls.WeatherNotificationActionSettingControl.Content.HourlyWeatherForecast}"/>
         </ComboBox>
     </Grid>
 </ci:ActionSettingsControlBase>

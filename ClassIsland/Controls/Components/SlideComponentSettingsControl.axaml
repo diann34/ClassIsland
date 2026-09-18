@@ -37,9 +37,9 @@
                 <controls:FASettingsExpander.Footer>
                     <ComboBox SelectedIndex="{Binding Settings.SlideMode}"
                               Width="100">
-                        <ComboBoxItem>{ci:Tr Controls.Components.SlideComponentSettingsControl.Content.Cycle}</ComboBoxItem>
-                        <ComboBoxItem>{ci:Tr Controls.Components.SlideComponentSettingsControl.Content.Random}</ComboBoxItem>
-                        <ComboBoxItem>{ci:Tr Controls.Components.SlideComponentSettingsControl.Content.BackAndForth}</ComboBoxItem>
+                        <ComboBoxItem Content="{ci:Tr Controls.Components.SlideComponentSettingsControl.Content.Cycle}"/>
+                        <ComboBoxItem Content="{ci:Tr Controls.Components.SlideComponentSettingsControl.Content.Random}"/>
+                        <ComboBoxItem Content="{ci:Tr Controls.Components.SlideComponentSettingsControl.Content.BackAndForth}"/>
                     </ComboBox>
                 </controls:FASettingsExpander.Footer>
             </controls:FASettingsExpander>

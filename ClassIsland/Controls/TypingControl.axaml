@@ -10,6 +10,6 @@
     </UserControl.Resources>
     <Grid DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:TypingControl}}">
         <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="{Binding DisplayingText}"
-                   d:Text="{StaticResource TestStringLong}"/>
+                   d:Text="{ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}"/>
     </Grid>
 </UserControl>

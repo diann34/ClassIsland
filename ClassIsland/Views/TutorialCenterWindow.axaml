@@ -71,7 +71,7 @@
                                                        Classes="l-instructive" />
                                             <TextBlock FontSize="13"
                                                        Classes="l-instructive">
-                                                {ci:Tr TutorialCenterWindow.Content.Completed}<Run Text="{Binding $parent[tutorial1:TutorialStateProvider].CompletedParagraphs}"/>/<Run Text="{Binding Paragraphs.Count}"/>{ci:Tr TutorialCenterWindow.Content.Segments}
+                                                <Run Text="{ci:Tr TutorialCenterWindow.Content.Completed}"/><Run Text="{Binding $parent[tutorial1:TutorialStateProvider].CompletedParagraphs}"/>/<Run Text="{Binding Paragraphs.Count}"/><Run Text="{ci:Tr TutorialCenterWindow.Content.Segments}"/>
                                             </TextBlock>
                                             <!-- <ProgressBar Value="{Binding $parent[tutorial1:TutorialStateProvider].CompletedParagraphs, Mode=OneWay}" -->
                                             <!--              Maximum="{Binding Paragraphs.Count, Mode=OneWay}"/> -->

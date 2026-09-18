@@ -18,10 +18,6 @@
         <!-- <ResourceInclude Source="avares://ClassIsland.Core/Themes/TextSelectionHandle.axaml"/> -->
         <!-- <ResourceInclude Source="avares://ClassIsland.Core/Controls/MyWindow.axaml"/> -->
     </ResourceDictionary.MergedDictionaries>
-    <system:String x:Key="TestStringLong">
-        {ci:Tr Core.ThemeBase.Content.OneDayHeFellFromTheSkyPeople}
-    </system:String>
-
     <converters:BooleanToBooleanReConverter x:Key="BooleanToBooleanReConverter" />
     <converters:BooleanToBooleanReConverter x:Key="InvertBooleanConverter" />
     <converters:IntToFontWeightConverter x:Key="IntToFontWeightConverter" />
