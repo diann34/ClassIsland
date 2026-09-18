@@ -34,7 +34,11 @@ public static class LocalizationService
 
     public static void Initialize(string? requestedCulture, params Assembly[] resourceAssemblies)
     {
+        // Keep the operating system's formatting culture separate from the UI language.
+        // Selecting a language such as zh-Hant must not change the user's date/time
+        // conventions (for example, 12-hour versus 24-hour time).
         var systemCulture = CultureInfo.CurrentUICulture;
+        var systemFormattingCulture = CultureInfo.CurrentCulture;
         ResourceManagers.Clear();
         ResourceManagersByKey.Clear();
         FallbackKeys.Clear();
@@ -55,9 +59,9 @@ public static class LocalizationService
 
         CurrentCultureName = ResolveCulture(requestedCulture, systemCulture);
         var uiCulture = CultureInfo.GetCultureInfo(CurrentCultureName);
-        var formattingCulture = uiCulture.IsNeutralCulture
-            ? CultureInfo.CreateSpecificCulture(uiCulture.Name)
-            : uiCulture;
+        var formattingCulture = systemFormattingCulture.IsNeutralCulture
+            ? CultureInfo.CreateSpecificCulture(systemFormattingCulture.Name)
+            : systemFormattingCulture;
         CultureInfo.CurrentCulture = formattingCulture;
         CultureInfo.CurrentUICulture = uiCulture;
         CultureInfo.DefaultThreadCurrentCulture = formattingCulture;
