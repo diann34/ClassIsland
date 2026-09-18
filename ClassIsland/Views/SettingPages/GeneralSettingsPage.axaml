@@ -187,16 +187,16 @@
                                   IsVisible="{Binding !ViewModel.SettingsService.Settings.IsCriticalSafeMode}"
                                   IsEnabled="False"
                                   SelectedIndex="0">
-                            <ComboBoxItem>{ci:Tr SettingPages.GeneralSettingsPage.Content.ShowCrashReport}</ComboBoxItem>
+                            <ComboBoxItem Content="{ci:Tr SettingPages.GeneralSettingsPage.Content.ShowCrashReport}"/>
                         </ComboBox>
                         <ComboBox Width="135"
                                   VerticalAlignment="Center"
                                   IsVisible="{Binding ViewModel.SettingsService.Settings.IsCriticalSafeMode}"
                                   SelectedIndex="{Binding ViewModel.SettingsService.Settings.CriticalSafeModeMethod}">
-                            <ComboBoxItem>{ci:Tr SettingPages.GeneralSettingsPage.Content.ExitApplication}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr SettingPages.GeneralSettingsPage.Content.SilentRestartApplication}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr SettingPages.GeneralSettingsPage.Content.ShowNotifications}</ComboBoxItem>
-                            <ComboBoxItem>{ci:Tr SettingPages.GeneralSettingsPage.Content.IgnoreNotRecommended}</ComboBoxItem>
+                            <ComboBoxItem Content="{ci:Tr SettingPages.GeneralSettingsPage.Content.ExitApplication}"/>
+                            <ComboBoxItem Content="{ci:Tr SettingPages.GeneralSettingsPage.Content.SilentRestartApplication}"/>
+                            <ComboBoxItem Content="{ci:Tr SettingPages.GeneralSettingsPage.Content.ShowNotifications}"/>
+                            <ComboBoxItem Content="{ci:Tr SettingPages.GeneralSettingsPage.Content.IgnoreNotRecommended}"/>
                         </ComboBox>
                         <ToggleSwitch VerticalAlignment="Center"
                                       Margin="8 0 0 0"
@@ -302,9 +302,9 @@
                     <ComboBox Width="120"
                               VerticalAlignment="Center"
                               SelectedIndex="{Binding ViewModel.SettingsService.Settings.AnimationLevel}">
-                        <ComboBoxItem>{ci:Tr SettingPages.GeneralSettingsPage.Content.Disable}</ComboBoxItem>
-                        <ComboBoxItem>{ci:Tr SettingPages.GeneralSettingsPage.Content.Standard}</ComboBoxItem>
-                        <ComboBoxItem>{ci:Tr SettingPages.GeneralSettingsPage.Content.Fancy}</ComboBoxItem>
+                        <ComboBoxItem Content="{ci:Tr SettingPages.GeneralSettingsPage.Content.Disable}"/>
+                        <ComboBoxItem Content="{ci:Tr SettingPages.GeneralSettingsPage.Content.Standard}"/>
+                        <ComboBoxItem Content="{ci:Tr SettingPages.GeneralSettingsPage.Content.Fancy}"/>
                     </ComboBox>
                 </controls3:FASettingsExpander.Footer>
             </controls3:FASettingsExpander>
