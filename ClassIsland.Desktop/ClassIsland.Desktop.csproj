@@ -125,4 +125,25 @@
     <Import Project="../Global.props"/>
     <Import Project="../AvaloniaShared.props"/>
     <Import Project="../CrossPlatformProps.props"/>
+	<Target Name="RelocateSatelliteAssemblies" AfterTargets="Build">
+		<ItemGroup>
+			<Locale Include="zh-Hans;zh-Hant;en;ja;cs;de;es;it;ko;pl;pt-BR;ru;tr;fr" />
+		</ItemGroup>
+		<ItemGroup>
+			<SatelliteFiles Include="$(TargetDir)%(Locale.Identity)\**\*.*">
+				<Locale>%(Locale.Identity)</Locale>
+			</SatelliteFiles>
+		</ItemGroup>
+
+		<MakeDir Directories="$(TargetDir)Assets\" Condition="!Exists('$(TargetDir)Assets\')" />
+		<MakeDir Directories="$(TargetDir)Assets\Localization\%(SatelliteFiles.Locale)"
+				 Condition="Exists('%(SatelliteFiles.RootDir)%(SatelliteFiles.Directory)')" />
+
+		<Copy SourceFiles="@(SatelliteFiles)"
+			  DestinationFiles="@(SatelliteFiles->'$(TargetDir)Assets\Localization\%(Locale)\%(RecursiveDir)%(Filename)%(Extension)')"
+			  SkipUnchangedFiles="true" />
+
+		<RemoveDir Directories="$(TargetDir)%(Locale.Identity)"
+             Condition="Exists('$(TargetDir)%(Locale.Identity)')" />
+	</Target>
 </Project>

@@ -6,9 +6,18 @@ using ClassIsland.Core.Models.Localization;
 
 namespace ClassIsland.Core.Services;
 
+/// <summary>
+/// ClassIsland本地化服务。用于管理应用程序的语言和翻译资源。
+/// </summary>
 public static class LocalizationService
 {
+    /// <summary>
+    /// 表示自动选择语言的特殊标识符。当用户未指定语言时，应用程序将根据系统语言或其他逻辑自动选择合适的语言。
+    /// </summary>
     public const string AutomaticLanguage = "auto";
+    /// <summary>
+    /// 表示默认的回退语言为简体中文（zh-Hans）。当应用程序无法找到指定语言的资源时，将使用此语言作为回退选项。
+    /// </summary>
     public const string FallbackCultureName = "zh-Hans";
 
     private static readonly List<ResourceManager> ResourceManagers = [];
@@ -26,19 +35,38 @@ public static class LocalizationService
     private static readonly Dictionary<string, string> FallbackKeys =
         new(StringComparer.Ordinal);
 
+    /// <summary>
+    /// 获取当前应用程序使用的文化名称。如果未指定语言或无法解析请求的语言，将使用<see cref="FallbackCultureName"/>作为默认值。
+    /// </summary>
     public static string CurrentCultureName { get; private set; } = FallbackCultureName;
 
     public static IReadOnlyList<SupportedLanguage> SupportedLanguages => RegisteredLanguages.Values
         .OrderBy(x => x.CultureName, StringComparer.OrdinalIgnoreCase)
         .ToArray();
 
+    /// <summary>
+    /// 使用请求的文化名称和指定的资源程序集初始化本地化服务。此方法将加载资源程序集中的本地化资源，并根据请求的文化名称或系统文化设置当前应用程序的语言环境。
+    /// </summary>
+    /// <param name="requestedCulture"></param>
+    /// <param name="resourceAssemblies"></param>
     public static void Initialize(string? requestedCulture, params Assembly[] resourceAssemblies)
     {
-        // Keep the operating system's formatting culture separate from the UI language.
-        // Selecting a language such as zh-Hant must not change the user's date/time
-        // conventions (for example, 12-hour versus 24-hour time).
+        AppDomain.CurrentDomain.AssemblyResolve += (sender, args) =>
+        {
+            var requestedAssemblyName = new AssemblyName(args.Name);
+
+            if (string.IsNullOrEmpty(requestedAssemblyName.CultureName) || requestedAssemblyName.CultureName == "neutral") return null;
+
+            var basePath = AppContext.BaseDirectory;
+            var cultureName = requestedAssemblyName.CultureName;
+            var assemblyName = requestedAssemblyName.Name;
+            var satelliteAssemblyPath = Path.Combine(basePath, "Assets", "Localization", cultureName, $"{assemblyName}.resources.dll");
+
+            if (File.Exists(satelliteAssemblyPath)) return Assembly.LoadFrom(satelliteAssemblyPath);
+            return null;
+        };
         var systemCulture = CultureInfo.CurrentUICulture;
-        var systemFormattingCulture = CultureInfo.CurrentCulture;
+        var systemFormattingCulture = CultureInfo.CurrentCulture; // 使得应用程序的时间日期格式与系统一致，而不跟随UI语言变化
         ResourceManagers.Clear();
         ResourceManagersByKey.Clear();
         FallbackKeys.Clear();
@@ -67,7 +95,11 @@ public static class LocalizationService
         CultureInfo.DefaultThreadCurrentCulture = formattingCulture;
         CultureInfo.DefaultThreadCurrentUICulture = uiCulture;
     }
-
+    /// <summary>
+    /// 根据指定的键获取对应的本地化字符串。如果找不到对应的资源，将返回原始键值。此方法使用<see cref="CurrentCultureName"/>进行资源查找。
+    /// </summary>
+    /// <param name="key">本地化字符串ID</param>
+    /// <returns></returns>
     public static string Translate(string key)
     {
         var culture = CultureInfo.GetCultureInfo(CurrentCultureName);
@@ -79,13 +111,20 @@ public static class LocalizationService
 
         return key;
     }
-
+    /// <summary>
+    /// 根据指定的键和参数获取对应的本地化字符串，并使用当前文化格式化字符串。如果找不到对应的资源，将返回原始键值。此方法使用<see cref="CurrentCultureName"/>进行资源查找。
+    /// </summary>
+    /// <param name="key">本地化字符串ID</param>
+    /// <param name="arguments">格式化参数</param>
+    /// <returns></returns>
     public static string Translate(string key, params object?[] arguments) =>
         string.Format(CultureInfo.CurrentCulture, Translate(key), arguments);
 
     /// <summary>
-    /// Translates a static string created by C# UI code. AXAML should use <c>{ci:Tr ...}</c> instead.
+    /// 将由C# UI代码创建的静态字符串进行翻译。
     /// </summary>
+    /// <param name="source">要翻译的源字符串</param>
+    /// <returns></returns>
     public static string TranslateText(string source) =>
         FallbackKeys.TryGetValue(source, out var key) ? Translate(key) : source;
 
@@ -159,7 +198,7 @@ public static class LocalizationService
 
                 if (!ResourceManagersByKey.TryAdd(key, resourceManager))
                 {
-                    throw new InvalidOperationException($"Duplicate localization resource ID: {key}");
+                    throw new InvalidOperationException($"重复的本地化资源ID: {key}");
                 }
 
                 FallbackKeys.TryAdd(value, key);
