@@ -1,8 +1,10 @@
+using ClassIsland.Core.Models.Localization;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 using System.Collections;
 using System.Globalization;
 using System.Reflection;
 using System.Resources;
-using ClassIsland.Core.Models.Localization;
 
 namespace ClassIsland.Core.Services;
 
@@ -60,9 +62,10 @@ public static class LocalizationService
             var basePath = AppContext.BaseDirectory;
             var cultureName = requestedAssemblyName.CultureName;
             var assemblyName = requestedAssemblyName.Name;
-            var satelliteAssemblyPath = Path.Combine(basePath, "Assets", "Localization", cultureName, $"{assemblyName}.resources.dll");
+            var satelliteAssemblyPath = Path.Combine(basePath, "Assets", "Localization", cultureName, $"{assemblyName}.dll");
 
             if (File.Exists(satelliteAssemblyPath)) return Assembly.LoadFrom(satelliteAssemblyPath);
+            Console.WriteLine($"警告:找不到本地化资源文件: {satelliteAssemblyPath}");
             return null;
         };
         var systemCulture = CultureInfo.CurrentUICulture;
