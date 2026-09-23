@@ -65,7 +65,7 @@ public static class LocalizationService
             var satelliteAssemblyPath = Path.Combine(basePath, "Assets", "Localization", cultureName, $"{assemblyName}.dll");
 
             if (File.Exists(satelliteAssemblyPath)) return Assembly.LoadFrom(satelliteAssemblyPath);
-            Console.WriteLine($"警告:找不到本地化资源文件: {satelliteAssemblyPath}");
+            // Console.WriteLine($"警告:找不到本地化资源文件: {satelliteAssemblyPath}");
             return null;
         };
         var systemCulture = CultureInfo.CurrentUICulture;
